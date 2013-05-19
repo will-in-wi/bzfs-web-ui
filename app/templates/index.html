@@ -1,11 +1,11 @@
 {% extends 'base.html' %}
 
 {% block title %}
-	{{title}}
+	BZFS Instances
 {% endblock %}
 
 {% block header %}
-	<h1>{{title}}</h1>
+	<h1>BZFS Instances</h1>
 {% endblock %}
 
 {% block body %}
@@ -39,5 +39,20 @@
 	</div>
 	{% endif %}
 
-	<p>{{body}}</p>
+	<table class="table">
+		<thead>
+			<tr>
+				<th>Port</th>
+				<th>Scores</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for proc in procs %}
+				<tr>
+					<td>{{proc.port}}</td>
+					<td><pre>{{proc.scores}}</pre></td>
+				</tr>
+			{% endfor %}
+		</tbody>
+	</table>
 {% endblock %}

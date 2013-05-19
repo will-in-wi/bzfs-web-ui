@@ -39,3 +39,35 @@ function config($file)
 {
     return Yaml::parse(APP_ROOT . '/app/config/' . $file . '.yml');
 }
+
+function get_bzfs_procs()
+{
+    exec("ps -ef|grep bzfs|grep -v grep", $output);
+
+    $general_settings = config('general');
+    $tmp = $general_settings['temp_path'];
+
+    $regex_tmp = str_replace('/', '\/', $tmp);
+
+    $procs = array();
+
+    foreach ($output as $proc) {
+        $uid = preg_replace("/^.+-pidfile " . $regex_tmp . "\/bzfs\.(\d\d\d\d)/u", "$1", $proc);
+
+        $contents = file_get_contents($tmp . "/bzfs-scores." . $uid);
+        $start = strrpos($contents, '#teams ');
+        $scores = substr($contents, $start);
+
+        // Find the last line that begins with 
+
+        $procs[] = array(
+            'uid' => $uid,
+            'port' => preg_replace("/^.+ -p (\d*).+/u", "$1", $proc),
+            'scores' => $scores,
+        );
+
+        
+    }
+
+    return $procs;
+}
