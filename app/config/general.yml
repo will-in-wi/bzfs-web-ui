@@ -1,3 +1,4 @@
 bzflag_path: "/usr/games"
 #bzflag_path: "/Applications/BZFlag-2.4.2.app/Contents/MacOS"
 temp_path: "/tmp"
+map_path: "maps/"
