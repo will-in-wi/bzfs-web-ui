@@ -29,8 +29,10 @@ $app = new \Slim\Slim(array(
 ));
 $twigView::$twigTemplateDirs = array('../app/templates');
 
+define('BASE_URL', $app->request()->getUrl() . str_replace('//', '/', dirname($_SERVER['SCRIPT_NAME']) . '/'));
+
 $app->view()->appendData(array(
-    'base_url' => $app->request()->getUrl() . str_replace('//', '/', dirname($_SERVER['SCRIPT_NAME']) . '/')
+    'base_url' => BASE_URL
 ));
 
 

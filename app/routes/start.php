@@ -408,7 +408,7 @@ $app->post('/start', function () use ($app) {
 	// Add server to list
 	// add_srv($uid, $pid, $cmd);
 
-	$app->redirect('/');
+	$app->redirect(BASE_URL);
 	// header('Location: index.php?id=' . $uid);
 
 
