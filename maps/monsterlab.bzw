@@ -1,0 +1,2162 @@
+### BZFLAG WORLD FILE HEADER
+
+
+# Map name	: Monster Lab
+# File name	: monsterlab.bzw
+# Version	: 1.02
+# Release date	: 2002-11-06
+
+# Designer	: Raimond "Dutchrai" Kuhlman
+# Email address	: dutchrai@yahoo.com
+
+# BZFS Required	: -j -public "Monster Lab by Dutchrai" -world "monsterlab.bzw"
+
+
+### BZFLAG WORLD FILE DATA
+
+
+# Split Walk Complex 1
+
+box
+position	-40.0	-8.0	20.0
+rotation	0.0
+size	40.0	8.0	4.0
+end
+
+box
+position	-8.0	-48.0	20.0
+rotation	0.0
+size	8.0	32.0	4.0
+end
+
+box
+position	8.0	-40.0	20.0
+rotation	0.0
+size	8.0	8.0	20.0
+end
+
+box
+position	-40.0	8.0	20.0
+rotation	0.0
+size	8.0	8.0	20.0
+end
+
+box
+position	-56.0	-56.0	4.0
+rotation	0.0
+size	24.0	24.0	4.0
+end
+
+box
+position	0.0	8.0	0.0
+rotation	0.0
+size	32.0	24.0	8.0
+end
+
+box
+position	8.0	-24.0	0.0
+rotation	0.0
+size	24.0	8.0	8.0
+end
+
+box
+position	-48.0	-48.0	0.0
+rotation	0.0
+size	16.0	16.0	56.0
+end
+
+box
+position	-40.0	0.0	0.0
+rotation	0.0
+size	8.0	16.0	20.0
+end
+
+box
+position	0.0	-40.0	0.0
+rotation	0.0
+size	16.0	8.0	20.0
+end
+
+teleporter
+position	-8.0	-79.5	24.0
+rotation	90.0
+size	0.5	6.0	15.0
+border	1.0
+end
+
+link
+from	0
+to	7
+end
+
+link
+from	1
+to	0
+end
+
+teleporter
+position	-79.5	-8.0	24.0
+rotation	0.0
+size	0.5	6.0	15.0
+border	1.0
+end
+
+link
+from	2
+to	5
+end
+
+link
+from	3
+to	2
+end
+
+
+# Split Walk Complex 2
+
+box
+position	-120.0	-152.0	20.0
+rotation	0.0
+size	40.0	8.0	4.0
+end
+
+box
+position	-152.0	-112.0	20.0
+rotation	0.0
+size	8.0	32.0	4.0
+end
+
+box
+position	-120.0	-168.0	20.0
+rotation	0.0
+size	8.0	8.0	20.0
+end
+
+box
+position	-168.0	-120.0	20.0
+rotation	0.0
+size	8.0	8.0	20.0
+end
+
+box
+position	-104.0	-104.0	12.0
+rotation	0.0
+size	24.0	24.0	4.0
+end
+
+box
+position	-160.0	-168.0	0.0
+rotation	0.0
+size	32.0	24.0	8.0
+end
+
+box
+position	-168.0	-136.0	0.0
+rotation	0.0
+size	24.0	8.0	8.0
+end
+
+box
+position	-112.0	-112.0	0.0
+rotation	0.0
+size	16.0	16.0	56.0
+end
+
+box
+position	-120.0	-160.0	0.0
+rotation	0.0
+size	8.0	16.0	20.0
+end
+
+box
+position	-160.0	-120.0	0.0
+rotation	0.0
+size	16.0	8.0	20.0
+end
+
+teleporter
+position	-152.0	-80.5	24.0
+rotation	90.0
+size	0.5	6.0	15.0
+border	1.0
+end
+
+link
+from	4
+to	5
+end
+
+link
+from	5
+to	2
+end
+
+teleporter
+position	-80.5	-152.0	24.0
+rotation	0.0
+size	0.5	6.0	15.0
+border	1.0
+end
+
+link
+from	6
+to	7
+end
+
+link
+from	7
+to	0
+end
+
+
+# Split Walk Complex Connections
+
+box
+position	-80.0	-80.0	55.0
+rotation	45.0
+size	24.0	0.5	1.0
+end
+
+box
+position	-80.0	-80.0	20.0
+rotation	45.0
+size	31.0	8.0	4.0
+end
+
+
+# Triple Window Bunker
+
+box
+position	-92.0	-264.0	32.0
+rotation	0.0
+size	4.0	8.0	16.0
+end
+
+box
+position	-68.0	-264.0	32.0
+rotation	0.0
+size	4.0	8.0	16.0
+end
+
+box
+position	-80.0	-216.0	32.0
+rotation	0.0
+size	16.0	8.0	16.0
+end
+
+box
+position	-104.0	-248.0	32.0
+rotation	0.0
+size	8.0	24.0	16.0
+end
+
+box
+position	-56.0	-248.0	32.0
+rotation	0.0
+size	8.0	24.0	16.0
+end
+
+box
+position	-104.0	-216.0	0.0
+rotation	0.0
+size	8.0	8.0	48.0
+end
+
+box
+position	-56.0	-216.0	0.0
+rotation	0.0
+size	8.0	8.0	48.0
+end
+
+box
+position	-80.0	-264.0	0.0
+rotation	0.0
+size	32.0	8.0	32.0
+end
+
+teleporter
+position	-80.0	-216.0	0.0
+rotation	90.0
+size	1.0	12.0	30.0
+border	2.0
+end
+
+link
+from	8
+to	8
+end
+
+link
+from	9
+to	8
+end
+
+teleporter
+position	-104.0	-240.0	0.0
+rotation	0.0
+size	1.0	12.0	30.0
+border	2.0
+end
+
+link
+from	10
+to	11
+end
+
+link
+from	11
+to	11
+end
+
+teleporter
+position	-56.0	-240.0	0.0
+rotation	0.0
+size	1.0	12.0	30.0
+border	2.0
+end
+
+link
+from	12
+to	12
+end
+
+link
+from	13
+to	12
+end
+
+
+# Highway to Triple Window Bunker - Level 2
+
+box
+position	-136.0	-332.0	44.0
+rotation	0.0
+size	12.0	12.0	4.0
+end
+
+box
+position	-184.0	-332.0	44.0
+rotation	0.0
+size	12.0	12.0	4.0
+end
+
+box
+position	-136.0	-322.0	32.0
+rotation	0.0
+size	12.0	2.0	12.0
+end
+
+box
+position	-136.0	-342.0	32.0
+rotation	0.0
+size	12.0	2.0	12.0
+end
+
+box
+position	-184.0	-322.0	32.0
+rotation	0.0
+size	12.0	2.0	12.0
+end
+
+box
+position	-184.0	-342.0	32.0
+rotation	0.0
+size	12.0	2.0	12.0
+end
+
+box
+position	-80.0	-296.0	28.0
+rotation	0.0
+size	12.0	24.0	4.0
+end
+
+box
+position	-160.0	-332.0	28.0
+rotation	0.0
+size	92.0	12.0	4.0
+end
+
+box
+position	-240.0	-286.0	28.0
+rotation	0.0
+size	12.0	58.0	4.0
+end
+
+box
+position	-160.0	-332.0	0.0
+rotation	0.0
+size	24.0	24.0	8.0
+end
+
+box
+position	-80.0	-332.0	0.0
+rotation	0.0
+size	8.0	8.0	28.0
+end
+
+box
+position	-136.0	-332.0	0.0
+rotation	0.0
+size	12.0	12.0	28.0
+end
+
+box
+position	-184.0	-332.0	0.0
+rotation	0.0
+size	12.0	12.0	28.0
+end
+
+box
+position	-240.0	-332.0	0.0
+rotation	0.0
+size	8.0	8.0	28.0
+end
+
+teleporter
+position	-172.5	-332.0	32.0
+rotation	0.0
+size	0.5	6.0	11.0
+border	1.0
+end
+
+link
+from	14
+to	15
+end
+
+link
+from	15
+to	16
+end
+
+teleporter
+position	-147.5	-332.0	32.0
+rotation	0.0
+size	0.5	6.0	11.0
+border	1.0
+end
+
+link
+from	16
+to	15
+end
+
+link
+from	17
+to	16
+end
+
+
+# Highway to Triple Window Bunker - Level 1 and 2 Connection
+
+box
+position	-240.0	-230.0	16.0
+rotation	0.0
+size	12.0	2.0	12.0
+end
+
+box
+position	-240.0	-250.0	16.0
+rotation	0.0
+size	12.0	2.0	12.0
+end
+
+box
+position	-240.0	-240.0	0.0
+rotation	0.0
+size	12.0	12.0	12.0
+end
+
+
+# Highway between Triple Window Bunker and Staircase Pyramid Complex - Level 1
+
+box
+position	-276.0	-240.0	12.0
+rotation	0.0
+size	48.0	12.0	4.0
+end
+
+box
+position	-312.0	-200.0	12.0
+rotation	0.0
+size	12.0	28.0	4.0
+end
+
+box
+position	-312.0	-240.0	0.0
+rotation	0.0
+size	8.0	8.0	12.0
+end
+
+
+# Highway to Staircase Pyramid Complex - Level 1 and 2 Connection
+
+box
+position	-312.0	-160.0	28.0
+rotation	0.0
+size	8.0	12.0	4.0
+end
+
+box
+position	-296.0	-160.0	16.0
+rotation	0.0
+size	8.0	12.0	32.0
+end
+
+box
+position	-328.0	-160.0	16.0
+rotation	0.0
+size	8.0	12.0	32.0
+end
+
+box
+position	-312.0	-160.0	0.0
+rotation	0.0
+size	24.0	12.0	16.0
+end
+
+box
+position	-342.0	-160.0	0.0
+rotation	0.0
+size	6.0	24.0	48.0
+end
+
+box
+position	-282.0	-160.0	0.0
+rotation	0.0
+size	6.0	24.0	48.0
+end
+
+box
+position	-260.0	-160.0	0.0
+rotation	0.0
+size	16.0	16.0	8.0
+end
+
+box
+position	-364.0	-160.0	0.0
+rotation	0.0
+size	16.0	16.0	8.0
+end
+
+
+# Highway to Staircase Pyramid Complex - Level 2
+
+box
+position	-312.0	-58.0	28.0
+rotation	0.0
+size	12.0	90.0	4.0
+end
+
+box
+position	-312.0	-58.0	0.0
+rotation	0.0
+size	8.0	8.0	28.0
+end
+
+
+# Staircase Pyramid Complex
+
+box
+position	-322.0	176.0	44.0
+rotation	0.0
+size	42.0	12.0	4.0
+end
+
+box
+position	-312.0	64.0	32.0
+rotation	0.0
+size	16.0	16.0	16.0
+end
+
+box
+position	-264.0	176.0	32.0
+rotation	0.0
+size	16.0	16.0	32.0
+end
+
+box
+position	-264.0	242.0	28.0
+rotation	0.0
+size	12.0	34.0	4.0
+end
+
+box
+position	-288.0	128.0	28.0
+rotation	0.0
+size	8.0	32.0	4.0
+end
+
+box
+position	-312.0	64.0	16.0
+rotation	0.0
+size	32.0	32.0	16.0
+end
+
+box
+position	-198.0	176.0	12.0
+rotation	0.0
+size	34.0	12.0	4.0
+end
+
+box
+position	-312.0	64.0	12.0
+rotation	0.0
+size	48.0	48.0	4.0
+end
+
+box
+position	-352.0	176.0	8.0
+rotation	0.0
+size	8.0	8.0	36.0
+end
+
+box
+position	-176.0	176.0	8.0
+rotation	0.0
+size	8.0	8.0	4.0
+end
+
+box
+position	-264.0	264.0	8.0
+rotation	0.0
+size	8.0	8.0	20.0
+end
+
+box
+position	-272.0	64.0	1.82
+rotation	0.0
+size	4.0	16.0	10.18
+end
+
+box
+position	-352.0	176.0	0.0
+rotation	0.0
+size	24.0	24.0	8.0
+end
+
+box
+position	-176.0	176.0	0.0
+rotation	0.0
+size	24.0	24.0	8.0
+end
+
+box
+position	-264.0	264.0	0.0
+rotation	0.0
+size	24.0	24.0	8.0
+end
+
+box
+position	-264.0	176.0	0.0
+rotation	0.0
+size	32.0	32.0	32.0
+end
+
+box
+position	-280.0	32.0	0.0
+rotation	0.0
+size	16.0	16.0	12.0
+end
+
+box
+position	-280.0	96.0	0.0
+rotation	0.0
+size	16.0	16.0	12.0
+end
+
+box
+position	-344.0	32.0	0.0
+rotation	0.0
+size	16.0	16.0	12.0
+end
+
+box
+position	-344.0	96.0	0.0
+rotation	0.0
+size	16.0	16.0	12.0
+end
+
+box
+position	-272.0	64.0	0.0
+rotation	0.0
+size	4.0	16.0	1.31
+end
+
+
+# Teleporter Bush 1
+
+teleporter
+position	-200.0	0.0	0.0
+rotation	30.0
+size	0.5	5.0	20.0
+border	1.0
+end
+
+link
+from	18
+to	20
+end
+
+link
+from	19
+to	23
+end
+
+teleporter
+position	-170.0	45.0	0.0
+rotation	-10.0
+size	0.5	5.0	20.0
+border	1.0
+end
+
+link
+from	20
+to	22
+end
+
+link
+from	21
+to	19
+end
+
+teleporter
+position	-155.0	15.0	0.0
+rotation	75.0
+size	0.5	5.0	20.0
+border	1.0
+end
+
+link
+from	22
+to	18
+end
+
+link
+from	23
+to	21
+end
+
+
+# Chaotic Box Cluster 1
+
+box
+position	-120.0	295.0	0.0
+rotation	-35.0
+size	30.0	30.0	12.0
+end
+
+box
+position	-80.0	276.0	0.0
+rotation	20.0
+size	40.0	25.0	20.0
+end
+
+box
+position	40.0	320.0	0.0
+rotation	40.0
+size	20.0	50.0	15.0
+end
+
+box
+position	-50.0	170.0	0.0
+rotation	-20.0
+size	35.0	35.0	30.0
+end
+
+box
+position	-60.0	120.0	0.0
+rotation	-10.0
+size	20.0	40.0	15.0
+end
+
+box
+position	20.0	170.0	0.0
+rotation	-30.0
+size	15.0	40.0	10.0
+end
+
+
+# Teleporter Corner Matrix
+
+teleporter
+position	-325.0	-350.0	0.0
+rotation	0.0
+size	0.5	5.0	20.0
+border	1.0
+end
+
+link
+from	24
+to	39
+end
+
+link
+from	25
+to	38
+end
+
+teleporter
+position	-350.0	-325.0	0.0
+rotation	270.0
+size	0.5	5.0	20.0
+border	1.0
+end
+
+link
+from	26
+to	29
+end
+
+link
+from	27
+to	28
+end
+
+teleporter
+position	-350.0	325.0	0.0
+rotation	270.0
+size	0.5	5.0	20.0
+border	1.0
+end
+
+link
+from	28
+to	27
+end
+
+link
+from	29
+to	26
+end
+
+teleporter
+position	-325.0	350.0	0.0
+rotation	180.0
+size	0.5	5.0	20.0
+border	1.0
+end
+
+link
+from	30
+to	33
+end
+
+link
+from	31
+to	32
+end
+
+teleporter
+position	325.0	350.0	0.0
+rotation	180.0
+size	0.5	5.0	20.0
+border	1.0
+end
+
+link
+from	32
+to	31
+end
+
+link
+from	33
+to	30
+end
+
+teleporter
+position	350.0	325.0	0.0
+rotation	90.0
+size	0.5	5.0	20.0
+border	1.0
+end
+
+link
+from	34
+to	37
+end
+
+link
+from	35
+to	36
+end
+
+teleporter
+position	350.0	-325.0	0.0
+rotation	90.0
+size	0.5	5.0	20.0
+border	1.0
+end
+
+link
+from	36
+to	35
+end
+
+link
+from	37
+to	34
+end
+
+teleporter
+position	325.0	-350.0	0.0
+rotation	0.0
+size	0.5	5.0	20.0
+border	1.0
+end
+
+link
+from	38
+to	25
+end
+
+link
+from	39
+to	24
+end
+
+
+# Three Tower Complex - Tower 1
+
+box
+position	160.0	184.0	20.0
+rotation	0.0
+size	32.0	8.0	4.0
+end
+
+box
+position	200.0	240.0	20.0
+rotation	0.0
+size	8.0	64.0	4.0
+end
+
+box
+position	168.0	168.0	20.0
+rotation	0.0
+size	8.0	8.0	20.0
+end
+
+box
+position	184.0	264.0	20.0
+rotation	0.0
+size	8.0	8.0	20.0
+end
+
+box
+position	216.0	264.0	20.0
+rotation	0.0
+size	8.0	8.0	20.0
+end
+
+box
+position	160.0	224.0	0.0
+rotation	0.0
+size	16.0	16.0	56.0
+end
+
+box
+position	208.0	224.0	0.0
+rotation	0.0
+size	16.0	32.0	8.0
+end
+
+box
+position	200.0	176.0	0.0
+rotation	0.0
+size	24.0	16.0	8.0
+end
+
+box
+position	168.0	176.0	0.0
+rotation	0.0
+size	8.0	16.0	20.0
+end
+
+box
+position	200.0	264.0	0.0
+rotation	0.0
+size	24.0	8.0	20.0
+end
+
+teleporter
+position	200.0	303.5	24.0
+rotation	90.0
+size	0.5	6.0	15.0
+border	1.0
+end
+
+link
+from	40
+to	41
+end
+
+link
+from	41
+to	42
+end
+
+teleporter
+position	128.5	184.0	24.0
+rotation	0.0
+size	0.5	6.0	15.0
+border	1.0
+end
+
+link
+from	42
+to	41
+end
+
+link
+from	43
+to	42
+end
+
+
+# Three Tower Complex - Tower 2
+
+box
+position	280.0	200.0	12.0
+rotation	0.0
+size	40.0	8.0	4.0
+end
+
+box
+position	240.0	136.0	12.0
+rotation	0.0
+size	80.0	8.0	4.0
+end
+
+box
+position	248.0	168.0	12.0
+rotation	0.0
+size	8.0	24.0	4.0
+end
+
+box
+position	312.0	168.0	12.0
+rotation	0.0
+size	8.0	24.0	4.0
+end
+
+box
+position	328.0	168.0	12.0
+rotation	0.0
+size	8.0	8.0	20.0
+end
+
+box
+position	280.0	216.0	12.0
+rotation	0.0
+size	8.0	8.0	20.0
+end
+
+box
+position	272.0	160.0	0.0
+rotation	0.0
+size	16.0	16.0	48.0
+end
+
+box
+position	320.0	224.0	0.0
+rotation	0.0
+size	32.0	16.0	4.0
+end
+
+box
+position	336.0	192.0	0.0
+rotation	0.0
+size	16.0	16.0	4.0
+end
+
+box
+position	320.0	168.0	0.0
+rotation	0.0
+size	16.0	8.0	12.0
+end
+
+box
+position	280.0	208.0	0.0
+rotation	0.0
+size	8.0	16.0	12.0
+end
+
+
+# Three Tower Complex - Tower 3
+
+box
+position	248.0	96.0	12.0
+rotation	0.0
+size	8.0	32.0	4.0
+end
+
+box
+position	168.0	96.0	12.0
+rotation	0.0
+size	8.0	32.0	4.0
+end
+
+box
+position	264.0	104.0	12.0
+rotation	0.0
+size	8.0	8.0	20.0
+end
+
+box
+position	152.0	104.0	12.0
+rotation	0.0
+size	8.0	8.0	20.0
+end
+
+box
+position	152.0	112.0	4.0
+rotation	0.0
+size	24.0	16.0	4.0
+end
+
+box
+position	208.0	112.0	0.0
+rotation	0.0
+size	16.0	16.0	48.0
+end
+
+box
+position	256.0	104.0	0.0
+rotation	0.0
+size	16.0	8.0	12.0
+end
+
+box
+position	160.0	104.0	0.0
+rotation	0.0
+size	16.0	8.0	12.0
+end
+
+box
+position	208.0	80.0	0.0
+rotation	0.0
+size	16.0	16.0	4.0
+end
+
+box
+position	208.0	48.0	0.0
+rotation	0.0
+size	16.0	16.0	32.0
+end
+
+teleporter
+position	168.0	64.5	16.0
+rotation	90.0
+size	0.5	6.0	15.0
+border	1.0
+end
+
+link
+from	44
+to	46
+end
+
+link
+from	45
+to	44
+end
+
+teleporter
+position	248.0	64.5	16.0
+rotation	90.0
+size	0.5	6.0	15.0
+border	1.0
+end
+
+link
+from	46
+to	44
+end
+
+link
+from	47
+to	46
+end
+
+
+# Laberatory Complex - Section 2 and Section 3 Connection
+
+box
+position	280.0	-210.0	31.0
+rotation	0.0
+size	0.5	48.0	1.0
+end
+
+
+# Laberatory Complex - Section 1
+
+box
+position	120.0	-280.0	16.0
+rotation	0.0
+size	22.0	22.0	8.0
+end
+
+box
+position	120.0	-330.0	16.0
+rotation	0.0
+size	22.0	12.0	8.0
+end
+
+box
+position	90.0	-310.0	12.0
+rotation	0.0
+size	8.0	12.0	4.0
+end
+
+box
+position	220.0	-370.0	12.0
+rotation	0.0
+size	22.0	32.0	4.0
+end
+
+box
+position	170.0	-350.0	12.0
+rotation	0.0
+size	28.0	12.0	4.0
+end
+
+box
+position	120.0	-352.0	12.0
+rotation	0.0
+size	22.0	10.0	4.0
+end
+
+box
+position	70.0	-310.0	12.0
+rotation	0.0
+size	12.0	8.0	4.0
+end
+
+box
+position	70.0	-352.0	12.0
+rotation	0.0
+size	12.0	10.0	4.0
+end
+
+box
+position	240.0	-360.0	0.0
+rotation	0.0
+size	2.0	22.0	12.0
+end
+
+box
+position	200.0	-380.0	0.0
+rotation	0.0
+size	2.0	22.0	12.0
+end
+
+box
+position	222.0	-400.0	0.0
+rotation	0.0
+size	20.0	2.0	12.0
+end
+
+box
+position	198.0	-340.0	0.0
+rotation	0.0
+size	40.0	2.0	12.0
+end
+
+box
+position	148.0	-360.0	0.0
+rotation	0.0
+size	50.0	2.0	12.0
+end
+
+box
+position	120.0	-300.0	0.0
+rotation	0.0
+size	22.0	42.0	16.0
+end
+
+box
+position	70.0	-280.0	0.0
+rotation	0.0
+size	12.0	22.0	16.0
+end
+
+box
+position	70.0	-330.0	0.0
+rotation	0.0
+size	12.0	12.0	16.0
+end
+
+box
+position	70.0	-360.0	0.0
+rotation	0.0
+size	12.0	2.0	12.0
+end
+
+teleporter
+position	150.0	-340.0	0.0
+rotation	90.0
+size	0.5	6.0	11.0
+border	1.0
+end
+
+link
+from	48
+to	48
+end
+
+link
+from	49
+to	48
+end
+
+
+# Laberatory Complex - Section 2
+
+box
+position	230.0	-280.0	44.0
+rotation	0.0
+size	32.0	22.0	4.0
+end
+
+box
+position	330.0	-280.0	44.0
+rotation	0.0
+size	32.0	22.0	4.0
+end
+
+box
+position	280.0	-295.0	44.0
+rotation	0.0
+size	18.0	7.0	4.0
+end
+
+box
+position	280.0	-265.0	44.0
+rotation	0.0
+size	18.0	7.0	4.0
+end
+
+box
+position	252.0	-260.0	32.0
+rotation	0.0
+size	10.0	2.0	12.0
+end
+
+box
+position	308.0	-260.0	32.0
+rotation	0.0
+size	10.0	2.0	12.0
+end
+
+box
+position	252.0	-300.0	32.0
+rotation	0.0
+size	10.0	2.0	12.0
+end
+
+box
+position	308.0	-300.0	32.0
+rotation	0.0
+size	10.0	2.0	12.0
+end
+
+box
+position	280.0	-280.0	28.0
+rotation	0.0
+size	38.0	22.0	4.0
+end
+
+box
+position	178.0	-280.0	12.0
+rotation	0.0
+size	20.0	22.0	4.0
+end
+
+box
+position	382.0	-280.0	12.0
+rotation	0.0
+size	20.0	22.0	4.0
+end
+
+box
+position	360.0	-280.0	12.0
+rotation	0.0
+size	2.0	18.0	32.0
+end
+
+box
+position	240.0	-280.0	12.0
+rotation	0.0
+size	2.0	18.0	20.0
+end
+
+box
+position	320.0	-280.0	12.0
+rotation	0.0
+size	2.0	18.0	20.0
+end
+
+box
+position	200.0	-280.0	12.0
+rotation	0.0
+size	2.0	18.0	32.0
+end
+
+box
+position	180.0	-260.0	0.0
+rotation	0.0
+size	18.0	2.0	12.0
+end
+
+box
+position	180.0	-300.0	0.0
+rotation	0.0
+size	18.0	2.0	12.0
+end
+
+box
+position	160.0	-280.0	0.0
+rotation	0.0
+size	2.0	22.0	12.0
+end
+
+box
+position	380.0	-260.0	0.0
+rotation	0.0
+size	18.0	2.0	12.0
+end
+
+box
+position	380.0	-300.0	0.0
+rotation	0.0
+size	18.0	2.0	12.0
+end
+
+box
+position	400.0	-280.0	0.0
+rotation	0.0
+size	2.0	22.0	12.0
+end
+
+box
+position	220.0	-260.0	0.0
+rotation	0.0
+size	22.0	2.0	44.0
+end
+
+box
+position	220.0	-300.0	0.0
+rotation	0.0
+size	22.0	2.0	44.0
+end
+
+box
+position	340.0	-260.0	0.0
+rotation	0.0
+size	22.0	2.0	44.0
+end
+
+box
+position	340.0	-300.0	0.0
+rotation	0.0
+size	22.0	2.0	44.0
+end
+
+teleporter
+position	240.0	-280.0	0.0
+rotation	0.0
+size	0.5	16.0	11.0
+border	1.0
+end
+
+link
+from	50
+to	52
+end
+
+link
+from	51
+to	50
+end
+
+teleporter
+position	240.0	-280.0	32.0
+rotation	0.0
+size	0.5	16.0	11.0
+border	1.0
+end
+
+link
+from	52
+to	53
+end
+
+link
+from	53
+to	52
+end
+
+teleporter
+position	320.0	-280.0	0.0
+rotation	0.0
+size	0.5	16.0	11.0
+border	1.0
+end
+
+link
+from	54
+to	55
+end
+
+link
+from	55
+to	57
+end
+
+teleporter
+position	320.0	-280.0	32.0
+rotation	0.0
+size	0.5	16.0	11.0
+border	1.0
+end
+
+link
+from	56
+to	57
+end
+
+link
+from	57
+to	56
+end
+
+teleporter
+position	280.0	-260.0	32.0
+rotation	90.0
+size	0.5	16.0	11.0
+border	1.0
+end
+
+link
+from	58
+to	61
+end
+
+link
+from	59
+to	58
+end
+
+teleporter
+position	280.0	-300.0	32.0
+rotation	90.0
+size	0.5	16.0	11.0
+border	1.0
+end
+
+link
+from	60
+to	61
+end
+
+link
+from	61
+to	58
+end
+
+
+# Laberatory Complex - Section 3
+
+box
+position	220.0	-170.0	44.0
+rotation	0.0
+size	22.0	32.0	4.0
+end
+
+box
+position	320.0	-80.0	44.0
+rotation	0.0
+size	42.0	22.0	4.0
+end
+
+box
+position	320.0	-60.0	32.0
+rotation	0.0
+size	42.0	2.0	12.0
+end
+
+box
+position	320.0	-100.0	32.0
+rotation	0.0
+size	42.0	2.0	12.0
+end
+
+box
+position	320.0	-140.0	28.0
+rotation	0.0
+size	62.0	22.0	4.0
+end
+
+box
+position	320.0	-80.0	28.0
+rotation	0.0
+size	42.0	22.0	4.0
+end
+
+box
+position	380.0	-140.0	16.0
+rotation	0.0
+size	2.0	18.0	12.0
+end
+
+box
+position	260.0	-140.0	16.0
+rotation	0.0
+size	2.0	18.0	12.0
+end
+
+box
+position	355.0	-120.0	16.0
+rotation	0.0
+size	27.0	2.0	12.0
+end
+
+box
+position	355.0	-160.0	16.0
+rotation	0.0
+size	27.0	2.0	12.0
+end
+
+box
+position	285.0	-120.0	16.0
+rotation	0.0
+size	27.0	2.0	12.0
+end
+
+box
+position	285.0	-160.0	16.0
+rotation	0.0
+size	27.0	2.0	12.0
+end
+
+box
+position	220.0	-140.0	16.0
+rotation	0.0
+size	18.0	2.0	28.0
+end
+
+box
+position	200.0	-170.0	16.0
+rotation	0.0
+size	2.0	32.0	28.0
+end
+
+box
+position	240.0	-170.0	16.0
+rotation	0.0
+size	2.0	32.0	28.0
+end
+
+box
+position	350.0	-80.0	16.0
+rotation	0.0
+size	12.0	22.0	12.0
+end
+
+box
+position	170.0	-160.0	16.0
+rotation	0.0
+size	12.0	42.0	16.0
+end
+
+box
+position	360.0	-50.0	12.0
+rotation	0.0
+size	22.0	8.0	4.0
+end
+
+box
+position	360.0	-110.0	12.0
+rotation	0.0
+size	22.0	8.0	4.0
+end
+
+box
+position	340.0	-140.0	12.0
+rotation	0.0
+size	2.0	18.0	4.0
+end
+
+box
+position	320.0	-140.0	12.0
+rotation	0.0
+size	18.0	22.0	4.0
+end
+
+box
+position	308.0	-50.0	12.0
+rotation	0.0
+size	30.0	12.0	4.0
+end
+
+box
+position	300.0	-140.0	12.0
+rotation	0.0
+size	2.0	18.0	4.0
+end
+
+box
+position	295.0	-280.0	12.0
+rotation	0.0
+size	7.0	18.0	4.0
+end
+
+box
+position	290.0	-70.0	12.0
+rotation	0.0
+size	12.0	8.0	4.0
+end
+
+box
+position	280.0	-210.0	12.0
+rotation	0.0
+size	22.0	52.0	4.0
+end
+
+box
+position	280.0	-330.0	12.0
+rotation	0.0
+size	22.0	32.0	4.0
+end
+
+box
+position	265.0	-280.0	12.0
+rotation	0.0
+size	7.0	18.0	4.0
+end
+
+box
+position	260.0	-140.0	12.0
+rotation	0.0
+size	2.0	18.0	4.0
+end
+
+box
+position	250.0	-110.0	12.0
+rotation	0.0
+size	8.0	8.0	4.0
+end
+
+box
+position	248.0	-148.0	12.0
+rotation	0.0
+size	10.0	30.0	4.0
+end
+
+box
+position	230.0	-200.0	12.0
+rotation	0.0
+size	28.0	22.0	4.0
+end
+
+box
+position	220.0	-130.0	12.0
+rotation	0.0
+size	18.0	12.0	4.0
+end
+
+box
+position	218.0	-90.0	12.0
+rotation	0.0
+size	40.0	12.0	4.0
+end
+
+box
+position	190.0	-212.0	12.0
+rotation	0.0
+size	12.0	10.0	4.0
+end
+
+box
+position	190.0	-110.0	12.0
+rotation	0.0
+size	12.0	8.0	4.0
+end
+
+box
+position	180.0	-160.0	12.0
+rotation	0.0
+size	22.0	42.0	4.0
+end
+
+box
+position	130.0	-210.0	12.0
+rotation	0.0
+size	12.0	8.0	4.0
+end
+
+box
+position	360.0	-110.0	0.0
+rotation	0.0
+size	2.0	8.0	12.0
+end
+
+box
+position	380.0	-140.0	0.0
+rotation	0.0
+size	2.0	18.0	16.0
+end
+
+box
+position	360.0	-160.0	0.0
+rotation	0.0
+size	22.0	2.0	16.0
+end
+
+box
+position	360.0	-20.0	0.0
+rotation	0.0
+size	22.0	22.0	32.0
+end
+
+box
+position	360.0	-80.0	0.0
+rotation	0.0
+size	22.0	22.0	16.0
+end
+
+box
+position	360.0	-120.0	0.0
+rotation	0.0
+size	22.0	2.0	16.0
+end
+
+box
+position	360.0	40.0	0.0
+rotation	0.0
+size	22.0	22.0	16.0
+end
+
+box
+position	300.0	-290.0	0.0
+rotation	0.0
+size	2.0	72.0	12.0
+end
+
+box
+position	300.0	-180.0	0.0
+rotation	0.0
+size	2.0	22.0	12.0
+end
+
+box
+position	290.0	-50.0	0.0
+rotation	0.0
+size	8.0	8.0	12.0
+end
+
+box
+position	280.0	-100.0	0.0
+rotation	0.0
+size	22.0	22.0	16.0
+end
+
+box
+position	260.0	-290.0	0.0
+rotation	0.0
+size	2.0	72.0	12.0
+end
+
+box
+position	250.0	-180.0	0.0
+rotation	0.0
+size	12.0	22.0	12.0
+end
+
+box
+position	220.0	-190.0	0.0
+rotation	0.0
+size	18.0	12.0	12.0
+end
+
+box
+position	218.0	-220.0	0.0
+rotation	0.0
+size	40.0	2.0	12.0
+end
+
+box
+position	208.0	-120.0	0.0
+rotation	0.0
+size	50.0	2.0	12.0
+end
+
+box
+position	190.0	-90.0	0.0
+rotation	0.0
+size	8.0	8.0	12.0
+end
+
+box
+position	190.0	-180.0	0.0
+rotation	0.0
+size	12.0	22.0	12.0
+end
+
+box
+position	160.0	-160.0	0.0
+rotation	0.0
+size	2.0	42.0	12.0
+end
+
+box
+position	130.0	-160.0	0.0
+rotation	0.0
+size	12.0	42.0	16.0
+end
+
+box
+position	130.0	-220.0	0.0
+rotation	0.0
+size	12.0	2.0	16.0
+end
+
+teleporter
+position	320.0	-120.0	16.0
+rotation	90.0
+size	0.5	6.0	11.0
+border	1.0
+end
+
+link
+from	62
+to	65
+end
+
+link
+from	63
+to	62
+end
+
+teleporter
+position	320.0	-160.0	16.0
+rotation	90.0
+size	0.5	6.0	11.0
+border	1.0
+end
+
+link
+from	64
+to	65
+end
+
+link
+from	65
+to	62
+end
+
+teleporter
+position	280.0	-80.0	32.0
+rotation	0.0
+size	0.5	16.0	11.0
+border	1.0
+end
+
+link
+from	66
+to	67
+end
+
+link
+from	67
+to	67
+end
+
+
+# Teleporter Bush 2
+
+teleporter
+position	120.0	-40.0	0.0
+rotation	20.0
+size	0.5	5.0	20.0
+border	1.0
+end
+
+link
+from	68
+to	70
+end
+
+link
+from	69
+to	73
+end
+
+teleporter
+position	100.0	-10.0	0.0
+rotation	50.0
+size	0.5	5.0	20.0
+border	1.0
+end
+
+link
+from	70
+to	72
+end
+
+link
+from	71
+to	69
+end
+
+teleporter
+position	90.0	-90.0	0.0
+rotation	-15.0
+size	0.5	5.0	20.0
+border	1.0
+end
+
+link
+from	72
+to	68
+end
+
+link
+from	73
+to	71
+end
+
+
+# Pyramids for Laser Deflection NW Quarter
+
+pyramid
+position	-140.0	100.0	0.0
+rotation	0.0
+size	10.0	10.0	10.0
+end
+
+pyramid
+position	-340.0	280.0	0.0
+rotation	0.0
+size	10.0	10.0	10.0
+end
+
+pyramid
+position	-280.0	330.0	0.0
+rotation	0.0
+size	10.0	10.0	10.0
+end
+
+pyramid
+position	-240.0	360.0	0.0
+rotation	0.0
+size	10.0	10.0	10.0
+end
+
+pyramid
+position	-50.0	350.0	0.0
+rotation	0.0
+size	10.0	10.0	10.0
+end
+
+
+# Pyramids for Laser Deflection NE Quarter
+
+pyramid
+position	270.0	310.0	0.0
+rotation	0.0
+size	10.0	10.0	10.0
+end
+
+pyramid
+position	230.0	370.0	0.0
+rotation	0.0
+size	10.0	10.0	10.0
+end
+
+pyramid
+position	370.0	130.0	0.0
+rotation	0.0
+size	10.0	10.0	10.0
+end
+
+pyramid
+position	50.0	100.0	0.0
+rotation	0.0
+size	10.0	10.0	10.0
+end
+
+
+# Pyramids for Laser Deflection SE Quarter
+
+pyramid
+position	20.0	-340.0	0.0
+rotation	0.0
+size	10.0	10.0	10.0
+end
+
+pyramid
+position	350.0	-210.0	0.0
+rotation	0.0
+size	10.0	10.0	10.0
+end
+
+pyramid
+position	180.0	-10.0	0.0
+rotation	0.0
+size	10.0	10.0	10.0
+end
+
+
+# Pyramids for Laser Deflection SW Quarter
+
+pyramid
+position	-40.0	-380.0	0.0
+rotation	0.0
+size	10.0	10.0	10.0
+end
+
+pyramid
+position	-370.0	-280.0	0.0
+rotation	0.0
+size	10.0	10.0	10.0
+end
+
+pyramid
+position	-290.0	-350.0	0.0
+rotation	0.0
+size	10.0	10.0	10.0
+end
+
+pyramid
+position	-0.0	-150.0	0.0
+rotation	0.0
+size	10.0	10.0	10.0
+end
+
+pyramid
+position	-220.0	-60.0	0.0
+rotation	0.0
+size	10.0	10.0	10.0
+end
+
+pyramid
+position	-260.0	-90.0	0.0
+rotation	0.0
+size	10.0	10.0	10.0
+end
+
+
+# Obelisk
+
+box
+position	-10.0	230.0	0.0
+rotation	0.0
+size	3.0	3.0	40.0
+end
+
+pyramid
+position	-10.0	230.0	40.0
+rotation	0.0
+size	3.0	3.0	6.0
+end

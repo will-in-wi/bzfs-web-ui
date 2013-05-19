@@ -1,0 +1,166 @@
+# World built with bzedit32 world class, available at
+# http://www.sourceforge.net/projects/bzflag
+
+options
+-set _shotSpeed 750
+-set _wingsJumpCount 10000
+-set _reloadTime 0.9
+-set _shotRange 1000
+-set _shockAdLife 60
+-set _shockOutRadius 100
+end
+
+box
+name Box
+	position -225 0 0
+	rotation 0
+	size 175 10 40
+end
+
+box
+name Box
+	position 225 0 0
+	rotation 0
+	size 175 10 40
+end
+
+box
+name Box
+	position 0 0 20
+	rotation 0
+	size 175 10 20
+end
+
+box
+name Box
+	position 0 50 0
+	rotation 0
+	size 50 10 10
+end
+
+box
+name Box
+	position 0 -50 0
+	rotation 0
+	size 50 10 10
+end
+
+box
+name Box
+	position -195 -90 0
+	rotation 90
+	size 14 140 10
+end
+
+box
+name Box copy
+	position 195 -90 0
+	rotation 90
+	size 14 140 10
+end
+
+box
+name Box copy 1
+	position 195 90 0
+	rotation 90
+	size 14 140 10
+end
+
+box
+name Box copy 2
+	position -195 90 0
+	rotation 90
+	size 14 140 10
+end
+
+  group half
+    name red
+    team 1
+    tint 1 0 0 1 
+  end
+
+  group half
+    name blue
+    spin 180 0 0 1
+    team 3
+    tint 0 1 1 1 
+  end
+
+zone
+	position 0 0 0
+	size 10 10 0
+	rotation 0
+	flag GM
+end
+
+zone
+	position 0 0 0
+	size 10 10 0
+	rotation 0
+	flag WG
+end
+
+physics
+  name moat1
+  death Sunk In Moat
+end
+
+
+define moat
+  box
+    position 119.5 275 0
+    size 0.5 125 1.5
+    rotation 0
+  end
+  box
+    position 0 150 0
+    size 0.5 120 1.5
+    rotation -90
+  end
+  box
+    position -119.5 275 0
+    size 0.5 125 1.5
+    rotation -180
+  end
+  box
+    position 100.5 285 0
+    size 0.5 115 1.5
+    rotation 0
+  end
+  box
+    position 0.5 170 0
+    size 0.5 100.5 1.5
+    rotation -90
+  end
+  box
+    position -100.5 285 0
+    size 0.5 115 1.5
+    rotation -180
+  end
+  group boxreplac
+    name moat_7
+    scale 9 125 1
+    spin -180 0 0 1
+    shift 110 275 0
+    phydrv moat1
+    matref water
+  end
+  group boxreplac
+    name moat_8
+    scale 9.5 101 1
+    spin 90 0 0 1
+    shift 0 160 0
+    phydrv moat1
+    matref water
+  end
+  group boxreplac
+    name moat_9
+    scale 9 125 1
+    shift -110 275 0
+    phydrv moat1
+    matref water
+  end
+enddef
+
+
+

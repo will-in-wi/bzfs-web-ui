@@ -1,0 +1,967 @@
+world 
+  name The Ultimate Bridge Battle
+  size 400 
+end 
+
+options 
+  -world "The Ultimate Bridge Battle!"
+  -public
+  -autoTeam  
+  -c
+  -j
+  -lagdrop 3
+  -lagwarn 500
+  +r
+  -fb
+  -srvmsg ###########################
+  -srvmsg #     Welcome to The      #
+  -srvmsg # Ultimate Bridge Battle! #
+  -srvmsg ###########################
+  -srvmsg This is a quite challenging
+  -srvmsg map, so don't worry if you
+  -srvmsg to be killed a lot.
+  -admsg Be fair and don't cheat,
+  -admsg TKers are auto-kicked.
+  -admsg But the most important
+  -admsg rule of all is HAVE FUN!
+  -mp 200|0,0,100,100,0,10
+  -tkkr 50
+end
+
+waterLevel
+ name river
+ height 5
+end
+
+physics 
+ name drown
+ death Oh no! You drown in river! 
+end
+
+physics 
+ name mine
+ death You were blown up by a mine! 
+end
+
+zone 
+  name blue
+  size 10 10 0
+  pos 0 390 41 
+  team 3 
+  zoneflag B*
+end
+
+zone 
+  name green
+  size 10 10 10  
+  pos 0 -390 41 
+  team 2
+  zoneflag G*
+end
+
+zone 
+  name main1
+  size 400 400 100 
+  pos 0 0 40
+  zoneflag SW 10 
+end
+
+zone 
+  name main2
+  size 400 400 100 
+  pos 0 0 40
+  zoneflag SB 10 
+end
+
+zone 
+  name main3
+  size 400 400 100 
+  pos 0 0 40
+  zoneflag T 10 
+end
+
+zone 
+  name main4
+  size 400 400 100 
+  pos 0 0 40
+  zoneflag WG 10 
+end
+
+zone 
+  name main5
+  size 400 400 100 
+  pos 0 0 40
+  zoneflag A 10 
+end
+
+zone 
+  name main6
+  size 400 400 100 
+  pos 0 0 40
+  zoneflag IB 10 
+end
+
+zone 
+  name gm y-x+
+  size 0.1 0.1 0.1 
+  pos 75 -170 52
+  zoneflag GM 4
+end
+
+zone 
+  name gm y+x+
+  size 0.1 0.1 0.1 
+  pos 75 170 52
+  zoneflag GM 4
+end
+
+zone 
+  name gm y-x-
+  size 0.1 0.1 0.1 
+  pos -75 -170 52
+  zoneflag GM 4
+end
+
+zone 
+  name gm y+x-
+  size 0.1 0.1 0.1 
+  pos -75 170 52
+  zoneflag GM 4
+end
+
+define house
+
+box
+name House y+x-
+	position -89 170 40
+	rotation 0
+	size 1 40 1.5
+end
+
+box
+name House y+x- f2
+	position -75 170 47
+	rotation 0
+	size 15 40 12
+end
+
+box
+name House y+x- copy
+	position -61 160 40
+	rotation 0
+	size 1 30 1.5
+end
+
+box
+name House y+x- copy 1
+	position -75 131 40
+	rotation 0
+	size 15 1 1.5
+end
+
+box
+name House y+x- copy 2
+	position -75 209 40
+	rotation 0
+	size 15 1 1.5
+end
+
+box
+name House y+x- copy 3
+	position -75 209 42
+	rotation 0
+	size 15 1 5
+end
+
+box
+name House y+x- copy 1
+	position -61 160 42
+	rotation 0
+	size 1 30 5
+end
+
+box
+name House y+x- copy
+	position -89 170 42
+	rotation 0
+	size 1 40 5
+end
+
+box
+name House y+x- copy 2
+	position -75 131 42
+	rotation 0
+	size 15 1 5
+end
+
+box
+name Box
+	position -61 131 40
+	rotation 0
+	size 1 1 6
+end
+
+box
+name Box copy
+	position -89 131 40
+	rotation 0
+	size 1 1 6
+end
+
+box
+name Box copy 1
+	position -89 209 40
+	rotation 0
+	size 1 1 6
+end
+
+box
+name Box copy 2
+	position -61 209 40
+	rotation 0
+	size 1 1 6
+end
+
+box
+name Box copy 2
+	position -89 170 40
+	rotation 0
+	size 1 1 6
+end
+
+box
+name Box copy 3
+	position -61 189 40
+	rotation 0
+	size 1 1 6
+end
+
+
+enddef
+
+#end of house
+
+group house
+	shift 0 0 0
+	scale 1 1 1
+	shear 0 0 0
+	spin 0 0 0
+end
+
+group house
+	shift 150 0 0
+	scale 1 1 1
+	shear 0 0 0
+	spin 0 0 0
+end
+
+group house
+	shift 150 -340 0
+	scale 1 1 1
+	shear 0 0 0
+	spin 0 0 180
+end
+
+group house
+	shift 0 -340 0
+	scale 1 1 1
+	shear 0 0 0
+	spin 0 0 180
+end
+
+meshbox
+name Land blue
+	position 0 250 0
+	rotation 0
+	size 400 150 38.5
+end
+
+meshbox
+name Land green
+	position 0 -250 0
+	rotation 0
+	size 400 150 38.5
+end
+
+meshbox
+name Bridge
+	position 0 0 39
+	rotation 0
+	size 50 100 2.5
+end
+
+base
+name Base blue
+	position 0 390 38.5
+	rotation 0
+	size 10 10 1
+	color 3
+end
+
+base
+name Base green
+	position 0 -390 38.5
+	rotation 0
+	size 10 10 1
+	color 2
+end
+
+meshbox
+name Bridge wall x+
+	position 50 0 40
+	rotation 0
+	size 0 100 5
+	shootthrough
+end
+
+meshbox
+name Bridge wall x-
+	position -50 0 40
+	rotation 0
+	size 0 100 5
+	shootthrough
+end
+
+meshbox
+name Barrier y+x+
+	position 80 100 40
+	rotation 0
+	size 30 0 5
+	shootthrough
+end
+
+meshbox
+name Barrier y+x-
+	position -80 100 40
+	rotation 0
+	size 30 0 5
+	shootthrough
+end
+
+meshbox
+name Barrier y-x+
+	position 80 -100 40
+	rotation 0
+	size 30 0 5
+	shootthrough
+end
+
+meshbox
+name Barrier y-x-
+	position -80 -100 40
+	rotation 0
+	size 30 0 5
+	shootthrough
+end
+
+meshbox
+name Mine y+x- 1
+	position -350 150 40
+	rotation 0
+	size 10 10 0
+	phydrv mine
+end
+
+meshbox
+name Mine y+x- 2
+	position -300 150 40
+	rotation 0
+	size 10 10 0
+	phydrv mine
+end
+
+meshbox
+name Mine y+x- 3
+	position -250 150 40
+	rotation 0
+	size 10 10 0
+	phydrv mine
+end
+
+meshbox
+name Mine y+x- 4
+	position -200 150 40
+	rotation 0
+	size 10 10 0
+	phydrv mine
+end
+
+meshbox
+name Mine y+x- 5
+	position -150 150 40
+	rotation 0
+	size 10 10 0
+	phydrv mine
+end
+
+meshbox
+name Mine y+x- 6
+	position -110 150 40
+	rotation 0
+	size 10 10 0
+	phydrv mine
+end
+
+meshbox
+name Mine y+x- 7
+	position -375 125 40
+	rotation 0
+	size 5 5 0
+	phydrv mine
+end
+
+meshbox
+name Mine y+x- 8
+	position -325 125 40
+	rotation 0
+	size 5 5 0
+	phydrv mine
+end
+
+meshbox
+name Mine y+x- 9
+	position -275 125 40
+	rotation 0
+	size 5 5 0
+	phydrv mine
+end
+
+meshbox
+name Mine y+x- 10
+	position -225 125 40
+	rotation 0
+	size 5 5 0
+	phydrv mine
+end
+
+meshbox
+name Mine y+x- 11
+	position -175 125 40
+	rotation 0
+	size 5 5 0
+	phydrv mine
+end
+
+meshbox
+name Mine y-x- 12
+	position -125 -125 40
+	rotation 0
+	size 5 5 0
+	phydrv mine
+end
+
+meshbox
+name Mine y-x- 1
+	position -350 -150 40
+	rotation 0
+	size 10 10 0
+	phydrv mine
+end
+
+meshbox
+name Mine y-x- 2
+	position -300 -150 40
+	rotation 0
+	size 10 10 0
+	phydrv mine
+end
+
+meshbox
+name Mine y-x- 3
+	position -250 -150 40
+	rotation 0
+	size 10 10 0
+	phydrv mine
+end
+
+meshbox
+name Mine y-x- 4
+	position -200 -150 40
+	rotation 0
+	size 10 10 0
+	phydrv mine
+end
+
+meshbox
+name Mine y-x- 5
+	position -150 -150 40
+	rotation 0
+	size 10 10 0
+	phydrv mine
+end
+
+meshbox
+name Mine y-x- 6
+	position -110 -150 40
+	rotation 0
+	size 10 10 0
+	phydrv mine
+end
+
+meshbox
+name Mine y-x- 8
+	position -325 -125 40
+	rotation 0
+	size 5 5 0
+	phydrv mine
+end
+
+meshbox
+name Mine y-x- 9
+	position -275 -125 40
+	rotation 0
+	size 5 5 0
+	phydrv mine
+end
+
+meshbox
+name Mine y-x- 10
+	position -225 -125 40
+	rotation 0
+	size 5 5 0
+	phydrv mine
+end
+
+meshbox
+name Mine y-x- 11
+	position -175 -125 40
+	rotation 0
+	size 5 5 0
+	phydrv mine
+end
+
+meshbox
+name Mine y+x- 12
+	position -125 125 40
+	rotation 0
+	size 5 5 0
+	phydrv mine
+end
+
+meshbox
+name Mine y+x+ 1
+	position 350 150 40
+	rotation 0
+	size 10 10 0
+	phydrv mine
+end
+
+meshbox
+name Mine y+x+ 2
+	position 300 150 40
+	rotation 0
+	size 10 10 0
+	phydrv mine
+end
+
+meshbox
+name Mine y+x+ 3
+	position 250 150 40
+	rotation 0
+	size 10 10 0
+	phydrv mine
+end
+
+meshbox
+name Mine y+x+ 4
+	position 200 150 40
+	rotation 0
+	size 10 10 0
+	phydrv mine
+end
+
+meshbox
+name Mine y+x+ 5
+	position 150 150 40
+	rotation 0
+	size 10 10 0
+	phydrv mine
+end
+
+meshbox
+name Mine y+x+ 6
+	position 110 150 40
+	rotation 0
+	size 10 10 0
+	phydrv mine
+end
+
+meshbox
+name Mine y+x+ 8
+	position 325 125 40
+	rotation 0
+	size 5 5 0
+	phydrv mine
+end
+
+meshbox
+name Mine y+x+ 9
+	position 275 125 40
+	rotation 0
+	size 5 5 0
+	phydrv mine
+end
+
+meshbox
+name Mine y+x+ 10
+	position 225 125 40
+	rotation 0
+	size 5 5 0
+	phydrv mine
+end
+
+meshbox
+name Mine y+x+ 11
+	position 175 125 40
+	rotation 0
+	size 5 5 0
+	phydrv mine
+end
+
+meshbox
+name Mine y+x+ 12
+	position 125 125 40
+	rotation 0
+	size 5 5 0
+	phydrv mine
+end
+
+meshbox
+name Mine y+x- 13
+	position -375 125 40
+	rotation 0
+	size 5 5 0
+	phydrv mine
+end
+
+meshbox
+name Mine y-x- 13
+	position -375 -125 40
+	rotation 0
+	size 5 5 0
+	phydrv mine
+end
+
+meshbox
+name Mine y+x+ 13
+	position 375 125 40
+	rotation 0
+	size 5 5 0
+	phydrv mine
+end
+
+meshbox
+name Mine y-x+ 13
+	position 375 -125 40
+	rotation 0
+	size 5 5 0
+	phydrv mine
+end
+
+meshbox
+name Mine y-x+ 8
+	position 325 -125 40
+	rotation 0
+	size 5 5 0
+	phydrv mine
+end
+
+meshbox
+name Mine y-x+ 9
+	position 275 -125 40
+	rotation 0
+	size 5 5 0
+	phydrv mine
+end
+
+meshbox
+name Mine y-x+ 10
+	position 225 -125 40
+	rotation 0
+	size 5 5 0
+	phydrv mine
+end
+
+meshbox
+name Mine y-x+ 11
+	position 175 -125 40
+	rotation 0
+	size 5 5 0
+	phydrv mine
+end
+
+meshbox
+name Mine y-x+ 12
+	position 125 -125 40
+	rotation 0
+	size 5 5 0
+	phydrv mine
+end
+
+meshbox
+name Mine y-x+ 6
+	position 110 -150 40
+	rotation 0
+	size 10 10 0
+	phydrv mine
+end
+
+meshbox
+name Mine y-x+ 5
+	position 150 -150 40
+	rotation 0
+	size 10 10 0
+	phydrv mine
+end
+
+meshbox
+name Mine y-x+ 4
+	position 200 -150 40
+	rotation 0
+	size 10 10 0
+	phydrv mine
+end
+
+meshbox
+name Mine y-x+ 3
+	position 250 -150 40
+	rotation 0
+	size 10 10 0
+	phydrv mine
+end
+
+meshbox
+name Mine y-x+ 2
+	position 300 -150 40
+	rotation 0
+	size 10 10 0
+	phydrv mine
+end
+
+meshbox
+name Mine y-x+ 1
+	position 350 -150 40
+	rotation 0
+	size 10 10 0
+	phydrv mine
+end
+
+box
+name bunker r green
+	position 0 -350.5 43
+	rotation 0
+	size 41 15.5 1
+end
+
+box
+name green land 2
+	position 0 -175 0
+	rotation 0
+	size 400 75 40
+end
+
+box
+name blue land 2
+	position 0 175 0
+	rotation 0
+	size 400 75 40
+end
+
+#bunker in centre
+
+define bunker
+
+box
+name bunker r green copy
+	position 40 -350 38.5
+	rotation 0
+	size 1 15 1.5
+end
+
+box
+name bunker r green copy 1
+	position 0 -335 38.5
+	rotation 0
+	size 40 1 1.5
+end
+
+box
+name bunker r green copy 1
+	position -40 -350 38.5
+	rotation 0
+	size 1 15 1.5
+end
+
+box
+name bunker pillar
+	position 40 -365 38.5
+	rotation 0
+	size 1 1 4.5
+end
+
+box
+name bunker pillar copy
+	position -40 -365 38.5
+	rotation 0
+	size 1 1 4.5
+end
+
+box
+name bunker r green copy 2
+	position -40 -350 40.5
+	rotation 0
+	size 1 15 2.5
+end
+
+box
+name bunker r green copy 1
+	position 40 -350 40.5
+	rotation 0
+	size 1 15 2.5
+end
+
+box
+name bunker r green copy 2
+	position 0 -335 40.5
+	rotation 0
+	size 40 1 2.5
+end
+
+enddef
+
+group bunker
+	shift 0 0 0
+	scale 1 1 1
+	shear 0 0 0
+	spin 0 0 0
+end
+
+group bunker
+	shift -350 0 0
+	scale 1 1 1
+	shear 0 0 0
+	spin  0 0 45
+end
+
+group bunker
+	shift 350 0 0
+	scale 1 1 1
+	shear 0 0 0
+	spin 0 0 -45
+end
+
+group bunker
+	shift 0 701 0
+	scale 1 1 1
+	shear 0 0 0
+	spin 0 0 180
+end
+
+group bunker
+	shift -350 701 0
+	scale 1 1 1
+	shear 0 0 0
+	spin  0 0 135
+end
+
+group bunker
+	shift 350 701 0
+	scale 1 1 1
+	shear 0 0 0
+	spin 0 0 215
+end
+
+#teleporters
+
+teleporter
+name Teleporter y+x-
+	position -75 200 40
+	rotation 90
+	size 0.125 10 6
+	border 1
+end
+
+teleporter
+name Teleporter y+x- f2
+	position -75 200 47
+	rotation 90
+	size 0.125 10 10
+	border 1
+end
+
+teleporter
+name Teleporter y-x-
+	position -75 -200 40
+	rotation 90
+	size 0.125 10 6
+	border 1
+end
+
+teleporter
+name Teleporter y-x- f2
+	position -75 -200 47
+	rotation 90
+	size 0.125 10 10
+	border 1
+end
+
+teleporter
+name Teleporter y+x+
+	position 75 200 40
+	rotation 90
+	size 0.125 10 6
+	border 1
+end
+
+teleporter
+name Teleporter y+x+ f2
+	position 75 200 47
+	rotation 90
+	size 0.125 10 10
+	border 1
+end
+
+teleporter
+name Teleporter y-x+
+	position 75 -200 40
+	rotation 90
+	size 0.125 10 6
+	border 1
+end
+
+teleporter
+name Teleporter y-x+ f2
+	position 75 -200 47
+	rotation 90
+	size 0.125 10 10
+	border 1
+end
+
+#links for teleporters
+
+link
+	from Teleporter y+x-:f
+	to Teleporter y+x- f2:b
+end
+
+link
+	from Teleporter y-x-:f
+	to Teleporter y-x- f2:b
+end
+
+link
+	from Teleporter y+x+:f
+	to Teleporter y+x+ f2:b
+end
+
+link
+	from Teleporter y-x+:f
+	to Teleporter y-x+ f2:b
+end
+
+meshbox 
+  position 0 0 0 
+  size 400 200 0 
+  rotation 0 
+  phydrv drown
+end 

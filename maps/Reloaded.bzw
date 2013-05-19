@@ -1,0 +1,2920 @@
+options
+-set _tankSpeed 40.000000
+-set _gravity -12.000000
+-set _jumpVelocity 20.000000
+-set _tankAngVel .500000
+-set _wingsJumpCount 2
+-j
++r
+-c
+-f bad
++s 60
+-s 60
+-ms 6
+-mp 0,15,15,0,0,1 
+-sb
+-srvmsg "Welcome to the map called Reloaded.  By BIYA."
+end
+
+dynamicColor
+  name redtower
+  red limits 1 1
+  green limits 0.8 0.9
+  green sinusoid 2 1 1
+  blue limits 0.6 0.7
+  blue sinusoid 2 0 1
+end
+
+dynamicColor
+  name bluetower
+  red limits 0.6 0.7
+  red sinusoid 2 0 1
+  green limits 0.8 0.9
+  green sinusoid 2 1 1
+  blue limits 1 1
+end
+
+dynamicColor
+  name nojumpColor
+  red limits 0 0
+  green sinusoid 2 0 1
+  blue sinusoid 2 1 1
+end
+
+dynamicColor
+  name LinkMaterial
+  red limits 0 0.1
+  red sinusoid 2 0 1
+  green limits 0 0.1
+  green sinusoid 2 0.666667 1
+  blue limits 0 0.1
+  blue sinusoid 2 1.33333 1
+  alpha limits 0.75 0.75
+end
+
+textureMatrix
+  name spinTop
+  shift -1.5 0
+end
+
+textureMatrix
+  name flowing
+  shift 0 1
+end
+
+textureMatrix
+  name slideup
+  shift 0 1.5
+end
+
+textureMatrix
+  name LinkMaterial
+  shift 0 -0.05
+end
+
+material
+end
+
+material
+  dyncol redtower
+  addtexture boxwall
+end
+
+material
+  dyncol redtower
+  addtexture roof
+end
+
+material
+  dyncol bluetower
+  addtexture boxwall
+end
+
+material
+  dyncol bluetower
+  addtexture roof
+end
+
+material
+  diffuse 0.3 0.4 0.6 0.6
+  addtexture mesh
+    texmat spinTop
+end
+
+material
+  addtexture boxwall
+end
+
+material
+  diffuse 0.8 0.7 0.6 1
+  addtexture mesh
+end
+
+material
+  diffuse 0.1 0.2 0.4 0.9
+  addtexture mesh
+    texmat spinTop
+end
+
+material
+  diffuse 0.1 0.1 0.1 1
+  addtexture mesh
+end
+
+material
+  diffuse 0.9 0.9 0.9 1
+  addtexture mesh
+end
+
+material
+  diffuse 0.9 0.2 0.2 1
+  addtexture mesh
+end
+
+material
+  diffuse 0.8 0.8 0.5 1
+  addtexture mesh
+    texmat slideup
+end
+
+material
+  addtexture roof
+end
+
+material
+name pyr_ST
+texture pyrwall
+notexalpha
+color 1 1 1 0.5
+end
+
+material
+name GM_ST
+texture caution
+notexalpha
+color 1 1 1 0.5
+end
+
+material
+name rock_texture
+texture telelink
+end
+
+material
+  name LinkMaterial
+  dyncol LinkMaterial
+  diffuse 0 0 0 0.5
+  addtexture telelink
+    texmat LinkMaterial
+end
+
+physics
+  name slide
+  linear 0 2 0
+end
+
+physics
+  name upred
+  linear 9 0 4
+end
+
+physics
+  name upblue
+  linear -9 0 4
+end
+
+physics
+  name upgreen
+  linear -9 0 4
+end
+
+physics
+  name uppurple
+  linear 9 0 4
+end
+
+physics
+  name pokeball
+  death Eww.. A pokemon just ate you!
+end
+
+define escalatorred
+  box
+    position -110 350 0
+    size 1 1.001 0.001
+    rotation -90
+  end
+  mesh
+  # faces = 5
+  # checks = 1
+  # vertices = 6
+  # normals = 0
+  # texcoords = 0
+  # mins = -1 -1 0
+  # maxs = 1 1 1
+    inside 0.00000000 0.00000000 0.20000000
+    vertex -1.00000000 -1.00000000 0.00000000
+    vertex 1.00000000 -1.00000000 0.00000000
+    vertex 1.00000000 1.00000000 0.00000000
+    vertex -1.00000000 1.00000000 0.00000000
+    vertex 1.00000000 1.00000000 1.00000000
+    vertex -1.00000000 1.00000000 1.00000000
+    face
+      vertices 3 2 1 0
+      matref 6
+    endface
+    face
+      vertices 2 3 5 4
+      matref 6
+    endface
+    face
+      vertices 0 1 4 5
+      matref 12
+      phydrv upred
+    endface
+    face
+      vertices 5 3 0
+      matref 6
+    endface
+    face
+      vertices 1 2 4
+      matref 6
+    endface
+  end
+enddef
+
+define escalatorblue
+  box
+    position 110 350 0
+    size 1 1.001 0.001
+    rotation 90
+  end
+  mesh
+  # faces = 5
+  # checks = 1
+  # vertices = 6
+  # normals = 0
+  # texcoords = 0
+  # mins = -1 -1 0
+  # maxs = 1 1 1
+    inside 0.00000000 0.00000000 0.20000000
+    vertex -1.00000000 -1.00000000 0.00000000
+    vertex 1.00000000 -1.00000000 0.00000000
+    vertex 1.00000000 1.00000000 0.00000000
+    vertex -1.00000000 1.00000000 0.00000000
+    vertex 1.00000000 1.00000000 1.00000000
+    vertex -1.00000000 1.00000000 1.00000000
+    face
+      vertices 3 2 1 0
+      matref 6
+    endface
+    face
+      vertices 2 3 5 4
+      matref 6
+    endface
+    face
+      vertices 0 1 4 5
+      matref 12
+      phydrv upblue
+    endface
+    face
+      vertices 5 3 0
+      matref 6
+    endface
+    face
+      vertices 1 2 4
+      matref 6
+    endface
+  end
+enddef
+
+define escalatorgreen
+  box
+    position 110 -350 0
+    size 1 1.001 0.001
+    rotation 90
+  end
+  mesh
+  # faces = 5
+  # checks = 1
+  # vertices = 6
+  # normals = 0
+  # texcoords = 0
+  # mins = -1 -1 0
+  # maxs = 1 1 1
+    inside 0.00000000 0.00000000 0.20000000
+    vertex -1.00000000 -1.00000000 0.00000000
+    vertex 1.00000000 -1.00000000 0.00000000
+    vertex 1.00000000 1.00000000 0.00000000
+    vertex -1.00000000 1.00000000 0.00000000
+    vertex 1.00000000 1.00000000 1.00000000
+    vertex -1.00000000 1.00000000 1.00000000
+    face
+      vertices 3 2 1 0
+      matref 6
+    endface
+    face
+      vertices 2 3 5 4
+      matref 6
+    endface
+    face
+      vertices 0 1 4 5
+      matref 12
+      phydrv upgreen
+    endface
+    face
+      vertices 5 3 0
+      matref 6
+    endface
+    face
+      vertices 1 2 4
+      matref 6
+    endface
+  end
+enddef
+
+define escalatorpurple
+  box
+    position 110 -350 0
+    size 1 1.001 0.001
+    rotation 90
+  end
+  mesh
+  # faces = 5
+  # checks = 1
+  # vertices = 6
+  # normals = 0
+  # texcoords = 0
+  # mins = -1 -1 0
+  # maxs = 1 1 1
+    inside 0.00000000 0.00000000 0.20000000
+    vertex -1.00000000 -1.00000000 0.00000000
+    vertex 1.00000000 -1.00000000 0.00000000
+    vertex 1.00000000 1.00000000 0.00000000
+    vertex -1.00000000 1.00000000 0.00000000
+    vertex 1.00000000 1.00000000 1.00000000
+    vertex -1.00000000 1.00000000 1.00000000
+    face
+      vertices 3 2 1 0
+      matref 6
+    endface
+    face
+      vertices 2 3 5 4
+      matref 6
+    endface
+    face
+      vertices 0 1 4 5
+      matref 12
+      phydrv uppurple
+    endface
+    face
+      vertices 5 3 0
+      matref 6
+    endface
+    face
+      vertices 1 2 4
+      matref 6
+    endface
+  end
+enddef
+
+group escalatorred
+  scale 60 5 50
+  shift -110 350 0
+rotation -90
+end
+
+group escalatorblue
+  scale 60 5 50
+  shift 110 350 0
+rotation 90
+end
+
+group escalatorgreen
+  scale 60 5 50
+  shift 110 -350 0
+rotation 90
+end
+
+group escalatorpurple
+  scale 60 5 50
+  shift -110 -350 0
+rotation -90
+end
+
+define rock
+mesh
+# faces = 14
+# checks = 1
+# vertices = 14
+# normals = 42
+# texcoords = 14
+# mins = -1.69511 -1.45156 0
+# maxs = 1 1 1.15404
+inside 0.00000000 0.00000000 0.50000000
+vertex -1.00000000 -1.45155561 0.00000000
+vertex 0.02903564 -0.48699644 1.15403545
+vertex 1.00000000 -1.00000000 0.00000000
+vertex -1.00000000 1.00000000 0.00000000
+vertex 0.59187984 0.18257146 0.96891022
+vertex 0.80088890 0.72977775 0.00000000
+vertex -0.00977778 0.64266664 0.95822221
+vertex -0.97176814 0.00161309 0.82626748
+vertex -1.69511116 0.00000000 0.00000000
+vertex -1.00000000 -1.45155561 0.00000000
+vertex 1.00000000 -1.00000000 0.00000000
+vertex -1.00000000 1.00000000 0.00000000
+vertex 0.80088890 0.72977775 0.00000000
+vertex -1.69511116 0.00000000 0.00000000
+normal 0.05778429 -0.30810273 0.94959658
+normal -0.36643845 -0.59544957 0.71495640
+normal 0.69821531 -0.41715178 0.58179009
+normal 0.69821531 -0.41715178 0.58179009
+normal 0.62558067 0.68207878 0.37870494
+normal 0.66274130 0.18727672 0.72505271
+normal 0.00000000 0.00000000 -1.00000000
+normal 0.00000000 0.00000000 -1.00000000
+normal 0.00000000 0.00000000 -1.00000000
+normal 0.00000000 0.00000000 -1.00000000
+normal 0.00000000 0.00000000 -1.00000000
+normal 0.00000000 0.00000000 -1.00000000
+normal 0.00000000 0.00000000 -1.00000000
+normal 0.00000000 0.00000000 -1.00000000
+normal 0.00000000 0.00000000 -1.00000000
+normal 0.66274130 0.18727672 0.72505271
+normal 0.05778429 -0.30810273 0.94959658
+normal 0.69821531 -0.41715178 0.58179009
+normal -0.37002549 0.74468786 0.55544680
+normal -0.57160878 0.09187403 0.81536651
+normal 0.01854493 0.60633713 0.79499149
+normal -0.37002549 0.74468786 0.55544680
+normal -0.75072944 0.06818706 0.65708131
+normal -0.57160878 0.09187403 0.81536651
+normal 0.01854493 0.60633713 0.79499149
+normal 0.66274130 0.18727672 0.72505271
+normal 0.62558067 0.68207878 0.37870494
+normal -0.75072944 0.06818706 0.65708131
+normal -0.36643845 -0.59544957 0.71495640
+normal -0.57160878 0.09187403 0.81536651
+normal -0.36643845 -0.59544957 0.71495640
+normal 0.05778429 -0.30810273 0.94959658
+normal -0.57160878 0.09187403 0.81536651
+normal 0.05778429 -0.30810273 0.94959658
+normal 0.66274130 0.18727672 0.72505271
+normal 0.01854493 0.60633713 0.79499149
+normal 0.62558067 0.68207878 0.37870494
+normal -0.37002549 0.74468786 0.55544680
+normal 0.01854493 0.60633713 0.79499149
+normal 0.01854493 0.60633713 0.79499149
+normal -0.57160878 0.09187403 0.81536651
+normal 0.05778429 -0.30810273 0.94959658
+texcoord 0.08201042 0.00000000 0.54293668
+texcoord 0.54293668 0.34529194 0.83916366
+texcoord 0.83916366 0.00000000 0.38678885
+texcoord 0.38678885 0.91390616 0.70597547
+texcoord 0.70597547 0.45210096 1.00000000
+texcoord 1.00000000 0.64878607 0.61238515
+texcoord 0.61238515 0.56600064 0.32658899
+texcoord 0.32658899 0.50944489 0.00000000
+texcoord 0.00000000 0.61651826 0.00000000
+texcoord 0.00000000 0.00000000 0.00000000
+texcoord 0.00000000 0.00000000 0.00000000
+texcoord 0.00000000 0.00000000 0.00000000
+texcoord 0.00000000 0.00000000 0.00000000
+texcoord 0.00000000 0.00000000 0.00000000
+face
+vertices 1 0 2
+normals 0 1 2
+texcoords 1 0 2
+matref rock_texture 
+endface
+face
+vertices 2 5 4
+normals 3 4 5
+texcoords 2 5 4
+matref rock_texture 
+endface
+face
+vertices 9 11 12
+normals 6 7 8
+texcoords 9 11 12
+matref rock_texture 
+endface
+face
+vertices 9 12 10
+normals 9 10 11
+texcoords 9 12 10
+matref rock_texture 
+endface
+face
+vertices 9 13 11
+normals 12 13 14
+texcoords 9 13 11
+matref rock_texture 
+endface
+face
+vertices 4 1 2
+normals 15 16 17
+texcoords 4 1 2
+matref rock_texture 
+endface
+face
+vertices 3 7 6
+normals 18 19 20
+texcoords 3 7 6
+matref rock_texture 
+endface
+face
+vertices 3 8 7
+normals 21 22 23
+texcoords 3 8 7
+matref rock_texture 
+endface
+face
+vertices 6 4 5
+normals 24 25 26
+texcoords 6 4 5
+matref rock_texture 
+endface
+face
+vertices 8 0 7
+normals 27 28 29
+texcoords 8 0 7
+matref rock_texture 
+endface
+face
+vertices 0 1 7
+normals 30 31 32
+texcoords 0 1 7
+matref rock_texture 
+endface
+face
+vertices 1 4 6
+normals 33 34 35
+texcoords 1 4 6
+matref rock_texture 
+endface
+face
+vertices 5 3 6
+normals 36 37 38
+texcoords 5 3 6
+matref rock_texture 
+endface
+face
+vertices 6 7 1
+normals 39 40 41
+texcoords 6 7 1
+matref rock_texture 
+endface
+end
+enddef 
+
+weapon
+  type         GM
+  position     5.0 349.0 50.0
+  rotation     -90.0
+  initdelay    120.0
+  delay        120.0
+end
+
+weapon
+  type         GM
+  position     5.0 -349.0 50.0
+  rotation     90.0
+  initdelay    120.0
+  delay        120.0
+end
+
+weapon
+  type         GM
+  position     -5.0 349.0 50.0
+  rotation     -90.0
+  initdelay    120.0
+  delay        120.0
+end
+
+weapon
+  type         GM
+  position     -5.0 -349.0 50.0
+  rotation     90.0
+  initdelay    120.0
+  delay        120.0
+end
+
+pyramid
+	position -330 -330 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position -330.6 -330 381
+	rotation 0
+	initdelay 25
+	delay 90
+end
+
+pyramid
+	position -300 -310 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position -300.6 -310 381
+	rotation 0
+	initdelay 26
+	delay 90
+end
+
+pyramid
+	position -320 -305 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position -320.6 -305 381
+	rotation 0
+	initdelay 27
+	delay 90
+end
+
+pyramid
+	position -340 -295 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position -340.6 -295 381
+	rotation 0
+	initdelay 28
+	delay 90
+end
+
+pyramid
+	position -305 -290 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position -305.6 -290 381
+	rotation 0
+	initdelay 29
+	delay 90
+end
+
+pyramid
+	position -130 -310 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position -130.6 -310 381
+	rotation 0
+	initdelay 25
+	delay 90
+end
+
+pyramid
+	position -110 -290 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position -110.6 -290 381
+	rotation 0
+	initdelay 26
+	delay 90
+end
+
+pyramid
+	position -150 -300 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position -150.6 -300 381
+	rotation 0
+	initdelay 27
+	delay 90
+end
+
+pyramid
+	position -135 -290 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position -135.6 -290 381
+	rotation 0
+	initdelay 28
+	delay 90
+end
+
+pyramid
+	position -130 -280 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position -130.6 -280 381
+	rotation 0
+	initdelay 29
+	delay 90
+end
+
+pyramid
+	position -310 -130 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position -310.6 -130 381
+	rotation 0
+	initdelay 25
+	delay 90
+end
+
+pyramid
+	position -290 -140 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position -290.6 -140 381
+	rotation 0
+	initdelay 26
+	delay 90
+end
+
+pyramid
+	position -330 -150 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position -330.6 -150 381
+	rotation 0
+	initdelay 27
+	delay 90
+end
+
+pyramid
+	position -310 -145 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position -310.6 -145 381
+	rotation 0
+	initdelay 28
+	delay 90
+end
+
+pyramid
+	position -300 -160 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position -300.6 -160 381
+	rotation 0
+	initdelay 29
+	delay 90
+end
+
+pyramid
+	position 330 -330 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position 330.6 -330 381
+	rotation 0
+	initdelay 25
+	delay 90
+end
+
+pyramid
+	position 300 -310 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position 300.6 -310 381
+	rotation 0
+	initdelay 26
+	delay 90
+end
+
+pyramid
+	position 320 -305 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position 320.6 -305 381
+	rotation 0
+	initdelay 27
+	delay 90
+end
+
+pyramid
+	position 340 -295 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position 340.6 -295 381
+	rotation 0
+	initdelay 28
+	delay 90
+end
+
+pyramid
+	position 305 -290 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position 305.6 -290 381
+	rotation 0
+	initdelay 29
+	delay 90
+end
+
+pyramid
+	position 130 -310 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position 130.6 -310 381
+	rotation 0
+	initdelay 25
+	delay 90
+end
+
+pyramid
+	position 110 -290 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position 110.6 -290 381
+	rotation 0
+	initdelay 26
+	delay 90
+end
+
+pyramid
+	position 150 -300 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position 150.6 -300 381
+	rotation 0
+	initdelay 27
+	delay 90
+end
+
+pyramid
+	position 135 -290 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position 135.6 -290 381
+	rotation 0
+	initdelay 28
+	delay 90
+end
+
+pyramid
+	position 130 -280 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position 130.6 -280 381
+	rotation 0
+	initdelay 29
+	delay 90
+end
+
+pyramid
+	position 310 -130 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position 310.6 -130 381
+	rotation 0
+	initdelay 25
+	delay 90
+end
+
+pyramid
+	position 290 -140 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position 290.6 -140 381
+	rotation 0
+	initdelay 26
+	delay 90
+end
+
+pyramid
+	position 330 -150 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position 330.6 -150 381
+	rotation 0
+	initdelay 27
+	delay 90
+end
+
+pyramid
+	position 310 -145 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position 310.6 -145 381
+	rotation 0
+	initdelay 28
+	delay 90
+end
+
+pyramid
+	position 300 -160 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position 300.6 -160 381
+	rotation 0
+	initdelay 29
+	delay 90
+end
+
+pyramid
+	position -330 330 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position -330.6 330 381
+	rotation 0
+	initdelay 25
+	delay 90
+end
+
+pyramid
+	position -300 310 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position -300.6 310 381
+	rotation 0
+	initdelay 26
+	delay 90
+end
+
+pyramid
+	position -320 305 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position -320.6 305 381
+	rotation 0
+	initdelay 27
+	delay 90
+end
+
+pyramid
+	position -340 295 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position -340.6 295 381
+	rotation 0
+	initdelay 28
+	delay 90
+end
+
+pyramid
+	position -305 290 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position -305.6 290 381
+	rotation 0
+	initdelay 29
+	delay 90
+end
+
+pyramid
+	position -130 310 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position -130.6 310 381
+	rotation 0
+	initdelay 25
+	delay 90
+end
+
+pyramid
+	position -110 290 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position -110.6 290 381
+	rotation 0
+	initdelay 26
+	delay 90
+end
+
+pyramid
+	position -150 300 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position -150.6 300 381
+	rotation 0
+	initdelay 27
+	delay 90
+end
+
+pyramid
+	position -135 290 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position -135.6 290 381
+	rotation 0
+	initdelay 28
+	delay 90
+end
+
+pyramid
+	position -130 280 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position -130.6 280 381
+	rotation 0
+	initdelay 29
+	delay 90
+end
+
+pyramid
+	position -310 130 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position -310.6 130 381
+	rotation 0
+	initdelay 25
+	delay 90
+end
+
+pyramid
+	position -290 140 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position -290.6 140 381
+	rotation 0
+	initdelay 26
+	delay 90
+end
+
+pyramid
+	position -330 150 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position -330.6 150 381
+	rotation 0
+	initdelay 27
+	delay 90
+end
+
+pyramid
+	position -310 145 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position -310.6 145 381
+	rotation 0
+	initdelay 28
+	delay 90
+end
+
+pyramid
+	position -300 160 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position -300.6 160 381
+	rotation 0
+	initdelay 29
+	delay 90
+end
+
+pyramid
+	position 330 330 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position 330.6 330 381
+	rotation 0
+	initdelay 25
+	delay 90
+end
+
+pyramid
+	position 300 310 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position 300.6 310 381
+	rotation 0
+	initdelay 26
+	delay 90
+end
+
+pyramid
+	position 320 305 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position 320.6 305 381
+	rotation 0
+	initdelay 27
+	delay 90
+end
+
+pyramid
+	position 340 295 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position 340.6 295 381
+	rotation 0
+	initdelay 28
+	delay 90
+end
+
+pyramid
+	position 305 290 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position 305.6 290 381
+	rotation 0
+	initdelay 29
+	delay 90
+end
+
+pyramid
+	position 130 310 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position 130.6 310 381
+	rotation 0
+	initdelay 25
+	delay 90
+end
+
+pyramid
+	position 110 290 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position 110.6 290 381
+	rotation 0
+	initdelay 26
+	delay 90
+end
+
+pyramid
+	position 150 300 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position 150.6 300 381
+	rotation 0
+	initdelay 27
+	delay 90
+end
+
+pyramid
+	position 135 290 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position 135.6 290 381
+	rotation 0
+	initdelay 28
+	delay 90
+end
+
+pyramid
+	position 130 280 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position 130.6 280 381
+	rotation 0
+	initdelay 29
+	delay 90
+end
+
+pyramid
+	position 310 130 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position 310.6 130 381
+	rotation 0
+	initdelay 25
+	delay 90
+end
+
+pyramid
+	position 290 140 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position 290.6 140 381
+	rotation 0
+	initdelay 26
+	delay 90
+end
+
+pyramid
+	position 330 150 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position 330.6 150 381
+	rotation 0
+	initdelay 27
+	delay 90
+end
+
+pyramid
+	position 310 145 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position 310.6 145 381
+	rotation 0
+	initdelay 28
+	delay 90
+end
+
+pyramid
+	position 300 160 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position 300.6 160 381
+	rotation 0
+	initdelay 29
+	delay 90
+end
+
+base
+	position 0 350 0
+	rotation 0
+	size 50 50 0
+	color 2
+end
+
+base
+	position 0 -350 0
+	rotation 0
+	size 50 50 0
+	color 1
+end
+
+box
+	position 0 -200 10
+	rotation 0
+	size 400 10 1
+end
+
+box
+	position 0 200 10
+	rotation 0
+	size 400 10 1
+end
+
+box
+	position -390 0 10
+	rotation 0
+	size 10 190 1
+end
+
+box
+	position 390 0 10
+	rotation 0
+	size 10 190 1
+end
+
+box
+	position 0 100 10
+	rotation 0
+	size 10 90 1
+end
+
+box
+	position 300 100 10
+	rotation 0
+	size 50 10 1
+end
+
+box
+	position 350 150 10
+	rotation 0
+	size 10 60 1
+end
+
+box
+	position 250 150 10
+	rotation 0
+	size 10 60 1
+end
+
+box
+	position -250 150 10
+	rotation 0
+	size 10 60 1
+end
+
+box
+	position -350 150 10
+	rotation 0
+	size 10 60 1
+end
+
+box
+	position -300 100 10
+	rotation 0
+	size 50 10 1
+end
+
+box
+	position 300 -100 10
+	rotation 0
+	size 50 10 1
+end
+
+box
+	position 350 -150 10
+	rotation 0
+	size 10 60 1
+end
+
+box
+	position 250 -150 10
+	rotation 0
+	size 10 60 1
+end
+
+box
+	position -250 -150 10
+	rotation 0
+	size 10 60 1
+end
+
+box
+	position -300 -100 10
+	rotation 0
+	size 50 10 1
+end
+
+box
+	position -350 -150 10
+	rotation 0
+	size 10 60 1
+end
+
+box
+	position -40 0 0
+	rotation 0
+	size 10 10 10
+end
+
+box
+	position -80 0 0
+	rotation 0
+	size 10 10 10
+end
+
+box
+	position -120 0 0
+	rotation 0
+	size 10 10 10
+end
+
+box
+	position -160 0 0
+	rotation 0
+	size 10 10 10
+end
+
+box
+	position -200 0 0
+	rotation 0
+	size 10 10 10
+end
+
+box
+	position -240 0 0
+	rotation 0
+	size 10 10 10
+end
+
+box
+	position -280 0 0
+	rotation 0
+	size 10 10 10
+end
+
+box
+	position -320 0 0
+	rotation 0
+	size 10 10 10
+end
+
+box
+	position -360 0 0
+	rotation 0
+	size 10 10 10
+end
+
+box
+	position -80 -200 0
+	rotation 0
+	size 10 10 10
+end
+
+box
+	position -120 -200 0
+	rotation 0
+	size 10 10 10
+end
+
+box
+	position -160 -200 0
+	rotation 0
+	size 10 10 10
+end
+
+box
+	position -200 -200 0
+	rotation 0
+	size 10 10 10
+end
+
+box
+	position -240 -200 0
+	rotation 0
+	size 10 10 10
+end
+
+box
+	position -280 -200 0
+	rotation 0
+	size 10 10 10
+end
+
+box
+	position -320 -200 0
+	rotation 0
+	size 10 10 10
+end
+
+box
+	position -360 -200 0
+	rotation 0
+	size 10 10 10
+end
+
+box
+	position 80 -200 0
+	rotation 0
+	size 10 10 10
+end
+
+box
+	position 120 -200 0
+	rotation 0
+	size 10 10 10
+end
+
+box
+	position 160 -200 0
+	rotation 0
+	size 10 10 10
+end
+
+box
+	position 200 -200 0
+	rotation 0
+	size 10 10 10
+end
+
+box
+	position 240 -200 0
+	rotation 0
+	size 10 10 10
+end
+
+box
+	position 280 -200 0
+	rotation 0
+	size 10 10 10
+end
+
+box
+	position 320 -200 0
+	rotation 0
+	size 10 10 10
+end
+
+box
+	position 360 -200 0
+	rotation 0
+	size 10 10 10
+end
+
+box
+	position 40 200 0
+	rotation 0
+	size 10 10 10
+end
+
+box
+	position 80 200 0
+	rotation 0
+	size 10 10 10
+end
+
+box
+	position 120 200 0
+	rotation 0
+	size 10 10 10
+end
+
+box
+	position 160 200 0
+	rotation 0
+	size 10 10 10
+end
+
+box
+	position 200 200 0
+	rotation 0
+	size 10 10 10
+end
+
+box
+	position 240 200 0
+	rotation 0
+	size 10 10 10
+end
+
+box
+	position 280 200 0
+	rotation 0
+	size 10 10 10
+end
+
+box
+	position 320 200 0
+	rotation 0
+	size 10 10 10
+end
+
+box
+	position 360 200 0
+	rotation 0
+	size 10 10 10
+end
+
+box
+	position -40 200 0
+	rotation 0
+	size 10 10 10
+end
+
+box
+	position -80 200 0
+	rotation 0
+	size 10 10 10
+end
+
+box
+	position -120 200 0
+	rotation 0
+	size 10 10 10
+end
+
+box
+	position -160 200 0
+	rotation 0
+	size 10 10 10
+end
+
+box
+	position -200 200 0
+	rotation 0
+	size 10 10 10
+end
+
+box
+	position -240 200 0
+	rotation 0
+	size 10 10 10
+end
+
+box
+	position -280 200 0
+	rotation 0
+	size 10 10 10
+end
+
+box
+	position -320 200 0
+	rotation 0
+	size 10 10 10
+end
+
+box
+	position -360 200 0
+	rotation 0
+	size 10 10 10
+end
+
+box
+	position 40 0 0
+	rotation 0
+	size 10 10 10
+end
+
+box
+	position 80 0 0
+	rotation 0
+	size 10 10 10
+end
+
+box
+	position 120 0 0
+	rotation 0
+	size 10 10 10
+end
+
+box
+	position 160 0 0
+	rotation 0
+	size 10 10 10
+end
+
+box
+	position 200 0 0
+	rotation 0
+	size 10 10 10
+end
+
+box
+	position 240 0 0
+	rotation 0
+	size 10 10 10
+end
+
+box
+	position 280 0 0
+	rotation 0
+	size 10 10 10
+end
+
+box
+	position 320 0 0
+	rotation 0
+	size 10 10 10
+end
+
+box
+	position 360 0 0
+	rotation 0
+	size 10 10 10
+end
+
+box
+	position 50 -344 0
+	rotation 0
+	size 5 56 10
+end
+
+box
+	position -50 -344 0
+	rotation 0
+	size 5 56 10
+end
+
+box
+	position 50 344 0
+	rotation 0
+	size 5 56 10
+end
+
+box
+	position -50 344 0
+	rotation 0
+	size 5 56 10
+end
+
+box
+	position 300 -150 10
+	rotation 0
+	size 5 40 1
+end
+
+box
+	position -300 -150 10
+	rotation 0
+	size 5 40 1
+end
+
+box
+	position -300 150 10
+	rotation 0
+	size 5 60 0
+end
+
+box
+	position -300 150 10
+	rotation 0
+	size 5 40 1
+end
+
+box
+	position 300 150 10
+	rotation 0
+	size 5 40 1
+end
+
+box
+	position 30 291.5 35
+	rotation 0
+	size 20 5 5
+end
+
+box
+	position -30 291.5 35
+	rotation 0
+	size 20 5 5
+end
+
+box
+	position 30 -291.5 35
+	rotation 0
+	size 20 5 5
+end
+
+box
+	position -30 -291.5 35
+	rotation 0
+	size 20 5 5
+end
+
+box
+	position 60 300 0
+	rotation 45
+	size 20 5 35
+end
+
+box
+	position -60 300 0
+	rotation 135
+	size 20 5 35
+end
+
+box
+	position -60 -300 0
+	rotation 45
+	size 20 5 35
+end
+
+box
+	position 60 -300 0
+	rotation 135
+	size 20 5 35
+end
+
+box
+	position 0 291.5 3
+	rotation 0
+	size 50 5 32
+end
+
+box
+	position 0 -291.5 3
+	rotation 0
+	size 50 5 32
+end
+
+box
+	position 0 291.5 0
+	rotation 0
+	size 50 5 0.5
+end
+
+box
+	position 0 -291.5 0
+	rotation 0
+	size 50 5 0.5
+end
+
+box
+	position 0 -100 10
+	rotation 0
+	size 10 90 1
+end
+
+box
+	position 0 -105 0
+	rotation 0
+	size 10 105 0
+end
+
+box
+	position 9 -110 0
+	rotation 0
+	size 1 100 10
+end
+
+box
+	position -9 -110 0
+	rotation 0
+	size 1 100 10
+end
+
+box
+	position -9 110 0
+	rotation 0
+	size 1 100 10
+end
+
+box
+	position 9 110 0
+	rotation 0
+	size 1 100 10
+end
+
+box
+	position 0 105 0
+	rotation 0
+	size 10 105 0
+end
+
+box
+	position 0 0 10
+	rotation 0
+	size 380 10 1
+end
+
+box
+	position 0 -349 46
+	rotation 0
+	size 52 52 1
+end
+
+box
+	position 0 349 46
+	rotation 0
+	size 52 52 1
+end
+
+box
+	position 100 100 10
+	rotation 0
+	size 20 20 10
+end
+
+box
+	position 100 100 0
+	rotation 0
+	size 30 30 10
+end
+
+box
+	position 0 0 100
+	rotation 0
+	size 370 10 1
+end
+
+box
+	position 0 0 110
+	rotation 0
+	size 370 10 1
+end
+
+box
+	position 50 9 100
+	rotation 0
+	size 20 1 10
+end
+
+box
+	position 100 9 100
+	rotation 0
+	size 20 1 10
+end
+
+box
+	position 150 9 100
+	rotation 0
+	size 20 1 10
+end
+
+box
+	position 200 9 100
+	rotation 0
+	size 20 1 10
+end
+
+box
+	position 250 9 100
+	rotation 0
+	size 20 1 10
+end
+
+box
+	position 300 9 100
+	rotation 0
+	size 20 1 10
+end
+
+box
+	position 350 9 100
+	rotation 0
+	size 20 1 10
+end
+
+box
+	position -50 9 100
+	rotation 0
+	size 20 1 10
+end
+
+box
+	position -100 9 100
+	rotation 0
+	size 20 1 10
+end
+
+box
+	position -150 9 100
+	rotation 0
+	size 20 1 10
+end
+
+box
+	position -200 9 100
+	rotation 0
+	size 20 1 10
+end
+
+box
+	position -250 9 100
+	rotation 0
+	size 20 1 10
+end
+
+box
+	position -300 9 100
+	rotation 0
+	size 20 1 10
+end
+
+box
+	position -350 9 100
+	rotation 0
+	size 20 1 10
+end
+
+box
+	position 0 -9 100
+	rotation 0
+	size 20 1 10
+end
+
+box
+	position 0 9 100
+	rotation 0
+	size 20 1 10
+end
+
+box
+	position -50 -9 100
+	rotation 0
+	size 20 1 10
+end
+
+box
+	position -100 -9 100
+	rotation 0
+	size 20 1 10
+end
+
+box
+	position -150 -9 100
+	rotation 0
+	size 20 1 10
+end
+
+box
+	position -200 -9 100
+	rotation 0
+	size 20 1 10
+end
+
+box
+	position -250 -9 100
+	rotation 0
+	size 20 1 10
+end
+
+box
+	position -300 -9 100
+	rotation 0
+	size 20 1 10
+end
+
+box
+	position -350 -9 100
+	rotation 0
+	size 20 1 10
+end
+
+box
+	position 50 -9 100
+	rotation 0
+	size 20 1 10
+end
+
+box
+	position 100 -9 100
+	rotation 0
+	size 20 1 10
+end
+
+box
+	position 150 -9 100
+	rotation 0
+	size 20 1 10
+end
+
+box
+	position 200 -9 100
+	rotation 0
+	size 20 1 10
+end
+
+box
+	position 250 -9 100
+	rotation 0
+	size 20 1 10
+end
+
+box
+	position 300 -9 100
+	rotation 0
+	size 20 1 10
+end
+
+box
+	position 350 -9 100
+	rotation 0
+	size 20 1 10
+end
+
+meshpyr
+  position     -300.0 150.0 0.0
+  rotation     0
+  size         50.0 50.0 40.0
+matref pyr_ST
+end
+
+meshpyr
+  position     300.0 -150.0 0.0
+  rotation     0
+  size         50.0 50.0 40.0
+matref pyr_ST
+end
+
+meshpyr
+  position     -300.0 -150.0 0.0
+  rotation     0
+  size         50.0 50.0 40.0
+drivethrough
+matref pyr_ST
+end
+
+meshpyr
+  position     300.0 150.0 0.0
+  rotation     0
+  size         50.0 50.0 40.0
+drivethrough
+matref pyr_ST
+end
+
+group rock
+  position     168.5 106.0 0.0
+  rotation     4545723
+  size         10.0 10.0 5.0
+end
+
+group rock
+  position     120.0 54.5 0.0
+  rotation     5663
+  size         10.0 10.0 5.0
+end
+
+group rock
+  position     37.5 139.0 0.0
+  rotation    456
+  size         10.0 10.0 5.0
+end
+
+group rock
+  position     235.0 59.5 0.0
+  rotation     34
+  size         10.0 10.0 5.0
+end
+
+group rock
+  position     169.0 245.5 0.0
+  rotation     54
+  size         10.0 10.0 5.0
+end
+
+group rock
+  position     99.5 144.5 0.0
+  rotation     456
+  size         10.0 10.0 5.0
+end
+
+group rock
+  position     362.0 75.0 0.0
+  rotation     435
+  size         10.0 10.0 5.0
+end
+
+group rock
+  position     343.5 -65.5 0.0
+  rotation    645
+  size         10.0 10.0 5.0
+end
+
+group rock
+  position     294.0 -39.0 0.0
+  rotation     567
+  size         10.0 10.0 5.0
+end
+
+group rock
+  position     211.5 -155.5 0.0
+  rotation     234
+  size         10.0 10.0 5.0
+end
+
+group rock
+  position     180.5 -85.0 0.0
+  rotation     566
+  size         10.0 10.0 5.0
+end
+
+group rock
+  position     213.5 -44.0 0.0
+  rotation     356
+  size         10.0 10.0 5.0
+end
+
+group rock
+  position     61.5 -44.5 0.0
+  rotation    788
+  size         10.0 10.0 5.0
+end
+
+group rock
+  position     32.5 -92.0 0.0
+  rotation    767
+  size         10.0 10.0 5.0
+end
+
+group rock
+  position     129.5 -153.0 0.0
+  rotation     179
+  size         10.0 10.0 5.0
+end
+
+group rock
+  position     139.0 -28.0 0.0
+  rotation     456
+  size         10.0 10.0 5.0
+end
+
+group rock
+  position     -66.5 -51.5 0.0
+  rotation     234
+  size         10.0 10.0 5.0
+end
+
+group rock
+  position     -38.5 -105.5 0.0
+  rotation     456
+  size         10.0 10.0 5.0
+end
+
+group rock
+  position     -183.0 -66.5 0.0
+  rotation     567
+  size         10.0 10.0 5.0
+end
+
+group rock
+  position     -137.0 -56.0 0.0
+  rotation     587
+  size         10.0 10.0 5.0
+end
+
+group rock
+  position     -32.5 -186.0 0.0
+  rotation     285
+  size         10.0 10.0 5.0
+end
+
+group rock
+  position     -224.5 -160.5 0.0
+  rotation     456
+  size         10.0 10.0 5.0
+end
+
+group rock
+  position     -174.5 -129.5 0.0
+  rotation     789
+  size         10.0 10.0 5.0
+end
+
+group rock
+  position     -266.0 -41.5 0.0
+  rotation     978
+  size         10.0 10.0 5.0
+end
+
+group rock
+  position     -332.0 -62.0 0.0
+  rotation     456
+  size         10.0 10.0 5.0
+end
+
+group rock
+  position     -310.5 30.0 0.0
+  rotation     645
+  size         10.0 10.0 5.0
+end
+
+group rock
+  position     -285.5 70.0 0.0
+  rotation     754
+  size         10.0 10.0 5.0
+end
+
+group rock
+  position     -178.5 43.0 0.0
+  rotation     852
+  size         10.0 10.0 5.0
+end
+
+group rock
+  position     -219.0 117.5 0.0
+  rotation     963
+  size         10.0 10.0 5.0
+end
+
+group rock
+  position     -105.5 117.0 0.0
+  rotation     741
+  size         10.0 10.0 5.0
+end
+
+group rock
+  position     -114.5 55.5 0.0
+  rotation     753
+  size         10.0 10.0 5.0
+end
+
+group rock
+  position     -160.0 157.0 0.0
+  rotation     421
+  size         10.0 10.0 5.0
+end
+
+group rock
+  position     -36.0 136.5 0.0
+  rotation     869
+  size         10.0 10.0 5.0
+end
+
+group rock
+  position     -52.5 59.0 0.0
+  rotation     487
+  size         10.0 10.0 5.0
+end
+
+group rock
+  position     -215.5 -283.5 0.0
+  rotation     623
+  size         10.0 10.0 20.0
+end
+
+group rock
+  position     -129.5 -273.0 0.0
+  rotation     151
+  size         10.0 10.0 20.0
+end
+
+group rock
+  position     -330.5 -310.0 0.0
+  rotation     102
+  size         10.0 10.0 20.0
+end
+
+group rock
+  position     -282.0 -244.0 0.0
+  rotation     356
+  size         10.0 10.0 20.0
+end
+group rock
+  position     -361.0 264.0 0.0
+  rotation     678
+  size         10.0 10.0 20.0
+end
+
+group rock
+  position     -281.5 -357.0 0.0
+  rotation     234
+  size         10.0 10.0 20.0
+end
+
+group rock
+  position     -369.0 -277.5 0.0
+  rotation     789
+  size         10.0 10.0 20.0
+end
+
+group rock
+  position     171.0 -297.0 0.0
+  rotation     456
+  size         10.0 10.0 20.0
+end
+
+group rock
+  position     101.0 -275.0 0.0
+  rotation    657
+  size         10.0 10.0 20.0
+end
+
+group rock
+  position     225.0 -237.0 0.0
+  rotation     234
+  size         10.0 10.0 20.0
+end
+
+group rock
+  position     222.0 -344.5 0.0
+  rotation     789
+  size         10.0 10.0 20.0
+end
+
+group rock
+  position     319.5 -360.5 0.0
+  rotation     345
+  size         10.0 10.0 20.0
+end
+
+group rock
+  position     298.0 -286.5 0.0
+  rotation     908
+  size         10.0 10.0 20.0
+end
+
+group rock
+  position     239.5 -295.0 0.0
+  rotation     169
+  size         10.0 10.0 20.0
+end
+
+group rock
+  position     344.5 -321.5 0.0
+  rotation     199
+  size         10.0 10.0 20.0
+end
+
+group rock
+  position     296.0 321.5 0.0
+  rotation     265
+  size         10.0 10.0 20.0
+end
+
+group rock
+  position     360.0 306.5 0.0
+  rotation     187
+  size         10.0 10.0 20.0
+end
+
+group rock
+  position     188.5 330.5 0.0
+  rotation     109
+  size         10.0 10.0 20.0
+end
+
+group rock
+  position     239.5 260.0 0.0
+  rotation     568
+  size         10.0 10.0 20.0
+end
+
+group rock
+  position     216.0 370.0 0.0
+  rotation     234
+  size         10.0 10.0 20.0
+end
+
+group rock
+  position     108.0 264.0 0.0
+  rotation     546
+  size         10.0 10.0 20.0
+end
+
+group rock
+  position     -102.0 260.5 0.0
+  rotation     189
+  size         10.0 10.0 20.0
+end
+
+group rock
+  position     -342.0 365.5 0.0
+  rotation     367
+  size         10.0 10.0 20.0
+end
+
+group rock
+  position     -310.0 294.0 0.0
+  rotation     876
+  size         10.0 10.0 20.0
+end
+
+group rock
+  position     -240.0 344.5 0.0
+  rotation     347
+  size         10.0 10.0 20.0
+end
+
+group rock
+  position     -197.0 266.0 0.0
+  rotation     678
+  size         10.0 10.0 20.0
+end
+
+group rock
+  position     -263.0 241.5 0.0
+  rotation     323
+  size         10.0 10.0 20.0
+end
+
+group rock
+  position     -361.0 264.0 0.0
+  rotation     345
+  size         10.0 10.0 20.0
+end
+
+box
+	position -100 100 10
+	rotation 0
+	size 20 20 10
+end
+
+box
+	position -100 100 0
+	rotation 0
+	size 30 30 10
+end
+
+box
+	position -100 -100 0
+	rotation 0
+	size 30 30 10
+end
+
+box
+	position 100 -100 0
+	rotation 0
+	size 30 30 10
+end
+
+box
+	position -100 -100 10
+	rotation 0
+	size 20 20 10
+end
+
+box
+	position 100 -100 10
+	rotation 0
+	size 20 20 10
+end
+
+box
+	position -50 -50 0
+	rotation 0
+	size 5 5 20
+end
+
+box
+	position 0 0 20
+	rotation 0
+	size 55 55 5
+end
+
+box
+	position 50 -50 0
+	rotation 0
+	size 5 5 20
+end
+
+box
+	position 50 50 0
+	rotation 0
+	size 5 5 20
+end
+
+box
+	position -50 50 0
+	rotation 0
+	size 5 5 20
+end
+
+arc
+position 50 -300 0
+size 2 2 46
+rotation 0
+angle 360
+ratio 1
+divisions 16
+texsize -8 -8 -8 -8
+top matref 3
+bottom matref 3
+inside matref 3
+outside matref 3
+startside matref 3
+endside matref 3
+end
+
+arc
+position -50 -300 0
+size 2 2 46
+rotation 0
+angle 360
+ratio 1
+divisions 16
+texsize -8 -8 -8 -8
+top matref 3
+bottom matref 3
+inside matref 3
+outside matref 3
+startside matref 3
+endside matref 3
+end
+
+arc
+position 50 300 0
+size 2 2 46
+rotation 0
+angle 360
+ratio 1
+divisions 16
+texsize -8 -8 -8 -8
+top matref 3
+bottom matref 3
+inside matref 3
+outside matref 3
+startside matref 3
+endside matref 3
+end
+
+arc
+position -50 300 0
+size 2 2 46
+rotation 0
+angle 360
+ratio 1
+divisions 16
+texsize -8 -8 -8 -8
+top matref 3
+bottom matref 3
+inside matref 3
+outside matref 3
+startside matref 3
+endside matref 3
+end
+
+arc
+position 50 -398 0
+size 2 2 46
+rotation 0
+angle 360
+ratio 1
+divisions 16
+texsize -8 -8 -8 -8
+top matref 3
+bottom matref 3
+inside matref 3
+outside matref 3
+startside matref 3
+endside matref 3
+end
+
+arc
+position -50 -398 0
+size 2 2 46
+rotation 0
+angle 360
+ratio 1
+divisions 16
+texsize -8 -8 -8 -8
+top matref 3
+bottom matref 3
+inside matref 3
+outside matref 3
+startside matref 3
+endside matref 3
+end
+
+arc
+position 50 398 0
+size 2 2 46
+rotation 0
+angle 360
+ratio 1
+divisions 16
+texsize -8 -8 -8 -8
+top matref 3
+bottom matref 3
+inside matref 3
+outside matref 3
+startside matref 3
+endside matref 3
+end
+
+arc
+position -50 398 0
+size 2 2 46
+rotation 0
+angle 360
+ratio 1
+divisions 16
+texsize -8 -8 -8 -8
+top matref 3
+bottom matref 3
+inside matref 3
+outside matref 3
+startside matref 3
+endside matref 3
+end
+
+arc
+position 0 -350 0
+size 2 2 46
+rotation 0
+angle 360
+ratio 1
+divisions 16
+texsize -8 -8 -8 -8
+top matref 3
+bottom matref 3
+inside matref 3
+outside matref 3
+startside matref 3
+endside matref 3
+drivethrough
+end
+
+arc
+position 0 350 0
+size 2 2 46
+rotation 0
+angle 360
+ratio 1
+divisions 16
+texsize -8 -8 -8 -8
+top matref 3
+bottom matref 3
+inside matref 3
+outside matref 3
+startside matref 3
+endside matref 3
+drivethrough
+end
+
+teleporter /t0
+name -Y0
+	position 0 -291.5 0
+	rotation 90
+	size 0.5 50 3
+	border 1
+	drivethrough
+end
+
+teleporter /t1
+name +Y1
+	position 0 291.5 0
+	rotation -90
+	size 0.5 50 3
+	border 1
+	drivethrough
+end
+
+
+teleporter /t2
+name Up+X2
+	position 370 0 101
+	rotation 180
+	size 0.125 8 9
+	border 0
+end
+
+teleporter /t3
+name Up-X3
+	position -370 0 101
+	rotation 0
+	size 0.125 8 9
+	border 0
+end
+
+teleporter /t4
+name LOW-X4
+	position -370 0 11
+	rotation 0
+	size 0.125 8 9
+	border 1
+end
+
+teleporter /t5
+name LOW+X5
+	position 370 0 11
+	rotation 180
+	size 0.125 8 9
+	border 1
+end
+
+link
+	from /t0:f
+	to /t0:f
+end
+
+link
+	from /t1:f
+	to /t1:f
+end
+
+link
+	from /t4:f
+	to /t2:f
+end
+
+link
+	from /t4:b
+	to /t2:f
+end
+
+link
+	from /t5:f
+	to /t3:f
+end
+
+link
+	from /t5:b
+	to /t3:f
+end
+
+link
+	from /t2:f
+	to /t4:f
+end
+
+link
+	from /t3:f
+	to /t5:f
+end

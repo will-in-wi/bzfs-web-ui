@@ -1,0 +1,833 @@
+### BZFLAG WORLD FILE HEADER
+
+
+# Map name	: CTF-Overlord
+# File name	: ctfoverlord.bzw
+# Version	: 1.00
+# Release date	: 2002-11-21
+
+# Designer	: Raimond "Dutchrai" Kuhlman
+# Email address	: dutchrai@yahoo.com
+
+# BZFS Required	: -c -j -mp 0,3,3,0,0,0 -public "CTF-Overlord by Dutchrai" -world "ctfoverlord.bzw"
+
+
+### BZFLAG WORLD FILE DATA
+
+
+# Fire Cover (-,+) Sector
+
+pyramid
+position -160 190 0
+rotation 30
+size 15 15 15
+end
+
+pyramid
+position -260 110 0
+rotation 50
+size 15 15 15
+end
+
+pyramid
+position -200 250 0
+rotation 80
+size 15 15 15
+end
+
+pyramid
+position -350 100 0
+rotation 15
+size 15 15 15
+end
+
+pyramid
+position -120 330 0
+rotation 0
+size 15 15 15
+end
+
+pyramid
+position -320 300 0
+rotation 45
+size 15 15 15
+end
+
+pyramid
+position -300 340 0
+rotation 45
+size 15 15 15
+end
+
+pyramid
+position -270 220 0
+rotation 60
+size 15 15 15
+end
+
+
+# Fire Cover (+,-) Sector
+
+pyramid
+position 140 -170 0
+rotation 50
+size 15 15 15
+end
+
+pyramid
+position 240 -130 0
+rotation 20
+size 15 15 15
+end
+
+pyramid
+position 180 -210 0
+rotation 80
+size 15 15 15
+end
+
+pyramid
+position 330 -120 0
+rotation 70
+size 15 15 15
+end
+
+pyramid
+position 110 -320 0
+rotation 45
+size 15 15 15
+end
+
+pyramid
+position 340 -330 0
+rotation 30
+size 15 15 15
+end
+
+pyramid
+position 270 -310 0
+rotation 60
+size 15 15 15
+end
+
+pyramid
+position 240 -230 0
+rotation 10
+size 15 15 15
+end
+
+
+# Grid (0,-300)
+
+box
+position -30 -270 0
+rotation 0
+size 15 15 90
+end
+
+box
+position -30 -330 0
+rotation 0
+size 15 15 90
+end
+
+box
+position 30 -270 0
+rotation 0
+size 15 15 90
+end
+
+box
+position 30 -330 0
+rotation 0
+size 15 15 90
+end
+
+box
+position 0 -277.5 30
+rotation 0
+size 15 7.5 30
+end
+
+box
+position 0 -322.5 30
+rotation 0
+size 15 7.5 30
+end
+
+box
+position 22.5 -300 30
+rotation 0
+size 7.5 15 30
+end
+
+box
+position -22.5 -300 30
+rotation 0
+size 7.5 15 30
+end
+
+box
+position 0 -270 60
+rotation 0
+size 15 15 30
+end
+
+box
+position 0 -330 60
+rotation 0
+size 15 15 30
+end
+
+box
+position 30 -300 60
+rotation 0
+size 15 15 30
+end
+
+box
+position -30 -300 60
+rotation 0
+size 15 15 15
+end
+
+
+# Grid (-150,-150)
+
+base
+position -135 -135 44
+rotation 0
+size 30 30 1
+color 2
+end
+
+box
+position -138 -138 39
+rotation 0
+size 27 27 5
+end
+
+box
+position -141 -141 34
+rotation 0
+size 24 24 5
+end
+
+box
+position -144 -144 29
+rotation 0
+size 21 21 5
+end
+
+box
+position -180 -150 10
+rotation 0
+size 15 15 35
+end
+
+box
+position -150 -180 10
+rotation 0
+size 15 15 35
+end
+
+box
+position -180 -180 0
+rotation 0
+size 15 15 45
+end
+
+box
+position -120 -120 0
+rotation 0
+size 15 15 15
+end
+
+box
+position -120 -165 0
+rotation 0
+size 15 30 15
+end
+
+box
+position -165 -120 0
+rotation 0
+size 30 15 15
+end
+
+
+# Grid (-150,-300)
+
+box
+position -150 -284.5 59
+rotation 0
+size 15 0.5 1
+end
+
+box
+position -150 -255.5 59
+rotation 0
+size 15 0.5 1
+end
+
+box
+position -120 -300 45
+rotation 0
+size 15 45 15
+end
+
+box
+position -120 -330 15
+rotation 0
+size 15 15 30
+end
+
+box
+position -120 -270 15
+rotation 0
+size 15 15 30
+end
+
+box
+position -180 -270 15
+rotation 0
+size 15 15 45
+end
+
+box
+position -150 -300 0
+rotation 0
+size 45 45 15
+end
+
+
+# Grid (-300,0)
+
+box
+position -270 0 60
+rotation 0
+size 15 15 30
+end
+
+box
+position -330 0 60
+rotation 0
+size 15 15 30
+end
+
+box
+position -300 30 60
+rotation 0
+size 15 15 30
+end
+
+box
+position -300 -30 60
+rotation 0
+size 15 15 15
+end
+
+box
+position -277.5 0 30
+rotation 0
+size 7.5 15 30
+end
+
+box
+position -322.5 0 30
+rotation 0
+size 7.5 15 30
+end
+
+box
+position -300 22.5 30
+rotation 0
+size 15 7.5 30
+end
+
+box
+position -300 -22.5 30
+rotation 0
+size 15 7.5 30
+end
+
+box
+position -270 -30 0
+rotation 0
+size 15 15 90
+end
+
+box
+position -330 -30 0
+rotation 0
+size 15 15 90
+end
+
+box
+position -270 30 0
+rotation 0
+size 15 15 90
+end
+
+box
+position -330 30 0
+rotation 0
+size 15 15 90
+end
+
+
+# Grid (-300,-150)
+
+box
+position -284.5 -150 59
+rotation 0
+size 0.5 15 1
+end
+
+box
+position -255.5 -150 59
+rotation 0
+size 0.5 15 1
+end
+
+box
+position -300 -120 45
+rotation 0
+size 45 15 15
+end
+
+box
+position -330 -120 15
+rotation 0
+size 15 15 30
+end
+
+box
+position -270 -120 15
+rotation 0
+size 15 15 30
+end
+
+box
+position -270 -180 15
+rotation 0
+size 15 15 45
+end
+
+box
+position -300 -150 0
+rotation 0
+size 45 45 15
+end
+
+
+# Grid (-300,-300)
+
+box
+position -300 -300 0
+rotation 0
+size 45 45 15
+end
+
+
+# Bridge between Grid (-150,-300) and (-300,-300)
+
+box
+position -225 -300 13
+rotation 0
+size 30 15 2
+end
+
+
+# Bridge between Grid (-150,-150) and (-150,-300)
+
+box
+position -150 -240 28
+rotation 0
+size 15 45 2
+end
+
+
+# Bridge between Grid (-300,-150) and (-300,-300)
+
+box
+position -300 -225 13
+rotation 0
+size 15 30 2
+end
+
+
+# Bridge between Grid (-150,-150) and (-300,-150)
+
+box
+position -240 -150 28
+rotation 0
+size 45 15 2
+end
+
+
+# Bridge between Grid (-150,-300) and (-300,-150)
+
+box
+position -225 -225 59
+rotation 45
+size 0.5 43 1
+end
+
+
+# Grid (0,300)
+
+box
+position 30 270 0
+rotation 0
+size 15 15 90
+end
+
+box
+position 30 330 0
+rotation 0
+size 15 15 90
+end
+
+box
+position -30 270 0
+rotation 0
+size 15 15 90
+end
+
+box
+position -30 330 0
+rotation 0
+size 15 15 90
+end
+
+box
+position 0 277.5 30
+rotation 0
+size 15 7.5 30
+end
+
+box
+position 0 322.5 30
+rotation 0
+size 15 7.5 30
+end
+
+box
+position -22.5 300 30
+rotation 0
+size 7.5 15 30
+end
+
+box
+position 22.5 300 30
+rotation 0
+size 7.5 15 30
+end
+
+box
+position 0 270 60
+rotation 0
+size 15 15 30
+end
+
+box
+position 0 330 60
+rotation 0
+size 15 15 30
+end
+
+box
+position -30 300 60
+rotation 0
+size 15 15 30
+end
+
+box
+position 30 300 60
+rotation 0
+size 15 15 15
+end
+
+
+# Grid (150,150)
+
+base
+position 135 135 44
+rotation 0
+size 30 30 1
+color 1
+end
+
+box
+position 138 138 39
+rotation 0
+size 27 27 5
+end
+
+box
+position 141 141 34
+rotation 0
+size 24 24 5
+end
+
+box
+position 144 144 29
+rotation 0
+size 21 21 5
+end
+
+box
+position 180 150 10
+rotation 0
+size 15 15 35
+end
+
+box
+position 150 180 10
+rotation 0
+size 15 15 35
+end
+
+box
+position 180 180 0
+rotation 0
+size 15 15 45
+end
+
+box
+position 120 120 0
+rotation 0
+size 15 15 15
+end
+
+box
+position 120 165 0
+rotation 0
+size 15 30 15
+end
+
+box
+position 165 120 0
+rotation 0
+size 30 15 15
+end
+
+
+# Grid (150,300)
+
+box
+position 150 284.5 59
+rotation 0
+size 15 0.5 1
+end
+
+box
+position 150 255.5 59
+rotation 0
+size 15 0.5 1
+end
+
+box
+position 120 300 45
+rotation 0
+size 15 45 15
+end
+
+box
+position 120 330 15
+rotation 0
+size 15 15 30
+end
+
+box
+position 120 270 15
+rotation 0
+size 15 15 30
+end
+
+box
+position 180 270 15
+rotation 0
+size 15 15 45
+end
+
+box
+position 150 300 0
+rotation 0
+size 45 45 15
+end
+
+
+# Grid (300,0)
+
+box
+position 270 0 60
+rotation 0
+size 15 15 30
+end
+
+box
+position 330 0 60
+rotation 0
+size 15 15 30
+end
+
+box
+position 300 -30 60
+rotation 0
+size 15 15 30
+end
+
+box
+position 300 30 60
+rotation 0
+size 15 15 15
+end
+
+box
+position 277.5 0 30
+rotation 0
+size 7.5 15 30
+end
+
+box
+position 322.5 0 30
+rotation 0
+size 7.5 15 30
+end
+
+box
+position 300 -22.5 30
+rotation 0
+size 15 7.5 30
+end
+
+box
+position 300 22.5 30
+rotation 0
+size 15 7.5 30
+end
+
+box
+position 270 30 0
+rotation 0
+size 15 15 90
+end
+
+box
+position 330 30 0
+rotation 0
+size 15 15 90
+end
+
+box
+position 270 -30 0
+rotation 0
+size 15 15 90
+end
+
+box
+position 330 -30 0
+rotation 0
+size 15 15 90
+end
+
+
+# Grid (300,150)
+
+box
+position 284.5 150 59
+rotation 0
+size 0.5 15 1
+end
+
+box
+position 255.5 150 59
+rotation 0
+size 0.5 15 1
+end
+
+box
+position 300 120 45
+rotation 0
+size 45 15 15
+end
+
+box
+position 330 120 15
+rotation 0
+size 15 15 30
+end
+
+box
+position 270 120 15
+rotation 0
+size 15 15 30
+end
+
+box
+position 270 180 15
+rotation 0
+size 15 15 45
+end
+
+box
+position 300 150 0
+rotation 0
+size 45 45 15
+end
+
+
+# Grid (300,300)
+
+box
+position 300 300 0
+rotation 0
+size 45 45 15
+end
+
+
+# Bridge between Grid (150,300) and (300,300)
+
+box
+position 225 300 13
+rotation 0
+size 30 15 2
+end
+
+
+# Bridge between Grid (150,150) and (150,300)
+
+box
+position 150 240 28
+rotation 0
+size 15 45 2
+end
+
+
+# Bridge between Grid (300,150) and (300,300)
+
+box
+position 300 225 13
+rotation 0
+size 15 30 2
+end
+
+
+# Bridge between Grid (150,150) and (300,150)
+
+box
+position 240 150 28
+rotation 0
+size 45 15 2
+end
+
+
+# Bridge between Grid (150,300) and (300,150)
+
+box
+position 225 225 59
+rotation 45
+size 0.5 43 1
+end

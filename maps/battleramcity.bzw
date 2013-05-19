@@ -1,0 +1,932 @@
+### BZFLAG WORLD FILE HEADER
+
+
+# Map name	: Battleram City
+# File name	: battleramcity.bzw
+# Version	: 1.00
+# Release date	: 2004-12-22
+
+# Designer	: Raimond "Dutchrai" Kuhlman
+# Email address	: dutchrai@yahoo.com
+
+# BZFS Required	: -c -j -mp 0,4,4,4,4,2 -public "Battleram City by Dutchrai" -world "battleramcity.bzw"
+
+
+### BZFLAG WORLD FILE DATA
+
+
+# Fortress
+
+box
+	position 0 0 0 
+	rotation 45
+	size 70.7 70.7 15
+end
+
+box
+	position 0 0 0 
+	rotation 0
+	size 40 40 30
+end
+
+box
+	position 25 25 30 
+	rotation 0
+	size 15 15 10
+end
+
+box
+	position 25 -25 30 
+	rotation 0
+	size 15 15 10
+end
+
+box
+	position -25 -25 30 
+	rotation 0
+	size 15 15 10
+end
+
+box
+	position -25 25 30 
+	rotation 0
+	size 15 15 10
+end
+
+box
+	position 25 37.5 40
+	rotation 0
+	size 15 2.5 5
+end
+
+box
+	position -25 37.5 40 
+	rotation 0
+	size 15 2.5 5
+end
+
+box
+	position 25 -37.5 40 
+	rotation 0
+	size 15 2.5 5
+end
+
+box
+	position -25 -37.5 40 
+	rotation 0
+	size 15 2.5 5
+end
+
+box
+	position 37.5 22.5 40 
+	rotation 0
+	size 2.5 12.5 5
+end
+
+box
+	position -37.5 22.5 40 
+	rotation 0
+	size 2.5 12.5 5
+end
+
+box
+	position 37.5 -22.5 40 
+	rotation 0
+	size 2.5 12.5 5
+end
+
+box
+	position -37.5 -22.5 40 
+	rotation 0
+	size 2.5 12.5 5
+end
+
+
+# Red Road
+
+box
+	position 0 62.5 25 
+	rotation 0
+	size 10 22.5 5
+end
+
+box
+	position 0 125 0 
+	rotation 0
+	size 15 40 30
+end
+
+box
+	position 12.5 95 30 
+	rotation 0
+	size 2.5 10 5
+end
+
+box
+	position -12.5 95 30 
+	rotation 0
+	size 2.5 10 5
+end
+
+box
+	position 12.5 125 30 
+	rotation 0
+	size 2.5 10 5
+end
+
+box
+	position -12.5 125 30 
+	rotation 0
+	size 2.5 10 5
+end
+
+box
+	position 12.5 155 30 
+	rotation 0
+	size 2.5 10 5
+end
+
+box
+	position -12.5 155 30 
+	rotation 0
+	size 2.5 10 5
+end
+
+box
+	position 0 210 25 
+	rotation 0
+	size 7.5 45 5
+end
+
+box
+	position 0 190 0 
+	rotation 45
+	size 7.5 7.5 7.5
+end
+
+pyramid
+	position 0 190 7.5 
+	rotation 45
+	size 7.5 7.5 15
+end
+
+box
+	position 0 190 7.5 
+	rotation 45
+	size 4 4 17.5
+end
+
+box
+	position 0 230 0 
+	rotation 45
+	size 7.5 7.5 7.5
+end
+
+pyramid
+	position 0 230 7.5 
+	rotation 45
+	size 7.5 7.5 15
+end
+
+box
+	position 0 230 7.5 
+	rotation 45
+	size 4 4 17.5
+end
+
+
+# Red Base
+
+box
+	position 0 340 0 
+	rotation 0
+	size 60 60 15
+end
+
+box
+	position 0 267.5 0 
+	rotation 0
+	size 15 12.5 30
+end
+
+box
+	position 12.5 265 30 
+	rotation 0
+	size 2.5 10 5
+end
+
+box
+	position -12.5 265 30 
+	rotation 0
+	size 2.5 10 5
+end
+
+box
+	position 12.5 295 30 
+	rotation 0
+	size 2.5 10 5
+end
+
+box
+	position -12.5 295 30 
+	rotation 0
+	size 2.5 10 5
+end
+
+box
+	position 0 290 15 
+	rotation 0
+	size 15 10 15
+end
+
+box
+	position 0 340 15 
+	rotation 0
+	size 40 40 10
+end
+
+box
+	position 0 302.5 25 
+	rotation 0
+	size 40 2.5 5
+end
+
+box
+	position 0 377.5 25 
+	rotation 0
+	size 40 2.5 5
+end
+
+box
+	position 37.5 340 25 
+	rotation 0
+	size 2.5 35 5
+end
+
+box
+	position -37.5 340 25 
+	rotation 0
+	size 2.5 35 5
+end
+
+box
+	position 0 340 25 
+	rotation 0
+	size 15 15 19
+end
+
+base
+	position 0 340 44 
+	rotation 0
+	size 15 15 1
+	color 1
+end
+
+
+# Blue Road
+
+box
+	position 62.5 0 25 
+	rotation 0
+	size 22.5 10 5
+end
+
+box
+	position 125 0 0 
+	rotation 0
+	size 40 15 30
+end
+
+box
+	position 95 12.5 30 
+	rotation 0
+	size 10 2.5 5
+end
+
+box
+	position 95 -12.5 30 
+	rotation 0
+	size 10 2.5 5
+end
+
+box
+	position 125 12.5 30 
+	rotation 0
+	size 10 2.5 5
+end
+
+box
+	position 125 -12.5 30 
+	rotation 0
+	size 10 2.5 5
+end
+
+box
+	position 155 12.5 30 
+	rotation 0
+	size 10 2.5 5
+end
+
+box
+	position 155 -12.5 30 
+	rotation 0
+	size 10 2.5 5
+end
+
+box
+	position 210 0 25 
+	rotation 0
+	size 45 7.5 5
+end
+
+box
+	position 190 0 0 
+	rotation 45
+	size 7.5 7.5 7.5
+end
+
+pyramid
+	position 190 0 7.5 
+	rotation 45
+	size 7.5 7.5 15
+end
+
+box
+	position 190 0 7.5 
+	rotation 45
+	size 4 4 17.5
+end
+
+box
+	position 230 0 0 
+	rotation 45
+	size 7.5 7.5 7.5
+end
+
+pyramid
+	position 230 0 7.5 
+	rotation 45
+	size 7.5 7.5 15
+end
+
+box
+	position 230 0 7.5 
+	rotation 45
+	size 4 4 17.5
+end
+
+
+# Blue Base
+
+box
+	position 340 0 0 
+	rotation 0
+	size 60 60 15
+end
+
+box
+	position 267.5 0 0 
+	rotation 0
+	size 12.5 15 30
+end
+
+box
+	position 265 12.5 30 
+	rotation 0
+	size 10 2.5 5
+end
+
+box
+	position 265 -12.5 30 
+	rotation 0
+	size 10 2.5 5
+end
+
+box
+	position 295 12.5 30 
+	rotation 0
+	size 10 2.5 5
+end
+
+box
+	position 295 -12.5 30 
+	rotation 0
+	size 10 2.5 5
+end
+
+box
+	position 290 0 15 
+	rotation 0
+	size 10 15 15
+end
+
+box
+	position 340 0 15 
+	rotation 0
+	size 40 40 10
+end
+
+box
+	position 302.5 0 25 
+	rotation 0
+	size 2.5 40 5
+end
+
+box
+	position 377.5 0 25 
+	rotation 0
+	size 2.5 40 5
+end
+
+box
+	position 340 37.5 25 
+	rotation 0
+	size 35 2.5 5
+end
+
+box
+	position 340 -37.5 25 
+	rotation 0
+	size 35 2.5 5
+end
+
+box
+	position 340 0 25 
+	rotation 0
+	size 15 15 19
+end
+
+base
+	position 340 0 44 
+	rotation 0
+	size 15 15 1
+	color 3
+end
+
+
+# Green Road
+
+box
+	position 0 -62.5 25 
+	rotation 0
+	size 10 22.5 5
+end
+
+box
+	position 0 -125 0 
+	rotation 0
+	size 15 40 30
+end
+
+box
+	position 12.5 -95 30 
+	rotation 0
+	size 2.5 10 5
+end
+
+box
+	position -12.5 -95 30 
+	rotation 0
+	size 2.5 10 5
+end
+
+box
+	position 12.5 -125 30 
+	rotation 0
+	size 2.5 10 5
+end
+
+box
+	position -12.5 -125 30 
+	rotation 0
+	size 2.5 10 5
+end
+
+box
+	position 12.5 -155 30 
+	rotation 0
+	size 2.5 10 5
+end
+
+box
+	position -12.5 -155 30 
+	rotation 0
+	size 2.5 10 5
+end
+
+box
+	position 0 -210 25 
+	rotation 0
+	size 7.5 45 5
+end
+
+box
+	position 0 -190 0 
+	rotation 45
+	size 7.5 7.5 7.5
+end
+
+pyramid
+	position 0 -190 7.5 
+	rotation 45
+	size 7.5 7.5 15
+end
+
+box
+	position 0 -190 7.5 
+	rotation 45
+	size 4 4 17.5
+end
+
+box
+	position 0 -230 0 
+	rotation 45
+	size 7.5 7.5 7.5
+end
+
+pyramid
+	position 0 -230 7.5 
+	rotation 45
+	size 7.5 7.5 15
+end
+
+box
+	position 0 -230 7.5 
+	rotation 45
+	size 4 4 17.5
+end
+
+
+# Green Base
+
+box
+	position 0 -340 0 
+	rotation 0
+	size 60 60 15
+end
+
+box
+	position 0 -267.5 0 
+	rotation 0
+	size 15 12.5 30
+end
+
+box
+	position 12.5 -265 30 
+	rotation 0
+	size 2.5 10 5
+end
+
+box
+	position -12.5 -265 30 
+	rotation 0
+	size 2.5 10 5
+end
+
+box
+	position 12.5 -295 30 
+	rotation 0
+	size 2.5 10 5
+end
+
+box
+	position -12.5 -295 30 
+	rotation 0
+	size 2.5 10 5
+end
+
+box
+	position 0 -290 15 
+	rotation 0
+	size 15 10 15
+end
+
+box
+	position 0 -340 15 
+	rotation 0
+	size 40 40 10
+end
+
+box
+	position 0 -302.5 25 
+	rotation 0
+	size 40 2.5 5
+end
+
+box
+	position 0 -377.5 25 
+	rotation 0
+	size 40 2.5 5
+end
+
+box
+	position 37.5 -340 25 
+	rotation 0
+	size 2.5 35 5
+end
+
+box
+	position -37.5 -340 25 
+	rotation 0
+	size 2.5 35 5
+end
+
+box
+	position 0 -340 25 
+	rotation 0
+	size 15 15 19
+end
+
+base
+	position 0 -340 44 
+	rotation 0
+	size 15 15 1
+	color 2
+end
+
+
+# Purple Road
+
+box
+	position -62.5 0 25 
+	rotation 0
+	size 22.5 10 5
+end
+
+box
+	position -125 0 0 
+	rotation 0
+	size 40 15 30
+end
+
+box
+	position -95 12.5 30 
+	rotation 0
+	size 10 2.5 5
+end
+
+box
+	position -95 -12.5 30 
+	rotation 0
+	size 10 2.5 5
+end
+
+box
+	position -125 12.5 30 
+	rotation 0
+	size 10 2.5 5
+end
+
+box
+	position -125 -12.5 30 
+	rotation 0
+	size 10 2.5 5
+end
+
+box
+	position -155 12.5 30 
+	rotation 0
+	size 10 2.5 5
+end
+
+box
+	position -155 -12.5 30 
+	rotation 0
+	size 10 2.5 5
+end
+
+box
+	position -210 0 25 
+	rotation 0
+	size 45 7.5 5
+end
+
+box
+	position -190 0 0 
+	rotation 45
+	size 7.5 7.5 7.5
+end
+
+pyramid
+	position -190 0 7.5 
+	rotation 45
+	size 7.5 7.5 15
+end
+
+box
+	position -190 0 7.5 
+	rotation 45
+	size 4 4 17.5
+end
+
+box
+	position -230 0 0 
+	rotation 45
+	size 7.5 7.5 7.5
+end
+
+pyramid
+	position -230 0 7.5 
+	rotation 45
+	size 7.5 7.5 15
+end
+
+box
+	position -230 0 7.5 
+	rotation 45
+	size 4 4 17.5
+end
+
+
+# Purple Base
+
+box
+	position -340 0 0 
+	rotation 0
+	size 60 60 15
+end
+
+box
+	position -267.5 0 0 
+	rotation 0
+	size 12.5 15 30
+end
+
+box
+	position -265 12.5 30 
+	rotation 0
+	size 10 2.5 5
+end
+
+box
+	position -265 -12.5 30 
+	rotation 0
+	size 10 2.5 5
+end
+
+box
+	position -295 12.5 30 
+	rotation 0
+	size 10 2.5 5
+end
+
+box
+	position -295 -12.5 30 
+	rotation 0
+	size 10 2.5 5
+end
+
+box
+	position -290 0 15 
+	rotation 0
+	size 10 15 15
+end
+
+box
+	position -340 0 15 
+	rotation 0
+	size 40 40 10
+end
+
+box
+	position -302.5 0 25 
+	rotation 0
+	size 2.5 40 5
+end
+
+box
+	position -377.5 0 25 
+	rotation 0
+	size 2.5 40 5
+end
+
+box
+	position -340 37.5 25 
+	rotation 0
+	size 35 2.5 5
+end
+
+box
+	position -340 -37.5 25 
+	rotation 0
+	size 35 2.5 5
+end
+
+box
+	position -340 0 25 
+	rotation 0
+	size 15 15 19
+end
+
+base
+	position -340 0 44 
+	rotation 0
+	size 15 15 1
+	color 4
+end
+
+
+# Lake
+
+pyramid
+	position 0 0 5 
+	rotation 0
+	size 270 270 0
+	passable
+end
+
+box
+	position 0 280 0 
+	rotation 0
+	size 290 10 7.5
+end
+
+box
+	position 280 0 0 
+	rotation 0
+	size 10 270 7.5
+end
+
+box
+	position 0 -280 0 
+	rotation 0
+	size 290 10 7.5
+end
+
+box
+	position -280 0 0 
+	rotation 0
+	size 10 270 7.5
+end
+
+box
+	position 125 125 0 0 
+	rotation 0
+	size 25 25 7.5
+end
+
+box
+	position 125 125 7.5 
+	rotation 0
+	size 15 15 15
+end
+
+box
+	position 85 85 4 
+	rotation -45
+	size 5 49.52 11
+end
+
+box
+	position 125 -125 0 0 
+	rotation 0
+	size 25 25 7.5
+end
+
+box
+	position 125 -125 7.5 
+	rotation 0
+	size 15 15 15
+end
+
+box
+	position 85 -85 4 
+	rotation 45
+	size 5 49.52 11
+end
+
+box
+	position -125 -125 0 0 
+	rotation 0
+	size 25 25 7.5
+end
+
+box
+	position -125 -125 7.5 
+	rotation 0
+	size 15 15 15
+end
+
+box
+	position -85 -85 4 
+	rotation -45
+	size 5 49.52 11
+end
+
+box
+	position -125 125 0 0 
+	rotation 0
+	size 25 25 7.5
+end
+
+box
+	position -125 125 7.5 
+	rotation 0
+	size 15 15 15
+end
+
+box
+	position -85 85 4 
+	rotation 45
+	size 5 49.52 11
+end

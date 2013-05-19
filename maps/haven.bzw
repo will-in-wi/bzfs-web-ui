@@ -1,0 +1,1535 @@
+#**********************************************************************
+#  Built with bzfed version: 0.1
+#  http://www.bzfed.org/
+#**********************************************************************
+#
+#  This program is free software; you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation; either version 2 of the License, or
+#  (at your option) any later version.
+#
+#  This program is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU Library General Public License for more details.
+#
+#  You should have received a copy of the GNU General Public License
+#  along with this program; if not, write to the Free Software
+#  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+
+#!name box-0
+box
+position 0 0 50
+rotation 0
+size 200 10 1
+end
+
+#!name box-1
+box
+position -210 0 50
+rotation 0
+size 20 250 1
+end
+
+#!name box-2
+box
+position 210 0 50
+rotation 0
+size 20 250 1
+end
+
+#!name box-3
+box
+position 0 270 50
+rotation 0
+size 230 20 1
+end
+
+#!name box-4
+box
+position 0 -270 50
+rotation 0
+size 230 20 1
+end
+
+#!name pyramid-5
+meshpyr
+position 340 340 0
+rotation 0
+size 20 20 100.2
+color 0 1 0 1
+texture caution
+end
+
+#!name pyramid-6
+meshpyr
+position -340 340 0
+rotation 0
+size 20 20 100.2
+color 1 0 0 1
+texture caution
+end
+
+#!name pyramid-7
+meshpyr
+position 340 -340 0
+rotation 0
+size 20 20 100.2
+color 1 1 0 1
+texture caution
+end
+
+#!name pyramid-8
+meshpyr
+position -340 -340 0
+rotation 0
+size 20 20 100.2
+color 0 0 1 1
+texture caution
+end
+
+#!name box-9
+box
+position -360 0 10
+rotation 0
+size 10 10 1
+end
+
+#!name box-10
+box
+position -330 0 20
+rotation 0
+size 10 10 1
+end
+
+#!name box-11
+box
+position -300 0 30
+rotation 0
+size 10 10 1
+end
+
+#!name box-12
+box
+position -270 0 40
+rotation 0
+size 10 10 1
+end
+
+#!name box-13
+box
+position 0 50 60
+rotation 0
+size 60 20 1
+end
+
+#!name box-14
+box
+position 0 -50 60
+rotation 0
+size 60 20 1
+end
+
+#!name box-15
+box
+position 360 0 10
+rotation 0
+size 10 10 1
+end
+
+#!name box-16
+box
+position 330 0 20
+rotation 0
+size 10 10 1
+end
+
+#!name box-17
+box
+position 300 0 30
+rotation 0
+size 10 10 1
+end
+
+#!name box-18
+box
+position 270 0 40
+rotation 0
+size 10 10 1
+end
+
+#!name box-19
+box
+position 0 135 70
+rotation 0
+size 130 50 1
+end
+
+#!name box-20
+box
+position 0 -100 70
+rotation 0
+size 50 20 1
+end
+
+#!name box-21
+box
+position -160 -130 60
+rotation 0
+size 20 60 1
+end
+
+#!name box-22
+box
+position 160 -130 60
+rotation 0
+size 20 60 1
+end
+
+#!name box-23
+box
+position 0 -220 60
+rotation 0
+size 60 20 1
+end
+
+#!name box-24
+box
+position -110 -130 70
+rotation 0
+size 20 50 1
+end
+
+#!name box-25
+box
+position 110 -130 70
+rotation 0
+size 20 50 1
+end
+
+#!name box-26
+box
+position 0 -170 70
+rotation 0
+size 50 20 1
+end
+
+#!name teleporter-27
+teleporter
+position 0 -135 80
+rotation 90
+size 0 20.5 20.2
+border 1
+end
+
+#!name teleporter-28
+teleporter
+position 70 -135 80
+rotation 0
+size 0 20.5 20.2
+border 1
+end
+
+#!name teleporter-29
+teleporter
+position -70 -135 80
+rotation 0
+size 0 20.5 20.2
+border 1
+end
+
+#!name box-30
+box
+position 0 220 60
+rotation 0
+size 60 20 1
+end
+
+#!name box-31
+box
+position 160 135 60
+rotation 0
+size 20 50 1
+end
+
+#!name box-32
+box
+position -160 135 60
+rotation 0
+size 20 50 1
+end
+
+#!name box-33
+meshbox
+position 300 -51 0
+rotation 45
+size 60 10 10
+texture wall
+color 1 1 1 .2
+end
+
+#!name box-34
+meshbox
+position 300 51 0
+rotation 135
+size 60 10 10
+texture wall
+color 1 1 1 .2
+end
+
+#!name box-35
+meshbox
+position -300 51 0
+rotation 45
+size 60 10 10
+texture wall
+color 1 1 1 .2
+end
+
+#!name box-36
+meshbox
+position -300 -51 0
+rotation 135
+size 60 10 10
+texture wall
+color 1 1 1 .2
+end
+
+#!name teleporter-37
+teleporter
+position 0 340 0
+rotation 90
+size 0 20.5 20.2
+border 1
+end
+
+#!name teleporter-38
+teleporter
+position 0 -340 0
+rotation 90
+size 0 20.5 20.2
+border 1
+end
+
+#!name link-39
+link
+from 6
+to 8
+end
+
+#!name link-40
+link
+from 5
+to 2
+end
+
+#!name link-41
+link
+from 7
+to 5
+end
+
+#!name link-42
+link
+from 9
+to 2
+end
+
+#!name link-43
+link
+from 8
+to 9
+end
+
+#!name link-44
+link
+from 6
+to 2
+end
+
+#!name link-45
+link
+from 2
+to 3
+end
+
+#!name link-46
+link
+from -1
+to 0
+end
+
+#!name link-47
+link
+from 0
+to 8
+end
+
+#!name box-48
+meshbox
+position 50 0 0
+rotation 0
+size 10 14 9.4
+texture wall
+color 1 1 1 .2
+end
+
+#!name box-49
+meshbox
+position 0 180 0
+rotation 45
+size 90 2 9.4
+texture wall
+end
+
+#!name box-50
+meshbox
+position 230 -230 0
+rotation 123
+size 123 4 5
+texture wall
+end
+
+#!name box-51
+meshbox
+position -200 365 0
+rotation 67
+size 5 78 7
+texture wall
+end
+
+#!name box-52
+meshbox
+position -280 -280 0
+rotation 298
+size 91 3 9
+texture wall
+color 1 1 1 .2
+end
+
+#!name teleporter-53
+teleporter
+position 0 0 1000
+rotation 0
+size 0 20.5 20.2
+border 0
+end
+
+#!name link-54
+link
+from 1
+to 10
+end
+
+#!name box-55
+meshbox
+position 0 0 150
+rotation 0
+size 400 400 1
+color 0 0 0 .5
+end
+
+#!name teleporter-56
+teleporter
+position -395 0 2
+rotation 0
+size 0 50.5 15
+border 0
+end
+
+#!name teleporter-57
+teleporter
+position 395 0 2
+rotation 0
+size 0 50.5 15
+border 0
+end
+
+#!name teleporter-58
+teleporter
+position 0 395 151
+rotation 90
+size 0 50.5 8.4
+border 0
+end
+
+#!name teleporter-59
+teleporter
+position 0 -395 151
+rotation 90
+size 0 50.5 8.4
+border 0
+end
+
+#!name link-60
+link
+from 12
+to 17
+end
+
+#!name link-61
+link
+from 17
+to 15
+end
+
+#!name link-62
+link
+from 15
+to 18
+end
+
+#!name link-63
+link
+from 18
+to 15
+end
+
+#!name box-64
+meshbox
+position 0 50 150
+rotation 0
+size 400 1 9.42
+drivethrough
+texture mesh
+color 1 1 1 .8
+end
+
+#!name box-65
+meshbox
+position 0 -50 150
+rotation 0
+size 400 1 9.42
+drivethrough
+texture mesh
+color 1 1 1 .8
+end
+
+#!name box-66
+meshbox
+position 50 0 150
+rotation 0
+size 1 400 9.42
+drivethrough
+texture mesh
+color 1 1 1 .8
+end
+
+#!name box-67
+meshbox
+position -50 0 150
+rotation 0
+size 1 400 9.42
+drivethrough
+texture mesh
+color 1 1 1 .8
+end
+
+#!name box-68
+meshbox
+position 0 150 150
+rotation 0
+size 400 1 9.42
+drivethrough
+texture mesh
+color 1 1 1 .8
+end
+
+#!name box-69
+meshbox
+position 0 -150 150
+rotation 0
+size 400 1 9.42
+drivethrough
+texture mesh
+color 1 1 1 .8
+end
+
+#!name box-70
+meshbox
+position 0 250 150
+rotation 0
+size 400 1 9.42
+drivethrough
+texture mesh
+color 1 1 1 .8
+end
+
+#!name box-71
+meshbox
+position 0 -250 150
+rotation 0
+size 400 1 9.42
+drivethrough
+texture mesh
+color 1 1 1 .8
+end
+
+#!name box-72
+meshbox
+position -150 0 150
+rotation 0
+size 1 400 9.42
+drivethrough
+texture mesh
+color 1 1 1 .8
+end
+
+#!name box-73
+meshbox
+position 150 0 150
+rotation 0
+size 1 400 9.42
+drivethrough
+texture mesh
+color 1 1 1 .8
+end
+
+#!name box-74
+meshbox
+position 250 0 150
+rotation 0
+size 1 400 9.42
+drivethrough
+texture mesh
+color 1 1 1 .8
+end
+
+#!name box-75
+meshbox
+position -250 0 150
+rotation 0
+size 1 400 9.42
+drivethrough
+texture mesh
+color 1 1 1 .8
+end
+
+#!name box-76
+meshbox
+position -200 -325 150
+rotation 0
+size 51 76 15
+drivethrough
+texture mesh
+color 1 1 1 .8
+end
+
+#!name box-77
+meshbox
+position -200 -200 180
+rotation 0
+size 50 50 1
+color 1 1 1 .75
+texture std_ground
+end
+
+#!name box-78
+meshbox
+position -200 -100 195
+rotation 0
+size 50 50 1
+color 1 1 1 .75
+texture std_ground
+end
+
+#!name box-79
+meshbox
+position -200 0 210
+rotation 0
+size 50 50 1
+color 1 1 1 .75
+texture std_ground
+end
+
+#!name box-80
+meshbox
+position -200 100 225
+rotation 0
+size 50 50 1
+color 1 1 1 .75
+texture std_ground
+end
+
+#!name box-81
+meshbox
+position -200 200 240
+rotation 0
+size 50 50 1
+color 1 1 1 .75
+texture std_ground
+end
+
+#!name box-82
+meshbox
+position -100 200 255
+rotation 0
+size 50 50 1
+color 1 1 1 .75
+texture std_ground
+end
+
+#!name box-83
+meshbox
+position 0 200 270
+rotation 0
+size 50 50 1
+color 1 1 1 .75
+texture std_ground
+end
+
+#!name box-84
+meshbox
+position 100 200 285
+rotation 0
+size 50 50 1
+color 1 1 1 .75
+texture std_ground
+end
+
+#!name box-85
+meshbox
+position 200 200 300
+rotation 0
+size 50 50 1
+color 1 1 1 .75
+texture std_ground
+end
+
+#!name box-86
+meshbox
+position 200 100 315
+rotation 0
+size 50 50 1
+color 1 1 1 .75
+texture std_ground
+end
+
+#!name box-87
+meshbox
+position 200 0 330
+rotation 0
+size 50 50 1
+color 1 1 1 .75
+texture std_ground
+end
+
+#!name box-88
+meshbox
+position 0 0 345
+rotation 0
+size 100 100 1
+color 1 1 1 .75
+texture dusty_flare
+end
+
+#!name box-89
+meshbox
+position 200 -100 345
+rotation 0
+size 50 50 1
+color 1 1 1 .75
+texture std_ground
+end
+
+#!name box-90
+meshbox
+position 200 -200 360
+rotation 0
+size 50 50 1
+color 1 1 1 .75
+texture std_ground
+end
+
+#!name box-91
+meshbox
+position 100 -200 375
+rotation 0
+size 50 50 1
+color 1 1 1 .75
+texture std_ground
+end
+
+#!name box-92
+meshbox
+position 0 -200 390
+rotation 0
+size 50 50 1
+color 1 1 1 .75
+texture std_ground
+end
+
+#!name box-93
+meshbox
+position -100 -200 405
+rotation 0
+size 50 50 1
+color 1 1 1 .75
+texture std_ground
+end
+
+#!name box-94
+meshbox
+position -100 -100 420
+rotation 0
+size 50 50 1
+color 1 1 1 .75
+texture std_ground
+end
+
+#!name box-95
+meshbox
+position -100 0 435
+rotation 0
+size 50 50 1
+color 1 1 1 .75
+texture std_ground
+end
+
+#!name box-96
+meshbox
+position -100 100 450
+rotation 0
+size 50 50 1
+color 1 1 1 .75
+texture std_ground
+end
+
+#!name box-97
+meshbox
+position 0 100 465
+rotation 0
+size 50 50 1
+color 1 1 1 .75
+texture std_ground
+end
+
+#!name box-98
+meshbox
+position 100 100 480
+rotation 0
+size 50 50 1
+color 1 1 1 .75
+texture std_ground
+end
+
+#!name box-99
+meshbox
+position 100 0 495
+rotation 0
+size 50 50 1
+color 1 1 1 .75
+texture std_ground
+end
+
+#!name box-100
+meshbox
+position 100 -100 510
+rotation 0
+size 50 50 1
+color 1 1 1 .75
+texture std_ground
+end
+
+#!name box-101
+meshbox
+position 0 -100 525
+rotation 0
+size 50 50 1
+color 1 1 1 .75
+texture std_ground
+end
+
+#!name box-102
+meshbox
+position 0 0 540
+rotation 0
+size 50 50 1
+color 1 1 1 .75
+texture std_ground
+end
+
+#!name teleporter-103
+teleporter
+position 0 0 541
+rotation 90
+size 0 20.5 20.16
+border 1
+end
+
+#!name link-104
+link
+from 21
+to 10
+end
+
+#!name link-105
+link
+from 20
+to 11
+end
+
+#!name box-106
+meshbox
+position 400 0 150
+rotation 0
+size 0.1 400 9.4
+texture mesh
+end
+
+#!name box-107
+meshbox
+position -400 0 150
+rotation 0
+size 0.1 400 9.42
+texture mesh
+end
+
+#!name box-108
+meshbox
+position 0 400 150
+rotation 0
+size 400 0.1 9.42
+texture mesh
+end
+
+#!name box-109
+meshbox
+position 0 -400 150
+rotation 0
+size 400 0.1 9.42
+texture mesh
+end
+
+#!name box-110
+box
+position 250 0 159.4
+rotation 0
+size 1 400 0
+end
+
+#!name box-111
+box
+position 150 0 159.4
+rotation 0
+size 1 400 0
+end
+
+#!name box-112
+box
+position 50 0 159.4
+rotation 0
+size 1 400 0
+end
+
+#!name box-113
+box
+position -50 0 159.4
+rotation 0
+size 1 400 0
+end
+
+#!name box-114
+box
+position -150 0 159.4
+rotation 0
+size 1 400 0
+end
+
+#!name box-115
+box
+position -250 0 159.4
+rotation 0
+size 1 400 0
+end
+
+#!name box-116
+box
+position 0 250 159.4
+rotation 0
+size 400 1 0
+end
+
+#!name box-117
+box
+position 0 150 159.4
+rotation 0
+size 400 1 0
+end
+
+#!name box-118
+box
+position 0 50 159.4
+rotation 0
+size 400 1 0
+end
+
+#!name box-119
+box
+position 0 -50 159.4
+rotation 0
+size 400 1 0
+end
+
+#!name box-120
+box
+position 0 -150 159.4
+rotation 0
+size 400 1 0
+end
+
+#!name box-121
+box
+position 0 -250 159.4
+rotation 0
+size 400 1 0
+end
+
+#!name box-122
+meshbox
+position 95 95 345
+rotation 0
+size 5 5 15
+texture dusty_flare
+end
+
+#!name box-123
+meshbox
+position -95 95 345
+rotation 0
+size 5 5 15
+texture dusty_flare
+end
+
+#!name box-124
+meshbox
+position -95 -95 345
+rotation 0
+size 5 5 15
+texture dusty_flare
+end
+
+#!name box-125
+meshbox
+position 95 -95 345
+rotation 0
+size 5 5 15
+texture dusty_flare
+end
+
+#!name box-126
+meshbox
+position 60 60 360
+rotation 0
+size 40 40 1
+texture dusty_flare
+end
+
+#!name box-127
+meshbox
+position -60 60 360
+rotation 0
+size 40 40 1
+texture dusty_flare
+end
+
+#!name box-128
+meshbox
+position 60 -60 360
+rotation 0
+size 40 40 1
+texture dusty_flare
+end
+
+#!name box-129
+meshbox
+position -60 -60 360
+rotation 0
+size 40 40 1
+texture dusty_flare
+end
+
+#!name box-130
+meshbox
+position 25 25 360
+rotation 0
+size 5 5 15
+texture dusty_flare
+end
+
+#!name box-131
+meshbox
+position 25 -25 360
+rotation 0
+size 5 5 15
+texture dusty_flare
+end
+
+#!name box-132
+meshbox
+position -25 25 360
+rotation 0
+size 5 5 15
+texture dusty_flare
+end
+
+#!name box-133
+meshbox
+position -25 -25 360
+rotation 0
+size 5 5 15
+texture dusty_flare
+end
+
+#!name box-134
+meshbox
+position 0 0 375
+rotation 0
+size 75 75 1
+texture dusty_flare
+end
+
+#!name box-135
+meshbox
+position -55 -55 375
+rotation 0
+size 5 5 15
+texture dusty_flare
+end
+
+#!name box-136
+meshbox
+position -55 55 375
+rotation 0
+size 5 5 15
+texture dusty_flare
+end
+
+#!name box-137
+meshbox
+position 55 -55 375
+rotation 0
+size 5 5 15
+texture dusty_flare
+end
+
+#!name box-138
+meshbox
+position 55 55 375
+rotation 0
+size 5 5 15
+texture dusty_flare
+end
+
+#!name box-139
+meshbox
+position 0 0 390
+rotation 0
+size 60 60 1
+texture dusty_flare
+end
+
+#!name box-140
+meshbox
+position 40 40 390
+rotation 0
+size 5 5 15
+texture dusty_flare
+end
+
+#!name box-141
+meshbox
+position 40 -40 390
+rotation 0
+size 5 5 15
+texture dusty_flare
+end
+
+#!name box-142
+meshbox
+position -40 40 390
+rotation 0
+size 5 5 15
+texture dusty_flare
+end
+
+#!name box-143
+meshbox
+position -40 -40 390
+rotation 0
+size 5 5 15
+texture dusty_flare
+end
+
+#!name box-144
+meshbox
+position 0 0 405
+rotation 0
+size 45 45 1
+texture dusty_flare
+end
+
+#!name box-145
+meshbox
+position 25 25 405
+rotation 0
+size 5 5 15
+texture dusty_flare
+end
+
+#!name box-146
+meshbox
+position 25 -25 405
+rotation 0
+size 5 5 15
+texture dusty_flare
+end
+
+#!name box-147
+meshbox
+position -25 25 405
+rotation 0
+size 5 5 15
+texture dusty_flare
+end
+
+#!name box-148
+meshbox
+position -25 -25 405
+rotation 0
+size 5 5 15
+texture dusty_flare
+end
+
+#!name box-149
+meshbox
+position 0 0 420
+rotation 0
+size 30 30 1
+texture dusty_flare
+end
+
+#!name box-150
+meshbox
+position 0 0 435
+rotation 0
+size 15 15 1
+texture dusty_flare
+end
+
+#!name box-151
+meshbox
+position 0 0 420
+rotation 0
+size 5 5 15
+texture dusty_flare
+end
+
+#!name box-152
+meshbox
+position -200 -325 165
+rotation 0
+size 51 76 0.1
+color 1 1 1 0
+end
+
+#!name pyramid-153
+meshpyr
+position 0 0 159.4
+rotation 0
+size 49 49 190.68
+texture roof
+end
+
+#!name box-154
+box
+position 340 320 40
+rotation 0
+size 20 20 1
+end
+
+#!name box-155
+box
+position 0 30 45
+rotation 0
+size 10 10 1
+end
+
+#!name box-156
+box
+position 30 60 45
+rotation 0
+size 10 10 1
+end
+
+#!name box-157
+box
+position 60 90 45
+rotation 0
+size 10 10 1
+end
+
+#!name box-158
+box
+position 90 120 40
+rotation 0
+size 10 10 1
+end
+
+#!name box-159
+box
+position 120 150 35
+rotation 0
+size 10 10 1
+end
+
+#!name box-160
+box
+position 150 180 30
+rotation 0
+size 10 10 1
+end
+
+#!name box-161
+box
+position 180 210 25
+rotation 0
+size 10 10 1
+end
+
+#!name box-162
+box
+position 210 240 20
+rotation 0
+size 10 10 1
+end
+
+#!name box-163
+box
+position 240 270 25
+rotation 0
+size 10 10 1
+end
+
+#!name box-164
+box
+position 270 300 30
+rotation 0
+size 10 10 1
+end
+
+#!name box-165
+box
+position 300 330 35
+rotation 0
+size 10 10 1
+end
+
+#!name box-166
+box
+position -340 -320 40
+rotation 0
+size 20 20 1
+end
+
+#!name box-167
+box
+position 0 -30 45
+rotation 0
+size 10 10 1
+end
+
+#!name box-168
+box
+position -30 -60 45
+rotation 0
+size 10 10 1
+end
+
+#!name box-169
+box
+position -60 -90 45
+rotation 0
+size 10 10 1
+end
+
+#!name box-170
+box
+position -90 -120 40
+rotation 0
+size 10 10 1
+end
+
+#!name box-171
+box
+position -120 -150 35
+rotation 0
+size 10 10 1
+end
+
+#!name box-172
+box
+position -150 -180 30
+rotation 0
+size 10 10 1
+end
+
+#!name box-173
+box
+position -180 -210 25
+rotation 0
+size 10 10 1
+end
+
+#!name box-174
+box
+position -210 -240 20
+rotation 0
+size 10 10 1
+end
+
+#!name box-175
+box
+position -240 -270 25
+rotation 0
+size 10 10 1
+end
+
+#!name box-176
+box
+position -270 -300 30
+rotation 0
+size 10 10 1
+end
+
+#!name box-177
+box
+position -300 -330 35
+rotation 0
+size 10 10 1
+end
+
+#!name teleporter-178
+teleporter
+position -360 -320 40
+rotation 0
+size 0 20 20
+border 0
+end
+
+#!name teleporter-179
+teleporter
+position 360 320 40
+rotation 0
+size 0 20 20
+border 0
+end
+
+#!name teleporter-180
+teleporter
+position 0 25 485
+rotation 90
+size 0 10.5 10.5
+border 0
+end
+
+#!name teleporter-181
+teleporter
+position 0 -25 485
+rotation 90
+size 0 10 10
+border 0
+end
+
+#!name link-182
+link
+from 25
+to 28
+end
+
+#!name link-183
+link
+from 22
+to 27
+end
+
+#!name teleporter-184
+teleporter
+position -25 0 485
+rotation 0
+size 0 10 10
+border 0
+end
+
+#!name teleporter-185
+teleporter
+position 25 0 485
+rotation 0
+size 0 10 10
+border 0
+end
+
+#!name teleporter-186
+teleporter
+position 340 300 40
+rotation 90
+size 0 20 20
+border 0
+end
+
+#!name teleporter-187
+teleporter
+position -340 -300 40
+rotation 90
+size 0 20 20
+border 0
+end
+
+#!name link-188
+link
+from 34
+to 30
+end
+
+#!name link-189
+link
+from 37
+to 33
+end
+
+#!name box-190
+meshbox
+position -400 0 0
+rotation 0
+size 0.1 400 150
+color 1 1 1 .5
+texture water
+end
+
+#!name box-191
+meshbox
+position 400 0 0
+rotation 0
+size 0.1 400 150
+color 1 1 1 .5
+texture water
+end
+
+#!name box-192
+meshbox
+position 0.1 400 0
+rotation 0
+size 400 0.1 150
+color 1 1 1 .5
+texture water
+end
+
+#!name box-193
+meshbox
+position 0 -400 0
+rotation 0
+size 400 0.1 150
+color 1 1 1 .5
+texture water
+end
+

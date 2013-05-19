@@ -1,0 +1,1040 @@
+### BZFLAG WORLD FILE HEADER
+
+
+# Map name	: Trenches and Bridges
+# File name	: trenchesbridges.bzw
+# Version	: 1.00
+# Release date	: 2004-11-24
+# Version	: 1.10
+# Release date	: 2004-12-16 (made roof pyramids passable)
+
+# Designer	: Raimond "Dutchrai" Kuhlman
+# Email address	: dutchrai@yahoo.com
+
+# BZFS Required	: -j -public "Trenches and Bridges by Dutchrai" -world "trenchesbridges.bzw"
+
+
+### BZFLAG WORLD FILE DATA
+
+
+# Foundation
+
+box
+position	0.0	0.0	0.0
+rotation	45.0
+size	250.0	250.0	15.0
+end
+
+
+# Foundation Islands
+
+box
+position	0.0	219.0	15.0
+rotation	45.0
+size	75.0	75.0	10.0
+end
+
+box
+position	0.0	219.0	25.0
+rotation	45.0
+size	75.0	75.0	5.0
+end
+
+box
+position	109.5	109.5	15.0
+rotation	-45.0
+size	60.0	75.0	10.0
+end
+
+box
+position	109.5	109.5	25.0
+rotation	-45.0
+size	60.0	75.0	5.0
+end
+
+box
+position	219.0	0.0	15.0
+rotation	45.0
+size	75.0	75.0	10.0
+end
+
+box
+position	219.0	0.0	25.0
+rotation	45.0
+size	75.0	75.0	5.0
+end
+
+box
+position	109.5	-109.5	15.0
+rotation	-45.0
+size	75.0	60.0	10.0
+end
+
+box
+position	109.5	-109.5	25.0
+rotation	-45.0
+size	75.0	60.0	5.0
+end
+
+box
+position	0.0	-219.0	15.0
+rotation	45.0
+size	75.0	75.0	10.0
+end
+
+box
+position	0.0	-219.0	25.0
+rotation	45.0
+size	75.0	75.0	5.0
+end
+
+box
+position	-109.5	-109.5	15.0
+rotation	-45.0
+size	60.0	75.0	10.0
+end
+
+box
+position	-109.5	-109.5	25.0
+rotation	-45.0
+size	60.0	75.0	5.0
+end
+
+box
+position	-219.0	0.0	15.0
+rotation	45.0
+size	75.0	75.0	10.0
+end
+
+box
+position	-219.0	0.0	25.0
+rotation	45.0
+size	75.0	75.0	5.0
+end
+
+box
+position	-109.5	109.5	15.0
+rotation	-45.0
+size	75.0	60.0	10.0
+end
+
+box
+position	-109.5	109.5	25.0
+rotation	-45.0
+size	75.0	60.0	5.0
+end
+
+
+# Foundation Bridges
+
+box
+position	60.05	158.95	25.0
+rotation	-45.0
+size	10.0	30.0	5.0
+end
+
+box
+position	158.95	60.05	25.0
+rotation	-45.0
+size	10.0	30.0	5.0
+end
+
+box
+position	60.05	-158.95	25.0
+rotation	45.0
+size	10.0	30.0	5.0
+end
+
+box
+position	158.95	-60.05	25.0
+rotation	45.0
+size	10.0	30.0	5.0
+end
+
+box
+position	-60.05	-158.95	25.0
+rotation	-45.0
+size	10.0	30.0	5.0
+end
+
+box
+position	-158.95	-60.05	25.0
+rotation	-45.0
+size	10.0	30.0	5.0
+end
+
+box
+position	-60.05	158.95	25.0
+rotation	45.0
+size	10.0	30.0	5.0
+end
+
+box
+position	-158.95	60.05	25.0
+rotation	45.0
+size	10.0	30.0	5.0
+end
+
+
+# Corners
+
+box
+position	0.0	300.0	0.0
+rotation	45.0
+size	60.0	60.0	40.0
+end
+
+box
+position	0.0	300.0	40.0
+rotation	45.0
+size	60.0	60.0	5.0
+end
+
+box
+position	0.0	300.0	45.0
+rotation	45.0
+size	40.0	40.0	25.0
+end
+
+box
+position	0.0	300.0	70.0
+rotation	45.0
+size	40.0	40.0	5.0
+end
+
+box
+position	0.0	300.0	75.0
+rotation	45.0
+size	20.0	20.0	15.0
+end
+
+box
+position	0.0	300.0	90.0
+rotation	45.0
+size	2.0	2.0	17.5
+end
+
+pyramid
+position	0.0	300.0	90.0
+rotation	45.0
+size	20.0	20.0	40.0
+passable
+end
+
+box
+position	85.0	300.0	0.0
+rotation	45.0
+size	5.0	5.0	112.0
+end
+
+pyramid
+position	85.0	300.0	112.0
+rotation	45.0
+size	5.0	5.0	10.0
+passable
+end
+
+box
+position	-85.0	300.0	0.0
+rotation	45.0
+size	5.0	5.0	112.0
+end
+
+pyramid
+position	-85.0	300.0	112.0
+rotation	45.0
+size	5.0	5.0	10.0
+passable
+end
+
+box
+position	300.0	0.0	0.0
+rotation	45.0
+size	60.0	60.0	40.0
+end
+
+box
+position	300.0	0.0	40.0
+rotation	45.0
+size	60.0	60.0	5.0
+end
+
+box
+position	300.0	0.0	45.0
+rotation	45.0
+size	40.0	40.0	25.0
+end
+
+box
+position	300.0	0.0	70.0
+rotation	45.0
+size	40.0	40.0	5.0
+end
+
+box
+position	300.0	0.0	75.0
+rotation	45.0
+size	20.0	20.0	15.0
+end
+
+box
+position	300.0	0.0	90.0
+rotation	45.0
+size	2.0	2.0	17.5
+end
+
+pyramid
+position	300.0	0.0	90.0
+rotation	45.0
+size	20.0	20.0	40.0
+passable
+end
+
+box
+position	300.0	85.0	0.0
+rotation	45.0
+size	5.0	5.0	112.0
+end
+
+pyramid
+position	300.0	85.0	112.0
+rotation	45.0
+size	5.0	5.0	10.0
+passable
+end
+
+box
+position	300.0	-85.0	0.0
+rotation	45.0
+size	5.0	5.0	112.0
+end
+
+pyramid
+position	300.0	-85.0	112.0
+rotation	45.0
+size	5.0	5.0	10.0
+passable
+end
+
+box
+position	0.0	-300.0	0.0
+rotation	45.0
+size	60.0	60.0	40.0
+end
+
+box
+position	0.0	-300.0	40.0
+rotation	45.0
+size	60.0	60.0	5.0
+end
+
+box
+position	0.0	-300.0	45.0
+rotation	45.0
+size	40.0	40.0	25.0
+end
+
+box
+position	0.0	-300.0	70.0
+rotation	45.0
+size	40.0	40.0	5.0
+end
+
+box
+position	0.0	-300.0	75.0
+rotation	45.0
+size	20.0	20.0	15.0
+end
+
+box
+position	0.0	-300.0	90.0
+rotation	45.0
+size	2.0	2.0	17.5
+end
+
+pyramid
+position	0.0	-300.0	90.0
+rotation	45.0
+size	20.0	20.0	40.0
+passable
+end
+
+box
+position	85.0	-300.0	0.0
+rotation	45.0
+size	5.0	5.0	112.0
+end
+
+pyramid
+position	85.0	-300.0	112.0
+rotation	45.0
+size	5.0	5.0	10.0
+passable
+end
+
+box
+position	-85.0	-300.0	0.0
+rotation	45.0
+size	5.0	5.0	112.0
+end
+
+pyramid
+position	-85.0	-300.0	112.0
+rotation	45.0
+size	5.0	5.0	10.0
+passable
+end
+
+box
+position	-300.0	0.0	0.0
+rotation	45.0
+size	60.0	60.0	40.0
+end
+
+box
+position	-300.0	0.0	40.0
+rotation	45.0
+size	60.0	60.0	5.0
+end
+
+box
+position	-300.0	0.0	45.0
+rotation	45.0
+size	40.0	40.0	25.0
+end
+
+box
+position	-300.0	0.0	70.0
+rotation	45.0
+size	40.0	40.0	5.0
+end
+
+box
+position	-300.0	0.0	75.0
+rotation	45.0
+size	20.0	20.0	15.0
+end
+
+box
+position	-300.0	0.0	90.0
+rotation	45.0
+size	2.0	2.0	17.5
+end
+
+pyramid
+position	-300.0	0.0	90.0
+rotation	45.0
+size	20.0	20.0	40.0
+passable
+end
+
+box
+position	-300.0	85.0	0.0
+rotation	45.0
+size	5.0	5.0	112.0
+end
+
+pyramid
+position	-300.0	85.0	112.0
+rotation	45.0
+size	5.0	5.0	10.0
+passable
+end
+
+box
+position	-300.0	-85.0	0.0
+rotation	45.0
+size	5.0	5.0	112.0
+end
+
+pyramid
+position	-300.0	-85.0	112.0
+rotation	45.0
+size	5.0	5.0	10.0
+passable
+end
+
+
+# Bridge Pillars
+
+box
+position	200.0	200.0	0.0
+rotation	45.0
+size	5.0	5.0	40.0
+end
+
+box
+position	220.0	220.0	0.0
+rotation	45.0
+size	5.0	5.0	40.0
+end
+
+box
+position	200.0	-200.0	0.0
+rotation	45.0
+size	5.0	5.0	40.0
+end
+
+box
+position	220.0	-220.0	0.0
+rotation	45.0
+size	5.0	5.0	40.0
+end
+
+box
+position	-200.0	-200.0	0.0
+rotation	45.0
+size	5.0	5.0	40.0
+end
+
+box
+position	-220.0	-220.0	0.0
+rotation	45.0
+size	5.0	5.0	40.0
+end
+
+box
+position	-200.0	200.0	0.0
+rotation	45.0
+size	5.0	5.0	40.0
+end
+
+box
+position	-220.0	220.0	0.0
+rotation	45.0
+size	5.0	5.0	40.0
+end
+
+box
+position	119.5	119.5	30.0
+rotation	45.0
+size	5.0	5.0	10.0
+end
+
+box
+position	99.5	99.5	30.0
+rotation	45.0
+size	5.0	5.0	10.0
+end
+
+box
+position	119.5	-119.5	30.0
+rotation	45.0
+size	5.0	5.0	10.0
+end
+
+box
+position	99.5	-99.5	30.0
+rotation	45.0
+size	5.0	5.0	10.0
+end
+
+box
+position	-119.5	-119.5	30.0
+rotation	45.0
+size	5.0	5.0	10.0
+end
+
+box
+position	-99.5	-99.5	30.0
+rotation	45.0
+size	5.0	5.0	10.0
+end
+
+box
+position	-119.5	119.5	30.0
+rotation	45.0
+size	5.0	5.0	10.0
+end
+
+box
+position	-99.5	99.5	30.0
+rotation	45.0
+size	5.0	5.0	10.0
+end
+
+
+# Core and Core Bridges
+
+box
+position	0.0	0.0	15.0
+rotation	45.0
+size	60.0	60.0	25.0
+end
+
+box
+position	0.0	0.0	40.0
+rotation	45.0
+size	80.0	80.0	5.0
+end
+
+box
+position	0.0	0.0	40.0
+rotation	45.0
+size	410.0	10.0	5.0
+end
+
+box
+position	0.0	0.0	40.0
+rotation	-45.0
+size	410.0	10.0	5.0
+end
+
+box
+position	0.0	0.0	45.0
+rotation	45.0
+size	60.0	60.0	15.0
+end
+
+box
+position	0.0	0.0	55.0
+rotation	0.0
+size	255.0	10.0	5.0
+end
+
+box
+position	0.0	0.0	55.0
+rotation	90.0
+size	255.0	10.0	5.0
+end
+
+box
+position	0.0	0.0	60.0
+rotation	45.0
+size	20.0	20.0	30.0
+end
+
+box
+position	0.0	0.0	70.0
+rotation	45.0
+size	40.0	40.0	5.0
+end
+
+box
+position	0.0	0.0	90.0
+rotation	45.0
+size	2.0	2.0	17.5
+end
+
+pyramid
+position	0.0	0.0	90.0
+rotation	45.0
+size	20.0	20.0	40.0
+passable
+end
+
+
+# Outer Bridges
+
+box
+position	150.0	150.0	70.0
+rotation	-45.0
+size	210.0	10.0	5.0
+end
+
+box
+position	150.0	-150.0	70.0
+rotation	45.0
+size	210.0	10.0	5.0
+end
+
+box
+position	-150.0	-150.0	70.0
+rotation	-45.0
+size	210.0	10.0	5.0
+end
+
+box
+position	-150.0	150.0	70.0
+rotation	45.0
+size	210.0	10.0	5.0
+end
+
+
+# Sides
+
+box
+position	300.0	300.0	0.0
+rotation	0.0
+size	60.0	60.0	15.0
+end
+
+box
+position	300.0	300.0	15.0
+rotation	0.0
+size	40.0	40.0	10.0
+end
+
+box
+position	300.0	300.0	25.0
+rotation	0.0
+size	40.0	40.0	5.0
+end
+
+box
+position	300.0	300.0	30.0
+rotation	0.0
+size	20.0	20.0	22.5
+end
+
+pyramid
+position	300.0	300.0	52.5
+rotation	0.0
+size	20.0	20.0	40.0
+passable
+end
+
+box
+position	300.0	-300.0	0.0
+rotation	0.0
+size	60.0	60.0	15.0
+end
+
+box
+position	300.0	-300.0	15.0
+rotation	0.0
+size	40.0	40.0	10.0
+end
+
+box
+position	300.0	-300.0	25.0
+rotation	0.0
+size	40.0	40.0	5.0
+end
+
+box
+position	300.0	-300.0	30.0
+rotation	0.0
+size	20.0	20.0	22.5
+end
+
+pyramid
+position	300.0	-300.0	52.5
+rotation	0.0
+size	20.0	20.0	40.0
+passable
+end
+
+box
+position	-300.0	-300.0	0.0
+rotation	0.0
+size	60.0	60.0	15.0
+end
+
+box
+position	-300.0	-300.0	15.0
+rotation	0.0
+size	40.0	40.0	10.0
+end
+
+box
+position	-300.0	-300.0	25.0
+rotation	0.0
+size	40.0	40.0	5.0
+end
+
+box
+position	-300.0	-300.0	30.0
+rotation	0.0
+size	20.0	20.0	22.5
+end
+
+pyramid
+position	-300.0	-300.0	52.5
+rotation	0.0
+size	20.0	20.0	40.0
+passable
+end
+
+box
+position	-300.0	300.0	0.0
+rotation	0.0
+size	60.0	60.0	15.0
+end
+
+box
+position	-300.0	300.0	15.0
+rotation	0.0
+size	40.0	40.0	10.0
+end
+
+box
+position	-300.0	300.0	25.0
+rotation	0.0
+size	40.0	40.0	5.0
+end
+
+box
+position	-300.0	300.0	30.0
+rotation	0.0
+size	20.0	20.0	22.5
+end
+
+pyramid
+position	-300.0	300.0	52.5
+rotation	0.0
+size	20.0	20.0	40.0
+passable
+end
+
+
+# Laser Deflection
+
+pyramid
+position	200.0	360.0	0.0
+rotation	0.0
+size	8.0	8.0	12.0
+end
+
+pyramid
+position	160.0	320.0	0.0
+rotation	0.0
+size	8.0	8.0	12.0
+end
+
+pyramid
+position	150.0	240.0	0.0
+rotation	0.0
+size	8.0	8.0	12.0
+end
+
+pyramid
+position	130.0	330.0	0.0
+rotation	0.0
+size	8.0	8.0	12.0
+end
+
+pyramid
+position	300.0	210.0	0.0
+rotation	0.0
+size	8.0	8.0	12.0
+end
+
+pyramid
+position	375.0	140.0	0.0
+rotation	0.0
+size	8.0	8.0	12.0
+end
+
+pyramid
+position	360.0	170.0	0.0
+rotation	0.0
+size	8.0	8.0	12.0
+end
+
+pyramid
+position	385.0	-60.0	0.0
+rotation	0.0
+size	8.0	8.0	12.0
+end
+
+pyramid
+position	280.0	-120.0	0.0
+rotation	0.0
+size	8.0	8.0	12.0
+end
+
+pyramid
+position	160.0	-330.0	0.0
+rotation	0.0
+size	8.0	8.0	12.0
+end
+
+pyramid
+position	150.0	-300.0	0.0
+rotation	0.0
+size	8.0	8.0	12.0
+end
+
+pyramid
+position	-200.0	-300.0	0.0
+rotation	0.0
+size	8.0	8.0	12.0
+end
+
+pyramid
+position	-120.0	-350.0	0.0
+rotation	0.0
+size	8.0	8.0	12.0
+end
+
+pyramid
+position	-160.0	-310.0	0.0
+rotation	0.0
+size	8.0	8.0	12.0
+end
+
+pyramid
+position	-190.0	-370.0	0.0
+rotation	0.0
+size	8.0	8.0	12.0
+end
+
+pyramid
+position	-300.0	-220.0	0.0
+rotation	0.0
+size	8.0	8.0	12.0
+end
+
+pyramid
+position	-340.0	-200.0	0.0
+rotation	0.0
+size	8.0	8.0	12.0
+end
+
+pyramid
+position	-370.0	120.0	0.0
+rotation	0.0
+size	8.0	8.0	12.0
+end
+
+pyramid
+position	-170.0	340.0	0.0
+rotation	0.0
+size	8.0	8.0	12.0
+end
+
+pyramid
+position	-140.0	320.0	0.0
+rotation	0.0
+size	8.0	8.0	12.0
+end
+
+
+# Teleporters Bridge
+
+teleporter			
+position	210.0	210.0	0.0
+rotation	-45		
+size	0.0	7.5	10.5
+border	2.0		
+end
+
+link
+from	0
+to	3
+end
+
+link
+from	1
+to	2
+end
+
+teleporter			
+position	109.5	109.5	30.0
+rotation	-45		
+size	0.0	7.5	10.5
+border	2.0		
+end
+
+link
+from	2
+to	1
+end
+
+link
+from	3
+to	0
+end
+
+teleporter			
+position	210.0	-210.0	0.0
+rotation	45		
+size	0.0	7.5	10.5
+border	2.0		
+end
+
+link
+from	4
+to	7
+end
+
+link
+from	5
+to	6
+end
+
+teleporter			
+position	109.5	-109.5	30.0
+rotation	45		
+size	0.0	7.5	10.5
+border	2.0		
+end
+
+link
+from	6
+to	5
+end
+
+link
+from	7
+to	4
+end
+
+teleporter			
+position	-210.0	-210.0	0.0
+rotation	-45		
+size	0.0	7.5	10.5
+border	2.0		
+end
+
+link
+from	8
+to	11
+end
+
+link
+from	9
+to	10
+end
+
+teleporter			
+position	-109.5	-109.5	30.0
+rotation	-45		
+size	0.0	7.5	10.5
+border	2.0		
+end
+
+link
+from	10
+to	9
+end
+
+link
+from	11
+to	8
+end
+
+teleporter			
+position	-210.0	210.0	0.0
+rotation	45		
+size	0.0	7.5	10.5
+border	2.0		
+end
+
+link
+from	12
+to	15
+end
+
+link
+from	13
+to	14
+end
+
+teleporter			
+position	-109.5	109.5	30.0
+rotation	45		
+size	0.0	7.5	10.5
+border	2.0		
+end
+
+link
+from	14
+to	13
+end
+
+link
+from	15
+to	12
+end

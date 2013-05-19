@@ -1,0 +1,1433 @@
+### BZFLAG WORLD FILE HEADER
+
+
+# Map name	: The Abyss
+# File name	: theabyss.bzw
+# Version	: 1.00
+# Release date	: 2005-01-08
+
+# Designer	: Raimond "Dutchrai" Kuhlman
+# Email address	: dutchrai@yahoo.com
+
+# BZFS Required	: -j -public "The Abyss by Dutchrai" -world "theabyss.bzw"
+
+# Notes		: World weapons are used in the form of a meteorite shower.
+
+# Warning	: Be careful to open this file in BZedit, since even viewing can
+#		  result in the removal of some of the newer world objects. Since
+#		  BZedit also removes any comments, it means that if you are
+#		  reading these lines that this file is still original.
+
+
+### BZFLAG WORLD FILE DATA
+
+
+## Ground
+
+
+# Ground Pyramids
+
+pyramid
+	position 180 0 0
+	rotation 0
+	size 15 15 15
+end
+
+pyramid
+	position -180 0 0
+	rotation 0
+	size 15 15 15
+end
+
+pyramid
+	position 0 180 0
+	rotation 0
+	size 15 15 15
+end
+
+pyramid
+	position 0 -180 0
+	rotation 0
+	size 15 15 15
+end
+
+
+# Ground Low
+
+box
+	position 135 70 0
+	rotation 0
+	size 15 10 10
+end
+
+box
+	position 135 -70 0
+	rotation 0
+	size 15 10 10
+end
+
+box
+	position -135 70 0
+	rotation 0
+	size 15 10 10
+end
+
+box
+	position -135 -70 0
+	rotation 0
+	size 15 10 10
+end
+
+box
+	position 70 135 0
+	rotation 0
+	size 10 15 10
+end
+
+box
+	position 70 -135 0
+	rotation 0
+	size 10 15 10
+end
+
+box
+	position -70 135 0
+	rotation 0
+	size 10 15 10
+end
+
+box
+	position -70 -135 0
+	rotation 0
+	size 10 15 10
+end
+
+box
+	position 225 70 0
+	rotation 0
+	size 15 10 10
+end
+
+box
+	position 225 -70 0
+	rotation 0
+	size 15 10 10
+end
+
+box
+	position -225 70 0
+	rotation 0
+	size 15 10 10
+end
+
+box
+	position -225 -70 0
+	rotation 0
+	size 15 10 10
+end
+
+box
+	position 70 225 0
+	rotation 0
+	size 10 15 10
+end
+
+box
+	position 70 -225 0
+	rotation 0
+	size 10 15 10
+end
+
+box
+	position -70 225 0
+	rotation 0
+	size 10 15 10
+end
+
+box
+	position -70 -225 0
+	rotation 0
+	size 10 15 10
+end
+
+box
+	position 90 90 0
+	rotation 0
+	size 30 30 10
+end
+
+box
+	position 90 -90 0
+	rotation 0
+	size 30 30 10
+end
+
+box
+	position -90 -90 0
+	rotation 0
+	size 30 30 10
+end
+
+box
+	position -90 90 0
+	rotation 0
+	size 30 30 10
+end
+
+box
+	position 320 230 0
+	rotation 0
+	size 80 170 10
+end
+
+box
+	position 320 -230 0
+	rotation 0
+	size 80 170 10
+end
+
+box
+	position -320 230 0
+	rotation 0
+	size 80 170 10
+end
+
+box
+	position -320 -230 0
+	rotation 0
+	size 80 170 10
+end
+
+box
+	position 150 320 0
+	rotation 0
+	size 90 80 10
+end
+
+box
+	position -150 320 0
+	rotation 0
+	size 90 80 10
+end
+
+box
+	position 150 -320 0
+	rotation 0
+	size 90 80 10
+end
+
+box
+	position -150 -320 0
+	rotation 0
+	size 90 80 10
+end
+
+pyramid
+	position 0 0 12.5
+	rotation 0
+	size 400 400 0
+	passable
+end
+
+
+# Ground High
+
+box
+	position 100 0 10
+	rotation 0
+	size 40 60 20
+end
+
+box
+	position -100 0 10
+	rotation 0
+	size 40 60 20
+end
+
+box
+	position 0 100 10
+	rotation 0
+	size 140 40 20
+end
+
+box
+	position 0 -100 10
+	rotation 0
+	size 140 40 20
+end
+
+
+box
+	position 310 220 10
+	rotation 0
+	size 90 180 20
+end
+
+box
+	position 310 -220 10
+	rotation 0
+	size 90 180 20
+end
+
+box
+	position -310 220 10
+	rotation 0
+	size 90 180 20
+end
+
+box
+	position -310 -220 10
+	rotation 0
+	size 90 180 20
+end
+
+box
+	position 130 310 10
+	rotation 0
+	size 90 90 20
+end
+
+box
+	position -130 310 10
+	rotation 0
+	size 90 90 20
+end
+
+box
+	position 130 -310 10
+	rotation 0
+	size 90 90 20
+end
+
+box
+	position -130 -310 10
+	rotation 0
+	size 90 90 20
+end
+
+box
+	position 100 0 30
+	rotation 0
+	size 5 40 2
+end
+
+box
+	position -100 0 30
+	rotation 0
+	size 5 40 2
+end
+
+box
+	position 0 100 30
+	rotation 0
+	size 40 5 2
+end
+
+box
+	position 0 -100 30
+	rotation 0
+	size 40 5 2
+end
+
+
+# Ledges and Bridges
+
+box
+	position 110 150 10
+	rotation 0
+	size 50 10 5
+end
+
+box
+	position -110 150 10
+	rotation 0
+	size 50 10 5
+end
+
+box
+	position 110 -150 10
+	rotation 0
+	size 50 10 5
+end
+
+box
+	position -110 -150 10
+	rotation 0
+	size 50 10 5
+end
+
+box
+	position 150 100 10
+	rotation 0
+	size 10 40 5
+end
+
+box
+	position 150 -100 10
+	rotation 0
+	size 10 40 5
+end
+
+box
+	position -150 100 10
+	rotation 0
+	size 10 40 5
+end
+
+box
+	position -150 -100 10
+	rotation 0
+	size 10 40 5
+end
+
+box
+	position 140 210 10
+	rotation 0
+	size 80 10 5
+end
+
+box
+	position 140 -210 10
+	rotation 0
+	size 80 10 5
+end
+
+box
+	position -140 210 10
+	rotation 0
+	size 80 10 5
+end
+
+box
+	position -140 -210 10
+	rotation 0
+	size 80 10 5
+end
+
+box
+	position 210 130 10
+	rotation 0
+	size 10 70 5
+end
+
+box
+	position 210 -130 10
+	rotation 0
+	size 10 70 5
+end
+
+box
+	position -210 130 10
+	rotation 0
+	size 10 70 5
+end
+
+box
+	position -210 -130 10
+	rotation 0
+	size 10 70 5
+end
+
+box
+	position 70 180 10
+	rotation 0
+	size 10 25 5
+end
+
+box
+	position 70 -180 10
+	rotation 0
+	size 10 25 5
+end
+
+box
+	position -70 180 10
+	rotation 0
+	size 10 25 5
+end
+
+box
+	position -70 -180 10
+	rotation 0
+	size 10 25 5
+end
+
+box
+	position 180 70 10
+	rotation 0
+	size 25 10 5
+end
+
+box
+	position 180 -70 10
+	rotation 0
+	size 25 10 5
+end
+
+box
+	position -180 70 10
+	rotation 0
+	size 25 10 5
+end
+
+box
+	position -180 -70 10
+	rotation 0
+	size 25 10 5
+end
+
+
+## Centre Castle
+
+box
+	position 0 0 0
+	rotation 0
+	size 40 40 45
+end
+
+box
+	position 50 0 43
+	rotation 0
+	size 10 5 2
+end
+
+box
+	position -50 0 43
+	rotation 0
+	size 10 5 2
+end
+
+box
+	position 0 50 43
+	rotation 0
+	size 5 10 2
+end
+
+box
+	position 0 -50 43
+	rotation 0
+	size 5 10 2
+end
+
+box
+	position 65 0 43
+	rotation 0
+	size 5 40 2
+end
+
+box
+	position -65 0 43
+	rotation 0
+	size 5 40 2
+end
+
+box
+	position 0 65 43
+	rotation 0
+	size 40 5 2
+end
+
+box
+	position 0 -65 43
+	rotation 0
+	size 40 5 2
+end
+
+box
+	position 0 0 45
+	rotation 0
+	size 30 30 17
+end
+
+box
+	position 0 0 62
+	rotation 0
+	size 22.5 22.5 17
+end
+
+box
+	position 0 0 79
+	rotation 0
+	size 7.5 7.5 34
+end
+
+box
+	position 25 25 62
+	rotation 0
+	size 5 5 34
+end
+
+box
+	position 25 -25 62
+	rotation 0
+	size 5 5 34
+end
+
+box
+	position -25 -25 62
+	rotation 0
+	size 5 5 34
+end
+
+box
+	position -25 25 62
+	rotation 0
+	size 5 5 34
+end
+
+pyramid
+	position 25 25 96
+	rotation 0
+	size 5 5 25
+	passable
+end
+
+pyramid
+	position 25 -25 96
+	rotation 0
+	size 5 5 25
+	passable
+end
+
+pyramid
+	position -25 -25 96
+	rotation 0
+	size 5 5 25
+	passable
+end
+
+pyramid
+	position -25 25 96
+	rotation 0
+	size 5 5 25
+	passable
+end
+
+pyramid
+	position 0 0 113
+	rotation 0
+	size 7.5 7.5 37.5
+	passable
+end
+
+
+## North-East sector
+
+box
+	position 300 250 30
+	rotation 30
+	size 10 20 15
+end
+
+box
+	position 190 365 30
+	rotation 20
+	size 15 20 10
+end
+
+box
+	position 170 290 30
+	rotation 80
+	size 20 25 10
+end
+
+box
+	position 230 320 30
+	rotation 10
+	size 7.5 7.5 30
+end
+
+box
+	position 270 310 30
+	rotation 40
+	size 7.5 7.5 30
+end
+
+box
+	position 250 315 60
+	rotation -10
+	size 20 5 10
+end
+
+box
+	position 305 120 30
+	rotation 20
+	size 7.5 7.5 25
+end
+
+box
+	position 335 145 30
+	rotation 60
+	size 7.5 7.5 20
+end
+
+box
+	position 370 290 30
+	rotation -10
+	size 15 15 17
+end
+
+box
+	position 350 90 30
+	rotation 30
+	size 15 15 10
+end
+
+box
+	position 162 318 30
+	rotation 30
+	size 15 15 25
+end
+
+box
+	position 100 250 30
+	rotation 0
+	size 15 2.5 5
+end
+
+box
+	position 82.5 257.5 30
+	rotation 0
+	size 2.5 10 10
+end
+
+box
+	position 75 285 30
+	rotation 0
+	size 15 2.5 7.5
+end
+
+box
+	position 265 180 30
+	rotation 0
+	size 2.5 15 5
+end
+
+box
+	position 277.5 192.5 30
+	rotation 0
+	size 10 2.5 5
+end
+
+box
+	position 280 170 30
+	rotation 0
+	size 2.5 10 10
+end
+
+box
+	position 319.5 131.5 45
+	rotation 35
+	size 20 5 5
+end
+
+
+## North-West sector
+
+box
+	position -290 190 30
+	rotation 0
+	size 50 50 15
+end
+
+box
+	position -290 190 45
+	rotation 0
+	size 30 30 15
+end
+
+box
+	position -290 190 60
+	rotation 0
+	size 15 15 30
+end
+
+box
+	position -220 300 30
+	rotation 0
+	size 50 50 15
+end
+
+box
+	position -220 300 45
+	rotation 0
+	size 30 30 30
+end
+
+box
+	position -220 300 75
+	rotation 0
+	size 15 15 15
+end
+
+box
+	position -255 245 43
+	rotation 0
+	size 15 5 2
+end
+
+box
+	position -330 110 30
+	rotation 0
+	size 50 10 7.5
+end
+
+box
+	position -370 160 30
+	rotation 0
+	size 10 40 7.5
+end
+
+box
+	position -90 350 30
+	rotation 0
+	size 30 30 15
+end
+
+box
+	position -90 350 45
+	rotation 0
+	size 15 15 15
+end
+
+box
+	position -110 290 30
+	rotation 0
+	size 40 10 7.5
+end
+
+
+## South-West sector
+
+
+# Pyramids
+
+pyramid
+	position -310 -250 30
+	rotation 80
+	size 8 8 8
+end
+
+pyramid
+	position -185 -310 30
+	rotation 20
+	size 8 8 8
+end
+
+pyramid
+	position -250 -90 30
+	rotation 50
+	size 8 8 8
+end
+
+pyramid
+	position -230 -360 30
+	rotation 10
+	size 12 12 12
+end
+
+pyramid
+	position -90 -260 30
+	rotation 30
+	size 12 12 12
+end
+
+pyramid
+	position -355 -185 30
+	rotation 70
+	size 12 12 12
+end
+
+pyramid
+	position -315 -105 30
+	rotation 30
+	size 12 12 12
+end
+
+pyramid
+	position -270 -220 30
+	rotation 40
+	size 16 16 16
+	drivethrough
+end
+
+pyramid
+	position -100 -335 30
+	rotation 80
+	size 16 16 16
+	drivethrough
+end
+
+
+# Meteorite Shower 1
+
+pyramid
+	position -330 -330 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position -330.6 -330 381
+	rotation 0
+	initdelay 25
+	delay 90
+end
+
+pyramid
+	position -300 -310 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position -300.6 -310 381
+	rotation 0
+	initdelay 26
+	delay 90
+end
+
+pyramid
+	position -320 -305 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position -320.6 -305 381
+	rotation 0
+	initdelay 27
+	delay 90
+end
+
+pyramid
+	position -340 -295 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position -340.6 -295 381
+	rotation 0
+	initdelay 28
+	delay 90
+end
+
+pyramid
+	position -305 -290 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position -305.6 -290 381
+	rotation 0
+	initdelay 29
+	delay 90
+end
+
+
+# Meteorite Shower 2
+
+
+pyramid
+	position -130 -310 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position -130.6 -310 381
+	rotation 0
+	initdelay 25
+	delay 90
+end
+
+pyramid
+	position -110 -290 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position -110.6 -290 381
+	rotation 0
+	initdelay 26
+	delay 90
+end
+
+pyramid
+	position -150 -300 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position -150.6 -300 381
+	rotation 0
+	initdelay 27
+	delay 90
+end
+
+pyramid
+	position -135 -290 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position -135.6 -290 381
+	rotation 0
+	initdelay 28
+	delay 90
+end
+
+pyramid
+	position -130 -280 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position -130.6 -280 381
+	rotation 0
+	initdelay 29
+	delay 90
+end
+
+
+# Meteorite Shower 3
+
+pyramid
+	position -310 -130 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position -310.6 -130 381
+	rotation 0
+	initdelay 25
+	delay 90
+end
+
+pyramid
+	position -290 -140 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position -290.6 -140 381
+	rotation 0
+	initdelay 26
+	delay 90
+end
+
+pyramid
+	position -330 -150 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position -330.6 -150 381
+	rotation 0
+	initdelay 27
+	delay 90
+end
+
+pyramid
+	position -310 -145 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position -310.6 -145 381
+	rotation 0
+	initdelay 28
+	delay 90
+end
+
+pyramid
+	position -300 -160 380.5
+	rotation 0
+	size 1 1 -1
+end
+
+weapon
+	position -300.6 -160 381
+	rotation 0
+	initdelay 29
+	delay 90
+end
+
+
+## South-East sector
+
+
+# Middle
+
+box
+	position 350 -270 30
+	rotation 0
+	size 20 20 45
+end
+
+box
+	position 350 -270 75
+	rotation 0
+	size 10 10 5
+        drivethrough
+end
+
+box
+	position 310 -270 30
+	rotation 0
+	size 20 10 15
+end
+
+box
+	position 310 -270 73
+	rotation 0
+	size 20 10 2
+end
+
+box
+	position 270 -270 30
+	rotation 0
+	size 20 20 60
+end
+
+box
+	position 270 -270 90
+	rotation 0
+	size 10 10 5
+        drivethrough
+end
+
+box
+	position 270 -310 30
+	rotation 0
+	size 10 20 15
+end
+
+box
+	position 270 -310 73
+	rotation 0
+	size 10 20 2
+end
+
+box
+	position 270 -350 30
+	rotation 0
+	size 20 20 45
+end
+
+box
+	position 270 -350 75
+	rotation 0
+	size 10 10 5
+        drivethrough
+end
+
+
+# left
+
+box
+	position 350 -90 30
+	rotation 0
+	size 20 20 30
+end
+
+box
+	position 350 -90 60
+	rotation 0
+	size 10 10 5
+        drivethrough
+end
+
+box
+	position 270 -90 30
+	rotation 0
+	size 20 20 30
+end
+
+box
+	position 270 -90 60
+	rotation 0
+	size 10 10 5
+        drivethrough
+end
+
+box
+	position 350 -170 30
+	rotation 0
+	size 20 20 30
+end
+
+box
+	position 350 -170 60
+	rotation 0
+	size 10 10 5
+        drivethrough
+end
+
+box
+	position 270 -170 30
+	rotation 0
+	size 20 20 30
+end
+
+box
+	position 270 -170 60
+	rotation 0
+	size 10 10 5
+        drivethrough
+end
+
+box
+	position 310 -90 30
+	rotation 0
+	size 20 10 15
+end
+
+box
+	position 270 -130 30
+	rotation 0
+	size 10 20 15
+end
+
+box
+	position 350 -130 30
+	rotation 0
+	size 10 20 15
+end
+
+box
+	position 310 -170 58
+	rotation 0
+	size 20 10 2
+end
+
+
+# Right
+
+box
+	position 90 -350 30
+	rotation 0
+	size 20 20 30
+end
+
+box
+	position 90 -350 60
+	rotation 0
+	size 10 10 5
+        drivethrough
+end
+
+box
+	position 90 -270 30
+	rotation 0
+	size 20 20 30
+end
+
+box
+	position 90 -270 60
+	rotation 0
+	size 10 10 5
+        drivethrough
+end
+
+box
+	position 170 -350 30
+	rotation 0
+	size 20 20 30
+end
+
+box
+	position 170 -350 60
+	rotation 0
+	size 10 10 5
+        drivethrough
+end
+
+box
+	position 170 -270 30
+	rotation 0
+	size 20 20 30
+end
+
+box
+	position 170 -270 60
+	rotation 0
+	size 10 10 5
+        drivethrough
+end
+
+box
+	position 90 -310 30
+	rotation 0
+	size 10 20 15
+end
+
+box
+	position 130 -270 30
+	rotation 0
+	size 20 10 15
+end
+
+box
+	position 130 -350 30
+	rotation 0
+	size 20 10 15
+end
+
+box
+	position 170 -310 58
+	rotation 0
+	size 10 20 2
+end
+
+
+## Teleporters Corner Low
+
+teleporter
+	position 350 0 0
+	rotation 0
+	size 1 11 6
+	border 2
+end
+
+teleporter
+	position -350 0 0
+	rotation 180
+	size 1 11 6
+	border 2
+end
+
+link
+	from 0
+	to 2
+end
+
+link
+	from 1
+	to 3
+end
+
+link
+	from 2
+	to 0
+end
+
+link
+	from 3
+	to 1
+end
+
+teleporter
+	position 0 350 0
+	rotation 90
+	size 1 11 6
+	border 2
+end
+
+teleporter
+	position 0 -350 0
+	rotation 270
+	size 1 11 6
+	border 2
+end
+
+link
+	from 4
+	to 6
+end
+
+link
+	from 5
+	to 7
+end
+
+link
+	from 6
+	to 4
+end
+
+link
+	from 7
+	to 5
+end
+
+
+## Teleporters Corner High
+
+teleporter
+	position 350 350 30
+	rotation 45
+	size 1 11 6
+	border 2
+end
+
+teleporter
+	position -350 -350 30
+	rotation 225
+	size 1 11 6
+	border 2
+end
+
+link
+	from 8
+	to 10
+end
+
+link
+	from 9
+	to 11
+end
+
+link
+	from 10
+	to 8
+end
+
+link
+	from 11
+	to 9
+end
+
+teleporter
+	position 350 -350 30
+	rotation 135
+	size 1 11 6
+	border 2
+end
+
+teleporter
+	position -350 350 30
+	rotation 315
+	size 1 11 6
+	border 2
+end
+
+link
+	from 12
+	to 14
+end
+
+link
+	from 13
+	to 15
+end
+
+link
+	from 14
+	to 12
+end
+
+link
+	from 15
+	to 13
+end

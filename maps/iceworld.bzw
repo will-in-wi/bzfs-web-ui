@@ -1,0 +1,110 @@
+options
+	-set _tankSpeed 50.0
+	-set _shotsKeepVerticalVelocity 1
+	-set _shotSpeed 150.5
+end
+
+material
+	name whitebox
+	diffuse 0.9 0.9 0.9 0.8
+	addtexture roof
+end
+
+material
+	name whitepyr
+	diffuse 0.9 0.9 0.8 0.6
+	addtexture pyrwall
+end
+
+meshbox
+name meshbox 1
+	position -150 -150 0
+	rotation 0
+	size 100 100 30
+	matref whitebox
+end
+
+meshbox
+name meshbox 2
+	position 150 -150 0
+	rotation 0
+	size 100 100 30
+	matref whitebox
+end
+
+meshbox
+name meshbox 3
+	position -150 150 0
+	rotation 0
+	size 100 100 30
+	matref whitebox
+end
+
+meshbox
+name meshbox 4
+	position 150 150 0
+	rotation 0
+	size 100 100 30
+	matref whitebox
+end
+
+box
+name box 1
+	position -325 0 0
+	rotation 0
+	size 10 10 0.5
+end
+
+box
+name box 2
+	position 325 0 0
+	rotation 0
+	size 10 10 0.5
+end
+
+box
+name box 3
+	position 0 325 0
+	rotation 0
+	size 10 10 0.5
+end
+
+box
+name box 4
+	position 0 -325 0
+	rotation 0
+	size 10 10 0.5
+end
+
+meshpyr
+name meshpyr 1
+	position 150 150 30
+	rotation 0
+	size 100 100 20
+	matref whitepyr
+end
+
+meshpyr
+name meshpyr 2
+	position -150 150 30
+	rotation 0
+	size 100 100 20
+	matref whitepyr
+end
+
+meshpyr
+name meshpyr 3
+	position -150 -150 30
+	rotation 0
+	size 100 100 20
+	matref whitepyr
+end
+
+meshpyr
+name meshpyr 4
+	position 150 -150 30
+	rotation 0
+	size 100 100 20
+	matref whitepyr
+end
+

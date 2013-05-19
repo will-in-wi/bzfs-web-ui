@@ -1,0 +1,1860 @@
+# World built with bzedit32 world class, available at
+# http://www.sourceforge.net/projects/bzflag
+
+options
+	-public "Cruel_dog 2.7 reloaded By Cruel dog"
+	-j
+	+r
+	-c
+	-mp 0,4,4,4,4,4
+	-autoTeam
+	-loadplugin plugins/shockwaveDeath,usevictim
+	-handicap
+	+f gm{2}
+	+f l{2}
+	+f wg{3}
+	+f sw{2}
+	-ms 5
+	-set _disableBots true
+	-set _explodeTime 1
+	-set _tankSpeed 30
+	-set _wingsGravity -9.81
+	-set _wingsJumpCount 5
+	-set _wingsJumpVelocity 15
+end
+
+
+teleporter
+name Teleporter
+	position 66 361.5 30
+	rotation 0
+	size 0.125 10 10
+	border 1
+end
+
+teleporter
+name Teleporter
+	position -22.5 -260 0
+	rotation 0
+	size 0.125 10 10
+	border 1
+end
+
+teleporter
+name Teleporter
+	position -51 58 500
+	rotation 0
+	size 0.125 10 15
+	border 1
+end
+
+pyramid
+name Pyramid copy
+	position -22.5 -260 10
+	rotation 0
+	size 1 1 5
+end
+
+pyramid
+name Pyramid
+	position 9 126 0
+	rotation 0
+	size 20 20 50
+end
+
+pyramid
+name Pyramid copy
+	position 9 -126 0
+	rotation 0
+	size 20 20 50
+end
+
+pyramid
+name Pyramid
+	position 100 0 0
+	rotation 0
+	size 3 3 75
+end
+
+pyramid
+name Pyramid copy
+	position -100 0 0
+	rotation 0
+	size 3 3 75
+end
+
+box
+name Box
+	position -55 163 0
+	rotation 0
+	size 19.5 1.5 10
+end
+
+pyramid
+name Pyramid
+	position -350 63 0
+	rotation 0
+	size 50 50 200
+end
+
+pyramid
+name Pyramid
+	position 272 -241 0
+	rotation 0
+	size 20 20 500
+end
+
+pyramid
+name Pyramid copy
+	position -272 -241 0
+	rotation 0
+	size 20 20 500
+end
+
+pyramid
+name Pyramid copy 1
+	position -250 241 0
+	rotation 0
+	size 20 20 500
+end
+
+pyramid
+name Pyramid copy 2
+	position 272 241 0
+	rotation 0
+	size 20 20 500
+end
+
+box
+name Box
+	position 188.5 -300.5 50
+	rotation 90
+	size 39.5 2 10
+end
+
+box
+name Box copy
+	position 162.5 -338.5 50
+	rotation 0
+	size 30 2 10
+end
+
+box
+name Box copy 1
+	position 160 -265.5 50
+	rotation 0
+	size 30 2 10
+end
+
+box
+name Box copy 2
+	position 98 -299 50
+	rotation 90
+	size 31.5 2 10
+end
+
+box
+name Box copy 3
+	position 90 -312.5 50
+	rotation 60
+	size 16 2 10
+end
+
+box
+name Box copy 4
+	position 76 -325.5 50
+	rotation 0
+	size 5 2 10
+end
+
+box
+name Box copy 3
+	position 34 -304 50
+	rotation 90
+	size 30 2 10
+end
+
+box
+name Box copy 4
+	position -7.5 -303 50
+	rotation 90
+	size 30 2 10
+end
+
+box
+name Box copy 5
+	position 12 -280 50
+	rotation 0
+	size 22 2 10
+end
+
+box
+name Box copy 5
+	position -44 -306 50
+	rotation 90
+	size 30 2 10
+end
+
+box
+name Box copy 6
+	position -56.5 -306 50
+	rotation 0
+	size 10 2 10
+end
+
+box
+name Box copy 7
+	position -56.5 -306 50
+	rotation 0
+	size 15 2 10
+end
+
+box
+name Box copy 8
+	position -61 -329.5 50
+	rotation 0
+	size 15 2 10
+end
+
+box
+name Box copy 9
+	position -59.5 -277.5 50
+	rotation 0
+	size 15 2 10
+end
+
+box
+name Box copy 4
+	position -106 -305 50
+	rotation 90
+	size 30 2 10
+end
+
+box
+name Box copy 5
+	position -121 -283 50
+	rotation 0
+	size 20 2 10
+end
+
+box
+name Box copy
+	position 145 -180.5 50
+	rotation 90
+	size 45 2 10
+end
+
+box
+name Box copy 1
+	position 164 -178 50
+	rotation 0
+	size 20 2 10
+end
+
+box
+name Box copy 2
+	position 183.5 -160.5 50
+	rotation 90
+	size 20 2 10
+end
+
+box
+name Box copy 3
+	position 164.5 -140 50
+	rotation 0
+	size 20 2 10
+end
+
+box
+name Box copy 4
+	position 96.5 -142 50
+	rotation 0
+	size 25 2 10
+end
+
+box
+name Box copy 5
+	position 66.5 -168 50
+	rotation 90
+	size 25 2 10
+end
+
+box
+name Box copy 6
+	position 90 -192 50
+	rotation 0
+	size 25 2 10
+end
+
+box
+name Box copy 7
+	position 120 -168 50
+	rotation 90
+	size 25 2 10
+end
+
+box
+name Box copy 8
+	position 37 -168.5 50
+	rotation 90
+	size 25 2 10
+end
+
+box
+name Box copy 9
+	position 10.5 -190 50
+	rotation 0
+	size 25 2 10
+end
+
+box
+name Box copy 10
+	position -17.5 -166.5 50
+	rotation 90
+	size 25 2 10
+end
+
+box
+name Box copy 11
+	position 9.5 -142.5 50
+	rotation 0
+	size 25 2 10
+end
+
+box
+name Box copy 12
+	position -16.5 -117 50
+	rotation 90
+	size 25 2 10
+end
+
+box
+name Box copy 13
+	position 7.5 -93.5 50
+	rotation 0
+	size 25 2 10
+end
+
+pyramid
+name Pyramid
+	position 117 382.5 0
+	rotation 0
+	size 5 5 30
+end
+
+pyramid
+name Pyramid copy
+	position 42 380.5 0
+	rotation 0
+	size 5 5 30
+end
+
+pyramid
+name Pyramid copy 1
+	position 37.5 342 0
+	rotation 0
+	size 5 5 30
+end
+
+pyramid
+name Pyramid copy 2
+	position 110.5 342 0
+	rotation 0
+	size 5 5 30
+end
+
+pyramid
+name Pyramid copy 3
+	position 84 365.5 23
+	rotation 0
+	size 6.5 6.5 30
+end
+
+box
+name Box
+	position 75 361 27
+	rotation 0
+	size 60 30 2
+end
+
+pyramid
+name Pyramid copy 4
+	position 84 365.5 10
+	rotation 0
+	size 8 8 25.5
+	flipz
+end
+
+box
+name Box
+	position -34.5 50 159
+	rotation 0
+	size 400 10 10
+end
+
+box
+name Box copy
+	position -34.5 50 159
+	rotation 90
+	size 400 9.5 10
+end
+
+box
+name Box copy 1
+	position -34.5 62 159
+	rotation 45
+	size 350 10 10
+end
+
+box
+name Box copy 2
+	position -34.5 62 159
+	rotation 140
+	size 350 10 10
+end
+
+box
+name Box
+	position 0 0 60
+	rotation 90
+	size 10 250 10
+end
+
+box
+name Box copy
+	position 0 0 60
+	rotation 0
+	size 10 200 10
+end
+
+box
+name Box copy 1
+	position 0 0 60
+	rotation 140
+	size 10 200 10
+end
+
+teleporter
+name Teleporter
+	position 108.5 195.5 0
+	rotation 0
+	size 0.125 10 10
+	border 1
+end
+
+teleporter
+name Teleporter copy
+	position -0.5 0 80
+	rotation 0
+	size 0.125 10 10
+	border 1
+end
+
+box
+name Box copy 1
+	position 0 0 60
+	rotation 45
+	size 10 200 10
+end
+
+box
+name Box
+	position 146 108 3
+	rotation 0
+	size 10 10 10
+end
+
+box
+name Box copy
+	position 163 -118 0
+	rotation 0
+	size 10 10 10
+end
+
+box
+name Box copy 1
+	position 160.5 -322 0
+	rotation 0
+	size 10 10 10
+end
+
+teleporter
+name Teleporter
+	position 50 50 5500
+	rotation 0
+	size 0.125 10 10
+	border 1
+end
+
+teleporter
+name Teleporter copy
+	position 90 360 0
+	rotation 0
+	size 0.125 10 10
+	border 1
+end
+
+teleporter
+name Teleporter copy 1
+	position 90 360 5200
+	rotation 0
+	size 0.125 10 10
+	border 1
+end
+
+box
+name Box
+	position 90 360 5000
+	rotation 0
+	size 10 10 10
+end
+
+box
+name Box
+	position -329 -322 0
+	rotation 0
+	size 30 30 10
+end
+
+box
+name Box
+	position -219 -316 0
+	rotation 0
+	size -3.5 91.5 10
+end
+
+box
+name Box copy
+	position -219 -316 0
+	rotation 0
+	size -3.5 91.5 10
+end
+
+box
+name Box copy
+	position -219 -316 0
+	rotation 0
+	size -3.5 85 60
+end
+
+box
+name Box copy 1
+	position -301.5 -232.5 0
+	rotation 90
+	size -3.5 80 60
+end
+
+box
+name Box copy
+	position -329 322 0
+	rotation 0
+	size 30 30 10
+end
+
+box
+name Box copy 1
+	position 329 -322 0
+	rotation 0
+	size 30 30 10
+end
+
+box
+name Box copy 2
+	position 329 322 0
+	rotation 0
+	size 30 30 10
+end
+
+box
+name Box copy 1
+	position 220 -302.5 0
+	rotation 0
+	size -3.5 80 60
+end
+
+box
+name Box copy 2
+	position 309.5 -231 0
+	rotation 90
+	size -3.5 91.5 60
+end
+
+box
+name Box copy 3
+	position 309.5 231 0
+	rotation 90
+	size -3.5 91.5 60
+end
+
+box
+name Box copy 4
+	position 221.5 300 0
+	rotation 0
+	size -3.5 80 60
+end
+
+box
+name Box copy 5
+	position -221 305 0
+	rotation 0
+	size -3.5 70 75
+end
+
+box
+name Box copy 6
+	position -309.5 235 0
+	rotation 90
+	size -3.5 91.5 75
+end
+
+teleporter
+name Teleporter
+	position 233 -286.5 0
+	rotation 0
+	size 0.125 10 10
+	border 1
+end
+
+teleporter
+name Teleporter copy
+	position -88 -113 0
+	rotation 0
+	size 0.125 10 10
+	border 1
+end
+
+teleporter
+name Teleporter
+	position 238.5 276.5 0
+	rotation 0
+	size 0.125 10 10
+	border 1
+end
+
+teleporter
+name Teleporter
+	position -237 326.5 0
+	rotation 0
+	size 0.125 10 10
+	border 1
+end
+
+teleporter
+name Teleporter
+	position -247.5 -284.5 0
+	rotation 0
+	size 0.125 10 10
+	border 1
+end
+
+base
+name Base
+	position -329 322 10
+	rotation 0
+	size 28 28 1
+	color 1
+end
+
+base
+name Base
+	position 329 322 10
+	rotation 0
+	size 28 28 1
+	color 2
+end
+
+base
+name Base
+	position 329 -322 10
+	rotation 0
+	size 28 28 1
+	color 3
+end
+
+base
+name Base
+	position -329 -322 10
+	rotation 0
+	size 28 28 1
+	color 4
+end
+
+box
+name Box
+	position -128.5 280.5 20
+	rotation 0
+	size 10 50 5
+end
+
+box
+name Box copy
+	position -97 320 20
+	rotation 90
+	size 10 25 5
+end
+
+box
+name Box copy 1
+	position -80 295.5 20
+	rotation 0
+	size 10.5 17.5 5
+end
+
+box
+name Box copy 2
+	position -105.5 286 20
+	rotation 90
+	size 10 20 5
+end
+
+box
+name Box copy 1
+	position -98 259 20
+	rotation 45
+	size 10 35 5
+end
+
+box
+name Box copy
+	position 91.5 261 20
+	rotation 0
+	size 10 50 5
+end
+
+box
+name Box copy 1
+	position 114.5 300.5 20
+	rotation 90
+	size 10 30 5
+end
+
+box
+name Box copy 2
+	position 116 225 20
+	rotation 90
+	size 10 30 5
+end
+
+box
+name Box copy 3
+	position 140.5 242.5 20
+	rotation 0
+	size 10 15 5
+end
+
+box
+name Box copy 4
+	position 123 260 20
+	rotation 90
+	size 10 25 5
+end
+
+box
+name Box copy 1
+	position -126 -307.5 20
+	rotation 0
+	size 10 50 5
+end
+
+box
+name Box copy 2
+	position -154.5 -348.5 20
+	rotation 90
+	size 10 25 5
+end
+
+box
+name Box copy 3
+	position -172 -333 20
+	rotation 0
+	size 10 25 5
+end
+
+box
+name Box copy 4
+	position -154.5 -311.5 20
+	rotation 90
+	size 10 25 5
+end
+
+box
+name Box copy 2
+	position 173 -281 20
+	rotation 0
+	size 10 50 5
+end
+
+box
+name Box copy 3
+	position 141.5 -321 20
+	rotation 90
+	size 10 25 5
+end
+
+box
+name Box copy 4
+	position 129 -302 20
+	rotation 0
+	size 10 25 5
+end
+
+box
+name Box copy 5
+	position 148.5 -282 20
+	rotation 90
+	size 10 25 5
+end
+
+box
+name Box copy 6
+	position 132 -260 20
+	rotation 0
+	size 10 25 5
+end
+
+box
+name Box copy 7
+	position 147.5 -240 20
+	rotation 90
+	size 10 25 5
+end
+
+teleporter
+	position 50 50 50
+	rotation 0
+	size 0.125 10 10
+	border 1
+end
+
+teleporter
+	position 50 50 50
+	rotation 0
+	size 0.125 10 10
+	border 1
+end
+
+teleporter
+name Teleporter copy
+	position 50 50 50
+	rotation 0
+	size 0.125 10 10
+	border 1
+end
+
+teleporter
+name Teleporter
+	position 0 0 0
+	rotation 0
+	size 0.125 350 20
+	border 1
+end
+
+teleporter
+name Teleporter
+	position 75 50 0
+	rotation 0
+	size 0.125 10 10
+	border 1
+end
+
+teleporter
+name Teleporter copy
+	position -75 50 0
+	rotation 0
+	size 0.125 10 10
+	border 1
+end
+
+box
+name Box
+	position -389.5 -234 0
+	rotation 0
+	size 15 15 52
+	drivethrough
+end
+
+box
+name Box copy
+	position -220.5 390.5 0
+	rotation 0
+	size 16 16 52
+	drivethrough
+end
+
+box
+name Box copy 1
+	position 220.5 390.5 0
+	rotation 0
+	size 15 15 52
+	drivethrough
+end
+
+box
+name Box copy
+	position 223 -393.5 0
+	rotation 0
+	size 15 15 52
+	drivethrough
+end
+
+box
+name Box
+	position 49 41.5 426.5
+	rotation -1
+	size 69 67 10
+end
+
+box
+name high gousewall1
+	position -18 47 436
+	rotation -2
+	size 3.5 83 10
+end
+
+box
+name high gousewall1 copy
+	position -19 47 443
+	rotation -2
+	size 3.5 83 10
+end
+
+box
+name high gousewall1 copy
+	position -16.5 47 452
+	rotation -2
+	size 3.5 83 10
+end
+
+box
+name high gousewall1 copy
+	position -17 47 460
+	rotation -2
+	size 3.5 83 10
+end
+
+box
+name high gousewall1 copy
+	position -17.5 47 470
+	rotation -2
+	size 3.5 83 10
+end
+
+box
+name high gousewall1 copy
+	position 52.5 103 437
+	rotation -90
+	size 4.5 99.5 10
+end
+
+box
+name high gousewall2
+	position 58 102.5 455
+	rotation 92
+	size 3.5 83 10
+end
+
+box
+name high gousewall1 copy 1
+	position 63.5 104 460
+	rotation -89.5
+	size 3.5 83 10
+end
+
+box
+name high gousewall1 copy 1
+	position 52.5 103 436
+	rotation -90
+	size 4.5 99.5 10
+end
+
+box
+name high gousewall2 copy
+	position 58.5 102.5 470
+	rotation 92
+	size 3.5 83 10
+end
+
+box
+name high gousewall3
+	position 54.5 -22 435
+	rotation 92
+	size 3.5 83 10
+end
+
+box
+name high gousewall2 copy
+	position 58 102.5 445
+	rotation 92
+	size 3.5 83 10
+end
+
+box
+name high gousewall2 copy
+	position 54 -22 445
+	rotation 92
+	size 3.5 83 10
+	drivethrough
+end
+
+box
+name high gousewall2 copy
+	position 54.5 -22 465
+	rotation 92
+	size 3.5 83 10
+end
+
+box
+name high gousewall1 copy 2
+	position 112.5 29 452.5
+	rotation -181.5
+	size 4.5 99.5 10
+end
+
+box
+name high gousewall3  copy
+	position 111.5 38.5 470
+	rotation 178
+	size 3.5 83 10
+end
+
+box
+name high gousewall2 copy 1
+	position 54.5 -22.5 455
+	rotation 92
+	size 3.5 83 10
+end
+
+box
+name high gousewall1 copy 3
+	position 57 -21 470
+	rotation -89.5
+	size 3.5 83 10
+end
+
+box
+name high gousewall1 copy 3
+	position 111.5 29 437
+	rotation -181.5
+	size 4.5 99.5 10
+end
+
+box
+name high gousewall1 copy 3
+	position 111.5 29 435
+	rotation -181.5
+	size 4.5 99.5 10
+end
+
+box
+name high gousewall1 copy 3
+	position 112.5 29 452.5
+	rotation -181.5
+	size 4.5 99.5 10
+end
+
+box
+name high gousewall1 copy 3
+	position 112.5 29 452
+	rotation -181.5
+	size 4.5 99.5 10
+end
+
+box
+name high gousewall1 copy 3
+	position 112.5 29 445
+	rotation -181.5
+	size 4.5 99.5 10
+end
+
+box
+name high gousewall3  copy 1
+	position 111.5 38.5 461
+	rotation 178
+	size 3.5 83 10
+end
+
+pyramid
+name Pyramid
+	position 49 49 480
+	rotation 0
+	size 71.5 91.5 20
+end
+
+pyramid
+	position 50 50 50
+	rotation 0
+	size 1 1 1
+end
+
+pyramid
+	position 50 50 50
+	rotation 0
+	size 1 1 1
+end
+
+pyramid
+	position 50 50 50
+	rotation 0
+	size 1 1 1
+end
+
+pyramid
+name Pyramid copy 1
+	position 350 63 0
+	rotation 0
+	size 50 50 200
+end
+
+pyramid
+	position 50 50 50
+	rotation 0
+	size 1 1 1
+end
+
+pyramid
+	position 50 50 50
+	rotation 0
+	size 1 1 1
+end
+
+pyramid
+	position 50 50 50
+	rotation 0
+	size 1 1 1
+end
+
+pyramid
+	position 50 50 50
+	rotation 0
+	size 1 1 1
+end
+
+teleporter
+	position 50 50 452
+	rotation 0
+	size 0.125 10 10
+	border 1
+end
+
+teleporter
+	position -24.5 120.5 0
+	rotation 0
+	size 0.125 10 10
+	border 1
+end
+
+teleporter
+	position 50 50 50
+	rotation 0
+	size 0.125 10 10
+	border 1
+end
+
+teleporter
+	position 50 50 50
+	rotation 0
+	size 0.125 10 10
+	border 1
+end
+
+teleporter
+	position 50 50 50
+	rotation 0
+	size 0.125 10 10
+	border 1
+end
+
+teleporter
+	position 50 50 50
+	rotation 0
+	size 0.125 10 10
+	border 1
+end
+
+teleporter
+	position 50 50 50
+	rotation 0
+	size 0.125 10 10
+	border 1
+end
+
+teleporter
+	position 50 50 50
+	rotation 0
+	size 0.125 10 10
+	border 1
+end
+
+teleporter
+	position 50 50 50
+	rotation 0
+	size 0.125 10 10
+	border 1
+end
+
+teleporter
+	position 50 50 50
+	rotation 0
+	size 0.125 10 10
+	border 1
+end
+
+teleporter
+	position 50 50 50
+	rotation 0
+	size 0.125 10 10
+	border 1
+end
+
+teleporter
+	position 50 50 50
+	rotation 0
+	size 0.125 10 10
+	border 1
+end
+
+teleporter
+	position 50 50 50
+	rotation 0
+	size 0.125 10 10
+	border 1
+end
+
+box
+	position 50 50 50
+	rotation 0
+	size 10 10 10
+end
+
+box
+	position 50 50 50
+	rotation 0
+	size 10 10 10
+end
+
+box
+	position 50 50 50
+	rotation 0
+	size 10 10 10
+end
+
+box
+	position 50 50 50
+	rotation 0
+	size 10 10 10
+end
+
+box
+	position 50 50 50
+	rotation 0
+	size 10 10 10
+end
+
+box
+	position 50 50 50
+	rotation 0
+	size 10 10 10
+end
+
+box
+	position 50 50 50
+	rotation 0
+	size 10 10 10
+end
+
+box
+	position 50 50 50
+	rotation 0
+	size 10 10 10
+end
+
+box
+	position 50 50 50
+	rotation 0
+	size 10 10 10
+end
+
+box
+	position 50 50 50
+	rotation 0
+	size 10 10 10
+end
+
+box
+	position 50 50 50
+	rotation 0
+	size 10 10 10
+end
+
+box
+name Box copy
+	position -55 163 0
+	rotation 0
+	size 19.5 1.5 10
+	passable
+end
+
+box
+name Box copy 1
+	position -73 173 0
+	rotation 90
+	size 10 1.5 10
+	passable
+end
+
+box
+name Box copy 2
+	position -71.5 181.5 0
+	rotation 0
+	size 2 1.5 10
+end
+
+box
+name Box copy 1
+	position -55 155 0
+	rotation 0
+	size 19.5 1.5 10
+	passable
+end
+
+box
+name Box copy 2
+	position -55 140 0
+	rotation 0
+	size 19.5 1.5 10
+	passable
+end
+
+box
+name Box copy 3
+	position -60 120 0
+	rotation 0
+	size 12 1.5 10
+	passable
+end
+
+box
+name Box copy 3
+	position -40 120 0
+	rotation 0
+	size 2 1.5 10
+	passable
+end
+
+box
+name Box copy 2
+	position -52.5 146.5 0
+	rotation 90
+	size 7 1.5 10
+	passable
+end
+
+box
+name Box copy 3
+	position -39 147 0
+	rotation 90
+	size 7 1.5 10
+	passable
+end
+
+box
+name Box copy 3
+	position -55 100 0
+	rotation 0
+	size 19.5 1.5 10
+	passable
+end
+
+box
+name Box copy 4
+	position -75 90 0
+	rotation 90
+	size 10 1.5 10
+	passable
+end
+
+box
+name Box copy 2
+	position -20 50 0
+	rotation 90
+	size 20 1.5 10
+	passable
+end
+
+box
+name Box copy 3
+	position -30 80 0
+	rotation 45
+	size 15 1.5 10
+	passable
+end
+
+box
+name Box copy 4
+	position -10.5 160 0
+	rotation -135
+	size 15 1.5 10
+	passable
+end
+
+box
+name Box copy 3
+	position -20 190 0
+	rotation 90
+	size 20 1.5 10
+	passable
+end
+
+box
+name Box copy 4
+	position -30 160 0
+	rotation -45
+	size 15 1.5 10
+	passable
+end
+
+box
+name Box copy 5
+	position -10.5 80 0
+	rotation 135
+	size 15 1.5 10
+	passable
+end
+
+box
+name Box
+	position -272.5 -22 0
+	rotation 0
+	size 1 7 50
+end
+
+box
+name Box copy
+	position -300 -71 0
+	rotation 90
+	size 1 28 50
+end
+
+box
+name Box copy 1
+	position -300 -16 0
+	rotation 90
+	size 1 28 50
+end
+
+box
+name Box copy
+	position -327 -43.5 0
+	rotation 0
+	size 1 28 50
+end
+
+box
+name Box copy
+	position -272.5 -65 0
+	rotation 0
+	size 1 7 50
+end
+
+box
+name Box copy 1
+	position -272.5 -45 35
+	rotation 0
+	size 1 18 15
+end
+
+pyramid
+name Pyramid
+	position -300.5 -44 50.01
+	rotation 0
+	size 30 30 16
+end
+
+teleporter
+	position 50 50 50
+	rotation 0
+	size 0.125 10 10
+	border 1
+end
+
+teleporter
+name Teleporter
+	position -271.5 -43 0
+	rotation 0
+	size 0.125 13 25
+	border 1
+end
+
+pyramid
+name Pyramid
+	position -96 360.5 0
+	rotation 0
+	size 40 40 50
+	passable
+end
+
+pyramid
+name Pyramid copy
+	position -136 360.5 0
+	rotation 0
+	size 5 60 75
+	shootthrough
+end
+
+pyramid
+name Pyramid copy 1
+	position -60 360.5 0
+	rotation 0
+	size 5 60 75
+	shootthrough
+end
+
+pyramid
+name Pyramid copy 2
+	position -100 320 0
+	rotation 90
+	size 5 60 75
+	shootthrough
+end
+
+pyramid
+name Pyramid copy 3
+	position -100 400 0
+	rotation 90
+	size 5 60 75
+	shootthrough
+end
+
+teleporter
+	position 50 50 50
+	rotation 0
+	size 0.125 10 10
+	border 1
+end
+
+teleporter
+name Teleporter
+	position -98 370 0
+	rotation 90
+	size 0.125 10 10
+	border 0
+end
+
+box
+name Box
+	position 50 50 700
+	rotation 0
+	size 7 7 0.1
+end
+
+teleporter
+name Teleporter
+	position 55 50 720
+	rotation 0
+	size 0.125 5 10
+	border 1
+end
+
+teleporter
+name Teleporter
+	position 280 -112 0
+	rotation 0
+	size 0.125 30 50
+	border 0
+end
+
+teleporter
+name Teleporter copy
+	position 320 -112 0
+	rotation 0
+	size 0.125 30 50
+	border 0
+end
+
+teleporter
+name Teleporter copy 1
+	position 300 -112 0
+	rotation 90
+	size 0.125 30 50
+	border 0
+end
+
+teleporter
+name Teleporter copy 2
+	position 300 -83 0
+	rotation 90
+	size 0.125 30 50
+	border 0
+end
+
+teleporter
+name Teleporter copy 3
+	position 300 -141 0
+	rotation 90
+	size 0.125 30 50
+	border 0
+end
+
+box
+name Box
+	position 283 -112 49
+	rotation 0
+	size 12 30 1
+end
+
+box
+name Box copy
+	position 315 -112 49
+	rotation 0
+	size 12 30 1
+end
+
+box
+name Box copy 1
+	position 300 -117 49
+	rotation 0
+	size 5 5 1
+end
+
+box
+name Box copy 2
+	position 300 -108 49
+	rotation 0
+	size 5 5 1
+end
+
+box
+name Box copy 3
+	position 300 -87 49
+	rotation 0
+	size 5 5 1
+end
+
+box
+name Box copy 4
+	position 300 -137 49
+	rotation 0
+	size 5 5 1
+end
+
+pyramid
+name Pyramid
+	position 321 -137 48
+	rotation 0
+	size 2 2 50
+end
+
+pyramid
+name Pyramid copy
+	position 321 -87 48
+	rotation 0
+	size 2 2 50
+end
+
+pyramid
+name Pyramid copy 1
+	position 277 -87 48
+	rotation 0
+	size 2 2 50
+end
+
+pyramid
+name Pyramid copy 2
+	position 277 -137 48
+	rotation 0
+	size 2 2 50
+end
+
+pyramid
+name Pyramid copy 3
+	position 300 -112 48
+	rotation 0
+	size 5 5 50
+	flipz
+end
+
+pyramid
+name Pyramid copy 4
+	position 300 -112 98
+	rotation 0
+	size 5 5 50
+end
+
+box
+name Box
+	position -148.5 -171 7
+	rotation 0
+	size -11.5 15.5 10
+end
+
+link
+	from 20
+	to 6
+end
+
+link
+	from 2
+	to 4
+end
+
+link
+	from 24
+	to 6
+end
+
+link
+	from 16
+	to 6
+end
+
+link
+	from 34
+	to 8
+end
+
+link
+	from 22
+	to 1
+end
+
+link
+	from 41
+	to 38
+end
+
+link
+	from 12
+	to 0
+end
+
+link
+	from 71
+	to 73
+end
+
+link
+	from 32
+	to 32
+end
+
+link
+	from 33
+	to 33
+end
+
+link
+	from 76
+	to 76
+end
+
+link
+#!name Link
+	from 82
+	to 82
+end
+
+link
+	from 80
+	to 80
+end
+
+link
+#!name Link
+	from 75
+	to 75
+end
+
+link
+	from 78
+	to 78
+end
+
+link
+	from 79
+	to 79
+end
+
+link
+	from 66
+	to 66
+end
+
+box
+name Box
+	position -311.5 -150 50
+	rotation 0
+	size 20 1 20
+	shootthrough
+end
+
+box
+name Box copy
+	position -311.5 -125 50
+	rotation 0
+	size 20 1 20
+	shootthrough
+end
+
+box
+name Box copy 1
+	position -329.5 -136.5 50
+	rotation 90
+	size 13 1 20
+	shootthrough
+end
+
+box
+name Box copy 2
+	position -292 -136.5 50
+	rotation 90
+	size 13 1 20
+	shootthrough
+end
+
+box
+name Box
+	position -310 -137.5 50.1
+	rotation 0
+	size 20 13 1
+end
+
+pyramid
+	position 50 50 50
+	rotation 0
+	size 1 1 1
+end
+
+pyramid
+name Pyramid
+	position -311.5 -137.5 70
+	rotation 0
+	size 30 20 15
+end
+
+teleporter
+name Teleporter
+	position -320 -136.5 56
+	rotation 0
+	size 0.125 10 10
+	border 0
+end
+
+teleporter
+name Teleporter copy
+	position -309.5 -136.5 0
+	rotation 0
+	size 0.125 10 10
+	border 0
+end
+
+link
+	from 87
+	to 85
+end
+
+link
+#!name Link
+	from 36
+	to 18
+end
+

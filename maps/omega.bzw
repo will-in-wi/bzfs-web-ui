@@ -1,0 +1,418 @@
+# World built with bzedit32 world class, available at
+# http://www.artemisgames.com/bzedit
+#THE OMEGA :)
+
+box
+name Box
+	position -200 -200 0
+	rotation 0
+	size 100 25 50
+end
+
+box
+name Box copy
+	position 200 -200 0
+	rotation 0
+	size 100 25 50
+end
+
+box
+name Box copy 1
+	position 153 -136.6 0
+	rotation 45
+	size 100 25 40
+end
+
+box
+name Box copy 2
+	position -153 -136.6 0
+	rotation -45
+	size 100 25 40
+end
+
+box
+name Box copy 3
+	position -216.5 16.5 0
+	rotation 90
+	size 100 25 30
+end
+
+box
+name Box copy 4
+	position 216.5 16.5 0
+	rotation 90
+	size 100 25 30
+end
+
+box
+name Box copy 4
+	position -153 169.5 0
+	rotation 45
+	size 100 25 20
+end
+
+box
+name Box copy 5
+	position 153 169.5 0
+	rotation -45
+	size 100 25 20
+end
+
+box
+name Box copy 6
+	position 0 233 0
+	rotation 0
+	size 100 25 10
+end
+
+pyramid
+name Pyramid
+	position -280 -280 0
+	rotation 0
+	size 1 1 50
+end
+
+pyramid
+name Pyramid copy
+	position -340 -340 0
+	rotation 0
+	size 1 1 50
+end
+
+pyramid
+name Pyramid copy
+	position 220 220 0
+	rotation 0
+	size 1 1 50
+end
+
+pyramid
+name Pyramid copy 1
+	position -220 220 0
+	rotation 0
+	size 1 1 50
+end
+
+pyramid
+name Pyramid copy
+	position 280 -280 0
+	rotation 0
+	size 1 1 50
+end
+
+pyramid
+name Pyramid copy 2
+	position 280 280 0
+	rotation 0
+	size 1 1 50
+end
+
+pyramid
+name Pyramid copy 3
+	position -280 280 0
+	rotation 0
+	size 1 1 50
+end
+
+pyramid
+name Pyramid copy 4
+	position -340 340 0
+	rotation 0
+	size 1 1 50
+end
+
+pyramid
+name Pyramid copy 5
+	position 340 340 0
+	rotation 0
+	size 1 1 50
+end
+
+pyramid
+name Pyramid copy 6
+	position 340 -340 0
+	rotation 0
+	size 1 1 50
+end
+
+pyramid
+name Pyramid copy 2
+	position -220 220 0
+	rotation 0
+	size 1 1 50
+end
+
+pyramid
+name Pyramid copy 3
+	position -160 160 0
+	rotation 0
+	size 1 1 50
+end
+
+pyramid
+name Pyramid copy 4
+	position 160 160 0
+	rotation 0
+	size 1 1 50
+end
+
+pyramid
+name Pyramid copy 5
+	position 160 -160 0
+	rotation 0
+	size 1 1 50
+end
+
+pyramid
+name Pyramid copy 6
+	position -160 -160 0
+	rotation 0
+	size 1 1 50
+end
+
+pyramid
+name Pyramid copy 7
+	position -100 -100 0
+	rotation 0
+	size 1 1 50
+end
+
+pyramid
+name Pyramid copy 8
+	position 100 -100 0
+	rotation 0
+	size 1 1 50
+end
+
+pyramid
+name Pyramid copy 9
+	position 100 100 0
+	rotation 0
+	size 1 1 50
+end
+
+pyramid
+name Pyramid copy 10
+	position -100 100 0
+	rotation 0
+	size 1 1 50
+end
+
+pyramid
+name Pyramid copy 11
+	position -40 40 0
+	rotation 0
+	size 1 1 50
+end
+
+pyramid
+name Pyramid copy 12
+	position 40 40 0
+	rotation 0
+	size 1 1 50
+end
+
+pyramid
+name Pyramid copy 13
+	position 40 -40 0
+	rotation 0
+	size 1 1 50
+end
+
+pyramid
+name Pyramid copy 14
+	position 40 -40 0
+	rotation 0
+	size 1 1 50
+end
+
+pyramid
+name Pyramid copy 15
+	position -40 -40 0
+	rotation 0
+	size 1 1 50
+end
+
+weapon
+type sw
+position 340 340 40
+size 20 20 20
+initdelay 1
+delay .5
+end
+
+weapon
+type sw
+position -340 340 40
+size 20 20 20
+initdelay 1
+delay .5
+end
+
+weapon
+type sw
+position 340 -340 40
+size 20 20 20
+initdelay 1
+delay .5
+end
+
+weapon
+type sw
+position -340 -340 40
+size 20 20 20
+initdelay 1
+delay .5
+end
+
+weapon
+type sw
+position 280 280 40
+size 20 20 20
+initdelay 1
+delay 1
+end
+
+weapon
+type sw
+position -280 280 40
+size 20 20 20
+initdelay 1
+delay 1
+end
+
+weapon
+type sw
+position 280 -280 40
+size 20 20 20
+initdelay 1
+delay 1
+end
+
+weapon
+type sw
+position -280 -280 40
+size 20 20 20
+initdelay 1
+delay 1
+end
+
+weapon
+type sw
+position 220 220 40
+size 20 20 20
+initdelay 1
+delay 1.5
+end
+
+weapon
+type sw
+position -220 220 40
+size 20 20 20
+initdelay 1
+delay 1.5
+end
+
+weapon
+type sw
+position 160 160 40
+size 20 20 20
+initdelay 1
+delay 2
+end
+
+weapon
+type sw
+position -160 160 40
+size 20 20 20
+initdelay 1
+delay 2
+end
+
+weapon
+type sw
+position 160 -160 40
+size 20 20 20
+initdelay 1
+delay 2
+end
+
+weapon
+type sw
+position -160 -160 40
+size 20 20 20
+initdelay 1
+delay 2
+end
+
+weapon
+type sw
+position 100 100 40
+size 20 20 20
+initdelay 1
+delay 2.5
+end
+
+weapon
+type sw
+position -100 100 40
+size 20 20 20
+initdelay 1
+delay 2.5
+end
+
+weapon
+type sw
+position 100 -100 40
+size 20 20 20
+initdelay 1
+delay 2.5
+end
+
+weapon
+type sw
+position -100 -100 40
+size 20 20 20
+initdelay 1
+delay 2.5
+end
+
+weapon
+type sw
+position 40 40 40
+size 20 20 20
+initdelay 1
+delay 3
+end
+
+weapon
+type sw
+position -40 40 40
+size 20 20 20
+initdelay 1
+delay 3
+end
+
+weapon
+type sw
+position 40 -40 40
+size 20 20 20
+initdelay 1
+delay 3
+end
+
+weapon
+type sw
+position -40 -40 40
+size 20 20 20
+initdelay 1
+delay 3
+end
+
+weapon
+type sw
+position 0 0 50
+size 20 20 20
+initdelay 1
+delay 5
+end

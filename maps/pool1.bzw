@@ -1,0 +1,49 @@
+#
+#
+# +--+------+--+
+# |  |__3___|  |
+# |1 |      |2 |
+# |  |  5   |  |
+# |  |______|  |
+# |__|_4____|__|
+#
+#
+# 5 is pool.
+#
+
+# 1: left side
+box
+  position -30 0 0
+  size 10 40 4
+  rotation 0
+end
+
+# 2: right side
+box
+  position 30 0 0
+  size 10 40 4
+  rotation 0
+end
+
+
+# 3: middle top
+box
+  position 0 30 0
+  size 20 10 4
+  rotation 0
+end
+
+# 4: middle buttom
+box
+  position 0 -30 0
+  size 20 10 4
+  rotation 0
+end
+
+
+# 5: water:
+pyramid
+  position 0 0 3.5
+  size 20 20 0
+  rotation 0
+end

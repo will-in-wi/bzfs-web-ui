@@ -1,0 +1,190 @@
+# World built with bzedit32 world class, available at
+# http://www.sourceforge.net/projects/bzflag
+
+box
+name runner 1
+	position 180 -242 -3.5
+	rotation 0
+	size 160 17 10
+end
+
+box
+name runner 2
+	position -232 -239 -4
+	rotation 0
+	size 160 17 10
+end
+
+box
+name tower p1
+	position -3 -364 0.5
+	rotation 0
+	size 403.5 48.5 10
+end
+
+box
+name tower p2
+	position -5 -364 10
+	rotation 0
+	size 403.5 48.5 10
+end
+
+box
+name tower p3
+	position -2 -364 19.5
+	rotation 0
+	size 403.5 48.5 10
+end
+
+box
+name runner 3
+	position 235.5 -134 -2
+	rotation 0
+	size 160 17 10
+end
+
+box
+name runner 4
+	position -233 -136 -1.5
+	rotation 0
+	size 160 17 10
+end
+
+box
+name runner 5
+	position 235 -15.5 -1.5
+	rotation 0
+	size 160 17 10
+end
+
+box
+name runner 6
+	position -233 -11 -1.5
+	rotation 0
+	size 160 17 10
+end
+
+box
+name runner 7
+	position -234 108.5 -1
+	rotation 0
+	size 160 17 10
+end
+
+box
+name runner 8
+	position 235 111.5 -1.5
+	rotation 0
+	size 160 17 10
+end
+
+box
+name tower p4
+	position -8 -370 30
+	rotation 0
+	size 171.5 59.5 10
+end
+
+box
+name tower p5
+	position 0.5 -371 40
+	rotation 0
+	size 52 60.5 10
+end
+
+box
+name entrance gate p1
+	position -215 213 1
+	rotation 0
+	size 180.5 30.5 10
+end
+
+box
+name entrance gate p2
+	position 218 210 1
+	rotation 0
+	size 183 31 10
+end
+
+box
+name entrance gate p3
+	position -217 212.5 9.5
+	rotation 0
+	size 183 31 10
+end
+
+box
+name entrance gate p4
+	position 217.5 210 9.5
+	rotation 0
+	size 183 31 10
+end
+
+box
+name entrance gate p6
+	position 217.5 210 19.5
+	rotation 0
+	size 183 31 10
+end
+
+box
+name entrance gate p5
+	position -216 210 20
+	rotation 0
+	size 183 31 10
+end
+
+box
+name entrance bridge
+	position 7 209.5 19.5
+	rotation 0
+	size 183 31 10
+end
+
+box
+name entrance gate p7
+	position -215 208.5 29
+	rotation 0
+	size 183 31 10
+end
+
+box
+name entrance gate p7
+	position 216.5 210.5 27.5
+	rotation 0
+	size 183 31 10
+end
+
+box
+name entrance gate p7 copy
+	position -215 208.5 29
+	rotation 0
+	size 183 31 10
+end
+
+teleporter
+name Teleporter gate
+	position 2 224.5 29.5
+	rotation 91.5
+	size 12.125 52 10
+	border 1
+end
+
+teleporter
+name Teleporter tower
+	position 0.5 -384 50
+	rotation -89
+	size 6.125 34.5 10
+	border 1
+end
+
+link
+	from 0
+	to 2
+end
+
+link
+	from 3
+	to 1
+end
+

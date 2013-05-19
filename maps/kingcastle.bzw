@@ -1,0 +1,2024 @@
+### BZFLAG WORLD FILE HEADER
+
+
+# Map name	: King of the Castle
+# File name	: kingcastle.bzw
+# Version	: 1.00
+# Release date	: 2002-12-25
+# Version	: 1.10
+# Release date	: 2004-11-24 (made roof pyramids passable)
+
+# Designer	: Raimond "Dutchrai" Kuhlman
+# Email address	: dutchrai@yahoo.com
+
+# BZFS Required	: -j -public "King of the Castle by Dutchrai" -world "kingcastle.bzw"
+
+
+### BZFLAG WORLD FILE DATA
+
+
+# Bridged Pyramid to Sky Platform
+
+box
+position -320 220 45
+rotation 0
+size 20 20 15
+end
+
+box
+position -220 320 45
+rotation 0
+size 20 20 15
+end
+
+box
+position -320 220 30
+rotation 0
+size 30 30 15
+end
+
+box
+position -220 320 30
+rotation 0
+size 30 30 15
+end
+
+box
+position -320 220 15
+rotation 0
+size 40 40 15
+end
+
+box
+position -220 320 15
+rotation 0
+size 40 40 15
+end
+
+box
+position -270 270 15
+rotation 45
+size 35 20 15
+end
+
+box
+position -320 220 0
+rotation 0
+size 50 50 15
+end
+
+box
+position -220 320 0
+rotation 0
+size 50 50 15
+end
+
+box
+position -270 270 0
+rotation 45
+size 30 30 15
+end
+
+teleporter			
+position -270 270 30
+rotation -45		
+size 0.56 4.48 20.16
+border 1.1		
+end
+
+link
+from 0
+to 2
+end
+
+link
+from 1
+to 3
+end
+
+
+# Sky Platform
+
+box
+position -225 225 124
+rotation 45
+size 2.5 40 2
+end
+
+box
+position -225 225 124
+rotation 135
+size 2.5 40 2
+end
+
+box
+position -195 225 124
+rotation 0
+size 2.5 32.5 2
+end
+
+box
+position -255 225 124
+rotation 0
+size 2.5 32.5 2
+end
+
+box
+position -225 195 124
+rotation 0
+size 27.5 2.5 2
+end
+
+box
+position -225 255 124
+rotation 0
+size 27.5 2.5 2
+end
+
+box
+position -225 225 124
+rotation 0
+size 16 16 2
+end
+
+box
+position -225 225 120
+rotation 0
+size 8 8 4
+end
+
+box
+position -225 225 112
+rotation 0
+size 4 4 8
+end
+
+box
+position -225 225 96
+rotation 0
+size 2 2 16
+end
+
+box
+position -225 225 64
+rotation 0
+size 1 1 32
+end
+
+teleporter			
+position -225 225 126
+rotation -45		
+size 0.56 4.48 20.16
+border 1.1		
+end
+
+link
+from 2
+to 0
+end
+
+link
+from 3
+to 1
+end
+
+
+# The Siamese Pyramid
+
+pyramid
+position 50 -200 80
+rotation 0
+size 7.5 7.5 7.5
+passable
+end
+
+pyramid
+position 50 -200 80
+rotation 0
+size 3.75 3.75 22.5
+passable
+end
+
+box
+position 50 -200 75
+rotation 0
+size 7.5 7.5 5
+end
+
+pyramid
+position 110 -140 65
+rotation 0
+size 5 5 5
+passable
+end
+
+pyramid
+position 110 -140 65
+rotation 0
+size 2.5 2.5 15
+passable
+end
+
+box
+position 110 -140 60
+rotation 0
+size 5 5 5
+end
+
+box
+position 50 -200 60
+rotation 0
+size 20 20 15
+end
+
+box
+position 50 -200 45
+rotation 0
+size 30 30 15
+end
+
+box
+position 90 -120 55
+rotation -45
+size 2.5 2.5 5
+end
+
+box
+position 84 -114 58
+rotation -45
+size 6 1 2
+end
+
+box
+position 110 -140 30
+rotation 0
+size 20 20 30
+end
+
+box
+position 50 -200 22.5
+rotation 0
+size 40 40 22.5
+end
+
+box
+position 110 -140 15
+rotation 0
+size 30 30 15
+end
+
+box
+position 75 -175 15
+rotation 0
+size 15 15 7.5
+end
+
+box
+position 25 -225 15
+rotation 0
+size 15 15 7.5
+end
+
+box
+position 25 -185 15
+rotation 0
+size 15 25 7.5
+end
+
+box
+position 65 -225 15
+rotation 0
+size 25 15 7.5
+end
+
+box
+position 50 -242.5 15
+rotation 0
+size 20 2.5 17
+end
+
+box
+position 7.5 -200 15
+rotation 0
+size 2.5 20 17
+end
+
+box
+position 110 -155 7.5
+rotation 0
+size 10 25 7.5
+end
+
+box
+position 85 -140 7.5
+rotation 0
+size 15 15 7.5
+end
+
+box
+position 135 -115 0
+rotation 0
+size 15 15 15
+end
+
+box
+position 95 -115 0
+rotation 0
+size 25 15 15
+end
+
+box
+position 135 -155 0
+rotation 0
+size 15 25 15
+end
+
+box
+position 50 -200 0
+rotation 0
+size 50 50 15
+end
+
+box
+position 50 -255 0
+rotation 0
+size 30 5 15
+end
+
+box
+position -5 -200 0
+rotation 0
+size 5 30 15
+end
+
+pyramid
+position 25 -175 0
+rotation 0
+size 15 15 15
+end
+
+pyramid
+position 75 -175 0
+rotation 0
+size 15 15 15
+end
+
+pyramid
+position 25 -225 0
+rotation 0
+size 15 15 15
+end
+
+pyramid
+position 75 -225 0
+rotation 0
+size 15 15 15
+end
+
+
+# The Richman's House 1
+
+box
+position 170 30 60
+rotation 0
+size 5 5 5
+end
+
+pyramid
+position 170 30 60
+rotation 0
+size 15 15 15
+passable
+end
+
+box
+position 170 30 30
+rotation 0
+size 15 15 30
+end
+
+box
+position 185 15 28
+rotation 0
+size 37.5 30 2
+end
+
+box
+position 185 15 24
+rotation 0
+size 30 30 4
+end
+
+box
+position 185 15 18
+rotation 0
+size 30 30 4
+end
+
+box
+position 167.5 32.5 15
+rotation 0
+size 12.5 12.5 3
+end
+
+box
+position 202.5 32.5 15
+rotation 0
+size 12.5 12.5 3
+end
+
+box
+position 202.5 -2.5 15
+rotation 0
+size 12.5 12.5 3
+end
+
+box
+position 167.5 -2.5 15
+rotation 0
+size 12.5 12.5 3
+end
+
+box
+position 245 -15 15
+rotation 0
+size 7.5 15 3
+end
+
+box
+position 248.75 -15 0
+rotation 0
+size 3.75 15 15
+end
+
+box
+position 200 0 0
+rotation 0
+size 45 45 15
+end
+
+box
+position 200 0 0
+rotation 0
+size 30 30 3
+end
+
+box
+position 200 0 0
+rotation 0
+size 15 15 3
+end
+
+
+# The Richman's House in Between
+
+box
+position 155 52.5 50.5
+rotation 0
+size 7.5 15 2
+end
+
+box
+position 170 52.5 43
+rotation 0
+size 7.5 7.5 2
+end
+
+box
+position 185 52.5 35.5
+rotation 0
+size 7.5 15 2
+end
+
+box
+position 151.25 52.5 28
+rotation 0
+size 3.75 7.5 2
+end
+
+box
+position 218.75 52.5 28
+rotation 0
+size 3.75 7.5 2
+end
+
+box
+position 185 52.5 22
+rotation 0
+size 45 82.5 2
+end
+
+box
+position 185 52.5 14.5
+rotation 0
+size 0.25 7.5 0.5
+end
+
+
+# The Richman's House 2
+
+box
+position 170 75 60
+rotation 0
+size 5 5 5
+end
+
+pyramid
+position 170 75 60
+rotation 0
+size 15 15 15
+passable
+end
+
+box
+position 170 75 30
+rotation 0
+size 15 15 30
+end
+
+box
+position 185 90 28
+rotation 0
+size 37.5 30 2
+end
+
+box
+position 185 90 24
+rotation 0
+size 30 30 4
+end
+
+box
+position 185 90 18
+rotation 0
+size 30 30 4
+end
+
+box
+position 167.5 107.5 15
+rotation 0
+size 12.5 12.5 3
+end
+
+box
+position 202.5 107.5 15
+rotation 0
+size 12.5 12.5 3
+end
+
+box
+position 202.5 72.5 15
+rotation 0
+size 12.5 12.5 3
+end
+
+box
+position 167.5 72.5 15
+rotation 0
+size 12.5 12.5 3
+end
+
+box
+position 155 150 15
+rotation 0
+size 15 7.5 3
+end
+
+box
+position 155 153.75 0
+rotation 0
+size 15 3.75 15
+end
+
+box
+position 170 105 0
+rotation 0
+size 45 45 15
+end
+
+box
+position 170 105 0
+rotation 0
+size 30 30 3
+end
+
+box
+position 170 105 0
+rotation 0
+size 15 15 3
+end
+
+
+# Draw Bridge
+
+box
+position 111.25 0 28
+rotation 0
+size 36.25 15 2
+end
+
+box
+position 115 10 26
+rotation 0
+size 40 1 2
+end
+
+box
+position 115 0 26
+rotation 0
+size 40 1 2
+end
+
+box
+position 115 -10 26
+rotation 0
+size 40 1 2
+end
+
+
+# The Castle
+
+pyramid
+position -22.5 22.5 95
+rotation 0
+size 5 5 30
+passable
+end
+
+pyramid
+position 22.5 22.5 95
+rotation 0
+size 5 5 30
+passable
+end
+
+pyramid
+position 22.5 -22.5 95
+rotation 0
+size 5 5 30
+passable
+end
+
+pyramid
+position -22.5 -22.5 95
+rotation 0
+size 5 5 30
+passable
+end
+
+box
+position -22.5 22.5 75
+rotation 0
+size 5 5 20
+end
+
+box
+position 22.5 22.5 75
+rotation 0
+size 5 5 20
+end
+
+box
+position 22.5 -22.5 75
+rotation 0
+size 5 5 20
+end
+
+box
+position -22.5 -22.5 75
+rotation 0
+size 5 5 20
+end
+
+box
+position 0 0 75
+rotation 0
+size 22.5 22.5 15
+end
+
+box
+position 0 0 60
+rotation 0
+size 30 30 15
+end
+
+box
+position 0 0 49
+rotation 0
+size 37.5 37.5 11
+end
+
+box
+position 0 0 30
+rotation 0
+size 45 45 19
+end
+
+box
+position 60 0 25
+rotation 0
+size 15 10 5
+end
+
+box
+position -41.25 41.25 25
+rotation 0
+size 11.25 11.25 5
+end
+
+box
+position 41.25 41.25 25
+rotation 0
+size 11.25 11.25 5
+end
+
+box
+position 41.25 -41.25 25
+rotation 0
+size 11.25 11.25 5
+end
+
+box
+position -41.25 -41.25 25
+rotation 0
+size 11.25 11.25 5
+end
+
+box
+position -37.5 37.5 15
+rotation 0
+size 7.5 7.5 10
+end
+
+box
+position 37.5 37.5 15
+rotation 0
+size 7.5 7.5 10
+end
+
+box
+position 37.5 -37.5 15
+rotation 0
+size 7.5 7.5 10
+end
+
+box
+position -37.5 -37.5 15
+rotation 0
+size 7.5 7.5 10
+end
+
+box
+position 60 20 15
+rotation 0
+size 15 10 15
+end
+
+box
+position 60 -20 15
+rotation 0
+size 15 10 15
+end
+
+box
+position 70 0 15
+rotation 0
+size 5 10 5
+end
+
+box
+position 43 0 13
+rotation 0
+size 2 30 2
+end
+
+box
+position -26.25 71.25 10
+rotation 0
+size 11.25 11.25 5
+end
+
+box
+position 26.25 71.25 10
+rotation 0
+size 11.25 11.25 5
+end
+
+box
+position -26.25 -71.25 10
+rotation 0
+size 11.25 11.25 5
+end
+
+box
+position 26.25 -71.25 10
+rotation 0
+size 11.25 11.25 5
+end
+
+box
+position -71.25 -26.25 10
+rotation 0
+size 11.25 11.25 5
+end
+
+box
+position -71.25 26.25 10
+rotation 0
+size 11.25 11.25 5
+end
+
+box
+position -45 45 0
+rotation 0
+size 15 15 15
+end
+
+box
+position 45 45 0
+rotation 0
+size 15 15 15
+end
+
+box
+position 45 -45 0
+rotation 0
+size 15 15 15
+end
+
+box
+position -45 -45 0
+rotation 0
+size 15 15 15
+end
+
+box
+position -60 0 0
+rotation 0
+size 15 30 30
+end
+
+box
+position -90 0 0
+rotation 0
+size 15 15 15
+end
+
+box
+position 0 90 0
+rotation 0
+size 15 15 15
+end
+
+box
+position 0 -90 0
+rotation 0
+size 15 15 15
+end
+
+box
+position 60 0 0
+rotation 0
+size 15 30 15
+end
+
+box
+position 0 60 0
+rotation 0
+size 30 15 30
+end
+
+box
+position 0 -60 0
+rotation 0
+size 30 15 30
+end
+
+box
+position 75 0 0
+rotation 0
+size 7.5 45 20
+end
+
+
+# The Thing
+
+box
+position -280 -280 58
+rotation 0
+size 14 14 10
+end
+
+pyramid
+position -266 -266 58
+rotation 0
+size 8 8 5
+passable
+end
+
+pyramid
+position -294 -266 58
+rotation 0
+size 8 8 5
+passable
+end
+
+pyramid
+position -266 -294 58
+rotation 0
+size 8 8 5
+passable
+end
+
+pyramid
+position -294 -294 58
+rotation 0
+size 8 8 5
+passable
+end
+
+box
+position -266 -266 42
+rotation 0
+size 8 8 16
+end
+
+box
+position -294 -266 42
+rotation 0
+size 8 8 16
+end
+
+box
+position -266 -294 42
+rotation 0
+size 8 8 16
+end
+
+box
+position -294 -294 42
+rotation 0
+size 8 8 16
+end
+
+box
+position -280 -280 26
+rotation 0
+size 32 32 16
+end
+
+box
+position -248.5 -220 25.5
+rotation 0
+size 0.25 18 0.5
+end
+
+box
+position -251.5 -220 25.5
+rotation 0
+size 0.25 18 0.5
+end
+
+box
+position -220 -248.5 25.5
+rotation 0
+size 18 0.25 0.5
+end
+
+box
+position -220 -251.5 25.5
+rotation 0
+size 18 0.25 0.5
+end
+
+box
+position -300 -332 22
+rotation 0
+size 2 10 4
+end
+
+box
+position -320 -332 22
+rotation 0
+size 2 10 4
+end
+
+box
+position -220 -200 22
+rotation 0
+size 18 2 4
+end
+
+box
+position -200 -220 22
+rotation 0
+size 2 18 4
+end
+
+box
+position -280 -280 22
+rotation 0
+size 42 42 4
+end
+
+box
+position -240 -332 22
+rotation 0
+size 2 10 4
+end
+
+box
+position -260 -332 22
+rotation 0
+size 2 10 4
+end
+
+box
+position -280 -310 18
+rotation 0
+size 18 2 4
+end
+
+box
+position -310 -280 18
+rotation 0
+size 2 18 4
+end
+
+box
+position -310 -250 10
+rotation 0
+size 12 12 12
+end
+
+box
+position -250 -310 10
+rotation 0
+size 12 12 12
+end
+
+box
+position -310 -310 10
+rotation 0
+size 12 12 12
+end
+
+box
+position -240 -340 10
+rotation 0
+size 2 2 12
+end
+
+box
+position -260 -340 10
+rotation 0
+size 2 2 12
+end
+
+box
+position -300 -340 10
+rotation 0
+size 2 2 12
+end
+
+box
+position -320 -340 10
+rotation 0
+size 2 2 12
+end
+
+box
+position -280 -278.5 9.5
+rotation 0
+size 28 0.25 0.5
+end
+
+box
+position -280 -281.5 9.5
+rotation 0
+size 28 0.25 0.5
+end
+
+box
+position -278.5 -280 9.5
+rotation 0
+size 0.25 28 0.5
+end
+
+box
+position -281.5 -280 9.5
+rotation 0
+size 0.25 28 0.5
+end
+
+box
+position -325 -278.5 9.5
+rotation 0
+size 13 0.25 0.5
+end
+
+box
+position -325 -281.5 9.5
+rotation 0
+size 13 0.25 0.5
+end
+
+box
+position -280 -325 8
+rotation 0
+size 8 17 2
+end
+
+box
+position -250 -280 8
+rotation 0
+size 2 18 18
+end
+
+box
+position -280 -250 8
+rotation 0
+size 18 2 18
+end
+
+box
+position -310 -280 8
+rotation 0
+size 2 18 2
+end
+
+box
+position -195 -250 0
+rotation 0
+size 7 12 26
+end
+
+box
+position -250 -195 0
+rotation 0
+size 12 7 26
+end
+
+box
+position -200 -200 0
+rotation 0
+size 2 2 26
+end
+
+box
+position -250 -250 0
+rotation 0
+size 12 12 26
+end
+
+box
+position -330 -240 0
+rotation 0
+size 32 22 10
+end
+
+box
+position -350 -280 8
+rotation 0
+size 12 18 2
+end
+
+box
+position -330 -320 8
+rotation 0
+size 8 22 2
+end
+
+box
+position -350 -320 0
+rotation 0
+size 12 22 10
+end
+
+box
+position -305 -320 0
+rotation 0
+size 17 22 10
+end
+
+box
+position -255 -320 0
+rotation 0
+size 17 22 10
+end
+
+box
+position -280 -310 0
+rotation 0
+size 8 2 8
+end
+
+teleporter			
+position -220 -200 0
+rotation 90		
+size 0.5 14 20
+border 2		
+end
+
+link
+from 4
+to 6
+end
+
+link
+from 5
+to 4
+end
+
+teleporter			
+position -200 -220 0
+rotation 0		
+size 0.5 14 20
+border 2		
+end
+
+link
+from 6
+to 4
+end
+
+link
+from 7
+to 6
+end
+
+
+# Highway to The Thing
+
+box
+position -195 -330 8
+rotation 0
+size 43 12 2
+end
+
+box
+position -120 -370 8
+rotation 0
+size 12 8 2
+end
+
+box
+position -25 -330 8
+rotation 0
+size 63 12 2
+end
+
+box
+position 125 -330 8
+rotation 0
+size 63 12 2
+end
+
+box
+position -120 -390 0
+rotation 0
+size 12 12 10
+end
+
+box
+position -120 -352 0
+rotation 0
+size 12 10 10
+end
+
+box
+position -120 -330 0
+rotation 0
+size 32 12 10
+end
+
+box
+position 50 -330 0
+rotation 0
+size 12 12 10
+end
+
+
+# Highway to Stonehenge
+
+box
+position -330 -170 8
+rotation 0
+size 12 48 2
+end
+
+box
+position -310 -110 8
+rotation 0
+size 8 12 2
+end
+
+box
+position -330 -70 8
+rotation 0
+size 12 28 2
+end
+
+box
+position -350 -30 8
+rotation 0
+size 8 12 2
+end
+
+box
+position -330 -110 0
+rotation 0
+size 12 12 10
+end
+
+box
+position -290 -110 0
+rotation 0
+size 12 12 10
+end
+
+box
+position -330 -30 0
+rotation 0
+size 12 12 10
+end
+
+box
+position -370 -30 0
+rotation 0
+size 12 12 10
+end
+
+
+# The Rocky Mountains
+
+box
+position 280 -270 18
+rotation 78.5
+size 85 2 2
+end
+
+box
+position 272.5 -315 13
+rotation -8
+size 30 4 2
+end
+
+box
+position 270 -263 13
+rotation -40
+size 65 4 2
+end
+
+box
+position 253.5 -162.5 13
+rotation 50
+size 60 8 2
+end
+
+box
+position 257 -72 13
+rotation -59
+size 40 4 2
+end
+
+box
+position 142 -267 13
+rotation -24
+size 55 4 2
+end
+
+box
+position 338 -91 8
+rotation 25
+size 45 8 2
+end
+
+box
+position 338.5 29 8
+rotation 16
+size 8 100 2
+end
+
+box
+position 200 -335 0
+rotation -25
+size 20 30 10
+end
+
+box
+position 320 -290 0
+rotation -15
+size 25 25 10
+end
+
+box
+position 218 -300 0
+rotation 25
+size 25 25 15
+end
+
+box
+position 325 -320 0
+rotation -30
+size 25 15 15
+end
+
+box
+position 210 -213 0
+rotation 10
+size 20 20 15
+end
+
+box
+position 262 -364 0
+rotation 40
+size 12 12 20
+end
+
+box
+position 300 -180 0
+rotation 25
+size 12 12 20
+end
+
+box
+position 348 -274 0
+rotation 85
+size 15 15 30
+end
+
+box
+position 292 -112 0
+rotation 25
+size 15 15 15
+end
+
+box
+position 338.5 29 0
+rotation 16
+size 4 4 8
+end
+
+box
+position 380 -75 0
+rotation 0
+size 22 12 10
+end
+
+
+# Storehouse
+
+box
+position 300 250 40
+rotation 0
+size 30 30 5
+end
+
+box
+position 290 230 30
+rotation 0
+size 5 5 10
+end
+
+box
+position 310 230 30
+rotation 0
+size 5 5 10
+end
+
+box
+position 290 270 30
+rotation 0
+size 5 5 10
+end
+
+box
+position 310 270 30
+rotation 0
+size 5 5 10
+end
+
+box
+position 280 235 30
+rotation 0
+size 5 10 10
+end
+
+box
+position 320 235 30
+rotation 0
+size 5 10 10
+end
+
+box
+position 280 265 30
+rotation 0
+size 5 10 10
+end
+
+box
+position 320 265 30
+rotation 0
+size 5 10 10
+end
+
+box
+position 257.5 250 28
+rotation 0
+size 2.5 5 2
+end
+
+box
+position 342.5 250 28
+rotation 0
+size 2.5 5 2
+end
+
+box
+position 300 207.5 28
+rotation 0
+size 5 2.5 2
+end
+
+box
+position 300 292.5 28
+rotation 0
+size 5 2.5 2
+end
+
+box
+position 275 220 20
+rotation 0
+size 20 15 10
+end
+
+box
+position 270 240 20
+rotation 0
+size 15 5 10
+end
+
+box
+position 325 220 20
+rotation 0
+size 20 15 10
+end
+
+box
+position 330 240 20
+rotation 0
+size 15 5 10
+end
+
+box
+position 275 280 20
+rotation 0
+size 20 15 10
+end
+
+box
+position 270 260 20
+rotation 0
+size 15 5 10
+end
+
+box
+position 325 280 20
+rotation 0
+size 20 15 10
+end
+
+box
+position 330 260 20
+rotation 0
+size 15 5 10
+end
+
+box
+position 247.5 250 18
+rotation 0
+size 2.5 5 2
+end
+
+box
+position 352.5 250 18
+rotation 0
+size 2.5 5 2
+end
+
+box
+position 300 197.5 18
+rotation 0
+size 5 2.5 2
+end
+
+box
+position 300 302.5 18
+rotation 0
+size 5 2.5 2
+end
+
+box
+position 270 220 10
+rotation 0
+size 25 25 10
+end
+
+box
+position 330 220 10
+rotation 0
+size 25 25 10
+end
+
+box
+position 270 280 10
+rotation 0
+size 25 25 10
+end
+
+box
+position 330 280 10
+rotation 0
+size 25 25 10
+end
+
+box
+position 300 250 10
+rotation 0
+size 25 5 10
+end
+
+box
+position 300 235 10
+rotation 0
+size 5 10 10
+end
+
+box
+position 300 265 10
+rotation 0
+size 5 10 10
+end
+
+box
+position 300 250 8
+rotation 0
+size 65 65 2
+end
+
+box
+position 335 215 0
+rotation 0
+size 30 30 8
+end
+
+box
+position 265 215 0
+rotation 0
+size 30 30 8
+end
+
+box
+position 335 285 0
+rotation 0
+size 30 30 8
+end
+
+box
+position 265 285 0
+rotation 0
+size 30 30 8
+end
+
+box
+position 300 135 0
+rotation 0
+size 20 20 10
+end
+
+box
+position 185 250 0
+rotation 0
+size 20 20 10
+end
+
+
+# Dead-end Highway
+
+box
+position 122 280 8
+rotation -20
+size 52 8 2
+end
+
+box
+position 60.5 300 0
+rotation 30
+size 20 20 10
+end
+
+box
+position 38.5 248.5 0
+rotation 110
+size 30 10 7.5
+end
+
+box
+position 20 330 0
+rotation 40
+size 25 7.5 5
+end
+
+box
+position -21 309 0
+rotation 140
+size 35 5 2.5
+end
+
+
+# Teleporter Shuffle
+
+teleporter			
+position 385 -75 10
+rotation 0		
+size 0.56 4.48 20.16
+border 1.1		
+end
+
+link
+from 8
+to 10
+end
+
+link
+from 9
+to 21
+end
+
+teleporter			
+position 328 358 0
+rotation 130		
+size 0.56 4.48 20.16
+border 1.1		
+end
+
+link
+from 10
+to 12
+end
+
+link
+from 11
+to 9
+end
+
+teleporter			
+position -59 -289 0
+rotation 20		
+size 0.56 4.48 20.16
+border 1.1		
+end
+
+link
+from 12
+to 14
+end
+
+link
+from 13
+to 11
+end
+
+teleporter			
+position -140 -82 0
+rotation 245		
+size 0.56 4.48 20.16
+border 1.1		
+end
+
+link
+from 14
+to 16
+end
+
+link
+from 15
+to 13
+end
+
+teleporter			
+position 329 -227 0
+rotation 320		
+size 0.56 4.48 20.16
+border 1.1		
+end
+
+link
+from 16
+to 18
+end
+
+link
+from 17
+to 15
+end
+
+teleporter			
+position -308 57 0
+rotation 160		
+size 0.56 4.48 20.16
+border 1.1		
+end
+
+link
+from 18
+to 20
+end
+
+link
+from 19
+to 17
+end
+
+teleporter			
+position -86 193 0
+rotation 125		
+size 0.56 4.48 20.16
+border 1.1		
+end
+
+link
+from 20
+to 8
+end
+
+link
+from 21
+to 19
+end
+
+
+# Laser Deflectors
+
+pyramid
+position -173 127 0
+rotation 0
+size 8 8 12
+end
+
+pyramid
+position -331 109 0
+rotation 0
+size 8 8 12
+end
+
+pyramid
+position -274.5 -3 0
+rotation 0
+size 12 12 18
+end
+
+pyramid
+position -302.5 25 0
+rotation 0
+size 6 6 9
+end
+
+pyramid
+position -112 -172.5 0
+rotation 0
+size 8 8 12
+end
+
+pyramid
+position -194.5 59.5 0
+rotation 0
+size 8 8 12
+end
+
+pyramid
+position -102 303 0
+rotation 0
+size 8 8 12
+end
+
+pyramid
+position -12 162 0
+rotation 0
+size 8 8 12
+end
+
+pyramid
+position -325 374 0
+rotation 0
+size 8 8 12
+end
+
+pyramid
+position -299 -372 0
+rotation 0
+size 8 8 12
+end
+
+pyramid
+position -378 51 0
+rotation 0
+size 8 8 12
+end
+
+pyramid
+position -337 345 0
+rotation 0
+size 8 8 12
+end
+
+pyramid
+position 376 350 0
+rotation 0
+size 8 8 12
+end
+
+pyramid
+position -181 -74 0
+rotation 0
+size 8 8 12
+end
+
+pyramid
+position -359 -157 0
+rotation 0
+size 8 8 12
+end
+
+pyramid
+position 97 363 0
+rotation 0
+size 8 8 12
+end
+
+pyramid
+position 129.5 329 0
+rotation 0
+size 8 8 12
+end
+
+pyramid
+position 351 76 0
+rotation 0
+size 8 8 12
+end
+
+pyramid
+position 324 -42 0
+rotation 0
+size 8 8 12
+end
+
+pyramid
+position 216.5 -142 0
+rotation 0
+size 6 6 9
+end
+
+pyramid
+position 200 -106.5 0
+rotation 0
+size 12 12 18
+end
+
+pyramid
+position 358.5 -180.5 0
+rotation 0
+size 8 8 12
+end
+
+pyramid
+position 318 -376 0
+rotation 0
+size 8 8 12
+end
+
+pyramid
+position 123 -293 0
+rotation 0
+size 8 8 12
+end
+
+pyramid
+position -140.5 -262 0
+rotation 0
+size 8 8 12
+end
+
+pyramid
+position 208 354.5 0
+rotation 0
+size 8 8 12
+end
+
+pyramid
+position 99.5 198 0
+rotation 0
+size 8 8 12
+end

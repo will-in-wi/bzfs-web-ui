@@ -1,0 +1,4 @@
+options
+-set _fogMode 1
+-set _fogDensity 0.1
+end

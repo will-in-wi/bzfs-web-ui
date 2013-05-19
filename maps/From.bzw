@@ -1,0 +1,1523 @@
+# World built with bzedit32 world class, available at
+# http://www.artemisgames.com/bzedit
+
+box
+	position 0 200 0
+	rotation 0
+	size 400 200 20
+end
+
+teleporter
+	position 0 -10 0
+	rotation 0
+	size 0.125 5 0.5
+	border 0
+end
+
+teleporter
+	position 0 -30 0
+	rotation 0
+	size 0.125 10 40
+	border 0
+end
+
+teleporter
+	position 0 -50 0
+	rotation 0
+	size 0.125 10 40
+	border 0
+end
+
+teleporter
+	position 0 -70 0
+	rotation 0
+	size 0.125 10 40
+	border 0
+end
+
+teleporter
+	position 0 -90 0
+	rotation 0
+	size 0.125 10 40
+	border 0
+end
+
+teleporter
+	position 0 -110 0
+	rotation 0
+	size 0.125 10 40
+	border 0
+end
+
+teleporter
+	position 0 -130 0
+	rotation 0
+	size 0.125 10 40
+	border 0
+end
+
+teleporter
+	position 0 -150 0
+	rotation 0
+	size 0.125 10 40
+	border 0
+end
+
+teleporter
+	position 0 -170 0
+	rotation 0
+	size 0.125 10 40
+	border 0
+end
+
+teleporter
+	position 0 -190 0
+	rotation 0
+	size 0.125 10 40
+	border 0
+end
+
+teleporter
+	position 0 -210 0
+	rotation 0
+	size 0.125 10 40
+	border 0
+end
+
+teleporter
+	position 0 -230 0
+	rotation 0
+	size 0.125 10 40
+	border 0
+end
+
+teleporter
+	position 0 -250 0
+	rotation 0
+	size 0.125 10 40
+	border 0
+end
+
+teleporter
+	position 0 -270 0
+	rotation 0
+	size 0.125 10 40
+	border 0
+end
+
+teleporter
+	position 0 -290 0
+	rotation 0
+	size 0.125 10 40
+	border 0
+end
+
+teleporter
+	position 0 -310 0
+	rotation 0
+	size 0.125 10 40
+	border 0
+end
+
+teleporter
+	position 0 -330 0
+	rotation 0
+	size 0.125 10 40
+	border 0
+end
+
+teleporter
+	position 0 -350 0
+	rotation 0
+	size 0.125 10 40
+	border 0
+end
+
+teleporter
+	position 0 -370 0
+	rotation 0
+	size 0.125 10 40
+	border 0
+end
+
+teleporter
+	position 0 -390 0
+	rotation 0
+	size 0.125 10 40
+	border 0
+end
+
+teleporter
+	position 250 -200 -1
+	rotation 90
+	size 0.125 40 1
+	border 0
+end
+
+teleporter
+name superior
+	position 0 -200 350
+	rotation 0
+	size 0.125 10 10
+	border 0
+end
+
+link
+	from 40
+	to 43
+end
+
+link
+	from 93
+	to 42
+end
+
+box
+	position 0 10 20
+	rotation 0
+	size 400 10 20
+end
+
+teleporter
+	position 390 390 20
+	rotation -135
+	size 0.125 10 20
+	border 1
+end
+
+teleporter
+	position -390 390 20
+	rotation -45
+	size 0.125 10 20
+	border 1
+end
+
+link
+	from 18
+	to 44
+end
+
+link
+	from 19
+	to 19
+end
+
+link
+	from 21
+	to 46
+end
+
+link
+	from 20
+	to 20
+end
+
+teleporter
+	position 390 -390 0
+	rotation 135
+	size 0.125 13.5 20
+	border 0
+end
+
+teleporter
+	position -390 -390 0
+	rotation 45
+	size 0.125 13.5 20
+	border 0
+end
+
+link
+	from 3
+	to 48
+end
+
+link
+	from 2
+	to 50
+end
+
+link
+	from 48
+	to 48
+end
+
+link
+	from 50
+	to 50
+end
+
+link
+	from 5
+	to 32
+end
+
+teleporter
+	position 390 -10 0
+	rotation -135
+	size 0.125 13.5 20
+	border 0
+end
+
+teleporter
+name canto
+	position -390 -10 0
+	rotation -45
+	size 0.125 13.5 20
+	border 0
+end
+
+link
+	from 39
+	to 52
+end
+
+link
+	from 38
+	to 54
+end
+
+link
+	from 52
+	to 52
+end
+
+link
+	from 54
+	to 54
+end
+
+teleporter
+	position 390 30 20
+	rotation 135
+	size 0.125 10 20
+	border 1
+end
+
+teleporter
+	position -390 30 20
+	rotation 45
+	size 0.125 10 20
+	border 1
+end
+
+link
+	from 58
+	to 37
+end
+
+link
+	from 56
+	to 36
+end
+
+link
+	from 44
+	to 44
+end
+
+link
+	from 46
+	to 46
+end
+
+box
+	position 0 -10 0
+	rotation 0
+	size 10 10 40
+end
+
+link
+	from 4
+	to 33
+end
+
+teleporter
+	position 0 200 20
+	rotation 0
+	size 0.125 10 20
+	border 1
+end
+
+link
+	from 37
+	to 61
+end
+
+link
+	from 36
+	to 60
+end
+
+box
+	position 350 -350 28
+	rotation 0
+	size 50 50 2
+end
+
+box
+	position -350 -350 28
+	rotation 0
+	size 50 50 2
+end
+
+teleporter
+	position 350 -350 30
+	rotation -45
+	size 0.125 10 20
+	border 1
+end
+
+teleporter
+	position -350 -350 30
+	rotation -135
+	size 0.125 10 20
+	border 1
+end
+
+link
+	from 35
+	to 62
+end
+
+link
+	from 34
+	to 64
+end
+
+link
+	from 33
+	to 4
+end
+
+link
+	from 32
+	to 5
+end
+
+link
+	from 61
+	to 6
+end
+
+link
+	from 60
+	to 7
+end
+
+teleporter
+	position 50 30 20
+	rotation 180
+	size 0.125 10 20
+	border 0
+end
+
+teleporter
+	position -50 30 20
+	rotation 0
+	size 0.125 10 20
+	border 0
+end
+
+box
+	position 0 50 20
+	rotation 0
+	size 60 10 20
+end
+
+link
+	from 8
+	to 66
+end
+
+link
+	from 68
+	to 68
+end
+
+link
+	from 66
+	to 66
+end
+
+link
+	from 31
+	to 68
+end
+
+teleporter
+	position 200 -350 0
+	rotation 90
+	size 0.125 10 20
+	border 1
+end
+
+teleporter
+	position -200 -350 0
+	rotation 90
+	size 0.125 10 20
+	border 1
+end
+
+teleporter
+	position 200 -50 0
+	rotation -90
+	size 0.125 10 20
+	border 1
+end
+
+teleporter
+	position -200 -50 0
+	rotation -90
+	size 0.125 10 20
+	border 1
+end
+
+link
+	from 11
+	to 70
+end
+
+link
+	from 10
+	to 72
+end
+
+link
+	from 29
+	to 74
+end
+
+link
+	from 28
+	to 76
+end
+
+teleporter
+name passagem1
+	position 350 -200 0
+	rotation 180
+	size 0.125 10 20
+	border 0
+end
+
+teleporter
+name passagem2
+	position -350 -200 0
+	rotation 0
+	size 0.125 10 20
+	border 0
+end
+
+link
+	from 14
+	to 78
+end
+
+link
+	from 25
+	to 80
+end
+
+link
+	from 13
+	to 27
+end
+
+link
+	from 12
+	to 26
+end
+
+link
+	from 27
+	to 13
+end
+
+link
+	from 26
+	to 12
+end
+
+box
+	position 250 -50 0
+	rotation 0
+	size 25 25 15
+end
+
+box
+	position 50 -50 0
+	rotation 0
+	size 25 25 15
+end
+
+box
+	position 350 -150 0
+	rotation 0
+	size 25 25 15
+end
+
+box
+	position 150 -150 0
+	rotation 0
+	size 25 25 15
+end
+
+box
+	position 150 -350 0
+	rotation 0
+	size 25 25 15
+end
+
+box
+	position 50 -250 0
+	rotation 0
+	size 25 25 15
+end
+
+box
+	position -350 -50 0
+	rotation 45
+	size 25 25 15
+end
+
+box
+	position -50 -350 0
+	rotation 45
+	size 25 25 15
+end
+
+box
+	position -150 -250 0
+	rotation 45
+	size 25 25 15
+end
+
+box
+	position -250 -150 0
+	rotation 45
+	size 25 25 15
+end
+
+box
+	position -50 -150 0
+	rotation 45
+	size 25 25 15
+end
+
+box
+	position -150 -50 0
+	rotation 45
+	size 25 25 15
+end
+
+box
+	position 0 390 20
+	rotation 0
+	size 300 10 40
+end
+
+box
+	position 0 320 20
+	rotation 0
+	size 280 3 40
+end
+
+box
+	position 0 355 34
+	rotation 0
+	size 300 45 2
+end
+
+teleporter
+	position 0 360 36
+	rotation -90
+	size 0.125 40 20
+	border 0
+end
+
+link
+	from 82
+	to 42
+end
+
+teleporter
+	position 0 340 36
+	rotation 90
+	size 0.125 40 20
+	border 0
+end
+
+link
+	from 84
+	to 43
+end
+
+box
+	position 200 200 22
+	rotation 45
+	size 15 15 0.2
+end
+
+box
+	position 200 200 23
+	rotation 45
+	size 15 15 0.2
+end
+
+box
+	position 200 200 24
+	rotation 45
+	size 15 15 0.2
+end
+
+box
+	position 200 200 25
+	rotation 45
+	size 15 15 0.2
+end
+
+box
+	position 200 200 26
+	rotation 45
+	size 15 15 0.2
+end
+
+box
+	position 200 200 27
+	rotation 45
+	size 15 15 0.2
+end
+
+box
+	position 200 200 28
+	rotation 45
+	size 15 15 0.2
+end
+
+box
+	position 200 200 29
+	rotation 45
+	size 15 15 0.2
+end
+
+box
+	position 200 200 30
+	rotation 45
+	size 15 15 0.2
+end
+
+box
+	position 200 200 31
+	rotation 45
+	size 15 15 0.2
+end
+
+box
+	position 200 200 32
+	rotation 45
+	size 15 15 0.2
+end
+
+box
+	position -200 200 22
+	rotation 45
+	size 15 15 0.2
+end
+
+box
+	position -200 200 23
+	rotation 45
+	size 15 15 0.2
+end
+
+box
+	position -200 200 24
+	rotation 45
+	size 15 15 0.2
+end
+
+box
+	position -200 200 25
+	rotation 45
+	size 15 15 0.2
+end
+
+box
+	position -200 200 26
+	rotation 45
+	size 15 15 0.2
+end
+
+box
+	position -200 200 27
+	rotation 45
+	size 15 15 0.2
+end
+
+box
+	position -200 200 28
+	rotation 45
+	size 15 15 0.2
+end
+
+box
+	position -200 200 29
+	rotation 45
+	size 15 15 0.2
+end
+
+box
+	position -200 200 30
+	rotation 45
+	size 15 15 0.2
+end
+
+box
+	position -200 200 31
+	rotation 45
+	size 15 15 0.2
+end
+
+box
+	position -200 200 32
+	rotation 45
+	size 15 15 0.2
+end
+
+pyramid
+	position 0 0 0
+	rotation 0
+	size 1 1 1
+end
+
+teleporter
+	position 0 350 20
+	rotation 0
+	size 0.125 5 10
+	border 1
+end
+
+teleporter
+	position 350 200 20
+	rotation 180
+	size 0.125 10 20
+	border 1
+end
+
+teleporter
+	position -350 200 20
+	rotation 0
+	size 0.125 6 20
+	border 1
+end
+
+link
+	from 91
+	to 87
+end
+
+link
+	from 89
+	to 86
+end
+
+link
+	from 90
+	to 88
+end
+
+link
+	from 88
+	to 90
+end
+
+pyramid
+	position 350 70 20
+	rotation 0
+	size 20 20 80
+end
+
+pyramid
+	position 150 70 20
+	rotation 0
+	size 20 20 80
+end
+
+pyramid
+	position -150 70 20
+	rotation 0
+	size 20 20 80
+end
+
+pyramid
+	position -350 70 20
+	rotation 0
+	size 20 20 80
+end
+
+pyramid
+	position 350 350 20
+	rotation 45
+	size 12 12 20
+end
+
+pyramid
+	position -350 350 20
+	rotation 45
+	size 12 12 20
+end
+
+pyramid
+	position 150 265 20
+	rotation 45
+	size 15 15 60
+end
+
+pyramid
+	position 250 200 20
+	rotation 45
+	size 15 15 60
+end
+
+pyramid
+	position -150 265 20
+	rotation 45
+	size 15 15 60
+end
+
+pyramid
+	position -250 200 20
+	rotation 45
+	size 15 15 60
+end
+
+pyramid
+	position 0 135 20
+	rotation 0
+	size 10 10 20
+end
+
+pyramid
+	position 100 200 20
+	rotation 0
+	size 10 10 20
+end
+
+pyramid
+	position 200 135 20
+	rotation 0
+	size 10 10 20
+end
+
+pyramid
+	position 300 135 20
+	rotation 0
+	size 10 10 20
+end
+
+pyramid
+	position -100 200 20
+	rotation 0
+	size 10 10 20
+end
+
+pyramid
+	position -200 135 20
+	rotation 0
+	size 10 10 20
+end
+
+pyramid
+	position -300 135 20
+	rotation 0
+	size 10 10 20
+end
+
+box
+	position 180 350 36
+	rotation 45
+	size 5 5 20
+end
+
+box
+	position 240 350 36
+	rotation 45
+	size 5 5 20
+end
+
+box
+	position -180 350 36
+	rotation 45
+	size 5 5 20
+end
+
+box
+	position -240 350 36
+	rotation 45
+	size 5 5 20
+end
+
+box
+	position 0 265 22
+	rotation 0
+	size 5 25 0.2
+end
+
+box
+	position 0 265 23.5
+	rotation 0
+	size 5 25 0.2
+end
+
+box
+	position 0 265 25
+	rotation 0
+	size 5 25 0.2
+end
+
+box
+	position 0 265 26.5
+	rotation 0
+	size 5 25 0.2
+end
+
+box
+	position 0 265 28
+	rotation 0
+	size 5 25 0.2
+end
+
+box
+	position 0 265 29.5
+	rotation 0
+	size 5 25 0.2
+end
+
+box
+	position 0 265 31
+	rotation 0
+	size 5 25 0.2
+end
+
+box
+	position 0 265 32.5
+	rotation 0
+	size 5 25 0.2
+end
+
+box
+	position 0 265 34
+	rotation 0
+	size 5 25 0.2
+end
+
+box
+	position 0 265 35.5
+	rotation 0
+	size 5 25 0.2
+end
+
+box
+	position 0 265 37
+	rotation 0
+	size 5 25 0.2
+end
+
+teleporter
+	position -250 -200 -1
+	rotation -90
+	size 0.125 40 1
+	border 0
+end
+
+box
+	position -200 200 21
+	rotation 45
+	size 15 15 0.2
+end
+
+box
+	position -200 200 21.5
+	rotation 45
+	size 15 15 0.2
+end
+
+box
+	position 200 200 21
+	rotation 45
+	size 15 15 0.2
+end
+
+box
+	position 200 200 21.5
+	rotation 45
+	size 15 15 0.2
+end
+
+link
+	from 78
+	to 80
+end
+
+link
+	from 80
+	to 78
+end
+
+link
+	from 93
+	to 42
+end
+
+link
+	from 41
+	to 83
+end
+
+link
+	from 92
+	to 85
+end
+
+pyramid
+	position 275 -275 0
+	rotation 45
+	size 20 20 80
+end
+
+pyramid
+	position -275 -275 0
+	rotation 0
+	size 20 20 80
+end
+
+link
+	from 9
+	to 68
+end
+
+box
+	position 0 -30 200
+	rotation 0
+	size 8 2 2
+end
+
+box
+	position 0 265 21.5
+	rotation 0
+	size 5 25 0.2
+end
+
+box
+	position 0 265 21
+	rotation 0
+	size 5 25 0.2
+end
+
+link
+	from 87
+	to 63
+end
+
+link
+	from 86
+	to 65
+end
+
+box
+	position 0 -50 380
+	rotation 0
+	size 15 2.5 2
+end
+
+box
+	position 0 -70 380
+	rotation 0
+	size 15 2.5 2
+end
+
+box
+	position 0 -90 380
+	rotation 0
+	size 15 2.5 2
+end
+
+box
+	position 0 -110 380
+	rotation 0
+	size 15 2.5 2
+end
+
+box
+	position 0 -130 380
+	rotation 0
+	size 15 2.5 2
+end
+
+box
+	position 0 -150 380
+	rotation 0
+	size 15 2.5 2
+end
+
+box
+	position 0 -170 380
+	rotation 0
+	size 15 2.5 2
+end
+
+box
+	position 0 -190 380
+	rotation 0
+	size 15 2.5 2
+end
+
+box
+	position 0 -210 380
+	rotation 0
+	size 15 2.5 2
+end
+
+box
+	position 0 -230 380
+	rotation 0
+	size 15 2.5 2
+end
+
+box
+	position 0 -250 380
+	rotation 0
+	size 15 2.5 2
+end
+
+box
+	position 0 -270 380
+	rotation 0
+	size 15 2.5 2
+end
+
+box
+	position 0 -290 380
+	rotation 0
+	size 15 2.5 2
+end
+
+box
+	position 0 -310 380
+	rotation 0
+	size 15 2.5 2
+end
+
+box
+	position 0 -330 380
+	rotation 0
+	size 15 2.5 2
+end
+
+box
+	position 0 -350 380
+	rotation 0
+	size 15 2.5 2
+end
+
+box
+	position 0 -370 380
+	rotation 0
+	size 15 2.5 2
+end
+
+box
+	position 0 -390 380
+	rotation 0
+	size 15 2.5 2
+end
+
+teleporter
+name prisao1
+	position 20 -195 300
+	rotation 0
+	size 0.125 16 100
+	border 0
+end
+
+link
+	from 95
+	to 66
+end
+
+teleporter
+name prisao2
+	position -20 -205 300
+	rotation 180
+	size 0.125 16 100
+	border 0
+end
+
+link
+	from 97
+	to 66
+end
+
+teleporter
+name antipassagem
+	position 0 1 39
+	rotation 90
+	size 0.125 400 300
+	border 0
+end
+
+link
+	from 99
+	to 68
+end
+
+link
+	from 55
+	to 55
+end
+
+box
+name Box s2
+	position -2 28 40
+	rotation 0
+	size 0.5 2 0.5
+end
+
+box
+name Box s1
+	position 0 26.5 40
+	rotation 0
+	size 2.5 0.5 0.5
+end
+
+box
+name Box s3
+	position 0 30 40
+	rotation 0
+	size 2.5 0.5 0.5
+end
+
+box
+name Box s5
+	position 0 33.5 40
+	rotation 0
+	size 2.5 0.5 0.5
+end
+
+box
+name Box s4
+	position 2 32 40
+	rotation 0
+	size 0.5 2 0.5
+end
+
+box
+name Box r6
+	position 8.5 28 40
+	rotation -15
+	size 0.5 2 0.5
+end
+
+box
+name Box r4
+	position 8 32 40
+	rotation 0
+	size 0.5 2 0.5
+end
+
+box
+name Box r5
+	position 10 30 40
+	rotation 0
+	size 2.5 0.5 0.5
+end
+
+box
+name Box r3
+	position 10 33.5 40
+	rotation 0
+	size 2 0.5 0.5
+end
+
+box
+name Box r1
+	position 12 28 40
+	rotation 0
+	size 0.5 2 0.5
+end
+
+box
+name Box r2
+	position 12 32 40
+	rotation 0
+	size 0.5 2 0.5
+end
+
+box
+name Box i1
+	position 5 28 40
+	rotation 0
+	size 0.5 2 0.5
+end
+
+box
+name Box i2
+	position 5 32 40
+	rotation 0
+	size 0.5 2 0.5
+end
+
+box
+name Box p4
+	position 15 32 40
+	rotation 0
+	size 0.5 2 0.5
+end
+
+box
+name Box p5
+	position 17 30 40
+	rotation 0
+	size 2.5 0.5 0.5
+end
+
+box
+name Box p3
+	position 17 33.5 40
+	rotation 0
+	size 2 0.5 0.5
+end
+
+box
+name Box p1
+	position 19 28 40
+	rotation 0
+	size 0.5 2 0.5
+end
+
+box
+name Box p2
+	position 19 32 40
+	rotation 0
+	size 0.5 2 0.5
+end
+
+box
+name Box o2
+	position -8 28 40
+	rotation 0
+	size 0.5 2 0.5
+end
+
+box
+name Box o3
+	position -8 32 40
+	rotation 0
+	size 0.5 2 0.5
+end
+
+box
+name Box o1
+	position -10 26.5 40
+	rotation 0
+	size 2 0.5 0.5
+end
+
+box
+name Boxo4
+	position -10 33.5 40
+	rotation 0
+	size 2 0.5 0.5
+end
+
+box
+name Box o6
+	position -12 28 40
+	rotation 0
+	size 0.5 2 0.5
+end
+
+box
+name Box o5
+	position -12 32 40
+	rotation 0
+	size 0.5 2 0.5
+end
+
+box
+name Box i3
+	position -5 28 40
+	rotation 0
+	size 0.5 2 0.5
+end
+
+box
+name Box i4
+	position -5 32 40
+	rotation 0
+	size 0.5 2 0.5
+end
+
+box
+name Box n1
+	position -15 28 40
+	rotation 0
+	size 0.5 2 0.5
+end
+
+box
+name Box n2
+	position -15 32 40
+	rotation 0
+	size 0.5 2 0.5
+end
+
+box
+name Box n3
+	position -17 30 40
+	rotation 65
+	size 4.2 0.5 0.5
+end
+
+box
+name Box n4
+	position -19 28 40
+	rotation 0
+	size 0.5 2 0.5
+end
+
+box
+name Box n5
+	position -19 32 40
+	rotation 0
+	size 0.5 2 0.5
+end
+
+pyramid
+name Pyramid
+	position 0 10 40
+	rotation 0
+	size 400 10 10
+end
+
+pyramid
+name Pyramid
+	position 0 320 60
+	rotation 0
+	size 280 3 10
+end
+
+pyramid
+name Pyramid
+	position 0 390 60
+	rotation 0
+	size 300 10 10
+end
+
+pyramid
+name Pyramid
+	position 0 50 40
+	rotation 0
+	size 60 10 10
+end
+

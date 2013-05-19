@@ -1,0 +1,1154 @@
+### BZFLAG WORLD FILE HEADER
+
+
+# Map name	: Total Recall
+# File name	: totalrecall.bzw
+# Version	: 1.00
+# Release date	: 2004-12-22
+
+# Designer	: Raimond "Dutchrai" Kuhlman
+# Email address	: dutchrai@yahoo.com
+
+# BZFS Required	: -c -mp 0,4,4,4,4,2 -public "Total Recall by Dutchrai" -world "totalrecall.bzw"
+
+
+### BZFLAG WORLD FILE DATA
+
+
+## Boxes and Pyramids
+
+
+# Bases
+
+base
+	position 350 350 0
+	rotation 0
+	size 15 15 0
+	color 1
+end
+
+base
+	position 350 -350 0
+	rotation 0
+	size 15 15 0
+	color 2
+end
+
+base
+	position -350 -350 0
+	rotation 0
+	size 15 15 0
+	color 3
+end
+
+base
+	position -350 350 0
+	rotation 0
+	size 15 15 0
+	color 4
+end
+
+
+# Base Defences
+
+pyramid
+	position 275 350 0
+	rotation 0
+	size 20 20 40
+end
+
+box
+	position 290 335 0
+	rotation 45
+	size 5 10 15
+end
+
+box
+	position 312.5 312.5 2
+	rotation 45
+	size 2.5 40 11
+end
+
+box
+	position 335 290 0
+	rotation 45
+	size 5 10 15
+end
+
+pyramid
+	position 350 275 0
+	rotation 0
+	size 20 20 40
+end
+
+pyramid
+	position 275 -350 0
+	rotation 0
+	size 20 20 40
+end
+
+box
+	position 290 -335 0
+	rotation -45
+	size 5 10 15
+end
+
+box
+	position 312.5 -312.5 2
+	rotation -45
+	size 2.5 40 11
+end
+
+box
+	position 335 -290 0
+	rotation -45
+	size 5 10 15
+end
+
+pyramid
+	position 350 -275 0
+	rotation 0
+	size 20 20 40
+end
+
+pyramid
+	position -275 -350 0
+	rotation 0
+	size 20 20 40
+end
+
+box
+	position -290 -335 0
+	rotation 45
+	size 5 10 15
+end
+
+box
+	position -312.5 -312.5 2
+	rotation 45
+	size 2.5 40 11
+end
+
+box
+	position -335 -290 0
+	rotation 45
+	size 5 10 15
+end
+
+pyramid
+	position -350 -275 0
+	rotation 0
+	size 20 20 40
+end
+
+pyramid
+	position -275 350 0
+	rotation 0
+	size 20 20 40
+end
+
+box
+	position -290 335 0
+	rotation -45
+	size 5 10 15
+end
+
+box
+	position -312.5 312.5 2
+	rotation -45
+	size 2.5 40 11
+end
+
+box
+	position -335 290 0
+	rotation -45
+	size 5 10 15
+end
+
+pyramid
+	position -350 275 0
+	rotation 0
+	size 20 20 40
+end
+
+
+# Reactor Core
+
+pyramid
+	position 120 -120 20
+	rotation 0
+	size 20 20 -10
+end
+
+pyramid
+	position 120 -40 20
+	rotation 0
+	size 20 20 -10
+end
+
+pyramid
+	position 120 40 20
+	rotation 0
+	size 20 20 -10
+end
+
+pyramid
+	position 120 120 20
+	rotation 0
+	size 20 20 -10
+end
+
+pyramid
+	position 40 -120 20
+	rotation 0
+	size 20 20 -10
+end
+
+pyramid
+	position 40 -40 20
+	rotation 0
+	size 20 20 -10
+end
+
+pyramid
+	position 40 40 20
+	rotation 0
+	size 20 20 -10
+end
+
+pyramid
+	position 40 120 20
+	rotation 0
+	size 20 20 -10
+end
+
+pyramid
+	position -40 -120 20
+	rotation 0
+	size 20 20 -10
+end
+
+pyramid
+	position -40 -40 20
+	rotation 0
+	size 20 20 -10
+end
+
+pyramid
+	position -40 40 20
+	rotation 0
+	size 20 20 -10
+end
+
+pyramid
+	position -40 120 20
+	rotation 0
+	size 20 20 -10
+end
+
+pyramid
+	position -120 -120 20
+	rotation 0
+	size 20 20 -10
+end
+
+pyramid
+	position -120 -40 20
+	rotation 0
+	size 20 20 -10
+end
+
+pyramid
+	position -120 40 20
+	rotation 0
+	size 20 20 -10
+end
+
+pyramid
+	position -120 120 20
+	rotation 0
+	size 20 20 -10
+end
+
+box
+	position 120 -120 0
+	rotation 0
+	size 15 15 30
+end
+
+box
+	position 120 -40 0
+	rotation 0
+	size 15 15 30
+end
+
+box
+	position 120 40 0
+	rotation 0
+	size 15 15 30
+end
+
+box
+	position 120 120 0
+	rotation 0
+	size 15 15 30
+end
+
+box
+	position 40 -120 0
+	rotation 0
+	size 15 15 30
+end
+
+box
+	position 40 -40 0
+	rotation 0
+	size 15 15 30
+end
+
+box
+	position 40 40 0
+	rotation 0
+	size 15 15 30
+end
+
+box
+	position 40 120 0
+	rotation 0
+	size 15 15 30
+end
+
+box
+	position -40 -120 0
+	rotation 0
+	size 15 15 30
+end
+
+box
+	position -40 -40 0
+	rotation 0
+	size 15 15 30
+end
+
+box
+	position -40 40 0
+	rotation 0
+	size 15 15 30
+end
+
+box
+	position -40 120 0
+	rotation 0
+	size 15 15 30
+end
+
+box
+	position -120 -120 0
+	rotation 0
+	size 15 15 30
+end
+
+box
+	position -120 -40 0
+	rotation 0
+	size 15 15 30
+end
+
+box
+	position -120 40 0
+	rotation 0
+	size 15 15 30
+end
+
+box
+	position -120 120 0
+	rotation 0
+	size 15 15 30
+end
+
+box
+	position 120 -120 30
+	rotation 0
+	size 20 20 110
+end
+
+box
+	position 120 -40 30
+	rotation 0
+	size 20 20 110
+end
+
+box
+	position 120 40 30
+	rotation 0
+	size 20 20 110
+end
+
+box
+	position 120 120 30
+	rotation 0
+	size 20 20 110
+end
+
+box
+	position 40 -120 30
+	rotation 0
+	size 20 20 110
+end
+
+box
+	position 40 -40 30
+	rotation 0
+	size 20 20 110
+end
+
+box
+	position 40 40 30
+	rotation 0
+	size 20 20 110
+end
+
+box
+	position 40 120 30
+	rotation 0
+	size 20 20 110
+end
+
+box
+	position -40 -120 30
+	rotation 0
+	size 20 20 110
+end
+
+box
+	position -40 -40 30
+	rotation 0
+	size 20 20 110
+end
+
+box
+	position -40 40 30
+	rotation 0
+	size 20 20 110
+end
+
+box
+	position -40 120 30
+	rotation 0
+	size 20 20 110
+end
+
+box
+	position -120 -120 30
+	rotation 0
+	size 20 20 110
+end
+
+box
+	position -120 -40 30
+	rotation 0
+	size 20 20 110
+end
+
+box
+	position -120 40 30
+	rotation 0
+	size 20 20 110
+end
+
+box
+	position -120 120 30
+	rotation 0
+	size 20 20 110
+end
+
+box
+	position 0 0 100
+	rotation 0
+	size 160 160 25
+end
+
+
+# Core Corners
+
+box
+	position 165 125 60
+	rotation 0
+	size 5 45 150
+end
+
+box
+	position 120 165 60
+	rotation 0
+	size 40 5 150
+end
+
+box
+	position 165 -125 60
+	rotation 0
+	size 5 45 150
+end
+
+box
+	position 120 -165 60
+	rotation 0
+	size 40 5 150
+end
+
+box
+	position -165 -125 60
+	rotation 0
+	size 5 45 150
+end
+
+box
+	position -120 -165 60
+	rotation 0
+	size 40 5 150
+end
+
+box
+	position -165 125 60
+	rotation 0
+	size 5 45 150
+end
+
+box
+	position -120 165 60
+	rotation 0
+	size 40 5 150
+end
+
+
+# Core Roads
+
+box
+	position 0 0 38
+	rotation 0
+	size 40 40 2
+end
+
+box
+	position 80 0 48
+	rotation 0
+	size 10 90 2
+end
+
+box
+	position 0 -80 48
+	rotation 0
+	size 70 10 2
+end
+
+box
+	position -80 0 48
+	rotation 0
+	size 10 90 2
+end
+
+box
+	position 0 80 48
+	rotation 0
+	size 70 10 2
+end
+
+box
+	position 157.5 0 48
+	rotation 0
+	size 67.5 10 2
+end
+
+box
+	position 55 0 48
+	rotation 0
+	size 15 10 2
+end
+
+box
+	position 0 -157.5 48
+	rotation 0
+	size 10 67.5 2
+end
+
+box
+	position 0 -55 48
+	rotation 0
+	size 10 15 2
+end
+
+box
+	position -157.5 0 48
+	rotation 0
+	size 67.5 10 2
+end
+
+box
+	position -55 0 48
+	rotation 0
+	size 15 10 2
+end
+
+box
+	position 0 157.5 48
+	rotation 0
+	size 10 67.5 2
+end
+
+box
+	position 0 55 48
+	rotation 0
+	size 10 15 2
+end
+
+
+# Core Supports
+
+box
+	position 312.5 0 0
+	rotation 0
+	size 87.5 10 50
+end
+
+box
+	position 387.5 20 0
+	rotation 0
+	size 12.5 10 100
+end
+
+box
+	position 387.5 -20 0
+	rotation 0
+	size 12.5 10 100
+end
+
+box
+	position 312.5 20 0
+	rotation 0
+	size 12.5 10 100
+end
+
+box
+	position 312.5 -20 0
+	rotation 0
+	size 12.5 10 100
+end
+
+box
+	position 237.5 20 0
+	rotation 0
+	size 12.5 10 100
+end
+
+box
+	position 237.5 -20 0
+	rotation 0
+	size 12.5 10 100
+end
+
+box
+	position 280 0 100
+	rotation 0
+	size 120 30 25
+end
+
+box
+	position 0 -312.5 0
+	rotation 0
+	size 10 87.5 50
+end
+
+box
+	position 20 -387.5 0
+	rotation 0
+	size 10 12.5 100
+end
+
+box
+	position -20 -387.5 0
+	rotation 0
+	size 10 12.5 100
+end
+
+box
+	position 20 -312.5 0
+	rotation 0
+	size 10 12.5 100
+end
+
+box
+	position -20 -312.5 0
+	rotation 0
+	size 10 12.5 100
+end
+
+box
+	position 20 -237.5 0
+	rotation 0
+	size 10 12.5 100
+end
+
+box
+	position -20 -237.5 0
+	rotation 0
+	size 10 12.5 100
+end
+
+box
+	position 0 -280 100
+	rotation 0
+	size 30 120 25
+end
+
+box
+	position -312.5 0 0
+	rotation 0
+	size 87.5 10 50
+end
+
+box
+	position -387.5 20 0
+	rotation 0
+	size 12.5 10 100
+end
+
+box
+	position -387.5 -20 0
+	rotation 0
+	size 12.5 10 100
+end
+
+box
+	position -312.5 20 0
+	rotation 0
+	size 12.5 10 100
+end
+
+box
+	position -312.5 -20 0
+	rotation 0
+	size 12.5 10 100
+end
+
+box
+	position -237.5 20 0
+	rotation 0
+	size 12.5 10 100
+end
+
+box
+	position -237.5 -20 0
+	rotation 0
+	size 12.5 10 100
+end
+
+box
+	position -280 0 100
+	rotation 0
+	size 120 30 25
+end
+
+box
+	position 0 312.5 0
+	rotation 0
+	size 10 87.5 50
+end
+
+box
+	position 20 387.5 0
+	rotation 0
+	size 10 12.5 100
+end
+
+box
+	position -20 387.5 0
+	rotation 0
+	size 10 12.5 100
+end
+
+box
+	position 20 312.5 0
+	rotation 0
+	size 10 12.5 100
+end
+
+box
+	position -20 312.5 0
+	rotation 0
+	size 10 12.5 100
+end
+
+box
+	position 20 237.5 0
+	rotation 0
+	size 10 12.5 100
+end
+
+box
+	position -20 237.5 0
+	rotation 0
+	size 10 12.5 100
+end
+
+box
+	position 0 280 100
+	rotation 0
+	size 30 120 25
+end
+
+box
+	position 0 230 100
+	rotation 0
+	size 30 70 25
+end
+
+
+# Teleporters East
+
+teleporter
+	position 275 0 50
+	rotation 180
+	size 1 6 20.5
+	border 2
+end
+
+link
+	from 0
+	to 1
+end
+
+link
+	from 1
+	to 0
+end
+
+teleporter
+	position 350 80 0
+	rotation 90
+	size 1 6 20.5
+	border 2
+end
+
+link
+	from 2
+	to 0
+end
+
+link
+	from 3
+	to 2
+end
+
+teleporter
+	position 350 -80 0
+	rotation 270
+	size 1 6 20.5
+	border 2
+end
+
+link
+	from 4
+	to 0
+end
+
+link
+	from 5
+	to 4
+end
+
+teleporter
+	position 41 0 50
+	rotation 0
+	size 1 6 20.5
+	border 2
+end
+
+link
+	from 6
+	to 9
+end
+
+link
+	from 7
+	to 6
+end
+
+teleporter
+	position 350 0 125
+	rotation 0
+	size 1 6 20.5
+	border 2
+end
+
+link
+	from 8
+	to 6
+end
+
+link
+	from 9
+	to 6
+end
+
+
+# Teleporters South
+
+teleporter
+	position 0 -275 50
+	rotation 90
+	size 1 6 20.5
+	border 2
+end
+
+link
+	from 10
+	to 11
+end
+
+link
+	from 11
+	to 10
+end
+
+teleporter
+	position 80 -350 0
+	rotation 0
+	size 1 6 20.5
+	border 2
+end
+
+link
+	from 12
+	to 10
+end
+
+link
+	from 13
+	to 12
+end
+
+teleporter
+	position -80 -350 0
+	rotation 180
+	size 1 6 20.5
+	border 2
+end
+
+link
+	from 14
+	to 10
+end
+
+link
+	from 15
+	to 14
+end
+
+teleporter
+	position 0 -41 50
+	rotation 270
+	size 1 6 20.5
+	border 2
+end
+
+link
+	from 16
+	to 19
+end
+
+link
+	from 17
+	to 16
+end
+
+teleporter
+	position 0 -350 125
+	rotation 270
+	size 1 6 20.5
+	border 2
+end
+
+link
+	from 18
+	to 16
+end
+
+link
+	from 19
+	to 16
+end
+
+
+# Teleporters West
+
+teleporter
+	position -275 0 50
+	rotation 0
+	size 1 6 20.5
+	border 2
+end
+
+link
+	from 20
+	to 21
+end
+
+link
+	from 21
+	to 20
+end
+
+teleporter
+	position -350 80 0
+	rotation 90
+	size 1 6 20.5
+	border 2
+end
+
+link
+	from 22
+	to 20
+end
+
+link
+	from 23
+	to 22
+end
+
+teleporter
+	position -350 -80 0
+	rotation 270
+	size 1 6 20.5
+	border 2
+end
+
+link
+	from 24
+	to 20
+end
+
+link
+	from 25
+	to 24
+end
+
+teleporter
+	position -41 0 50
+	rotation 180
+	size 1 6 20.5
+	border 2
+end
+
+link
+	from 26
+	to 29
+end
+
+link
+	from 27
+	to 26
+end
+
+teleporter
+	position -350 0 125
+	rotation 180
+	size 1 6 20.5
+	border 2
+end
+
+link
+	from 28
+	to 26
+end
+
+link
+	from 29
+	to 26
+end
+
+
+# Teleporters North
+
+teleporter
+	position 0 275 50
+	rotation 270
+	size 1 6 20.5
+	border 2
+end
+
+link
+	from 30
+	to 31
+end
+
+link
+	from 31
+	to 30
+end
+
+teleporter
+	position 80 350 0
+	rotation 0
+	size 1 6 20.5
+	border 2
+end
+
+link
+	from 32
+	to 30
+end
+
+link
+	from 33
+	to 32
+end
+
+teleporter
+	position -80 350 0
+	rotation 180
+	size 1 6 20.5
+	border 2
+end
+
+link
+	from 34
+	to 30
+end
+
+link
+	from 35
+	to 34
+end
+
+teleporter
+	position 0 41 50
+	rotation 90
+	size 1 6 20.5
+	border 2
+end
+
+link
+	from 36
+	to 39
+end
+
+link
+	from 37
+	to 36
+end
+
+teleporter
+	position 0 350 125
+	rotation 90
+	size 1 6 20.5
+	border 2
+end
+
+link
+	from 38
+	to 36
+end
+
+link
+	from 39
+	to 36
+end

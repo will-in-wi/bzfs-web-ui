@@ -1,0 +1,1584 @@
+#   TWO FORTRESS MAP
+#    
+#      September 26, 2003
+#    
+#      by 
+#    
+#        Bryan A. Bentz
+#        a.k.a. "The Purple Panzer"
+#        Email:
+#             bentz@bentz-engineering.com, or 
+#             bentz@ai.mit.edu
+#        URLs:
+#             Personal URL: http://www-swiss.ai.mit.edu/~bentz/
+#             Business URL: http://www.bentz-engineering.com/
+#    
+#    
+#   This is my first map.  The idea was to create several distinct
+#   subspaces for play.  At opposing corners are two fortresses, of 
+#   different styles.  In the center is a small town between them.
+#    
+#   I tried to use several principles in the design:
+#     1.  Commonality of heights - for every horizontal surface, there
+#         is another within range for attack.
+#     2.  Personality - each subarea (basically the 4 quadrants, plus
+#         the center) has a different aesthetic and set of advantages and
+#         disadvantages.
+#     3.  For each offensive flag, there are some particularly good (but
+#         vulnerable) positions.
+#     4.  There is enough exploring to be of interest, but not so 
+#         squirrelly that you have to invest a lot of time to master the map.
+#    
+#   I created the map using BZEdit, and wrote some Visual Basic code
+#   to autogenerate some structures, such as the towers and wall fragments.
+#   Anyone is welcome to the code, just email me.  The environment was
+#   Microsoft Visual Basic 6, running on Windows 2000.
+#    
+#    
+# Sanctorum of castle fort
+box
+  position 370.0 370.0 16.0
+  rotation 0.0
+  size     30.0 30.0 15.0
+end
+box
+  position 359.0 359.0 0.0
+  rotation 0.0
+  size     41.0 41.0 16.0
+end
+#Teleporter: Castle fortress sanctorum
+teleporter
+  position 390.0 390.0 31.0
+  rotation 45.0
+  size 0.45 5.0 10.0
+end
+box
+  position 370.0 370.0 31.0
+  rotation 0.0
+  size     15.0 5.0 5.0
+end
+# Circular wall section.
+box
+  position 110.32 383.08 0.0
+  rotation 167.06
+  size     3.0 19.43 17.0
+end
+box
+  position 106.03 348.13 0.0
+  rotation 178.94
+  size     3.0 19.43 17.0
+end
+box
+  position 109.03 313.05 0.0
+  rotation 190.83
+  size     3.0 19.43 17.0
+end
+box
+  position 119.19 279.34 0.0
+  rotation 202.72
+  size     3.0 19.43 17.0
+end
+box
+  position 136.09 248.44 0.0
+  rotation 214.61
+  size     3.0 19.43 17.0
+end
+box
+  position 158.98 221.69 0.0
+  rotation 226.5
+  size     3.0 19.43 17.0
+end
+box
+  position 186.89 200.22 0.0
+  rotation 238.39
+  size     3.0 19.43 17.0
+end
+box
+  position 218.63 184.97 0.0
+  rotation 250.28
+  size     3.0 19.43 17.0
+end
+box
+  position 252.83 176.59 0.0
+  rotation 262.17
+  size     3.0 19.43 17.0
+end
+box
+  position 288.02 175.43 0.0
+  rotation 274.06
+  size     3.0 19.43 17.0
+end
+#Towers
+box
+  position 109.03 313.05 0.0
+  rotation 190.83
+  size     12.0 12.0 22.1
+end
+box
+  position 158.98 221.69 0.0
+  rotation 226.5
+  size     12.0 12.0 22.1
+end
+box
+  position 252.83 176.59 0.0
+  rotation 262.17
+  size     12.0 12.0 22.1
+end
+box
+  position 310.0 70.0 0.0
+  rotation 278.13
+  size     70.71 3.0 17.0
+end
+box
+  position 310.0 70.0 0.0
+  rotation 278.13
+  size     12.0 12.0 22.1
+end
+box
+  position 320.0 0.0 0.0
+  rotation 278.13
+  size     12.0 12.0 22.1
+end
+# Wall to +X edge
+box
+  position 360.0 -5.0 0.0
+  rotation 352.87
+  size     40.31 4.0 18.0
+end
+# Main castle fort arch
+box
+  position 300.0 169.5 0.0
+  rotation -90.0
+  size     2.5 2.5 15.0
+end
+box
+  position 300.0 150.5 0.0
+  rotation -90.0
+  size     2.5 2.5 15.0
+end
+box
+  position 300.0 160.0 15.0
+  rotation -90.0
+  size     12.0 2.5 2.5
+end
+# Tower on each end of the arch
+box
+  position 300.0 178.0 0.0
+  rotation 90.0
+  size     10.0 10.0 35.0
+end
+# i=0
+box
+  position 292.0 188.0 35.0
+  rotation 90.0
+  size     0.3 1.0 1.6
+end
+box
+  position 292.0 168.0 35.0
+  rotation 90.0
+  size     0.3 1.0 1.6
+end
+box
+  position 290.0 186.0 35.0
+  rotation 180.0
+  size     0.3 1.0 1.6
+end
+box
+  position 310.0 186.0 35.0
+  rotation 180.0
+  size     0.3 1.0 1.6
+end
+# i=1
+box
+  position 296.0 188.0 35.0
+  rotation 90.0
+  size     0.3 1.0 1.6
+end
+box
+  position 296.0 168.0 35.0
+  rotation 90.0
+  size     0.3 1.0 1.6
+end
+box
+  position 290.0 182.0 35.0
+  rotation 180.0
+  size     0.3 1.0 1.6
+end
+box
+  position 310.0 182.0 35.0
+  rotation 180.0
+  size     0.3 1.0 1.6
+end
+# i=2
+box
+  position 300.0 188.0 35.0
+  rotation 90.0
+  size     0.3 1.0 1.6
+end
+box
+  position 300.0 168.0 35.0
+  rotation 90.0
+  size     0.3 1.0 1.6
+end
+box
+  position 290.0 178.0 35.0
+  rotation 180.0
+  size     0.3 1.0 1.6
+end
+box
+  position 310.0 178.0 35.0
+  rotation 180.0
+  size     0.3 1.0 1.6
+end
+# i=3
+box
+  position 304.0 188.0 35.0
+  rotation 90.0
+  size     0.3 1.0 1.6
+end
+box
+  position 304.0 168.0 35.0
+  rotation 90.0
+  size     0.3 1.0 1.6
+end
+box
+  position 290.0 174.0 35.0
+  rotation 180.0
+  size     0.3 1.0 1.6
+end
+box
+  position 310.0 174.0 35.0
+  rotation 180.0
+  size     0.3 1.0 1.6
+end
+# i=4
+box
+  position 308.0 188.0 35.0
+  rotation 90.0
+  size     0.3 1.0 1.6
+end
+box
+  position 308.0 168.0 35.0
+  rotation 90.0
+  size     0.3 1.0 1.6
+end
+box
+  position 290.0 170.0 35.0
+  rotation 180.0
+  size     0.3 1.0 1.6
+end
+box
+  position 310.0 170.0 35.0
+  rotation 180.0
+  size     0.3 1.0 1.6
+end
+box
+  position 300.0 142.0 0.0
+  rotation 90.0
+  size     10.0 10.0 35.0
+end
+# i=0
+box
+  position 292.0 152.0 35.0
+  rotation 90.0
+  size     0.3 1.0 1.6
+end
+box
+  position 292.0 132.0 35.0
+  rotation 90.0
+  size     0.3 1.0 1.6
+end
+box
+  position 290.0 150.0 35.0
+  rotation 180.0
+  size     0.3 1.0 1.6
+end
+box
+  position 310.0 150.0 35.0
+  rotation 180.0
+  size     0.3 1.0 1.6
+end
+# i=1
+box
+  position 296.0 152.0 35.0
+  rotation 90.0
+  size     0.3 1.0 1.6
+end
+box
+  position 296.0 132.0 35.0
+  rotation 90.0
+  size     0.3 1.0 1.6
+end
+box
+  position 290.0 146.0 35.0
+  rotation 180.0
+  size     0.3 1.0 1.6
+end
+box
+  position 310.0 146.0 35.0
+  rotation 180.0
+  size     0.3 1.0 1.6
+end
+# i=2
+box
+  position 300.0 152.0 35.0
+  rotation 90.0
+  size     0.3 1.0 1.6
+end
+box
+  position 300.0 132.0 35.0
+  rotation 90.0
+  size     0.3 1.0 1.6
+end
+box
+  position 290.0 142.0 35.0
+  rotation 180.0
+  size     0.3 1.0 1.6
+end
+box
+  position 310.0 142.0 35.0
+  rotation 180.0
+  size     0.3 1.0 1.6
+end
+# i=3
+box
+  position 304.0 152.0 35.0
+  rotation 90.0
+  size     0.3 1.0 1.6
+end
+box
+  position 304.0 132.0 35.0
+  rotation 90.0
+  size     0.3 1.0 1.6
+end
+box
+  position 290.0 138.0 35.0
+  rotation 180.0
+  size     0.3 1.0 1.6
+end
+box
+  position 310.0 138.0 35.0
+  rotation 180.0
+  size     0.3 1.0 1.6
+end
+# i=4
+box
+  position 308.0 152.0 35.0
+  rotation 90.0
+  size     0.3 1.0 1.6
+end
+box
+  position 308.0 132.0 35.0
+  rotation 90.0
+  size     0.3 1.0 1.6
+end
+box
+  position 290.0 134.0 35.0
+  rotation 180.0
+  size     0.3 1.0 1.6
+end
+box
+  position 310.0 134.0 35.0
+  rotation 180.0
+  size     0.3 1.0 1.6
+end
+# Building behind gate
+box
+  position 370.0 160.0 0.0
+  rotation 0.0
+  size     25.0 25.0 15.0
+end
+box
+  position 370.0 160.0 15.0
+  rotation 0.0
+  size     20.0 20.0 15.0
+end
+box
+  position 370.0 160.0 30.0
+  rotation 0.0
+  size     15.0 15.0 15.0
+end
+pyramid
+  position 370.0 160.0 45.1
+  rotation 0.0
+  size     13.0 13.0 13.0
+end
+# Inner pyramids, to prevent lots of bounces
+pyramid
+  position 302.34 270.57 0.0
+  rotation 5.05
+  size     3.02 7.75 11.73
+end
+pyramid
+  position 318.25 287.01 0.0
+  rotation 310.54
+  size     0.45 4.14 26.42
+end
+pyramid
+  position 320.33 256.15 0.0
+  rotation 341.84
+  size     8.71 0.56 35.27
+end
+pyramid
+  position 290.48 266.74 0.0
+  rotation 168.73
+  size     0.54 5.92 28.45
+end
+pyramid
+  position 285.87 273.59 0.0
+  rotation 298.73
+  size     2.64 2.79 24.27
+end
+pyramid
+  position 322.72 271.24 0.0
+  rotation 250.24
+  size     9.11 2.27 36.11
+end
+pyramid
+  position 333.6 247.08 0.0
+  rotation 243.42
+  size     1.06 9.99 20.29
+end
+pyramid
+  position 266.1 270.26 0.0
+  rotation 102.41
+  size     1.03 7.99 5.1
+end
+pyramid
+  position 268.2 250.7 0.0
+  rotation 352.74
+  size     3.01 9.49 14.97
+end
+pyramid
+  position 293.1 249.48 0.0
+  rotation 147.63
+  size     1.63 6.47 7.22
+end
+pyramid
+  position 293.89 279.89 0.0
+  rotation 66.96
+  size     6.33 2.08 13.02
+end
+pyramid
+  position 305.84 235.65 0.0
+  rotation 282.68
+  size     9.06 2.61 17.63
+end
+pyramid
+  position 291.52 250.28 0.0
+  rotation 154.24
+  size     6.32 6.28 33.78
+end
+pyramid
+  position 271.86 269.27 0.0
+  rotation 8.15
+  size     9.14 8.35 25.91
+end
+# Teleporter on the ground in the Castle Fort
+teleporter
+  position 362.0 73.0 0.0
+  rotation 135.0
+  size 0.45 8.0 10.0
+end
+# Building at end of fort
+box
+  position 362.0 19.0 0.0
+  rotation 45.0
+  size     8.0 8.0 33.0
+end
+pyramid
+  position 362.0 19.0 33.01
+  rotation 45.0
+  size     8.0 8.0 8.0
+end
+# Teleporters up in the air:
+# Teleporter in the north
+box
+  position 30.0 297.0 100.0
+  rotation 0.0
+  size     30.0 30.0 5.0
+end
+teleporter
+  position 30.0 297.0 105.0
+  rotation 0.0
+  size 0.56 4.48 10.0
+end
+# Teleporter in the South
+box
+  position 252.0 -65.0 100.0
+  rotation 90.0
+  size     30.0 30.0 5.0
+end
+teleporter
+  position 252.0 -65.0 105.0
+  rotation 90.0
+  size 0.56 4.48 10.0
+end
+# Central circular tower
+# Circular wall section.
+box
+  position 233.81 349.06 0.0
+  rotation 15.0
+  size     5.0 10.31 30.0
+end
+box
+  position 224.75 364.75 0.0
+  rotation 45.0
+  size     5.0 10.31 30.0
+end
+box
+  position 209.06 373.81 0.0
+  rotation 75.0
+  size     5.0 10.31 30.0
+end
+box
+  position 190.94 373.81 0.0
+  rotation 105.0
+  size     5.0 10.31 30.0
+end
+box
+  position 175.25 364.75 0.0
+  rotation 135.0
+  size     5.0 10.31 30.0
+end
+box
+  position 166.19 349.06 0.0
+  rotation 165.0
+  size     5.0 10.31 30.0
+end
+box
+  position 166.19 330.94 0.0
+  rotation 195.0
+  size     5.0 10.31 30.0
+end
+box
+  position 175.25 315.25 0.0
+  rotation 225.0
+  size     5.0 10.31 30.0
+end
+box
+  position 190.94 306.19 0.0
+  rotation 255.0
+  size     5.0 10.31 30.0
+end
+box
+  position 209.06 306.19 0.0
+  rotation 285.0
+  size     5.0 10.31 30.0
+end
+box
+  position 224.75 315.25 0.0
+  rotation 315.0
+  size     5.0 10.31 30.0
+end
+box
+  position 200.0 340.0 0.0
+  rotation 0.0
+  size     16.0 15.0 10.0
+end
+box
+  position 200.0 340.0 10.0
+  rotation 0.0
+  size     8.0 32.0 10.0
+end
+# Tower within this circular tower
+box
+  position 175.0 340.0 10.0
+  rotation 0.0
+  size     9.0 9.0 24.0
+end
+# ###################
+# ### Siege Tower ###
+# ###################
+# 4 boxes, backing up each time
+box
+  position 70.0 320.0 0.0
+  rotation 0.0
+  size     2.0 2.0 31.0
+end
+box
+  position 65.0 320.0 0.0
+  rotation 0.0
+  size     3.0 3.0 30.0
+end
+box
+  position 60.0 320.0 0.0
+  rotation 0.0
+  size     4.0 4.0 23.4
+end
+box
+  position 55.0 320.0 0.0
+  rotation 0.0
+  size     5.0 5.0 22.1
+end
+box
+  position 50.0 320.0 0.0
+  rotation 0.0
+  size     6.0 6.0 17.0
+end
+# Second Fort (JFORT)
+box
+  position -330.0 -330.0 0.0
+  rotation 0.0
+  size     10.0 10.0 50.0
+end
+box
+  position -340.0 -340.0 46.0
+  rotation 0.0
+  size     2.5 2.5 12.5
+end
+pyramid
+  position -340.0 -340.0 58.5
+  rotation 0.0
+  size     2.5 2.5 3.13
+end
+box
+  position -340.0 -320.0 46.0
+  rotation 0.0
+  size     2.5 2.5 12.5
+end
+pyramid
+  position -340.0 -320.0 58.5
+  rotation 0.0
+  size     2.5 2.5 3.13
+end
+box
+  position -320.0 -320.0 46.0
+  rotation 0.0
+  size     2.5 2.5 12.5
+end
+pyramid
+  position -320.0 -320.0 58.5
+  rotation 0.0
+  size     2.5 2.5 3.13
+end
+box
+  position -320.0 -340.0 46.0
+  rotation 0.0
+  size     2.5 2.5 12.5
+end
+pyramid
+  position -320.0 -340.0 58.5
+  rotation 0.0
+  size     2.5 2.5 3.13
+end
+box
+  position -346.0 -330.0 0.0
+  rotation 0.0
+  size     17.5 40.0 32.0
+end
+box
+  position -363.5 -370.0 28.0
+  rotation 0.0
+  size     2.5 2.5 12.5
+end
+pyramid
+  position -363.5 -370.0 40.5
+  rotation 0.0
+  size     2.5 2.5 3.13
+end
+box
+  position -363.5 -290.0 28.0
+  rotation 0.0
+  size     2.5 2.5 12.5
+end
+pyramid
+  position -363.5 -290.0 40.5
+  rotation 0.0
+  size     2.5 2.5 3.13
+end
+box
+  position -328.5 -290.0 28.0
+  rotation 0.0
+  size     2.5 2.5 12.5
+end
+pyramid
+  position -328.5 -290.0 40.5
+  rotation 0.0
+  size     2.5 2.5 3.13
+end
+box
+  position -328.5 -370.0 28.0
+  rotation 0.0
+  size     2.5 2.5 12.5
+end
+pyramid
+  position -328.5 -370.0 40.5
+  rotation 0.0
+  size     2.5 2.5 3.13
+end
+# Building to allow jump up to first high level.
+box
+  position -273.0 -369.0 0.0
+  rotation 0.0
+  size     40.0 10.0 17.0
+end
+pyramid
+  position -273.0 -369.0 17.1
+  rotation 0.0
+  size     20.0 5.0 10.0
+end
+# Inner building, transporter
+box
+  position -348.0 -226.0 0.0
+  rotation 0.0
+  size     10.0 15.0 15.0
+end
+# Teleporter on bldg in jfort
+teleporter
+  position -348.0 -226.0 15.0
+  rotation 0.0
+  size 0.45 6.0 8.0
+end
+# Long bridge into fourth quadrant.
+box
+  position -32.0 -351.0 19.0
+  rotation -9.0
+  size     150.0 10.0 5.0
+end
+# Ziggurat dividing quadrants 3 and 4.
+# i=0
+box
+  position 156.0 -330.0 0.0
+  rotation 0.0
+  size     65.0 65.0 12.0
+end
+# i=1
+box
+  position 156.0 -330.0 12.0
+  rotation 0.0
+  size     56.0 56.0 12.0
+end
+# i=2
+# apply band
+box
+  position 156.0 -330.0 31.0
+  rotation 0.0
+  size     56.0 56.0 5.0
+end
+box
+  position 156.0 -330.0 24.0
+  rotation 0.0
+  size     47.0 47.0 12.0
+end
+# i=3
+box
+  position 156.0 -330.0 36.0
+  rotation 0.0
+  size     38.0 38.0 12.0
+end
+# i=4
+box
+  position 156.0 -330.0 48.0
+  rotation 0.0
+  size     29.0 29.0 15.0
+end
+# i=5
+box
+  position 156.0 -330.0 60.0
+  rotation 0.0
+  size     20.0 20.0 12.0
+end
+# i=6
+box
+  position 156.0 -330.0 72.0
+  rotation 0.0
+  size     11.0 11.0 12.0
+end
+# Claim this for the jfort side
+box
+  position 166.0 -320.0 80.0
+  rotation 0.0
+  size     2.5 2.5 12.5
+end
+pyramid
+  position 166.0 -320.0 92.5
+  rotation 0.0
+  size     2.5 2.5 3.13
+end
+box
+  position 146.0 -320.0 80.0
+  rotation 0.0
+  size     2.5 2.5 12.5
+end
+pyramid
+  position 146.0 -320.0 92.5
+  rotation 0.0
+  size     2.5 2.5 3.13
+end
+box
+  position 166.0 -340.0 80.0
+  rotation 0.0
+  size     2.5 2.5 12.5
+end
+pyramid
+  position 166.0 -340.0 92.5
+  rotation 0.0
+  size     2.5 2.5 3.13
+end
+box
+  position 146.0 -340.0 80.0
+  rotation 0.0
+  size     2.5 2.5 12.5
+end
+pyramid
+  position 146.0 -340.0 92.5
+  rotation 0.0
+  size     2.5 2.5 3.13
+end
+# Walls
+box
+  position -360.0 -155.0 0.0
+  rotation 327.99
+  size     47.17 8.0 19.0
+end
+box
+  position -320.0 -210.0 0.0
+  rotation 270.0
+  size     30.0 8.0 19.0
+end
+box
+  position -290.0 -240.0 0.0
+  rotation 360.0
+  size     30.0 8.0 19.0
+end
+box
+  position -242.5 -270.0 0.0
+  rotation 300.26
+  size     34.73 8.0 19.0
+end
+box
+  position -192.5 -260.0 0.0
+  rotation 300.26
+  size     34.73 8.0 19.0
+end
+box
+  position -162.5 -345.0 0.0
+  rotation 282.8
+  size     56.4 8.0 19.0
+end
+# Defensive teleporter.
+teleporter
+  position -188.0 -328.0 0.0
+  rotation -78.5
+  size 0.45 11.52 18.0
+end
+# Roof over defensive teleporter
+box
+  position -193.0 -334.5 19.0
+  rotation -76.0
+  size     13.0 18.5 5.0
+end
+# Wall next to defensive transporter
+box
+  position -200.0 -347.5 0.0
+  rotation 15.0
+  size     4.0 20.0 10.0
+end
+box
+  position -168.0 -318.5 20.0
+  rotation 0.0
+  size     2.5 2.5 12.5
+end
+pyramid
+  position -168.0 -318.5 32.5
+  rotation 0.0
+  size     2.5 2.5 3.13
+end
+box
+  position -163.0 -342.5 20.0
+  rotation 0.0
+  size     2.5 2.5 12.5
+end
+pyramid
+  position -163.0 -342.5 32.5
+  rotation 0.0
+  size     2.5 2.5 3.13
+end
+# Main block - smaller of the two
+box
+  position 60.0 -20.0 0.0
+  rotation 30.0
+  size     50.0 60.0 30.0
+end
+# Main block - larger of the two
+box
+  position -70.0 40.0 0.0
+  rotation -10.0
+  size     40.0 40.0 60.0
+end
+# Border at lower height around main block
+box
+  position -70.0 40.0 11.0
+  rotation -10.0
+  size     48.0 48.0 5.0
+end
+# Border at heighter height around main block
+box
+  position -70.0 40.0 45.0
+  rotation -10.0
+  size     46.0 46.0 5.0
+end
+# Block on top of larger main block
+box
+  position -70.0 40.0 60.0
+  rotation -10.0
+  size     20.0 20.0 20.0
+end
+# Access block towards castle
+box
+  position 110.0 68.0 0.0
+  rotation 80.0
+  size     12.0 14.0 15.0
+end
+box
+  position 94.5 55.0 12.0
+  rotation 45.0
+  size     20.0 5.0 3.0
+end
+# Access block towards jfort
+box
+  position -47.0 -144.0 0.0
+  rotation 45.0
+  size     8.0 13.0 16.0
+end
+box
+  position 4.5 -98.0 14.0
+  rotation 45.0
+  size     70.0 5.0 2.0
+end
+# Block to allow jump from lower building to higher one.
+box
+  position 18.5 -5.5 30.0
+  rotation 0.0
+  size     8.0 9.0 14.0
+end
+box
+  position -12.5 8.0 42.0
+  rotation -21.5
+  size     36.5 6.0 2.0
+end
+# Blocks at correct height for shooting at main fort
+box
+  position 51.0 30.0 0.0
+  rotation 195.61
+  size     14.0 8.0 31.0
+end
+pyramid
+  position 51.0 30.0 31.0
+  rotation 195.61
+  size     14.0 8.0 20.0
+end
+box
+  position 132.0 4.0 0.0
+  rotation 82.45
+  size     12.0 14.0 30.0
+end
+box
+  position 133.0 -49.0 0.0
+  rotation 38.72
+  size     16.0 13.0 23.4
+end
+box
+  position 74.0 -28.0 30.0
+  rotation 12.0
+  size     19.0 23.0 19.0
+end
+# Platform to shoot at skyrise from
+box
+  position -103.0 89.5 35.0
+  rotation 45.0
+  size     20.0 20.0 5.0
+end
+# Quadrant 3 box copy
+box
+  position -205.0 49.5 0.0
+  rotation 90.0
+  size     20.0 40.0 40.0
+end
+box
+  position -205.0 49.5 22.0
+  rotation 90.0
+  size     30.0 50.0 5.0
+end
+box
+  position -205.0 49.5 40.0
+  rotation 0.0
+  size     10.0 10.0 5.0
+end
+pyramid
+  position -205.0 49.5 45.1
+  rotation 0.0
+  size     10.0 10.0 40.0
+end
+# Pyramid set, river-like flow
+pyramid
+  position 155.17 115.96 0.0
+  rotation 97.1
+  size     3.53 4.05 17.8
+end
+pyramid
+  position 123.89 97.07 0.0
+  rotation 131.4
+  size     0.61 3.9 35.87
+end
+pyramid
+  position 154.29 90.9 0.0
+  rotation 195.15
+  size     2.57 6.29 18.21
+end
+pyramid
+  position 130.94 145.7 0.0
+  rotation 38.66
+  size     5.06 3.9 24.51
+end
+pyramid
+  position 174.88 112.17 0.0
+  rotation 6.75
+  size     5.96 8.33 27.98
+end
+pyramid
+  position 85.18 82.38 0.0
+  rotation 193.25
+  size     1.28 0.0 13.21
+end
+pyramid
+  position 125.99 113.08 0.0
+  rotation 244.41
+  size     0.82 1.92 30.56
+end
+pyramid
+  position 24.99 130.5 0.0
+  rotation 32.27
+  size     9.29 5.3 26.25
+end
+pyramid
+  position 53.04 148.13 0.0
+  rotation 118.7
+  size     4.92 2.08 17.77
+end
+pyramid
+  position 6.68 161.29 0.0
+  rotation 159.79
+  size     9.28 0.98 7.55
+end
+pyramid
+  position 19.11 181.08 0.0
+  rotation 92.39
+  size     2.73 6.74 27.87
+end
+pyramid
+  position -7.83 122.59 0.0
+  rotation 172.97
+  size     2.97 2.35 29.25
+end
+pyramid
+  position 23.84 53.15 0.0
+  rotation 211.91
+  size     2.06 8.65 18.48
+end
+pyramid
+  position 52.84 114.95 0.0
+  rotation 228.37
+  size     5.43 0.81 13.19
+end
+pyramid
+  position 47.23 -11.98 0.0
+  rotation 53.73
+  size     6.2 3.48 33.92
+end
+pyramid
+  position 13.6 -4.64 0.0
+  rotation 124.34
+  size     1.3 0.29 36.38
+end
+pyramid
+  position 18.34 44.61 0.0
+  rotation 297.44
+  size     4.06 8.47 20.44
+end
+pyramid
+  position 25.53 -0.23 0.0
+  rotation 250.3
+  size     4.95 4.13 13.49
+end
+pyramid
+  position -12.46 -40.4 0.0
+  rotation 153.91
+  size     8.15 5.41 20.61
+end
+pyramid
+  position 10.63 -54.06 0.0
+  rotation 319.18
+  size     4.9 6.81 23.27
+end
+pyramid
+  position 0.94 -48.83 0.0
+  rotation 80.37
+  size     1.5 5.3 11.85
+end
+pyramid
+  position 15.92 -44.56 0.0
+  rotation 246.26
+  size     4.78 1.91 32.26
+end
+pyramid
+  position 12.98 -45.25 0.0
+  rotation 344.43
+  size     8.08 2.03 7.26
+end
+pyramid
+  position -25.39 -95.69 0.0
+  rotation 43.04
+  size     3.8 4.64 29.36
+end
+pyramid
+  position -21.92 -87.84 0.0
+  rotation 201.96
+  size     7.15 5.33 3.28
+end
+pyramid
+  position -14.83 -67.24 0.0
+  rotation 325.12
+  size     7.52 3.99 27.72
+end
+pyramid
+  position 22.22 -93.8 0.0
+  rotation 155.21
+  size     7.13 0.16 23.81
+end
+pyramid
+  position -1.86 -80.73 0.0
+  rotation 150.34
+  size     8.03 6.96 36.09
+end
+pyramid
+  position -30.6 -100.04 0.0
+  rotation 232.54
+  size     9.45 1.22 16.77
+end
+pyramid
+  position -25.65 -117.69 0.0
+  rotation 345.34
+  size     0.78 4.33 8.09
+end
+pyramid
+  position -12.06 -90.39 0.0
+  rotation 142.5
+  size     2.18 3.79 35.65
+end
+pyramid
+  position -30.29 -89.76 0.0
+  rotation 200.7
+  size     5.17 9.65 6.46
+end
+pyramid
+  position 13.64 -78.99 0.0
+  rotation 272.19
+  size     6.93 0.64 17.04
+end
+pyramid
+  position -0.96 -90.21 0.0
+  rotation 282.42
+  size     2.24 3.26 7.04
+end
+pyramid
+  position -67.01 -63.95 0.0
+  rotation 242.94
+  size     9.73 8.04 12.98
+end
+pyramid
+  position -56.64 -58.7 0.0
+  rotation 287.03
+  size     1.23 9.54 16.18
+end
+pyramid
+  position -71.26 -91.89 0.0
+  rotation 183.5
+  size     1.68 1.64 2.17
+end
+pyramid
+  position -91.58 -112.57 0.0
+  rotation 179.27
+  size     6.43 8.49 11.26
+end
+pyramid
+  position -117.24 -83.9 0.0
+  rotation 160.92
+  size     7.71 2.18 12.92
+end
+pyramid
+  position -163.48 -48.51 0.0
+  rotation 309.81
+  size     3.74 3.9 22.97
+end
+pyramid
+  position -154.79 -93.8 0.0
+  rotation 93.43
+  size     8.68 2.59 13.16
+end
+pyramid
+  position -207.49 -105.71 0.0
+  rotation 100.29
+  size     7.42 8.41 1.69
+end
+pyramid
+  position -170.79 -101.66 0.0
+  rotation 28.07
+  size     7.42 4.38 30.0
+end
+pyramid
+  position -191.26 -106.24 0.0
+  rotation 54.63
+  size     3.12 7.99 26.47
+end
+pyramid
+  position -178.49 -63.06 0.0
+  rotation 354.33
+  size     9.4 1.14 10.11
+end
+pyramid
+  position -238.08 -86.82 0.0
+  rotation 26.98
+  size     2.45 8.6 21.72
+end
+pyramid
+  position -249.28 -96.8 0.0
+  rotation 189.57
+  size     3.79 3.97 10.2
+end
+pyramid
+  position -261.07 -109.32 0.0
+  rotation 40.12
+  size     0.79 8.95 8.94
+end
+pyramid
+  position -234.33 -86.98 0.0
+  rotation 158.84
+  size     9.5 8.46 9.71
+end
+pyramid
+  position -245.56 -96.13 0.0
+  rotation 117.42
+  size     3.83 1.96 30.82
+end
+pyramid
+  position -269.31 -136.61 0.0
+  rotation 181.61
+  size     2.05 6.93 5.08
+end
+pyramid
+  position -267.18 -110.6 0.0
+  rotation 103.94
+  size     0.04 4.26 18.1
+end
+pyramid
+  position -227.32 -117.61 0.0
+  rotation 3.71
+  size     1.77 1.09 30.37
+end
+# Roman camp between first and second quadrants
+# Central tower
+box
+  position -40.0 280.0 0.0
+  rotation 0.0
+  size     10.0 10.0 32.0
+end
+# Roof for missle protection
+box
+  position -40.0 280.0 32.0
+  rotation 0.0
+  size     34.0 34.0 5.0
+end
+box
+  position -61.5 320.0 0.0
+  rotation 0.0
+  size     18.5 1.0 18.0
+end
+box
+  position -18.5 320.0 0.0
+  rotation 0.0
+  size     18.5 1.0 18.0
+end
+box
+  position -61.5 240.0 0.0
+  rotation 0.0
+  size     18.5 1.0 18.0
+end
+box
+  position -18.5 240.0 0.0
+  rotation 0.0
+  size     18.5 1.0 18.0
+end
+box
+  position -80.0 301.5 0.0
+  rotation 0.0
+  size     1.0 18.5 18.0
+end
+box
+  position -80.0 258.5 0.0
+  rotation 0.0
+  size     1.0 18.5 18.0
+end
+box
+  position 0.0 301.5 0.0
+  rotation 0.0
+  size     1.0 18.5 18.0
+end
+box
+  position 0.0 258.5 0.0
+  rotation 0.0
+  size     1.0 18.5 18.0
+end
+# Second quadrant blocks: tower with pyramid floating above it.
+box
+  position -220.0 260.0 0.0
+  rotation 0.0
+  size     20.0 40.0 40.0
+end
+box
+  position -220.0 260.0 0.0
+  rotation 90.0
+  size     20.0 40.0 40.0
+end
+box
+  position -175.0 260.0 0.0
+  rotation 0.0
+  size     10.0 10.0 40.0
+end
+box
+  position -220.0 215.0 0.0
+  rotation 0.0
+  size     10.0 10.0 40.0
+end
+box
+  position -265.0 260.0 0.0
+  rotation 0.0
+  size     10.0 10.0 40.0
+end
+box
+  position -220.0 305.0 0.0
+  rotation 0.0
+  size     10.0 10.0 40.0
+end
+# Teleporter: on hirise
+teleporter
+  position -220.0 260.0 40.0
+  rotation 45.0
+  size 0.56 4.48 8.0
+end
+box
+  position -220.0 260.0 49.0
+  rotation 0.0
+  size     30.0 30.0 5.0
+end
+pyramid
+  position -220.0 260.0 54.1
+  rotation 0.0
+  size     30.0 30.0 25.0
+end
+# Hidden teleporter inside this
+teleporter
+  position -220.0 260.0 54.0
+  rotation 0.0
+  size 0.56 4.48 6.0
+end
+# Fourth quadrant
+box
+  position 212.0 -53.0 0.0
+  rotation 0.0
+  size     5.0 5.0 10.0
+end
+box
+  position 232.0 -53.0 0.0
+  rotation 0.0
+  size     5.0 5.0 10.0
+end
+box
+  position 222.0 -53.0 10.0
+  rotation 0.0
+  size     15.0 5.0 5.0
+end
+box
+  position 222.0 -53.0 20.0
+  rotation 0.0
+  size     15.0 5.0 5.0
+end
+# Pyramids south of the arch
+pyramid
+  position 210.0 -93.0 0.0
+  rotation 54.6
+  size     5.0 5.0 10.0
+end
+pyramid
+  position 210.0 -133.0 0.0
+  rotation 135.87
+  size     5.0 5.0 10.0
+end
+pyramid
+  position 210.0 -173.0 0.0
+  rotation 67.73
+  size     5.0 5.0 10.0
+end
+pyramid
+  position 210.0 -213.0 0.0
+  rotation 352.63
+  size     5.0 5.0 10.0
+end
+# Laser shield teleporter
+teleporter
+  position 380.0 -388.0 0.0
+  rotation 135.0
+  size 0.45 15.0 20.0
+end
+# Fourth quadrant tower.
+box
+  position 300.0 -170.0 0.0
+  rotation 45.0
+  size     8.0 8.0 75.0
+end
+box
+  position 300.0 -158.69 71.0
+  rotation 0.0
+  size     2.5 2.5 12.5
+end
+pyramid
+  position 300.0 -158.69 83.5
+  rotation 0.0
+  size     2.5 2.5 3.13
+end
+box
+  position 300.0 -181.31 71.0
+  rotation 0.0
+  size     2.5 2.5 12.5
+end
+pyramid
+  position 300.0 -181.31 83.5
+  rotation 0.0
+  size     2.5 2.5 3.13
+end
+box
+  position 311.31 -170.0 71.0
+  rotation 0.0
+  size     2.5 2.5 12.5
+end
+pyramid
+  position 311.31 -170.0 83.5
+  rotation 0.0
+  size     2.5 2.5 3.13
+end
+box
+  position 288.69 -170.0 71.0
+  rotation 0.0
+  size     2.5 2.5 12.5
+end
+pyramid
+  position 288.69 -170.0 83.5
+  rotation 0.0
+  size     2.5 2.5 3.13
+end
+# Ramp to get to fourth quadrant
+box
+  position 215.0 -255.5 60.0
+  rotation 45.0
+  size     120.0 4.0 3.0
+end
+teleporter
+  position -31.5 -242.0 0.0
+  rotation 0.0
+  size 0.45 9.0 12.0
+end
+# Teleporter Links
+# CastleFort sanctorum to in-Air, North
+link
+ from 0
+ to 4
+end
+# Castlefort sanctorum to hidden teleporter
+link
+ from 1
+ to 14
+end
+# Castlefort ground to jfort field
+link
+ from 2
+ to 18
+end
+# Castlefort ground to in-Air, north
+link
+ from 3
+ to 5
+end
+link
+ from 4
+ to 0
+end
+# in-air North, to castlefort ground
+link
+ from 5
+ to 3
+end
+# in-air south, to laser protection
+link
+ from 6
+ to 14
+end
+# in-air south, to jfort
+link
+ from 7
+ to 8
+end
+# jfort on bldg
+link
+ from 8
+ to 6
+end
+link
+ from 9
+ to 19
+end
+# jfort defensive
+link
+ from 10
+ to 11
+end
+link
+ from 11
+ to 18
+end
+# hirise visible
+link
+ from 12
+ to 0
+end
+link
+ from 13
+ to 17
+end
+# hidden teleporter
+link
+ from 14
+ to 7
+end
+link
+ from 15
+ to 2
+end
+# laser defense shield
+link
+ from 16
+ to 3
+end
+link
+ from 17
+ to 16
+end
+# free field near jfort
+link
+ from 18
+ to 8
+end
+link
+ from 19
+ to 3
+end

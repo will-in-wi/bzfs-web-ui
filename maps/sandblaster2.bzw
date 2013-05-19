@@ -1,0 +1,5156 @@
+### BZFLAG WORLD FILE HEADER
+
+
+# Map name	: Sand Blaster V2
+# File name	: sandblaster2.bzw
+# Version	: 2.00
+# Release date	: 2006-6-8
+
+# Designer	: Raimond "Dutchrai" Kuhlman
+# Email address	: dutchrai@yahoo.com
+
+# Credits	: Trepan (tips, tricks, optimization & gold-edged pyramid idea)
+#		: L4n3r ('water well' idea in centre of map)
+
+# Notes         : a) For servers 2.0.4 or older, the 5 "_fog" settings below
+#                    must be disabled.
+
+
+### BZFLAG WORLD FILE DATA
+
+
+## Options
+
+options
+  # Create desert environment
+  -set _drawClouds 0
+  -set _drawMountains 0
+  -set _fogMode exp2
+  -set _fogDensity 0.0017 # for _fogMode exp1/exp2
+  -set _fogStart 0 # for _fogMode linear
+  -set _fogEnd 1050 # for _fogMode linear
+  -set _fogColor "0.8 0.8 0.6" #yellowish
+#  -set _fogColor "0.6 0.4 0.35" #redish
+#  -set _fogColor "0.5 0.6 0.9" #blueish
+  # Force these good flags
+  +f CL{2} +f F +f GM +f IB +f ID{5} +f L +f N +f OO{4} +f PZ +f QT +f SB +f SE{3} +f SH +f SR +f ST{2} +f SW +f T +f TH{4} +f V
+  # Force these bad flags
+  +f B +f CB +f JM +f LT +f NJ +f RC +f RO +f RT +f TR +f WA
+  # Set flag shot limits (GM and SB should be limited because of 'water well' camp spot in map centre)
+  -sl GM 20 -sl SB 10
+  # Disable random flags
+  -f good -f bad +s 0 -s 0
+  # Gameplay settings (standard)
+  -j -ms 3 +r -st 3
+  # Gameplay settings (tweaks)
+  -set _radarLimit 400
+  -set _tankSpeed 35
+end
+
+
+## Texturing
+
+
+# dynamicColor
+
+dynamicColor
+name conveyer_green
+red limits 0.1 0.1
+green limits 0.3 0.3
+blue limits 0.1 0.1
+alpha limits 0.5 0.7
+alpha sinusoid 1 1 1
+end 
+
+dynamicColor
+name conveyer_red
+red limits 0.3 0.3
+green limits 0.1 0.1
+blue limits 0.1 0.1
+alpha limits 0.5 0.7
+alpha sinusoid 1 1 1
+end 
+
+dynamicColor
+name strobe_light
+red limits 1 1
+green limits 0.2 0.2
+blue limits 0.2 0.2
+alpha limits 0.0 1.0
+alpha sinusoid 2 0.5 4
+end 
+
+
+# textureMatrix
+
+textureMatrix
+  name ground
+  fixedscale 4.0 4.0
+end
+
+textureMatrix
+  name shiftup
+  shift 0.0 5.0
+end 
+
+textureMatrix
+  name water_move
+  shift 0 -0.05
+end
+
+
+# special materials
+
+material
+  # special name  "GroundMaterial"
+  # There's also "LinkMaterial" for tele links,
+  # and "WaterMaterial" for waterLevel objects.
+  name GroundMaterial
+  texture mesh
+  diffuse 0.4 0.233 0.2 1.0
+  texmat ground
+end
+
+
+# normal materials
+
+material
+name boxwall
+texture boxwall
+noradar
+end
+
+material
+name boxwall_passable
+texture boxwall
+diffuse 1 1 1 0.85
+noradar
+end
+
+material
+name conveyer_green
+dyncol conveyer_green
+notextures
+noshadow
+end
+
+material
+name conveyer_red
+dyncol conveyer_red
+notextures
+noshadow
+end
+
+material
+name coolingtower
+notextures
+diffuse 0.25 0.25 0.3 1
+noshadow
+noradar
+end
+
+material
+name copper
+texture mesh
+diffuse 0.3 0.2 0.1 1
+specular 0.45 0.45 0.35
+shininess 8
+end
+
+material
+name glass
+texture mesh
+diffuse 0.2 0.3 0.4 0.3
+specular 0.45 0.45 0.35
+shininess 96
+noshadow
+end
+
+material
+name glass_dark
+texture mesh
+diffuse 0.2 0.3 0.4 0.7
+specular 0.45 0.45 0.35
+shininess 96
+end
+
+material
+name gold
+notextures
+diffuse 0.7 0.5 0.2 1
+specular 0.45 0.45 0.35
+shininess 16
+noradar
+end
+
+material
+name gold_glass
+notextures
+diffuse 0.7 0.5 0.2 0.85
+specular 0.45 0.45 0.35
+shininess 16
+noradar
+groupalpha
+end
+
+material
+name grey
+texture roof
+diffuse 0.5 0.5 0.6 1
+end
+
+material
+name grey_dark
+texture roof
+diffuse 0.25 0.25 0.3 1
+end
+
+material
+name ground
+texture mesh
+diffuse 0.4 0.233 0.2 1.0
+end
+
+material
+name metal
+notextures
+diffuse 0.25 0.25 0.3 1
+specular 0.45 0.45 0.35
+shininess 16
+end
+
+material
+name null
+diffuse 0 0 0 0
+notextures
+noradar
+noshadow
+end
+
+material
+name pyrborder
+notextures
+diffuse 0.7 0.5 0.2 1
+specular 0.45 0.45 0.35
+shininess 16
+end
+
+material
+name pyrwall
+texture pyrwall
+end
+
+material
+name roof
+texture roof
+end
+
+material
+name shiftup
+diffuse 1.0 0.25 1.0 0.5
+texture telelink
+texmat shiftup
+end
+
+material
+name strobe_light
+nolighting
+noradar
+noshadow
+dyncol strobe_light
+notextures
+end
+
+material
+name tele_inner
+texture mesh
+diffuse 0.25 0.6 0.4 1.0
+end
+
+material
+name tele_outer
+texture mesh
+diffuse 0.25 0.6 0.4 0.5
+groupalpha
+noshadow
+end
+
+material
+name water
+diffuse 0.3 0.3 0.5 0.85
+texture water
+texmat water_move
+noradar
+noshadow
+end
+
+
+## Zones
+
+# use this data once BZFlag supports 'no flag' and 'no team' zones
+
+# well
+#shift 0 0 0
+#size 12 12 1
+
+# dam
+#shift 22.5 -307.5 0
+#size 72.5 32.5 1
+
+# office
+#shift -285 -10 0
+#size 30 30 1
+
+
+## Objects
+
+
+# Well
+
+define well
+
+  arc
+  shift 0 0 0
+  size 20 20 6
+  divisions 24
+  matref boxwall
+  top matref null
+  ratio 0.4
+  end
+
+  arc
+  shift 0 0 6
+  size 20 20 4 
+  divisions 24
+  matref roof
+  bottom matref null
+  ratio 0.4
+  end
+
+  arc
+  shift 0 0 4
+  size 12 12 0.01
+  divisions 24
+  passable
+  matref null
+  top matref water
+  bottom matref water
+  flatshading
+  end
+
+enddef
+
+group well
+spin 0 0 0 1
+shift 0 0 0
+end
+
+
+# Mosque
+
+define mosque_stairs
+
+  arc
+  angle 90
+  shift 20 20 0
+  size 30 30 11
+  divisions 8
+  matref boxwall
+  top matref null
+  end
+
+  arc
+  angle 90
+  shift 20 20 11
+  size 30 30 4
+  divisions 8
+  matref roof
+  bottom matref null
+  end
+
+  arc
+  angle 90
+  shift 20 20 15
+  size 15 15 11
+  divisions 6
+  matref boxwall
+  top matref null
+  end
+
+  arc
+  angle 90
+  shift 20 20 26
+  size 15 15 4
+  divisions 6
+  matref roof
+  bottom matref null
+  end
+
+enddef
+
+define mosque_corner
+
+  meshbox
+  shift 50 50 0
+  size 30 30 11
+  matref boxwall
+  top matref null
+  end
+
+  meshbox
+  shift 50 50 11
+  size 30 30 4
+  matref roof
+  bottom matref null
+  end
+
+  meshbox
+  shift 35 35 15
+  size 15 15 11
+  matref boxwall_passable
+  passable
+  end
+
+  meshbox
+  shift 35 35 26
+  size 15 15 4
+  matref roof
+  end
+
+  meshbox
+  shift 55 55 15
+  size 12.5 12.5 36
+  matref boxwall
+  top matref null
+  bottom matref null
+  end
+
+  meshbox
+  shift 55 55 51
+  size 12.5 12.5 4
+  matref roof
+  bottom matref null
+  end
+
+  arc
+  shift 55 55 55
+  size 7.5 7.5 21
+  matref boxwall
+  divisions 16
+  top matref null
+  bottom matref null
+  end
+
+  arc
+  shift 55 55 76
+  size 7.5 7.5 4
+  matref roof
+  divisions 16
+  bottom matref null
+  end
+
+  sphere
+  shift 55 55 75
+  size 10 10 7.5
+  matref gold
+  divisions 6
+  end 
+
+  cone
+  shift 55 55 92
+  size 2.5 2.5 10
+  matref gold
+  bottom matref null
+  flatshading
+  divisions 4
+  passable
+  end 
+
+enddef
+
+define mosque_gate
+
+  meshbox
+  shift -10 40 0
+  size 3 20.5 18
+  matref roof
+  top matref null
+  passable
+  end 
+
+  meshbox
+  shift 10 40 0
+  size 3 20.5 18
+  matref roof
+  top matref null
+  passable
+  end 
+
+  arc
+  angle 180
+  spin 90 1 0 0
+  shift 0 60.5 18 
+  size 13 13 41
+  divisions 12
+  ratio 0.4615
+  matref roof
+  passable
+  end
+
+  meshbox
+  shift -13.75 40 0
+  size 6.25 20 36
+  matref boxwall
+  top matref null
+  end 
+
+  meshbox
+  shift 13.75 40 0
+  size 6.25 20 36
+  matref boxwall
+  top matref null
+  end 
+
+  meshbox
+  shift 0 40 26
+  size 7.5 20 10
+  matref boxwall
+  top matref null
+  end 
+
+enddef
+
+group mosque_stairs
+spin 0 0 0 1
+shift 200 100 0
+end
+
+group mosque_stairs
+spin 90 0 0 1
+shift 200 100 0
+end
+
+group mosque_corner
+spin 180 0 0 1
+shift 200 100 0
+end
+
+group mosque_stairs
+spin 270 0 0 1
+shift 200 100 0
+end
+
+group mosque_gate
+spin 0 0 0 1
+shift 200 100 0
+end
+
+group mosque_gate
+spin 90 0 0 1
+shift 200 100 0
+end
+
+group mosque_gate
+spin 180 0 0 1
+shift 200 100 0
+end
+
+group mosque_gate
+spin 270 0 0 1
+shift 200 100 0
+end
+
+meshbox
+shift 200 100 36
+size 20 20 4
+matref roof
+end 
+
+meshbox
+shift 160 100 36
+size 20 20 4
+matref roof
+bottom matref null
+end 
+
+meshbox
+shift 240 100 36
+size 20 20 4
+matref roof
+bottom matref null
+end 
+
+meshbox
+shift 200 60 36
+size 20 20 4
+matref roof
+bottom matref null
+end 
+
+meshbox
+shift 200 140 36
+size 20 20 4
+matref roof
+bottom matref null
+end 
+
+arc
+shift 200 100 40
+size 17.5 17.5 6
+divisions 16
+matref boxwall
+top matref null
+bottom matref null
+end
+
+arc
+shift 200 100 46
+size 17.5 17.5 4
+divisions 16
+matref roof
+bottom matref null
+end
+
+sphere
+shift 200 100 47.75
+size 20 20 15
+matref gold
+divisions 8
+end 
+
+cone
+shift 200 100 72.25
+size 5 5 20
+matref gold
+bottom matref null
+flatshading
+divisions 4
+passable
+end 
+
+
+# Tall Tower
+
+define talltower
+
+  meshbox
+  shift 22.5 22.5 0 
+  size 17.5 17.5 11
+  matref boxwall
+  top matref null
+  end 
+
+  meshbox
+  shift 22.5 -22.5 0 
+  size 17.5 17.5 11
+  matref boxwall
+  top matref null
+  end 
+
+  meshbox
+  shift -22.5 -22.5 0 
+  size 17.5 17.5 11
+  matref glass_dark
+  top matref null
+  end 
+
+  meshbox
+  shift -30 30 0 
+  size 25 25 11
+  matref boxwall
+  top matref null
+  end 
+
+  meshbox
+  shift -30 47.5 11 
+  size 25 7.5 15
+  matref boxwall
+  top matref null
+  bottom matref null
+  end 
+
+  meshbox
+  shift -47.5 22.5 11 
+  size 7.5 17.5 15
+  matref boxwall
+  top matref null
+  bottom matref null
+  end 
+
+  arc
+  shift -55 55 0 
+  size 15 15 51
+  divisions 24
+  matref boxwall
+  top matref null
+  end 
+
+  cone
+  spin 180 1 0 0
+  shift -55 55 56 
+  size 20 20 20
+  divisions 24
+  matref roof
+  bottom matref null
+  end 
+
+  arc
+  shift -55 55 56 
+  size 20 20 4
+  divisions 24
+  matref roof
+  bottom matref null
+  end 
+
+  arc
+  shift -100 100 0 
+  size 30 30 6
+  divisions 24
+  matref glass_dark
+  top matref null
+  end 
+
+  arc
+  shift -100 100 6 
+  size 30 30 4
+  divisions 24
+  matref roof
+  ratio 0.4
+  end 
+
+  arc
+  shift -100 100 6 
+  size 18 18 4
+  divisions 24
+  matref glass_dark
+  bottom matref null
+  end 
+
+  meshbox
+  shift -30 30 26 
+  size 25 25 4
+  matref roof
+  end 
+
+  meshbox
+  shift 0 0 11 
+  size 40 40 4
+  matref roof
+  end 
+
+  meshbox
+  spin 45 0 0 1
+  shift -72.5 -72.5 11 
+  size 55 7.5 4
+  matref roof
+  end 
+
+  meshbox
+  spin 45 0 0 1
+  shift -52.5 -52.5 0 
+  size 2 2 11
+  matref glass_dark
+  end 
+
+  meshbox
+  spin 45 0 0 1
+  shift -72.5 -72.5 0 
+  size 2 2 11
+  matref glass_dark
+  end 
+
+  meshbox
+  spin 45 0 0 1
+  shift -92.5 -92.5 0 
+  size 2 2 11
+  matref glass_dark
+  end 
+
+  meshbox
+  shift 0 0 15
+  size 25 25 26
+  matref boxwall
+  top matref null
+  end 
+
+  meshbox
+  shift 0 0 41
+  size 25 25 4
+  matref roof
+  bottom matref null
+  end 
+
+  meshbox
+  shift 0 0 45
+  size 15 15 26
+  matref boxwall
+  top matref null
+  bottom matref null
+  end 
+
+  meshbox
+  shift 0 0 71
+  size 15 15 4
+  matref roof
+  bottom matref null
+  end 
+
+  arc
+  shift 0 0 75
+  size 10 10 41
+  matref boxwall
+  divisions 16
+  top matref null
+  bottom matref null
+  end
+
+  sphere
+  hemisphere
+  shift 0 0 106
+  size 10 10 10
+  matref roof
+  bottom matref null
+  divisions 4
+  end 
+
+  meshbox
+  shift -24 -24 45
+  size 1 1 20
+  matref metal
+  bottom matref null
+  end 
+
+  meshbox
+  shift -24 -14.5 45
+  size 1 8.5 20
+  matref glass
+  bottom matref null
+  end 
+
+  meshbox
+  shift -14.5 -24 45
+  size 8.5 1 20
+  matref glass
+  bottom matref null
+  end 
+
+  meshbox
+  shift -24 -5 45
+  size 1 1 20
+  matref metal
+  bottom matref null
+  end 
+
+  meshbox
+  shift -5 -24 45
+  size 1 1 20
+  matref metal
+  bottom matref null
+  end 
+
+enddef
+
+group talltower
+spin 0 0 0 1
+shift 350 250 0
+end
+
+
+# Mass Driver
+
+define canon
+
+  arc
+  spin 90 1 0 0
+  spin 90 0 0 1
+  shift -15 0 30
+  size 13 13 30
+  divisions 24
+  ratio 0.4615
+  matref roof
+  end
+
+  arc
+  spin 90 1 0 0
+  spin 90 0 0 1
+  shift 25 0 30
+  size 13 13 5
+  divisions 24
+  ratio 0.4615
+  matref glass_dark
+  drivethrough
+  end
+
+  meshbox
+  shear 0 -0.5 0
+  shift 0 16.5 0 
+  size 7.5 2.5 22.5
+  matref grey
+  end 
+
+  meshbox
+  shear 0 0.5 0
+  shift 0 -16.5 0 
+  size 7.5 2.5 22.5
+  matref grey
+  end 
+
+  meshbox
+  shift -28 0 22
+  size 23.5 7.5 3
+  matref metal
+  end 
+
+  meshbox # required for a smooth slide
+  shift 0 -5.8 25
+  size 15 1 0.1
+  matref null
+  end
+
+  meshbox # required for a smooth slide
+  shift 0 5.8 25
+  size 15 1 0.1
+  matref null
+  end
+
+  meshbox
+  shift -50 -10 0
+  size 1.5 2.5 45
+  matref tele_inner
+  end 
+
+  meshbox
+  shift -50 10 0
+  size 1.5 2.5 45
+  matref tele_inner
+  end 
+
+  meshbox
+  shift -50 -12.5 0
+  size 1 2.5 47.5
+  matref tele_outer
+  end 
+
+  meshbox
+  shift -50 12.5 0
+  size 1 2.5 47.5
+  matref tele_outer
+  end 
+
+  arc
+  spin 90 1 0 0
+  spin 90 0 0 1
+  shift 15 7 37
+  size 1 1 10
+  divisions 6
+  flatshading
+  matref metal
+  bottom matref null
+  end
+
+  arc
+  spin 90 1 0 0
+  spin 90 0 0 1
+  shift 15 -7 37
+  size 1 1 10
+  divisions 6
+  flatshading
+  matref metal
+  bottom matref null
+  end
+
+  arc
+  spin 90 1 0 0
+  spin 90 0 0 1
+  shift 15 7 23
+  size 1 1 10
+  divisions 6
+  flatshading
+  matref metal
+  bottom matref null
+  end
+
+  arc
+  spin 90 1 0 0
+  spin 90 0 0 1
+  shift 15 -7 23
+  size 1 1 10
+  divisions 6
+  flatshading
+  matref metal
+  bottom matref null
+  end
+
+enddef
+
+group canon
+spin 0 0 0 1
+shift -300 100 0
+end
+
+physics
+name launcher
+linear 120 0 0
+end 
+
+meshbox
+shift -300 100 22
+size 4.5 7.5 3
+matref metal
+phydrv launcher
+end 
+
+meshbox
+shift -300 100 23
+size 3 7 14
+drivethrough
+shootthrough
+matref shiftup
+end 
+
+
+# Mountain Range
+
+define lower_mountains
+
+  meshbox
+  shift 95 -65 0
+  size 15 15 11
+  matref boxwall
+  top matref null
+  end
+
+  meshbox
+  shift 95 -65 11
+  size 15 15 4
+  matref roof
+  bottom matref null
+  end
+
+  meshbox
+  shift 130 -65 11
+  size 20 7.5 4
+  matref roof
+  end
+
+  meshbox
+  shift 165 -65 0
+  size 15 15 26
+  matref boxwall
+  top matref null
+  end
+
+  meshbox
+  shift 165 -65 26
+  size 15 15 4
+  matref roof
+  bottom matref null
+  end
+
+  meshbox
+  spin 45 0 0 1
+  shift 190 -90 26
+  size 7.5 22.5 4
+  matref roof
+  end
+
+  meshbox
+  shift 215 -115 0
+  size 15 15 26
+  matref boxwall
+  top matref null
+  end
+
+  meshbox
+  shift 215 -115 26
+  size 15 15 4
+  matref roof
+  bottom matref null
+  end
+
+  meshbox
+  shift 230 -130 0
+  size 20 20 11
+  matref boxwall
+  top matref null
+  end
+
+  meshbox
+  shift 230 -130 11
+  size 20 20 4
+  matref roof
+  bottom matref null
+  end
+
+  meshbox
+  shift 230 -165 0
+  size 35 15 41
+  matref boxwall
+  top matref null
+  end
+
+  meshbox
+  shift 230 -165 41
+  size 35 15 4
+  matref roof
+  bottom matref null
+  end
+
+  meshbox
+  shift 190 -175 0
+  size 15 15 56
+  matref boxwall
+  top matref null
+  end
+
+  meshbox
+  shift 190 -175 56
+  size 15 15 4
+  matref roof
+  bottom matref null
+  end
+
+  meshbox
+  shift 270 -175 0
+  size 15 15 26
+  matref boxwall
+  top matref null
+  end
+
+  meshbox
+  shift 270 -175 26
+  size 15 15 4
+  matref roof
+  bottom matref null
+  end
+
+  meshbox
+  shift 170 -175 0
+  size 5 10 40
+  shear 0.25 0 0
+  matref boxwall
+  top matref null
+  end
+
+  arc
+  angle 180
+  spin 180 0 0 1
+  shift 95 -80 0
+  size 10 40 6
+  divisions 16
+  matref boxwall
+  top matref null
+  end
+
+  arc
+  angle 180
+  spin 180 0 0 1
+  shift 95 -80 6
+  size 10 40 4
+  divisions 16
+  matref roof
+  bottom matref null
+  end
+
+  arc
+  angle 270
+  spin 180 0 0 1
+  shift 285 -190 0
+  size 15 15 11
+  divisions 12
+  matref boxwall
+  top matref null
+  end
+
+  arc
+  angle 270
+  spin 180 0 0 1
+  shift 285 -190 11
+  size 15 15 4
+  divisions 12
+  matref roof
+  bottom matref null
+  end
+
+  arc
+  angle 90
+  spin 90 0 0 1
+  shift 195 -160 0
+  size 10 10 41
+  divisions 4
+  matref boxwall
+  top matref null
+  end
+
+  arc
+  angle 90
+  spin 90 0 0 1
+  shift 195 -160 41
+  size 10 10 4
+  divisions 4
+  matref roof
+  bottom matref null
+  end
+
+enddef
+
+define middle_mountains
+
+  meshbox
+  shift 165 -295 56
+  size 10 5 4
+  matref roof
+  end
+
+  meshbox
+  shift 190 -285 0
+  size 15 15 56
+  matref boxwall
+  top matref null
+  end
+
+  meshbox
+  shift 190 -285 56
+  size 15 15 4
+  matref roof
+  bottom matref null
+  end
+
+  meshbox
+  shift 170 -310 0
+  size 25 20 41
+  matref boxwall
+  top matref null
+  end
+
+  meshbox
+  shift 170 -310 41
+  size 25 20 4
+  matref roof
+  bottom matref null
+  end
+
+  meshbox
+  shift 140 -305 0
+  size 15 15 56
+  matref boxwall
+  top matref null
+  end
+
+  meshbox
+  shift 140 -305 56
+  size 15 15 4
+  matref roof
+  bottom matref null
+  end
+
+  meshbox
+  shift 225 -295 0
+  size 30 15 26
+  matref boxwall
+  top matref null
+  end
+
+  meshbox
+  shift 225 -295 26
+  size 30 15 4
+  matref roof
+  bottom matref null
+  end
+
+  meshbox
+  shift 250 -330 0
+  size 25 10 11
+  matref boxwall
+  top matref null
+  end
+
+  meshbox
+  shift 250 -330 11
+  size 25 10 4
+  matref roof
+  bottom matref null
+  end
+
+  meshbox
+  shift 225 -370 0
+  size 15 15 41
+  matref boxwall
+  top matref null
+  end
+
+  meshbox
+  shift 225 -370 41
+  size 15 15 4
+  matref roof
+  bottom matref null
+  end
+
+  meshbox
+  shift 305 -320 0
+  size 10 10 11
+  matref boxwall
+  top matref null
+  end
+
+  meshbox
+  shift 305 -320 11
+  size 10 10 4
+  matref roof
+  bottom matref null
+  end
+
+  meshbox
+  shift 285 -325 11
+  size 10 5 4
+  matref roof
+  end
+
+  meshbox
+  shear 0 -0.3333 0
+  shift 175 -325 11
+  size 10 5 30
+  matref roof
+  top matref null
+  bottom matref null
+  end
+
+  meshbox
+  shift 175 -335 41
+  size 10 5 4
+  matref roof
+  bottom matref null
+  end
+
+  arc
+  angle 90
+  spin 90 0 0 1
+  shift 175 -290 0
+  size 15 35 41
+  divisions 6
+  matref boxwall
+  top matref null
+  end
+
+  arc
+  angle 90
+  spin 90 0 0 1
+  shift 175 -290 41
+  size 15 35 4
+  divisions 6
+  matref roof
+  bottom matref null
+  end
+
+enddef
+
+define outer_mountains
+
+  meshbox
+  shift 30 -305 0
+  size 15 15 56
+  matref boxwall
+  top matref null
+  end
+
+  meshbox
+  shift 30 -305 56
+  size 15 15 4
+  matref roof
+  bottom matref null
+  end
+
+  meshbox
+  shift 30 -285 0
+  size 10 5 40
+  shear 0 -0.25 0
+  matref boxwall
+  top matref null
+  bottom matref null
+  end
+
+  meshbox
+  shift 30 -335 0
+  size 5 15 41
+  matref boxwall
+  top matref null
+  end
+
+  meshbox
+  shift 30 -335 41
+  size 5 15 4
+  matref roof
+  bottom matref null
+  end
+
+  meshbox
+  shift 10 -345 0
+  size 15 5 41
+  matref boxwall
+  top matref null
+  end
+
+  meshbox
+  shift 10 -345 41
+  size 15 5 4
+  matref roof
+  bottom matref null
+  end
+
+  meshbox
+  shift 5 -310 0
+  size 10 10 41
+  matref boxwall
+  top matref null
+  end
+
+  meshbox
+  shift 5 -310 41
+  size 10 10 4
+  matref roof
+  bottom matref null
+  end
+
+  meshbox
+  shift 0 -330 16
+  size 5 9 24
+  matref glass_dark
+  top matref null
+  bottom matref null
+  end
+
+  meshbox
+  shift 0 -339.5 15
+  size 5 0.5 26
+  matref metal
+  top matref null
+  bottom matref null
+  end
+
+  meshbox
+  shift 0 -320.5 15
+  size 5 0.5 26
+  matref metal
+  top matref null
+  bottom matref null
+  end
+
+  meshbox
+  shift 0 -330 40
+  size 5 9 1
+  matref metal
+  top matref null
+  end
+
+  meshbox
+  shift 0 -330 15
+  size 5 9 1
+  matref metal
+  bottom matref null
+  end
+
+  meshbox
+  shift 0 -330 41
+  size 5 10 4
+  matref roof
+  bottom matref null
+  end
+
+  meshbox
+  shift -15 -310 0
+  size 10 10 26
+  matref boxwall
+  top matref null
+  end
+
+  meshbox
+  shift -15 -310 26
+  size 10 10 4
+  matref roof
+  bottom matref null
+  end
+
+  meshbox
+  shift -15 -345 0
+  size 10 5 11
+  matref boxwall
+  top matref null
+  end
+
+  meshbox
+  shift -15 -345 11
+  size 10 5 4
+  matref roof
+  bottom matref null
+  end
+
+  meshbox
+  shift -30 -360 0
+  size 15 10 11
+  matref boxwall
+  top matref null
+  end
+
+  meshbox
+  shift -30 -360 11
+  size 15 10 4
+  matref roof
+  bottom matref null
+  end
+
+  arc
+  angle 90
+  spin 270 0 0 1
+  shift -15 -350 0
+  size 20 20 11
+  divisions 6
+  matref boxwall
+  top matref null
+  end
+
+  arc
+  angle 90
+  spin 270 0 0 1
+  shift -15 -350 11
+  size 20 20 4
+  divisions 6
+  matref roof
+  bottom matref null
+  end
+
+  arc
+  angle 90
+  spin 0 0 0 1
+  shift -25 -300 0
+  size 35 35 11
+  divisions 8
+  matref boxwall
+  top matref null
+  end
+
+  arc
+  angle 90
+  spin 0 0 0 1
+  shift -25 -300 11
+  size 35 35 4
+  divisions 8
+  matref roof
+  bottom matref null
+  end
+
+  arc
+  angle 90
+  spin 0 0 0 1
+  shift -25 -300 15
+  size 20 20 11
+  divisions 6
+  matref boxwall
+  top matref null
+  end
+
+  arc
+  angle 90
+  spin 0 0 0 1
+  shift -25 -300 26
+  size 20 20 4
+  divisions 6
+  matref roof
+  bottom matref null
+  end
+
+enddef
+
+define dam
+
+  meshbox
+  shift -40 -270 0
+  size 15 30 41
+  matref boxwall
+  top matref null
+  end
+
+  meshbox
+  shift -40 -270 41
+  size 15 30 4
+  matref roof
+  bottom matref null
+  end
+
+  meshbox
+  shift -125 -355 0
+  size 30 15 41
+  matref boxwall
+  top matref null
+  end
+
+  meshbox
+  shift -125 -355 41
+  size 30 15 4
+  matref roof
+  bottom matref null
+  end
+
+  meshbox
+  shift -40 -310 0
+  size 15 10 26
+  matref boxwall
+  top matref null
+  end
+
+  meshbox
+  shift -45 -310 26
+  size 10 10 4
+  matref roof
+  bottom matref null
+  end
+
+  meshbox
+  shift -25 -330 11
+  size 30 10 4
+  matref roof
+  end
+
+  meshbox
+  shift -30 -330 16
+  size 5 9 24
+  matref glass_dark
+  top matref null
+  bottom matref null
+  end
+
+  meshbox
+  shift -30 -339.5 15
+  size 5 0.5 26
+  matref metal
+  top matref null
+  bottom matref null
+  end
+
+  meshbox
+  shift -30 -320.5 15
+  size 5 0.5 26
+  matref metal
+  top matref null
+  bottom matref null
+  end
+
+  meshbox
+  shift -30 -330 40
+  size 5 9 1
+  matref metal
+  top matref null
+  end
+
+  meshbox
+  shift -30 -330 15
+  size 5 9 1
+  matref metal
+  bottom matref null
+  end
+
+  meshbox
+  shift -30 -310 26
+  size 5 10 15
+  matref boxwall
+  top matref null
+  end
+
+  meshbox
+  shift -30 -320 41
+  size 5 20 4
+  matref roof
+  bottom matref null
+  end
+
+  meshbox
+  shift -40 -345 0
+  size 15 5 41
+  matref boxwall
+  top matref null
+  end
+
+  meshbox
+  shift -40 -345 41
+  size 15 5 4
+  matref roof
+  bottom matref null
+  end
+
+  meshbox
+  shift -50 -360 0
+  size 5 10 41
+  matref boxwall
+  top matref null
+  end
+
+  meshbox
+  shift -50 -360 41
+  size 5 10 4
+  matref roof
+  bottom matref null
+  end
+
+  meshbox
+  shift -65 -350 0
+  size 10 10 11
+  matref boxwall
+  top matref null
+  end
+
+  meshbox
+  shift -65 -350 11
+  size 10 10 4
+  matref roof
+  bottom matref null
+  end
+
+  meshbox
+  shift -85 -350 0
+  size 10 10 26
+  matref boxwall
+  top matref null
+  end
+
+  meshbox
+  shift -85 -350 26
+  size 10 10 4
+  matref roof
+  bottom matref null
+  end
+
+  meshbox
+  shift -75 -365 0
+  size 20 5 41
+  matref boxwall
+  top matref null
+  end
+
+  meshbox
+  shift -75 -365 41
+  size 20 5 4
+  matref roof
+  bottom matref null
+  end
+
+  meshbox
+  shift -95 -375 0
+  size 30 5 11
+  matref boxwall
+  top matref null
+  end
+
+  meshbox
+  shift -95 -395 0
+  size 30 5 11
+  matref boxwall
+  top matref null
+  end
+
+  meshbox
+  shift -95 -385 11
+  size 30 15 4
+  matref roof
+  end
+
+  meshbox
+  shift -15 -345 41
+  size 10 5 4
+  matref roof
+  end
+
+  arc
+  angle 90
+  spin 90 0 0 1
+  shift -55 -340 0
+  size 90 90 41
+  divisions 12
+  ratio 0.1667
+  matref grey
+  top matref null
+  end
+
+  arc
+  angle 90
+  spin 90 0 0 1
+  shift -55 -340 41
+  size 90 90 4
+  divisions 12
+  ratio 0.1667
+  matref roof
+  bottom matref null
+  end
+
+  arc
+  angle 90
+  spin 90 0 0 1
+  shift -55 -340 0
+  size 75 75 5.5
+  divisions 12
+  ratio 0.1333
+  matref grey_dark
+  top matref null
+  end
+
+  arc
+  angle 90
+  spin 90 0 0 1
+  shift -55 -340 5.5
+  size 75 75 2
+  divisions 12
+  ratio 0.1333
+  matref metal
+  bottom matref null
+  end
+
+  arc
+  angle 90
+  spin 90 0 0 1
+  shift -55 -340 11
+  size 20 20 4
+  divisions 8
+  matref roof
+  end
+
+  arc
+  angle 90
+  spin 270 0 0 1
+  shift -45 -350 41
+  size 20 20 4
+  divisions 8
+  matref roof
+  end
+
+  arc
+  angle 90
+  spin 90 0 0 1
+  shift -35 -360 42 # Dam lake water level
+  size 110 110 0.01
+  divisions 12
+  passable
+  matref null
+  top matref water
+  bottom matref water
+  flatshading
+  end
+
+  meshbox
+  shift 15 -330 44 # A little higher then dam lake to simulate correct physics
+  size 10 10 0.01
+  passable
+  matref null
+  top matref water
+  bottom matref water
+  flatshading
+  end
+
+enddef
+
+define dam_support
+
+  meshbox
+  shift 0 92.5 0
+  size 2 2.75 5
+  matref roof
+  top matref null
+  end 
+
+  meshbox
+  shear 0 -0.15 0
+  shift 0 92.5 5
+  size 2 2.75 25
+  matref roof
+  bottom matref null
+  end 
+
+enddef
+
+define dam_pipes
+
+  arc
+  spin 90 1 0 0
+  shift -2.5 -12.5 15
+  size 2 2 50
+  divisions 6
+  flatshading
+  matref copper
+  top matref null
+  bottom matref null
+  end
+
+  arc
+  spin 90 1 0 0
+  shift 2.5 -12.5 15
+  size 2 2 50
+  divisions 6
+  flatshading
+  matref copper
+  top matref null
+  bottom matref null
+  end
+
+  meshbox
+  shift 0 -10 12
+  size 6 2.5 6
+  matref copper
+  end 
+
+  meshbox
+  shift 0 -65 12
+  size 6 2.5 6
+  matref copper
+  end 
+
+  meshbox
+  shift 0 -37.5 16.75
+  size 5 25 0.01
+  matref null
+  end 
+
+enddef
+
+define dam_pipe_towers
+
+  arc
+  shift 0 0 0
+  size 10 10 20.5
+  divisions 16
+  matref boxwall
+  top matref null
+  end
+
+  arc
+  shift 0 0 20.5
+  size 10 10 4
+  divisions 16
+  matref roof
+  top matref null
+  bottom matref null
+  end
+
+  arc
+  shift 0 0 24.5
+  size 10 10 11
+  divisions 16
+  matref boxwall
+  top matref null
+  bottom matref null
+  end
+
+  arc
+  shift 0 0 35.5
+  size 10 10 4
+  divisions 16
+  matref roof
+  bottom matref null
+  end
+
+  arc
+  shift 0 -75 0
+  size 10 10 20.5
+  divisions 16
+  matref boxwall
+  top matref null
+  end
+
+  arc
+  shift 0 -75 20.5
+  size 10 10 4
+  divisions 16
+  matref roof
+  bottom matref null
+  end
+
+enddef
+
+define mountain_tower
+
+  meshbox
+  shift 0 0 29
+  size 17.5 17.5 4
+  matref roof
+  end 
+
+  meshbox
+  size 10 10 29
+  matref boxwall
+  top matref null
+  end 
+
+  arc
+  shift 0 0 33
+  size 8.75 8.75 14
+  divisions 16
+  matref boxwall
+  top matref null
+  bottom matref null
+  end
+
+  arc
+  shift 0 0 47
+  size 12.5 12.5 4
+  divisions 16
+  matref roof
+  end
+
+  arc
+  shift 0 0 51
+  size 7.5 7.5 16
+  divisions 16
+  matref boxwall
+  top matref null
+  bottom matref null
+  end
+
+  arc
+  shift 0 0 67
+  size 7.5 7.5 4
+  divisions 16
+  matref roof
+  top matref null
+  bottom matref null
+  end
+
+  sphere
+  shift 0 0 65.9
+  size 10 10 7.5
+  matref gold
+  divisions 4
+  end 
+
+  sphere
+  shift 0 0 79.9
+  size 6 6 4.5
+  matref gold
+  divisions 3
+  passable
+  end 
+
+  cone
+  shift 0 0 82.7
+  size 3 3 20
+  matref gold
+  bottom matref null
+  flatshading
+  divisions 4
+  passable
+  end 
+
+enddef
+
+define bow_bridge
+
+  meshbox
+  shift 0 25 0
+  size 5 2.5 56
+  matref roof
+  top matref null
+  end
+
+  meshbox
+  shift 0 -25 0
+  size 5 2.5 56
+  matref roof
+  top matref null
+  end
+
+  meshbox
+  shift 0 21.25 0
+  size 4 1.25 20
+  matref roof
+  top matref null
+  noradar
+  end
+
+  meshbox
+  shift 0 -21.25 0
+  size 4 1.25 20
+  matref roof
+  top matref null
+  noradar
+  end
+
+  meshbox
+  shift 0 0 45
+  size 2.5 1 11
+  matref roof
+  top matref null
+  bottom matref null
+  noradar
+  end
+
+  meshbox
+  shift 0 12.5 40
+  size 2.5 1 16
+  matref roof
+  top matref null
+  bottom matref null
+  noradar
+  end
+
+  meshbox
+  shift 0 -12.5 40
+  size 2.5 1 16
+  matref roof
+  top matref null
+  bottom matref null
+  noradar
+  end
+
+  arc
+  angle 180
+  spin 90 1 0 0
+  spin 90 0 0 1
+  shift -4 0 20
+  size 25 25 8
+  divisions 16
+  ratio 0.2
+  matref roof
+  noradar
+  end
+
+enddef
+
+group lower_mountains
+spin 0 0 0 1
+shift 70 0 0
+end
+
+group middle_mountains
+spin 0 0 0 1
+shift 70 0 0
+end
+
+group outer_mountains
+spin 0 0 0 1
+shift 70 0 0
+end
+
+group dam
+spin 0 0 0 1
+shift 70 0 0
+end
+
+group dam_pipes
+spin 0 0 0 1
+shift 30 -175 15
+end
+
+group dam_pipes
+spin 225 0 0 1
+shift 30 -175 0
+end
+
+group dam_pipe_towers
+spin 225 0 0 1
+shift 30 -175 0
+end
+
+group dam_support
+spin 15 0 0 1
+shift 15 -340 0
+end
+
+group dam_support
+spin 30 0 0 1
+shift 15 -340 0
+end
+
+group dam_support
+spin 45 0 0 1
+shift 15 -340 0
+end
+
+group dam_support
+spin 60 0 0 1
+shift 15 -340 0
+end
+
+group dam_support
+spin 75 0 0 1
+shift 15 -340 0
+end
+
+group bow_bridge
+spin 0 0 0 1
+shift 260 -230 0
+end
+
+meshbox # bow-bridge road, seperate here or tank would get stuck after spin (bug)
+shift 260 -230 56
+size 5 40 4
+matref roof
+end
+
+group bow_bridge
+spin 90 0 0 1
+shift 155 -305 0
+end
+
+meshbox # bow-bridge road, seperate here or tank would get stuck after spin (bug)
+shift 155 -305 56
+size 40 5 4
+matref roof
+end
+
+group mountain_tower
+spin 0 0 0 1
+shift 245 -330 45
+end
+
+
+# Glass Stuff
+
+define glass_wall
+
+  arc
+  angle 90
+  spin 270 0 0 1
+  shift -250 -75 0
+  size 47 47 11
+  divisions 12
+  ratio 0.0426
+  matref glass
+  top matref null
+  end
+
+  arc
+  angle 90
+  spin 270 0 0 1
+  shift -250 -75 15
+  size 47 47 11
+  divisions 12
+  ratio 0.0426
+  matref glass
+  top matref null
+  bottom matref null
+  end
+
+  arc
+  angle 90
+  spin 270 0 0 1
+  shift -250 -75 11
+  size 47 47 4
+  divisions 12
+  ratio 0.0426
+  matref roof
+  end
+
+  arc
+  angle 90
+  spin 270 0 0 1
+  shift -250 -75 26
+  size 47 47 4
+  divisions 12
+  ratio 0.0426
+  matref roof
+  end
+
+  meshbox
+  shift -300 -97.5 11
+  size 2.5 22.5 4
+  matref roof
+  end
+
+  meshbox
+  shift -200 -65 0
+  size 5 10 11
+  matref boxwall
+  top matref null
+  end
+
+  meshbox
+  shift -200 -65 11
+  size 5 10 4
+  matref roof
+  bottom matref null
+  end
+
+  meshbox
+  shift -200 -65 15
+  size 5 10 11
+  matref boxwall
+  top matref null
+  bottom matref null
+  end
+
+  meshbox
+  shift -290 -125 0
+  size 40 5 11
+  matref boxwall
+  top matref null
+  end
+
+  meshbox
+  shift -290 -125 11
+  size 40 5 4
+  matref roof
+  bottom matref null
+  end
+
+  meshbox
+  shift -260 -125 15
+  size 10 5 11
+  matref boxwall
+  top matref null
+  bottom matref null
+  end
+
+enddef
+
+define glass_tunnel
+
+  meshbox # required for a smooth slide
+  shift -306.6 -200 15
+  size 1 55 0.1
+  matref null
+  end
+
+  meshbox # required for a smooth slide
+  shift -293.4 -200 15
+  size 1 55 0.1
+  matref null
+  end
+
+  arc
+  angle 270
+  spin 90 1 0 0
+  spin 45 0 1 0
+  shift -300 -155 20.657
+  size 10 10 90
+  divisions 16
+  ratio 0.2
+  matref glass
+  end
+
+#  Using Trepan's glass_tunnel_road mesh instead
+#  arc
+#  angle 90
+#  spin 90 1 0 0
+#  spin 135 0 1 0
+#  shift -300 -155 20.657
+#  size 10 10 90
+#  divisions 1 
+#  ratio 0.2
+#  matref roof
+#  flatshading
+#  end
+
+  arc
+  angle 270
+  spin 90 1 0 0
+  spin 45 0 1 0
+  shift -300 -245 20.657
+  size 13.7 13.7 10
+  divisions 16
+  ratio 0.4161
+  matref roof
+  end
+
+#  Using Trepan's glass_tunnel_road mesh instead
+#  arc
+#  angle 90
+#  spin 90 1 0 0
+#  spin 135 0 1 0
+#  shift -300 -245 20.657
+#  size 13.7 13.7 10
+#  divisions 1
+#  ratio 0.4161
+#  matref roof
+#  flatshading
+#  end
+
+  meshbox
+  shift -300 -250 0
+  size 9.7 5 11
+  matref roof
+  top matref null
+  end
+
+  meshbox
+  shift -300 -262.5 11
+  size 2.5 7.5 4
+  matref roof
+  end
+
+  arc
+  angle 270
+  spin 90 1 0 0
+  spin 45 0 1 0
+  shift -300 -145 20.657
+  size 13.7 13.7 10
+  divisions 16
+  ratio 0.4161
+  matref roof
+  end
+
+#  Using Trepan's glass_tunnel_road mesh instead
+#  arc
+#  angle 90
+#  spin 90 1 0 0
+#  spin 135 0 1 0
+#  shift -300 -145 20.657
+#  size 13.7 13.7 10
+#  divisions 1
+#  ratio 0.4161
+#  matref roof
+#  flatshading
+#  end
+
+  meshbox
+  shift -300 -150 0
+  size 9.7 5 11
+  matref roof
+  top matref null
+  end
+
+  meshbox
+  shift -300 -137.5 11
+  size 2.5 7.5 4
+  matref roof
+  end
+
+enddef
+
+define glass_tunnel_road # (credits to Trepan for this Wings exported version)
+  mesh
+    #8 vertices, 6 faces
+    vertex -305.65686035 -155.00000000 15.00000000
+    vertex -305.65686035 -245.00000000 15.00000000
+    vertex -307.07107544 -155.00000000 13.58593273
+    vertex -307.07107544 -245.00000000 13.58593559
+    vertex -294.34313965 -155.00000000 15.00000000
+    vertex -294.34313965 -245.00000000 15.00000000
+    vertex -292.92892456 -155.00000000 13.58593178
+    vertex -292.92892456 -245.00000000 13.58593559
+    texcoord 0 0
+    texcoord 0 11.25000000
+    texcoord 8.00000000 0
+    texcoord 8.00000000 11.25000000
+    matref roof
+    face
+      vertices 0 2 3 1
+      texcoords 0 2 3 1
+    endface
+    face
+      vertices 0 4 6 2
+      texcoords 0 2 3 1
+    endface
+    face
+      vertices 1 5 4 0
+      texcoords 3 1 0 2
+    endface
+    face
+      vertices 2 6 7 3
+      texcoords 0 2 3 1
+    endface
+    face
+      vertices 3 7 5 1
+      texcoords 0 2 3 1
+    endface
+    face
+      vertices 5 7 6 4
+      texcoords 3 1 0 2
+    endface
+  end
+
+  mesh
+    #8 vertices, 6 faces
+    vertex -305.65646362 -145.00000000 15.00000000
+    vertex -305.65646362 -155.00000000 15.00000000
+    vertex -309.68734741 -145.00000000 10.96963787
+    vertex -309.68734741 -155.00000000 10.96963787
+    vertex -294.34353638 -145.00000000 15.00000000
+    vertex -294.34353638 -155.00000000 15.00000000
+    vertex -290.31262207 -145.00000000 10.96963692
+    vertex -290.31262207 -155.00000000 10.96963692
+    texcoord 0 0
+    texcoord 0 1.25000000
+    texcoord 11.00000000 0
+    texcoord 11.00000000 1.25000000
+    matref roof
+    face
+      vertices 0 2 3 1
+      texcoords 0 2 3 1
+    endface
+    face
+      vertices 0 4 6 2
+      texcoords 0 2 3 1
+    endface
+    face
+      vertices 1 5 4 0
+      texcoords 3 1 0 2
+    endface
+    face
+      vertices 2 6 7 3
+      texcoords 0 2 3 1
+    endface
+    face
+      vertices 3 7 5 1
+      texcoords 0 2 3 1
+    endface
+    face
+      vertices 5 7 6 4
+      texcoords 3 1 0 2
+    endface
+  end
+
+  mesh
+    #8 vertices, 6 faces
+    vertex -305.65646362 -245.00000000 15.00000000
+    vertex -305.65646362 -255.00000000 15.00000000
+    vertex -309.68734741 -245.00000000 10.96963787
+    vertex -309.68734741 -255.00000000 10.96963787
+    vertex -294.34353638 -245.00000000 15.00000000
+    vertex -294.34353638 -255.00000000 15.00000000
+    vertex -290.31262207 -245.00000000 10.96963692
+    vertex -290.31262207 -255.00000000 10.96963692
+    texcoord 0 0
+    texcoord 0 1.25000000
+    texcoord 11.00000000 0
+    texcoord 11.00000000 1.25000000
+    matref roof
+    face
+      vertices 0 2 3 1
+      texcoords 0 2 3 1
+    endface
+    face
+      vertices 0 4 6 2
+      texcoords 0 2 3 1
+    endface
+    face
+      vertices 1 5 4 0
+      texcoords 3 1 0 2
+    endface
+    face
+      vertices 2 6 7 3
+      texcoords 0 2 3 1
+    endface
+    face
+      vertices 3 7 5 1
+      texcoords 0 2 3 1
+    endface
+    face
+      vertices 5 7 6 4
+      texcoords 3 1 0 2
+    endface
+  end
+enddef
+
+group glass_wall
+spin 0 0 0 1
+shift 0 0 0
+end
+
+group glass_tunnel
+spin 0 0 0 1
+shift 0 0 0
+end
+
+group glass_tunnel_road
+spin 0 0 0 1
+shift 0 0 0
+end
+
+
+# The Furnace
+
+define furnace
+
+  meshbox
+  shift 10 0 0
+  size 40 30 11
+  matref boxwall
+  top matref null
+  end
+
+  meshbox
+  shift 10 0 11
+  size 40 30 4
+  matref roof
+  bottom matref null
+  end
+
+  meshbox
+  shift 0 0 15
+  size 20 20 11
+  matref boxwall
+  top matref null
+  end
+
+  meshbox
+  shift 0 0 26
+  size 20 20 4
+  matref roof
+  bottom matref null
+  end
+
+  arc
+  shift 0 0 30
+  size 10 10 6
+  divisions 16
+  matref boxwall
+  top matref null
+  bottom matref null
+  end
+
+  arc
+  shift 0 0 36
+  size 10 10 4
+  divisions 16
+  matref roof
+  top matref null
+  bottom matref null
+  end
+
+  cone
+  shift 0 0 40
+  size 10 10 50
+  divisions 16
+  matref grey
+  bottom matref null
+  end
+
+  arc
+  shift 0 0 60
+  size 6 6 60
+  divisions 16
+  matref grey
+  bottom matref null
+  top matref null
+  end
+
+  arc
+  shift 0 0 120
+  size 7.5 7.5 15
+  divisions 16
+  matref grey_dark
+  noradar
+  passable
+  end
+
+  arc
+  shift 0 0 135
+  size 6 6 5
+  divisions 16
+  matref grey
+  bottom matref null
+  noradar
+  passable
+  end
+
+  meshbox
+  shift 2 2 140
+  size 1 1 5
+  matref grey_dark
+  bottom matref null
+  noradar
+  passable
+  end
+
+  meshbox
+  shift -2 2 140
+  size 1 1 5
+  matref grey_dark
+  bottom matref null
+  noradar
+  passable
+  end
+
+  meshbox
+  shift 2 -2 140
+  size 1 1 5
+  matref grey_dark
+  bottom matref null
+  noradar
+  passable
+  end
+
+  meshbox
+  shift -2 -2 140
+  size 1 1 5
+  matref grey_dark
+  bottom matref null
+  noradar
+  passable
+  end
+
+  meshbox
+  shift 0 0 140
+  size 0.25 0.25 7
+  matref grey_dark
+  top matref null
+  bottom matref null
+  noradar
+  passable
+  end
+
+  meshbox
+  shift 0 0 147
+  size 0.75 0.75 1.5
+  matref strobe_light
+  passable
+  end
+
+enddef
+
+group furnace
+spin 180 0 0 1
+shift -300 -300 0
+end
+
+group furnace
+spin 0 0 0 1
+shift -215 -350 0
+end
+
+arc
+spin 90 0 1 0
+shift -270 -325 3
+size 2 2 25
+divisions 6
+flatshading
+matref copper
+top matref null
+bottom matref null
+end
+
+arc
+spin 90 0 1 0
+shift -270 -325 8
+size 2 2 25
+divisions 6
+flatshading
+matref copper
+top matref null
+bottom matref null
+end
+
+meshbox
+shift -257.5 -325 11
+size 12.5 5 4
+matref roof
+end 
+
+
+# Office
+
+define office
+
+  meshbox
+  shift -32.5 17.5 0
+  size 17.5 32.5 11
+  matref boxwall
+  top matref null
+  end 
+
+  meshbox
+  shift 17.5 -32.5 0
+  size 32.5 17.5 11
+  matref boxwall
+  top matref null
+  end 
+
+  meshbox
+  shift 37.5 0 0
+  size 2.5 15 11
+  matref boxwall_passable
+  top matref null
+  passable
+  end 
+
+  meshbox
+  shift 0 37.5 0
+  size 15 2.5 11
+  matref boxwall_passable
+  top matref null
+  passable
+  end 
+
+  arc
+  angle 90
+  spin 0 0 0 1
+  shift 15 15 0
+  size 25 25 11
+  divisions 8
+  ratio 0.2
+  matref boxwall
+  top matref null
+  end
+
+  arc
+  angle 90
+  spin 180 0 0 1
+  shift -15 -15 0
+  size 35 35 11
+  divisions 8
+  matref boxwall
+  top matref null
+  end
+
+  meshbox
+  shift -17.5 32.5 11
+  size 32.5 17.5 4
+  matref roof
+  end 
+
+  meshbox
+  shift 17.5 -32.5 11
+  size 32.5 17.5 4
+  matref roof
+  end 
+
+  meshbox
+  shift 0 0 11
+  size 50 15 4
+  matref roof
+  end 
+
+  arc
+  angle 90
+  spin 0 0 0 1
+  shift 15 15 11
+  size 35 35 4
+  divisions 8
+  matref roof
+  end
+
+  arc
+  angle 90
+  spin 180 0 0 1
+  shift -15 -15 11
+  size 35 35 4
+  divisions 8
+  matref roof
+  bottom matref null
+  end
+
+  meshbox
+  shift 0 25 15
+  size 15 10 6
+  matref boxwall
+  top matref null
+  end 
+
+  meshbox
+  shift 0 -25 15
+  size 15 10 6
+  matref boxwall
+  top matref null
+  end 
+
+  meshbox
+  shift 0 25 21
+  size 15 10 4
+  matref roof
+  bottom matref null
+  end 
+
+  meshbox
+  shift 0 -25 21
+  size 15 10 4
+  matref roof
+  bottom matref null
+  end 
+
+  meshbox
+  shift 40 -40 15
+  size 10 10 11
+  matref boxwall
+  top matref null
+  bottom matref null
+  end 
+
+  meshbox
+  shift 0 11.5 15
+  size 35 3.5 29
+  matref boxwall
+  top matref null
+  bottom matref null
+  end 
+
+  meshbox
+  shift 0 -11.5 15
+  size 35 3.5 29
+  matref boxwall
+  top matref null
+  bottom matref null
+  end 
+
+  meshbox
+  shift 0 0 36
+  size 35 8 8
+  matref boxwall
+  top matref null
+  end 
+
+  meshbox
+  shift 0 0 44
+  size 35 15 4
+  matref roof
+  bottom matref null
+  end 
+
+  meshbox
+  shift -45 45 0
+  size 15 15 33.5
+  matref boxwall
+  top matref null
+  end 
+
+  meshbox
+  shift -45 45 33.5
+  size 15 15 4
+  matref roof
+  bottom matref null
+  end 
+
+  meshbox
+  shift -45 55 37.5
+  size 15 5 25
+  matref boxwall
+  top matref null
+  bottom matref null
+  end 
+
+  meshbox
+  shift -55 40 37.5
+  size 5 10 25
+  matref boxwall
+  top matref null
+  bottom matref null
+  end 
+
+  meshbox
+  shift -32.5 32.5 37.5
+  size 2.5 2.5 25
+  matref roof
+  top matref null
+  bottom matref null
+  end 
+
+  meshbox
+  shift -45 45 62.5
+  size 15 15 4
+  matref roof
+  top matref null
+  end 
+
+  meshbox
+  shift -45 45 66.5
+  size 15 15 5.5
+  matref boxwall
+  top matref null
+  bottom matref null
+  end 
+
+  meshbox
+  shift -45 45 72
+  size 15 15 4
+  matref roof
+  bottom matref null
+  end 
+
+  meshbox
+  shift -45 45 76
+  size 10 10 14
+  matref boxwall
+  top matref null
+  bottom matref null
+  end 
+
+  meshbox
+  shift -45 45 90
+  size 10 10 4
+  matref roof
+  bottom matref null
+  end 
+
+  meshbox
+  shift -45 62.5 0
+  size 5 2.5 45
+  matref boxwall
+  top matref null
+  end 
+
+  meshbox
+  shear 0 -0.5 0
+  shift -45 62.5 45
+  size 5 2.5 10
+  matref roof
+  top matref null
+  bottom matref null
+  end 
+
+  meshbox
+  shift -62.5 45 0
+  size 2.5 5 45
+  matref boxwall
+  top matref null
+  end 
+
+  meshbox
+  shear 0.5 0 0
+  shift -62.5 45 45
+  size 2.5 5 10
+  matref roof
+  top matref null
+  bottom matref null
+  end 
+
+  arc
+  shift -45 45 94
+  size 8 8 6
+  divisions 16
+  matref boxwall
+  top matref null
+  bottom matref null
+  end
+
+  arc
+  shift -45 45 100
+  size 8 8 4
+  divisions 16
+  matref roof
+  bottom matref null
+  end
+
+  sphere
+  hemisphere
+  shift -45 45 94
+  size 6 6 4.5
+  matref gold_glass
+  bottom matref null
+  divisions 4
+  passable
+  end 
+
+  meshbox
+  shift 67.5 -40 26
+  size 37.5 10 4
+  matref roof
+  end 
+
+  meshbox
+  shift 40 -77.5 26
+  size 10 27.5 4
+  matref roof
+  end 
+
+  arc
+  shift 20 0 48
+  size 12.5 12.5 6
+  divisions 16
+  matref boxwall
+  top matref null
+  bottom matref null
+  end
+
+  arc
+  shift 20 0 54
+  size 12.5 12.5 4
+  divisions 16
+  matref roof
+  bottom matref null
+  end
+
+  sphere
+  hemisphere
+  shift 20 0 48
+  size 10 10 7.5
+  matref gold_glass
+  bottom matref null
+  divisions 6
+  passable
+  end 
+
+  arc
+  shift -20 0 48
+  size 12.5 12.5 6
+  divisions 16
+  matref boxwall
+  top matref null
+  bottom matref null
+  end
+
+  arc
+  shift -20 0 54
+  size 12.5 12.5 4
+  divisions 16
+  matref roof
+  bottom matref null
+  end
+
+  sphere
+  hemisphere
+  shift -20 0 48
+  size 10 10 7.5
+  matref gold_glass
+  bottom matref null
+  divisions 6
+  passable
+  end 
+
+  arc
+  angle 180
+  spin 90 0 0 1
+  shift 160 0 0
+  size 10 10 11
+  divisions 8
+  matref boxwall 
+  end
+
+  arc
+  angle 180
+  spin 90 0 0 1
+  shift 160 0 11
+  size 10 10 4
+  divisions 8
+  matref roof
+  end
+
+  meshbox
+  shift 170 0 0
+  size 10 10 11
+  matref boxwall
+  top matref null
+  end 
+
+  meshbox
+  shift 170 0 11
+  size 10 10 4
+  matref roof
+  bottom matref null
+  end 
+
+  arc
+  angle 45
+  spin 45 0 0 1
+  shift 180 0 0
+  size 10 10 11
+  divisions 2
+  matref boxwall 
+  top matref null
+  end
+
+  arc
+  angle 45
+  spin 45 0 0 1
+  shift 180 0 11
+  size 10 10 4
+  divisions 2
+  matref roof
+  top matref null
+  bottom matref null
+  end
+
+  arc
+  angle 180
+  spin 45 0 0 1
+  shift 180 0 15
+  size 10 10 5.5
+  divisions 8
+  matref boxwall 
+  top matref null
+  bottom matref null
+  end
+
+  arc
+  angle 180
+  spin 45 0 0 1
+  shift 180 0 20.5
+  size 10 10 4
+  divisions 8
+  matref roof
+  bottom matref null
+  end
+
+  arc
+  angle 180
+  spin 225 0 0 1
+  shift 194.1421 -14.1421 0
+  size 10 10 11
+  divisions 8
+  matref boxwall 
+  top matref null
+  end
+
+  arc
+  angle 180
+  spin 225 0 0 1
+  shift 194.1421 -14.1421 11
+  size 10 10 4
+  divisions 8
+  matref roof
+  top matref null
+  bottom matref null
+  end
+
+  arc
+  angle 180
+  spin 225 0 0 1
+  shift 194.1421 -14.1421 15
+  size 10 10 5.5
+  divisions 8
+  matref boxwall 
+  top matref null
+  bottom matref null
+  end
+
+  arc
+  angle 180
+  spin 225 0 0 1
+  shift 194.1421 -14.1421 20.5
+  size 10 10 4
+  divisions 8
+  matref roof
+  bottom matref null
+  end
+
+  meshbox
+  spin 45 0 0 1
+  shift 187.071 -7.071 0
+  size 10 10 11
+  matref boxwall
+  top matref null
+  end 
+
+  meshbox
+  spin 45 0 0 1
+  shift 187.071 -7.071 11
+  size 10 10 4
+  matref roof
+  top matref null
+  bottom matref null
+  end 
+
+  meshbox
+  spin 45 0 0 1
+  shift 187.071 -7.071 15
+  size 10 10 5.5
+  matref boxwall
+  top matref null
+  bottom matref null
+  end 
+
+  meshbox
+  spin 45 0 0 1
+  shift 187.071 -7.071 20.5
+  size 10 10 4
+  matref roof
+  bottom matref null
+  end 
+
+enddef
+
+define office_gate
+
+  arc
+  angle 180
+  spin 90 1 0 0
+  shift 0 35.5 28
+  size 13 13 5
+  divisions 12
+  ratio 0.4615
+  matref roof
+  passable
+  end
+
+  meshbox
+  shift 10 33 15
+  size 3 2.5 13
+  matref roof
+  top matref null
+  bottom matref null
+  passable
+  end
+
+  meshbox
+  shift -10 33 15
+  size 3 2.5 13
+  matref roof
+  top matref null
+  bottom matref null
+  passable
+  end
+
+enddef
+
+group office
+spin 0 0 0 1
+shift -300 -25 0
+end
+
+group office_gate
+spin 90 0 0 1
+shift -300 -25 0
+end
+
+group office_gate
+spin 270 0 0 1
+shift -300 -25 0
+end
+
+
+# Longbridge
+
+define longbridge
+
+  physics
+  name conveyer_west
+  linear -50 0 0
+  end 
+
+  physics
+  name conveyer_east
+  linear 50 0 0
+  end 
+
+  meshbox
+  shift 0 0 13
+  size 90 3 4
+  matref roof
+  end
+
+  meshbox
+  shift 45 -6.5 13
+  size 45 3.5 4
+  matref conveyer_green
+  phydrv conveyer_west
+  end
+
+  meshbox
+  shift -45 -6.5 13
+  size 45 3.5 4
+  matref conveyer_red
+  phydrv conveyer_west
+  end
+
+  meshbox
+  shift 45 6.5 13
+  size 45 3.5 4
+  matref conveyer_red
+  phydrv conveyer_east
+  end
+
+  meshbox
+  shift -45 6.5 13
+  size 45 3.5 4
+  matref conveyer_green
+  phydrv conveyer_east
+  end
+
+  arc
+  angle 80
+  spin 90 1 0 0
+  spin 130 0 1 0
+  shift 0 0.5 74.5
+  size 10 10 1
+  divisions 3
+  matref metal
+  passable
+  noradar
+  end
+
+  arc
+  shift 0 0 0
+  size 7.5 15 3
+  divisions 16
+  matref grey
+  top matref null
+  end
+
+  arc
+  shift 0 0 3
+  size 7.5 15 2
+  divisions 16
+  matref metal
+  bottom matref null
+  end
+
+  meshbox
+  shift 0 0 5
+  size 2 2 80
+  matref grey
+  end
+
+  meshbox
+  shift 0 0 5
+  size 3 1 75
+  matref grey
+  end
+
+  meshbox
+  shear -0.3 0 0
+  shift 18.25 0 17
+  size 0.25 0.25 50
+  matref metal
+  top matref null
+  bottom matref null
+  passable
+  noradar
+  end
+
+  meshbox
+  shear -0.5769 0 0
+  shift 33 0 17
+  size 0.25 0.25 52
+  matref metal
+  top matref null
+  bottom matref null
+  passable
+  noradar
+  end
+
+  meshbox
+  shear -0.8333 0 0
+  shift 47 0 17
+  size 0.25 0.25 54
+  matref metal
+  top matref null
+  bottom matref null
+  passable
+  noradar
+  end
+
+  meshbox
+  shear 0.3 0 0
+  shift -18.25 0 17
+  size 0.25 0.25 50
+  matref metal
+  top matref null
+  bottom matref null
+  passable
+  noradar
+  end
+
+  meshbox
+  shear 0.5769 0 0
+  shift -33 0 17
+  size 0.25 0.25 52
+  matref metal
+  top matref null
+  bottom matref null
+  passable
+  noradar
+  end
+
+  meshbox
+  shear 0.8333 0 0
+  shift -47 0 17
+  size 0.25 0.25 54
+  matref metal
+  top matref null
+  bottom matref null
+  passable
+  noradar
+  end
+
+  meshbox
+  shift -100 0 0
+  size 10 10 6
+  matref boxwall
+  top matref null
+  end
+
+  meshbox
+  shift -100 0 6
+  size 10 10 4
+  matref roof
+  top matref null
+  bottom matref null
+  end
+
+  meshbox
+  shift -100 0 10
+  size 10 10 3
+  matref boxwall
+  top matref null
+  bottom matref null
+  end
+
+  meshbox
+  shift -100 0 13
+  size 10 10 4
+  matref roof
+  bottom matref null
+  end
+
+  arc
+  angle 90
+  spin 270 0 0 1
+  shift -140 -10 6
+  size 50 50 4
+  divisions 8
+  matref roof
+  ratio 0.4
+  end
+
+  meshbox
+  shift -150 -50 0
+  size 10 10 6
+  matref boxwall
+  top matref null
+  end
+
+  meshbox
+  shift -150 -50 6
+  size 10 10 4
+  matref roof
+  bottom matref null
+  top matref null
+  end
+
+  meshbox
+  shift -150 -50 10
+  size 10 10 3
+  matref boxwall
+  bottom matref null
+  top matref null
+  end
+
+  meshbox
+  shift -150 -50 13
+  size 10 10 4
+  matref roof
+  bottom matref null
+  end
+
+  meshbox
+  shift 100 0 0
+  size 10 10 6
+  matref boxwall
+  top matref null
+  end
+
+  meshbox
+  shift 100 0 6
+  size 10 10 4
+  matref roof
+  top matref null
+  bottom matref null
+  end
+
+  meshbox
+  shift 100 0 10
+  size 10 10 3
+  matref boxwall
+  top matref null
+  bottom matref null
+  end
+
+  meshbox
+  shift 100 0 13
+  size 10 10 4
+  matref roof
+  bottom matref null
+  end
+
+  arc
+  angle 180
+  spin 225 0 0 1
+  shift 100 0 0
+  size 14.1421 50 6
+  divisions 16
+  matref boxwall
+  top matref null
+  end
+
+  arc
+  angle 180
+  spin 225 0 0 1
+  shift 100 0 6
+  size 14.1421 50 4
+  divisions 16
+  matref roof
+  bottom matref null
+  end
+
+enddef
+
+define shortbridge1
+
+  meshbox
+  shift 0 6.5 13
+  size 40 3.5 4
+  matref glass_dark
+  end
+
+  meshbox
+  shift 0 0 13
+  size 40 3 4
+  matref roof
+  end
+
+  meshbox
+  shift 0 -6.5 13
+  size 40 3.5 4
+  matref glass_dark
+  end
+
+enddef
+
+define shortbridge2
+
+  meshbox
+  shift 6.5 0 13
+  size 3.5 40 4
+  matref glass_dark
+  end
+
+  meshbox
+  shift 0 0 13
+  size 3 40 4
+  matref roof
+  end
+
+  meshbox
+  shift -6.5 0 13
+  size 3.5 40 4
+  matref glass_dark
+  end
+
+enddef
+
+define shortbridge3
+
+  meshbox
+  shift 6.5 0 13
+  size 3.5 15 4
+  matref glass_dark
+  end
+
+  meshbox
+  shift 0 0 13
+  size 3 15 4
+  matref roof
+  end
+
+  meshbox
+  shift -6.5 0 13
+  size 3.5 15 4
+  matref glass_dark
+  end
+
+enddef
+
+define stickies
+
+  arc
+  shift 30 0 10
+  size 15 15 20
+  divisions 16
+  matref boxwall 
+  top matref null
+  end
+
+  cone
+  shift 30 0 30
+  size 15 15 30
+  divisions 16
+  matref roof
+  bottom matref null
+  end
+
+  arc
+  shift 30 0 40
+  size 10 10 16
+  divisions 16
+  matref boxwall
+  top matref null
+  bottom matref null
+  end
+
+  arc
+  shift 30 0 56
+  size 10 10 4
+  divisions 16
+  matref roof
+  bottom matref null
+  noradar
+  end
+
+  arc
+  shift -30 0 10
+  size 15 15 20
+  divisions 16
+  matref boxwall 
+  top matref null
+  end
+
+  cone
+  shift -30 0 30
+  size 15 15 30
+  divisions 16
+  matref roof
+  bottom matref null
+  end
+
+  arc
+  shift -30 0 40
+  size 10 10 16
+  divisions 16
+  matref boxwall
+  top matref null
+  bottom matref null
+  end
+
+  arc
+  shift -30 0 56
+  size 10 10 4
+  divisions 16
+  matref roof
+  bottom matref null
+  noradar
+  end
+
+  sphere
+  hemisphere
+  shift 30 0 50
+  size 9 9 18
+  matref gold
+  bottom matref null
+  divisions 6
+  end 
+
+  sphere
+  hemisphere
+  shift -30 0 50
+  size 9 9 18
+  matref gold
+  bottom matref null
+  divisions 6
+  end 
+
+  meshbox
+  shift 0 0 0
+  size 30 30 6
+  matref boxwall
+  top matref null
+  end
+
+  meshbox
+  shift 0 0 6
+  size 30 30 4
+  matref roof
+  bottom matref null
+  end
+
+  meshbox
+  shift 0 0 10
+  size 20 10 3
+  matref boxwall
+  top matref null
+  bottom matref null
+  end
+
+  meshbox
+  shift 0 0 13
+  size 20 10 4
+  matref roof
+  bottom matref null
+  end
+
+  arc
+  angle 180
+  spin 270 0 0 1
+  shift 30 0 0
+  size 30 30 6
+  divisions 12
+  matref boxwall
+  top matref null
+  end
+
+  arc
+  angle 180
+  spin 270 0 0 1
+  shift 30 0 6
+  size 30 30 4
+  divisions 12
+  matref roof
+  bottom matref null
+  end
+
+  arc
+  angle 180
+  spin 90 0 0 1
+  shift -30 0 0
+  size 30 30 6
+  divisions 12
+  matref boxwall
+  top matref null
+  end
+
+  arc
+  angle 180
+  spin 90 0 0 1
+  shift -30 0 6
+  size 30 30 4
+  divisions 12
+  matref roof
+  bottom matref null
+  end
+
+enddef
+
+group longbridge
+spin 0 0 0 1
+shift -50 250 0
+end
+
+group shortbridge1
+spin 0 0 0 1
+shift -250 200 0
+end
+
+group shortbridge2
+spin 0 0 0 1
+shift 50 300 0
+end
+
+group shortbridge3
+spin 0 0 0 1
+shift -150 275 0
+end
+
+group stickies
+spin 0 0 0 1
+shift 50 350 0
+end
+
+
+# Reactor Complex
+
+define reactor
+
+  meshbox
+  shift 0 0 0
+  size 40 25 11
+  matref boxwall
+  top matref null
+  end
+
+  meshbox
+  shift 0 12.5 11
+  size 20 12.5 4
+  matref roof
+  bottom matref null
+  end
+
+  meshbox
+  shift -30 0 11
+  size 10 25 15
+  matref boxwall
+  bottom matref null
+  top matref null
+  end
+
+  meshbox
+  shift -30 0 26
+  size 10 25 4
+  matref roof
+  bottom matref null
+  end
+
+  meshbox
+  shift 30 0 11
+  size 10 25 15
+  matref boxwall
+  bottom matref null
+  top matref null
+  end
+
+  meshbox
+  shift 30 0 26
+  size 10 25 4
+  matref roof
+  bottom matref null
+  end
+
+  meshbox
+  shift 0 -32.5 0
+  size 20 7.5 11
+  matref boxwall
+  top matref null
+  end
+
+  meshbox
+  shift 0 -20 11
+  size 20 20 30
+  matref boxwall
+  bottom matref null
+  top matref null
+  end
+
+  meshbox
+  shift 0 -20 41
+  size 20 20 4
+  matref roof
+  bottom matref null
+  end
+
+  arc
+  spin 22.5 0 0 1
+  shift 0 -20 45 
+  size 12.5 12.5 2.5
+  divisions 8
+  matref copper
+  bottom matref null
+  top matref null
+  flatshading
+  end
+
+  cone
+  spin 180 1 0 0
+  spin 22.5 0 0 1
+  shift 0 -20 57.5 
+  size 17.5 17.5 35
+  divisions 8
+  matref copper
+  bottom matref null
+  flatshading
+  end
+
+  arc
+  spin 22.5 0 0 1
+  shift 0 -20 57.5
+  size 17.5 17.5 2.5
+  divisions 8
+  matref copper
+  bottom matref null
+  flatshading
+  end
+
+enddef
+
+define reactor_piping1
+
+  meshbox
+  shift 50 0 0
+  size 10 10 17
+  matref roof
+  end
+
+  meshbox
+  shift 50 100 0
+  size 10 10 17
+  matref roof
+  end
+
+  meshbox
+  shift 100 100 0
+  size 10 10 17
+  matref roof
+  end
+
+  meshbox
+  shift 30 100 6
+  size 10 10 4
+  matref roof
+  end
+
+  arc
+  spin 90 1 0 0
+  shift 50 90 9
+  size 6 6 80
+  divisions 6
+  flatshading
+  matref copper
+  top matref null
+  bottom matref null
+  end
+
+  arc
+  spin 90 1 0 0
+  spin 90 0 0 1
+  shift 60 100 9
+  size 6 6 30
+  divisions 6
+  flatshading
+  matref copper
+  top matref null
+  bottom matref null
+  end
+
+enddef
+
+define reactor_piping2
+
+  arc
+  spin 90 1 0 0
+  shift 2.5 -12.5 8
+  size 2 2 125
+  divisions 6
+  flatshading
+  matref copper
+  top matref null
+  bottom matref null
+  end
+
+  arc
+  spin 90 1 0 0
+  shift -2.5 -12.5 8
+  size 2 2 125
+  divisions 6
+  flatshading
+  matref copper
+  top matref null
+  bottom matref null
+  end
+
+  meshbox
+  shift 0 -10 5
+  size 6 2.5 6
+  matref copper
+  end 
+
+  meshbox
+  shift 0 -140 5
+  size 6 2.5 6
+  matref copper
+  end 
+
+  meshbox
+  shift 0 -75 9.75
+  size 5 70 0.01
+  matref null
+  end 
+
+  arc
+  shift 0 0 0
+  size 10 10 20.5
+  divisions 16
+  matref boxwall
+  top matref null
+  end
+
+  arc
+  shift 0 0 20.5
+  size 10 10 4
+  divisions 16
+  matref roof
+  bottom matref null
+  end
+
+  arc
+  shift 0 -150 0
+  size 10 10 20.5
+  divisions 16
+  matref boxwall
+  top matref null
+  end
+
+  arc
+  shift 0 -150 20.5
+  size 10 10 4
+  divisions 16
+  matref roof
+  bottom matref null
+  end
+
+enddef
+
+define reactor_pipehouse
+
+  meshbox
+  shift 5 -5 0
+  size 20 20 6
+  matref boxwall
+  top matref null
+  end
+
+  meshbox
+  shift 5 -5 6
+  size 20 20 4
+  matref roof
+  bottom matref null
+  end
+
+  meshbox
+  shift 0 25 0
+  size 35 10 13
+  matref boxwall
+  top matref null
+  end
+
+  meshbox
+  shift 0 25 13
+  size 35 10 4
+  matref roof
+  bottom matref null
+  end
+
+  meshbox
+  shift -25 -10 0
+  size 10 25 13
+  matref boxwall
+  top matref null
+  end
+
+  meshbox
+  shift -25 -10 13
+  size 10 25 4
+  matref roof
+  bottom matref null
+  end
+
+enddef
+
+define reactor_vessel
+
+  meshbox
+  shift 0 0 0
+  size 10 10 6
+  matref boxwall
+  top matref null
+  end
+
+  meshbox
+  shift 0 0 6
+  size 10 10 4
+  matref roof
+  bottom matref null
+  end
+
+  arc
+  shift 0 0 10
+  size 4.7 4.7 5
+  divisions 8
+  matref metal
+  top matref null
+  bottom matref null
+  end
+
+  sphere
+  hemisphere
+  spin 180 1 0 0
+  shift 0 0 30
+  size 8 8 8
+  divisions 5
+  matref metal
+  bottom matref null
+  noradar
+  end
+
+  arc
+  shift 0 0 20
+  size 8 8 35
+  divisions 20
+  matref metal
+  top matref null
+  bottom matref null
+  noradar
+  end
+
+  sphere
+  hemisphere
+  shift 0 0 45
+  size 8 8 8
+  divisions 5
+  matref metal
+  bottom matref null
+  noradar
+  passable
+  end
+
+enddef
+
+define generator
+
+  meshbox
+  shift 0 0 0
+  size 20 30 6
+  matref boxwall
+  top matref null
+  end
+
+  meshbox
+  shift 0 0 6
+  size 20 30 4
+  matref roof
+  bottom matref null
+  end
+
+  meshbox
+  shift 0 -20 10
+  size 10 3 25
+  matref metal
+  bottom matref null
+  end
+
+  meshbox
+  shift 0 -10 10
+  size 10 3 25
+  matref metal
+  bottom matref null
+  end
+
+  meshbox
+  shift 0 0 10
+  size 10 3 25
+  matref metal
+  bottom matref null
+  end
+
+  meshbox
+  shift 0 10 10
+  size 10 3 25
+  matref metal
+  bottom matref null
+  end
+
+  meshbox
+  shift 0 20 10
+  size 10 3 25
+  matref metal
+  bottom matref null
+  end
+
+enddef
+
+group reactor
+spin 0 0 0 1
+shift -350 200 0
+end
+
+group reactor_piping1
+spin 0 0 0 1
+shift -350 200 0
+end
+
+group reactor_piping2
+spin 0 0 0 1
+shift -100 300 0
+end
+
+group reactor_pipehouse
+spin 0 0 0 1
+shift -125 325 0
+end
+
+group reactor_vessel
+spin 0 0 0 1
+shift -300 375 15
+end
+
+group reactor_vessel
+spin 0 0 0 1
+shift -275 375 15
+end
+
+group reactor_vessel
+spin 0 0 0 1
+shift -250 375 15
+end
+
+group generator
+spin 0 0 0 1
+shift -350 300 0
+end
+
+meshbox
+shift -275 375 0
+size 50 15 11
+matref boxwall
+top matref null
+end
+
+meshbox
+shift -275 375 11
+size 50 15 4
+matref roof
+bottom matref null
+end
+
+
+# Laser deflection
+
+define pyrgold
+
+  mesh
+
+# specify inside/outside
+  inside 0 0 0
+  outside 0 0 2
+
+# 0 (outside top)
+  vertex 0 0 1
+# 1-4 (outside corners)
+  vertex -1 -1 0
+  vertex 1 -1 0
+  vertex 1 1 0
+  vertex -1 1 0
+# 5-12 (insides bottom)
+  vertex -0.9 -1 0
+  vertex 0.9 -1 0
+  vertex 1 -0.9 0
+  vertex 1 0.9 0
+  vertex 0.9 1 0
+  vertex -0.9 1 0
+  vertex -1 0.9 0
+  vertex -1 -0.9 0
+# 13-20 (insides middle)
+  vertex -0.85 -0.95 0.05
+  vertex 0.85 -0.95 0.05
+  vertex 0.95 -0.85 0.05
+  vertex 0.95 0.85 0.05
+  vertex 0.85 0.95 0.05
+  vertex -0.85 0.95 0.05
+  vertex -0.95 0.85 0.05
+  vertex -0.95 -0.85 0.05
+# 21-24 (insides top)
+  vertex 0 -0.1 0.9
+  vertex 0.1 0 0.9
+  vertex 0 0.1 0.9
+  vertex -0.1 0 0.9
+
+# south
+  face
+    vertices 0 1 5 21
+    matref pyrborder
+  endface
+  face
+    vertices 0 21 6 2
+    matref pyrborder
+  endface
+  face
+    vertices 13 5 6 14
+    matref pyrborder
+  endface
+  face
+    vertices 13 14 21
+    matref pyrwall
+  endface
+
+# east
+  face
+    vertices 0 2 7 22
+    matref pyrborder
+  endface
+  face
+    vertices 0 22 8 3
+    matref pyrborder
+  endface
+  face
+    vertices 15 7 8 16
+    matref pyrborder
+  endface
+  face
+    vertices 15 16 22
+    matref pyrwall
+  endface
+
+# north
+  face
+    vertices 0 3 9 23
+    matref pyrborder
+  endface
+  face
+    vertices 0 23 10 4
+    matref pyrborder
+  endface
+  face
+    vertices 17 9 10 18
+    matref pyrborder
+  endface
+  face
+    vertices 17 18 23
+    matref pyrwall
+  endface
+
+# west
+  face
+    vertices 0 4 11 24
+    matref pyrborder
+  endface
+  face
+    vertices 0 24 12 1
+    matref pyrborder
+  endface
+  face
+    vertices 19 11 12 20
+    matref pyrborder
+  endface
+  face
+    vertices 19 20 24
+    matref pyrwall
+  endface
+
+  end
+
+enddef
+
+group pyrgold
+  position -375 -175 0
+  rotation 30
+  size 8 8 8
+end 
+
+group pyrgold
+  position -250 -210 0
+  rotation 80
+  size 8 8 8
+end 
+
+group pyrgold
+  position -150 -270 0
+  rotation 60
+  size 8 8 8
+end 
+
+group pyrgold
+  position 350 -50 0
+  rotation 30
+  size 8 8 8
+end 
+
+group pyrgold
+  position 375 100 0
+  rotation 60
+  size 8 8 8
+end 
+
+group pyrgold
+  position 310 0 0
+  rotation 15
+  size 8 8 8
+end 
+
+group pyrgold
+  position -200 80 0
+  rotation 20
+  size 8 8 8
+end 
+
+group pyrgold
+  position 200 -360 0
+  rotation 40
+  size 8 8 8
+end 
+
+group pyrgold
+  position 180 -200 0
+  rotation 75
+  size 8 8 8
+end 
+
+group pyrgold
+  position 150 340 0
+  rotation 50
+  size 8 8 8
+end 
+
+group pyrgold
+  position 130 310 0
+  rotation 10
+  size 8 8 8
+end 
+
+group pyrgold
+  position -150 140 0
+  rotation 30
+  size 8 8 8
+end 
+
+group pyrgold
+  position -20 180 0
+  rotation 50
+  size 8 8 8
+end 
+
+
+# Teleporters
+
+define tele_gate1
+
+  meshbox
+  shift 0 -10 0
+  size 1.5 2.5 20
+  matref tele_inner
+  end 
+
+  meshbox
+  shift 0 10 0
+  size 1.5 2.5 20
+  matref tele_inner
+  end 
+
+  meshbox
+  shift 0 -12 0
+  size 1 2.5 25
+  shear 0 -0.15 0
+  matref tele_outer
+  end 
+
+  meshbox
+  shift 0 12 0
+  size 1 2.5 25
+  shear 0 0.15 0
+  matref tele_outer
+  end 
+
+enddef
+
+group tele_gate1
+spin 0 0 0 1
+shift 50 100 0
+end
+teleporter tele1
+position 50 100 0
+rotation 0
+size 0.125 7.5 15
+border 0
+end
+
+group tele_gate1
+spin 90 0 0 1
+shift 200 250 0
+end
+teleporter tele2
+position 200 250 0
+rotation 270
+size 0.125 7.5 15
+border 0
+end
+
+link
+from tele1:f
+to tele2:f
+end
+
+link
+from tele1:b
+to tele2:b
+end
+
+link
+from tele2:f
+to tele1:f
+end
+
+link
+from tele2:b
+to tele1:b
+end
+
+teleporter tele3
+position -350 100 25
+rotation 0
+size 0.125 7.5 15
+border 0
+end
+
+teleporter tele4
+position -350 100 -0.01 #bug: when set to 0 height, tank gets stuck
+rotation 0
+size 0.125 7.5 15
+border 0
+end
+
+link
+from tele3:f
+to tele4:f
+end
+
+link
+from tele3:b
+to tele4:b
+end
+
+link
+from tele4:f
+to tele3:f
+end
+
+link
+from tele4:b
+to tele3:f
+end
+
+define tele_gate2
+
+  meshbox
+  shift 0 -10 0
+  size 1.5 2.5 20
+  matref tele_inner
+  end 
+
+  meshbox
+  shift 0 10 0
+  size 1.5 2.5 20
+  matref tele_inner
+  end 
+
+  arc
+  angle 180
+  spin 90 0 1 0
+  spin 180 0 0 1
+  shift 0.75 -12.5 12.5
+  size 6 4 1.5
+  divisions 8
+  matref tele_outer
+  end 
+
+  arc
+  angle 180
+  spin 90 0 1 0
+  shift -0.75 12.5 12.5
+  size 6 4 1.5
+  divisions 8
+  matref tele_outer
+  end 
+
+enddef
+
+group tele_gate2
+spin 45 0 0 1
+shift -190 -265 0
+end
+teleporter tele5
+position -190 -265 0
+rotation 45
+size 0.125 7.5 15
+border 0
+end
+
+group tele_gate2
+spin 135 0 0 1
+shift 125 -205 0
+end
+teleporter tele6
+position 125 -205 0
+rotation 135
+size 0.125 7.5 15
+border 0
+end
+
+link
+from tele5:f
+to tele6:f
+end
+
+link
+from tele5:b
+to tele6:b
+end
+
+link
+from tele6:f
+to tele5:f
+end
+
+link
+from tele6:b
+to tele5:b
+end
+
+
+# Out of field decoration
+
+
+define coolingtower
+
+mesh
+
+  vertex 0.742329 0.885028 1.000000
+  vertex 1.000000 0.000962 1.000000
+  vertex 0.923880 0.000962 0.617317
+  vertex 0.685823 0.885028 0.715923
+  vertex 0.645979 1.384198 1.000000
+  vertex 0.596807 1.384198 1.247206
+  vertex 0.685823 0.885028 1.284077
+  vertex 0.923880 0.000962 1.382683
+  vertex 0.456776 1.384198 1.456776
+  vertex 0.524906 0.885028 1.524906
+  vertex 0.707107 0.000962 1.707107
+  vertex 0.247206 1.384198 1.596807
+  vertex 0.284077 0.885028 1.685823
+  vertex 0.382683 0.000962 1.923880
+  vertex 0.000000 1.384198 1.645979
+  vertex 0.000000 0.885028 1.742329
+  vertex 0.000000 0.000962 2.000000
+  vertex -0.247206 1.384198 1.596807
+  vertex -0.284077 0.885028 1.685823
+  vertex -0.382683 0.000962 1.923880
+  vertex -0.456776 1.384198 1.456776
+  vertex -0.524906 0.885028 1.524906
+  vertex -0.707107 0.000962 1.707107
+  vertex -0.596807 1.384198 1.247206
+  vertex -0.685823 0.885028 1.284077
+  vertex -0.923880 0.000962 1.382683
+  vertex -0.645979 1.384198 1.000000
+  vertex -0.742329 0.885028 1.000000
+  vertex -1.000000 0.000962 1.000000
+  vertex -0.596807 1.384198 0.752794
+  vertex -0.685823 0.885028 0.715923
+  vertex -0.923880 0.000962 0.617317
+  vertex -0.456776 1.384198 0.543224
+  vertex -0.524906 0.885028 0.475094
+  vertex -0.707107 0.000962 0.292893
+  vertex -0.247206 1.384198 0.403193
+  vertex -0.284077 0.885028 0.314177
+  vertex -0.382683 0.000962 0.076120
+  vertex -0.000000 1.384198 0.354021
+  vertex -0.000000 0.885028 0.257671
+  vertex -0.000000 0.000962 0.000000
+  vertex 0.247206 1.384198 0.403193
+  vertex 0.284077 0.885028 0.314177
+  vertex 0.382683 0.000962 0.076120
+  vertex 0.456776 1.384198 0.543224
+  vertex 0.524906 0.885028 0.475094
+  vertex 0.707107 0.000962 0.292893
+  vertex 0.596807 1.384198 0.752794
+  vertex 0.576346 1.825502 1.238730
+  vertex 0.441116 1.825502 1.441116
+  vertex 0.623832 1.825502 1.000000
+  vertex 0.576346 1.825502 0.761270
+  vertex 0.441116 1.825502 0.558884
+  vertex 0.238730 1.825502 0.423654
+  vertex -0.000000 1.825502 0.376168
+  vertex -0.238730 1.825502 0.423654
+  vertex -0.441116 1.825502 0.558884
+  vertex -0.576346 1.825502 0.761270
+  vertex -0.623832 1.825502 1.000000
+  vertex -0.576346 1.825502 1.238730
+  vertex -0.441116 1.825502 1.441116
+  vertex -0.238730 1.825502 1.576346
+  vertex 0.000000 1.825502 1.623832
+  vertex 0.238730 1.825502 1.576346
+  vertex 0.610966 2.338271 1.253070
+  vertex 0.467613 2.338271 1.467613
+  vertex 0.661305 2.338271 1.000000
+  vertex 0.610966 2.338271 0.746930
+  vertex 0.467613 2.338271 0.532387
+  vertex 0.253070 2.338271 0.389034
+  vertex -0.000000 2.338271 0.338695
+  vertex -0.253070 2.338271 0.389034
+  vertex -0.467613 2.338271 0.532387
+  vertex -0.610966 2.338271 0.746930
+  vertex -0.661305 2.338271 1.000000
+  vertex -0.610966 2.338271 1.253070
+  vertex -0.467613 2.338271 1.467613
+  vertex -0.253070 2.338271 1.610966
+  vertex 0.000000 2.338271 1.661305
+  vertex 0.253070 2.338271 1.610966
+  normal 0.972009 0.234942 -0.000000
+  normal 0.972661 -0.232228 -0.000000
+  normal 0.898622 -0.232228 -0.372221
+  normal 0.898020 0.234942 -0.371972
+  normal 0.992757 0.120141 -0.000000
+  normal 0.917188 0.120141 0.379912
+  normal 0.898020 0.234942 0.371972
+  normal 0.898622 -0.232228 0.372221
+  normal 0.701985 0.120141 0.701985
+  normal 0.687314 0.234942 0.687314
+  normal 0.687776 -0.232228 0.687776
+  normal 0.379912 0.120141 0.917188
+  normal 0.371972 0.234942 0.898020
+  normal 0.372221 -0.232228 0.898622
+  normal -0.000000 0.120141 0.992757
+  normal -0.000000 0.234942 0.972009
+  normal -0.000000 -0.232228 0.972661
+  normal -0.379912 0.120141 0.917188
+  normal -0.371972 0.234942 0.898020
+  normal -0.372221 -0.232228 0.898622
+  normal -0.701985 0.120141 0.701985
+  normal -0.687314 0.234942 0.687314
+  normal -0.687776 -0.232228 0.687776
+  normal -0.917188 0.120141 0.379912
+  normal -0.898020 0.234942 0.371972
+  normal -0.898622 -0.232228 0.372221
+  normal -0.992757 0.120141 0.000000
+  normal -0.972009 0.234942 0.000000
+  normal -0.972661 -0.232228 0.000000
+  normal -0.917188 0.120141 -0.379912
+  normal -0.898020 0.234942 -0.371972
+  normal -0.898622 -0.232228 -0.372221
+  normal -0.701985 0.120141 -0.701985
+  normal -0.687314 0.234942 -0.687314
+  normal -0.687776 -0.232228 -0.687776
+  normal -0.379912 0.120141 -0.917188
+  normal -0.371972 0.234942 -0.898020
+  normal -0.372221 -0.232228 -0.898622
+  normal -0.000000 0.120141 -0.992757
+  normal -0.000000 0.234942 -0.972009
+  normal -0.000000 -0.232228 -0.972661
+  normal 0.379912 0.120141 -0.917188
+  normal 0.371972 0.234942 -0.898020
+  normal 0.372221 -0.232228 -0.898622
+  normal 0.701985 0.120141 -0.701985
+  normal 0.687314 0.234942 -0.687314
+  normal 0.687776 -0.232228 -0.687776
+  normal 0.917188 0.120141 -0.379912
+  normal 0.923819 -0.011404 0.382659
+  normal 0.707061 -0.011404 0.707061
+  normal 0.999935 -0.011404 -0.000000
+  normal 0.923819 -0.011404 -0.382659
+  normal 0.707061 -0.011404 -0.707061
+  normal 0.382659 -0.011404 -0.923819
+  normal -0.000000 -0.011404 -0.999935
+  normal -0.382659 -0.011404 -0.923819
+  normal -0.707061 -0.011404 -0.707061
+  normal -0.923819 -0.011404 -0.382659
+  normal -0.999935 -0.011404 0.000000
+  normal -0.923819 -0.011404 0.382659
+  normal -0.707061 -0.011404 0.707061
+  normal -0.382659 -0.011404 0.923819
+  normal 0.000000 -0.011404 0.999935
+  normal 0.382659 -0.011404 0.923819
+  normal 0.846256 0.401222 0.350531
+  normal 0.647696 0.401222 0.647696
+  normal 0.915981 0.401222 -0.000000
+  normal 0.846256 0.401222 -0.350531
+  normal 0.647696 0.401222 -0.647696
+  normal 0.350531 0.401222 -0.846256
+  normal 0.000000 0.401222 -0.915981
+  normal -0.350531 0.401222 -0.846256
+  normal -0.647696 0.401222 -0.647696
+  normal -0.846256 0.401222 -0.350531
+  normal -0.915981 0.401222 0.000000
+  normal -0.846256 0.401222 0.350531
+  normal -0.647696 0.401222 0.647696
+  normal -0.350531 0.401222 0.846256
+  normal 0.000000 0.401222 0.915981
+  normal 0.350531 0.401222 0.846256
+  face
+    vertices 0 1 2 3
+    normals 0 1 2 3
+    matref coolingtower
+  endface
+  face
+    vertices 0 4 5 6
+    normals 0 4 5 6
+    matref coolingtower
+  endface
+  face
+    vertices 6 7 1 0
+    normals 6 7 1 0
+    matref coolingtower
+  endface
+  face
+    vertices 6 5 8 9
+    normals 6 5 8 9
+    matref coolingtower
+  endface
+  face
+    vertices 9 10 7 6
+    normals 9 10 7 6
+    matref coolingtower
+  endface
+  face
+    vertices 9 8 11 12
+    normals 9 8 11 12
+    matref coolingtower
+  endface
+  face
+    vertices 12 13 10 9
+    normals 12 13 10 9
+    matref coolingtower
+  endface
+  face
+    vertices 12 11 14 15
+    normals 12 11 14 15
+    matref coolingtower
+  endface
+  face
+    vertices 15 16 13 12
+    normals 15 16 13 12
+    matref coolingtower
+  endface
+  face
+    vertices 15 14 17 18
+    normals 15 14 17 18
+    matref coolingtower
+  endface
+  face
+    vertices 18 19 16 15
+    normals 18 19 16 15
+    matref coolingtower
+  endface
+  face
+    vertices 18 17 20 21
+    normals 18 17 20 21
+    matref coolingtower
+  endface
+  face
+    vertices 21 22 19 18
+    normals 21 22 19 18
+    matref coolingtower
+  endface
+  face
+    vertices 21 20 23 24
+    normals 21 20 23 24
+    matref coolingtower
+  endface
+  face
+    vertices 24 25 22 21
+    normals 24 25 22 21
+    matref coolingtower
+  endface
+  face
+    vertices 24 23 26 27
+    normals 24 23 26 27
+    matref coolingtower
+  endface
+  face
+    vertices 27 28 25 24
+    normals 27 28 25 24
+    matref coolingtower
+  endface
+  face
+    vertices 27 26 29 30
+    normals 27 26 29 30
+    matref coolingtower
+  endface
+  face
+    vertices 30 31 28 27
+    normals 30 31 28 27
+    matref coolingtower
+  endface
+  face
+    vertices 30 29 32 33
+    normals 30 29 32 33
+    matref coolingtower
+  endface
+  face
+    vertices 33 34 31 30
+    normals 33 34 31 30
+    matref coolingtower
+  endface
+  face
+    vertices 33 32 35 36
+    normals 33 32 35 36
+    matref coolingtower
+  endface
+  face
+    vertices 36 37 34 33
+    normals 36 37 34 33
+    matref coolingtower
+  endface
+  face
+    vertices 36 35 38 39
+    normals 36 35 38 39
+    matref coolingtower
+  endface
+  face
+    vertices 39 40 37 36
+    normals 39 40 37 36
+    matref coolingtower
+  endface
+  face
+    vertices 39 38 41 42
+    normals 39 38 41 42
+    matref coolingtower
+  endface
+  face
+    vertices 42 43 40 39
+    normals 42 43 40 39
+    matref coolingtower
+  endface
+  face
+    vertices 42 41 44 45
+    normals 42 41 44 45
+    matref coolingtower
+  endface
+  face
+    vertices 45 46 43 42
+    normals 45 46 43 42
+    matref coolingtower
+  endface
+  face
+    vertices 45 44 47 3
+    normals 45 44 47 3
+    matref coolingtower
+  endface
+  face
+    vertices 3 2 46 45
+    normals 3 2 46 45
+    matref coolingtower
+  endface
+  face
+    vertices 3 47 4 0
+    normals 3 47 4 0
+    matref coolingtower
+  endface
+  face
+    vertices 7 10 13 16 19 22 25 28 31 34 37 40 43 46 2 1
+    normals 7 10 13 16 19 22 25 28 31 34 37 40 43 46 2 1
+    matref coolingtower
+  endface
+  face
+    vertices 5 48 49 8
+    normals 5 48 49 8
+    matref coolingtower
+  endface
+  face
+    vertices 4 50 48 5
+    normals 4 50 48 5
+    matref coolingtower
+  endface
+  face
+    vertices 47 51 50 4
+    normals 47 51 50 4
+    matref coolingtower
+  endface
+  face
+    vertices 44 52 51 47
+    normals 44 52 51 47
+    matref coolingtower
+  endface
+  face
+    vertices 41 53 52 44
+    normals 41 53 52 44
+    matref coolingtower
+  endface
+  face
+    vertices 38 54 53 41
+    normals 38 54 53 41
+    matref coolingtower
+  endface
+  face
+    vertices 35 55 54 38
+    normals 35 55 54 38
+    matref coolingtower
+  endface
+  face
+    vertices 32 56 55 35
+    normals 32 56 55 35
+    matref coolingtower
+  endface
+  face
+    vertices 29 57 56 32
+    normals 29 57 56 32
+    matref coolingtower
+  endface
+  face
+    vertices 26 58 57 29
+    normals 26 58 57 29
+    matref coolingtower
+  endface
+  face
+    vertices 23 59 58 26
+    normals 23 59 58 26
+    matref coolingtower
+  endface
+  face
+    vertices 20 60 59 23
+    normals 20 60 59 23
+    matref coolingtower
+  endface
+  face
+    vertices 17 61 60 20
+    normals 17 61 60 20
+    matref coolingtower
+  endface
+  face
+    vertices 14 62 61 17
+    normals 14 62 61 17
+    matref coolingtower
+  endface
+  face
+    vertices 11 63 62 14
+    normals 11 63 62 14
+    matref coolingtower
+  endface
+  face
+    vertices 8 49 63 11
+    normals 8 49 63 11
+    matref coolingtower
+  endface
+  face
+    vertices 48 64 65 49
+    normals 48 64 65 49
+    matref coolingtower
+  endface
+  face
+    vertices 50 66 64 48
+    normals 50 66 64 48
+    matref coolingtower
+  endface
+  face
+    vertices 51 67 66 50
+    normals 51 67 66 50
+    matref coolingtower
+  endface
+  face
+    vertices 52 68 67 51
+    normals 52 68 67 51
+    matref coolingtower
+  endface
+  face
+    vertices 53 69 68 52
+    normals 53 69 68 52
+    matref coolingtower
+  endface
+  face
+    vertices 54 70 69 53
+    normals 54 70 69 53
+    matref coolingtower
+  endface
+  face
+    vertices 55 71 70 54
+    normals 55 71 70 54
+    matref coolingtower
+  endface
+  face
+    vertices 56 72 71 55
+    normals 56 72 71 55
+    matref coolingtower
+  endface
+  face
+    vertices 57 73 72 56
+    normals 57 73 72 56
+    matref coolingtower
+  endface
+  face
+    vertices 58 74 73 57
+    normals 58 74 73 57
+    matref coolingtower
+  endface
+  face
+    vertices 59 75 74 58
+    normals 59 75 74 58
+    matref coolingtower
+  endface
+  face
+    vertices 60 76 75 59
+    normals 60 76 75 59
+    matref coolingtower
+  endface
+  face
+    vertices 61 77 76 60
+    normals 61 77 76 60
+    matref coolingtower
+  endface
+  face
+    vertices 62 78 77 61
+    normals 62 78 77 61
+    matref coolingtower
+  endface
+  face
+    vertices 63 79 78 62
+    normals 63 79 78 62
+    matref coolingtower
+  endface
+  face
+    vertices 49 65 79 63
+    normals 49 65 79 63
+    matref coolingtower
+  endface
+  face
+    vertices 66 67 68 69 70 71 72 73 74 75 76 77 78 79 65 64
+    normals 66 67 68 69 70 71 72 73 74 75 76 77 78 79 65 64
+    matref coolingtower
+  endface
+
+  end
+
+enddef
+
+group coolingtower
+scale 100 100 100
+spin 90 1 0 0
+shift -275 800 0
+passable
+end
+
+ 	  	 

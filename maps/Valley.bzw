@@ -1,0 +1,2087 @@
+ 
+####### File Information #######
+#  Total number of objects: 474
+#  Number of boxes: 306
+#  Number of pyramids: 63
+#  Number of teleporters: 10
+#  Number of links: 18
+#  Number of comments (not including these File Information comments): 23
+ 
+#   VALLEY OF THE DAMMED
+#    
+#      September 26, 2003
+#    
+#      by 
+#    
+#        Bryan A. Bentz
+#        a.k.a. "The Purple Panzer"
+#        Email:
+#             bentz@bentz-engineering.com, or 
+#             bentz@ai.mit.edu
+#        URLs:
+#             Personal URL: http://www-swiss.ai.mit.edu/~bentz/
+#             Business URL: http://www.bentz-engineering.com/
+#    
+#    
+box
+  position 120.0 -90.0 28.0
+  rotation 30.0
+  size     10.0 10.0 98.0
+end
+box
+  position 141.5 -29.5 121.0
+  rotation 70.44
+  size     64.21 4.0 5.0
+end
+teleporter
+  position 117.5 -92.0 126.0
+  rotation 110.0
+  border 1.0
+  size 0.45 5.0 6.0
+end
+# ### Circular wall section.
+box
+  position 19.45 128.93 18.0
+  rotation 56.25
+  size     8.0 9.26 18.0
+end
+box
+  position 5.29 137.11 18.0
+  rotation 63.75
+  size     8.0 9.26 18.0
+end
+box
+  position -9.82 143.37 18.0
+  rotation 71.25
+  size     8.0 9.26 18.0
+end
+box
+  position -25.61 147.6 18.0
+  rotation 78.75
+  size     8.0 9.26 18.0
+end
+box
+  position -41.82 149.73 18.0
+  rotation 86.25
+  size     8.0 9.26 18.0
+end
+box
+  position -58.18 149.73 18.0
+  rotation 93.75
+  size     8.0 9.26 18.0
+end
+box
+  position -74.39 147.6 18.0
+  rotation 101.25
+  size     8.0 9.26 18.0
+end
+box
+  position -90.18 143.37 18.0
+  rotation 108.75
+  size     8.0 9.26 18.0
+end
+box
+  position -105.29 137.11 18.0
+  rotation 116.25
+  size     8.0 9.26 18.0
+end
+# ### Circular wall section.
+box
+  position 23.89 135.59 36.0
+  rotation 56.25
+  size     8.0 9.84 18.0
+end
+box
+  position 8.82 144.28 36.0
+  rotation 63.75
+  size     8.0 9.84 18.0
+end
+box
+  position -7.25 150.94 36.0
+  rotation 71.25
+  size     8.0 9.84 18.0
+end
+box
+  position -24.05 155.44 36.0
+  rotation 78.75
+  size     8.0 9.84 18.0
+end
+box
+  position -41.3 157.72 36.0
+  rotation 86.25
+  size     8.0 9.84 18.0
+end
+box
+  position -58.7 157.72 36.0
+  rotation 93.75
+  size     8.0 9.84 18.0
+end
+box
+  position -75.95 155.44 36.0
+  rotation 101.25
+  size     8.0 9.84 18.0
+end
+box
+  position -92.75 150.94 36.0
+  rotation 108.75
+  size     8.0 9.84 18.0
+end
+box
+  position -108.82 144.28 36.0
+  rotation 116.25
+  size     8.0 9.84 18.0
+end
+# ### Circular wall section.
+box
+  position 28.34 142.24 54.0
+  rotation 56.25
+  size     8.0 10.41 18.0
+end
+box
+  position 12.36 151.46 54.0
+  rotation 63.75
+  size     8.0 10.41 18.0
+end
+box
+  position -4.68 158.52 54.0
+  rotation 71.25
+  size     8.0 10.41 18.0
+end
+box
+  position -22.49 163.29 54.0
+  rotation 78.75
+  size     8.0 10.41 18.0
+end
+box
+  position -40.78 165.7 54.0
+  rotation 86.25
+  size     8.0 10.41 18.0
+end
+box
+  position -59.22 165.7 54.0
+  rotation 93.75
+  size     8.0 10.41 18.0
+end
+box
+  position -77.51 163.29 54.0
+  rotation 101.25
+  size     8.0 10.41 18.0
+end
+box
+  position -95.32 158.52 54.0
+  rotation 108.75
+  size     8.0 10.41 18.0
+end
+box
+  position -112.36 151.46 54.0
+  rotation 116.25
+  size     8.0 10.41 18.0
+end
+# ### Circular wall section.
+box
+  position 32.78 148.89 72.0
+  rotation 56.25
+  size     8.0 10.98 18.0
+end
+box
+  position 15.9 158.63 72.0
+  rotation 63.75
+  size     8.0 10.98 18.0
+end
+box
+  position -2.11 166.09 72.0
+  rotation 71.25
+  size     8.0 10.98 18.0
+end
+box
+  position -20.93 171.14 72.0
+  rotation 78.75
+  size     8.0 10.98 18.0
+end
+box
+  position -40.25 173.68 72.0
+  rotation 86.25
+  size     8.0 10.98 18.0
+end
+box
+  position -59.75 173.68 72.0
+  rotation 93.75
+  size     8.0 10.98 18.0
+end
+box
+  position -79.07 171.14 72.0
+  rotation 101.25
+  size     8.0 10.98 18.0
+end
+box
+  position -97.89 166.09 72.0
+  rotation 108.75
+  size     8.0 10.98 18.0
+end
+box
+  position -115.9 158.63 72.0
+  rotation 116.25
+  size     8.0 10.98 18.0
+end
+# ### Circular wall section.
+box
+  position 37.22 155.54 90.0
+  rotation 56.25
+  size     8.0 11.56 18.0
+end
+box
+  position 19.44 165.81 90.0
+  rotation 63.75
+  size     8.0 11.56 18.0
+end
+box
+  position 0.47 173.67 90.0
+  rotation 71.25
+  size     8.0 11.56 18.0
+end
+box
+  position -19.37 178.98 90.0
+  rotation 78.75
+  size     8.0 11.56 18.0
+end
+box
+  position -39.73 181.66 90.0
+  rotation 86.25
+  size     8.0 11.56 18.0
+end
+box
+  position -60.27 181.66 90.0
+  rotation 93.75
+  size     8.0 11.56 18.0
+end
+box
+  position -80.63 178.98 90.0
+  rotation 101.25
+  size     8.0 11.56 18.0
+end
+box
+  position -100.47 173.67 90.0
+  rotation 108.75
+  size     8.0 11.56 18.0
+end
+box
+  position -119.44 165.81 90.0
+  rotation 116.25
+  size     8.0 11.56 18.0
+end
+# ### Circular wall section.
+box
+  position 41.67 162.19 108.0
+  rotation 56.25
+  size     8.0 12.13 18.0
+end
+box
+  position 22.98 172.98 108.0
+  rotation 63.75
+  size     8.0 12.13 18.0
+end
+box
+  position 3.04 181.24 108.0
+  rotation 71.25
+  size     8.0 12.13 18.0
+end
+box
+  position -17.81 186.83 108.0
+  rotation 78.75
+  size     8.0 12.13 18.0
+end
+box
+  position -39.21 189.65 108.0
+  rotation 86.25
+  size     8.0 12.13 18.0
+end
+box
+  position -60.79 189.65 108.0
+  rotation 93.75
+  size     8.0 12.13 18.0
+end
+box
+  position -82.19 186.83 108.0
+  rotation 101.25
+  size     8.0 12.13 18.0
+end
+box
+  position -103.04 181.24 108.0
+  rotation 108.75
+  size     8.0 12.13 18.0
+end
+box
+  position -122.98 172.98 108.0
+  rotation 116.25
+  size     8.0 12.13 18.0
+end
+# ### Circular wall section.
+box
+  position 46.11 168.84 126.0
+  rotation 56.25
+  size     8.0 12.71 18.0
+end
+box
+  position 26.52 180.16 126.0
+  rotation 63.75
+  size     8.0 12.71 18.0
+end
+box
+  position 5.61 188.82 126.0
+  rotation 71.25
+  size     8.0 12.71 18.0
+end
+box
+  position -16.25 194.68 126.0
+  rotation 78.75
+  size     8.0 12.71 18.0
+end
+box
+  position -38.69 197.63 126.0
+  rotation 86.25
+  size     8.0 12.71 18.0
+end
+box
+  position -61.31 197.63 126.0
+  rotation 93.75
+  size     8.0 12.71 18.0
+end
+box
+  position -83.75 194.68 126.0
+  rotation 101.25
+  size     8.0 12.71 18.0
+end
+box
+  position -105.61 188.82 126.0
+  rotation 108.75
+  size     8.0 12.71 18.0
+end
+box
+  position -126.52 180.16 126.0
+  rotation 116.25
+  size     8.0 12.71 18.0
+end
+box
+  position -90.18 143.37 0.0
+  rotation 90.0
+  size     35.0 5.0 18.0
+end
+box
+  position -41.82 149.73 0.0
+  rotation 90.0
+  size     35.0 5.0 18.0
+end
+box
+  position 5.29 137.11 0.0
+  rotation 90.0
+  size     35.0 5.0 18.0
+end
+box
+  position -82.19 186.83 126.0
+  rotation 101.25
+  size     8.0 8.0 30.0
+end
+box
+  position 2.04 181.24 126.0
+  rotation 71.25
+  size     8.0 8.0 30.0
+end
+box
+  position 73.06 284.42 0.0
+  rotation 76.88
+  size     118.68 10.0 126.0
+end
+box
+  position -163.26 290.08 0.0
+  rotation 108.48
+  size     115.9 10.0 126.0
+end
+box
+  position -50.0 280.0 118.0
+  rotation 0.0
+  size     15.0 15.0 15.0
+end
+pyramid
+  position -50.0 290.0 120.0
+  rotation 90.0
+  size     105.0 150.0 1.0
+  ShootThrough
+  DriveThrough
+end
+pyramid
+  position -50.0 290.0 0.5
+  rotation 90.0
+  size     105.0 150.0 1.0
+  ShootThrough
+  DriveThrough
+end
+pyramid
+  position -50.0 290.0 36.5
+  rotation 90.0
+  size     105.0 150.0 1.0
+  ShootThrough
+  DriveThrough
+end
+pyramid
+  position -50.0 290.0 72.5
+  rotation 90.0
+  size     105.0 150.0 1.0
+  ShootThrough
+  DriveThrough
+end
+pyramid
+  position -50.0 290.0 108.5
+  rotation 90.0
+  size     105.0 150.0 1.0
+  ShootThrough
+  DriveThrough
+end
+pyramid
+  position -100.0 290.0 1.0
+  rotation 0.0
+  size     1.0 100.0 119.0
+  ShootThrough
+  DriveThrough
+end
+pyramid
+  position -100.0 290.0 0.0
+  rotation 0.0
+  size     1.0 100.0 119.0
+  ShootThrough
+  DriveThrough
+  FlipZ
+end
+pyramid
+  position -66.67 290.0 1.0
+  rotation 0.0
+  size     1.0 100.0 119.0
+  ShootThrough
+  DriveThrough
+end
+pyramid
+  position -66.67 290.0 0.0
+  rotation 0.0
+  size     1.0 100.0 119.0
+  ShootThrough
+  DriveThrough
+  FlipZ
+end
+pyramid
+  position -33.33 290.0 1.0
+  rotation 0.0
+  size     1.0 100.0 119.0
+  ShootThrough
+  DriveThrough
+end
+pyramid
+  position -33.33 290.0 0.0
+  rotation 0.0
+  size     1.0 100.0 119.0
+  ShootThrough
+  DriveThrough
+  FlipZ
+end
+pyramid
+  position 0.0 290.0 1.0
+  rotation 0.0
+  size     1.0 100.0 119.0
+  ShootThrough
+  DriveThrough
+end
+pyramid
+  position 0.0 290.0 0.0
+  rotation 0.0
+  size     1.0 100.0 119.0
+  ShootThrough
+  DriveThrough
+  FlipZ
+end
+pyramid
+  position 33.33 290.0 1.0
+  rotation 0.0
+  size     1.0 100.0 119.0
+  ShootThrough
+  DriveThrough
+end
+pyramid
+  position 33.33 290.0 0.0
+  rotation 0.0
+  size     1.0 100.0 119.0
+  ShootThrough
+  DriveThrough
+  FlipZ
+end
+pyramid
+  position -50.0 240.0 1.0
+  rotation 0.0
+  size     200.0 1.0 119.0
+  ShootThrough
+  DriveThrough
+end
+pyramid
+  position -50.0 240.0 0.0
+  rotation 0.0
+  size     200.0 1.0 119.0
+  ShootThrough
+  DriveThrough
+  FlipZ
+end
+pyramid
+  position -50.0 273.33 1.0
+  rotation 0.0
+  size     200.0 1.0 119.0
+  ShootThrough
+  DriveThrough
+end
+pyramid
+  position -50.0 273.33 0.0
+  rotation 0.0
+  size     200.0 1.0 119.0
+  ShootThrough
+  DriveThrough
+  FlipZ
+end
+pyramid
+  position -50.0 306.67 1.0
+  rotation 0.0
+  size     200.0 1.0 119.0
+  ShootThrough
+  DriveThrough
+end
+pyramid
+  position -50.0 306.67 0.0
+  rotation 0.0
+  size     200.0 1.0 119.0
+  ShootThrough
+  DriveThrough
+  FlipZ
+end
+pyramid
+  position -50.0 340.0 1.0
+  rotation 0.0
+  size     200.0 1.0 119.0
+  ShootThrough
+  DriveThrough
+end
+pyramid
+  position -50.0 340.0 0.0
+  rotation 0.0
+  size     200.0 1.0 119.0
+  ShootThrough
+  DriveThrough
+  FlipZ
+end
+pyramid
+  position -50.0 373.33 1.0
+  rotation 0.0
+  size     200.0 1.0 119.0
+  ShootThrough
+  DriveThrough
+end
+pyramid
+  position -50.0 373.33 0.0
+  rotation 0.0
+  size     200.0 1.0 119.0
+  ShootThrough
+  DriveThrough
+  FlipZ
+end
+pyramid
+  position 60.0 290.0 1.0
+  rotation 78.0
+  size     110.0 1.0 119.0
+  ShootThrough
+  DriveThrough
+end
+pyramid
+  position 60.0 290.0 0.0
+  rotation 78.0
+  size     110.0 1.0 119.0
+  ShootThrough
+  DriveThrough
+  FlipZ
+end
+pyramid
+  position -140.0 290.0 1.0
+  rotation 105.0
+  size     110.0 1.0 119.0
+  ShootThrough
+  DriveThrough
+end
+pyramid
+  position -140.0 290.0 0.0
+  rotation 105.0
+  size     110.0 1.0 119.0
+  ShootThrough
+  DriveThrough
+  FlipZ
+end
+box
+  position 250.0 395.0 0.0
+  rotation 0.0
+  size     150.0 5.0 154.0
+end
+box
+  position 395.0 200.0 0.0
+  rotation 0.0
+  size     5.0 200.0 154.0
+end
+box
+  position -218.26 290.08 0.0
+  rotation 108.48
+  size     115.9 55.0 150.0
+end
+box
+  position 253.0 84.0 0.0
+  rotation 0.0
+  size     80.0 120.0 14.0
+end
+box
+  position 251.0 44.0 14.0
+  rotation 45.0
+  size     35.0 50.0 14.0
+end
+box
+  position 251.0 44.0 28.0
+  rotation 70.0
+  size     20.0 30.0 14.0
+end
+box
+  position 180.0 0.0 0.0
+  rotation 40.0
+  size     10.0 15.0 42.0
+end
+box
+  position 99.88 347.51 0.0
+  rotation 264.29
+  size     54.25 25.0 14.0
+end
+box
+  position 99.51 279.9 0.0
+  rotation 281.31
+  size     29.5 25.0 14.0
+end
+box
+  position 79.52 209.38 0.0
+  rotation 231.34
+  size     36.02 25.0 14.0
+end
+box
+  position 53.21 165.72 0.0
+  rotation 248.2
+  size     30.93 25.0 14.0
+end
+box
+  position 45.0 125.0 0.0
+  rotation 270.0
+  size     29.0 25.0 14.0
+end
+box
+  position 45.0 75.0 0.0
+  rotation 270.0
+  size     29.0 25.0 14.0
+end
+box
+  position 29.86 13.82 0.0
+  rotation 243.43
+  size     31.95 25.0 14.0
+end
+box
+  position 19.76 6.62 0.0
+  rotation 297.7
+  size     9.65 25.0 14.0
+end
+box
+  position 45.01 -43.87 0.0
+  rotation 296.44
+  size     54.26 25.0 14.0
+end
+box
+  position 76.45 -117.82 0.0
+  rotation 286.7
+  size     30.1 25.0 14.0
+end
+box
+  position 99.52 -159.38 0.0
+  rotation 308.66
+  size     36.02 25.0 14.0
+end
+box
+  position 133.21 -215.72 0.0
+  rotation 291.8
+  size     30.93 25.0 14.0
+end
+box
+  position 151.0 -243.29 0.0
+  rotation 320.19
+  size     23.53 25.0 14.0
+end
+box
+  position 163.82 -240.14 0.0
+  rotation 26.57
+  size     31.95 25.0 14.0
+end
+box
+  position 207.32 -207.32 0.0
+  rotation 45.0
+  size     39.36 25.0 14.0
+end
+box
+  position 261.52 -162.94 10.5
+  rotation 32.62
+  size     33.68 25.0 3.5
+end
+box
+  position 275.72 -150.79 0.0
+  rotation 21.8
+  size     20.16 25.0 14.0
+end
+box
+  position 316.53 -135.48 0.0
+  rotation 19.8
+  size     30.57 25.0 14.0
+end
+box
+  position 378.95 -129.31 0.0
+  rotation 350.91
+  size     29.32 25.0 14.0
+end
+box
+  position 53.83 123.94 14.0
+  rotation 252.39
+  size     37.05 25.0 14.0
+end
+box
+  position 49.88 52.49 14.0
+  rotation 275.71
+  size     54.25 25.0 14.0
+end
+box
+  position 59.78 -34.2 14.0
+  rotation 277.59
+  size     41.83 25.0 14.0
+end
+box
+  position 81.29 -94.4 14.0
+  rotation 301.61
+  size     42.16 25.0 14.0
+end
+box
+  position 115.0 -135.0 14.0
+  rotation 323.13
+  size     29.0 25.0 14.0
+end
+box
+  position 148.72 -177.09 14.0
+  rotation 288.43
+  size     19.81 25.0 14.0
+end
+box
+  position 157.36 -198.82 14.0
+  rotation 296.57
+  size     15.18 25.0 14.0
+end
+box
+  position 194.52 -167.3 14.0
+  rotation 24.78
+  size     75.59 25.0 14.0
+end
+box
+  position 329.2 -120.18 14.0
+  rotation 13.41
+  size     70.82 25.0 14.0
+end
+box
+  position 43.83 139.06 28.0
+  rotation 287.61
+  size     37.05 25.0 14.0
+end
+box
+  position 59.88 52.49 28.0
+  rotation 275.71
+  size     54.25 25.0 14.0
+end
+box
+  position 82.06 -25.74 28.0
+  rotation 298.07
+  size     46.5 25.0 14.0
+end
+box
+  position 124.82 -92.26 28.0
+  rotation 307.57
+  size     45.0 25.0 14.0
+end
+box
+  position 152.68 -127.32 28.0
+  rotation 315.0
+  size     11.07 25.0 14.0
+end
+box
+  position 165.0 -155.0 28.0
+  rotation 270.0
+  size     9.0 25.0 14.0
+end
+box
+  position 156.9 -132.69 28.0
+  rotation 7.13
+  size     24.16 25.0 14.0
+end
+box
+  position 175.0 -127.5 28.0
+  rotation 36.87
+  size     16.5 25.0 14.0
+end
+box
+  position 295.1 -95.49 28.0
+  rotation 11.31
+  size     105.98 25.0 14.0
+end
+box
+  position 51.35 134.26 42.0
+  rotation 276.34
+  size     35.69 25.0 14.0
+end
+box
+  position 68.95 57.18 42.0
+  rotation 286.7
+  size     56.2 25.0 14.0
+end
+box
+  position 109.52 -21.88 52.5
+  rotation 308.66
+  size     52.02 25.0 3.5
+end
+box
+  position 116.46 -38.69 42.0
+  rotation 318.81
+  size     30.58 25.0 14.0
+end
+box
+  position 149.52 -71.88 42.0
+  rotation 308.66
+  size     20.01 25.0 14.0
+end
+box
+  position 168.78 -84.09 42.0
+  rotation 339.44
+  size     25.36 25.0 14.0
+end
+box
+  position 205.0 -102.5 42.0
+  rotation 323.13
+  size     16.5 25.0 14.0
+end
+box
+  position 213.82 -95.14 42.0
+  rotation 26.57
+  size     31.95 25.0 14.0
+end
+box
+  position 263.82 -70.14 42.0
+  rotation 26.57
+  size     31.95 25.0 14.0
+end
+box
+  position 345.1 -45.49 42.0
+  rotation 11.31
+  size     54.99 25.0 14.0
+end
+box
+  position 130.0 0.0 37.0
+  rotation 0.0
+  size     50.0 6.0 5.0
+end
+box
+  position 111.75 343.94 56.0
+  rotation 255.96
+  size     55.54 25.0 14.0
+end
+box
+  position 70.91 217.74 56.0
+  rotation 249.49
+  size     82.48 25.0 14.0
+end
+box
+  position 55.74 130.72 56.0
+  rotation 291.64
+  size     37.89 25.0 14.0
+end
+box
+  position 85.4 60.02 56.0
+  rotation 293.63
+  size     47.66 25.0 14.0
+end
+box
+  position 125.8 -13.63 56.0
+  rotation 303.69
+  size     49.07 25.0 14.0
+end
+box
+  position 155.18 -54.82 56.0
+  rotation 315.0
+  size     14.61 25.0 14.0
+end
+box
+  position 166.04 -57.75 56.0
+  rotation 351.87
+  size     21.68 25.0 14.0
+end
+box
+  position 183.94 -58.25 56.0
+  rotation 14.04
+  size     14.31 25.0 14.0
+end
+box
+  position 222.51 -52.62 56.0
+  rotation 5.71
+  size     29.12 25.0 14.0
+end
+box
+  position 272.51 -47.62 56.0
+  rotation 5.71
+  size     29.12 25.0 14.0
+end
+box
+  position 340.72 -26.79 56.0
+  rotation 21.8
+  size     57.85 25.0 14.0
+end
+box
+  position 75.46 133.9 70.0
+  rotation 293.32
+  size     35.58 25.0 14.0
+end
+box
+  position 101.36 62.46 70.0
+  rotation 287.35
+  size     45.91 25.0 14.0
+end
+box
+  position 136.89 5.93 70.0
+  rotation 317.49
+  size     44.7 25.0 14.0
+end
+box
+  position 180.48 -47.65 70.0
+  rotation 293.2
+  size     23.04 25.0 14.0
+end
+box
+  position 178.96 -47.75 70.0
+  rotation 8.13
+  size     21.68 25.0 14.0
+end
+box
+  position 203.94 -43.25 70.0
+  rotation 14.04
+  size     14.31 25.0 14.0
+end
+box
+  position 233.82 -30.14 70.0
+  rotation 26.57
+  size     31.95 25.0 14.0
+end
+box
+  position 332.13 -7.66 70.0
+  rotation 6.58
+  size     69.43 25.0 14.0
+end
+box
+  position 111.75 343.94 84.0
+  rotation 255.96
+  size     55.54 25.0 14.0
+end
+box
+  position 84.5 221.5 10.5
+  rotation 258.47
+  size     79.01 25.0 3.5
+end
+box
+  position 93.26 207.34 84.0
+  rotation 248.51
+  size     72.24 25.0 14.0
+end
+box
+  position 81.76 138.81 84.0
+  rotation 299.51
+  size     34.45 25.0 14.0
+end
+box
+  position 110.53 66.91 84.0
+  rotation 286.04
+  size     45.62 25.0 14.0
+end
+box
+  position 142.55 21.01 84.0
+  rotation 327.17
+  size     40.89 25.0 14.0
+end
+box
+  position 190.48 -27.65 84.0
+  rotation 293.2
+  size     23.04 25.0 14.0
+end
+box
+  position 200.24 -27.6 84.0
+  rotation 5.19
+  size     31.61 25.0 14.0
+end
+box
+  position 255.15 -12.02 84.0
+  rotation 23.2
+  size     42.08 25.0 14.0
+end
+box
+  position 315.72 13.21 84.0
+  rotation 21.8
+  size     30.93 25.0 14.0
+end
+box
+  position 384.28 13.21 84.0
+  rotation 338.2
+  size     30.93 25.0 14.0
+end
+box
+  position 280.0 100.0 84.0
+  rotation 0.0
+  size     30.0 30.0 5.0
+end
+teleporter
+  position 280.0 100.0 89.0
+  rotation 0.0
+  border 1.12
+  size 0.56 10.0 10.0
+end
+box
+  position 98.46 336.38 98.0
+  rotation 236.98
+  size     63.63 25.0 14.0
+end
+box
+  position 72.49 223.31 98.0
+  rotation 271.85
+  size     81.54 25.0 14.0
+end
+box
+  position 94.82 127.74 108.5
+  rotation 307.57
+  size     45.0 25.0 3.5
+end
+box
+  position 119.04 104.37 98.0
+  rotation 285.95
+  size     22.2 25.0 14.0
+end
+box
+  position 132.52 63.47 98.0
+  rotation 289.8
+  size     30.57 25.0 14.0
+end
+box
+  position 162.55 31.01 98.0
+  rotation 327.17
+  size     40.89 25.0 14.0
+end
+box
+  position 211.18 2.36 98.0
+  rotation 333.43
+  size     26.36 25.0 14.0
+end
+box
+  position 223.82 -0.14 98.0
+  rotation 26.57
+  size     20.77 25.0 14.0
+end
+box
+  position 273.82 24.86 98.0
+  rotation 26.57
+  size     43.13 25.0 14.0
+end
+box
+  position 363.1 39.81 98.0
+  rotation 352.87
+  size     44.31 25.0 14.0
+end
+box
+  position 191.0 207.5 93.0
+  rotation 40.32
+  size     142.96 10.0 5.0
+end
+box
+  position 300.0 300.0 93.0
+  rotation 40.0
+  size     20.0 20.0 5.0
+end
+pyramid
+  position 294.0 294.0 98.0
+  rotation 0.0
+  size     7.0 7.0 7.0
+end
+box
+  position 116.1 341.74 112.0
+  rotation 250.71
+  size     56.97 25.0 14.0
+end
+box
+  position 89.77 224.08 112.0
+  rotation 262.15
+  size     77.19 25.0 14.0
+end
+box
+  position 100.18 145.18 112.0
+  rotation 315.0
+  size     42.89 25.0 14.0
+end
+box
+  position 143.21 84.28 112.0
+  rotation 291.8
+  size     30.93 25.0 14.0
+end
+box
+  position 183.25 46.2 112.0
+  rotation 327.99
+  size     51.17 25.0 14.0
+end
+box
+  position 230.0 25.0 112.0
+  rotation 0.0
+  size     24.0 25.0 14.0
+end
+box
+  position 265.72 33.21 112.0
+  rotation 21.8
+  size     30.93 25.0 14.0
+end
+box
+  position 345.1 54.51 112.0
+  rotation 11.31
+  size     54.99 25.0 14.0
+end
+box
+  position 128.41 351.22 126.0
+  rotation 249.44
+  size     46.72 25.0 14.0
+end
+box
+  position 99.48 242.43 126.0
+  rotation 258.31
+  size     78.04 25.0 14.0
+end
+box
+  position 108.37 159.46 126.0
+  rotation 312.71
+  size     48.23 25.0 14.0
+end
+box
+  position 152.36 101.18 126.0
+  rotation 296.57
+  size     26.36 25.0 14.0
+end
+box
+  position 202.86 61.44 126.0
+  rotation 329.04
+  size     62.31 25.0 14.0
+end
+box
+  position 247.09 38.72 126.0
+  rotation 18.43
+  size     19.81 25.0 14.0
+end
+box
+  position 292.09 53.72 126.0
+  rotation 18.43
+  size     35.62 25.0 14.0
+end
+box
+  position 355.15 77.98 126.0
+  rotation 23.2
+  size     42.08 25.0 14.0
+end
+box
+  position 260.0 380.0 126.0
+  rotation 0.0
+  size     140.0 20.0 14.0
+end
+box
+  position 380.0 235.0 126.0
+  rotation 90.0
+  size     165.0 20.0 14.0
+end
+box
+  position 152.36 338.82 140.0
+  rotation 243.43
+  size     26.36 25.0 14.0
+end
+box
+  position 123.89 257.65 140.0
+  rotation 252.9
+  size     72.01 25.0 14.0
+end
+box
+  position 130.0 175.0 140.0
+  rotation 306.87
+  size     54.0 25.0 14.0
+end
+box
+  position 170.8 118.87 140.0
+  rotation 303.69
+  size     22.03 25.0 14.0
+end
+box
+  position 222.86 81.44 140.0
+  rotation 329.04
+  size     62.31 25.0 14.0
+end
+box
+  position 268.82 62.36 140.0
+  rotation 26.57
+  size     26.36 25.0 14.0
+end
+box
+  position 303.82 79.86 140.0
+  rotation 26.57
+  size     20.77 25.0 14.0
+end
+box
+  position 343.82 99.86 140.0
+  rotation 26.57
+  size     31.95 25.0 14.0
+end
+box
+  position 352.59 117.92 140.0
+  rotation 94.76
+  size     34.1 25.0 14.0
+end
+box
+  position 342.78 196.29 140.0
+  rotation 98.53
+  size     54.56 25.0 14.0
+end
+box
+  position 340.49 279.9 140.0
+  rotation 78.69
+  size     29.5 25.0 14.0
+end
+box
+  position 341.21 327.8 140.0
+  rotation 97.35
+  size     35.26 25.0 14.0
+end
+box
+  position 336.29 364.7 140.0
+  rotation 98.75
+  size     10.58 25.0 14.0
+end
+box
+  position 250.57 347.51 140.0
+  rotation 181.3
+  size     114.03 25.0 14.0
+end
+box
+  position 195.0 230.0 154.0
+  rotation 0.0
+  size     45.0 100.0 14.0
+end
+box
+  position 305.0 230.0 154.0
+  rotation 0.0
+  size     45.0 100.0 14.0
+end
+box
+  position 250.0 175.0 154.0
+  rotation 0.0
+  size     10.0 45.0 14.0
+end
+box
+  position 250.0 285.0 154.0
+  rotation 0.0
+  size     10.0 45.0 14.0
+end
+box
+  position 265.0 110.0 154.0
+  rotation 0.0
+  size     71.0 24.0 14.0
+end
+box
+  position 134.0 222.0 154.0
+  rotation 0.0
+  size     17.0 57.0 14.0
+end
+box
+  position 250.0 230.0 182.0
+  rotation 0.0
+  size     12.0 12.0 5.0
+end
+teleporter
+  position 250.0 230.0 187.0
+  rotation 45.0
+  border 1.0
+  size 8.0 8.0 12.0
+end
+teleporter
+  position 332.0 332.0 0.0
+  rotation 45.0
+  border 1.0
+  size 0.45 8.0 12.0
+end
+box
+  position 258.0 238.0 168.0
+  rotation 0.0
+  size     2.0 2.0 14.0
+end
+box
+  position 242.0 222.0 168.0
+  rotation 0.0
+  size     2.0 2.0 14.0
+end
+box
+  position 258.0 222.0 168.0
+  rotation 0.0
+  size     2.0 2.0 14.0
+end
+box
+  position 242.0 238.0 168.0
+  rotation 0.0
+  size     2.0 2.0 14.0
+end
+box
+  position 250.0 230.0 168.0
+  rotation 0.0
+  size     0.0 0.0 0.0
+end
+box
+  position 328.74 300.85 168.0
+  rotation 0.0
+  size     10.12 9.72 6.55
+end
+box
+  position 250.0 230.0 168.0
+  rotation 0.0
+  size     0.0 0.0 0.0
+end
+box
+  position 315.86 220.97 168.0
+  rotation 0.0
+  size     6.51 9.02 9.7
+end
+box
+  position 250.0 230.0 168.0
+  rotation 0.0
+  size     0.0 0.0 0.0
+end
+box
+  position 310.63 183.49 168.0
+  rotation 0.0
+  size     8.56 6.53 16.5
+end
+box
+  position 250.0 230.0 168.0
+  rotation 0.0
+  size     0.0 0.0 0.0
+end
+box
+  position 324.86 230.54 168.0
+  rotation 0.0
+  size     7.92 13.75 17.19
+end
+box
+  position 250.0 230.0 168.0
+  rotation 0.0
+  size     0.0 0.0 0.0
+end
+box
+  position 189.84 264.24 168.0
+  rotation 0.0
+  size     8.35 9.04 15.19
+end
+box
+  position 250.0 230.0 168.0
+  rotation 0.0
+  size     0.0 0.0 0.0
+end
+box
+  position 311.68 228.99 168.0
+  rotation 0.0
+  size     3.73 13.59 5.45
+end
+box
+  position 250.0 230.0 168.0
+  rotation 0.0
+  size     0.0 0.0 0.0
+end
+box
+  position 303.26 305.99 168.0
+  rotation 0.0
+  size     6.56 12.1 17.63
+end
+box
+  position 250.0 230.0 168.0
+  rotation 0.0
+  size     0.0 0.0 0.0
+end
+box
+  position 231.62 154.33 168.0
+  rotation 0.0
+  size     3.57 8.85 10.19
+end
+box
+  position 250.0 230.0 168.0
+  rotation 0.0
+  size     0.0 0.0 0.0
+end
+box
+  position 186.6 197.82 168.0
+  rotation 0.0
+  size     7.65 8.15 14.75
+end
+box
+  position 250.0 230.0 168.0
+  rotation 0.0
+  size     0.0 0.0 0.0
+end
+box
+  position 301.2 221.78 168.0
+  rotation 0.0
+  size     4.8 4.13 17.54
+end
+box
+  position 250.0 230.0 168.0
+  rotation 0.0
+  size     0.0 0.0 0.0
+end
+box
+  position 197.27 224.48 168.0
+  rotation 0.0
+  size     12.51 12.72 15.72
+end
+box
+  position 250.0 230.0 168.0
+  rotation 0.0
+  size     0.0 0.0 0.0
+end
+box
+  position 188.56 177.11 168.0
+  rotation 0.0
+  size     11.87 10.92 8.49
+end
+box
+  position 250.0 230.0 168.0
+  rotation 0.0
+  size     0.0 0.0 0.0
+end
+box
+  position 280.95 307.18 168.0
+  rotation 0.0
+  size     5.4 2.93 5.64
+end
+box
+  position 250.0 230.0 168.0
+  rotation 0.0
+  size     0.0 0.0 0.0
+end
+box
+  position 310.75 285.37 168.0
+  rotation 0.0
+  size     9.11 11.95 15.7
+end
+box
+  position 250.0 230.0 168.0
+  rotation 0.0
+  size     0.0 0.0 0.0
+end
+box
+  position 262.99 160.4 168.0
+  rotation 0.0
+  size     5.77 5.14 5.54
+end
+box
+  position 320.0 -320.0 0.0
+  rotation 45.0
+  size     0.0 0.0 0.0
+end
+box
+  position 347.31 -362.24 0.0
+  rotation 45.0
+  size     13.48 11.2 10.49
+end
+box
+  position 320.0 -320.0 0.0
+  rotation 45.0
+  size     0.0 0.0 0.0
+end
+box
+  position 362.41 -280.57 0.0
+  rotation 45.0
+  size     8.58 12.3 17.72
+end
+box
+  position 320.0 -320.0 0.0
+  rotation 45.0
+  size     0.0 0.0 0.0
+end
+box
+  position 327.89 -254.18 0.0
+  rotation 45.0
+  size     13.77 8.91 16.03
+end
+box
+  position 320.0 -320.0 0.0
+  rotation 45.0
+  size     0.0 0.0 0.0
+end
+box
+  position 305.17 -261.19 0.0
+  rotation 45.0
+  size     12.85 10.51 5.63
+end
+box
+  position 320.0 -320.0 0.0
+  rotation 45.0
+  size     0.0 0.0 0.0
+end
+box
+  position 367.73 -383.41 0.0
+  rotation 45.0
+  size     5.57 13.84 10.24
+end
+box
+  position 320.0 -320.0 0.0
+  rotation 45.0
+  size     0.0 0.0 0.0
+end
+box
+  position 352.12 -365.42 0.0
+  rotation 45.0
+  size     11.46 3.06 7.49
+end
+box
+  position 320.0 -320.0 0.0
+  rotation 45.0
+  size     0.0 0.0 0.0
+end
+box
+  position 331.22 -271.86 0.0
+  rotation 45.0
+  size     2.82 2.51 8.42
+end
+box
+  position 320.0 -320.0 0.0
+  rotation 45.0
+  size     0.0 0.0 0.0
+end
+box
+  position 344.15 -369.64 0.0
+  rotation 45.0
+  size     5.31 5.12 13.44
+end
+box
+  position 320.0 -320.0 0.0
+  rotation 45.0
+  size     0.0 0.0 0.0
+end
+box
+  position 352.4 -278.93 0.0
+  rotation 45.0
+  size     11.29 4.38 6.29
+end
+box
+  position 320.0 -320.0 0.0
+  rotation 45.0
+  size     0.0 0.0 0.0
+end
+box
+  position 360.68 -277.42 0.0
+  rotation 45.0
+  size     2.95 8.26 7.95
+end
+box
+  position 320.0 -320.0 0.0
+  rotation 45.0
+  size     0.0 0.0 0.0
+end
+box
+  position 279.58 -300.77 0.0
+  rotation 45.0
+  size     8.15 10.0 13.32
+end
+box
+  position 320.0 -320.0 0.0
+  rotation 45.0
+  size     0.0 0.0 0.0
+end
+box
+  position 366.27 -262.1 0.0
+  rotation 45.0
+  size     11.58 4.82 14.45
+end
+box
+  position 320.0 -320.0 0.0
+  rotation 45.0
+  size     0.0 0.0 0.0
+end
+box
+  position 278.63 -263.71 0.0
+  rotation 45.0
+  size     4.36 3.61 10.55
+end
+box
+  position 320.0 -320.0 0.0
+  rotation 45.0
+  size     0.0 0.0 0.0
+end
+box
+  position 345.21 -387.04 0.0
+  rotation 45.0
+  size     11.23 2.87 6.09
+end
+box
+  position 320.0 -320.0 0.0
+  rotation 45.0
+  size     0.0 0.0 0.0
+end
+box
+  position 279.61 -257.06 0.0
+  rotation 45.0
+  size     7.34 11.91 7.18
+end
+box
+  position 320.0 -320.0 0.0
+  rotation 45.0
+  size     0.0 0.0 0.0
+end
+box
+  position 313.46 -387.31 0.0
+  rotation 45.0
+  size     2.94 10.79 9.43
+end
+box
+  position 320.0 -320.0 0.0
+  rotation 45.0
+  size     0.0 0.0 0.0
+end
+box
+  position 270.46 -324.09 0.0
+  rotation 45.0
+  size     2.68 11.97 11.65
+end
+box
+  position 320.0 -320.0 0.0
+  rotation 45.0
+  size     0.0 0.0 0.0
+end
+box
+  position 315.18 -262.75 0.0
+  rotation 45.0
+  size     4.81 10.92 14.78
+end
+teleporter
+  position 320.0 -320.0 0.0
+  rotation 135.0
+  border 1.0
+  size 0.45 12.0 20.0
+end
+pyramid
+  position -50.0 100.0 0.5
+  rotation 0.0
+  size     83.5 177.0 1.0
+  ShootThrough
+  DriveThrough
+end
+pyramid
+  position -50.0 100.0 4.0
+  rotation 0.0
+  size     83.5 177.0 1.0
+  ShootThrough
+  DriveThrough
+end
+pyramid
+  position -46.5 -134.0 0.5
+  rotation -26.0
+  size     60.0 100.0 1.0
+  ShootThrough
+  DriveThrough
+end
+pyramid
+  position -59.0 -296.0 0.5
+  rotation 200.5
+  size     40.0 120.0 1.0
+  ShootThrough
+  DriveThrough
+end
+box
+  position 7.0 -164.0 0.0
+  rotation 63.0
+  size     80.0 10.0 12.0
+end
+box
+  position -117.0 -143.0 0.0
+  rotation 63.0
+  size     56.0 10.0 12.0
+end
+box
+  position -104.0 -294.0 0.0
+  rotation 111.0
+  size     115.0 10.0 12.0
+end
+box
+  position 1.0 -317.0 0.0
+  rotation 111.0
+  size     92.0 10.0 12.0
+end
+box
+  position -45.0 -328.0 12.0
+  rotation 22.0
+  size     44.0 8.5 5.0
+end
+teleporter
+  position -45.0 -328.0 0.0
+  rotation 112.0
+  border 1.0
+  size 0.45 44.0 13.0
+end
+box
+  position -179.17 163.18 0.0
+  rotation 294.59
+  size     29.68 55.0 160.0
+end
+box
+  position -109.0 144.0 0.0
+  rotation 0.0
+  size     20.0 30.0 60.0
+end
+teleporter
+  position -240.0 350.0 150.0
+  rotation 90.0
+  border 1.0
+  size 0.45 10.0 10.0
+end
+box
+  position -109.0 22.0 0.0
+  rotation 270.0
+  size     122.0 30.0 28.0
+end
+box
+  position -201.0 236.0 150.0
+  rotation 109.5
+  size     67.0 25.0 18.0
+end
+box
+  position -350.0 0.0 0.0
+  rotation 288.41
+  size     15.0 15.0 17.0
+end
+box
+  position -300.0 0.0 0.0
+  rotation 130.27
+  size     15.0 15.0 34.0
+end
+box
+  position -250.0 0.0 0.0
+  rotation 269.47
+  size     15.0 15.0 51.0
+end
+box
+  position -200.0 0.0 0.0
+  rotation 295.07
+  size     15.0 15.0 68.0
+end
+box
+  position -150.0 0.0 20.0
+  rotation 216.14
+  size     15.0 15.0 65.0
+end
+box
+  position -150.0 50.0 0.0
+  rotation 45.0
+  size     25.0 25.0 150.0
+end
+box
+  position -150.0 -50.0 0.0
+  rotation 45.0
+  size     25.0 25.0 150.0
+end
+teleporter
+  position -150.0 -50.0 150.0
+  rotation 135.0
+  border 1.0
+  size 0.45 10.0 8.0
+end
+box
+  position -150.0 0.0 145.0
+  rotation 0.0
+  size     8.0 50.0 5.0
+end
+box
+  position -113.27 -83.11 0.0
+  rotation 337.41
+  size     11.71 11.71 17.0
+end
+box
+  position -113.27 -66.05 0.0
+  rotation 218.58
+  size     10.77 10.77 31.0
+end
+box
+  position -113.27 5.15 0.0
+  rotation 119.77
+  size     16.73 16.73 45.0
+end
+box
+  position -113.27 32.1 0.0
+  rotation 301.42
+  size     23.84 23.84 59.0
+end
+box
+  position -113.27 35.62 0.0
+  rotation 358.81
+  size     15.08 15.08 73.0
+end
+box
+  position -113.27 8.39 0.0
+  rotation 41.89
+  size     10.5 10.5 87.0
+end
+box
+  position -113.27 -23.27 0.0
+  rotation 87.39
+  size     17.02 17.02 101.0
+end
+box
+  position -113.27 54.38 0.0
+  rotation 85.61
+  size     22.21 22.21 115.0
+end
+box
+  position -113.27 -99.09 0.0
+  rotation 248.42
+  size     17.87 17.87 129.0
+end
+pyramid
+  position -339.23 -285.82 0.0
+  rotation 2.67
+  size     2.16 7.06 33.69
+end
+pyramid
+  position -203.44 -216.78 0.0
+  rotation 39.79
+  size     1.54 2.61 14.99
+end
+pyramid
+  position -239.15 -310.41 0.0
+  rotation 225.89
+  size     0.69 7.83 24.2
+end
+pyramid
+  position -302.17 -348.94 0.0
+  rotation 358.48
+  size     0.72 8.62 13.6
+end
+pyramid
+  position -234.28 -222.22 0.0
+  rotation 283.68
+  size     9.45 8.99 21.76
+end
+pyramid
+  position -341.19 -219.02 0.0
+  rotation 150.59
+  size     6.6 0.35 9.9
+end
+pyramid
+  position -285.45 -223.16 0.0
+  rotation 76.44
+  size     6.08 9.6 16.76
+end
+pyramid
+  position -242.88 -219.28 0.0
+  rotation 111.23
+  size     2.57 4.49 5.05
+end
+pyramid
+  position -333.41 -275.32 0.0
+  rotation 40.71
+  size     2.04 7.07 6.75
+end
+pyramid
+  position -295.98 -300.04 0.0
+  rotation 72.16
+  size     8.83 2.68 30.77
+end
+pyramid
+  position -366.83 -316.42 0.0
+  rotation 355.46
+  size     3.29 3.64 3.96
+end
+pyramid
+  position -338.23 -358.77 0.0
+  rotation 68.56
+  size     4.62 8.6 33.44
+end
+pyramid
+  position -325.98 276.26 0.0
+  rotation 32.27
+  size     9.22 4.89 12.73
+end
+pyramid
+  position -373.25 273.08 0.0
+  rotation 187.38
+  size     1.64 0.33 6.42
+end
+pyramid
+  position -284.16 238.27 0.0
+  rotation 84.76
+  size     4.98 3.92 22.02
+end
+pyramid
+  position -298.56 268.72 0.0
+  rotation 115.6
+  size     5.67 7.53 16.57
+end
+pyramid
+  position -336.97 209.57 0.0
+  rotation 63.16
+  size     4.81 2.19 29.9
+end
+pyramid
+  position -332.05 298.65 0.0
+  rotation 193.85
+  size     8.15 3.03 15.45
+end
+pyramid
+  position -287.84 294.18 0.0
+  rotation 330.34
+  size     1.08 9.47 3.69
+end
+pyramid
+  position -357.36 257.56 0.0
+  rotation 225.47
+  size     3.04 6.79 32.71
+end
+pyramid
+  position -304.16 288.03 0.0
+  rotation 325.63
+  size     8.86 7.4 24.26
+end
+pyramid
+  position -288.51 231.27 0.0
+  rotation 302.47
+  size     6.33 2.75 2.3
+end
+pyramid
+  position -293.84 208.62 0.0
+  rotation 21.66
+  size     2.65 9.37 9.78
+end
+pyramid
+  position -283.97 238.89 0.0
+  rotation 147.36
+  size     3.97 4.94 33.22
+end
+pyramid
+  position -356.89 249.7 0.0
+  rotation 31.29
+  size     5.6 2.82 8.37
+end
+pyramid
+  position -335.66 200.02 0.0
+  rotation 345.03
+  size     2.33 6.05 23.96
+end
+pyramid
+  position -311.97 261.01 0.0
+  rotation 4.41
+  size     1.2 4.13 9.37
+end
+pyramid
+  position -333.12 226.92 0.0
+  rotation 64.62
+  size     1.23 8.59 20.68
+end
+pyramid
+  position -297.95 252.92 0.0
+  rotation 354.89
+  size     7.54 5.91 8.46
+end
+teleporter
+  position -385.0 -385.0 0.0
+  rotation 45.0
+  border 1.0
+  size 0.45 6.0 8.0
+end
+teleporter
+  position -385.0 385.0 0.0
+  rotation 135.0
+  border 1.0
+  size 0.45 6.0 8.0
+end
+link
+ from 19
+ to 16
+end
+link
+ from 18
+ to 19
+end
+link
+ from 16
+ to 19
+end
+link
+ from 17
+ to 16
+end
+link
+ from 9
+ to 5
+end
+link
+ from 8
+ to 15
+end
+link
+ from 0
+ to 1
+end
+link
+ from 1
+ to 4
+end
+link
+ from 6
+ to 14
+end
+link
+ from 7
+ to 13
+end
+link
+ from 4
+ to 9
+end
+link
+ from 5
+ to 17
+end
+link
+ from 11
+ to 12
+end
+link
+ from 10
+ to 7
+end
+link
+ from 14
+ to 11
+end
+link
+ from 15
+ to 19
+end
+link
+ from 13
+ to 7
+end
+link
+ from 12
+ to 16
+end

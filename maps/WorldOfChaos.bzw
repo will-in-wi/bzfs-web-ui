@@ -1,0 +1,827 @@
+# Made by BinarySpike
+# (c) Copyright 2006, Nathan Goings, All rights reserved
+# this file may not be used in anyway unless explicit
+# permission from copyright holder
+# removal of this copyright is illegal and punishable by law
+
+material
+	name (c)_Copyright_2006,_Nathan_Goings,_All_rights_reserved
+end
+
+#bases
+world 
+	name World Of Choas 
+	size 300
+end
+options 
+	-set _wingsJumpCount 3
+end
+
+
+#textures for bases!
+material
+        name Red
+        diffuse 0.8 0.2 0.2 1
+        addtexture hunter_tank
+	notexcolor
+end
+
+material
+	name Blue
+	diffuse 0.2 0.2 0.8 1
+	addtexture rabbit_tank
+	notexcolor
+end
+
+
+#location of objects
+#red base
+base
+	name RedBase
+	position 0 -273 10
+	size 27 27 1
+	color 1
+end
+
+
+box
+name RedSideWall1
+	position -27 -250 0
+	rotation 0
+	size 2 50 20	
+end
+
+box
+name RedSideWall2
+	position 27 -250 0
+	rotation 0
+	size 2 50 20	
+end
+
+box
+name RedJumpPlatform1
+	position 20 -240 12.5
+	rotation 0
+	size 5 60 2.5
+end
+
+box
+name RedJumpPlatform2
+	position -20 -240 12.5
+	rotation 0
+	size 5 60 2.5
+end
+
+meshbox
+	name RedShield
+	position 0 -243.5 10
+	size 25 2.5 30
+	texsize 1 1 1 1
+	matref Red
+end
+
+#end red base
+#blue base
+base
+	name BlueBase
+	position 0 273 10
+	size 27 27 1
+	color 3
+end
+
+box
+name BlueSideWall1
+	position -27 250 0
+	rotation 0
+	size 2 50 20	
+end
+
+box
+name BlueSideWall2
+	position 27 250 0
+	rotation 0
+	size 2 50 20	
+end
+
+box
+name BlueJumpPlatform1
+	position 20 240 12.5
+	rotation 0
+	size 5 60 2.5
+end
+
+box
+name BlueJumpPlatform2
+	position -20 240 12.5
+	rotation 0
+	size 5 60 2.5
+end
+
+meshbox
+	name BlueShield
+	position 0 243.5 10
+	size 25 2.5 30
+	texsize 1 1 1 1
+	matref Blue
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#end blue base
+#end bases
+
+
+
+
+#Teleporters :-)
+#acual Teleporters
+teleporter RedToBlue
+	position 0 -25 0
+	size 0.125 23 25
+	rotation -90
+	border 1
+end
+
+teleporter BlueToRed
+	position 0 25 0
+	size 0.125 23 25
+	rotation 90
+	border 1
+end
+
+teleporter TelOne
+	position 25 15 0
+	size 0.125 8 25
+	rotation 0
+	border 1
+end
+
+teleporter TelTwo
+	position 25 -15 0
+	size 0.125 8 25
+	rotation 0
+	border 1
+end
+
+teleporter TelThree
+	position -25 15 0
+	size 0.125 8 25
+	rotation 0
+	border 1
+end
+
+teleporter TelFour
+	position -25 -15 0
+	size 0.125 8 25
+	rotation 0
+	border 1
+end
+
+teleporter RedBaseBlock
+	position 0 -200 0
+	size 0.125 23 5
+	rotation 90
+	border 1
+end
+
+teleporter BlueBaseBlock
+	position 0 200 0
+	size 0.125 23 5
+	rotation -90
+	border 1
+end
+
+teleporter RedDungeonDoorOne
+	position 150 -120 0
+	size 0.125 7 13
+	rotation 180
+	border 1
+end
+
+teleporter RedDungeonDoorTwo
+	position 180 -120 0
+	size 0.125 7 13
+	rotation 0
+	border 1
+end
+
+teleporter BlueDungeonDoorOne
+	position -150 120 0
+	size 0.125 7 13
+	rotation 0
+	border 1
+end
+
+teleporter BlueDungeonDoorTwo
+	position -180 120 0
+	size 0.125 7 13
+	rotation 180
+	border 1
+end
+
+
+teleporter RedAlley
+	position 290 -29.5 0
+	size 0.125 7 13
+	rotation 180
+	border 1
+end
+
+teleporter BlueAlley
+	position -290 29.5 0
+	size 0.125 7 13
+	rotation 0
+	border 1
+end
+
+teleporter RedWRTel
+	position 95 0 202
+	size 0.125 7 13
+	rotation 180
+	border 1
+end
+
+teleporter BlueWRTel
+	position -95 0 202
+	size 0.125 7 13
+	rotation 0
+	border 1
+end
+
+
+#end acual Teleporters
+#links
+link
+	from RedAlley:f
+	to RedWRTel:f
+end
+
+link
+	from RedWRTel:f
+	to RedAlley:f
+end
+
+link
+	from BlueAlley:f
+	to BlueWRTel:f
+end
+
+link
+	from BlueWRTel:f
+	to BlueAlley:f
+end
+
+link
+	from RedDungeonDoorTwo:f
+	to RedDungeonDoorOne:f
+end
+
+link
+	from RedDungeonDoorOne:f
+	to RedDungeonDoorTwo:f
+end
+
+link
+	from BlueDungeonDoorTwo:f
+	to BlueDungeonDoorOne:f
+end
+
+link
+	from BlueDungeonDoorOne:f
+	to BlueDungeonDoorTwo:f
+end
+
+
+
+link
+	from RedToBlue:f
+	to   BlueToRed:f
+end
+
+
+link
+	from BlueToRed:f
+	to   RedToBlue:f
+end
+
+link
+	from TelOne:f
+	to TelTwo:f
+end
+
+link
+	from TelTwo:f
+	to TelOne:f
+end
+
+link
+	from TelThree:b
+	to TelFour:b
+end
+
+link
+	from TelFour:b
+	to TelThree:b
+end
+
+link
+	from RedBaseBlock:b
+	to RedBaseBlock:f
+end
+
+link
+	from RedBaseBlock:f
+	to RedBaseBlock:f
+end
+
+link
+	from BlueBaseBlock:b
+	to BlueBaseBlock:f
+end
+
+link
+	from BlueBaseBlock:f
+	to BlueBaseBlock:f
+end
+
+
+
+
+#end links
+#end Teleporters :-)
+
+#Extra objects (physics, weapons)
+physics
+	name water #named water meanning a death zone
+	death You landed in the forbidden zone :-(
+end
+material
+        name caution
+        #diffuse 0.8 0.2 0.2 1
+        addtexture caution
+end
+
+
+meshbox
+	position 0 14 0
+	size 20 6 0.1
+	phydrv water
+	matref caution
+end
+
+meshbox
+	position 0 -14 0
+	size 20 6 0.1
+	phydrv water
+	matref caution
+end
+
+meshbox
+	position -14 0 0
+	size 6 8 0.1
+	phydrv water
+	matref caution
+end
+
+meshbox
+	position 14 0 0
+	size 6 8 0.1
+	phydrv water
+	matref caution
+end
+
+box
+	position 0 0 0
+	size 8 8 4
+end
+
+
+pyramid
+	position 6 6 4
+	size 2 2 20
+end
+
+pyramid
+	position -6 6 4
+	size 2 2 20
+end
+
+pyramid
+	position -6 -6 4
+	size 2 2 20
+end
+
+pyramid
+	position 6 -6 4
+	size 2 2 20
+end
+
+
+box
+	name ToWingsMiddle
+	position 0 0 24
+	size 6 6 0.5
+end
+
+box
+	name StairRed1
+	position -24.5 -100 20
+	size 5 5 0.5
+end
+
+box
+	name StairRed2
+	position 24.5 -100 20
+	size 5 5 0.5
+end
+
+box
+	name StairBlue1
+	position -24.5 100 20
+	size 5 5 0.5
+end
+
+box
+	name StairBlue2
+	position 24.5 100 20
+	size 5 5 0.5
+end
+
+
+box
+name SideBox1
+	position -162.5 0 0
+	rotation 0
+	size 137.5 5 40
+end
+
+box
+name SideBox2
+	position 162.5 0 0
+	rotation 0
+	size 137.5 5 40
+end
+
+#end Extra objects (physics, weapons)
+
+
+
+
+
+
+#spawn location type stuff!
+zone 
+	name RedZone 
+	position 0 -250 0
+	size 25 50 5
+	team 1
+	flag T SE
+end
+
+zone
+	name BlueZone
+	position 0 250 0
+	size 25 50 5
+	team 3
+	flag T SE
+end
+
+zone
+	name RogueZone
+	position 0 0 202
+	size 100 100 10
+	team 0
+end 
+
+
+zone 
+	name Geno
+	position 0 0 4
+	size 0.01 0.01 0.01
+	flag G
+end 
+
+zone
+	name Wings1
+	position 162.5 0 40
+	size 137.5 5 0
+	flag WG
+end
+
+zone
+	name Wings2
+	position -162.5 0 40
+	size 137.5 5 0
+	flag WG
+end
+
+zone
+	name RedLeft
+	position -164.5 -152.5 0
+	size 135.5 147.5 20
+	flag V A OO F MG ST CL T N SH SR MQ BU SE TH CB RO M B WA TR
+	team 1
+end
+
+zone
+	name RedRight
+	position 164.5 -152.5 0
+	size 135.5 147.5 20
+	flag QT ST IB T N SH PZ BU SE TH US FO RO B WA NJ
+	team 1
+end
+
+zone
+	name BlueLeft
+	position 164.5 152.5 0
+	size 135.5 147.5 20
+	flag V A OO F MG ST CL T N SH SR MQ BU SE TH CB RO M B WA TR
+	team 3
+end
+
+zone
+	name BlueRight
+	position -164.5 152.5 0
+	size 135.5 147.5 20
+	flag QT ST IB T N SH PZ BU SE TH US FO RO B WA NJ
+	team 3
+end
+
+zone
+	name RedSuperZone
+	position 0 -112.5 0
+	size 58 87.5 25
+	flag GM SW L SB
+	team 1
+end
+
+zone
+	name BlueSuperZone
+	position 0 112.5 0
+	size 58 87.5 25
+	flag GM SW L SB
+	team 3
+end
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#Cover stuff
+pyramid
+	name RedLeftCover
+	position -190 -200 0
+	size 8 8 16
+end
+
+pyramid
+	name BlueLeftCover
+	position 190 200 0
+	size 8 8 16
+end
+
+pyramid
+	name GenoKill1
+	position -20 -75 0
+	size 5 5 5
+end
+
+pyramid
+	name GenoKill2
+	position 20 -75 0
+	size 5 5 5
+end
+
+pyramid
+	name GenoKill3
+	position -20 75 0
+	size 5 5 5
+end
+
+pyramid
+	name GenoKill4
+	position 20 75 0
+	size 5 5 5
+end
+#################
+#################
+###Red dungeon###
+#################
+#################
+box
+	name RedFrontDWall1
+	position 96.75 -201 0
+	size 67.75 1 17
+end
+
+box
+	name RedFrontDWall2
+	position 165.5 -128.5 0
+	size 1 73.5 17
+end
+
+box
+	name RedAlleyDWall
+	position 232.25 -55 0
+	size 67.75 1 17
+end
+
+box
+	name RedCloseBaseDRoof
+	position 102.75 -251  16
+	size 63.75 49 1
+end
+
+box
+	name RedCloseBaseDRoofNonSecret
+	position 34 -245 16
+	size 5 45 1
+end
+
+box
+	name RedDropIntoSecret
+	position 34 -295 16
+	size 5 5 1
+	drivethrough
+end
+
+box
+	name RedFarBaseDRoof
+	position 232.25 -128.5 16
+	size 67.75 73.5 1
+end
+
+box
+	name RedCapDRoof
+	position 233.25 -251 16
+	size 66.75 49 1
+end
+
+pyramid
+	name RedPyrCapDRoof
+	position 233.25 -251 17
+	size 66.75 49 70
+	drivethrough
+end
+##################
+##################
+###BLUE dungeon###
+##################
+##################
+box
+	name BlueFrontDWall1
+	position -96.75 201 0
+	size 67.75 1 17
+end
+
+box
+	name BlueFrontDWall2
+	position -165.5 128.5 0
+	size 1 73.5 17
+end
+
+box
+	name BlueAlleyDWall
+	position -232.25 55 0
+	size 67.75 1 17
+end
+
+box
+	name BlueCloseBaseDRoof
+	position -102.75 251  16
+	size 63.75 49 1
+end
+
+box
+	name BlueCloseBaseDRoofNonSecret
+	position -34 245 16
+	size 5 45 1
+end
+
+box
+	name BlueDropIntoSecret
+	position -34 295 16
+	size 5 5 1
+	drivethrough
+end
+
+box
+	name BlueFarBaseDRoof
+	position -232.25 128.5 16
+	size 67.75 73.5 1
+end
+
+box
+	name BlueCapDRoof
+	position -233.25 251 16
+	size 66.75 49 1
+end
+
+pyramid
+	name BluePyrCapDRoof
+	position -233.25 251 17
+	size 66.75 49 70
+	drivethrough
+end
+
+
+#################################################
+###War Room###
+#################################################
+box
+	name WRFloor
+	position 0 0 200
+	size 120 120 2
+end
+
+box
+	name WRRedTelWall
+	position 99.5 0 202
+	size 0.5 100 30
+end
+
+box
+	name WRBlueTelWall
+	position -99.5 0 202
+	size 0.5 100 30
+end
+
+box
+	name WRRedSideWall
+	position 2.5 -99.5 202
+	size 97.5 0.5 30
+end
+
+box
+	name WRBlueSideWall
+	position -2.5 99.5 202
+	size 97.5 0.5 30
+end
+
+box
+	name WRRoof
+	position 0 0 232
+	size 100 100 2
+	drivethrough
+end
+
+box
+	name WRRedSecretHole
+	position 97.5 99.5 202
+	size 2.5 0.5 30
+	drivethrough
+end
+
+box
+	name WRBlueSecretHole
+	position -97.5 -99.5 202
+	size 2.5 0.5 30
+	drivethrough
+end
+
+meshpyr
+	name WRPyr
+	position 0 0 202
+	size 15 15 30
+	matref caution
+	phydrv water
+end
+
+meshbox
+	name WRMiddleWall
+	position 0 0 202
+	size 1 100 15
+	matref caution
+	phydrv water
+end

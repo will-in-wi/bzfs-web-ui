@@ -1,0 +1,2642 @@
+#**********************************************************************
+#  Built with bzfed version: 0.1
+#  http://www.bzfed.org/
+#**********************************************************************
+#
+#  This program is free software; you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation; either version 2 of the License, or
+#  (at your option) any later version.
+#
+#  This program is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU Library General Public License for more details.
+#
+#  You should have received a copy of the GNU General Public License
+#  along with this program; if not, write to the Free Software
+#  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+
+#!name meshbox-0
+meshbox
+position 390 390 0
+rotation 0
+size 10 10 50
+end
+
+#!name meshbox-1
+meshbox
+position -390 390 0
+rotation 0
+size 10 10 50
+end
+
+#!name meshbox-2
+meshbox
+position 390 -390 0
+rotation 0
+size 10 10 50
+end
+
+#!name meshbox-3
+meshbox
+position -390 -390 0
+rotation 0
+size 10 10 50
+end
+
+#!name meshbox-4
+meshbox
+position 0 390 49
+rotation 0
+size 400 10 1
+end
+
+#!name meshbox-5
+meshbox
+position 390 0 49
+rotation 0
+size 10 400 1
+end
+
+#!name meshbox-6
+meshbox
+position 0 -390 49
+rotation 0
+size 400 10 1
+end
+
+#!name meshbox-7
+meshbox
+position -390 0 49
+rotation 0
+size 10 400 1
+end
+
+#!name meshbox-8
+meshbox
+position 30 30 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-9
+meshbox
+position 30 -30 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-10
+meshbox
+position -30 30 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-11
+meshbox
+position -30 -30 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-12
+meshbox
+position 0 0 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-13
+meshbox
+position -60 60 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-14
+meshbox
+position 60 60 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-15
+meshbox
+position 60 0 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-16
+meshbox
+position 0 60 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-17
+meshbox
+position -60 0 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-18
+meshbox
+position 60 -60 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-19
+meshbox
+position 0 -60 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-20
+meshbox
+position -60 -60 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-21
+meshbox
+position 90 90 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-22
+meshbox
+position -90 90 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-23
+meshbox
+position 90 -90 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-24
+meshbox
+position 120 0 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-25
+meshbox
+position -120 0 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-26
+meshbox
+position -90 30 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-27
+meshbox
+position -90 -30 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-28
+meshbox
+position -90 -90 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-29
+meshbox
+position 90 -30 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-30
+meshbox
+position 90 30 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-31
+meshbox
+position 0 120 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-32
+meshbox
+position 30 90 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-33
+meshbox
+position -30 90 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-34
+meshbox
+position 30 -90 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-35
+meshbox
+position -30 -90 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-36
+meshbox
+position 0 0 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-37
+meshbox
+position 0 -120 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-38
+meshbox
+position -120 -120 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-39
+meshbox
+position 120 -120 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-40
+meshbox
+position -120 120 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-41
+meshbox
+position 120 120 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-42
+meshbox
+position 120 60 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-43
+meshbox
+position 120 -60 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-44
+meshbox
+position -120 60 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-45
+meshbox
+position -120 -60 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-46
+meshbox
+position 60 120 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-47
+meshbox
+position -60 120 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-48
+meshbox
+position 60 -120 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-49
+meshbox
+position -60 -120 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-50
+meshbox
+position 150 30 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-51
+meshbox
+position 150 -30 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-52
+meshbox
+position 30 150 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-53
+meshbox
+position -30 150 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-54
+meshbox
+position 30 -150 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-55
+meshbox
+position -30 -150 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-56
+meshbox
+position 150 90 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-57
+meshbox
+position 150 -90 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-58
+meshbox
+position 150 -150 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-59
+meshbox
+position -150 150 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-60
+meshbox
+position -150 -150 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-61
+meshbox
+position 150 150 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-62
+meshbox
+position 90 150 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-63
+meshbox
+position -90 150 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-64
+meshbox
+position 90 -150 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-65
+meshbox
+position -90 -150 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-66
+meshbox
+position -150 30 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-67
+meshbox
+position -150 -30 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-68
+meshbox
+position -150 -90 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-69
+meshbox
+position -150 90 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-70
+meshbox
+position 180 0 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-71
+meshbox
+position 180 60 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-72
+meshbox
+position 180 -60 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-73
+meshbox
+position 180 120 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-74
+meshbox
+position 180 -120 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-75
+meshbox
+position 180 180 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-76
+meshbox
+position 180 -180 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-77
+meshbox
+position -180 0 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-78
+meshbox
+position -180 60 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-79
+meshbox
+position -180 -60 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-80
+meshbox
+position -180 -120 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-81
+meshbox
+position -180 120 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-82
+meshbox
+position 0 180 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-83
+meshbox
+position 0 -180 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-84
+meshbox
+position -180 180 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-85
+meshbox
+position -180 -180 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-86
+meshbox
+position 120 -180 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-87
+meshbox
+position -120 -180 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-88
+meshbox
+position 60 -180 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-89
+meshbox
+position -60 -180 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-90
+meshbox
+position 60 180 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-91
+meshbox
+position -60 180 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-92
+meshbox
+position 120 180 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-93
+meshbox
+position -120 180 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-94
+meshbox
+position 210 30 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-95
+meshbox
+position 210 -30 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-96
+meshbox
+position 210 90 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-97
+meshbox
+position 210 150 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-98
+meshbox
+position 210 210 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-99
+meshbox
+position 210 -90 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-100
+meshbox
+position 210 -150 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-101
+meshbox
+position 210 -210 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-102
+meshbox
+position 30 210 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-103
+meshbox
+position -30 210 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-104
+meshbox
+position -90 210 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-105
+meshbox
+position 90 210 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-106
+meshbox
+position 150 210 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-107
+meshbox
+position -150 210 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-108
+meshbox
+position -210 210 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-109
+meshbox
+position -210 30 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-110
+meshbox
+position -210 90 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-111
+meshbox
+position -210 150 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-112
+meshbox
+position -210 -30 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-113
+meshbox
+position -210 -90 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-114
+meshbox
+position -210 -150 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-115
+meshbox
+position -210 -210 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-116
+meshbox
+position 150 -210 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-117
+meshbox
+position 90 -210 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-118
+meshbox
+position 30 -210 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-119
+meshbox
+position -30 -210 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-120
+meshbox
+position -90 -210 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-121
+meshbox
+position -150 -210 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-122
+meshbox
+position 240 0 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-123
+meshbox
+position 240 60 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-124
+meshbox
+position 240 120 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-125
+meshbox
+position 240 180 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-126
+meshbox
+position 240 240 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-127
+meshbox
+position 240 -60 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-128
+meshbox
+position 240 -120 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-129
+meshbox
+position 240 -180 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-130
+meshbox
+position 240 -240 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-131
+meshbox
+position 0 240 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-132
+meshbox
+position 0 -240 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-133
+meshbox
+position -240 0 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-134
+meshbox
+position 60 -240 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-135
+meshbox
+position 60 240 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-136
+meshbox
+position 120 240 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-137
+meshbox
+position 120 -240 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-138
+meshbox
+position 180 240 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-139
+meshbox
+position 180 -240 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-140
+meshbox
+position -60 -240 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-141
+meshbox
+position -60 240 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-142
+meshbox
+position -120 240 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-143
+meshbox
+position -120 -240 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-144
+meshbox
+position -180 -240 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-145
+meshbox
+position -180 240 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-146
+meshbox
+position -240 240 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-147
+meshbox
+position -240 180 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-148
+meshbox
+position -240 120 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-149
+meshbox
+position -240 60 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-150
+meshbox
+position -240 -60 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-151
+meshbox
+position -240 -120 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-152
+meshbox
+position -240 -180 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-153
+meshbox
+position -240 -240 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-154
+meshbox
+position 270 30 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-155
+meshbox
+position 270 90 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-156
+meshbox
+position 270 150 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-157
+meshbox
+position 270 210 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-158
+meshbox
+position 270 270 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-159
+meshbox
+position 270 -30 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-160
+meshbox
+position 270 -90 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-161
+meshbox
+position 270 -150 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-162
+meshbox
+position 270 -210 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-163
+meshbox
+position 270 -270 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-164
+meshbox
+position 210 270 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-165
+meshbox
+position 150 270 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-166
+meshbox
+position 90 270 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-167
+meshbox
+position 30 270 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-168
+meshbox
+position -30 270 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-169
+meshbox
+position -90 270 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-170
+meshbox
+position -150 270 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-171
+meshbox
+position -210 270 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-172
+meshbox
+position -270 270 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-173
+meshbox
+position -270 210 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-174
+meshbox
+position -270 150 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-175
+meshbox
+position -270 90 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-176
+meshbox
+position -270 30 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-177
+meshbox
+position -270 -30 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-178
+meshbox
+position -270 -90 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-179
+meshbox
+position -270 -150 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-180
+meshbox
+position -270 -210 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-181
+meshbox
+position -270 -270 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-182
+meshbox
+position 210 -270 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-183
+meshbox
+position 150 -270 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-184
+meshbox
+position 90 -270 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-185
+meshbox
+position 30 -270 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-186
+meshbox
+position -30 -270 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-187
+meshbox
+position -90 -270 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-188
+meshbox
+position -150 -270 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-189
+meshbox
+position -210 -270 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-190
+meshbox
+position 310 0 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-191
+meshbox
+position -310 0 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-192
+meshbox
+position 0 310 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-193
+meshbox
+position 0 -310 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-194
+meshbox
+position 310 60 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-195
+meshbox
+position 310 -60 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-196
+meshbox
+position 310 120 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-197
+meshbox
+position 310 180 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-198
+meshbox
+position 310 240 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-199
+meshbox
+position 310 310 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-200
+meshbox
+position 310 -120 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-201
+meshbox
+position 310 -180 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-202
+meshbox
+position 310 -240 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-203
+meshbox
+position 310 -310 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-204
+meshbox
+position -310 60 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-205
+meshbox
+position -310 120 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-206
+meshbox
+position -310 180 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-207
+meshbox
+position -310 240 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-208
+meshbox
+position -310 310 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-209
+meshbox
+position -310 -60 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-210
+meshbox
+position -310 -120 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-211
+meshbox
+position -310 -180 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-212
+meshbox
+position -310 -240 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-213
+meshbox
+position -310 -310 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-214
+meshbox
+position 60 310 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-215
+meshbox
+position 120 310 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-216
+meshbox
+position 180 310 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-217
+meshbox
+position 240 310 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-218
+meshbox
+position -60 310 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-219
+meshbox
+position -120 310 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-220
+meshbox
+position -180 310 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-221
+meshbox
+position -240 310 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-222
+meshbox
+position 60 -310 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-223
+meshbox
+position 120 -310 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-224
+meshbox
+position 180 -310 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-225
+meshbox
+position 240 -310 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-226
+meshbox
+position -60 -310 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-227
+meshbox
+position -120 -310 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-228
+meshbox
+position -180 -310 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-229
+meshbox
+position -240 -310 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-230
+meshbox
+position 340 30 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-231
+meshbox
+position 340 90 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-232
+meshbox
+position 340 150 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-233
+meshbox
+position 340 210 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-234
+meshbox
+position 340 270 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-235
+meshbox
+position 340 340 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-236
+meshbox
+position 340 -30 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-237
+meshbox
+position 340 -90 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-238
+meshbox
+position 340 -150 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-239
+meshbox
+position 340 -210 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-240
+meshbox
+position 340 -270 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-241
+meshbox
+position 340 -340 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-242
+meshbox
+position -340 30 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-243
+meshbox
+position -340 90 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-244
+meshbox
+position -340 150 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-245
+meshbox
+position -340 210 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-246
+meshbox
+position -340 270 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-247
+meshbox
+position -340 340 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-248
+meshbox
+position -340 -30 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-249
+meshbox
+position -340 -90 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-250
+meshbox
+position -340 -150 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-251
+meshbox
+position -340 -210 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-252
+meshbox
+position -340 -270 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-253
+meshbox
+position -340 -340 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-254
+meshbox
+position 30 340 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-255
+meshbox
+position 90 340 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-256
+meshbox
+position 150 340 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-257
+meshbox
+position 210 340 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-258
+meshbox
+position 270 340 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-259
+meshbox
+position -30 340 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-260
+meshbox
+position -90 340 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-261
+meshbox
+position -150 340 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-262
+meshbox
+position -210 340 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-263
+meshbox
+position -270 340 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-264
+meshbox
+position 30 -340 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-265
+meshbox
+position 90 -340 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-266
+meshbox
+position 150 -340 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-267
+meshbox
+position 210 -340 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-268
+meshbox
+position 270 -340 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-269
+meshbox
+position -30 -340 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-270
+meshbox
+position -90 -340 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-271
+meshbox
+position -150 -340 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-272
+meshbox
+position -210 -340 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-273
+meshbox
+position -270 -340 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-274
+meshbox
+position 370 0 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-275
+meshbox
+position 370 60 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-276
+meshbox
+position 370 120 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-277
+meshbox
+position 370 180 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-278
+meshbox
+position 370 240 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-279
+meshbox
+position 370 310 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-280
+meshbox
+position 370 370 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-281
+meshbox
+position 370 -60 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-282
+meshbox
+position 370 -120 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-283
+meshbox
+position 370 -180 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-284
+meshbox
+position 370 -240 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-285
+meshbox
+position 370 -310 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-286
+meshbox
+position 370 -370 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-287
+meshbox
+position 310 370 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-288
+meshbox
+position 240 370 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-289
+meshbox
+position 180 370 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-290
+meshbox
+position 120 370 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-291
+meshbox
+position 60 370 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-292
+meshbox
+position 0 370.1 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-293
+meshbox
+position -60 370 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-294
+meshbox
+position -120 370 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-295
+meshbox
+position -180 370 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-296
+meshbox
+position -240 370 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-297
+meshbox
+position -310 370 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-298
+meshbox
+position -370 370 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-299
+meshbox
+position -370 310 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-300
+meshbox
+position -370 240 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-301
+meshbox
+position -370 180 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-302
+meshbox
+position -370 120 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-303
+meshbox
+position -370 60 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-304
+meshbox
+position -370 0 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-305
+meshbox
+position -370 -60 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-306
+meshbox
+position -370 -120 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-307
+meshbox
+position -370 -180 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-308
+meshbox
+position -370 -240 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-309
+meshbox
+position -370 -310 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-310
+meshbox
+position -370 -370 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-311
+meshbox
+position -310 -370 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-312
+meshbox
+position -240 -370 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-313
+meshbox
+position -180 -370 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-314
+meshbox
+position -120 -370 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-315
+meshbox
+position -60 -370 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-316
+meshbox
+position 0 -370 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-317
+meshbox
+position 60 -370 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-318
+meshbox
+position 120 -370 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-319
+meshbox
+position 180 -370 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-320
+meshbox
+position 240 -370 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-321
+meshbox
+position 310 -370 0
+rotation 0
+size 10 10 50
+texture std_ground
+end
+
+#!name meshbox-322
+meshbox
+position 0 0 1
+rotation 0
+size 400 400 44
+texture water
+drivethrough
+color 1 1 1 0.9
+end
+
+#!name meshbox-323
+meshbox
+position 0 30 75
+rotation 0
+size 30 1 10
+texture http://www.storm.ca/~cvmiller/Wili/icewewe.png
+end
+
+#!name meshbox-324
+meshbox
+position 30 0 75
+rotation 0
+size 1 30 10
+texture http://www.storm.ca/~cvmiller/Wili/icewewe.png
+end
+
+#!name meshbox-325
+meshbox
+position 0 -30 75
+rotation 0
+size 30 1 10
+texture http://www.storm.ca/~cvmiller/Wili/icewewe.png
+end
+
+#!name meshbox-326
+meshbox
+position -30 0 75
+rotation 0
+size 1 30 10
+texture http://www.storm.ca/~cvmiller/Wili/icewewe.png
+end
+
+physics
+  name KillZones
+  death You drowned in the lake, better luck next time!
+end
+
+#!name meshbox-327
+meshbox
+position 0 0 0
+rotation 0
+size 400 400 1
+color 1 0 0 1
+phydrv KillZones
+end

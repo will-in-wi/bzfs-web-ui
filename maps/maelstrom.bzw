@@ -1,0 +1,1022 @@
+world
+  size 2500
+  noWalls
+end
+
+options
+#see C:\bzconfig.txt
+ -public "Calypso's Wrath by jftsang Tedius and Enterprise -- Whirlpool Speex X2"
+ -c
+ -sb
+ -j
+ -ms 1
+ -mp 0,0,10,10,0,10
+ 
+# Ten greens and ten blues
+# According to Enterprise, B should be the Black Pearl and G should be the Flying Dutchman.
+# Red is the Kraken that would attempt to consume the players when they enter the locker
+# If the player falls into the locker he will have to fight against the rogue.
+# If the player loses he will die and be sent back into the living.
+# If the player wins he becomes the occupant of the locker, killing the Kraken and all other
+# junk that might fall down there.
+
+
+ -fb
+ -set _shotSpeed 1200
+ -set _tankAngVel 1.0
+ -set _mirror white
+ -set _reloadTime 4
+ -set _tankSpeed 30
+ -set _drawMountains 0
+ -set _drawGround 0
+ -set _wallHeight -0.0
+ -set _trackFade 0
+ -set _jumpVelocity 15
+ -set _worldSize 5000
+ -set _shotsKeepVerticalVelocity 1
+ -set _gravity -6.5
+ -set _wingsJumpCount 5
+ -set _longitude 181
+ -set _latitude 52
+ -set _flagHeight 5
+ -set _radarLimit 1200
+ -set _maxFlagGrabs 2
+ -set _mGunAdRate 20
+ -set _mGunAdVel 4
+
+ +f WG{8}
+ +f SR{12}
+ +f MG{12}
+ +f SB{8}
+
+ -set _rainDensity 2000
+ -set _rainType rain
+ -set _rainSpeed -60
+ -set _rainRoofs 2
+ -set _fogMode on
+ -set _fogDensity 0.00015
+ -set _fogColor gray12
+
+end
+
+physics
+name death
+death Trapped in Davy Jone's Locker
+end
+
+physics
+   #Northeast
+   name spin1
+   angular 0.04 0.0 0.0
+  linear -10 -10 0
+end
+physics
+   #Northwest
+   name spin2
+   angular 0.04 0.0 0.0
+  linear 10 -10 0
+end
+physics
+   #Southwest
+   name spin3
+   angular 0.04 0.0 0.0
+  linear 10 10 0
+end
+physics
+   #Southeast
+   name spin4
+   angular 0.04 0.0 0.0
+  linear -10 10 0
+end
+
+
+physics
+   #Northeast
+   name suck1
+   angular 0.0 0.0 0.0
+  linear -30 -30 -25
+end
+physics
+   #Northwest
+   name suck2
+   angular 0.0 0.0 0.0
+  linear 30 -30 -25
+end
+physics
+   #Southwest
+   name suck3
+   angular 0.0 0.0 0.0
+  linear 30 30 -25
+end
+physics
+   #Southeast
+   name suck4
+   angular 0.0 0.0 0.0
+  linear -30 30 -25
+end
+
+
+physics
+   name bound1
+   angular 0.002 0.0 0.0
+  linear 0 -50 0
+end
+physics
+   name bound2
+   angular 0.002 0.0 0.0
+  linear 50 0 0
+end
+physics
+   name bound3
+   angular 0.002 0.0 0.0
+  linear 0 50 0
+end
+physics
+   name bound4
+   angular 0.002 0.0 0.0
+  linear -50 0 0
+end
+
+
+##Start Edit here
+##add dyncolor
+
+material
+  name pearlwood
+  diffuse 0.0 0.0 0.0 1
+  specular 0.5 0.5 0.5 1
+  shininess 100
+  addtexture http://images.bzflag.org/jtsang/jftsang_pearlwood.png
+  notexcolor
+end
+
+material
+  name cannonmetal
+  diffuse 0.0 0.0 0.0 1
+  specular 0.5 0.5 0.5 1
+  shininess 500
+  addtexture http://images.bzflag.org/jtsang/jftsang_cannonmetal.png
+  notexcolor
+end
+
+material
+  name whirlpool
+  addtexture water
+  diffuse 0.0 0.15 0.5 0.75
+end
+material
+  name suck
+  addtexture water
+  diffuse 0.0 0.15 0.5 1.0
+end
+material
+  name locker
+  diffuse 1.0 1.0 1.0 1.0
+  emission 1 1 1 1
+  #ambient 125
+  #shininess 125
+end
+material
+  name null
+  diffuse 0.01 0.01 0.01 1
+end
+
+define whirlpool
+  mesh
+        vertex 800.0 0.0 200      #0
+        vertex 800.0 800.0 200.0000    #1
+        vertex 0.0 800.0 200.0000      #2
+        vertex -800.0 800.0 200.0000   #3 
+        vertex -800.0 0.0 200.0000     #4
+        vertex -800.0 -800.0 200.0000  #5  
+        vertex 0.0 -800.0 200.0000     #6
+        vertex 800.0 -800.0 200.0000   #7 
+  
+        vertex 50.0 0.0 200.0000      #8 
+        vertex 50.0 40.0 200.0000     #9  
+        vertex 40.0 50.0 200.0000     #10   
+        vertex 0.0 50.0 200.0000      #11 
+  
+        vertex -40.0 50.0 200.0000     #12  
+        vertex -50.0 40.0 200.0000     #13   
+        vertex -50.0 0.0 200.0000      #14 
+  
+        vertex -50.0 -40.0 200.0000    #15  
+        vertex -40.0 -50.0 200.0000    #16   
+        vertex 0.0 -50.0 200.0000      #17
+
+        vertex 40.0 -50.0 200.0000     #18 
+        vertex 50.0 -40.0 200.0000     #19   
+        vertex 50.0 0.0 200.0000       #20 
+  
+        vertex 35.0 0.0 5.0        #21 
+        vertex 0.0 35.0 5.0        #22 
+        vertex -35.0 0.0 5.0      #23   
+        vertex 0.0 -35.0 5.0      #24 
+  
+        vertex 8000.0 8000.0 200.0    #25
+        vertex -8000.0 8000.0 200.0   #26
+        vertex -8000.0 -8000.0 200.0  #27 
+        vertex 8000.0 -8000.0 200.0   #28
+
+        face #NEtop
+          vertices 0 1 2 11 10 9 8
+          phydrv spin1
+          matref whirlpool
+          noradar
+        endface 
+
+        face  #NWtop
+          vertices 2 3 4 14 13 12 11
+          phydrv spin2
+          matref whirlpool
+          noradar
+        endface
+
+        face #SWtop
+          vertices 4 5 6 17 16 15 14
+          phydrv spin3
+          matref whirlpool
+          noradar
+        endface
+
+        face #SEtop
+          vertices 6 7 0 20 19 18 17
+          phydrv spin4
+          matref whirlpool
+          noradar
+        endface
+
+
+        face #NE edge
+          vertices 8 9 21
+          phydrv suck1
+          matref whirlpool
+        endface
+        face #NE2
+          vertices 10 11 22
+          phydrv suck1
+          matref whirlpool
+        endface
+        face #NE3
+          vertices 9 10 22 21
+          phydrv suck1
+          matref whirlpool
+        endface
+
+        face #NW edge
+          vertices 11 12 22
+          phydrv suck2
+          matref whirlpool
+        endface
+        face #NW edge
+          vertices 13 14 23
+          phydrv suck2
+          matref whirlpool
+        endface
+        face #NW edge
+          vertices 12 13 23 22
+          phydrv suck2
+          matref whirlpool
+        endface
+
+        face #SW edge
+          vertices 14 15 23
+          phydrv suck3
+          matref whirlpool
+        endface
+        face #SW edge
+          vertices 16 17 24
+          phydrv suck3
+          matref whirlpool
+        endface
+        face #SW edge
+          vertices  15 16 24 23
+          phydrv suck3
+          matref whirlpool
+        endface
+
+        face #SE edge
+          vertices 17 18 24
+          phydrv suck4
+          matref whirlpool
+        endface
+        face #SE edge
+          vertices 19 20 21
+          phydrv suck4
+          matref whirlpool
+        endface
+        face #SE edge
+          vertices 18 19 21 24
+          phydrv suck4
+          matref whirlpool
+        endface
+
+        face #whirlpoolbottom
+          vertices 21 22 23 24
+          matref null
+          phydrv death
+          drivethrough
+        endface
+
+        face #Nbound
+          vertices 25 26 3 1
+          phydrv bound1
+          matref whirlpool
+          noradar
+        endface
+        face #Wbound
+          vertices 26 27 5 3 
+          phydrv bound2
+          matref whirlpool
+          noradar
+        endface
+        face #NEbound
+          vertices 27 28 7 5
+          phydrv bound3
+          matref whirlpool
+          noradar
+        endface
+        face #NEbound
+          vertices 28 25 1 7
+          phydrv bound4
+          matref whirlpool
+          noradar
+        endface
+  end
+enddef
+
+
+group whirlpool
+  position 0 0 0 
+end
+
+group whirlpool
+  position 0 0 1
+  drivethrough
+  shootthrough
+  passable
+end
+group whirlpool
+  position 0 0 -1
+  matref suck
+  drivethrough
+  shootthrough
+  passable
+end
+
+#define reference
+#  meshbox
+#   position 0 0 35
+#   size 300 8 8
+#   rotation 0
+#   matref locker
+# end
+#enddef
+
+#group reference
+#  shift 400 0 0
+#  spin 0 0 0 0
+#end
+#group reference
+#  shift 0 400 0
+#  scale 1 4 1
+#  spin 0 0 0 0
+#  rotation 90
+#end
+#group reference
+#  shift -400 0 0
+#  spin 0 0 0 0
+#end
+#group reference
+#  shift 0 -400 0
+#  spin 0 0 0 0
+#  rotation 270
+#end
+
+zone
+  name hell
+  position 0 0 0
+  size 200 200 10
+  rotation 0.0
+  team 0
+end
+
+zone 
+  name dutchman 
+  position -500.0 0 270.0
+  size 20 20 20
+  rotation 0.0
+  team 2
+end
+ 
+zone
+  name pearl
+  position 500 0 270
+  size 20 20 20
+  rotation 0
+  team 3
+end
+
+zone
+  name wg_dutchman
+  position -500 -92 230
+  size 31 32 1
+  rotation 0
+  flag wg
+end
+
+zone
+  name wg_pearl
+  position 500 92 230
+  size 31 32 1
+  rotation 0
+  flag wg
+end
+
+zone
+  name sr_dutchman
+  position -500 50 230
+  size 20 20 1
+  rotation 0
+  flag sr
+end
+
+zone
+  name sr_pearl
+  position 500 -50 230
+  size 20 20 1
+  rotation 0
+  flag sr
+end
+
+zone
+  name mg_dutchman
+  position -500 0 230
+  size 20 20 1
+  rotation 0
+  flag mg
+end
+
+zone
+  name mg_pearl
+  position 500 0 230
+  size 20 20 1
+  rotation 0
+  flag mg
+end
+
+zone
+  name sb_dutchman
+  position -500 -92 230
+  size 30 30 1
+  rotation 0
+  flag sb
+end
+
+zone
+  name sb_pearl
+  position 500 92 230
+  size 31 32 1
+  rotation 0
+  flag sb
+end
+
+
+# Ships begin here
+# World built with bzedit32 world class, available at
+# http://www.sourceforge.net/projects/bzflag
+
+############################################################
+############################################################
+
+define ship
+	meshpyr
+	name ShipBase
+		position -4.5 0 -5
+		rotation 0
+		size 129.5 31 14
+		flipz
+		matref pearlwood
+	end
+	
+	meshbox
+	name Lower Deck
+		position -5 0 9
+		rotation 0
+		size 129 31 1
+		matref pearlwood
+	end
+	
+	meshbox
+	name LowerDeckLeft
+		position 0 -30 10
+		rotation 0
+		size 120 1 10
+		matref pearlwood
+	end
+	
+	meshbox
+	name LowerDeckRight
+		position 0 30 10
+		rotation 0
+		size 120 1 10
+		matref pearlwood
+	end
+	
+	meshbox
+	name Upper Deck
+		position -20 0 19
+		rotation 0
+		size 140 31 1
+		matref pearlwood
+	end
+	
+	base
+	name HOME
+		position 0 0 10
+		rotation 0
+		size 20 20 0.1
+		color 3
+	end
+	
+	meshbox
+	name LowerDeckBack
+		position 122 0 10
+		rotation 0
+		size 2 31 10
+		matref pearlwood
+	end
+	
+	meshbox
+	name Box
+		position -127 0 10
+		rotation 0
+		size 7 31 10
+		matref pearlwood
+	end
+	
+	meshbox
+	name HighestDeck
+		position 92 0 20
+		rotation 90
+		size 31 32 10
+		matref pearlwood
+	end
+	
+	meshbox
+	name Right Railing
+		position -50 29 20
+		rotation 0
+		size 110 2 1.5
+		matref pearlwood
+	end
+	
+	meshbox
+	name Left Railing
+		position -50 -29 20
+		rotation 0
+		size 110 2 1.5
+		matref pearlwood
+	end
+	
+	meshbox
+	name BackDeckRightRailing
+		position 92 29 30
+		rotation 0
+		size 32 2 5
+		matref pearlwood
+	end
+	
+	meshbox
+	name BackDeckLeftRailing
+		position 92 -29 30
+		rotation 0
+		size 32 2 5
+		matref pearlwood
+	end
+	
+	meshbox
+	name BackDeckBackRailing
+		position 122 0 30
+		rotation 90
+		size 28 2 5
+		matref pearlwood
+	end
+	
+	meshbox
+	name Middle Mast
+		position 20 0 10
+		rotation 90
+		size 2 2 90
+		matref pearlwood
+	end
+	
+	meshbox
+	name Front Mast
+		position -50 0 10
+		rotation 90
+		size 2 2 90
+		matref pearlwood
+	end
+	
+	meshbox
+	name Front Railing
+		position -150 0 20
+		rotation 0
+		size 10 31 4
+		matref pearlwood
+	end
+	
+	meshbox
+	name Partition
+		position -75 0 10
+		rotation 0
+		size 1 30 9
+		drivethrough
+		matref pearlwood
+	end
+	
+	meshbox
+	name Middle Yardarm
+		position 20 0 75
+		rotation 90
+		size 30 2 4
+		matref pearlwood
+	end
+	
+	meshbox
+	name Front Yardarm
+		position -50 0 75
+		rotation 90
+		size 30 2 4
+		matref pearlwood
+	end
+	
+	meshbox
+	name Back Mast
+		position 90 0 10
+		rotation 90
+		size 2 2 90
+		matref pearlwood
+	end
+	
+	meshbox
+	name Back Yardarm
+		position 90 0 75
+		rotation 90
+		size 30 2 4
+		matref pearlwood
+	end
+	
+	meshbox
+	name Box
+		position -141 0 15
+		rotation 0
+		size 10 31 4
+		matref pearlwood
+	end
+	
+	meshbox
+	name Right step
+		position -40 40 15
+		rotation 0
+		size 80 10 1
+		matref pearlwood
+	end
+	
+	meshbox
+	name Left step
+		position -40 -40 15
+		rotation 0
+		size 80 10 1
+		matref pearlwood
+	end
+	
+	meshbox
+	name R Battlement
+		position -75 29 20
+		rotation 0
+		size 10 2 3
+		matref pearlwood
+	end
+	
+	meshbox
+	name R Battlement
+		position -122.5 29 20
+		rotation 0
+		size 17.5 2 3
+		matref pearlwood
+	end
+	
+	meshbox
+	name L Battlement
+		position -75 -29 20
+		rotation 0
+		size 10 2 3
+		matref pearlwood
+	end
+	
+	meshbox
+	name R Battlement
+		position -35 29 20
+		rotation 0
+		size 10 2 3
+		matref pearlwood
+	end
+	
+	meshbox
+	name R Battlement
+		position 5 29 20
+		rotation 0
+		size 10 2 3
+		matref pearlwood
+	end
+	
+	meshbox
+	name R Battlement
+		position 47.5 29 20
+		rotation 0
+		size 12.5 2 3
+		matref pearlwood
+	end
+	
+	meshbox
+	name L Battlement
+		position 5 -29 20
+		rotation 0
+		size 10 2 3
+		matref pearlwood
+	end
+	
+	meshbox
+	name L Battlement
+		position 47.5 -29 20
+		rotation 0
+		size 12.5 2 3
+		matref pearlwood
+	end
+	
+	meshbox
+	name L Battlement
+		position -35 -29 20
+		rotation 0
+		size 10 2 3
+		matref pearlwood
+	end
+	
+	meshbox
+	name L Battlement
+		position -120 -29 20
+		rotation 0
+		size 20 2 3
+		matref pearlwood
+	end
+	
+	meshbox
+	name R Cannon
+		position -55 30 21
+		rotation 0
+		size 2 7 3
+		matref cannonmetal
+	end
+	
+	meshbox
+	name R Cannon
+		position -15 30 21
+		rotation 0
+		size 2 7 3
+		matref cannonmetal
+	end
+	
+	meshbox
+	name R Cannon
+		position 25 30 21
+		rotation 0
+		size 2 7 3
+		matref cannonmetal
+	end
+	
+	meshbox
+	name R Cannon
+		position -95 30 21
+		rotation 0
+		size 2 7 3
+		matref cannonmetal
+	end
+	
+	meshbox
+	name L Cannon
+		position 25 -30 21
+		rotation 0
+		size 2 7 3
+		matref cannonmetal
+	end
+	
+	meshbox
+	name L Cannon
+		position -15 -30 21
+		rotation 0
+		size 2 7 3
+		matref cannonmetal
+	end
+	
+	meshbox
+	name L Cannon
+		position -55 -30 21
+		rotation 0
+		size 2 7 3
+		matref cannonmetal
+	end
+	
+	meshbox
+	name L Cannon
+		position -95 -30 21
+		rotation 0
+		size 2 7 3
+		matref cannonmetal
+	end
+enddef
+
+############################################################
+############################################################
+
+group ship
+  shift -500 0 200
+  scale 1 1 1
+  shear 0 0 0
+  spin 0 0 0 0
+  team 2
+  rotation 270
+# Flying Dutchman wood is faulty, has been removed
+# (transparent)
+end
+
+group ship
+  shift 500 0 200 
+  scale 1 1 1
+  shear 0 0 0
+  spin 0 0 0 0
+  team 3
+  rotation 90
+end 
+
+############################################################
+############################################################
+
+weapon
+ name bluecannon1
+ position 463 25 222
+ rotation 178
+ color 0
+ tilt -0.2
+ initdelay 2.5
+ delay 10.0
+ type SB
+end
+
+weapon
+ name bluecannon2
+ position 463 -15 222
+ rotation 181
+ color 0
+ tilt -0.3
+ initdelay 5.0
+ delay 10.0
+ type SB
+end
+
+weapon
+ name bluecannon3
+ position 463 -55 222
+ rotation 179
+ color 0
+ tilt -0.1
+ initdelay 7.5
+ delay 10.0
+ type SB
+end
+
+weapon
+ name bluecannon4
+ position 463 -95 222
+ rotation 182
+ color 0
+ tilt 0.0
+ initdelay 0
+ delay 10.0 
+ type SB
+end
+
+weapon
+ name greencannon1
+ position -463 -25 222
+ rotation 2
+ color 0
+ tilt -0.2
+ initdelay 2.5
+ delay 10.0
+ type SB
+end
+
+weapon
+ name greencannon2
+ position -463 15 222
+ rotation -1
+ color 0
+ tilt -0.07
+ initdelay 5
+ delay 10.0
+ type SB
+end
+
+weapon
+ name greencannon3
+ position -463 55 222
+ rotation 1
+ color 0
+ tilt -0.05
+ initdelay 7.5
+ delay 10.0
+ type SB
+end
+
+weapon
+ name greencannon4
+ position -463 95 222
+ rotation 2
+ color 0
+ tilt -0.15
+ initdelay 0
+ delay 10.0 
+ type SB
+end
+
+#meshbox
+# name davyjoneslocker
+# position 0 0 0
+# size 400 400 0.1
+# phydrv death
+# matref null
+#end
+
+############################################################
+############################################################
+
+
+
+# Thanks to Tedius and a temporal distraction for the teleporter code!
+# Thanks to myself for bothering to do this...
+
+teleporter t1
+        position -500 90 210
+        rotation 90
+        size 0.125 10 5
+        border 1
+end
+
+teleporter t2
+        position -500 0 220
+        rotation 90
+        size 0.125 10 5
+        border 1
+end
+
+teleporter t3
+        position 500 -90 210
+        rotation 270
+        size 0.125 10 5
+        border 1
+end
+
+teleporter t4
+        position 500 0 220
+        rotation 270
+        size 0.125 10 5
+        border 1
+end
+
+link
+        from t1:*
+        to t2:*
+end
+
+link
+        from t2:*
+        to t1:*
+end
+
+link
+        from t3:*
+        to t4:*
+end
+
+link
+        from t4:*
+        to t3:*
+end
+
+# 1 Lower Green
+# 2 Upper Green
+# 3 Lower Blue
+# 4 Upper Blue

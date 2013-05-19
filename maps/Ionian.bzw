@@ -1,0 +1,10517 @@
+Options
+  -j
+  -d -d
+  -sb
+  -sa
+  -fb
+  -st 3.5
+  -sw 1
+  -ms 10
+  +f wg{50}
+  -set _syncTime 1.0
+  -set _wingsJumpCount 50
+end
+world
+  size 500
+end
+textureMatrix
+  name highwaym
+  shift 1 1
+end
+material
+  name highway1
+texture wall
+  texmat highwaym
+  notexalpha
+end
+material
+  name highway2
+texture wall
+  notexalpha
+end
+physics
+  name moving_sidewalk1
+  linear -49.5 49.5 0
+end
+meshbox
+  shift -197.93 212.07 12.0
+  phydrv moving_sidewalk1
+  size 7.5 255.77 2.0
+  rotation 45.0
+  angle 360
+  ratio 1
+  divisions 4
+  spin 0 0 0 0
+  shift 0 0 0
+  flatshading
+  texsize -8 -8 -8 -8
+  matref highway1
+end
+physics
+  name moving_sidewalk2
+  linear 49.5 -49.5 0
+end
+meshbox
+  shift -212.07 197.93 12.0
+  phydrv moving_sidewalk2
+  size 7.5 255.77 2.0
+  rotation 45.0
+  angle 360
+  ratio 1
+  divisions 4
+  spin 0 0 0 0
+  shift 0 0 0
+  flatshading
+  texsize -8 -8 -8 -8
+  matref highway1
+end
+meshbox
+  shift -400 400 12
+  size 20.0 20.0 2.0
+  rotation 45.0
+  angle 360
+  ratio 1
+  divisions 4
+  spin 0 0 0 0
+  shift 0 0 0
+  flatshading
+  texsize -8 -8 -8 -8
+  matref highway2
+end
+meshbox
+  shift -10 10 12
+  size 20.0 20.0 2.0
+  rotation 45.0
+  angle 360
+  ratio 1
+  divisions 4
+  spin 0 0 0 0
+  shift 0 0 0
+  flatshading
+  texsize -8 -8 -8 -8
+  matref highway2
+end
+physics
+  name moving_sidewalk3
+  linear -10.64 69.19 0
+end
+meshbox
+  shift 29.88 -203.48 12.0
+  phydrv moving_sidewalk3
+  size 7.5 177.29 2.0
+  rotation 8.75
+  angle 360
+  ratio 1
+  divisions 4
+  spin 0 0 0 0
+  shift 0 0 0
+  flatshading
+  texsize -8 -8 -8 -8
+  matref highway1
+end
+physics
+  name moving_sidewalk4
+  linear 10.64 -69.19 0
+end
+meshbox
+  shift 10.12 -206.52 12.0
+  phydrv moving_sidewalk4
+  size 7.5 177.29 2.0
+  rotation 8.75
+  angle 360
+  ratio 1
+  divisions 4
+  spin 0 0 0 0
+  shift 0 0 0
+  flatshading
+  texsize -8 -8 -8 -8
+  matref highway1
+end
+meshbox
+  shift -10 -10 12
+  size 20.0 20.0 2.0
+  rotation 8.75
+  angle 360
+  ratio 1
+  divisions 4
+  spin 0 0 0 0
+  shift 0 0 0
+  flatshading
+  texsize -8 -8 -8 -8
+  matref highway2
+end
+meshbox
+  shift 50 -400 12
+  size 20.0 20.0 2.0
+  rotation 8.75
+  angle 360
+  ratio 1
+  divisions 4
+  spin 0 0 0 0
+  shift 0 0 0
+  flatshading
+  texsize -8 -8 -8 -8
+  matref highway2
+end
+physics
+  name moving_sidewalk5
+  linear -64.66 26.81 0
+end
+meshbox
+  shift 218.83 -85.76 12.0
+  phydrv moving_sidewalk5
+  size 7.5 201.92 2.0
+  rotation 67.48
+  angle 360
+  ratio 1
+  divisions 4
+  spin 0 0 0 0
+  shift 0 0 0
+  flatshading
+  texsize -8 -8 -8 -8
+  matref highway1
+end
+physics
+  name moving_sidewalk6
+  linear 64.66 -26.81 0
+end
+meshbox
+  shift 211.17 -104.24 12.0
+  phydrv moving_sidewalk6
+  size 7.5 201.92 2.0
+  rotation 67.48
+  angle 360
+  ratio 1
+  divisions 4
+  spin 0 0 0 0
+  shift 0 0 0
+  flatshading
+  texsize -8 -8 -8 -8
+  matref highway1
+end
+meshbox
+  shift 10 -10 12
+  size 20.0 20.0 2.0
+  rotation 67.48
+  angle 360
+  ratio 1
+  divisions 4
+  spin 0 0 0 0
+  shift 0 0 0
+  flatshading
+  texsize -8 -8 -8 -8
+  matref highway2
+end
+meshbox
+  shift 420 -180 12
+  size 20.0 20.0 2.0
+  rotation 67.48
+  angle 360
+  ratio 1
+  divisions 4
+  spin 0 0 0 0
+  shift 0 0 0
+  flatshading
+  texsize -8 -8 -8 -8
+  matref highway2
+end
+material
+  name grass
+  texture std_ground
+  notexalpha
+end
+meshbox
+  shift -400 -110 0
+  size 1.0 1.0 5.0
+  rotation 90.0
+  angle 360
+  ratio 1
+  divisions 4
+  spin 0 0 0 0
+  shift 0 0 0
+  flatshading
+  texsize -8 -8 -8 -8
+  matref highway2
+end
+meshbox
+  shift 0 -110 0
+  size 1.0 1.0 5.0
+  rotation 90.0
+  angle 360
+  ratio 1
+  divisions 4
+  spin 0 0 0 0
+  shift 0 0 0
+  flatshading
+  texsize -8 -8 -8 -8
+  matref highway2
+end
+meshbox
+  shift 0 70 0
+  size 1.0 1.0 5.0
+  rotation 90.0
+  angle 360
+  ratio 1
+  divisions 4
+  spin 0 0 0 0
+  shift 0 0 0
+  flatshading
+  texsize -8 -8 -8 -8
+  matref highway2
+end
+meshbox
+  shift -400 70 0
+  size 1.0 1.0 5.0
+  rotation 90.0
+  angle 360
+  ratio 1
+  divisions 4
+  spin 0 0 0 0
+  shift 0 0 0
+  flatshading
+  texsize -8 -8 -8 -8
+  matref highway2
+end
+mesh
+  shift -200.0 -20.0 0
+  inside 10 10 10
+  matref grass
+   vertex -200.0 -90.0 0.0 # Vertex ID: 0
+   vertex -200.0 -78.0 0.0 # Vertex ID: 1
+   vertex -200.0 -66.0 0.0 # Vertex ID: 2
+   vertex -200.0 -54.0 0.0 # Vertex ID: 3
+   vertex -200.0 -42.0 0.0 # Vertex ID: 4
+   vertex -200.0 -30.0 0.0 # Vertex ID: 5
+   vertex -200.0 -18.0 0.0 # Vertex ID: 6
+   vertex -200.0 -6.0 0.0 # Vertex ID: 7
+   vertex -200.0 6.0 0.0 # Vertex ID: 8
+   vertex -200.0 18.0 0.0 # Vertex ID: 9
+   vertex -200.0 30.0 0.0 # Vertex ID: 10
+   vertex -200.0 42.0 0.0 # Vertex ID: 11
+   vertex -200.0 54.0 0.0 # Vertex ID: 12
+   vertex -200.0 66.0 0.0 # Vertex ID: 13
+   vertex -200.0 78.0 0.0 # Vertex ID: 14
+   vertex -200.0 90.0 0.0 # Vertex ID: 15
+   vertex -190.0 -90.0 0.0 # Vertex ID: 16
+   vertex -190.0 -78.0 0.59 # Vertex ID: 17
+   vertex -190.0 -66.0 0.65 # Vertex ID: 18
+   vertex -190.0 -54.0 0.72 # Vertex ID: 19
+   vertex -190.0 -42.0 0.84 # Vertex ID: 20
+   vertex -190.0 -30.0 0.86 # Vertex ID: 21
+   vertex -190.0 -18.0 0.98 # Vertex ID: 22
+   vertex -190.0 -6.0 0.93 # Vertex ID: 23
+   vertex -190.0 6.0 0.87 # Vertex ID: 24
+   vertex -190.0 18.0 0.93 # Vertex ID: 25
+   vertex -190.0 30.0 0.92 # Vertex ID: 26
+   vertex -190.0 42.0 0.77 # Vertex ID: 27
+   vertex -190.0 54.0 0.83 # Vertex ID: 28
+   vertex -190.0 66.0 0.75 # Vertex ID: 29
+   vertex -190.0 78.0 0.64 # Vertex ID: 30
+   vertex -190.0 90.0 0.0 # Vertex ID: 31
+   vertex -180.0 -90.0 0.0 # Vertex ID: 32
+   vertex -180.0 -78.0 0.87 # Vertex ID: 33
+   vertex -180.0 -66.0 0.99 # Vertex ID: 34
+   vertex -180.0 -54.0 1.12 # Vertex ID: 35
+   vertex -180.0 -42.0 1.2 # Vertex ID: 36
+   vertex -180.0 -30.0 1.24 # Vertex ID: 37
+   vertex -180.0 -18.0 1.28 # Vertex ID: 38
+   vertex -180.0 -6.0 1.29 # Vertex ID: 39
+   vertex -180.0 6.0 1.53 # Vertex ID: 40
+   vertex -180.0 18.0 1.32 # Vertex ID: 41
+   vertex -180.0 30.0 1.26 # Vertex ID: 42
+   vertex -180.0 42.0 1.27 # Vertex ID: 43
+   vertex -180.0 54.0 1.25 # Vertex ID: 44
+   vertex -180.0 66.0 1.03 # Vertex ID: 45
+   vertex -180.0 78.0 0.95 # Vertex ID: 46
+   vertex -180.0 90.0 0.0 # Vertex ID: 47
+   vertex -170.0 -90.0 0.0 # Vertex ID: 48
+   vertex -170.0 -78.0 1.24 # Vertex ID: 49
+   vertex -170.0 -66.0 1.54 # Vertex ID: 50
+   vertex -170.0 -54.0 1.61 # Vertex ID: 51
+   vertex -170.0 -42.0 1.7 # Vertex ID: 52
+   vertex -170.0 -30.0 1.82 # Vertex ID: 53
+   vertex -170.0 -18.0 2.01 # Vertex ID: 54
+   vertex -170.0 -6.0 2.0 # Vertex ID: 55
+   vertex -170.0 6.0 2.07 # Vertex ID: 56
+   vertex -170.0 18.0 1.98 # Vertex ID: 57
+   vertex -170.0 30.0 2.07 # Vertex ID: 58
+   vertex -170.0 42.0 1.66 # Vertex ID: 59
+   vertex -170.0 54.0 1.59 # Vertex ID: 60
+   vertex -170.0 66.0 1.61 # Vertex ID: 61
+   vertex -170.0 78.0 1.33 # Vertex ID: 62
+   vertex -170.0 90.0 0.0 # Vertex ID: 63
+   vertex -160.0 -90.0 0.0 # Vertex ID: 64
+   vertex -160.0 -78.0 1.87 # Vertex ID: 65
+   vertex -160.0 -66.0 2.3 # Vertex ID: 66
+   vertex -160.0 -54.0 2.25 # Vertex ID: 67
+   vertex -160.0 -42.0 2.5 # Vertex ID: 68
+   vertex -160.0 -30.0 2.71 # Vertex ID: 69
+   vertex -160.0 -18.0 3.21 # Vertex ID: 70
+   vertex -160.0 -6.0 2.8 # Vertex ID: 71
+   vertex -160.0 6.0 2.93 # Vertex ID: 72
+   vertex -160.0 18.0 2.82 # Vertex ID: 73
+   vertex -160.0 30.0 3.05 # Vertex ID: 74
+   vertex -160.0 42.0 2.82 # Vertex ID: 75
+   vertex -160.0 54.0 2.5 # Vertex ID: 76
+   vertex -160.0 66.0 2.14 # Vertex ID: 77
+   vertex -160.0 78.0 2.06 # Vertex ID: 78
+   vertex -160.0 90.0 0.0 # Vertex ID: 79
+   vertex -150.0 -90.0 0.0 # Vertex ID: 80
+   vertex -150.0 -78.0 2.45 # Vertex ID: 81
+   vertex -150.0 -66.0 3.1 # Vertex ID: 82
+   vertex -150.0 -54.0 3.69 # Vertex ID: 83
+   vertex -150.0 -42.0 3.72 # Vertex ID: 84
+   vertex -150.0 -30.0 3.84 # Vertex ID: 85
+   vertex -150.0 -18.0 4.22 # Vertex ID: 86
+   vertex -150.0 -6.0 3.84 # Vertex ID: 87
+   vertex -150.0 6.0 4.53 # Vertex ID: 88
+   vertex -150.0 18.0 3.99 # Vertex ID: 89
+   vertex -150.0 30.0 3.93 # Vertex ID: 90
+   vertex -150.0 42.0 3.62 # Vertex ID: 91
+   vertex -150.0 54.0 3.15 # Vertex ID: 92
+   vertex -150.0 66.0 3.07 # Vertex ID: 93
+   vertex -150.0 78.0 2.51 # Vertex ID: 94
+   vertex -150.0 90.0 0.0 # Vertex ID: 95
+   vertex -140.0 -90.0 0.0 # Vertex ID: 96
+   vertex -140.0 -78.0 3.41 # Vertex ID: 97
+   vertex -140.0 -66.0 4.11 # Vertex ID: 98
+   vertex -140.0 -54.0 4.31 # Vertex ID: 99
+   vertex -140.0 -42.0 4.73 # Vertex ID: 100
+   vertex -140.0 -30.0 5.84 # Vertex ID: 101
+   vertex -140.0 -18.0 5.3 # Vertex ID: 102
+   vertex -140.0 -6.0 6.17 # Vertex ID: 103
+   vertex -140.0 6.0 5.57 # Vertex ID: 104
+   vertex -140.0 18.0 6.08 # Vertex ID: 105
+   vertex -140.0 30.0 5.39 # Vertex ID: 106
+   vertex -140.0 42.0 4.66 # Vertex ID: 107
+   vertex -140.0 54.0 4.68 # Vertex ID: 108
+   vertex -140.0 66.0 3.95 # Vertex ID: 109
+   vertex -140.0 78.0 4.0 # Vertex ID: 110
+   vertex -140.0 90.0 0.0 # Vertex ID: 111
+   vertex -130.0 -90.0 0.0 # Vertex ID: 112
+   vertex -130.0 -78.0 5.31 # Vertex ID: 113
+   vertex -130.0 -66.0 5.24 # Vertex ID: 114
+   vertex -130.0 -54.0 6.08 # Vertex ID: 115
+   vertex -130.0 -42.0 7.27 # Vertex ID: 116
+   vertex -130.0 -30.0 6.85 # Vertex ID: 117
+   vertex -130.0 -18.0 7.73 # Vertex ID: 118
+   vertex -130.0 -6.0 8.15 # Vertex ID: 119
+   vertex -130.0 6.0 8.23 # Vertex ID: 120
+   vertex -130.0 18.0 8.2 # Vertex ID: 121
+   vertex -130.0 30.0 6.8 # Vertex ID: 122
+   vertex -130.0 42.0 7.09 # Vertex ID: 123
+   vertex -130.0 54.0 6.3 # Vertex ID: 124
+   vertex -130.0 66.0 5.41 # Vertex ID: 125
+   vertex -130.0 78.0 4.72 # Vertex ID: 126
+   vertex -130.0 90.0 0.0 # Vertex ID: 127
+   vertex -120.0 -90.0 0.0 # Vertex ID: 128
+   vertex -120.0 -78.0 6.44 # Vertex ID: 129
+   vertex -120.0 -66.0 7.49 # Vertex ID: 130
+   vertex -120.0 -54.0 7.56 # Vertex ID: 131
+   vertex -120.0 -42.0 8.99 # Vertex ID: 132
+   vertex -120.0 -30.0 8.99 # Vertex ID: 133
+   vertex -120.0 -18.0 11.05 # Vertex ID: 134
+   vertex -120.0 -6.0 10.9 # Vertex ID: 135
+   vertex -120.0 6.0 11.0 # Vertex ID: 136
+   vertex -120.0 18.0 10.71 # Vertex ID: 137
+   vertex -120.0 30.0 9.25 # Vertex ID: 138
+   vertex -120.0 42.0 8.27 # Vertex ID: 139
+   vertex -120.0 54.0 8.65 # Vertex ID: 140
+   vertex -120.0 66.0 7.01 # Vertex ID: 141
+   vertex -120.0 78.0 6.71 # Vertex ID: 142
+   vertex -120.0 90.0 0.0 # Vertex ID: 143
+   vertex -110.0 -90.0 0.0 # Vertex ID: 144
+   vertex -110.0 -78.0 8.4 # Vertex ID: 145
+   vertex -110.0 -66.0 8.77 # Vertex ID: 146
+   vertex -110.0 -54.0 10.18 # Vertex ID: 147
+   vertex -110.0 -42.0 11.19 # Vertex ID: 148
+   vertex -110.0 -30.0 13.05 # Vertex ID: 149
+   vertex -110.0 -18.0 12.91 # Vertex ID: 150
+   vertex -110.0 -6.0 12.72 # Vertex ID: 151
+   vertex -110.0 6.0 12.96 # Vertex ID: 152
+   vertex -110.0 18.0 11.95 # Vertex ID: 153
+   vertex -110.0 30.0 11.26 # Vertex ID: 154
+   vertex -110.0 42.0 11.63 # Vertex ID: 155
+   vertex -110.0 54.0 10.38 # Vertex ID: 156
+   vertex -110.0 66.0 9.44 # Vertex ID: 157
+   vertex -110.0 78.0 8.31 # Vertex ID: 158
+   vertex -110.0 90.0 0.0 # Vertex ID: 159
+   vertex -100.0 -90.0 0.0 # Vertex ID: 160
+   vertex -100.0 -78.0 11.5 # Vertex ID: 161
+   vertex -100.0 -66.0 10.84 # Vertex ID: 162
+   vertex -100.0 -54.0 13.44 # Vertex ID: 163
+   vertex -100.0 -42.0 13.91 # Vertex ID: 164
+   vertex -100.0 -30.0 16.01 # Vertex ID: 165
+   vertex -100.0 -18.0 15.45 # Vertex ID: 166
+   vertex -100.0 -6.0 15.12 # Vertex ID: 167
+   vertex -100.0 6.0 16.52 # Vertex ID: 168
+   vertex -100.0 18.0 16.53 # Vertex ID: 169
+   vertex -100.0 30.0 15.94 # Vertex ID: 170
+   vertex -100.0 42.0 15.13 # Vertex ID: 171
+   vertex -100.0 54.0 13.62 # Vertex ID: 172
+   vertex -100.0 66.0 11.73 # Vertex ID: 173
+   vertex -100.0 78.0 11.52 # Vertex ID: 174
+   vertex -100.0 90.0 0.0 # Vertex ID: 175
+   vertex -90.0 -90.0 0.0 # Vertex ID: 176
+   vertex -90.0 -78.0 12.09 # Vertex ID: 177
+   vertex -90.0 -66.0 13.41 # Vertex ID: 178
+   vertex -90.0 -54.0 16.8 # Vertex ID: 179
+   vertex -90.0 -42.0 19.46 # Vertex ID: 180
+   vertex -90.0 -30.0 20.16 # Vertex ID: 181
+   vertex -90.0 -18.0 18.25 # Vertex ID: 182
+   vertex -90.0 -6.0 20.03 # Vertex ID: 183
+   vertex -90.0 6.0 19.48 # Vertex ID: 184
+   vertex -90.0 18.0 19.66 # Vertex ID: 185
+   vertex -90.0 30.0 18.05 # Vertex ID: 186
+   vertex -90.0 42.0 16.97 # Vertex ID: 187
+   vertex -90.0 54.0 17.94 # Vertex ID: 188
+   vertex -90.0 66.0 15.47 # Vertex ID: 189
+   vertex -90.0 78.0 11.82 # Vertex ID: 190
+   vertex -90.0 90.0 0.0 # Vertex ID: 191
+   vertex -80.0 -90.0 0.0 # Vertex ID: 192
+   vertex -80.0 -78.0 17.01 # Vertex ID: 193
+   vertex -80.0 -66.0 18.57 # Vertex ID: 194
+   vertex -80.0 -54.0 21.25 # Vertex ID: 195
+   vertex -80.0 -42.0 20.7 # Vertex ID: 196
+   vertex -80.0 -30.0 20.92 # Vertex ID: 197
+   vertex -80.0 -18.0 26.1 # Vertex ID: 198
+   vertex -80.0 -6.0 23.32 # Vertex ID: 199
+   vertex -80.0 6.0 23.53 # Vertex ID: 200
+   vertex -80.0 18.0 24.13 # Vertex ID: 201
+   vertex -80.0 30.0 22.65 # Vertex ID: 202
+   vertex -80.0 42.0 20.52 # Vertex ID: 203
+   vertex -80.0 54.0 19.86 # Vertex ID: 204
+   vertex -80.0 66.0 17.19 # Vertex ID: 205
+   vertex -80.0 78.0 15.39 # Vertex ID: 206
+   vertex -80.0 90.0 0.0 # Vertex ID: 207
+   vertex -70.0 -90.0 0.0 # Vertex ID: 208
+   vertex -70.0 -78.0 18.95 # Vertex ID: 209
+   vertex -70.0 -66.0 21.86 # Vertex ID: 210
+   vertex -70.0 -54.0 25.05 # Vertex ID: 211
+   vertex -70.0 -42.0 27.08 # Vertex ID: 212
+   vertex -70.0 -30.0 26.33 # Vertex ID: 213
+   vertex -70.0 -18.0 28.35 # Vertex ID: 214
+   vertex -70.0 -6.0 31.79 # Vertex ID: 215
+   vertex -70.0 6.0 31.46 # Vertex ID: 216
+   vertex -70.0 18.0 27.27 # Vertex ID: 217
+   vertex -70.0 30.0 25.63 # Vertex ID: 218
+   vertex -70.0 42.0 24.87 # Vertex ID: 219
+   vertex -70.0 54.0 22.1 # Vertex ID: 220
+   vertex -70.0 66.0 20.86 # Vertex ID: 221
+   vertex -70.0 78.0 19.62 # Vertex ID: 222
+   vertex -70.0 90.0 0.0 # Vertex ID: 223
+   vertex -60.0 -90.0 0.0 # Vertex ID: 224
+   vertex -60.0 -78.0 20.97 # Vertex ID: 225
+   vertex -60.0 -66.0 22.08 # Vertex ID: 226
+   vertex -60.0 -54.0 29.67 # Vertex ID: 227
+   vertex -60.0 -42.0 28.81 # Vertex ID: 228
+   vertex -60.0 -30.0 30.54 # Vertex ID: 229
+   vertex -60.0 -18.0 34.01 # Vertex ID: 230
+   vertex -60.0 -6.0 30.98 # Vertex ID: 231
+   vertex -60.0 6.0 33.13 # Vertex ID: 232
+   vertex -60.0 18.0 35.09 # Vertex ID: 233
+   vertex -60.0 30.0 29.15 # Vertex ID: 234
+   vertex -60.0 42.0 30.17 # Vertex ID: 235
+   vertex -60.0 54.0 25.13 # Vertex ID: 236
+   vertex -60.0 66.0 22.68 # Vertex ID: 237
+   vertex -60.0 78.0 20.27 # Vertex ID: 238
+   vertex -60.0 90.0 0.0 # Vertex ID: 239
+   vertex -50.0 -90.0 0.0 # Vertex ID: 240
+   vertex -50.0 -78.0 21.7 # Vertex ID: 241
+   vertex -50.0 -66.0 27.23 # Vertex ID: 242
+   vertex -50.0 -54.0 28.8 # Vertex ID: 243
+   vertex -50.0 -42.0 29.92 # Vertex ID: 244
+   vertex -50.0 -30.0 37.98 # Vertex ID: 245
+   vertex -50.0 -18.0 34.55 # Vertex ID: 246
+   vertex -50.0 -6.0 36.65 # Vertex ID: 247
+   vertex -50.0 6.0 40.14 # Vertex ID: 248
+   vertex -50.0 18.0 36.56 # Vertex ID: 249
+   vertex -50.0 30.0 35.9 # Vertex ID: 250
+   vertex -50.0 42.0 36.31 # Vertex ID: 251
+   vertex -50.0 54.0 32.04 # Vertex ID: 252
+   vertex -50.0 66.0 26.91 # Vertex ID: 253
+   vertex -50.0 78.0 23.61 # Vertex ID: 254
+   vertex -50.0 90.0 0.0 # Vertex ID: 255
+   vertex -40.0 -90.0 0.0 # Vertex ID: 256
+   vertex -40.0 -78.0 24.42 # Vertex ID: 257
+   vertex -40.0 -66.0 27.8 # Vertex ID: 258
+   vertex -40.0 -54.0 34.67 # Vertex ID: 259
+   vertex -40.0 -42.0 34.98 # Vertex ID: 260
+   vertex -40.0 -30.0 38.09 # Vertex ID: 261
+   vertex -40.0 -18.0 42.67 # Vertex ID: 262
+   vertex -40.0 -6.0 44.27 # Vertex ID: 263
+   vertex -40.0 6.0 40.95 # Vertex ID: 264
+   vertex -40.0 18.0 39.02 # Vertex ID: 265
+   vertex -40.0 30.0 40.07 # Vertex ID: 266
+   vertex -40.0 42.0 38.86 # Vertex ID: 267
+   vertex -40.0 54.0 32.34 # Vertex ID: 268
+   vertex -40.0 66.0 31.06 # Vertex ID: 269
+   vertex -40.0 78.0 26.25 # Vertex ID: 270
+   vertex -40.0 90.0 0.0 # Vertex ID: 271
+   vertex -30.0 -90.0 0.0 # Vertex ID: 272
+   vertex -30.0 -78.0 29.34 # Vertex ID: 273
+   vertex -30.0 -66.0 31.39 # Vertex ID: 274
+   vertex -30.0 -54.0 35.16 # Vertex ID: 275
+   vertex -30.0 -42.0 41.38 # Vertex ID: 276
+   vertex -30.0 -30.0 43.86 # Vertex ID: 277
+   vertex -30.0 -18.0 42.42 # Vertex ID: 278
+   vertex -30.0 -6.0 40.74 # Vertex ID: 279
+   vertex -30.0 6.0 44.96 # Vertex ID: 280
+   vertex -30.0 18.0 47.69 # Vertex ID: 281
+   vertex -30.0 30.0 41.4 # Vertex ID: 282
+   vertex -30.0 42.0 38.18 # Vertex ID: 283
+   vertex -30.0 54.0 36.91 # Vertex ID: 284
+   vertex -30.0 66.0 33.45 # Vertex ID: 285
+   vertex -30.0 78.0 29.49 # Vertex ID: 286
+   vertex -30.0 90.0 0.0 # Vertex ID: 287
+   vertex -20.0 -90.0 0.0 # Vertex ID: 288
+   vertex -20.0 -78.0 31.62 # Vertex ID: 289
+   vertex -20.0 -66.0 35.23 # Vertex ID: 290
+   vertex -20.0 -54.0 41.59 # Vertex ID: 291
+   vertex -20.0 -42.0 38.75 # Vertex ID: 292
+   vertex -20.0 -30.0 40.43 # Vertex ID: 293
+   vertex -20.0 -18.0 44.9 # Vertex ID: 294
+   vertex -20.0 -6.0 46.57 # Vertex ID: 295
+   vertex -20.0 6.0 48.89 # Vertex ID: 296
+   vertex -20.0 18.0 48.14 # Vertex ID: 297
+   vertex -20.0 30.0 41.17 # Vertex ID: 298
+   vertex -20.0 42.0 39.8 # Vertex ID: 299
+   vertex -20.0 54.0 38.7 # Vertex ID: 300
+   vertex -20.0 66.0 32.06 # Vertex ID: 301
+   vertex -20.0 78.0 31.1 # Vertex ID: 302
+   vertex -20.0 90.0 0.0 # Vertex ID: 303
+   vertex -10.0 -90.0 0.0 # Vertex ID: 304
+   vertex -10.0 -78.0 32.31 # Vertex ID: 305
+   vertex -10.0 -66.0 34.04 # Vertex ID: 306
+   vertex -10.0 -54.0 39.09 # Vertex ID: 307
+   vertex -10.0 -42.0 43.29 # Vertex ID: 308
+   vertex -10.0 -30.0 41.68 # Vertex ID: 309
+   vertex -10.0 -18.0 44.82 # Vertex ID: 310
+   vertex -10.0 -6.0 50.97 # Vertex ID: 311
+   vertex -10.0 6.0 51.72 # Vertex ID: 312
+   vertex -10.0 18.0 47.79 # Vertex ID: 313
+   vertex -10.0 30.0 48.01 # Vertex ID: 314
+   vertex -10.0 42.0 39.27 # Vertex ID: 315
+   vertex -10.0 54.0 41.75 # Vertex ID: 316
+   vertex -10.0 66.0 38.45 # Vertex ID: 317
+   vertex -10.0 78.0 30.31 # Vertex ID: 318
+   vertex -10.0 90.0 0.0 # Vertex ID: 319
+   vertex 0.0 -90.0 0.0 # Vertex ID: 320
+   vertex 0.0 -78.0 31.34 # Vertex ID: 321
+   vertex 0.0 -66.0 38.05 # Vertex ID: 322
+   vertex 0.0 -54.0 40.17 # Vertex ID: 323
+   vertex 0.0 -42.0 39.37 # Vertex ID: 324
+   vertex 0.0 -30.0 50.78 # Vertex ID: 325
+   vertex 0.0 -18.0 49.93 # Vertex ID: 326
+   vertex 0.0 -6.0 53.96 # Vertex ID: 327
+   vertex 0.0 6.0 53.21 # Vertex ID: 328
+   vertex 0.0 18.0 49.34 # Vertex ID: 329
+   vertex 0.0 30.0 49.76 # Vertex ID: 330
+   vertex 0.0 42.0 43.35 # Vertex ID: 331
+   vertex 0.0 54.0 41.09 # Vertex ID: 332
+   vertex 0.0 66.0 37.55 # Vertex ID: 333
+   vertex 0.0 78.0 30.8 # Vertex ID: 334
+   vertex 0.0 90.0 0.0 # Vertex ID: 335
+   vertex 10.0 -90.0 0.0 # Vertex ID: 336
+   vertex 10.0 -78.0 34.14 # Vertex ID: 337
+   vertex 10.0 -66.0 35.08 # Vertex ID: 338
+   vertex 10.0 -54.0 39.06 # Vertex ID: 339
+   vertex 10.0 -42.0 47.12 # Vertex ID: 340
+   vertex 10.0 -30.0 48.01 # Vertex ID: 341
+   vertex 10.0 -18.0 45.86 # Vertex ID: 342
+   vertex 10.0 -6.0 47.43 # Vertex ID: 343
+   vertex 10.0 6.0 53.45 # Vertex ID: 344
+   vertex 10.0 18.0 45.63 # Vertex ID: 345
+   vertex 10.0 30.0 46.31 # Vertex ID: 346
+   vertex 10.0 42.0 47.34 # Vertex ID: 347
+   vertex 10.0 54.0 36.42 # Vertex ID: 348
+   vertex 10.0 66.0 34.21 # Vertex ID: 349
+   vertex 10.0 78.0 30.36 # Vertex ID: 350
+   vertex 10.0 90.0 0.0 # Vertex ID: 351
+   vertex 20.0 -90.0 0.0 # Vertex ID: 352
+   vertex 20.0 -78.0 28.32 # Vertex ID: 353
+   vertex 20.0 -66.0 36.82 # Vertex ID: 354
+   vertex 20.0 -54.0 38.58 # Vertex ID: 355
+   vertex 20.0 -42.0 41.53 # Vertex ID: 356
+   vertex 20.0 -30.0 47.45 # Vertex ID: 357
+   vertex 20.0 -18.0 46.11 # Vertex ID: 358
+   vertex 20.0 -6.0 44.72 # Vertex ID: 359
+   vertex 20.0 6.0 49.25 # Vertex ID: 360
+   vertex 20.0 18.0 48.14 # Vertex ID: 361
+   vertex 20.0 30.0 47.9 # Vertex ID: 362
+   vertex 20.0 42.0 43.1 # Vertex ID: 363
+   vertex 20.0 54.0 37.62 # Vertex ID: 364
+   vertex 20.0 66.0 32.68 # Vertex ID: 365
+   vertex 20.0 78.0 32.64 # Vertex ID: 366
+   vertex 20.0 90.0 0.0 # Vertex ID: 367
+   vertex 30.0 -90.0 0.0 # Vertex ID: 368
+   vertex 30.0 -78.0 28.77 # Vertex ID: 369
+   vertex 30.0 -66.0 35.0 # Vertex ID: 370
+   vertex 30.0 -54.0 32.73 # Vertex ID: 371
+   vertex 30.0 -42.0 43.4 # Vertex ID: 372
+   vertex 30.0 -30.0 41.16 # Vertex ID: 373
+   vertex 30.0 -18.0 41.84 # Vertex ID: 374
+   vertex 30.0 -6.0 45.79 # Vertex ID: 375
+   vertex 30.0 6.0 44.34 # Vertex ID: 376
+   vertex 30.0 18.0 48.13 # Vertex ID: 377
+   vertex 30.0 30.0 38.6 # Vertex ID: 378
+   vertex 30.0 42.0 38.37 # Vertex ID: 379
+   vertex 30.0 54.0 39.15 # Vertex ID: 380
+   vertex 30.0 66.0 31.72 # Vertex ID: 381
+   vertex 30.0 78.0 26.95 # Vertex ID: 382
+   vertex 30.0 90.0 0.0 # Vertex ID: 383
+   vertex 40.0 -90.0 0.0 # Vertex ID: 384
+   vertex 40.0 -78.0 27.45 # Vertex ID: 385
+   vertex 40.0 -66.0 32.1 # Vertex ID: 386
+   vertex 40.0 -54.0 32.2 # Vertex ID: 387
+   vertex 40.0 -42.0 37.46 # Vertex ID: 388
+   vertex 40.0 -30.0 38.13 # Vertex ID: 389
+   vertex 40.0 -18.0 37.52 # Vertex ID: 390
+   vertex 40.0 -6.0 44.97 # Vertex ID: 391
+   vertex 40.0 6.0 38.06 # Vertex ID: 392
+   vertex 40.0 18.0 42.35 # Vertex ID: 393
+   vertex 40.0 30.0 43.07 # Vertex ID: 394
+   vertex 40.0 42.0 35.48 # Vertex ID: 395
+   vertex 40.0 54.0 35.52 # Vertex ID: 396
+   vertex 40.0 66.0 30.27 # Vertex ID: 397
+   vertex 40.0 78.0 28.92 # Vertex ID: 398
+   vertex 40.0 90.0 0.0 # Vertex ID: 399
+   vertex 50.0 -90.0 0.0 # Vertex ID: 400
+   vertex 50.0 -78.0 22.64 # Vertex ID: 401
+   vertex 50.0 -66.0 28.73 # Vertex ID: 402
+   vertex 50.0 -54.0 29.47 # Vertex ID: 403
+   vertex 50.0 -42.0 33.83 # Vertex ID: 404
+   vertex 50.0 -30.0 37.31 # Vertex ID: 405
+   vertex 50.0 -18.0 33.39 # Vertex ID: 406
+   vertex 50.0 -6.0 38.36 # Vertex ID: 407
+   vertex 50.0 6.0 38.9 # Vertex ID: 408
+   vertex 50.0 18.0 39.48 # Vertex ID: 409
+   vertex 50.0 30.0 37.6 # Vertex ID: 410
+   vertex 50.0 42.0 30.23 # Vertex ID: 411
+   vertex 50.0 54.0 29.09 # Vertex ID: 412
+   vertex 50.0 66.0 27.59 # Vertex ID: 413
+   vertex 50.0 78.0 25.85 # Vertex ID: 414
+   vertex 50.0 90.0 0.0 # Vertex ID: 415
+   vertex 60.0 -90.0 0.0 # Vertex ID: 416
+   vertex 60.0 -78.0 20.84 # Vertex ID: 417
+   vertex 60.0 -66.0 23.91 # Vertex ID: 418
+   vertex 60.0 -54.0 27.89 # Vertex ID: 419
+   vertex 60.0 -42.0 31.01 # Vertex ID: 420
+   vertex 60.0 -30.0 34.39 # Vertex ID: 421
+   vertex 60.0 -18.0 33.85 # Vertex ID: 422
+   vertex 60.0 -6.0 35.35 # Vertex ID: 423
+   vertex 60.0 6.0 31.82 # Vertex ID: 424
+   vertex 60.0 18.0 32.27 # Vertex ID: 425
+   vertex 60.0 30.0 31.03 # Vertex ID: 426
+   vertex 60.0 42.0 29.83 # Vertex ID: 427
+   vertex 60.0 54.0 27.0 # Vertex ID: 428
+   vertex 60.0 66.0 23.05 # Vertex ID: 429
+   vertex 60.0 78.0 20.24 # Vertex ID: 430
+   vertex 60.0 90.0 0.0 # Vertex ID: 431
+   vertex 70.0 -90.0 0.0 # Vertex ID: 432
+   vertex 70.0 -78.0 17.69 # Vertex ID: 433
+   vertex 70.0 -66.0 23.05 # Vertex ID: 434
+   vertex 70.0 -54.0 24.22 # Vertex ID: 435
+   vertex 70.0 -42.0 25.07 # Vertex ID: 436
+   vertex 70.0 -30.0 29.44 # Vertex ID: 437
+   vertex 70.0 -18.0 25.81 # Vertex ID: 438
+   vertex 70.0 -6.0 31.68 # Vertex ID: 439
+   vertex 70.0 6.0 31.83 # Vertex ID: 440
+   vertex 70.0 18.0 30.22 # Vertex ID: 441
+   vertex 70.0 30.0 26.69 # Vertex ID: 442
+   vertex 70.0 42.0 25.24 # Vertex ID: 443
+   vertex 70.0 54.0 22.52 # Vertex ID: 444
+   vertex 70.0 66.0 20.27 # Vertex ID: 445
+   vertex 70.0 78.0 17.4 # Vertex ID: 446
+   vertex 70.0 90.0 0.0 # Vertex ID: 447
+   vertex 80.0 -90.0 0.0 # Vertex ID: 448
+   vertex 80.0 -78.0 16.7 # Vertex ID: 449
+   vertex 80.0 -66.0 16.15 # Vertex ID: 450
+   vertex 80.0 -54.0 20.47 # Vertex ID: 451
+   vertex 80.0 -42.0 20.53 # Vertex ID: 452
+   vertex 80.0 -30.0 23.66 # Vertex ID: 453
+   vertex 80.0 -18.0 24.02 # Vertex ID: 454
+   vertex 80.0 -6.0 24.59 # Vertex ID: 455
+   vertex 80.0 6.0 25.23 # Vertex ID: 456
+   vertex 80.0 18.0 22.25 # Vertex ID: 457
+   vertex 80.0 30.0 20.93 # Vertex ID: 458
+   vertex 80.0 42.0 23.64 # Vertex ID: 459
+   vertex 80.0 54.0 20.79 # Vertex ID: 460
+   vertex 80.0 66.0 16.75 # Vertex ID: 461
+   vertex 80.0 78.0 14.23 # Vertex ID: 462
+   vertex 80.0 90.0 0.0 # Vertex ID: 463
+   vertex 90.0 -90.0 0.0 # Vertex ID: 464
+   vertex 90.0 -78.0 13.53 # Vertex ID: 465
+   vertex 90.0 -66.0 13.87 # Vertex ID: 466
+   vertex 90.0 -54.0 16.07 # Vertex ID: 467
+   vertex 90.0 -42.0 16.62 # Vertex ID: 468
+   vertex 90.0 -30.0 19.15 # Vertex ID: 469
+   vertex 90.0 -18.0 21.75 # Vertex ID: 470
+   vertex 90.0 -6.0 21.45 # Vertex ID: 471
+   vertex 90.0 6.0 19.14 # Vertex ID: 472
+   vertex 90.0 18.0 20.67 # Vertex ID: 473
+   vertex 90.0 30.0 20.56 # Vertex ID: 474
+   vertex 90.0 42.0 18.68 # Vertex ID: 475
+   vertex 90.0 54.0 17.02 # Vertex ID: 476
+   vertex 90.0 66.0 13.89 # Vertex ID: 477
+   vertex 90.0 78.0 13.83 # Vertex ID: 478
+   vertex 90.0 90.0 0.0 # Vertex ID: 479
+   vertex 100.0 -90.0 0.0 # Vertex ID: 480
+   vertex 100.0 -78.0 10.26 # Vertex ID: 481
+   vertex 100.0 -66.0 12.67 # Vertex ID: 482
+   vertex 100.0 -54.0 14.2 # Vertex ID: 483
+   vertex 100.0 -42.0 15.53 # Vertex ID: 484
+   vertex 100.0 -30.0 16.81 # Vertex ID: 485
+   vertex 100.0 -18.0 17.73 # Vertex ID: 486
+   vertex 100.0 -6.0 15.45 # Vertex ID: 487
+   vertex 100.0 6.0 16.16 # Vertex ID: 488
+   vertex 100.0 18.0 15.18 # Vertex ID: 489
+   vertex 100.0 30.0 14.2 # Vertex ID: 490
+   vertex 100.0 42.0 13.65 # Vertex ID: 491
+   vertex 100.0 54.0 12.27 # Vertex ID: 492
+   vertex 100.0 66.0 12.31 # Vertex ID: 493
+   vertex 100.0 78.0 9.56 # Vertex ID: 494
+   vertex 100.0 90.0 0.0 # Vertex ID: 495
+   vertex 110.0 -90.0 0.0 # Vertex ID: 496
+   vertex 110.0 -78.0 9.05 # Vertex ID: 497
+   vertex 110.0 -66.0 9.78 # Vertex ID: 498
+   vertex 110.0 -54.0 11.42 # Vertex ID: 499
+   vertex 110.0 -42.0 11.97 # Vertex ID: 500
+   vertex 110.0 -30.0 11.2 # Vertex ID: 501
+   vertex 110.0 -18.0 14.24 # Vertex ID: 502
+   vertex 110.0 -6.0 12.01 # Vertex ID: 503
+   vertex 110.0 6.0 13.02 # Vertex ID: 504
+   vertex 110.0 18.0 12.25 # Vertex ID: 505
+   vertex 110.0 30.0 12.83 # Vertex ID: 506
+   vertex 110.0 42.0 12.31 # Vertex ID: 507
+   vertex 110.0 54.0 9.93 # Vertex ID: 508
+   vertex 110.0 66.0 9.24 # Vertex ID: 509
+   vertex 110.0 78.0 8.33 # Vertex ID: 510
+   vertex 110.0 90.0 0.0 # Vertex ID: 511
+   vertex 120.0 -90.0 0.0 # Vertex ID: 512
+   vertex 120.0 -78.0 6.56 # Vertex ID: 513
+   vertex 120.0 -66.0 6.94 # Vertex ID: 514
+   vertex 120.0 -54.0 7.63 # Vertex ID: 515
+   vertex 120.0 -42.0 9.58 # Vertex ID: 516
+   vertex 120.0 -30.0 8.92 # Vertex ID: 517
+   vertex 120.0 -18.0 10.12 # Vertex ID: 518
+   vertex 120.0 -6.0 9.58 # Vertex ID: 519
+   vertex 120.0 6.0 10.18 # Vertex ID: 520
+   vertex 120.0 18.0 10.44 # Vertex ID: 521
+   vertex 120.0 30.0 9.11 # Vertex ID: 522
+   vertex 120.0 42.0 8.45 # Vertex ID: 523
+   vertex 120.0 54.0 7.95 # Vertex ID: 524
+   vertex 120.0 66.0 6.78 # Vertex ID: 525
+   vertex 120.0 78.0 5.94 # Vertex ID: 526
+   vertex 120.0 90.0 0.0 # Vertex ID: 527
+   vertex 130.0 -90.0 0.0 # Vertex ID: 528
+   vertex 130.0 -78.0 5.13 # Vertex ID: 529
+   vertex 130.0 -66.0 6.01 # Vertex ID: 530
+   vertex 130.0 -54.0 5.93 # Vertex ID: 531
+   vertex 130.0 -42.0 7.13 # Vertex ID: 532
+   vertex 130.0 -30.0 7.73 # Vertex ID: 533
+   vertex 130.0 -18.0 7.53 # Vertex ID: 534
+   vertex 130.0 -6.0 7.13 # Vertex ID: 535
+   vertex 130.0 6.0 7.29 # Vertex ID: 536
+   vertex 130.0 18.0 8.37 # Vertex ID: 537
+   vertex 130.0 30.0 7.61 # Vertex ID: 538
+   vertex 130.0 42.0 7.38 # Vertex ID: 539
+   vertex 130.0 54.0 6.86 # Vertex ID: 540
+   vertex 130.0 66.0 5.54 # Vertex ID: 541
+   vertex 130.0 78.0 4.55 # Vertex ID: 542
+   vertex 130.0 90.0 0.0 # Vertex ID: 543
+   vertex 140.0 -90.0 0.0 # Vertex ID: 544
+   vertex 140.0 -78.0 3.65 # Vertex ID: 545
+   vertex 140.0 -66.0 4.02 # Vertex ID: 546
+   vertex 140.0 -54.0 4.64 # Vertex ID: 547
+   vertex 140.0 -42.0 5.2 # Vertex ID: 548
+   vertex 140.0 -30.0 5.6 # Vertex ID: 549
+   vertex 140.0 -18.0 5.64 # Vertex ID: 550
+   vertex 140.0 -6.0 5.62 # Vertex ID: 551
+   vertex 140.0 6.0 5.99 # Vertex ID: 552
+   vertex 140.0 18.0 5.21 # Vertex ID: 553
+   vertex 140.0 30.0 5.39 # Vertex ID: 554
+   vertex 140.0 42.0 4.67 # Vertex ID: 555
+   vertex 140.0 54.0 4.78 # Vertex ID: 556
+   vertex 140.0 66.0 3.88 # Vertex ID: 557
+   vertex 140.0 78.0 3.74 # Vertex ID: 558
+   vertex 140.0 90.0 0.0 # Vertex ID: 559
+   vertex 150.0 -90.0 0.0 # Vertex ID: 560
+   vertex 150.0 -78.0 2.6 # Vertex ID: 561
+   vertex 150.0 -66.0 2.75 # Vertex ID: 562
+   vertex 150.0 -54.0 3.72 # Vertex ID: 563
+   vertex 150.0 -42.0 3.78 # Vertex ID: 564
+   vertex 150.0 -30.0 3.76 # Vertex ID: 565
+   vertex 150.0 -18.0 3.74 # Vertex ID: 566
+   vertex 150.0 -6.0 3.84 # Vertex ID: 567
+   vertex 150.0 6.0 4.51 # Vertex ID: 568
+   vertex 150.0 18.0 4.02 # Vertex ID: 569
+   vertex 150.0 30.0 4.14 # Vertex ID: 570
+   vertex 150.0 42.0 3.61 # Vertex ID: 571
+   vertex 150.0 54.0 3.48 # Vertex ID: 572
+   vertex 150.0 66.0 3.23 # Vertex ID: 573
+   vertex 150.0 78.0 2.66 # Vertex ID: 574
+   vertex 150.0 90.0 0.0 # Vertex ID: 575
+   vertex 160.0 -90.0 0.0 # Vertex ID: 576
+   vertex 160.0 -78.0 1.72 # Vertex ID: 577
+   vertex 160.0 -66.0 2.23 # Vertex ID: 578
+   vertex 160.0 -54.0 2.45 # Vertex ID: 579
+   vertex 160.0 -42.0 2.75 # Vertex ID: 580
+   vertex 160.0 -30.0 2.85 # Vertex ID: 581
+   vertex 160.0 -18.0 2.91 # Vertex ID: 582
+   vertex 160.0 -6.0 3.28 # Vertex ID: 583
+   vertex 160.0 6.0 3.14 # Vertex ID: 584
+   vertex 160.0 18.0 2.9 # Vertex ID: 585
+   vertex 160.0 30.0 3.1 # Vertex ID: 586
+   vertex 160.0 42.0 2.8 # Vertex ID: 587
+   vertex 160.0 54.0 2.19 # Vertex ID: 588
+   vertex 160.0 66.0 2.35 # Vertex ID: 589
+   vertex 160.0 78.0 2.09 # Vertex ID: 590
+   vertex 160.0 90.0 0.0 # Vertex ID: 591
+   vertex 170.0 -90.0 0.0 # Vertex ID: 592
+   vertex 170.0 -78.0 1.28 # Vertex ID: 593
+   vertex 170.0 -66.0 1.55 # Vertex ID: 594
+   vertex 170.0 -54.0 1.71 # Vertex ID: 595
+   vertex 170.0 -42.0 1.85 # Vertex ID: 596
+   vertex 170.0 -30.0 2.14 # Vertex ID: 597
+   vertex 170.0 -18.0 1.97 # Vertex ID: 598
+   vertex 170.0 -6.0 2.14 # Vertex ID: 599
+   vertex 170.0 6.0 2.13 # Vertex ID: 600
+   vertex 170.0 18.0 2.11 # Vertex ID: 601
+   vertex 170.0 30.0 1.78 # Vertex ID: 602
+   vertex 170.0 42.0 1.96 # Vertex ID: 603
+   vertex 170.0 54.0 1.53 # Vertex ID: 604
+   vertex 170.0 66.0 1.57 # Vertex ID: 605
+   vertex 170.0 78.0 1.37 # Vertex ID: 606
+   vertex 170.0 90.0 0.0 # Vertex ID: 607
+   vertex 180.0 -90.0 0.0 # Vertex ID: 608
+   vertex 180.0 -78.0 0.92 # Vertex ID: 609
+   vertex 180.0 -66.0 1.06 # Vertex ID: 610
+   vertex 180.0 -54.0 1.17 # Vertex ID: 611
+   vertex 180.0 -42.0 1.23 # Vertex ID: 612
+   vertex 180.0 -30.0 1.45 # Vertex ID: 613
+   vertex 180.0 -18.0 1.34 # Vertex ID: 614
+   vertex 180.0 -6.0 1.33 # Vertex ID: 615
+   vertex 180.0 6.0 1.37 # Vertex ID: 616
+   vertex 180.0 18.0 1.27 # Vertex ID: 617
+   vertex 180.0 30.0 1.32 # Vertex ID: 618
+   vertex 180.0 42.0 1.14 # Vertex ID: 619
+   vertex 180.0 54.0 1.26 # Vertex ID: 620
+   vertex 180.0 66.0 1.03 # Vertex ID: 621
+   vertex 180.0 78.0 0.95 # Vertex ID: 622
+   vertex 180.0 90.0 0.0 # Vertex ID: 623
+   vertex 190.0 -90.0 0.0 # Vertex ID: 624
+   vertex 190.0 -78.0 0.65 # Vertex ID: 625
+   vertex 190.0 -66.0 0.63 # Vertex ID: 626
+   vertex 190.0 -54.0 0.7 # Vertex ID: 627
+   vertex 190.0 -42.0 0.76 # Vertex ID: 628
+   vertex 190.0 -30.0 0.93 # Vertex ID: 629
+   vertex 190.0 -18.0 0.9 # Vertex ID: 630
+   vertex 190.0 -6.0 0.88 # Vertex ID: 631
+   vertex 190.0 6.0 0.92 # Vertex ID: 632
+   vertex 190.0 18.0 0.87 # Vertex ID: 633
+   vertex 190.0 30.0 0.97 # Vertex ID: 634
+   vertex 190.0 42.0 0.76 # Vertex ID: 635
+   vertex 190.0 54.0 0.84 # Vertex ID: 636
+   vertex 190.0 66.0 0.75 # Vertex ID: 637
+   vertex 190.0 78.0 0.66 # Vertex ID: 638
+   vertex 190.0 90.0 0.0 # Vertex ID: 639
+   vertex 200.0 -90.0 0.0 # Vertex ID: 640
+   vertex 200.0 -78.0 0.0 # Vertex ID: 641
+   vertex 200.0 -66.0 0.0 # Vertex ID: 642
+   vertex 200.0 -54.0 0.0 # Vertex ID: 643
+   vertex 200.0 -42.0 0.0 # Vertex ID: 644
+   vertex 200.0 -30.0 0.0 # Vertex ID: 645
+   vertex 200.0 -18.0 0.0 # Vertex ID: 646
+   vertex 200.0 -6.0 0.0 # Vertex ID: 647
+   vertex 200.0 6.0 0.0 # Vertex ID: 648
+   vertex 200.0 18.0 0.0 # Vertex ID: 649
+   vertex 200.0 30.0 0.0 # Vertex ID: 650
+   vertex 200.0 42.0 0.0 # Vertex ID: 651
+   vertex 200.0 54.0 0.0 # Vertex ID: 652
+   vertex 200.0 66.0 0.0 # Vertex ID: 653
+   vertex 200.0 78.0 0.0 # Vertex ID: 654
+   vertex 200.0 90.0 0.0 # Vertex ID: 655
+  face
+    vertices 0 16 1
+  endface
+  face
+    vertices 16 17 1
+  endface
+  face
+    vertices 1 17 2
+  endface
+  face
+    vertices 17 18 2
+  endface
+  face
+    vertices 2 18 3
+  endface
+  face
+    vertices 18 19 3
+  endface
+  face
+    vertices 3 19 4
+  endface
+  face
+    vertices 19 20 4
+  endface
+  face
+    vertices 4 20 5
+  endface
+  face
+    vertices 20 21 5
+  endface
+  face
+    vertices 5 21 6
+  endface
+  face
+    vertices 21 22 6
+  endface
+  face
+    vertices 6 22 7
+  endface
+  face
+    vertices 22 23 7
+  endface
+  face
+    vertices 7 23 8
+  endface
+  face
+    vertices 23 24 8
+  endface
+  face
+    vertices 8 24 9
+  endface
+  face
+    vertices 24 25 9
+  endface
+  face
+    vertices 9 25 10
+  endface
+  face
+    vertices 25 26 10
+  endface
+  face
+    vertices 10 26 11
+  endface
+  face
+    vertices 26 27 11
+  endface
+  face
+    vertices 11 27 12
+  endface
+  face
+    vertices 27 28 12
+  endface
+  face
+    vertices 12 28 13
+  endface
+  face
+    vertices 28 29 13
+  endface
+  face
+    vertices 13 29 14
+  endface
+  face
+    vertices 29 30 14
+  endface
+  face
+    vertices 14 30 15
+  endface
+  face
+    vertices 30 31 15
+  endface
+  face
+    vertices 16 32 17
+  endface
+  face
+    vertices 32 33 17
+  endface
+  face
+    vertices 17 33 18
+  endface
+  face
+    vertices 33 34 18
+  endface
+  face
+    vertices 18 34 19
+  endface
+  face
+    vertices 34 35 19
+  endface
+  face
+    vertices 19 35 20
+  endface
+  face
+    vertices 35 36 20
+  endface
+  face
+    vertices 20 36 21
+  endface
+  face
+    vertices 36 37 21
+  endface
+  face
+    vertices 21 37 22
+  endface
+  face
+    vertices 37 38 22
+  endface
+  face
+    vertices 22 38 23
+  endface
+  face
+    vertices 38 39 23
+  endface
+  face
+    vertices 23 39 24
+  endface
+  face
+    vertices 39 40 24
+  endface
+  face
+    vertices 24 40 25
+  endface
+  face
+    vertices 40 41 25
+  endface
+  face
+    vertices 25 41 26
+  endface
+  face
+    vertices 41 42 26
+  endface
+  face
+    vertices 26 42 27
+  endface
+  face
+    vertices 42 43 27
+  endface
+  face
+    vertices 27 43 28
+  endface
+  face
+    vertices 43 44 28
+  endface
+  face
+    vertices 28 44 29
+  endface
+  face
+    vertices 44 45 29
+  endface
+  face
+    vertices 29 45 30
+  endface
+  face
+    vertices 45 46 30
+  endface
+  face
+    vertices 30 46 31
+  endface
+  face
+    vertices 46 47 31
+  endface
+  face
+    vertices 32 48 33
+  endface
+  face
+    vertices 48 49 33
+  endface
+  face
+    vertices 33 49 34
+  endface
+  face
+    vertices 49 50 34
+  endface
+  face
+    vertices 34 50 35
+  endface
+  face
+    vertices 50 51 35
+  endface
+  face
+    vertices 35 51 36
+  endface
+  face
+    vertices 51 52 36
+  endface
+  face
+    vertices 36 52 37
+  endface
+  face
+    vertices 52 53 37
+  endface
+  face
+    vertices 37 53 38
+  endface
+  face
+    vertices 53 54 38
+  endface
+  face
+    vertices 38 54 39
+  endface
+  face
+    vertices 54 55 39
+  endface
+  face
+    vertices 39 55 40
+  endface
+  face
+    vertices 55 56 40
+  endface
+  face
+    vertices 40 56 41
+  endface
+  face
+    vertices 56 57 41
+  endface
+  face
+    vertices 41 57 42
+  endface
+  face
+    vertices 57 58 42
+  endface
+  face
+    vertices 42 58 43
+  endface
+  face
+    vertices 58 59 43
+  endface
+  face
+    vertices 43 59 44
+  endface
+  face
+    vertices 59 60 44
+  endface
+  face
+    vertices 44 60 45
+  endface
+  face
+    vertices 60 61 45
+  endface
+  face
+    vertices 45 61 46
+  endface
+  face
+    vertices 61 62 46
+  endface
+  face
+    vertices 46 62 47
+  endface
+  face
+    vertices 62 63 47
+  endface
+  face
+    vertices 48 64 49
+  endface
+  face
+    vertices 64 65 49
+  endface
+  face
+    vertices 49 65 50
+  endface
+  face
+    vertices 65 66 50
+  endface
+  face
+    vertices 50 66 51
+  endface
+  face
+    vertices 66 67 51
+  endface
+  face
+    vertices 51 67 52
+  endface
+  face
+    vertices 67 68 52
+  endface
+  face
+    vertices 52 68 53
+  endface
+  face
+    vertices 68 69 53
+  endface
+  face
+    vertices 53 69 54
+  endface
+  face
+    vertices 69 70 54
+  endface
+  face
+    vertices 54 70 55
+  endface
+  face
+    vertices 70 71 55
+  endface
+  face
+    vertices 55 71 56
+  endface
+  face
+    vertices 71 72 56
+  endface
+  face
+    vertices 56 72 57
+  endface
+  face
+    vertices 72 73 57
+  endface
+  face
+    vertices 57 73 58
+  endface
+  face
+    vertices 73 74 58
+  endface
+  face
+    vertices 58 74 59
+  endface
+  face
+    vertices 74 75 59
+  endface
+  face
+    vertices 59 75 60
+  endface
+  face
+    vertices 75 76 60
+  endface
+  face
+    vertices 60 76 61
+  endface
+  face
+    vertices 76 77 61
+  endface
+  face
+    vertices 61 77 62
+  endface
+  face
+    vertices 77 78 62
+  endface
+  face
+    vertices 62 78 63
+  endface
+  face
+    vertices 78 79 63
+  endface
+  face
+    vertices 64 80 65
+  endface
+  face
+    vertices 80 81 65
+  endface
+  face
+    vertices 65 81 66
+  endface
+  face
+    vertices 81 82 66
+  endface
+  face
+    vertices 66 82 67
+  endface
+  face
+    vertices 82 83 67
+  endface
+  face
+    vertices 67 83 68
+  endface
+  face
+    vertices 83 84 68
+  endface
+  face
+    vertices 68 84 69
+  endface
+  face
+    vertices 84 85 69
+  endface
+  face
+    vertices 69 85 70
+  endface
+  face
+    vertices 85 86 70
+  endface
+  face
+    vertices 70 86 71
+  endface
+  face
+    vertices 86 87 71
+  endface
+  face
+    vertices 71 87 72
+  endface
+  face
+    vertices 87 88 72
+  endface
+  face
+    vertices 72 88 73
+  endface
+  face
+    vertices 88 89 73
+  endface
+  face
+    vertices 73 89 74
+  endface
+  face
+    vertices 89 90 74
+  endface
+  face
+    vertices 74 90 75
+  endface
+  face
+    vertices 90 91 75
+  endface
+  face
+    vertices 75 91 76
+  endface
+  face
+    vertices 91 92 76
+  endface
+  face
+    vertices 76 92 77
+  endface
+  face
+    vertices 92 93 77
+  endface
+  face
+    vertices 77 93 78
+  endface
+  face
+    vertices 93 94 78
+  endface
+  face
+    vertices 78 94 79
+  endface
+  face
+    vertices 94 95 79
+  endface
+  face
+    vertices 80 96 81
+  endface
+  face
+    vertices 96 97 81
+  endface
+  face
+    vertices 81 97 82
+  endface
+  face
+    vertices 97 98 82
+  endface
+  face
+    vertices 82 98 83
+  endface
+  face
+    vertices 98 99 83
+  endface
+  face
+    vertices 83 99 84
+  endface
+  face
+    vertices 99 100 84
+  endface
+  face
+    vertices 84 100 85
+  endface
+  face
+    vertices 100 101 85
+  endface
+  face
+    vertices 85 101 86
+  endface
+  face
+    vertices 101 102 86
+  endface
+  face
+    vertices 86 102 87
+  endface
+  face
+    vertices 102 103 87
+  endface
+  face
+    vertices 87 103 88
+  endface
+  face
+    vertices 103 104 88
+  endface
+  face
+    vertices 88 104 89
+  endface
+  face
+    vertices 104 105 89
+  endface
+  face
+    vertices 89 105 90
+  endface
+  face
+    vertices 105 106 90
+  endface
+  face
+    vertices 90 106 91
+  endface
+  face
+    vertices 106 107 91
+  endface
+  face
+    vertices 91 107 92
+  endface
+  face
+    vertices 107 108 92
+  endface
+  face
+    vertices 92 108 93
+  endface
+  face
+    vertices 108 109 93
+  endface
+  face
+    vertices 93 109 94
+  endface
+  face
+    vertices 109 110 94
+  endface
+  face
+    vertices 94 110 95
+  endface
+  face
+    vertices 110 111 95
+  endface
+  face
+    vertices 96 112 97
+  endface
+  face
+    vertices 112 113 97
+  endface
+  face
+    vertices 97 113 98
+  endface
+  face
+    vertices 113 114 98
+  endface
+  face
+    vertices 98 114 99
+  endface
+  face
+    vertices 114 115 99
+  endface
+  face
+    vertices 99 115 100
+  endface
+  face
+    vertices 115 116 100
+  endface
+  face
+    vertices 100 116 101
+  endface
+  face
+    vertices 116 117 101
+  endface
+  face
+    vertices 101 117 102
+  endface
+  face
+    vertices 117 118 102
+  endface
+  face
+    vertices 102 118 103
+  endface
+  face
+    vertices 118 119 103
+  endface
+  face
+    vertices 103 119 104
+  endface
+  face
+    vertices 119 120 104
+  endface
+  face
+    vertices 104 120 105
+  endface
+  face
+    vertices 120 121 105
+  endface
+  face
+    vertices 105 121 106
+  endface
+  face
+    vertices 121 122 106
+  endface
+  face
+    vertices 106 122 107
+  endface
+  face
+    vertices 122 123 107
+  endface
+  face
+    vertices 107 123 108
+  endface
+  face
+    vertices 123 124 108
+  endface
+  face
+    vertices 108 124 109
+  endface
+  face
+    vertices 124 125 109
+  endface
+  face
+    vertices 109 125 110
+  endface
+  face
+    vertices 125 126 110
+  endface
+  face
+    vertices 110 126 111
+  endface
+  face
+    vertices 126 127 111
+  endface
+  face
+    vertices 112 128 113
+  endface
+  face
+    vertices 128 129 113
+  endface
+  face
+    vertices 113 129 114
+  endface
+  face
+    vertices 129 130 114
+  endface
+  face
+    vertices 114 130 115
+  endface
+  face
+    vertices 130 131 115
+  endface
+  face
+    vertices 115 131 116
+  endface
+  face
+    vertices 131 132 116
+  endface
+  face
+    vertices 116 132 117
+  endface
+  face
+    vertices 132 133 117
+  endface
+  face
+    vertices 117 133 118
+  endface
+  face
+    vertices 133 134 118
+  endface
+  face
+    vertices 118 134 119
+  endface
+  face
+    vertices 134 135 119
+  endface
+  face
+    vertices 119 135 120
+  endface
+  face
+    vertices 135 136 120
+  endface
+  face
+    vertices 120 136 121
+  endface
+  face
+    vertices 136 137 121
+  endface
+  face
+    vertices 121 137 122
+  endface
+  face
+    vertices 137 138 122
+  endface
+  face
+    vertices 122 138 123
+  endface
+  face
+    vertices 138 139 123
+  endface
+  face
+    vertices 123 139 124
+  endface
+  face
+    vertices 139 140 124
+  endface
+  face
+    vertices 124 140 125
+  endface
+  face
+    vertices 140 141 125
+  endface
+  face
+    vertices 125 141 126
+  endface
+  face
+    vertices 141 142 126
+  endface
+  face
+    vertices 126 142 127
+  endface
+  face
+    vertices 142 143 127
+  endface
+  face
+    vertices 128 144 129
+  endface
+  face
+    vertices 144 145 129
+  endface
+  face
+    vertices 129 145 130
+  endface
+  face
+    vertices 145 146 130
+  endface
+  face
+    vertices 130 146 131
+  endface
+  face
+    vertices 146 147 131
+  endface
+  face
+    vertices 131 147 132
+  endface
+  face
+    vertices 147 148 132
+  endface
+  face
+    vertices 132 148 133
+  endface
+  face
+    vertices 148 149 133
+  endface
+  face
+    vertices 133 149 134
+  endface
+  face
+    vertices 149 150 134
+  endface
+  face
+    vertices 134 150 135
+  endface
+  face
+    vertices 150 151 135
+  endface
+  face
+    vertices 135 151 136
+  endface
+  face
+    vertices 151 152 136
+  endface
+  face
+    vertices 136 152 137
+  endface
+  face
+    vertices 152 153 137
+  endface
+  face
+    vertices 137 153 138
+  endface
+  face
+    vertices 153 154 138
+  endface
+  face
+    vertices 138 154 139
+  endface
+  face
+    vertices 154 155 139
+  endface
+  face
+    vertices 139 155 140
+  endface
+  face
+    vertices 155 156 140
+  endface
+  face
+    vertices 140 156 141
+  endface
+  face
+    vertices 156 157 141
+  endface
+  face
+    vertices 141 157 142
+  endface
+  face
+    vertices 157 158 142
+  endface
+  face
+    vertices 142 158 143
+  endface
+  face
+    vertices 158 159 143
+  endface
+  face
+    vertices 144 160 145
+  endface
+  face
+    vertices 160 161 145
+  endface
+  face
+    vertices 145 161 146
+  endface
+  face
+    vertices 161 162 146
+  endface
+  face
+    vertices 146 162 147
+  endface
+  face
+    vertices 162 163 147
+  endface
+  face
+    vertices 147 163 148
+  endface
+  face
+    vertices 163 164 148
+  endface
+  face
+    vertices 148 164 149
+  endface
+  face
+    vertices 164 165 149
+  endface
+  face
+    vertices 149 165 150
+  endface
+  face
+    vertices 165 166 150
+  endface
+  face
+    vertices 150 166 151
+  endface
+  face
+    vertices 166 167 151
+  endface
+  face
+    vertices 151 167 152
+  endface
+  face
+    vertices 167 168 152
+  endface
+  face
+    vertices 152 168 153
+  endface
+  face
+    vertices 168 169 153
+  endface
+  face
+    vertices 153 169 154
+  endface
+  face
+    vertices 169 170 154
+  endface
+  face
+    vertices 154 170 155
+  endface
+  face
+    vertices 170 171 155
+  endface
+  face
+    vertices 155 171 156
+  endface
+  face
+    vertices 171 172 156
+  endface
+  face
+    vertices 156 172 157
+  endface
+  face
+    vertices 172 173 157
+  endface
+  face
+    vertices 157 173 158
+  endface
+  face
+    vertices 173 174 158
+  endface
+  face
+    vertices 158 174 159
+  endface
+  face
+    vertices 174 175 159
+  endface
+  face
+    vertices 160 176 161
+  endface
+  face
+    vertices 176 177 161
+  endface
+  face
+    vertices 161 177 162
+  endface
+  face
+    vertices 177 178 162
+  endface
+  face
+    vertices 162 178 163
+  endface
+  face
+    vertices 178 179 163
+  endface
+  face
+    vertices 163 179 164
+  endface
+  face
+    vertices 179 180 164
+  endface
+  face
+    vertices 164 180 165
+  endface
+  face
+    vertices 180 181 165
+  endface
+  face
+    vertices 165 181 166
+  endface
+  face
+    vertices 181 182 166
+  endface
+  face
+    vertices 166 182 167
+  endface
+  face
+    vertices 182 183 167
+  endface
+  face
+    vertices 167 183 168
+  endface
+  face
+    vertices 183 184 168
+  endface
+  face
+    vertices 168 184 169
+  endface
+  face
+    vertices 184 185 169
+  endface
+  face
+    vertices 169 185 170
+  endface
+  face
+    vertices 185 186 170
+  endface
+  face
+    vertices 170 186 171
+  endface
+  face
+    vertices 186 187 171
+  endface
+  face
+    vertices 171 187 172
+  endface
+  face
+    vertices 187 188 172
+  endface
+  face
+    vertices 172 188 173
+  endface
+  face
+    vertices 188 189 173
+  endface
+  face
+    vertices 173 189 174
+  endface
+  face
+    vertices 189 190 174
+  endface
+  face
+    vertices 174 190 175
+  endface
+  face
+    vertices 190 191 175
+  endface
+  face
+    vertices 176 192 177
+  endface
+  face
+    vertices 192 193 177
+  endface
+  face
+    vertices 177 193 178
+  endface
+  face
+    vertices 193 194 178
+  endface
+  face
+    vertices 178 194 179
+  endface
+  face
+    vertices 194 195 179
+  endface
+  face
+    vertices 179 195 180
+  endface
+  face
+    vertices 195 196 180
+  endface
+  face
+    vertices 180 196 181
+  endface
+  face
+    vertices 196 197 181
+  endface
+  face
+    vertices 181 197 182
+  endface
+  face
+    vertices 197 198 182
+  endface
+  face
+    vertices 182 198 183
+  endface
+  face
+    vertices 198 199 183
+  endface
+  face
+    vertices 183 199 184
+  endface
+  face
+    vertices 199 200 184
+  endface
+  face
+    vertices 184 200 185
+  endface
+  face
+    vertices 200 201 185
+  endface
+  face
+    vertices 185 201 186
+  endface
+  face
+    vertices 201 202 186
+  endface
+  face
+    vertices 186 202 187
+  endface
+  face
+    vertices 202 203 187
+  endface
+  face
+    vertices 187 203 188
+  endface
+  face
+    vertices 203 204 188
+  endface
+  face
+    vertices 188 204 189
+  endface
+  face
+    vertices 204 205 189
+  endface
+  face
+    vertices 189 205 190
+  endface
+  face
+    vertices 205 206 190
+  endface
+  face
+    vertices 190 206 191
+  endface
+  face
+    vertices 206 207 191
+  endface
+  face
+    vertices 192 208 193
+  endface
+  face
+    vertices 208 209 193
+  endface
+  face
+    vertices 193 209 194
+  endface
+  face
+    vertices 209 210 194
+  endface
+  face
+    vertices 194 210 195
+  endface
+  face
+    vertices 210 211 195
+  endface
+  face
+    vertices 195 211 196
+  endface
+  face
+    vertices 211 212 196
+  endface
+  face
+    vertices 196 212 197
+  endface
+  face
+    vertices 212 213 197
+  endface
+  face
+    vertices 197 213 198
+  endface
+  face
+    vertices 213 214 198
+  endface
+  face
+    vertices 198 214 199
+  endface
+  face
+    vertices 214 215 199
+  endface
+  face
+    vertices 199 215 200
+  endface
+  face
+    vertices 215 216 200
+  endface
+  face
+    vertices 200 216 201
+  endface
+  face
+    vertices 216 217 201
+  endface
+  face
+    vertices 201 217 202
+  endface
+  face
+    vertices 217 218 202
+  endface
+  face
+    vertices 202 218 203
+  endface
+  face
+    vertices 218 219 203
+  endface
+  face
+    vertices 203 219 204
+  endface
+  face
+    vertices 219 220 204
+  endface
+  face
+    vertices 204 220 205
+  endface
+  face
+    vertices 220 221 205
+  endface
+  face
+    vertices 205 221 206
+  endface
+  face
+    vertices 221 222 206
+  endface
+  face
+    vertices 206 222 207
+  endface
+  face
+    vertices 222 223 207
+  endface
+  face
+    vertices 208 224 209
+  endface
+  face
+    vertices 224 225 209
+  endface
+  face
+    vertices 209 225 210
+  endface
+  face
+    vertices 225 226 210
+  endface
+  face
+    vertices 210 226 211
+  endface
+  face
+    vertices 226 227 211
+  endface
+  face
+    vertices 211 227 212
+  endface
+  face
+    vertices 227 228 212
+  endface
+  face
+    vertices 212 228 213
+  endface
+  face
+    vertices 228 229 213
+  endface
+  face
+    vertices 213 229 214
+  endface
+  face
+    vertices 229 230 214
+  endface
+  face
+    vertices 214 230 215
+  endface
+  face
+    vertices 230 231 215
+  endface
+  face
+    vertices 215 231 216
+  endface
+  face
+    vertices 231 232 216
+  endface
+  face
+    vertices 216 232 217
+  endface
+  face
+    vertices 232 233 217
+  endface
+  face
+    vertices 217 233 218
+  endface
+  face
+    vertices 233 234 218
+  endface
+  face
+    vertices 218 234 219
+  endface
+  face
+    vertices 234 235 219
+  endface
+  face
+    vertices 219 235 220
+  endface
+  face
+    vertices 235 236 220
+  endface
+  face
+    vertices 220 236 221
+  endface
+  face
+    vertices 236 237 221
+  endface
+  face
+    vertices 221 237 222
+  endface
+  face
+    vertices 237 238 222
+  endface
+  face
+    vertices 222 238 223
+  endface
+  face
+    vertices 238 239 223
+  endface
+  face
+    vertices 224 240 225
+  endface
+  face
+    vertices 240 241 225
+  endface
+  face
+    vertices 225 241 226
+  endface
+  face
+    vertices 241 242 226
+  endface
+  face
+    vertices 226 242 227
+  endface
+  face
+    vertices 242 243 227
+  endface
+  face
+    vertices 227 243 228
+  endface
+  face
+    vertices 243 244 228
+  endface
+  face
+    vertices 228 244 229
+  endface
+  face
+    vertices 244 245 229
+  endface
+  face
+    vertices 229 245 230
+  endface
+  face
+    vertices 245 246 230
+  endface
+  face
+    vertices 230 246 231
+  endface
+  face
+    vertices 246 247 231
+  endface
+  face
+    vertices 231 247 232
+  endface
+  face
+    vertices 247 248 232
+  endface
+  face
+    vertices 232 248 233
+  endface
+  face
+    vertices 248 249 233
+  endface
+  face
+    vertices 233 249 234
+  endface
+  face
+    vertices 249 250 234
+  endface
+  face
+    vertices 234 250 235
+  endface
+  face
+    vertices 250 251 235
+  endface
+  face
+    vertices 235 251 236
+  endface
+  face
+    vertices 251 252 236
+  endface
+  face
+    vertices 236 252 237
+  endface
+  face
+    vertices 252 253 237
+  endface
+  face
+    vertices 237 253 238
+  endface
+  face
+    vertices 253 254 238
+  endface
+  face
+    vertices 238 254 239
+  endface
+  face
+    vertices 254 255 239
+  endface
+  face
+    vertices 240 256 241
+  endface
+  face
+    vertices 256 257 241
+  endface
+  face
+    vertices 241 257 242
+  endface
+  face
+    vertices 257 258 242
+  endface
+  face
+    vertices 242 258 243
+  endface
+  face
+    vertices 258 259 243
+  endface
+  face
+    vertices 243 259 244
+  endface
+  face
+    vertices 259 260 244
+  endface
+  face
+    vertices 244 260 245
+  endface
+  face
+    vertices 260 261 245
+  endface
+  face
+    vertices 245 261 246
+  endface
+  face
+    vertices 261 262 246
+  endface
+  face
+    vertices 246 262 247
+  endface
+  face
+    vertices 262 263 247
+  endface
+  face
+    vertices 247 263 248
+  endface
+  face
+    vertices 263 264 248
+  endface
+  face
+    vertices 248 264 249
+  endface
+  face
+    vertices 264 265 249
+  endface
+  face
+    vertices 249 265 250
+  endface
+  face
+    vertices 265 266 250
+  endface
+  face
+    vertices 250 266 251
+  endface
+  face
+    vertices 266 267 251
+  endface
+  face
+    vertices 251 267 252
+  endface
+  face
+    vertices 267 268 252
+  endface
+  face
+    vertices 252 268 253
+  endface
+  face
+    vertices 268 269 253
+  endface
+  face
+    vertices 253 269 254
+  endface
+  face
+    vertices 269 270 254
+  endface
+  face
+    vertices 254 270 255
+  endface
+  face
+    vertices 270 271 255
+  endface
+  face
+    vertices 256 272 257
+  endface
+  face
+    vertices 272 273 257
+  endface
+  face
+    vertices 257 273 258
+  endface
+  face
+    vertices 273 274 258
+  endface
+  face
+    vertices 258 274 259
+  endface
+  face
+    vertices 274 275 259
+  endface
+  face
+    vertices 259 275 260
+  endface
+  face
+    vertices 275 276 260
+  endface
+  face
+    vertices 260 276 261
+  endface
+  face
+    vertices 276 277 261
+  endface
+  face
+    vertices 261 277 262
+  endface
+  face
+    vertices 277 278 262
+  endface
+  face
+    vertices 262 278 263
+  endface
+  face
+    vertices 278 279 263
+  endface
+  face
+    vertices 263 279 264
+  endface
+  face
+    vertices 279 280 264
+  endface
+  face
+    vertices 264 280 265
+  endface
+  face
+    vertices 280 281 265
+  endface
+  face
+    vertices 265 281 266
+  endface
+  face
+    vertices 281 282 266
+  endface
+  face
+    vertices 266 282 267
+  endface
+  face
+    vertices 282 283 267
+  endface
+  face
+    vertices 267 283 268
+  endface
+  face
+    vertices 283 284 268
+  endface
+  face
+    vertices 268 284 269
+  endface
+  face
+    vertices 284 285 269
+  endface
+  face
+    vertices 269 285 270
+  endface
+  face
+    vertices 285 286 270
+  endface
+  face
+    vertices 270 286 271
+  endface
+  face
+    vertices 286 287 271
+  endface
+  face
+    vertices 272 288 273
+  endface
+  face
+    vertices 288 289 273
+  endface
+  face
+    vertices 273 289 274
+  endface
+  face
+    vertices 289 290 274
+  endface
+  face
+    vertices 274 290 275
+  endface
+  face
+    vertices 290 291 275
+  endface
+  face
+    vertices 275 291 276
+  endface
+  face
+    vertices 291 292 276
+  endface
+  face
+    vertices 276 292 277
+  endface
+  face
+    vertices 292 293 277
+  endface
+  face
+    vertices 277 293 278
+  endface
+  face
+    vertices 293 294 278
+  endface
+  face
+    vertices 278 294 279
+  endface
+  face
+    vertices 294 295 279
+  endface
+  face
+    vertices 279 295 280
+  endface
+  face
+    vertices 295 296 280
+  endface
+  face
+    vertices 280 296 281
+  endface
+  face
+    vertices 296 297 281
+  endface
+  face
+    vertices 281 297 282
+  endface
+  face
+    vertices 297 298 282
+  endface
+  face
+    vertices 282 298 283
+  endface
+  face
+    vertices 298 299 283
+  endface
+  face
+    vertices 283 299 284
+  endface
+  face
+    vertices 299 300 284
+  endface
+  face
+    vertices 284 300 285
+  endface
+  face
+    vertices 300 301 285
+  endface
+  face
+    vertices 285 301 286
+  endface
+  face
+    vertices 301 302 286
+  endface
+  face
+    vertices 286 302 287
+  endface
+  face
+    vertices 302 303 287
+  endface
+  face
+    vertices 288 304 289
+  endface
+  face
+    vertices 304 305 289
+  endface
+  face
+    vertices 289 305 290
+  endface
+  face
+    vertices 305 306 290
+  endface
+  face
+    vertices 290 306 291
+  endface
+  face
+    vertices 306 307 291
+  endface
+  face
+    vertices 291 307 292
+  endface
+  face
+    vertices 307 308 292
+  endface
+  face
+    vertices 292 308 293
+  endface
+  face
+    vertices 308 309 293
+  endface
+  face
+    vertices 293 309 294
+  endface
+  face
+    vertices 309 310 294
+  endface
+  face
+    vertices 294 310 295
+  endface
+  face
+    vertices 310 311 295
+  endface
+  face
+    vertices 295 311 296
+  endface
+  face
+    vertices 311 312 296
+  endface
+  face
+    vertices 296 312 297
+  endface
+  face
+    vertices 312 313 297
+  endface
+  face
+    vertices 297 313 298
+  endface
+  face
+    vertices 313 314 298
+  endface
+  face
+    vertices 298 314 299
+  endface
+  face
+    vertices 314 315 299
+  endface
+  face
+    vertices 299 315 300
+  endface
+  face
+    vertices 315 316 300
+  endface
+  face
+    vertices 300 316 301
+  endface
+  face
+    vertices 316 317 301
+  endface
+  face
+    vertices 301 317 302
+  endface
+  face
+    vertices 317 318 302
+  endface
+  face
+    vertices 302 318 303
+  endface
+  face
+    vertices 318 319 303
+  endface
+  face
+    vertices 304 320 305
+  endface
+  face
+    vertices 320 321 305
+  endface
+  face
+    vertices 305 321 306
+  endface
+  face
+    vertices 321 322 306
+  endface
+  face
+    vertices 306 322 307
+  endface
+  face
+    vertices 322 323 307
+  endface
+  face
+    vertices 307 323 308
+  endface
+  face
+    vertices 323 324 308
+  endface
+  face
+    vertices 308 324 309
+  endface
+  face
+    vertices 324 325 309
+  endface
+  face
+    vertices 309 325 310
+  endface
+  face
+    vertices 325 326 310
+  endface
+  face
+    vertices 310 326 311
+  endface
+  face
+    vertices 326 327 311
+  endface
+  face
+    vertices 311 327 312
+  endface
+  face
+    vertices 327 328 312
+  endface
+  face
+    vertices 312 328 313
+  endface
+  face
+    vertices 328 329 313
+  endface
+  face
+    vertices 313 329 314
+  endface
+  face
+    vertices 329 330 314
+  endface
+  face
+    vertices 314 330 315
+  endface
+  face
+    vertices 330 331 315
+  endface
+  face
+    vertices 315 331 316
+  endface
+  face
+    vertices 331 332 316
+  endface
+  face
+    vertices 316 332 317
+  endface
+  face
+    vertices 332 333 317
+  endface
+  face
+    vertices 317 333 318
+  endface
+  face
+    vertices 333 334 318
+  endface
+  face
+    vertices 318 334 319
+  endface
+  face
+    vertices 334 335 319
+  endface
+  face
+    vertices 320 336 321
+  endface
+  face
+    vertices 336 337 321
+  endface
+  face
+    vertices 321 337 322
+  endface
+  face
+    vertices 337 338 322
+  endface
+  face
+    vertices 322 338 323
+  endface
+  face
+    vertices 338 339 323
+  endface
+  face
+    vertices 323 339 324
+  endface
+  face
+    vertices 339 340 324
+  endface
+  face
+    vertices 324 340 325
+  endface
+  face
+    vertices 340 341 325
+  endface
+  face
+    vertices 325 341 326
+  endface
+  face
+    vertices 341 342 326
+  endface
+  face
+    vertices 326 342 327
+  endface
+  face
+    vertices 342 343 327
+  endface
+  face
+    vertices 327 343 328
+  endface
+  face
+    vertices 343 344 328
+  endface
+  face
+    vertices 328 344 329
+  endface
+  face
+    vertices 344 345 329
+  endface
+  face
+    vertices 329 345 330
+  endface
+  face
+    vertices 345 346 330
+  endface
+  face
+    vertices 330 346 331
+  endface
+  face
+    vertices 346 347 331
+  endface
+  face
+    vertices 331 347 332
+  endface
+  face
+    vertices 347 348 332
+  endface
+  face
+    vertices 332 348 333
+  endface
+  face
+    vertices 348 349 333
+  endface
+  face
+    vertices 333 349 334
+  endface
+  face
+    vertices 349 350 334
+  endface
+  face
+    vertices 334 350 335
+  endface
+  face
+    vertices 350 351 335
+  endface
+  face
+    vertices 336 352 337
+  endface
+  face
+    vertices 352 353 337
+  endface
+  face
+    vertices 337 353 338
+  endface
+  face
+    vertices 353 354 338
+  endface
+  face
+    vertices 338 354 339
+  endface
+  face
+    vertices 354 355 339
+  endface
+  face
+    vertices 339 355 340
+  endface
+  face
+    vertices 355 356 340
+  endface
+  face
+    vertices 340 356 341
+  endface
+  face
+    vertices 356 357 341
+  endface
+  face
+    vertices 341 357 342
+  endface
+  face
+    vertices 357 358 342
+  endface
+  face
+    vertices 342 358 343
+  endface
+  face
+    vertices 358 359 343
+  endface
+  face
+    vertices 343 359 344
+  endface
+  face
+    vertices 359 360 344
+  endface
+  face
+    vertices 344 360 345
+  endface
+  face
+    vertices 360 361 345
+  endface
+  face
+    vertices 345 361 346
+  endface
+  face
+    vertices 361 362 346
+  endface
+  face
+    vertices 346 362 347
+  endface
+  face
+    vertices 362 363 347
+  endface
+  face
+    vertices 347 363 348
+  endface
+  face
+    vertices 363 364 348
+  endface
+  face
+    vertices 348 364 349
+  endface
+  face
+    vertices 364 365 349
+  endface
+  face
+    vertices 349 365 350
+  endface
+  face
+    vertices 365 366 350
+  endface
+  face
+    vertices 350 366 351
+  endface
+  face
+    vertices 366 367 351
+  endface
+  face
+    vertices 352 368 353
+  endface
+  face
+    vertices 368 369 353
+  endface
+  face
+    vertices 353 369 354
+  endface
+  face
+    vertices 369 370 354
+  endface
+  face
+    vertices 354 370 355
+  endface
+  face
+    vertices 370 371 355
+  endface
+  face
+    vertices 355 371 356
+  endface
+  face
+    vertices 371 372 356
+  endface
+  face
+    vertices 356 372 357
+  endface
+  face
+    vertices 372 373 357
+  endface
+  face
+    vertices 357 373 358
+  endface
+  face
+    vertices 373 374 358
+  endface
+  face
+    vertices 358 374 359
+  endface
+  face
+    vertices 374 375 359
+  endface
+  face
+    vertices 359 375 360
+  endface
+  face
+    vertices 375 376 360
+  endface
+  face
+    vertices 360 376 361
+  endface
+  face
+    vertices 376 377 361
+  endface
+  face
+    vertices 361 377 362
+  endface
+  face
+    vertices 377 378 362
+  endface
+  face
+    vertices 362 378 363
+  endface
+  face
+    vertices 378 379 363
+  endface
+  face
+    vertices 363 379 364
+  endface
+  face
+    vertices 379 380 364
+  endface
+  face
+    vertices 364 380 365
+  endface
+  face
+    vertices 380 381 365
+  endface
+  face
+    vertices 365 381 366
+  endface
+  face
+    vertices 381 382 366
+  endface
+  face
+    vertices 366 382 367
+  endface
+  face
+    vertices 382 383 367
+  endface
+  face
+    vertices 368 384 369
+  endface
+  face
+    vertices 384 385 369
+  endface
+  face
+    vertices 369 385 370
+  endface
+  face
+    vertices 385 386 370
+  endface
+  face
+    vertices 370 386 371
+  endface
+  face
+    vertices 386 387 371
+  endface
+  face
+    vertices 371 387 372
+  endface
+  face
+    vertices 387 388 372
+  endface
+  face
+    vertices 372 388 373
+  endface
+  face
+    vertices 388 389 373
+  endface
+  face
+    vertices 373 389 374
+  endface
+  face
+    vertices 389 390 374
+  endface
+  face
+    vertices 374 390 375
+  endface
+  face
+    vertices 390 391 375
+  endface
+  face
+    vertices 375 391 376
+  endface
+  face
+    vertices 391 392 376
+  endface
+  face
+    vertices 376 392 377
+  endface
+  face
+    vertices 392 393 377
+  endface
+  face
+    vertices 377 393 378
+  endface
+  face
+    vertices 393 394 378
+  endface
+  face
+    vertices 378 394 379
+  endface
+  face
+    vertices 394 395 379
+  endface
+  face
+    vertices 379 395 380
+  endface
+  face
+    vertices 395 396 380
+  endface
+  face
+    vertices 380 396 381
+  endface
+  face
+    vertices 396 397 381
+  endface
+  face
+    vertices 381 397 382
+  endface
+  face
+    vertices 397 398 382
+  endface
+  face
+    vertices 382 398 383
+  endface
+  face
+    vertices 398 399 383
+  endface
+  face
+    vertices 384 400 385
+  endface
+  face
+    vertices 400 401 385
+  endface
+  face
+    vertices 385 401 386
+  endface
+  face
+    vertices 401 402 386
+  endface
+  face
+    vertices 386 402 387
+  endface
+  face
+    vertices 402 403 387
+  endface
+  face
+    vertices 387 403 388
+  endface
+  face
+    vertices 403 404 388
+  endface
+  face
+    vertices 388 404 389
+  endface
+  face
+    vertices 404 405 389
+  endface
+  face
+    vertices 389 405 390
+  endface
+  face
+    vertices 405 406 390
+  endface
+  face
+    vertices 390 406 391
+  endface
+  face
+    vertices 406 407 391
+  endface
+  face
+    vertices 391 407 392
+  endface
+  face
+    vertices 407 408 392
+  endface
+  face
+    vertices 392 408 393
+  endface
+  face
+    vertices 408 409 393
+  endface
+  face
+    vertices 393 409 394
+  endface
+  face
+    vertices 409 410 394
+  endface
+  face
+    vertices 394 410 395
+  endface
+  face
+    vertices 410 411 395
+  endface
+  face
+    vertices 395 411 396
+  endface
+  face
+    vertices 411 412 396
+  endface
+  face
+    vertices 396 412 397
+  endface
+  face
+    vertices 412 413 397
+  endface
+  face
+    vertices 397 413 398
+  endface
+  face
+    vertices 413 414 398
+  endface
+  face
+    vertices 398 414 399
+  endface
+  face
+    vertices 414 415 399
+  endface
+  face
+    vertices 400 416 401
+  endface
+  face
+    vertices 416 417 401
+  endface
+  face
+    vertices 401 417 402
+  endface
+  face
+    vertices 417 418 402
+  endface
+  face
+    vertices 402 418 403
+  endface
+  face
+    vertices 418 419 403
+  endface
+  face
+    vertices 403 419 404
+  endface
+  face
+    vertices 419 420 404
+  endface
+  face
+    vertices 404 420 405
+  endface
+  face
+    vertices 420 421 405
+  endface
+  face
+    vertices 405 421 406
+  endface
+  face
+    vertices 421 422 406
+  endface
+  face
+    vertices 406 422 407
+  endface
+  face
+    vertices 422 423 407
+  endface
+  face
+    vertices 407 423 408
+  endface
+  face
+    vertices 423 424 408
+  endface
+  face
+    vertices 408 424 409
+  endface
+  face
+    vertices 424 425 409
+  endface
+  face
+    vertices 409 425 410
+  endface
+  face
+    vertices 425 426 410
+  endface
+  face
+    vertices 410 426 411
+  endface
+  face
+    vertices 426 427 411
+  endface
+  face
+    vertices 411 427 412
+  endface
+  face
+    vertices 427 428 412
+  endface
+  face
+    vertices 412 428 413
+  endface
+  face
+    vertices 428 429 413
+  endface
+  face
+    vertices 413 429 414
+  endface
+  face
+    vertices 429 430 414
+  endface
+  face
+    vertices 414 430 415
+  endface
+  face
+    vertices 430 431 415
+  endface
+  face
+    vertices 416 432 417
+  endface
+  face
+    vertices 432 433 417
+  endface
+  face
+    vertices 417 433 418
+  endface
+  face
+    vertices 433 434 418
+  endface
+  face
+    vertices 418 434 419
+  endface
+  face
+    vertices 434 435 419
+  endface
+  face
+    vertices 419 435 420
+  endface
+  face
+    vertices 435 436 420
+  endface
+  face
+    vertices 420 436 421
+  endface
+  face
+    vertices 436 437 421
+  endface
+  face
+    vertices 421 437 422
+  endface
+  face
+    vertices 437 438 422
+  endface
+  face
+    vertices 422 438 423
+  endface
+  face
+    vertices 438 439 423
+  endface
+  face
+    vertices 423 439 424
+  endface
+  face
+    vertices 439 440 424
+  endface
+  face
+    vertices 424 440 425
+  endface
+  face
+    vertices 440 441 425
+  endface
+  face
+    vertices 425 441 426
+  endface
+  face
+    vertices 441 442 426
+  endface
+  face
+    vertices 426 442 427
+  endface
+  face
+    vertices 442 443 427
+  endface
+  face
+    vertices 427 443 428
+  endface
+  face
+    vertices 443 444 428
+  endface
+  face
+    vertices 428 444 429
+  endface
+  face
+    vertices 444 445 429
+  endface
+  face
+    vertices 429 445 430
+  endface
+  face
+    vertices 445 446 430
+  endface
+  face
+    vertices 430 446 431
+  endface
+  face
+    vertices 446 447 431
+  endface
+  face
+    vertices 432 448 433
+  endface
+  face
+    vertices 448 449 433
+  endface
+  face
+    vertices 433 449 434
+  endface
+  face
+    vertices 449 450 434
+  endface
+  face
+    vertices 434 450 435
+  endface
+  face
+    vertices 450 451 435
+  endface
+  face
+    vertices 435 451 436
+  endface
+  face
+    vertices 451 452 436
+  endface
+  face
+    vertices 436 452 437
+  endface
+  face
+    vertices 452 453 437
+  endface
+  face
+    vertices 437 453 438
+  endface
+  face
+    vertices 453 454 438
+  endface
+  face
+    vertices 438 454 439
+  endface
+  face
+    vertices 454 455 439
+  endface
+  face
+    vertices 439 455 440
+  endface
+  face
+    vertices 455 456 440
+  endface
+  face
+    vertices 440 456 441
+  endface
+  face
+    vertices 456 457 441
+  endface
+  face
+    vertices 441 457 442
+  endface
+  face
+    vertices 457 458 442
+  endface
+  face
+    vertices 442 458 443
+  endface
+  face
+    vertices 458 459 443
+  endface
+  face
+    vertices 443 459 444
+  endface
+  face
+    vertices 459 460 444
+  endface
+  face
+    vertices 444 460 445
+  endface
+  face
+    vertices 460 461 445
+  endface
+  face
+    vertices 445 461 446
+  endface
+  face
+    vertices 461 462 446
+  endface
+  face
+    vertices 446 462 447
+  endface
+  face
+    vertices 462 463 447
+  endface
+  face
+    vertices 448 464 449
+  endface
+  face
+    vertices 464 465 449
+  endface
+  face
+    vertices 449 465 450
+  endface
+  face
+    vertices 465 466 450
+  endface
+  face
+    vertices 450 466 451
+  endface
+  face
+    vertices 466 467 451
+  endface
+  face
+    vertices 451 467 452
+  endface
+  face
+    vertices 467 468 452
+  endface
+  face
+    vertices 452 468 453
+  endface
+  face
+    vertices 468 469 453
+  endface
+  face
+    vertices 453 469 454
+  endface
+  face
+    vertices 469 470 454
+  endface
+  face
+    vertices 454 470 455
+  endface
+  face
+    vertices 470 471 455
+  endface
+  face
+    vertices 455 471 456
+  endface
+  face
+    vertices 471 472 456
+  endface
+  face
+    vertices 456 472 457
+  endface
+  face
+    vertices 472 473 457
+  endface
+  face
+    vertices 457 473 458
+  endface
+  face
+    vertices 473 474 458
+  endface
+  face
+    vertices 458 474 459
+  endface
+  face
+    vertices 474 475 459
+  endface
+  face
+    vertices 459 475 460
+  endface
+  face
+    vertices 475 476 460
+  endface
+  face
+    vertices 460 476 461
+  endface
+  face
+    vertices 476 477 461
+  endface
+  face
+    vertices 461 477 462
+  endface
+  face
+    vertices 477 478 462
+  endface
+  face
+    vertices 462 478 463
+  endface
+  face
+    vertices 478 479 463
+  endface
+  face
+    vertices 464 480 465
+  endface
+  face
+    vertices 480 481 465
+  endface
+  face
+    vertices 465 481 466
+  endface
+  face
+    vertices 481 482 466
+  endface
+  face
+    vertices 466 482 467
+  endface
+  face
+    vertices 482 483 467
+  endface
+  face
+    vertices 467 483 468
+  endface
+  face
+    vertices 483 484 468
+  endface
+  face
+    vertices 468 484 469
+  endface
+  face
+    vertices 484 485 469
+  endface
+  face
+    vertices 469 485 470
+  endface
+  face
+    vertices 485 486 470
+  endface
+  face
+    vertices 470 486 471
+  endface
+  face
+    vertices 486 487 471
+  endface
+  face
+    vertices 471 487 472
+  endface
+  face
+    vertices 487 488 472
+  endface
+  face
+    vertices 472 488 473
+  endface
+  face
+    vertices 488 489 473
+  endface
+  face
+    vertices 473 489 474
+  endface
+  face
+    vertices 489 490 474
+  endface
+  face
+    vertices 474 490 475
+  endface
+  face
+    vertices 490 491 475
+  endface
+  face
+    vertices 475 491 476
+  endface
+  face
+    vertices 491 492 476
+  endface
+  face
+    vertices 476 492 477
+  endface
+  face
+    vertices 492 493 477
+  endface
+  face
+    vertices 477 493 478
+  endface
+  face
+    vertices 493 494 478
+  endface
+  face
+    vertices 478 494 479
+  endface
+  face
+    vertices 494 495 479
+  endface
+  face
+    vertices 480 496 481
+  endface
+  face
+    vertices 496 497 481
+  endface
+  face
+    vertices 481 497 482
+  endface
+  face
+    vertices 497 498 482
+  endface
+  face
+    vertices 482 498 483
+  endface
+  face
+    vertices 498 499 483
+  endface
+  face
+    vertices 483 499 484
+  endface
+  face
+    vertices 499 500 484
+  endface
+  face
+    vertices 484 500 485
+  endface
+  face
+    vertices 500 501 485
+  endface
+  face
+    vertices 485 501 486
+  endface
+  face
+    vertices 501 502 486
+  endface
+  face
+    vertices 486 502 487
+  endface
+  face
+    vertices 502 503 487
+  endface
+  face
+    vertices 487 503 488
+  endface
+  face
+    vertices 503 504 488
+  endface
+  face
+    vertices 488 504 489
+  endface
+  face
+    vertices 504 505 489
+  endface
+  face
+    vertices 489 505 490
+  endface
+  face
+    vertices 505 506 490
+  endface
+  face
+    vertices 490 506 491
+  endface
+  face
+    vertices 506 507 491
+  endface
+  face
+    vertices 491 507 492
+  endface
+  face
+    vertices 507 508 492
+  endface
+  face
+    vertices 492 508 493
+  endface
+  face
+    vertices 508 509 493
+  endface
+  face
+    vertices 493 509 494
+  endface
+  face
+    vertices 509 510 494
+  endface
+  face
+    vertices 494 510 495
+  endface
+  face
+    vertices 510 511 495
+  endface
+  face
+    vertices 496 512 497
+  endface
+  face
+    vertices 512 513 497
+  endface
+  face
+    vertices 497 513 498
+  endface
+  face
+    vertices 513 514 498
+  endface
+  face
+    vertices 498 514 499
+  endface
+  face
+    vertices 514 515 499
+  endface
+  face
+    vertices 499 515 500
+  endface
+  face
+    vertices 515 516 500
+  endface
+  face
+    vertices 500 516 501
+  endface
+  face
+    vertices 516 517 501
+  endface
+  face
+    vertices 501 517 502
+  endface
+  face
+    vertices 517 518 502
+  endface
+  face
+    vertices 502 518 503
+  endface
+  face
+    vertices 518 519 503
+  endface
+  face
+    vertices 503 519 504
+  endface
+  face
+    vertices 519 520 504
+  endface
+  face
+    vertices 504 520 505
+  endface
+  face
+    vertices 520 521 505
+  endface
+  face
+    vertices 505 521 506
+  endface
+  face
+    vertices 521 522 506
+  endface
+  face
+    vertices 506 522 507
+  endface
+  face
+    vertices 522 523 507
+  endface
+  face
+    vertices 507 523 508
+  endface
+  face
+    vertices 523 524 508
+  endface
+  face
+    vertices 508 524 509
+  endface
+  face
+    vertices 524 525 509
+  endface
+  face
+    vertices 509 525 510
+  endface
+  face
+    vertices 525 526 510
+  endface
+  face
+    vertices 510 526 511
+  endface
+  face
+    vertices 526 527 511
+  endface
+  face
+    vertices 512 528 513
+  endface
+  face
+    vertices 528 529 513
+  endface
+  face
+    vertices 513 529 514
+  endface
+  face
+    vertices 529 530 514
+  endface
+  face
+    vertices 514 530 515
+  endface
+  face
+    vertices 530 531 515
+  endface
+  face
+    vertices 515 531 516
+  endface
+  face
+    vertices 531 532 516
+  endface
+  face
+    vertices 516 532 517
+  endface
+  face
+    vertices 532 533 517
+  endface
+  face
+    vertices 517 533 518
+  endface
+  face
+    vertices 533 534 518
+  endface
+  face
+    vertices 518 534 519
+  endface
+  face
+    vertices 534 535 519
+  endface
+  face
+    vertices 519 535 520
+  endface
+  face
+    vertices 535 536 520
+  endface
+  face
+    vertices 520 536 521
+  endface
+  face
+    vertices 536 537 521
+  endface
+  face
+    vertices 521 537 522
+  endface
+  face
+    vertices 537 538 522
+  endface
+  face
+    vertices 522 538 523
+  endface
+  face
+    vertices 538 539 523
+  endface
+  face
+    vertices 523 539 524
+  endface
+  face
+    vertices 539 540 524
+  endface
+  face
+    vertices 524 540 525
+  endface
+  face
+    vertices 540 541 525
+  endface
+  face
+    vertices 525 541 526
+  endface
+  face
+    vertices 541 542 526
+  endface
+  face
+    vertices 526 542 527
+  endface
+  face
+    vertices 542 543 527
+  endface
+  face
+    vertices 528 544 529
+  endface
+  face
+    vertices 544 545 529
+  endface
+  face
+    vertices 529 545 530
+  endface
+  face
+    vertices 545 546 530
+  endface
+  face
+    vertices 530 546 531
+  endface
+  face
+    vertices 546 547 531
+  endface
+  face
+    vertices 531 547 532
+  endface
+  face
+    vertices 547 548 532
+  endface
+  face
+    vertices 532 548 533
+  endface
+  face
+    vertices 548 549 533
+  endface
+  face
+    vertices 533 549 534
+  endface
+  face
+    vertices 549 550 534
+  endface
+  face
+    vertices 534 550 535
+  endface
+  face
+    vertices 550 551 535
+  endface
+  face
+    vertices 535 551 536
+  endface
+  face
+    vertices 551 552 536
+  endface
+  face
+    vertices 536 552 537
+  endface
+  face
+    vertices 552 553 537
+  endface
+  face
+    vertices 537 553 538
+  endface
+  face
+    vertices 553 554 538
+  endface
+  face
+    vertices 538 554 539
+  endface
+  face
+    vertices 554 555 539
+  endface
+  face
+    vertices 539 555 540
+  endface
+  face
+    vertices 555 556 540
+  endface
+  face
+    vertices 540 556 541
+  endface
+  face
+    vertices 556 557 541
+  endface
+  face
+    vertices 541 557 542
+  endface
+  face
+    vertices 557 558 542
+  endface
+  face
+    vertices 542 558 543
+  endface
+  face
+    vertices 558 559 543
+  endface
+  face
+    vertices 544 560 545
+  endface
+  face
+    vertices 560 561 545
+  endface
+  face
+    vertices 545 561 546
+  endface
+  face
+    vertices 561 562 546
+  endface
+  face
+    vertices 546 562 547
+  endface
+  face
+    vertices 562 563 547
+  endface
+  face
+    vertices 547 563 548
+  endface
+  face
+    vertices 563 564 548
+  endface
+  face
+    vertices 548 564 549
+  endface
+  face
+    vertices 564 565 549
+  endface
+  face
+    vertices 549 565 550
+  endface
+  face
+    vertices 565 566 550
+  endface
+  face
+    vertices 550 566 551
+  endface
+  face
+    vertices 566 567 551
+  endface
+  face
+    vertices 551 567 552
+  endface
+  face
+    vertices 567 568 552
+  endface
+  face
+    vertices 552 568 553
+  endface
+  face
+    vertices 568 569 553
+  endface
+  face
+    vertices 553 569 554
+  endface
+  face
+    vertices 569 570 554
+  endface
+  face
+    vertices 554 570 555
+  endface
+  face
+    vertices 570 571 555
+  endface
+  face
+    vertices 555 571 556
+  endface
+  face
+    vertices 571 572 556
+  endface
+  face
+    vertices 556 572 557
+  endface
+  face
+    vertices 572 573 557
+  endface
+  face
+    vertices 557 573 558
+  endface
+  face
+    vertices 573 574 558
+  endface
+  face
+    vertices 558 574 559
+  endface
+  face
+    vertices 574 575 559
+  endface
+  face
+    vertices 560 576 561
+  endface
+  face
+    vertices 576 577 561
+  endface
+  face
+    vertices 561 577 562
+  endface
+  face
+    vertices 577 578 562
+  endface
+  face
+    vertices 562 578 563
+  endface
+  face
+    vertices 578 579 563
+  endface
+  face
+    vertices 563 579 564
+  endface
+  face
+    vertices 579 580 564
+  endface
+  face
+    vertices 564 580 565
+  endface
+  face
+    vertices 580 581 565
+  endface
+  face
+    vertices 565 581 566
+  endface
+  face
+    vertices 581 582 566
+  endface
+  face
+    vertices 566 582 567
+  endface
+  face
+    vertices 582 583 567
+  endface
+  face
+    vertices 567 583 568
+  endface
+  face
+    vertices 583 584 568
+  endface
+  face
+    vertices 568 584 569
+  endface
+  face
+    vertices 584 585 569
+  endface
+  face
+    vertices 569 585 570
+  endface
+  face
+    vertices 585 586 570
+  endface
+  face
+    vertices 570 586 571
+  endface
+  face
+    vertices 586 587 571
+  endface
+  face
+    vertices 571 587 572
+  endface
+  face
+    vertices 587 588 572
+  endface
+  face
+    vertices 572 588 573
+  endface
+  face
+    vertices 588 589 573
+  endface
+  face
+    vertices 573 589 574
+  endface
+  face
+    vertices 589 590 574
+  endface
+  face
+    vertices 574 590 575
+  endface
+  face
+    vertices 590 591 575
+  endface
+  face
+    vertices 576 592 577
+  endface
+  face
+    vertices 592 593 577
+  endface
+  face
+    vertices 577 593 578
+  endface
+  face
+    vertices 593 594 578
+  endface
+  face
+    vertices 578 594 579
+  endface
+  face
+    vertices 594 595 579
+  endface
+  face
+    vertices 579 595 580
+  endface
+  face
+    vertices 595 596 580
+  endface
+  face
+    vertices 580 596 581
+  endface
+  face
+    vertices 596 597 581
+  endface
+  face
+    vertices 581 597 582
+  endface
+  face
+    vertices 597 598 582
+  endface
+  face
+    vertices 582 598 583
+  endface
+  face
+    vertices 598 599 583
+  endface
+  face
+    vertices 583 599 584
+  endface
+  face
+    vertices 599 600 584
+  endface
+  face
+    vertices 584 600 585
+  endface
+  face
+    vertices 600 601 585
+  endface
+  face
+    vertices 585 601 586
+  endface
+  face
+    vertices 601 602 586
+  endface
+  face
+    vertices 586 602 587
+  endface
+  face
+    vertices 602 603 587
+  endface
+  face
+    vertices 587 603 588
+  endface
+  face
+    vertices 603 604 588
+  endface
+  face
+    vertices 588 604 589
+  endface
+  face
+    vertices 604 605 589
+  endface
+  face
+    vertices 589 605 590
+  endface
+  face
+    vertices 605 606 590
+  endface
+  face
+    vertices 590 606 591
+  endface
+  face
+    vertices 606 607 591
+  endface
+  face
+    vertices 592 608 593
+  endface
+  face
+    vertices 608 609 593
+  endface
+  face
+    vertices 593 609 594
+  endface
+  face
+    vertices 609 610 594
+  endface
+  face
+    vertices 594 610 595
+  endface
+  face
+    vertices 610 611 595
+  endface
+  face
+    vertices 595 611 596
+  endface
+  face
+    vertices 611 612 596
+  endface
+  face
+    vertices 596 612 597
+  endface
+  face
+    vertices 612 613 597
+  endface
+  face
+    vertices 597 613 598
+  endface
+  face
+    vertices 613 614 598
+  endface
+  face
+    vertices 598 614 599
+  endface
+  face
+    vertices 614 615 599
+  endface
+  face
+    vertices 599 615 600
+  endface
+  face
+    vertices 615 616 600
+  endface
+  face
+    vertices 600 616 601
+  endface
+  face
+    vertices 616 617 601
+  endface
+  face
+    vertices 601 617 602
+  endface
+  face
+    vertices 617 618 602
+  endface
+  face
+    vertices 602 618 603
+  endface
+  face
+    vertices 618 619 603
+  endface
+  face
+    vertices 603 619 604
+  endface
+  face
+    vertices 619 620 604
+  endface
+  face
+    vertices 604 620 605
+  endface
+  face
+    vertices 620 621 605
+  endface
+  face
+    vertices 605 621 606
+  endface
+  face
+    vertices 621 622 606
+  endface
+  face
+    vertices 606 622 607
+  endface
+  face
+    vertices 622 623 607
+  endface
+  face
+    vertices 608 624 609
+  endface
+  face
+    vertices 624 625 609
+  endface
+  face
+    vertices 609 625 610
+  endface
+  face
+    vertices 625 626 610
+  endface
+  face
+    vertices 610 626 611
+  endface
+  face
+    vertices 626 627 611
+  endface
+  face
+    vertices 611 627 612
+  endface
+  face
+    vertices 627 628 612
+  endface
+  face
+    vertices 612 628 613
+  endface
+  face
+    vertices 628 629 613
+  endface
+  face
+    vertices 613 629 614
+  endface
+  face
+    vertices 629 630 614
+  endface
+  face
+    vertices 614 630 615
+  endface
+  face
+    vertices 630 631 615
+  endface
+  face
+    vertices 615 631 616
+  endface
+  face
+    vertices 631 632 616
+  endface
+  face
+    vertices 616 632 617
+  endface
+  face
+    vertices 632 633 617
+  endface
+  face
+    vertices 617 633 618
+  endface
+  face
+    vertices 633 634 618
+  endface
+  face
+    vertices 618 634 619
+  endface
+  face
+    vertices 634 635 619
+  endface
+  face
+    vertices 619 635 620
+  endface
+  face
+    vertices 635 636 620
+  endface
+  face
+    vertices 620 636 621
+  endface
+  face
+    vertices 636 637 621
+  endface
+  face
+    vertices 621 637 622
+  endface
+  face
+    vertices 637 638 622
+  endface
+  face
+    vertices 622 638 623
+  endface
+  face
+    vertices 638 639 623
+  endface
+  face
+    vertices 624 640 625
+  endface
+  face
+    vertices 640 641 625
+  endface
+  face
+    vertices 625 641 626
+  endface
+  face
+    vertices 641 642 626
+  endface
+  face
+    vertices 626 642 627
+  endface
+  face
+    vertices 642 643 627
+  endface
+  face
+    vertices 627 643 628
+  endface
+  face
+    vertices 643 644 628
+  endface
+  face
+    vertices 628 644 629
+  endface
+  face
+    vertices 644 645 629
+  endface
+  face
+    vertices 629 645 630
+  endface
+  face
+    vertices 645 646 630
+  endface
+  face
+    vertices 630 646 631
+  endface
+  face
+    vertices 646 647 631
+  endface
+  face
+    vertices 631 647 632
+  endface
+  face
+    vertices 647 648 632
+  endface
+  face
+    vertices 632 648 633
+  endface
+  face
+    vertices 648 649 633
+  endface
+  face
+    vertices 633 649 634
+  endface
+  face
+    vertices 649 650 634
+  endface
+  face
+    vertices 634 650 635
+  endface
+  face
+    vertices 650 651 635
+  endface
+  face
+    vertices 635 651 636
+  endface
+  face
+    vertices 651 652 636
+  endface
+  face
+    vertices 636 652 637
+  endface
+  face
+    vertices 652 653 637
+  endface
+  face
+    vertices 637 653 638
+  endface
+  face
+    vertices 653 654 638
+  endface
+  face
+    vertices 638 654 639
+  endface
+  face
+    vertices 654 655 639
+  endface
+end
+meshbox
+  shift 235 -440 0
+  size 1.0 1.0 5.0
+  rotation 90.0
+  angle 360
+  ratio 1
+  divisions 4
+  spin 0 0 0 0
+  shift 0 0 0
+  flatshading
+  texsize -8 -8 -8 -8
+  matref highway2
+end
+meshbox
+  shift 365 -440 0
+  size 1.0 1.0 5.0
+  rotation 90.0
+  angle 360
+  ratio 1
+  divisions 4
+  spin 0 0 0 0
+  shift 0 0 0
+  flatshading
+  texsize -8 -8 -8 -8
+  matref highway2
+end
+meshbox
+  shift 365 -260 0
+  size 1.0 1.0 5.0
+  rotation 90.0
+  angle 360
+  ratio 1
+  divisions 4
+  spin 0 0 0 0
+  shift 0 0 0
+  flatshading
+  texsize -8 -8 -8 -8
+  matref highway2
+end
+meshbox
+  shift 235 -260 0
+  size 1.0 1.0 5.0
+  rotation 90.0
+  angle 360
+  ratio 1
+  divisions 4
+  spin 0 0 0 0
+  shift 0 0 0
+  flatshading
+  texsize -8 -8 -8 -8
+  matref highway2
+end
+mesh
+  shift 300.0 -350.0 0
+  inside 10 10 10
+  matref grass
+   vertex -65.0 -90.0 0.0 # Vertex ID: 0
+   vertex -65.0 -78.0 0.0 # Vertex ID: 1
+   vertex -65.0 -66.0 0.0 # Vertex ID: 2
+   vertex -65.0 -54.0 0.0 # Vertex ID: 3
+   vertex -65.0 -42.0 0.0 # Vertex ID: 4
+   vertex -65.0 -30.0 0.0 # Vertex ID: 5
+   vertex -65.0 -18.0 0.0 # Vertex ID: 6
+   vertex -65.0 -6.0 0.0 # Vertex ID: 7
+   vertex -65.0 6.0 0.0 # Vertex ID: 8
+   vertex -65.0 18.0 0.0 # Vertex ID: 9
+   vertex -65.0 30.0 0.0 # Vertex ID: 10
+   vertex -65.0 42.0 0.0 # Vertex ID: 11
+   vertex -65.0 54.0 0.0 # Vertex ID: 12
+   vertex -65.0 66.0 0.0 # Vertex ID: 13
+   vertex -65.0 78.0 0.0 # Vertex ID: 14
+   vertex -65.0 90.0 0.0 # Vertex ID: 15
+   vertex -56.33 -90.0 0.0 # Vertex ID: 16
+   vertex -56.33 -78.0 2.98 # Vertex ID: 17
+   vertex -56.33 -66.0 6.2 # Vertex ID: 18
+   vertex -56.33 -54.0 6.22 # Vertex ID: 19
+   vertex -56.33 -42.0 5.42 # Vertex ID: 20
+   vertex -56.33 -30.0 6.25 # Vertex ID: 21
+   vertex -56.33 -18.0 6.57 # Vertex ID: 22
+   vertex -56.33 -6.0 5.81 # Vertex ID: 23
+   vertex -56.33 6.0 6.17 # Vertex ID: 24
+   vertex -56.33 18.0 5.68 # Vertex ID: 25
+   vertex -56.33 30.0 6.17 # Vertex ID: 26
+   vertex -56.33 42.0 6.43 # Vertex ID: 27
+   vertex -56.33 54.0 6.55 # Vertex ID: 28
+   vertex -56.33 66.0 6.47 # Vertex ID: 29
+   vertex -56.33 78.0 2.84 # Vertex ID: 30
+   vertex -56.33 90.0 0.0 # Vertex ID: 31
+   vertex -47.67 -90.0 0.0 # Vertex ID: 32
+   vertex -47.67 -78.0 6.16 # Vertex ID: 33
+   vertex -47.67 -66.0 10.91 # Vertex ID: 34
+   vertex -47.67 -54.0 11.03 # Vertex ID: 35
+   vertex -47.67 -42.0 12.35 # Vertex ID: 36
+   vertex -47.67 -30.0 12.15 # Vertex ID: 37
+   vertex -47.67 -18.0 10.82 # Vertex ID: 38
+   vertex -47.67 -6.0 10.83 # Vertex ID: 39
+   vertex -47.67 6.0 10.81 # Vertex ID: 40
+   vertex -47.67 18.0 12.63 # Vertex ID: 41
+   vertex -47.67 30.0 13.19 # Vertex ID: 42
+   vertex -47.67 42.0 13.12 # Vertex ID: 43
+   vertex -47.67 54.0 12.62 # Vertex ID: 44
+   vertex -47.67 66.0 11.79 # Vertex ID: 45
+   vertex -47.67 78.0 5.75 # Vertex ID: 46
+   vertex -47.67 90.0 0.0 # Vertex ID: 47
+   vertex -39.0 -90.0 0.0 # Vertex ID: 48
+   vertex -39.0 -78.0 6.06 # Vertex ID: 49
+   vertex -39.0 -66.0 12.72 # Vertex ID: 50
+   vertex -39.0 -54.0 11.03 # Vertex ID: 51
+   vertex -39.0 -42.0 10.91 # Vertex ID: 52
+   vertex -39.0 -30.0 12.21 # Vertex ID: 53
+   vertex -39.0 -18.0 12.47 # Vertex ID: 54
+   vertex -39.0 -6.0 12.83 # Vertex ID: 55
+   vertex -39.0 6.0 12.87 # Vertex ID: 56
+   vertex -39.0 18.0 11.3 # Vertex ID: 57
+   vertex -39.0 30.0 10.9 # Vertex ID: 58
+   vertex -39.0 42.0 11.91 # Vertex ID: 59
+   vertex -39.0 54.0 12.33 # Vertex ID: 60
+   vertex -39.0 66.0 11.95 # Vertex ID: 61
+   vertex -39.0 78.0 5.64 # Vertex ID: 62
+   vertex -39.0 90.0 0.0 # Vertex ID: 63
+   vertex -30.33 -90.0 0.0 # Vertex ID: 64
+   vertex -30.33 -78.0 6.46 # Vertex ID: 65
+   vertex -30.33 -66.0 12.74 # Vertex ID: 66
+   vertex -30.33 -54.0 11.95 # Vertex ID: 67
+   vertex -30.33 -42.0 11.12 # Vertex ID: 68
+   vertex -30.33 -30.0 11.36 # Vertex ID: 69
+   vertex -30.33 -18.0 13.14 # Vertex ID: 70
+   vertex -30.33 -6.0 12.38 # Vertex ID: 71
+   vertex -30.33 6.0 12.06 # Vertex ID: 72
+   vertex -30.33 18.0 11.14 # Vertex ID: 73
+   vertex -30.33 30.0 11.88 # Vertex ID: 74
+   vertex -30.33 42.0 11.54 # Vertex ID: 75
+   vertex -30.33 54.0 12.14 # Vertex ID: 76
+   vertex -30.33 66.0 12.76 # Vertex ID: 77
+   vertex -30.33 78.0 6.02 # Vertex ID: 78
+   vertex -30.33 90.0 0.0 # Vertex ID: 79
+   vertex -21.67 -90.0 0.0 # Vertex ID: 80
+   vertex -21.67 -78.0 6.01 # Vertex ID: 81
+   vertex -21.67 -66.0 10.89 # Vertex ID: 82
+   vertex -21.67 -54.0 12.16 # Vertex ID: 83
+   vertex -21.67 -42.0 12.48 # Vertex ID: 84
+   vertex -21.67 -30.0 12.9 # Vertex ID: 85
+   vertex -21.67 -18.0 12.42 # Vertex ID: 86
+   vertex -21.67 -6.0 11.9 # Vertex ID: 87
+   vertex -21.67 6.0 10.89 # Vertex ID: 88
+   vertex -21.67 18.0 12.48 # Vertex ID: 89
+   vertex -21.67 30.0 11.21 # Vertex ID: 90
+   vertex -21.67 42.0 13.02 # Vertex ID: 91
+   vertex -21.67 54.0 12.01 # Vertex ID: 92
+   vertex -21.67 66.0 11.35 # Vertex ID: 93
+   vertex -21.67 78.0 5.4 # Vertex ID: 94
+   vertex -21.67 90.0 0.0 # Vertex ID: 95
+   vertex -13.0 -90.0 0.0 # Vertex ID: 96
+   vertex -13.0 -78.0 6.5 # Vertex ID: 97
+   vertex -13.0 -66.0 11.76 # Vertex ID: 98
+   vertex -13.0 -54.0 12.0 # Vertex ID: 99
+   vertex -13.0 -42.0 13.1 # Vertex ID: 100
+   vertex -13.0 -30.0 13.14 # Vertex ID: 101
+   vertex -13.0 -18.0 12.8 # Vertex ID: 102
+   vertex -13.0 -6.0 12.47 # Vertex ID: 103
+   vertex -13.0 6.0 13.03 # Vertex ID: 104
+   vertex -13.0 18.0 12.14 # Vertex ID: 105
+   vertex -13.0 30.0 11.11 # Vertex ID: 106
+   vertex -13.0 42.0 11.3 # Vertex ID: 107
+   vertex -13.0 54.0 12.76 # Vertex ID: 108
+   vertex -13.0 66.0 12.92 # Vertex ID: 109
+   vertex -13.0 78.0 5.78 # Vertex ID: 110
+   vertex -13.0 90.0 0.0 # Vertex ID: 111
+   vertex -4.33 -90.0 0.0 # Vertex ID: 112
+   vertex -4.33 -78.0 5.88 # Vertex ID: 113
+   vertex -4.33 -66.0 10.83 # Vertex ID: 114
+   vertex -4.33 -54.0 11.57 # Vertex ID: 115
+   vertex -4.33 -42.0 11.21 # Vertex ID: 116
+   vertex -4.33 -30.0 11.8 # Vertex ID: 117
+   vertex -4.33 -18.0 10.82 # Vertex ID: 118
+   vertex -4.33 -6.0 10.96 # Vertex ID: 119
+   vertex -4.33 6.0 12.41 # Vertex ID: 120
+   vertex -4.33 18.0 11.85 # Vertex ID: 121
+   vertex -4.33 30.0 12.78 # Vertex ID: 122
+   vertex -4.33 42.0 11.66 # Vertex ID: 123
+   vertex -4.33 54.0 12.37 # Vertex ID: 124
+   vertex -4.33 66.0 12.02 # Vertex ID: 125
+   vertex -4.33 78.0 5.77 # Vertex ID: 126
+   vertex -4.33 90.0 0.0 # Vertex ID: 127
+   vertex 4.33 -90.0 0.0 # Vertex ID: 128
+   vertex 4.33 -78.0 5.94 # Vertex ID: 129
+   vertex 4.33 -66.0 11.91 # Vertex ID: 130
+   vertex 4.33 -54.0 11.35 # Vertex ID: 131
+   vertex 4.33 -42.0 11.47 # Vertex ID: 132
+   vertex 4.33 -30.0 13.01 # Vertex ID: 133
+   vertex 4.33 -18.0 12.38 # Vertex ID: 134
+   vertex 4.33 -6.0 11.21 # Vertex ID: 135
+   vertex 4.33 6.0 11.39 # Vertex ID: 136
+   vertex 4.33 18.0 12.65 # Vertex ID: 137
+   vertex 4.33 30.0 12.38 # Vertex ID: 138
+   vertex 4.33 42.0 12.12 # Vertex ID: 139
+   vertex 4.33 54.0 11.82 # Vertex ID: 140
+   vertex 4.33 66.0 11.7 # Vertex ID: 141
+   vertex 4.33 78.0 5.68 # Vertex ID: 142
+   vertex 4.33 90.0 0.0 # Vertex ID: 143
+   vertex 13.0 -90.0 0.0 # Vertex ID: 144
+   vertex 13.0 -78.0 6.51 # Vertex ID: 145
+   vertex 13.0 -66.0 12.36 # Vertex ID: 146
+   vertex 13.0 -54.0 12.63 # Vertex ID: 147
+   vertex 13.0 -42.0 12.05 # Vertex ID: 148
+   vertex 13.0 -30.0 11.17 # Vertex ID: 149
+   vertex 13.0 -18.0 11.02 # Vertex ID: 150
+   vertex 13.0 -6.0 13.15 # Vertex ID: 151
+   vertex 13.0 6.0 12.1 # Vertex ID: 152
+   vertex 13.0 18.0 11.24 # Vertex ID: 153
+   vertex 13.0 30.0 10.89 # Vertex ID: 154
+   vertex 13.0 42.0 12.76 # Vertex ID: 155
+   vertex 13.0 54.0 12.6 # Vertex ID: 156
+   vertex 13.0 66.0 12.57 # Vertex ID: 157
+   vertex 13.0 78.0 6.45 # Vertex ID: 158
+   vertex 13.0 90.0 0.0 # Vertex ID: 159
+   vertex 21.67 -90.0 0.0 # Vertex ID: 160
+   vertex 21.67 -78.0 6.4 # Vertex ID: 161
+   vertex 21.67 -66.0 11.62 # Vertex ID: 162
+   vertex 21.67 -54.0 12.32 # Vertex ID: 163
+   vertex 21.67 -42.0 11.03 # Vertex ID: 164
+   vertex 21.67 -30.0 11.17 # Vertex ID: 165
+   vertex 21.67 -18.0 12.21 # Vertex ID: 166
+   vertex 21.67 -6.0 11.01 # Vertex ID: 167
+   vertex 21.67 6.0 12.6 # Vertex ID: 168
+   vertex 21.67 18.0 11.59 # Vertex ID: 169
+   vertex 21.67 30.0 13.04 # Vertex ID: 170
+   vertex 21.67 42.0 12.31 # Vertex ID: 171
+   vertex 21.67 54.0 12.75 # Vertex ID: 172
+   vertex 21.67 66.0 11.06 # Vertex ID: 173
+   vertex 21.67 78.0 5.52 # Vertex ID: 174
+   vertex 21.67 90.0 0.0 # Vertex ID: 175
+   vertex 30.33 -90.0 0.0 # Vertex ID: 176
+   vertex 30.33 -78.0 6.24 # Vertex ID: 177
+   vertex 30.33 -66.0 13.04 # Vertex ID: 178
+   vertex 30.33 -54.0 12.23 # Vertex ID: 179
+   vertex 30.33 -42.0 11.31 # Vertex ID: 180
+   vertex 30.33 -30.0 12.47 # Vertex ID: 181
+   vertex 30.33 -18.0 11.64 # Vertex ID: 182
+   vertex 30.33 -6.0 12.3 # Vertex ID: 183
+   vertex 30.33 6.0 12.46 # Vertex ID: 184
+   vertex 30.33 18.0 11.88 # Vertex ID: 185
+   vertex 30.33 30.0 13.07 # Vertex ID: 186
+   vertex 30.33 42.0 11.2 # Vertex ID: 187
+   vertex 30.33 54.0 12.69 # Vertex ID: 188
+   vertex 30.33 66.0 12.82 # Vertex ID: 189
+   vertex 30.33 78.0 5.99 # Vertex ID: 190
+   vertex 30.33 90.0 0.0 # Vertex ID: 191
+   vertex 39.0 -90.0 0.0 # Vertex ID: 192
+   vertex 39.0 -78.0 5.6 # Vertex ID: 193
+   vertex 39.0 -66.0 11.84 # Vertex ID: 194
+   vertex 39.0 -54.0 12.06 # Vertex ID: 195
+   vertex 39.0 -42.0 10.93 # Vertex ID: 196
+   vertex 39.0 -30.0 11.42 # Vertex ID: 197
+   vertex 39.0 -18.0 11.75 # Vertex ID: 198
+   vertex 39.0 -6.0 11.53 # Vertex ID: 199
+   vertex 39.0 6.0 11.78 # Vertex ID: 200
+   vertex 39.0 18.0 10.96 # Vertex ID: 201
+   vertex 39.0 30.0 11.33 # Vertex ID: 202
+   vertex 39.0 42.0 12.79 # Vertex ID: 203
+   vertex 39.0 54.0 11.5 # Vertex ID: 204
+   vertex 39.0 66.0 12.7 # Vertex ID: 205
+   vertex 39.0 78.0 6.06 # Vertex ID: 206
+   vertex 39.0 90.0 0.0 # Vertex ID: 207
+   vertex 47.67 -90.0 0.0 # Vertex ID: 208
+   vertex 47.67 -78.0 5.97 # Vertex ID: 209
+   vertex 47.67 -66.0 11.4 # Vertex ID: 210
+   vertex 47.67 -54.0 13.11 # Vertex ID: 211
+   vertex 47.67 -42.0 12.47 # Vertex ID: 212
+   vertex 47.67 -30.0 12.68 # Vertex ID: 213
+   vertex 47.67 -18.0 11.7 # Vertex ID: 214
+   vertex 47.67 -6.0 11.77 # Vertex ID: 215
+   vertex 47.67 6.0 12.15 # Vertex ID: 216
+   vertex 47.67 18.0 12.52 # Vertex ID: 217
+   vertex 47.67 30.0 10.95 # Vertex ID: 218
+   vertex 47.67 42.0 11.78 # Vertex ID: 219
+   vertex 47.67 54.0 12.75 # Vertex ID: 220
+   vertex 47.67 66.0 11.2 # Vertex ID: 221
+   vertex 47.67 78.0 5.72 # Vertex ID: 222
+   vertex 47.67 90.0 0.0 # Vertex ID: 223
+   vertex 56.33 -90.0 0.0 # Vertex ID: 224
+   vertex 56.33 -78.0 2.78 # Vertex ID: 225
+   vertex 56.33 -66.0 5.78 # Vertex ID: 226
+   vertex 56.33 -54.0 6.33 # Vertex ID: 227
+   vertex 56.33 -42.0 6.29 # Vertex ID: 228
+   vertex 56.33 -30.0 6.13 # Vertex ID: 229
+   vertex 56.33 -18.0 6.29 # Vertex ID: 230
+   vertex 56.33 -6.0 5.94 # Vertex ID: 231
+   vertex 56.33 6.0 5.8 # Vertex ID: 232
+   vertex 56.33 18.0 5.42 # Vertex ID: 233
+   vertex 56.33 30.0 6.13 # Vertex ID: 234
+   vertex 56.33 42.0 5.6 # Vertex ID: 235
+   vertex 56.33 54.0 6.46 # Vertex ID: 236
+   vertex 56.33 66.0 5.48 # Vertex ID: 237
+   vertex 56.33 78.0 2.86 # Vertex ID: 238
+   vertex 56.33 90.0 0.0 # Vertex ID: 239
+   vertex 65.0 -90.0 0.0 # Vertex ID: 240
+   vertex 65.0 -78.0 0.0 # Vertex ID: 241
+   vertex 65.0 -66.0 0.0 # Vertex ID: 242
+   vertex 65.0 -54.0 0.0 # Vertex ID: 243
+   vertex 65.0 -42.0 0.0 # Vertex ID: 244
+   vertex 65.0 -30.0 0.0 # Vertex ID: 245
+   vertex 65.0 -18.0 0.0 # Vertex ID: 246
+   vertex 65.0 -6.0 0.0 # Vertex ID: 247
+   vertex 65.0 6.0 0.0 # Vertex ID: 248
+   vertex 65.0 18.0 0.0 # Vertex ID: 249
+   vertex 65.0 30.0 0.0 # Vertex ID: 250
+   vertex 65.0 42.0 0.0 # Vertex ID: 251
+   vertex 65.0 54.0 0.0 # Vertex ID: 252
+   vertex 65.0 66.0 0.0 # Vertex ID: 253
+   vertex 65.0 78.0 0.0 # Vertex ID: 254
+   vertex 65.0 90.0 0.0 # Vertex ID: 255
+  face
+    vertices 0 16 1
+  endface
+  face
+    vertices 16 17 1
+  endface
+  face
+    vertices 1 17 2
+  endface
+  face
+    vertices 17 18 2
+  endface
+  face
+    vertices 2 18 3
+  endface
+  face
+    vertices 18 19 3
+  endface
+  face
+    vertices 3 19 4
+  endface
+  face
+    vertices 19 20 4
+  endface
+  face
+    vertices 4 20 5
+  endface
+  face
+    vertices 20 21 5
+  endface
+  face
+    vertices 5 21 6
+  endface
+  face
+    vertices 21 22 6
+  endface
+  face
+    vertices 6 22 7
+  endface
+  face
+    vertices 22 23 7
+  endface
+  face
+    vertices 7 23 8
+  endface
+  face
+    vertices 23 24 8
+  endface
+  face
+    vertices 8 24 9
+  endface
+  face
+    vertices 24 25 9
+  endface
+  face
+    vertices 9 25 10
+  endface
+  face
+    vertices 25 26 10
+  endface
+  face
+    vertices 10 26 11
+  endface
+  face
+    vertices 26 27 11
+  endface
+  face
+    vertices 11 27 12
+  endface
+  face
+    vertices 27 28 12
+  endface
+  face
+    vertices 12 28 13
+  endface
+  face
+    vertices 28 29 13
+  endface
+  face
+    vertices 13 29 14
+  endface
+  face
+    vertices 29 30 14
+  endface
+  face
+    vertices 14 30 15
+  endface
+  face
+    vertices 30 31 15
+  endface
+  face
+    vertices 16 32 17
+  endface
+  face
+    vertices 32 33 17
+  endface
+  face
+    vertices 17 33 18
+  endface
+  face
+    vertices 33 34 18
+  endface
+  face
+    vertices 18 34 19
+  endface
+  face
+    vertices 34 35 19
+  endface
+  face
+    vertices 19 35 20
+  endface
+  face
+    vertices 35 36 20
+  endface
+  face
+    vertices 20 36 21
+  endface
+  face
+    vertices 36 37 21
+  endface
+  face
+    vertices 21 37 22
+  endface
+  face
+    vertices 37 38 22
+  endface
+  face
+    vertices 22 38 23
+  endface
+  face
+    vertices 38 39 23
+  endface
+  face
+    vertices 23 39 24
+  endface
+  face
+    vertices 39 40 24
+  endface
+  face
+    vertices 24 40 25
+  endface
+  face
+    vertices 40 41 25
+  endface
+  face
+    vertices 25 41 26
+  endface
+  face
+    vertices 41 42 26
+  endface
+  face
+    vertices 26 42 27
+  endface
+  face
+    vertices 42 43 27
+  endface
+  face
+    vertices 27 43 28
+  endface
+  face
+    vertices 43 44 28
+  endface
+  face
+    vertices 28 44 29
+  endface
+  face
+    vertices 44 45 29
+  endface
+  face
+    vertices 29 45 30
+  endface
+  face
+    vertices 45 46 30
+  endface
+  face
+    vertices 30 46 31
+  endface
+  face
+    vertices 46 47 31
+  endface
+  face
+    vertices 32 48 33
+  endface
+  face
+    vertices 48 49 33
+  endface
+  face
+    vertices 33 49 34
+  endface
+  face
+    vertices 49 50 34
+  endface
+  face
+    vertices 34 50 35
+  endface
+  face
+    vertices 50 51 35
+  endface
+  face
+    vertices 35 51 36
+  endface
+  face
+    vertices 51 52 36
+  endface
+  face
+    vertices 36 52 37
+  endface
+  face
+    vertices 52 53 37
+  endface
+  face
+    vertices 37 53 38
+  endface
+  face
+    vertices 53 54 38
+  endface
+  face
+    vertices 38 54 39
+  endface
+  face
+    vertices 54 55 39
+  endface
+  face
+    vertices 39 55 40
+  endface
+  face
+    vertices 55 56 40
+  endface
+  face
+    vertices 40 56 41
+  endface
+  face
+    vertices 56 57 41
+  endface
+  face
+    vertices 41 57 42
+  endface
+  face
+    vertices 57 58 42
+  endface
+  face
+    vertices 42 58 43
+  endface
+  face
+    vertices 58 59 43
+  endface
+  face
+    vertices 43 59 44
+  endface
+  face
+    vertices 59 60 44
+  endface
+  face
+    vertices 44 60 45
+  endface
+  face
+    vertices 60 61 45
+  endface
+  face
+    vertices 45 61 46
+  endface
+  face
+    vertices 61 62 46
+  endface
+  face
+    vertices 46 62 47
+  endface
+  face
+    vertices 62 63 47
+  endface
+  face
+    vertices 48 64 49
+  endface
+  face
+    vertices 64 65 49
+  endface
+  face
+    vertices 49 65 50
+  endface
+  face
+    vertices 65 66 50
+  endface
+  face
+    vertices 50 66 51
+  endface
+  face
+    vertices 66 67 51
+  endface
+  face
+    vertices 51 67 52
+  endface
+  face
+    vertices 67 68 52
+  endface
+  face
+    vertices 52 68 53
+  endface
+  face
+    vertices 68 69 53
+  endface
+  face
+    vertices 53 69 54
+  endface
+  face
+    vertices 69 70 54
+  endface
+  face
+    vertices 54 70 55
+  endface
+  face
+    vertices 70 71 55
+  endface
+  face
+    vertices 55 71 56
+  endface
+  face
+    vertices 71 72 56
+  endface
+  face
+    vertices 56 72 57
+  endface
+  face
+    vertices 72 73 57
+  endface
+  face
+    vertices 57 73 58
+  endface
+  face
+    vertices 73 74 58
+  endface
+  face
+    vertices 58 74 59
+  endface
+  face
+    vertices 74 75 59
+  endface
+  face
+    vertices 59 75 60
+  endface
+  face
+    vertices 75 76 60
+  endface
+  face
+    vertices 60 76 61
+  endface
+  face
+    vertices 76 77 61
+  endface
+  face
+    vertices 61 77 62
+  endface
+  face
+    vertices 77 78 62
+  endface
+  face
+    vertices 62 78 63
+  endface
+  face
+    vertices 78 79 63
+  endface
+  face
+    vertices 64 80 65
+  endface
+  face
+    vertices 80 81 65
+  endface
+  face
+    vertices 65 81 66
+  endface
+  face
+    vertices 81 82 66
+  endface
+  face
+    vertices 66 82 67
+  endface
+  face
+    vertices 82 83 67
+  endface
+  face
+    vertices 67 83 68
+  endface
+  face
+    vertices 83 84 68
+  endface
+  face
+    vertices 68 84 69
+  endface
+  face
+    vertices 84 85 69
+  endface
+  face
+    vertices 69 85 70
+  endface
+  face
+    vertices 85 86 70
+  endface
+  face
+    vertices 70 86 71
+  endface
+  face
+    vertices 86 87 71
+  endface
+  face
+    vertices 71 87 72
+  endface
+  face
+    vertices 87 88 72
+  endface
+  face
+    vertices 72 88 73
+  endface
+  face
+    vertices 88 89 73
+  endface
+  face
+    vertices 73 89 74
+  endface
+  face
+    vertices 89 90 74
+  endface
+  face
+    vertices 74 90 75
+  endface
+  face
+    vertices 90 91 75
+  endface
+  face
+    vertices 75 91 76
+  endface
+  face
+    vertices 91 92 76
+  endface
+  face
+    vertices 76 92 77
+  endface
+  face
+    vertices 92 93 77
+  endface
+  face
+    vertices 77 93 78
+  endface
+  face
+    vertices 93 94 78
+  endface
+  face
+    vertices 78 94 79
+  endface
+  face
+    vertices 94 95 79
+  endface
+  face
+    vertices 80 96 81
+  endface
+  face
+    vertices 96 97 81
+  endface
+  face
+    vertices 81 97 82
+  endface
+  face
+    vertices 97 98 82
+  endface
+  face
+    vertices 82 98 83
+  endface
+  face
+    vertices 98 99 83
+  endface
+  face
+    vertices 83 99 84
+  endface
+  face
+    vertices 99 100 84
+  endface
+  face
+    vertices 84 100 85
+  endface
+  face
+    vertices 100 101 85
+  endface
+  face
+    vertices 85 101 86
+  endface
+  face
+    vertices 101 102 86
+  endface
+  face
+    vertices 86 102 87
+  endface
+  face
+    vertices 102 103 87
+  endface
+  face
+    vertices 87 103 88
+  endface
+  face
+    vertices 103 104 88
+  endface
+  face
+    vertices 88 104 89
+  endface
+  face
+    vertices 104 105 89
+  endface
+  face
+    vertices 89 105 90
+  endface
+  face
+    vertices 105 106 90
+  endface
+  face
+    vertices 90 106 91
+  endface
+  face
+    vertices 106 107 91
+  endface
+  face
+    vertices 91 107 92
+  endface
+  face
+    vertices 107 108 92
+  endface
+  face
+    vertices 92 108 93
+  endface
+  face
+    vertices 108 109 93
+  endface
+  face
+    vertices 93 109 94
+  endface
+  face
+    vertices 109 110 94
+  endface
+  face
+    vertices 94 110 95
+  endface
+  face
+    vertices 110 111 95
+  endface
+  face
+    vertices 96 112 97
+  endface
+  face
+    vertices 112 113 97
+  endface
+  face
+    vertices 97 113 98
+  endface
+  face
+    vertices 113 114 98
+  endface
+  face
+    vertices 98 114 99
+  endface
+  face
+    vertices 114 115 99
+  endface
+  face
+    vertices 99 115 100
+  endface
+  face
+    vertices 115 116 100
+  endface
+  face
+    vertices 100 116 101
+  endface
+  face
+    vertices 116 117 101
+  endface
+  face
+    vertices 101 117 102
+  endface
+  face
+    vertices 117 118 102
+  endface
+  face
+    vertices 102 118 103
+  endface
+  face
+    vertices 118 119 103
+  endface
+  face
+    vertices 103 119 104
+  endface
+  face
+    vertices 119 120 104
+  endface
+  face
+    vertices 104 120 105
+  endface
+  face
+    vertices 120 121 105
+  endface
+  face
+    vertices 105 121 106
+  endface
+  face
+    vertices 121 122 106
+  endface
+  face
+    vertices 106 122 107
+  endface
+  face
+    vertices 122 123 107
+  endface
+  face
+    vertices 107 123 108
+  endface
+  face
+    vertices 123 124 108
+  endface
+  face
+    vertices 108 124 109
+  endface
+  face
+    vertices 124 125 109
+  endface
+  face
+    vertices 109 125 110
+  endface
+  face
+    vertices 125 126 110
+  endface
+  face
+    vertices 110 126 111
+  endface
+  face
+    vertices 126 127 111
+  endface
+  face
+    vertices 112 128 113
+  endface
+  face
+    vertices 128 129 113
+  endface
+  face
+    vertices 113 129 114
+  endface
+  face
+    vertices 129 130 114
+  endface
+  face
+    vertices 114 130 115
+  endface
+  face
+    vertices 130 131 115
+  endface
+  face
+    vertices 115 131 116
+  endface
+  face
+    vertices 131 132 116
+  endface
+  face
+    vertices 116 132 117
+  endface
+  face
+    vertices 132 133 117
+  endface
+  face
+    vertices 117 133 118
+  endface
+  face
+    vertices 133 134 118
+  endface
+  face
+    vertices 118 134 119
+  endface
+  face
+    vertices 134 135 119
+  endface
+  face
+    vertices 119 135 120
+  endface
+  face
+    vertices 135 136 120
+  endface
+  face
+    vertices 120 136 121
+  endface
+  face
+    vertices 136 137 121
+  endface
+  face
+    vertices 121 137 122
+  endface
+  face
+    vertices 137 138 122
+  endface
+  face
+    vertices 122 138 123
+  endface
+  face
+    vertices 138 139 123
+  endface
+  face
+    vertices 123 139 124
+  endface
+  face
+    vertices 139 140 124
+  endface
+  face
+    vertices 124 140 125
+  endface
+  face
+    vertices 140 141 125
+  endface
+  face
+    vertices 125 141 126
+  endface
+  face
+    vertices 141 142 126
+  endface
+  face
+    vertices 126 142 127
+  endface
+  face
+    vertices 142 143 127
+  endface
+  face
+    vertices 128 144 129
+  endface
+  face
+    vertices 144 145 129
+  endface
+  face
+    vertices 129 145 130
+  endface
+  face
+    vertices 145 146 130
+  endface
+  face
+    vertices 130 146 131
+  endface
+  face
+    vertices 146 147 131
+  endface
+  face
+    vertices 131 147 132
+  endface
+  face
+    vertices 147 148 132
+  endface
+  face
+    vertices 132 148 133
+  endface
+  face
+    vertices 148 149 133
+  endface
+  face
+    vertices 133 149 134
+  endface
+  face
+    vertices 149 150 134
+  endface
+  face
+    vertices 134 150 135
+  endface
+  face
+    vertices 150 151 135
+  endface
+  face
+    vertices 135 151 136
+  endface
+  face
+    vertices 151 152 136
+  endface
+  face
+    vertices 136 152 137
+  endface
+  face
+    vertices 152 153 137
+  endface
+  face
+    vertices 137 153 138
+  endface
+  face
+    vertices 153 154 138
+  endface
+  face
+    vertices 138 154 139
+  endface
+  face
+    vertices 154 155 139
+  endface
+  face
+    vertices 139 155 140
+  endface
+  face
+    vertices 155 156 140
+  endface
+  face
+    vertices 140 156 141
+  endface
+  face
+    vertices 156 157 141
+  endface
+  face
+    vertices 141 157 142
+  endface
+  face
+    vertices 157 158 142
+  endface
+  face
+    vertices 142 158 143
+  endface
+  face
+    vertices 158 159 143
+  endface
+  face
+    vertices 144 160 145
+  endface
+  face
+    vertices 160 161 145
+  endface
+  face
+    vertices 145 161 146
+  endface
+  face
+    vertices 161 162 146
+  endface
+  face
+    vertices 146 162 147
+  endface
+  face
+    vertices 162 163 147
+  endface
+  face
+    vertices 147 163 148
+  endface
+  face
+    vertices 163 164 148
+  endface
+  face
+    vertices 148 164 149
+  endface
+  face
+    vertices 164 165 149
+  endface
+  face
+    vertices 149 165 150
+  endface
+  face
+    vertices 165 166 150
+  endface
+  face
+    vertices 150 166 151
+  endface
+  face
+    vertices 166 167 151
+  endface
+  face
+    vertices 151 167 152
+  endface
+  face
+    vertices 167 168 152
+  endface
+  face
+    vertices 152 168 153
+  endface
+  face
+    vertices 168 169 153
+  endface
+  face
+    vertices 153 169 154
+  endface
+  face
+    vertices 169 170 154
+  endface
+  face
+    vertices 154 170 155
+  endface
+  face
+    vertices 170 171 155
+  endface
+  face
+    vertices 155 171 156
+  endface
+  face
+    vertices 171 172 156
+  endface
+  face
+    vertices 156 172 157
+  endface
+  face
+    vertices 172 173 157
+  endface
+  face
+    vertices 157 173 158
+  endface
+  face
+    vertices 173 174 158
+  endface
+  face
+    vertices 158 174 159
+  endface
+  face
+    vertices 174 175 159
+  endface
+  face
+    vertices 160 176 161
+  endface
+  face
+    vertices 176 177 161
+  endface
+  face
+    vertices 161 177 162
+  endface
+  face
+    vertices 177 178 162
+  endface
+  face
+    vertices 162 178 163
+  endface
+  face
+    vertices 178 179 163
+  endface
+  face
+    vertices 163 179 164
+  endface
+  face
+    vertices 179 180 164
+  endface
+  face
+    vertices 164 180 165
+  endface
+  face
+    vertices 180 181 165
+  endface
+  face
+    vertices 165 181 166
+  endface
+  face
+    vertices 181 182 166
+  endface
+  face
+    vertices 166 182 167
+  endface
+  face
+    vertices 182 183 167
+  endface
+  face
+    vertices 167 183 168
+  endface
+  face
+    vertices 183 184 168
+  endface
+  face
+    vertices 168 184 169
+  endface
+  face
+    vertices 184 185 169
+  endface
+  face
+    vertices 169 185 170
+  endface
+  face
+    vertices 185 186 170
+  endface
+  face
+    vertices 170 186 171
+  endface
+  face
+    vertices 186 187 171
+  endface
+  face
+    vertices 171 187 172
+  endface
+  face
+    vertices 187 188 172
+  endface
+  face
+    vertices 172 188 173
+  endface
+  face
+    vertices 188 189 173
+  endface
+  face
+    vertices 173 189 174
+  endface
+  face
+    vertices 189 190 174
+  endface
+  face
+    vertices 174 190 175
+  endface
+  face
+    vertices 190 191 175
+  endface
+  face
+    vertices 176 192 177
+  endface
+  face
+    vertices 192 193 177
+  endface
+  face
+    vertices 177 193 178
+  endface
+  face
+    vertices 193 194 178
+  endface
+  face
+    vertices 178 194 179
+  endface
+  face
+    vertices 194 195 179
+  endface
+  face
+    vertices 179 195 180
+  endface
+  face
+    vertices 195 196 180
+  endface
+  face
+    vertices 180 196 181
+  endface
+  face
+    vertices 196 197 181
+  endface
+  face
+    vertices 181 197 182
+  endface
+  face
+    vertices 197 198 182
+  endface
+  face
+    vertices 182 198 183
+  endface
+  face
+    vertices 198 199 183
+  endface
+  face
+    vertices 183 199 184
+  endface
+  face
+    vertices 199 200 184
+  endface
+  face
+    vertices 184 200 185
+  endface
+  face
+    vertices 200 201 185
+  endface
+  face
+    vertices 185 201 186
+  endface
+  face
+    vertices 201 202 186
+  endface
+  face
+    vertices 186 202 187
+  endface
+  face
+    vertices 202 203 187
+  endface
+  face
+    vertices 187 203 188
+  endface
+  face
+    vertices 203 204 188
+  endface
+  face
+    vertices 188 204 189
+  endface
+  face
+    vertices 204 205 189
+  endface
+  face
+    vertices 189 205 190
+  endface
+  face
+    vertices 205 206 190
+  endface
+  face
+    vertices 190 206 191
+  endface
+  face
+    vertices 206 207 191
+  endface
+  face
+    vertices 192 208 193
+  endface
+  face
+    vertices 208 209 193
+  endface
+  face
+    vertices 193 209 194
+  endface
+  face
+    vertices 209 210 194
+  endface
+  face
+    vertices 194 210 195
+  endface
+  face
+    vertices 210 211 195
+  endface
+  face
+    vertices 195 211 196
+  endface
+  face
+    vertices 211 212 196
+  endface
+  face
+    vertices 196 212 197
+  endface
+  face
+    vertices 212 213 197
+  endface
+  face
+    vertices 197 213 198
+  endface
+  face
+    vertices 213 214 198
+  endface
+  face
+    vertices 198 214 199
+  endface
+  face
+    vertices 214 215 199
+  endface
+  face
+    vertices 199 215 200
+  endface
+  face
+    vertices 215 216 200
+  endface
+  face
+    vertices 200 216 201
+  endface
+  face
+    vertices 216 217 201
+  endface
+  face
+    vertices 201 217 202
+  endface
+  face
+    vertices 217 218 202
+  endface
+  face
+    vertices 202 218 203
+  endface
+  face
+    vertices 218 219 203
+  endface
+  face
+    vertices 203 219 204
+  endface
+  face
+    vertices 219 220 204
+  endface
+  face
+    vertices 204 220 205
+  endface
+  face
+    vertices 220 221 205
+  endface
+  face
+    vertices 205 221 206
+  endface
+  face
+    vertices 221 222 206
+  endface
+  face
+    vertices 206 222 207
+  endface
+  face
+    vertices 222 223 207
+  endface
+  face
+    vertices 208 224 209
+  endface
+  face
+    vertices 224 225 209
+  endface
+  face
+    vertices 209 225 210
+  endface
+  face
+    vertices 225 226 210
+  endface
+  face
+    vertices 210 226 211
+  endface
+  face
+    vertices 226 227 211
+  endface
+  face
+    vertices 211 227 212
+  endface
+  face
+    vertices 227 228 212
+  endface
+  face
+    vertices 212 228 213
+  endface
+  face
+    vertices 228 229 213
+  endface
+  face
+    vertices 213 229 214
+  endface
+  face
+    vertices 229 230 214
+  endface
+  face
+    vertices 214 230 215
+  endface
+  face
+    vertices 230 231 215
+  endface
+  face
+    vertices 215 231 216
+  endface
+  face
+    vertices 231 232 216
+  endface
+  face
+    vertices 216 232 217
+  endface
+  face
+    vertices 232 233 217
+  endface
+  face
+    vertices 217 233 218
+  endface
+  face
+    vertices 233 234 218
+  endface
+  face
+    vertices 218 234 219
+  endface
+  face
+    vertices 234 235 219
+  endface
+  face
+    vertices 219 235 220
+  endface
+  face
+    vertices 235 236 220
+  endface
+  face
+    vertices 220 236 221
+  endface
+  face
+    vertices 236 237 221
+  endface
+  face
+    vertices 221 237 222
+  endface
+  face
+    vertices 237 238 222
+  endface
+  face
+    vertices 222 238 223
+  endface
+  face
+    vertices 238 239 223
+  endface
+  face
+    vertices 224 240 225
+  endface
+  face
+    vertices 240 241 225
+  endface
+  face
+    vertices 225 241 226
+  endface
+  face
+    vertices 241 242 226
+  endface
+  face
+    vertices 226 242 227
+  endface
+  face
+    vertices 242 243 227
+  endface
+  face
+    vertices 227 243 228
+  endface
+  face
+    vertices 243 244 228
+  endface
+  face
+    vertices 228 244 229
+  endface
+  face
+    vertices 244 245 229
+  endface
+  face
+    vertices 229 245 230
+  endface
+  face
+    vertices 245 246 230
+  endface
+  face
+    vertices 230 246 231
+  endface
+  face
+    vertices 246 247 231
+  endface
+  face
+    vertices 231 247 232
+  endface
+  face
+    vertices 247 248 232
+  endface
+  face
+    vertices 232 248 233
+  endface
+  face
+    vertices 248 249 233
+  endface
+  face
+    vertices 233 249 234
+  endface
+  face
+    vertices 249 250 234
+  endface
+  face
+    vertices 234 250 235
+  endface
+  face
+    vertices 250 251 235
+  endface
+  face
+    vertices 235 251 236
+  endface
+  face
+    vertices 251 252 236
+  endface
+  face
+    vertices 236 252 237
+  endface
+  face
+    vertices 252 253 237
+  endface
+  face
+    vertices 237 253 238
+  endface
+  face
+    vertices 253 254 238
+  endface
+  face
+    vertices 238 254 239
+  endface
+  face
+    vertices 254 255 239
+  endface
+end
+material
+  name ColumnMaterial
+  texture mesh
+  notexalpha
+end
+material
+  name ColumnBaseMaterial
+  texture water
+  notexalpha
+end
+material
+  name TempleBaseMaterial
+  texture purple_basetop
+  notexalpha
+end
+material
+  name RoofMaterial
+  texture roof
+  notexalpha
+end
+material
+  name EndMaterial
+  texture zone_ground
+  notexalpha
+end
+define myColumn
+meshbox
+  shift 0 0 0
+  size 1.43 1.43 1.0
+  rotation 90.0
+  angle 360
+  ratio 1
+  divisions 4
+  spin 0 0 0 0
+  shift 0 0 0
+  flatshading
+  texsize -8 -8 -8 -8
+  matref ColumnBaseMaterial
+end
+meshbox
+  shift 0 0 12
+  size 1.1 1.1 1.4
+  rotation 90.0
+  angle 360
+  ratio 1
+  divisions 4
+  spin 0 0 0 0
+  shift 0 0 0
+  flatshading
+  texsize -8 -8 -8 -8
+  matref ColumnBaseMaterial
+end
+mesh
+  matref ColumnMaterial
+  vertex 0.92 0.92 0.0
+  vertex 0.71 0.71 13.0
+  vertex 0.0 1.3 0.0
+  vertex 0.0 1.0 13.0
+  vertex -0.92 0.92 0.0
+  vertex -0.71 0.71 13.0
+  vertex -1.3 0.0 0.0
+  vertex -1.0 0.0 13.0
+  vertex -0.92 -0.92 0.0
+  vertex -0.71 -0.71 13.0
+  vertex 0.0 -1.3 0.0
+  vertex 0.0 -1.0 13.0
+  vertex 0.92 -0.92 0.0
+  vertex 0.71 -0.71 13.0
+  vertex 1.3 0.0 0.0
+  vertex 1.0 0.0 13.0
+    face
+       vertices 0 2 3 1
+    endface
+    face
+       vertices 2 4 5 3
+    endface
+    face
+       vertices 4 6 7 5
+    endface
+    face
+       vertices 6 8 9 7
+    endface
+    face
+       vertices 8 10 11 9
+    endface
+    face
+       vertices 10 12 13 11
+    endface
+    face
+       vertices 12 14 15 13
+    endface
+    face
+       vertices 14 0 1 15
+    endface
+end
+enddef
+define PPTemple
+meshbox
+  shift 0 0 0
+  size 49.79 32.29 2.0
+  rotation 90.0
+  angle 360
+  ratio 1
+  divisions 4
+  spin 0 0 0 0
+  shift 0 0 0
+  flatshading
+  texsize -8 -8 -8 -8
+  matref TempleBaseMaterial
+end
+meshbox
+  shift 0 0 0
+  size 52.79 35.29 1.0
+  rotation 90.0
+  angle 360
+  ratio 1
+  divisions 4
+  spin 0 0 0 0
+  shift 0 0 0
+  flatshading
+  texsize -8 -8 -8 -8
+  matref TempleBaseMaterial
+end
+meshbox
+  shift 0 0 15
+  size 49.79 29.49 0.8
+  rotation 90.0
+  angle 360
+  ratio 1
+  divisions 4
+  spin 0 0 0 0
+  shift 0 0 0
+  flatshading
+  texsize -8 -8 -8 -8
+  matref RoofMaterial
+end
+meshbox
+  shift 0 0 15
+  size 48.07 27.77 2.0
+  rotation 90.0
+  angle 360
+  ratio 1
+  divisions 4
+  spin 0 0 0 0
+  shift 0 0 0
+  flatshading
+  texsize -8 -8 -8 -8
+  matref ColumnMaterial
+end
+meshbox
+  shift 0 0 17
+  size 49.79 29.49 0.4
+  rotation 90.0
+  angle 360
+  ratio 1
+  divisions 4
+  spin 0 0 0 0
+  shift 0 0 0
+  flatshading
+  texsize -8 -8 -8 -8
+  matref ColumnMaterial
+end
+group myColumn
+  shift -28.0 -38.5 2.0
+end
+group myColumn
+  shift 28.0 -38.5 2.0
+end
+group myColumn
+  shift -28.0 -31.5 2.0
+end
+group myColumn
+  shift 28.0 -31.5 2.0
+end
+group myColumn
+  shift -28.0 -24.5 2.0
+end
+group myColumn
+  shift 28.0 -24.5 2.0
+end
+group myColumn
+  shift -28.0 -17.5 2.0
+end
+group myColumn
+  shift 28.0 -17.5 2.0
+end
+group myColumn
+  shift -28.0 -10.5 2.0
+end
+group myColumn
+  shift 28.0 -10.5 2.0
+end
+group myColumn
+  shift -28.0 -3.5 2.0
+end
+group myColumn
+  shift 28.0 -3.5 2.0
+end
+group myColumn
+  shift -28.0 3.5 2.0
+end
+group myColumn
+  shift 28.0 3.5 2.0
+end
+group myColumn
+  shift -28.0 10.5 2.0
+end
+group myColumn
+  shift 28.0 10.5 2.0
+end
+group myColumn
+  shift -28.0 17.5 2.0
+end
+group myColumn
+  shift 28.0 17.5 2.0
+end
+group myColumn
+  shift -28.0 24.5 2.0
+end
+group myColumn
+  shift 28.0 24.5 2.0
+end
+group myColumn
+  shift -28.0 31.5 2.0
+end
+group myColumn
+  shift 28.0 31.5 2.0
+end
+group myColumn
+  shift -28.0 38.5 2.0
+end
+group myColumn
+  shift 28.0 38.5 2.0
+end
+group myColumn
+  shift -28.0 -45.5 2.0
+end
+group myColumn
+  shift -28.0 45.5 2.0
+end
+group myColumn
+  shift -21.0 -45.5 2.0
+end
+group myColumn
+  shift -21.0 45.5 2.0
+end
+group myColumn
+  shift -14.0 -45.5 2.0
+end
+group myColumn
+  shift -14.0 45.5 2.0
+end
+group myColumn
+  shift -7.0 -45.5 2.0
+end
+group myColumn
+  shift -7.0 45.5 2.0
+end
+group myColumn
+  shift 0.0 -45.5 2.0
+end
+group myColumn
+  shift 0.0 45.5 2.0
+end
+group myColumn
+  shift 7.0 -45.5 2.0
+end
+group myColumn
+  shift 7.0 45.5 2.0
+end
+group myColumn
+  shift 14.0 -45.5 2.0
+end
+group myColumn
+  shift 14.0 45.5 2.0
+end
+group myColumn
+  shift 21.0 -45.5 2.0
+end
+group myColumn
+  shift 21.0 45.5 2.0
+end
+group myColumn
+  shift 28.0 -45.5 2.0
+end
+group myColumn
+  shift 28.0 45.5 2.0
+end
+mesh
+  matref EndMaterial
+  vertex -28.0 45.5 17.0
+  vertex 0.0 45.5 25.0
+  vertex 28.0 45.5 17.0
+    face
+       vertices 0 1 2
+   drivethrough
+    endface
+end
+mesh
+  matref EndMaterial
+  vertex -28.0 -45.5 17.0
+  vertex 0.0 -45.5 25.0
+  vertex 28.0 -45.5 17.0
+    face
+       vertices 0 2 1
+   drivethrough
+    endface
+end
+mesh
+  matref RoofMaterial
+  vertex -28.0 49.79 17.0
+  vertex 0.0 49.79 25.0
+  vertex 0.0 -49.79 25.0
+  vertex -28.0 -49.79 17.0
+  vertex -28.0 49.79 18.0
+  vertex 0.0 49.79 26.0
+  vertex 0.0 -49.79 26.0
+  vertex -28.0 -49.79 18.0
+    face
+       vertices 4 7 6 5
+   drivethrough
+    endface
+    face
+       vertices 0 1 2 3
+   drivethrough
+    endface
+    face
+       vertices 2 6 7 3
+    endface
+    face
+       vertices 5 1 0 4
+    endface
+    face
+       vertices 4 0 3 7
+    endface
+    face
+       vertices 5 6 2 1
+    endface
+end
+mesh
+  matref RoofMaterial
+  vertex 28.0 -49.79 17.0
+  vertex 0.0 -49.79 25.0
+  vertex 0.0 49.79 25.0
+  vertex 28.0 49.79 17.0
+  vertex 28.0 -49.79 18.0
+  vertex 0.0 -49.79 26.0
+  vertex 0.0 49.79 26.0
+  vertex 28.0 49.79 18.0
+    face
+       vertices 4 7 6 5
+   drivethrough
+    endface
+    face
+       vertices 0 1 2 3
+   drivethrough
+    endface
+    face
+       vertices 2 6 7 3
+    endface
+    face
+       vertices 5 1 0 4
+    endface
+    face
+       vertices 4 0 3 7
+    endface
+    face
+       vertices 5 6 2 1
+    endface
+end
+enddef
+group PPTemple
+shift 300.0 -350.0 13.0
+scale 1.0 1.0 1.0
+end
+meshbox
+  shift 60 -25 0
+  size 1.0 1.0 5.0
+  rotation 90.0
+  angle 360
+  ratio 1
+  divisions 4
+  spin 0 0 0 0
+  shift 0 0 0
+  flatshading
+  texsize -8 -8 -8 -8
+  matref highway2
+end
+meshbox
+  shift 340 -25 0
+  size 1.0 1.0 5.0
+  rotation 90.0
+  angle 360
+  ratio 1
+  divisions 4
+  spin 0 0 0 0
+  shift 0 0 0
+  flatshading
+  texsize -8 -8 -8 -8
+  matref highway2
+end
+meshbox
+  shift 340 105 0
+  size 1.0 1.0 5.0
+  rotation 90.0
+  angle 360
+  ratio 1
+  divisions 4
+  spin 0 0 0 0
+  shift 0 0 0
+  flatshading
+  texsize -8 -8 -8 -8
+  matref highway2
+end
+meshbox
+  shift 60 105 0
+  size 1.0 1.0 5.0
+  rotation 90.0
+  angle 360
+  ratio 1
+  divisions 4
+  spin 0 0 0 0
+  shift 0 0 0
+  flatshading
+  texsize -8 -8 -8 -8
+  matref highway2
+end
+mesh
+  shift 200.0 40.0 0
+  inside 10 10 10
+  matref grass
+   vertex -140.0 -65.0 0.0 # Vertex ID: 0
+   vertex -140.0 -52.0 0.0 # Vertex ID: 1
+   vertex -140.0 -39.0 0.0 # Vertex ID: 2
+   vertex -140.0 -26.0 0.0 # Vertex ID: 3
+   vertex -140.0 -13.0 0.0 # Vertex ID: 4
+   vertex -140.0 0.0 0.0 # Vertex ID: 5
+   vertex -140.0 13.0 0.0 # Vertex ID: 6
+   vertex -140.0 26.0 0.0 # Vertex ID: 7
+   vertex -140.0 39.0 0.0 # Vertex ID: 8
+   vertex -140.0 52.0 0.0 # Vertex ID: 9
+   vertex -140.0 65.0 0.0 # Vertex ID: 10
+   vertex -112.0 -65.0 0.0 # Vertex ID: 11
+   vertex -112.0 -52.0 1.56 # Vertex ID: 12
+   vertex -112.0 -39.0 3.36 # Vertex ID: 13
+   vertex -112.0 -26.0 5.75 # Vertex ID: 14
+   vertex -112.0 -13.0 7.91 # Vertex ID: 15
+   vertex -112.0 0.0 8.25 # Vertex ID: 16
+   vertex -112.0 13.0 6.77 # Vertex ID: 17
+   vertex -112.0 26.0 5.66 # Vertex ID: 18
+   vertex -112.0 39.0 3.32 # Vertex ID: 19
+   vertex -112.0 52.0 1.78 # Vertex ID: 20
+   vertex -112.0 65.0 0.0 # Vertex ID: 21
+   vertex -84.0 -65.0 0.0 # Vertex ID: 22
+   vertex -84.0 -52.0 3.17 # Vertex ID: 23
+   vertex -84.0 -39.0 6.87 # Vertex ID: 24
+   vertex -84.0 -26.0 10.26 # Vertex ID: 25
+   vertex -84.0 -13.0 16.07 # Vertex ID: 26
+   vertex -84.0 0.0 16.75 # Vertex ID: 27
+   vertex -84.0 13.0 14.52 # Vertex ID: 28
+   vertex -84.0 26.0 10.52 # Vertex ID: 29
+   vertex -84.0 39.0 6.06 # Vertex ID: 30
+   vertex -84.0 52.0 3.33 # Vertex ID: 31
+   vertex -84.0 65.0 0.0 # Vertex ID: 32
+   vertex -56.0 -65.0 0.0 # Vertex ID: 33
+   vertex -56.0 -52.0 4.95 # Vertex ID: 34
+   vertex -56.0 -39.0 11.01 # Vertex ID: 35
+   vertex -56.0 -26.0 17.86 # Vertex ID: 36
+   vertex -56.0 -13.0 25.1 # Vertex ID: 37
+   vertex -56.0 0.0 28.85 # Vertex ID: 38
+   vertex -56.0 13.0 25.92 # Vertex ID: 39
+   vertex -56.0 26.0 17.55 # Vertex ID: 40
+   vertex -56.0 39.0 11.75 # Vertex ID: 41
+   vertex -56.0 52.0 5.72 # Vertex ID: 42
+   vertex -56.0 65.0 0.0 # Vertex ID: 43
+   vertex -28.0 -65.0 0.0 # Vertex ID: 44
+   vertex -28.0 -52.0 7.75 # Vertex ID: 45
+   vertex -28.0 -39.0 13.58 # Vertex ID: 46
+   vertex -28.0 -26.0 24.69 # Vertex ID: 47
+   vertex -28.0 -13.0 32.64 # Vertex ID: 48
+   vertex -28.0 0.0 37.93 # Vertex ID: 49
+   vertex -28.0 13.0 31.56 # Vertex ID: 50
+   vertex -28.0 26.0 25.92 # Vertex ID: 51
+   vertex -28.0 39.0 14.14 # Vertex ID: 52
+   vertex -28.0 52.0 6.88 # Vertex ID: 53
+   vertex -28.0 65.0 0.0 # Vertex ID: 54
+   vertex 0.0 -65.0 0.0 # Vertex ID: 55
+   vertex 0.0 -52.0 7.71 # Vertex ID: 56
+   vertex 0.0 -39.0 16.81 # Vertex ID: 57
+   vertex 0.0 -26.0 29.26 # Vertex ID: 58
+   vertex 0.0 -13.0 37.45 # Vertex ID: 59
+   vertex 0.0 0.0 36.99 # Vertex ID: 60
+   vertex 0.0 13.0 34.22 # Vertex ID: 61
+   vertex 0.0 26.0 27.84 # Vertex ID: 62
+   vertex 0.0 39.0 14.96 # Vertex ID: 63
+   vertex 0.0 52.0 8.68 # Vertex ID: 64
+   vertex 0.0 65.0 0.0 # Vertex ID: 65
+   vertex 28.0 -65.0 0.0 # Vertex ID: 66
+   vertex 28.0 -52.0 6.85 # Vertex ID: 67
+   vertex 28.0 -39.0 15.6 # Vertex ID: 68
+   vertex 28.0 -26.0 23.91 # Vertex ID: 69
+   vertex 28.0 -13.0 33.3 # Vertex ID: 70
+   vertex 28.0 0.0 37.21 # Vertex ID: 71
+   vertex 28.0 13.0 35.66 # Vertex ID: 72
+   vertex 28.0 26.0 24.79 # Vertex ID: 73
+   vertex 28.0 39.0 13.92 # Vertex ID: 74
+   vertex 28.0 52.0 7.38 # Vertex ID: 75
+   vertex 28.0 65.0 0.0 # Vertex ID: 76
+   vertex 56.0 -65.0 0.0 # Vertex ID: 77
+   vertex 56.0 -52.0 5.72 # Vertex ID: 78
+   vertex 56.0 -39.0 9.82 # Vertex ID: 79
+   vertex 56.0 -26.0 19.11 # Vertex ID: 80
+   vertex 56.0 -13.0 24.43 # Vertex ID: 81
+   vertex 56.0 0.0 28.1 # Vertex ID: 82
+   vertex 56.0 13.0 24.46 # Vertex ID: 83
+   vertex 56.0 26.0 16.2 # Vertex ID: 84
+   vertex 56.0 39.0 10.84 # Vertex ID: 85
+   vertex 56.0 52.0 5.68 # Vertex ID: 86
+   vertex 56.0 65.0 0.0 # Vertex ID: 87
+   vertex 84.0 -65.0 0.0 # Vertex ID: 88
+   vertex 84.0 -52.0 3.2 # Vertex ID: 89
+   vertex 84.0 -39.0 6.89 # Vertex ID: 90
+   vertex 84.0 -26.0 10.54 # Vertex ID: 91
+   vertex 84.0 -13.0 13.24 # Vertex ID: 92
+   vertex 84.0 0.0 14.82 # Vertex ID: 93
+   vertex 84.0 13.0 14.01 # Vertex ID: 94
+   vertex 84.0 26.0 10.96 # Vertex ID: 95
+   vertex 84.0 39.0 6.37 # Vertex ID: 96
+   vertex 84.0 52.0 3.11 # Vertex ID: 97
+   vertex 84.0 65.0 0.0 # Vertex ID: 98
+   vertex 112.0 -65.0 0.0 # Vertex ID: 99
+   vertex 112.0 -52.0 1.63 # Vertex ID: 100
+   vertex 112.0 -39.0 3.53 # Vertex ID: 101
+   vertex 112.0 -26.0 5.7 # Vertex ID: 102
+   vertex 112.0 -13.0 7.57 # Vertex ID: 103
+   vertex 112.0 0.0 7.54 # Vertex ID: 104
+   vertex 112.0 13.0 6.67 # Vertex ID: 105
+   vertex 112.0 26.0 5.62 # Vertex ID: 106
+   vertex 112.0 39.0 3.51 # Vertex ID: 107
+   vertex 112.0 52.0 1.67 # Vertex ID: 108
+   vertex 112.0 65.0 0.0 # Vertex ID: 109
+   vertex 140.0 -65.0 0.0 # Vertex ID: 110
+   vertex 140.0 -52.0 0.0 # Vertex ID: 111
+   vertex 140.0 -39.0 0.0 # Vertex ID: 112
+   vertex 140.0 -26.0 0.0 # Vertex ID: 113
+   vertex 140.0 -13.0 0.0 # Vertex ID: 114
+   vertex 140.0 0.0 0.0 # Vertex ID: 115
+   vertex 140.0 13.0 0.0 # Vertex ID: 116
+   vertex 140.0 26.0 0.0 # Vertex ID: 117
+   vertex 140.0 39.0 0.0 # Vertex ID: 118
+   vertex 140.0 52.0 0.0 # Vertex ID: 119
+   vertex 140.0 65.0 0.0 # Vertex ID: 120
+  face
+    vertices 0 11 1
+  endface
+  face
+    vertices 11 12 1
+  endface
+  face
+    vertices 1 12 2
+  endface
+  face
+    vertices 12 13 2
+  endface
+  face
+    vertices 2 13 3
+  endface
+  face
+    vertices 13 14 3
+  endface
+  face
+    vertices 3 14 4
+  endface
+  face
+    vertices 14 15 4
+  endface
+  face
+    vertices 4 15 5
+  endface
+  face
+    vertices 15 16 5
+  endface
+  face
+    vertices 5 16 6
+  endface
+  face
+    vertices 16 17 6
+  endface
+  face
+    vertices 6 17 7
+  endface
+  face
+    vertices 17 18 7
+  endface
+  face
+    vertices 7 18 8
+  endface
+  face
+    vertices 18 19 8
+  endface
+  face
+    vertices 8 19 9
+  endface
+  face
+    vertices 19 20 9
+  endface
+  face
+    vertices 9 20 10
+  endface
+  face
+    vertices 20 21 10
+  endface
+  face
+    vertices 11 22 12
+  endface
+  face
+    vertices 22 23 12
+  endface
+  face
+    vertices 12 23 13
+  endface
+  face
+    vertices 23 24 13
+  endface
+  face
+    vertices 13 24 14
+  endface
+  face
+    vertices 24 25 14
+  endface
+  face
+    vertices 14 25 15
+  endface
+  face
+    vertices 25 26 15
+  endface
+  face
+    vertices 15 26 16
+  endface
+  face
+    vertices 26 27 16
+  endface
+  face
+    vertices 16 27 17
+  endface
+  face
+    vertices 27 28 17
+  endface
+  face
+    vertices 17 28 18
+  endface
+  face
+    vertices 28 29 18
+  endface
+  face
+    vertices 18 29 19
+  endface
+  face
+    vertices 29 30 19
+  endface
+  face
+    vertices 19 30 20
+  endface
+  face
+    vertices 30 31 20
+  endface
+  face
+    vertices 20 31 21
+  endface
+  face
+    vertices 31 32 21
+  endface
+  face
+    vertices 22 33 23
+  endface
+  face
+    vertices 33 34 23
+  endface
+  face
+    vertices 23 34 24
+  endface
+  face
+    vertices 34 35 24
+  endface
+  face
+    vertices 24 35 25
+  endface
+  face
+    vertices 35 36 25
+  endface
+  face
+    vertices 25 36 26
+  endface
+  face
+    vertices 36 37 26
+  endface
+  face
+    vertices 26 37 27
+  endface
+  face
+    vertices 37 38 27
+  endface
+  face
+    vertices 27 38 28
+  endface
+  face
+    vertices 38 39 28
+  endface
+  face
+    vertices 28 39 29
+  endface
+  face
+    vertices 39 40 29
+  endface
+  face
+    vertices 29 40 30
+  endface
+  face
+    vertices 40 41 30
+  endface
+  face
+    vertices 30 41 31
+  endface
+  face
+    vertices 41 42 31
+  endface
+  face
+    vertices 31 42 32
+  endface
+  face
+    vertices 42 43 32
+  endface
+  face
+    vertices 33 44 34
+  endface
+  face
+    vertices 44 45 34
+  endface
+  face
+    vertices 34 45 35
+  endface
+  face
+    vertices 45 46 35
+  endface
+  face
+    vertices 35 46 36
+  endface
+  face
+    vertices 46 47 36
+  endface
+  face
+    vertices 36 47 37
+  endface
+  face
+    vertices 47 48 37
+  endface
+  face
+    vertices 37 48 38
+  endface
+  face
+    vertices 48 49 38
+  endface
+  face
+    vertices 38 49 39
+  endface
+  face
+    vertices 49 50 39
+  endface
+  face
+    vertices 39 50 40
+  endface
+  face
+    vertices 50 51 40
+  endface
+  face
+    vertices 40 51 41
+  endface
+  face
+    vertices 51 52 41
+  endface
+  face
+    vertices 41 52 42
+  endface
+  face
+    vertices 52 53 42
+  endface
+  face
+    vertices 42 53 43
+  endface
+  face
+    vertices 53 54 43
+  endface
+  face
+    vertices 44 55 45
+  endface
+  face
+    vertices 55 56 45
+  endface
+  face
+    vertices 45 56 46
+  endface
+  face
+    vertices 56 57 46
+  endface
+  face
+    vertices 46 57 47
+  endface
+  face
+    vertices 57 58 47
+  endface
+  face
+    vertices 47 58 48
+  endface
+  face
+    vertices 58 59 48
+  endface
+  face
+    vertices 48 59 49
+  endface
+  face
+    vertices 59 60 49
+  endface
+  face
+    vertices 49 60 50
+  endface
+  face
+    vertices 60 61 50
+  endface
+  face
+    vertices 50 61 51
+  endface
+  face
+    vertices 61 62 51
+  endface
+  face
+    vertices 51 62 52
+  endface
+  face
+    vertices 62 63 52
+  endface
+  face
+    vertices 52 63 53
+  endface
+  face
+    vertices 63 64 53
+  endface
+  face
+    vertices 53 64 54
+  endface
+  face
+    vertices 64 65 54
+  endface
+  face
+    vertices 55 66 56
+  endface
+  face
+    vertices 66 67 56
+  endface
+  face
+    vertices 56 67 57
+  endface
+  face
+    vertices 67 68 57
+  endface
+  face
+    vertices 57 68 58
+  endface
+  face
+    vertices 68 69 58
+  endface
+  face
+    vertices 58 69 59
+  endface
+  face
+    vertices 69 70 59
+  endface
+  face
+    vertices 59 70 60
+  endface
+  face
+    vertices 70 71 60
+  endface
+  face
+    vertices 60 71 61
+  endface
+  face
+    vertices 71 72 61
+  endface
+  face
+    vertices 61 72 62
+  endface
+  face
+    vertices 72 73 62
+  endface
+  face
+    vertices 62 73 63
+  endface
+  face
+    vertices 73 74 63
+  endface
+  face
+    vertices 63 74 64
+  endface
+  face
+    vertices 74 75 64
+  endface
+  face
+    vertices 64 75 65
+  endface
+  face
+    vertices 75 76 65
+  endface
+  face
+    vertices 66 77 67
+  endface
+  face
+    vertices 77 78 67
+  endface
+  face
+    vertices 67 78 68
+  endface
+  face
+    vertices 78 79 68
+  endface
+  face
+    vertices 68 79 69
+  endface
+  face
+    vertices 79 80 69
+  endface
+  face
+    vertices 69 80 70
+  endface
+  face
+    vertices 80 81 70
+  endface
+  face
+    vertices 70 81 71
+  endface
+  face
+    vertices 81 82 71
+  endface
+  face
+    vertices 71 82 72
+  endface
+  face
+    vertices 82 83 72
+  endface
+  face
+    vertices 72 83 73
+  endface
+  face
+    vertices 83 84 73
+  endface
+  face
+    vertices 73 84 74
+  endface
+  face
+    vertices 84 85 74
+  endface
+  face
+    vertices 74 85 75
+  endface
+  face
+    vertices 85 86 75
+  endface
+  face
+    vertices 75 86 76
+  endface
+  face
+    vertices 86 87 76
+  endface
+  face
+    vertices 77 88 78
+  endface
+  face
+    vertices 88 89 78
+  endface
+  face
+    vertices 78 89 79
+  endface
+  face
+    vertices 89 90 79
+  endface
+  face
+    vertices 79 90 80
+  endface
+  face
+    vertices 90 91 80
+  endface
+  face
+    vertices 80 91 81
+  endface
+  face
+    vertices 91 92 81
+  endface
+  face
+    vertices 81 92 82
+  endface
+  face
+    vertices 92 93 82
+  endface
+  face
+    vertices 82 93 83
+  endface
+  face
+    vertices 93 94 83
+  endface
+  face
+    vertices 83 94 84
+  endface
+  face
+    vertices 94 95 84
+  endface
+  face
+    vertices 84 95 85
+  endface
+  face
+    vertices 95 96 85
+  endface
+  face
+    vertices 85 96 86
+  endface
+  face
+    vertices 96 97 86
+  endface
+  face
+    vertices 86 97 87
+  endface
+  face
+    vertices 97 98 87
+  endface
+  face
+    vertices 88 99 89
+  endface
+  face
+    vertices 99 100 89
+  endface
+  face
+    vertices 89 100 90
+  endface
+  face
+    vertices 100 101 90
+  endface
+  face
+    vertices 90 101 91
+  endface
+  face
+    vertices 101 102 91
+  endface
+  face
+    vertices 91 102 92
+  endface
+  face
+    vertices 102 103 92
+  endface
+  face
+    vertices 92 103 93
+  endface
+  face
+    vertices 103 104 93
+  endface
+  face
+    vertices 93 104 94
+  endface
+  face
+    vertices 104 105 94
+  endface
+  face
+    vertices 94 105 95
+  endface
+  face
+    vertices 105 106 95
+  endface
+  face
+    vertices 95 106 96
+  endface
+  face
+    vertices 106 107 96
+  endface
+  face
+    vertices 96 107 97
+  endface
+  face
+    vertices 107 108 97
+  endface
+  face
+    vertices 97 108 98
+  endface
+  face
+    vertices 108 109 98
+  endface
+  face
+    vertices 99 110 100
+  endface
+  face
+    vertices 110 111 100
+  endface
+  face
+    vertices 100 111 101
+  endface
+  face
+    vertices 111 112 101
+  endface
+  face
+    vertices 101 112 102
+  endface
+  face
+    vertices 112 113 102
+  endface
+  face
+    vertices 102 113 103
+  endface
+  face
+    vertices 113 114 103
+  endface
+  face
+    vertices 103 114 104
+  endface
+  face
+    vertices 114 115 104
+  endface
+  face
+    vertices 104 115 105
+  endface
+  face
+    vertices 115 116 105
+  endface
+  face
+    vertices 105 116 106
+  endface
+  face
+    vertices 116 117 106
+  endface
+  face
+    vertices 106 117 107
+  endface
+  face
+    vertices 117 118 107
+  endface
+  face
+    vertices 107 118 108
+  endface
+  face
+    vertices 118 119 108
+  endface
+  face
+    vertices 108 119 109
+  endface
+  face
+    vertices 119 120 109
+  endface
+end
+meshbox
+  shift 225 55 0
+  size 12.0 12.0 32.0
+  rotation 90.0
+  color SlateGray4
+end
+meshbox
+  shift 250 70 0
+  size 12.0 12.0 22.0
+  rotation 90.0
+  color SlateGray4
+end
+meshbox
+  shift 275 85 0
+  size 12.0 12.0 12.0
+  rotation 90.0
+  color SlateGray4
+end
+meshbox
+  shift 300 100 0
+  size 12.0 12.0 5.0
+  rotation 90.0
+  color SlateGray4
+end
+meshbox
+  shift -5 125 0
+  size 1.0 1.0 5.0
+  rotation 90.0
+  angle 360
+  ratio 1
+  divisions 4
+  spin 0 0 0 0
+  shift 0 0 0
+  flatshading
+  texsize -8 -8 -8 -8
+  matref highway2
+end
+meshbox
+  shift 175 125 0
+  size 1.0 1.0 5.0
+  rotation 90.0
+  angle 360
+  ratio 1
+  divisions 4
+  spin 0 0 0 0
+  shift 0 0 0
+  flatshading
+  texsize -8 -8 -8 -8
+  matref highway2
+end
+meshbox
+  shift 175 395 0
+  size 1.0 1.0 5.0
+  rotation 90.0
+  angle 360
+  ratio 1
+  divisions 4
+  spin 0 0 0 0
+  shift 0 0 0
+  flatshading
+  texsize -8 -8 -8 -8
+  matref highway2
+end
+meshbox
+  shift -5 395 0
+  size 1.0 1.0 5.0
+  rotation 90.0
+  angle 360
+  ratio 1
+  divisions 4
+  spin 0 0 0 0
+  shift 0 0 0
+  flatshading
+  texsize -8 -8 -8 -8
+  matref highway2
+end
+mesh
+  shift 85.0 260.0 0
+  inside 10 10 10
+  matref grass
+   vertex -90.0 -135.0 0.0 # Vertex ID: 0
+   vertex -90.0 -112.5 0.0 # Vertex ID: 1
+   vertex -90.0 -90.0 0.0 # Vertex ID: 2
+   vertex -90.0 -67.5 0.0 # Vertex ID: 3
+   vertex -90.0 -45.0 0.0 # Vertex ID: 4
+   vertex -90.0 -22.5 0.0 # Vertex ID: 5
+   vertex -90.0 0.0 0.0 # Vertex ID: 6
+   vertex -90.0 22.5 0.0 # Vertex ID: 7
+   vertex -90.0 45.0 0.0 # Vertex ID: 8
+   vertex -90.0 67.5 0.0 # Vertex ID: 9
+   vertex -90.0 90.0 0.0 # Vertex ID: 10
+   vertex -90.0 112.5 0.0 # Vertex ID: 11
+   vertex -90.0 135.0 0.0 # Vertex ID: 12
+   vertex -72.0 -135.0 0.0 # Vertex ID: 13
+   vertex -72.0 -112.5 1.97 # Vertex ID: 14
+   vertex -72.0 -90.0 4.11 # Vertex ID: 15
+   vertex -72.0 -67.5 7.71 # Vertex ID: 16
+   vertex -72.0 -45.0 12.02 # Vertex ID: 17
+   vertex -72.0 -22.5 13.86 # Vertex ID: 18
+   vertex -72.0 0.0 15.64 # Vertex ID: 19
+   vertex -72.0 22.5 15.38 # Vertex ID: 20
+   vertex -72.0 45.0 10.73 # Vertex ID: 21
+   vertex -72.0 67.5 7.8 # Vertex ID: 22
+   vertex -72.0 90.0 4.43 # Vertex ID: 23
+   vertex -72.0 112.5 2.15 # Vertex ID: 24
+   vertex -72.0 135.0 0.0 # Vertex ID: 25
+   vertex -54.0 -135.0 0.0 # Vertex ID: 26
+   vertex -54.0 -112.5 3.45 # Vertex ID: 27
+   vertex -54.0 -90.0 8.2 # Vertex ID: 28
+   vertex -54.0 -67.5 14.82 # Vertex ID: 29
+   vertex -54.0 -45.0 20.3 # Vertex ID: 30
+   vertex -54.0 -22.5 27.79 # Vertex ID: 31
+   vertex -54.0 0.0 27.6 # Vertex ID: 32
+   vertex -54.0 22.5 25.71 # Vertex ID: 33
+   vertex -54.0 45.0 21.91 # Vertex ID: 34
+   vertex -54.0 67.5 14.49 # Vertex ID: 35
+   vertex -54.0 90.0 7.94 # Vertex ID: 36
+   vertex -54.0 112.5 3.91 # Vertex ID: 37
+   vertex -54.0 135.0 0.0 # Vertex ID: 38
+   vertex -36.0 -135.0 0.0 # Vertex ID: 39
+   vertex -36.0 -112.5 5.73 # Vertex ID: 40
+   vertex -36.0 -90.0 11.47 # Vertex ID: 41
+   vertex -36.0 -67.5 21.61 # Vertex ID: 42
+   vertex -36.0 -45.0 31.25 # Vertex ID: 43
+   vertex -36.0 -22.5 41.62 # Vertex ID: 44
+   vertex -36.0 0.0 42.06 # Vertex ID: 45
+   vertex -36.0 22.5 36.54 # Vertex ID: 46
+   vertex -36.0 45.0 28.25 # Vertex ID: 47
+   vertex -36.0 67.5 21.39 # Vertex ID: 48
+   vertex -36.0 90.0 11.71 # Vertex ID: 49
+   vertex -36.0 112.5 5.25 # Vertex ID: 50
+   vertex -36.0 135.0 0.0 # Vertex ID: 51
+   vertex -18.0 -135.0 0.0 # Vertex ID: 52
+   vertex -18.0 -112.5 6.49 # Vertex ID: 53
+   vertex -18.0 -90.0 13.83 # Vertex ID: 54
+   vertex -18.0 -67.5 27.16 # Vertex ID: 55
+   vertex -18.0 -45.0 42.43 # Vertex ID: 56
+   vertex -18.0 -22.5 48.72 # Vertex ID: 57
+   vertex -18.0 0.0 53.47 # Vertex ID: 58
+   vertex -18.0 22.5 46.63 # Vertex ID: 59
+   vertex -18.0 45.0 38.75 # Vertex ID: 60
+   vertex -18.0 67.5 25.13 # Vertex ID: 61
+   vertex -18.0 90.0 14.2 # Vertex ID: 62
+   vertex -18.0 112.5 6.9 # Vertex ID: 63
+   vertex -18.0 135.0 0.0 # Vertex ID: 64
+   vertex 0.0 -135.0 0.0 # Vertex ID: 65
+   vertex 0.0 -112.5 8.04 # Vertex ID: 66
+   vertex 0.0 -90.0 14.74 # Vertex ID: 67
+   vertex 0.0 -67.5 29.93 # Vertex ID: 68
+   vertex 0.0 -45.0 41.59 # Vertex ID: 69
+   vertex 0.0 -22.5 56.97 # Vertex ID: 70
+   vertex 0.0 0.0 55.23 # Vertex ID: 71
+   vertex 0.0 22.5 55.5 # Vertex ID: 72
+   vertex 0.0 45.0 44.84 # Vertex ID: 73
+   vertex 0.0 67.5 31.5 # Vertex ID: 74
+   vertex 0.0 90.0 15.64 # Vertex ID: 75
+   vertex 0.0 112.5 7.64 # Vertex ID: 76
+   vertex 0.0 135.0 0.0 # Vertex ID: 77
+   vertex 18.0 -135.0 0.0 # Vertex ID: 78
+   vertex 18.0 -112.5 7.67 # Vertex ID: 79
+   vertex 18.0 -90.0 15.94 # Vertex ID: 80
+   vertex 18.0 -67.5 23.9 # Vertex ID: 81
+   vertex 18.0 -45.0 39.9 # Vertex ID: 82
+   vertex 18.0 -22.5 47.39 # Vertex ID: 83
+   vertex 18.0 0.0 58.12 # Vertex ID: 84
+   vertex 18.0 22.5 51.27 # Vertex ID: 85
+   vertex 18.0 45.0 39.44 # Vertex ID: 86
+   vertex 18.0 67.5 27.47 # Vertex ID: 87
+   vertex 18.0 90.0 15.97 # Vertex ID: 88
+   vertex 18.0 112.5 7.42 # Vertex ID: 89
+   vertex 18.0 135.0 0.0 # Vertex ID: 90
+   vertex 36.0 -135.0 0.0 # Vertex ID: 91
+   vertex 36.0 -112.5 5.44 # Vertex ID: 92
+   vertex 36.0 -90.0 10.76 # Vertex ID: 93
+   vertex 36.0 -67.5 19.83 # Vertex ID: 94
+   vertex 36.0 -45.0 33.18 # Vertex ID: 95
+   vertex 36.0 -22.5 41.09 # Vertex ID: 96
+   vertex 36.0 0.0 39.58 # Vertex ID: 97
+   vertex 36.0 22.5 36.25 # Vertex ID: 98
+   vertex 36.0 45.0 33.74 # Vertex ID: 99
+   vertex 36.0 67.5 22.25 # Vertex ID: 100
+   vertex 36.0 90.0 11.28 # Vertex ID: 101
+   vertex 36.0 112.5 5.4 # Vertex ID: 102
+   vertex 36.0 135.0 0.0 # Vertex ID: 103
+   vertex 54.0 -135.0 0.0 # Vertex ID: 104
+   vertex 54.0 -112.5 4.02 # Vertex ID: 105
+   vertex 54.0 -90.0 6.96 # Vertex ID: 106
+   vertex 54.0 -67.5 12.35 # Vertex ID: 107
+   vertex 54.0 -45.0 22.72 # Vertex ID: 108
+   vertex 54.0 -22.5 26.05 # Vertex ID: 109
+   vertex 54.0 0.0 31.41 # Vertex ID: 110
+   vertex 54.0 22.5 25.52 # Vertex ID: 111
+   vertex 54.0 45.0 20.87 # Vertex ID: 112
+   vertex 54.0 67.5 14.85 # Vertex ID: 113
+   vertex 54.0 90.0 8.18 # Vertex ID: 114
+   vertex 54.0 112.5 4.05 # Vertex ID: 115
+   vertex 54.0 135.0 0.0 # Vertex ID: 116
+   vertex 72.0 -135.0 0.0 # Vertex ID: 117
+   vertex 72.0 -112.5 2.08 # Vertex ID: 118
+   vertex 72.0 -90.0 4.13 # Vertex ID: 119
+   vertex 72.0 -67.5 7.45 # Vertex ID: 120
+   vertex 72.0 -45.0 11.75 # Vertex ID: 121
+   vertex 72.0 -22.5 13.51 # Vertex ID: 122
+   vertex 72.0 0.0 17.38 # Vertex ID: 123
+   vertex 72.0 22.5 16.05 # Vertex ID: 124
+   vertex 72.0 45.0 11.53 # Vertex ID: 125
+   vertex 72.0 67.5 7.93 # Vertex ID: 126
+   vertex 72.0 90.0 4.18 # Vertex ID: 127
+   vertex 72.0 112.5 1.91 # Vertex ID: 128
+   vertex 72.0 135.0 0.0 # Vertex ID: 129
+   vertex 90.0 -135.0 0.0 # Vertex ID: 130
+   vertex 90.0 -112.5 0.0 # Vertex ID: 131
+   vertex 90.0 -90.0 0.0 # Vertex ID: 132
+   vertex 90.0 -67.5 0.0 # Vertex ID: 133
+   vertex 90.0 -45.0 0.0 # Vertex ID: 134
+   vertex 90.0 -22.5 0.0 # Vertex ID: 135
+   vertex 90.0 0.0 0.0 # Vertex ID: 136
+   vertex 90.0 22.5 0.0 # Vertex ID: 137
+   vertex 90.0 45.0 0.0 # Vertex ID: 138
+   vertex 90.0 67.5 0.0 # Vertex ID: 139
+   vertex 90.0 90.0 0.0 # Vertex ID: 140
+   vertex 90.0 112.5 0.0 # Vertex ID: 141
+   vertex 90.0 135.0 0.0 # Vertex ID: 142
+  face
+    vertices 0 13 1
+  endface
+  face
+    vertices 13 14 1
+  endface
+  face
+    vertices 1 14 2
+  endface
+  face
+    vertices 14 15 2
+  endface
+  face
+    vertices 2 15 3
+  endface
+  face
+    vertices 15 16 3
+  endface
+  face
+    vertices 3 16 4
+  endface
+  face
+    vertices 16 17 4
+  endface
+  face
+    vertices 4 17 5
+  endface
+  face
+    vertices 17 18 5
+  endface
+  face
+    vertices 5 18 6
+  endface
+  face
+    vertices 18 19 6
+  endface
+  face
+    vertices 6 19 7
+  endface
+  face
+    vertices 19 20 7
+  endface
+  face
+    vertices 7 20 8
+  endface
+  face
+    vertices 20 21 8
+  endface
+  face
+    vertices 8 21 9
+  endface
+  face
+    vertices 21 22 9
+  endface
+  face
+    vertices 9 22 10
+  endface
+  face
+    vertices 22 23 10
+  endface
+  face
+    vertices 10 23 11
+  endface
+  face
+    vertices 23 24 11
+  endface
+  face
+    vertices 11 24 12
+  endface
+  face
+    vertices 24 25 12
+  endface
+  face
+    vertices 13 26 14
+  endface
+  face
+    vertices 26 27 14
+  endface
+  face
+    vertices 14 27 15
+  endface
+  face
+    vertices 27 28 15
+  endface
+  face
+    vertices 15 28 16
+  endface
+  face
+    vertices 28 29 16
+  endface
+  face
+    vertices 16 29 17
+  endface
+  face
+    vertices 29 30 17
+  endface
+  face
+    vertices 17 30 18
+  endface
+  face
+    vertices 30 31 18
+  endface
+  face
+    vertices 18 31 19
+  endface
+  face
+    vertices 31 32 19
+  endface
+  face
+    vertices 19 32 20
+  endface
+  face
+    vertices 32 33 20
+  endface
+  face
+    vertices 20 33 21
+  endface
+  face
+    vertices 33 34 21
+  endface
+  face
+    vertices 21 34 22
+  endface
+  face
+    vertices 34 35 22
+  endface
+  face
+    vertices 22 35 23
+  endface
+  face
+    vertices 35 36 23
+  endface
+  face
+    vertices 23 36 24
+  endface
+  face
+    vertices 36 37 24
+  endface
+  face
+    vertices 24 37 25
+  endface
+  face
+    vertices 37 38 25
+  endface
+  face
+    vertices 26 39 27
+  endface
+  face
+    vertices 39 40 27
+  endface
+  face
+    vertices 27 40 28
+  endface
+  face
+    vertices 40 41 28
+  endface
+  face
+    vertices 28 41 29
+  endface
+  face
+    vertices 41 42 29
+  endface
+  face
+    vertices 29 42 30
+  endface
+  face
+    vertices 42 43 30
+  endface
+  face
+    vertices 30 43 31
+  endface
+  face
+    vertices 43 44 31
+  endface
+  face
+    vertices 31 44 32
+  endface
+  face
+    vertices 44 45 32
+  endface
+  face
+    vertices 32 45 33
+  endface
+  face
+    vertices 45 46 33
+  endface
+  face
+    vertices 33 46 34
+  endface
+  face
+    vertices 46 47 34
+  endface
+  face
+    vertices 34 47 35
+  endface
+  face
+    vertices 47 48 35
+  endface
+  face
+    vertices 35 48 36
+  endface
+  face
+    vertices 48 49 36
+  endface
+  face
+    vertices 36 49 37
+  endface
+  face
+    vertices 49 50 37
+  endface
+  face
+    vertices 37 50 38
+  endface
+  face
+    vertices 50 51 38
+  endface
+  face
+    vertices 39 52 40
+  endface
+  face
+    vertices 52 53 40
+  endface
+  face
+    vertices 40 53 41
+  endface
+  face
+    vertices 53 54 41
+  endface
+  face
+    vertices 41 54 42
+  endface
+  face
+    vertices 54 55 42
+  endface
+  face
+    vertices 42 55 43
+  endface
+  face
+    vertices 55 56 43
+  endface
+  face
+    vertices 43 56 44
+  endface
+  face
+    vertices 56 57 44
+  endface
+  face
+    vertices 44 57 45
+  endface
+  face
+    vertices 57 58 45
+  endface
+  face
+    vertices 45 58 46
+  endface
+  face
+    vertices 58 59 46
+  endface
+  face
+    vertices 46 59 47
+  endface
+  face
+    vertices 59 60 47
+  endface
+  face
+    vertices 47 60 48
+  endface
+  face
+    vertices 60 61 48
+  endface
+  face
+    vertices 48 61 49
+  endface
+  face
+    vertices 61 62 49
+  endface
+  face
+    vertices 49 62 50
+  endface
+  face
+    vertices 62 63 50
+  endface
+  face
+    vertices 50 63 51
+  endface
+  face
+    vertices 63 64 51
+  endface
+  face
+    vertices 52 65 53
+  endface
+  face
+    vertices 65 66 53
+  endface
+  face
+    vertices 53 66 54
+  endface
+  face
+    vertices 66 67 54
+  endface
+  face
+    vertices 54 67 55
+  endface
+  face
+    vertices 67 68 55
+  endface
+  face
+    vertices 55 68 56
+  endface
+  face
+    vertices 68 69 56
+  endface
+  face
+    vertices 56 69 57
+  endface
+  face
+    vertices 69 70 57
+  endface
+  face
+    vertices 57 70 58
+  endface
+  face
+    vertices 70 71 58
+  endface
+  face
+    vertices 58 71 59
+  endface
+  face
+    vertices 71 72 59
+  endface
+  face
+    vertices 59 72 60
+  endface
+  face
+    vertices 72 73 60
+  endface
+  face
+    vertices 60 73 61
+  endface
+  face
+    vertices 73 74 61
+  endface
+  face
+    vertices 61 74 62
+  endface
+  face
+    vertices 74 75 62
+  endface
+  face
+    vertices 62 75 63
+  endface
+  face
+    vertices 75 76 63
+  endface
+  face
+    vertices 63 76 64
+  endface
+  face
+    vertices 76 77 64
+  endface
+  face
+    vertices 65 78 66
+  endface
+  face
+    vertices 78 79 66
+  endface
+  face
+    vertices 66 79 67
+  endface
+  face
+    vertices 79 80 67
+  endface
+  face
+    vertices 67 80 68
+  endface
+  face
+    vertices 80 81 68
+  endface
+  face
+    vertices 68 81 69
+  endface
+  face
+    vertices 81 82 69
+  endface
+  face
+    vertices 69 82 70
+  endface
+  face
+    vertices 82 83 70
+  endface
+  face
+    vertices 70 83 71
+  endface
+  face
+    vertices 83 84 71
+  endface
+  face
+    vertices 71 84 72
+  endface
+  face
+    vertices 84 85 72
+  endface
+  face
+    vertices 72 85 73
+  endface
+  face
+    vertices 85 86 73
+  endface
+  face
+    vertices 73 86 74
+  endface
+  face
+    vertices 86 87 74
+  endface
+  face
+    vertices 74 87 75
+  endface
+  face
+    vertices 87 88 75
+  endface
+  face
+    vertices 75 88 76
+  endface
+  face
+    vertices 88 89 76
+  endface
+  face
+    vertices 76 89 77
+  endface
+  face
+    vertices 89 90 77
+  endface
+  face
+    vertices 78 91 79
+  endface
+  face
+    vertices 91 92 79
+  endface
+  face
+    vertices 79 92 80
+  endface
+  face
+    vertices 92 93 80
+  endface
+  face
+    vertices 80 93 81
+  endface
+  face
+    vertices 93 94 81
+  endface
+  face
+    vertices 81 94 82
+  endface
+  face
+    vertices 94 95 82
+  endface
+  face
+    vertices 82 95 83
+  endface
+  face
+    vertices 95 96 83
+  endface
+  face
+    vertices 83 96 84
+  endface
+  face
+    vertices 96 97 84
+  endface
+  face
+    vertices 84 97 85
+  endface
+  face
+    vertices 97 98 85
+  endface
+  face
+    vertices 85 98 86
+  endface
+  face
+    vertices 98 99 86
+  endface
+  face
+    vertices 86 99 87
+  endface
+  face
+    vertices 99 100 87
+  endface
+  face
+    vertices 87 100 88
+  endface
+  face
+    vertices 100 101 88
+  endface
+  face
+    vertices 88 101 89
+  endface
+  face
+    vertices 101 102 89
+  endface
+  face
+    vertices 89 102 90
+  endface
+  face
+    vertices 102 103 90
+  endface
+  face
+    vertices 91 104 92
+  endface
+  face
+    vertices 104 105 92
+  endface
+  face
+    vertices 92 105 93
+  endface
+  face
+    vertices 105 106 93
+  endface
+  face
+    vertices 93 106 94
+  endface
+  face
+    vertices 106 107 94
+  endface
+  face
+    vertices 94 107 95
+  endface
+  face
+    vertices 107 108 95
+  endface
+  face
+    vertices 95 108 96
+  endface
+  face
+    vertices 108 109 96
+  endface
+  face
+    vertices 96 109 97
+  endface
+  face
+    vertices 109 110 97
+  endface
+  face
+    vertices 97 110 98
+  endface
+  face
+    vertices 110 111 98
+  endface
+  face
+    vertices 98 111 99
+  endface
+  face
+    vertices 111 112 99
+  endface
+  face
+    vertices 99 112 100
+  endface
+  face
+    vertices 112 113 100
+  endface
+  face
+    vertices 100 113 101
+  endface
+  face
+    vertices 113 114 101
+  endface
+  face
+    vertices 101 114 102
+  endface
+  face
+    vertices 114 115 102
+  endface
+  face
+    vertices 102 115 103
+  endface
+  face
+    vertices 115 116 103
+  endface
+  face
+    vertices 104 117 105
+  endface
+  face
+    vertices 117 118 105
+  endface
+  face
+    vertices 105 118 106
+  endface
+  face
+    vertices 118 119 106
+  endface
+  face
+    vertices 106 119 107
+  endface
+  face
+    vertices 119 120 107
+  endface
+  face
+    vertices 107 120 108
+  endface
+  face
+    vertices 120 121 108
+  endface
+  face
+    vertices 108 121 109
+  endface
+  face
+    vertices 121 122 109
+  endface
+  face
+    vertices 109 122 110
+  endface
+  face
+    vertices 122 123 110
+  endface
+  face
+    vertices 110 123 111
+  endface
+  face
+    vertices 123 124 111
+  endface
+  face
+    vertices 111 124 112
+  endface
+  face
+    vertices 124 125 112
+  endface
+  face
+    vertices 112 125 113
+  endface
+  face
+    vertices 125 126 113
+  endface
+  face
+    vertices 113 126 114
+  endface
+  face
+    vertices 126 127 114
+  endface
+  face
+    vertices 114 127 115
+  endface
+  face
+    vertices 127 128 115
+  endface
+  face
+    vertices 115 128 116
+  endface
+  face
+    vertices 128 129 116
+  endface
+  face
+    vertices 117 130 118
+  endface
+  face
+    vertices 130 131 118
+  endface
+  face
+    vertices 118 131 119
+  endface
+  face
+    vertices 131 132 119
+  endface
+  face
+    vertices 119 132 120
+  endface
+  face
+    vertices 132 133 120
+  endface
+  face
+    vertices 120 133 121
+  endface
+  face
+    vertices 133 134 121
+  endface
+  face
+    vertices 121 134 122
+  endface
+  face
+    vertices 134 135 122
+  endface
+  face
+    vertices 122 135 123
+  endface
+  face
+    vertices 135 136 123
+  endface
+  face
+    vertices 123 136 124
+  endface
+  face
+    vertices 136 137 124
+  endface
+  face
+    vertices 124 137 125
+  endface
+  face
+    vertices 137 138 125
+  endface
+  face
+    vertices 125 138 126
+  endface
+  face
+    vertices 138 139 126
+  endface
+  face
+    vertices 126 139 127
+  endface
+  face
+    vertices 139 140 127
+  endface
+  face
+    vertices 127 140 128
+  endface
+  face
+    vertices 140 141 128
+  endface
+  face
+    vertices 128 141 129
+  endface
+  face
+    vertices 141 142 129
+  endface
+end
+meshbox
+  shift 85 260 0
+  size 40.0 40.0 50.0
+  rotation 135.0
+  color slategray4
+end
+meshbox
+  shift 125 290 0
+  size 20.0 20.0 40.0
+  rotation 135.0
+  color slategray3
+end
+physics
+  name jumpbox1
+  linear -25.0 0.0 46.0
+end
+material
+ name jumpbox_material
+ color 0.68 1 0.18 0.8
+end
+meshbox
+  shift 95.0 -324.0 0.0
+  phydrv jumpbox1
+  size 15 15 5
+  rotation 90.0
+  angle 360
+  ratio 1
+  divisions 4
+  spin 0 0 0 0
+  shift 0 0 0
+  flatshading
+  matref jumpbox_material
+end
+ 
+####### File Information #######
+#  Total number of objects: 452
+#  Number of boxes: 372
+#  Number of pyramids: 54
+#  Number of teleporters: 3
+#  Number of links: 6
+#  Number of comments (not including these File Information comments): 3
+ 
+box
+  position -400.0 400.0 0.0
+  rotation 0.0
+  size     4.0 4.0 12.0
+end
+box
+  position 50.0 -400.0 0.0
+  rotation 0.0
+  size     4.0 4.0 12.0
+end
+box
+  position 420.0 -180.0 0.0
+  rotation 0.0
+  size     4.0 4.0 12.0
+end
+box
+  position 0.0 0.0 0.0
+  rotation 0.0
+  size     8.0 8.0 12.0
+end
+box
+  position -200.0 -20.0 40.0
+  rotation 0.0
+  size     30.0 20.0 15.0
+end
+box
+  position -200.0 -60.0 0.0
+  rotation 0.0
+  size     15.0 15.0 45.0
+end
+box
+  position -220.0 -90.0 0.0
+  rotation 0.0
+  size     15.0 15.0 35.0
+end
+box
+  position -250.0 -110.0 0.0
+  rotation 0.0
+  size     15.0 15.0 20.0
+end
+box
+  position -290.0 -120.0 0.0
+  rotation 0.0
+  size     15.0 15.0 15.0
+end
+box
+  position 300.0 -350.0 10.0
+  rotation 0.0
+  size     42.5 67.5 3.0
+end
+box
+  position 142.5 150.0 40.0
+  rotation -62.4
+  size     110.0 10.0 2.0
+end
+box
+  position 100.4 252.12 40.0
+  rotation -62.4
+  size     6.0 2.0 6.0
+end
+box
+  position 82.68 242.85 40.0
+  rotation -62.4
+  size     6.0 2.0 6.0
+end
+box
+  position 117.39 219.62 40.0
+  rotation -62.4
+  size     6.0 2.0 6.0
+end
+box
+  position 99.67 210.36 40.0
+  rotation -62.4
+  size     6.0 2.0 6.0
+end
+box
+  position 134.38 187.13 40.0
+  rotation -62.4
+  size     6.0 2.0 6.0
+end
+box
+  position 116.65 177.86 40.0
+  rotation -62.4
+  size     6.0 2.0 6.0
+end
+box
+  position 151.36 154.63 40.0
+  rotation -62.4
+  size     6.0 2.0 6.0
+end
+box
+  position 133.64 145.37 40.0
+  rotation -62.4
+  size     6.0 2.0 6.0
+end
+box
+  position 168.35 122.14 40.0
+  rotation -62.4
+  size     6.0 2.0 6.0
+end
+box
+  position 150.62 112.87 40.0
+  rotation -62.4
+  size     6.0 2.0 6.0
+end
+box
+  position 185.33 89.64 40.0
+  rotation -62.4
+  size     6.0 2.0 6.0
+end
+box
+  position 167.61 80.38 40.0
+  rotation -62.4
+  size     6.0 2.0 6.0
+end
+box
+  position 202.32 57.15 40.0
+  rotation -62.4
+  size     6.0 2.0 6.0
+end
+box
+  position 184.6 47.88 40.0
+  rotation -62.4
+  size     6.0 2.0 6.0
+end
+box
+  position 200.0 40.0 0.0
+  rotation 0.0
+  size     30.0 20.0 42.0
+end
+box
+  position 85.0 260.0 0.0
+  rotation 0.0
+  size     20.0 20.0 60.0
+end
+teleporter
+  position 85.0 260.0 60.0
+  rotation 0.0
+  border 1.0
+  size 0.45 8.0 8.0
+end
+box
+  position -440.0 440.0 0.0
+  rotation 0.0
+  size     10.0 10.0 10.0
+end
+teleporter
+  position -440.0 440.0 10.0
+  rotation 45.0
+  border 1.0
+  size 0.45 8.0 8.0
+end
+box
+  position -428.12 411.88 20.67
+  rotation 225.0
+  size     0.01 5.0 1.0
+end
+box
+  position -411.88 428.12 20.67
+  rotation 225.0
+  size     0.01 5.0 1.0
+end
+box
+  position -428.1 411.9 21.34
+  rotation 225.0
+  size     0.04 5.0 1.0
+end
+box
+  position -411.9 428.1 21.34
+  rotation 225.0
+  size     0.04 5.0 1.0
+end
+box
+  position -428.07 411.93 22.0
+  rotation 225.0
+  size     0.09 5.0 1.0
+end
+box
+  position -411.93 428.07 22.0
+  rotation 225.0
+  size     0.09 5.0 1.0
+end
+box
+  position -428.02 411.98 22.65
+  rotation 225.0
+  size     0.15 5.0 1.0
+end
+box
+  position -411.98 428.02 22.65
+  rotation 225.0
+  size     0.15 5.0 1.0
+end
+box
+  position -427.96 412.04 23.3
+  rotation 225.0
+  size     0.24 5.0 1.0
+end
+box
+  position -412.04 427.96 23.3
+  rotation 225.0
+  size     0.24 5.0 1.0
+end
+box
+  position -427.89 412.11 23.93
+  rotation 225.0
+  size     0.35 5.0 1.0
+end
+box
+  position -412.11 427.89 23.93
+  rotation 225.0
+  size     0.35 5.0 1.0
+end
+box
+  position -427.8 412.2 24.55
+  rotation 225.0
+  size     0.47 5.0 1.0
+end
+box
+  position -412.2 427.8 24.55
+  rotation 225.0
+  size     0.47 5.0 1.0
+end
+box
+  position -427.7 412.3 25.16
+  rotation 225.0
+  size     0.61 5.0 1.0
+end
+box
+  position -412.3 427.7 25.16
+  rotation 225.0
+  size     0.61 5.0 1.0
+end
+box
+  position -427.59 412.41 25.75
+  rotation 225.0
+  size     0.77 5.0 1.0
+end
+box
+  position -412.41 427.59 25.75
+  rotation 225.0
+  size     0.77 5.0 1.0
+end
+box
+  position -427.46 412.54 26.32
+  rotation 225.0
+  size     0.95 5.0 1.0
+end
+box
+  position -412.54 427.46 26.32
+  rotation 225.0
+  size     0.95 5.0 1.0
+end
+box
+  position -427.33 412.67 26.87
+  rotation 225.0
+  size     1.14 5.0 1.0
+end
+box
+  position -412.67 427.33 26.87
+  rotation 225.0
+  size     1.14 5.0 1.0
+end
+box
+  position -427.18 412.82 27.39
+  rotation 225.0
+  size     1.35 5.0 1.0
+end
+box
+  position -412.82 427.18 27.39
+  rotation 225.0
+  size     1.35 5.0 1.0
+end
+box
+  position -427.02 412.98 27.89
+  rotation 225.0
+  size     1.57 5.0 1.0
+end
+box
+  position -412.98 427.02 27.89
+  rotation 225.0
+  size     1.57 5.0 1.0
+end
+box
+  position -426.86 413.14 28.36
+  rotation 225.0
+  size     1.8 5.0 1.0
+end
+box
+  position -413.14 426.86 28.36
+  rotation 225.0
+  size     1.8 5.0 1.0
+end
+box
+  position -426.68 413.32 28.81
+  rotation 225.0
+  size     2.05 5.0 1.0
+end
+box
+  position -413.32 426.68 28.81
+  rotation 225.0
+  size     2.05 5.0 1.0
+end
+box
+  position -426.49 413.51 29.22
+  rotation 225.0
+  size     2.32 5.0 1.0
+end
+box
+  position -413.51 426.49 29.22
+  rotation 225.0
+  size     2.32 5.0 1.0
+end
+box
+  position -426.3 413.7 29.61
+  rotation 225.0
+  size     2.59 5.0 1.0
+end
+box
+  position -413.7 426.3 29.61
+  rotation 225.0
+  size     2.59 5.0 1.0
+end
+box
+  position -426.1 413.9 29.96
+  rotation 225.0
+  size     2.87 5.0 1.0
+end
+box
+  position -413.9 426.1 29.96
+  rotation 225.0
+  size     2.87 5.0 1.0
+end
+box
+  position -425.89 414.11 30.28
+  rotation 225.0
+  size     3.17 5.0 1.0
+end
+box
+  position -414.11 425.89 30.28
+  rotation 225.0
+  size     3.17 5.0 1.0
+end
+box
+  position -425.68 414.32 30.56
+  rotation 225.0
+  size     3.47 5.0 1.0
+end
+box
+  position -414.32 425.68 30.56
+  rotation 225.0
+  size     3.47 5.0 1.0
+end
+box
+  position -425.46 414.54 30.81
+  rotation 225.0
+  size     3.78 5.0 1.0
+end
+box
+  position -414.54 425.46 30.81
+  rotation 225.0
+  size     3.78 5.0 1.0
+end
+box
+  position -425.23 414.77 31.02
+  rotation 225.0
+  size     4.1 5.0 1.0
+end
+box
+  position -414.77 425.23 31.02
+  rotation 225.0
+  size     4.1 5.0 1.0
+end
+box
+  position -425.0 415.0 31.19
+  rotation 225.0
+  size     4.42 5.0 1.0
+end
+box
+  position -415.0 425.0 31.19
+  rotation 225.0
+  size     4.42 5.0 1.0
+end
+box
+  position -424.77 415.23 31.33
+  rotation 225.0
+  size     4.75 5.0 1.0
+end
+box
+  position -415.23 424.77 31.33
+  rotation 225.0
+  size     4.75 5.0 1.0
+end
+box
+  position -424.54 415.46 31.42
+  rotation 225.0
+  size     5.08 5.0 1.0
+end
+box
+  position -415.46 424.54 31.42
+  rotation 225.0
+  size     5.08 5.0 1.0
+end
+box
+  position -424.3 415.7 31.48
+  rotation 225.0
+  size     5.42 5.0 1.0
+end
+box
+  position -415.7 424.3 31.48
+  rotation 225.0
+  size     5.42 5.0 1.0
+end
+box
+  position -424.07 415.93 31.5
+  rotation 225.0
+  size     5.75 5.0 1.0
+end
+box
+  position -415.93 424.07 31.5
+  rotation 225.0
+  size     5.75 5.0 1.0
+end
+box
+  position -423.83 416.17 31.48
+  rotation 225.0
+  size     6.08 5.0 1.0
+end
+box
+  position -416.17 423.83 31.48
+  rotation 225.0
+  size     6.08 5.0 1.0
+end
+box
+  position -423.59 416.41 31.42
+  rotation 225.0
+  size     6.42 5.0 1.0
+end
+box
+  position -416.41 423.59 31.42
+  rotation 225.0
+  size     6.42 5.0 1.0
+end
+box
+  position -423.36 416.64 31.33
+  rotation 225.0
+  size     6.75 5.0 1.0
+end
+box
+  position -416.64 423.36 31.33
+  rotation 225.0
+  size     6.75 5.0 1.0
+end
+box
+  position -434.85 405.15 0.0
+  rotation 225.0
+  size     10.0 5.0 40.0
+end
+box
+  position -405.15 434.85 0.0
+  rotation 225.0
+  size     10.0 5.0 40.0
+end
+box
+  position -420.0 420.0 31.5
+  rotation 225.0
+  size     12.0 5.0 8.5
+end
+box
+  position -411.51 428.49 18.0
+  rotation 270.0
+  size     0.1 0.1 18.0
+end
+pyramid
+  position -411.51 428.49 17.0
+  rotation 270.0
+  size     0.27 0.27 -1.9
+end
+box
+  position -412.93 427.07 18.0
+  rotation 270.0
+  size     0.1 0.1 18.0
+end
+pyramid
+  position -412.93 427.07 17.0
+  rotation 270.0
+  size     0.27 0.27 -1.9
+end
+box
+  position -414.34 425.66 18.0
+  rotation 270.0
+  size     0.1 0.1 18.0
+end
+pyramid
+  position -414.34 425.66 17.0
+  rotation 270.0
+  size     0.27 0.27 -1.9
+end
+box
+  position -415.76 424.24 18.0
+  rotation 270.0
+  size     0.1 0.1 18.0
+end
+pyramid
+  position -415.76 424.24 17.0
+  rotation 270.0
+  size     0.27 0.27 -1.9
+end
+box
+  position -417.17 422.83 18.0
+  rotation 270.0
+  size     0.1 0.1 18.0
+end
+pyramid
+  position -417.17 422.83 17.0
+  rotation 270.0
+  size     0.27 0.27 -1.9
+end
+box
+  position -418.59 421.41 18.0
+  rotation 270.0
+  size     0.1 0.1 18.0
+end
+pyramid
+  position -418.59 421.41 17.0
+  rotation 270.0
+  size     0.27 0.27 -1.9
+end
+box
+  position -420.0 420.0 18.0
+  rotation 270.0
+  size     0.1 0.1 18.0
+end
+pyramid
+  position -420.0 420.0 17.0
+  rotation 270.0
+  size     0.27 0.27 -1.9
+end
+box
+  position -421.41 418.59 18.0
+  rotation 270.0
+  size     0.1 0.1 18.0
+end
+pyramid
+  position -421.41 418.59 17.0
+  rotation 270.0
+  size     0.27 0.27 -1.9
+end
+box
+  position -422.83 417.17 18.0
+  rotation 270.0
+  size     0.1 0.1 18.0
+end
+pyramid
+  position -422.83 417.17 17.0
+  rotation 270.0
+  size     0.27 0.27 -1.9
+end
+box
+  position -424.24 415.76 18.0
+  rotation 270.0
+  size     0.1 0.1 18.0
+end
+pyramid
+  position -424.24 415.76 17.0
+  rotation 270.0
+  size     0.27 0.27 -1.9
+end
+box
+  position -425.66 414.34 18.0
+  rotation 270.0
+  size     0.1 0.1 18.0
+end
+pyramid
+  position -425.66 414.34 17.0
+  rotation 270.0
+  size     0.27 0.27 -1.9
+end
+box
+  position -427.07 412.93 18.0
+  rotation 270.0
+  size     0.1 0.1 18.0
+end
+pyramid
+  position -427.07 412.93 17.0
+  rotation 270.0
+  size     0.27 0.27 -1.9
+end
+box
+  position -428.49 411.51 18.0
+  rotation 270.0
+  size     0.1 0.1 18.0
+end
+pyramid
+  position -428.49 411.51 17.0
+  rotation 270.0
+  size     0.27 0.27 -1.9
+end
+box
+  position -420.0 420.0 20.0
+  rotation 225.0
+  size     11.5 0.1 0.1
+end
+box
+  position -420.0 420.0 22.0
+  rotation 225.0
+  size     11.5 0.1 0.1
+end
+box
+  position -420.0 420.0 24.0
+  rotation 225.0
+  size     11.5 0.1 0.1
+end
+box
+  position -420.0 420.0 26.0
+  rotation 225.0
+  size     11.5 0.1 0.1
+end
+box
+  position -420.0 420.0 28.0
+  rotation 225.0
+  size     11.5 0.1 0.1
+end
+box
+  position -420.0 420.0 30.0
+  rotation 225.0
+  size     11.5 0.1 0.1
+end
+box
+  position -420.0 420.0 32.0
+  rotation 225.0
+  size     11.5 0.1 0.1
+end
+box
+  position -420.0 420.0 34.0
+  rotation 225.0
+  size     11.5 0.1 0.1
+end
+box
+  position -420.0 420.0 36.0
+  rotation 225.0
+  size     11.5 0.1 0.1
+end
+box
+  position -427.07 427.07 24.0
+  rotation 225.0
+  size     8.0 10.0 0.1
+end
+box
+  position -462.43 405.86 0.0
+  rotation 360.0
+  size     18.0 6.5 20.0
+end
+box
+  position -405.86 462.43 0.0
+  rotation 270.0
+  size     18.0 6.5 20.0
+end
+box
+  position -409.39 487.18 13.0
+  rotation 225.0
+  size     15.0 15.0 2.0
+end
+pyramid
+  position -409.39 487.18 15.0
+  rotation 225.0
+  size     15.0 15.0 57.0
+  DriveThrough
+end
+pyramid
+  position -409.39 487.18 0.0
+  rotation 225.0
+  size     20.0 20.0 40.0
+  DriveThrough
+end
+box
+  position -487.18 409.39 13.0
+  rotation 225.0
+  size     15.0 15.0 2.0
+end
+pyramid
+  position -487.18 409.39 15.0
+  rotation 225.0
+  size     15.0 15.0 57.0
+  DriveThrough
+end
+pyramid
+  position -487.18 409.39 0.0
+  rotation 225.0
+  size     20.0 20.0 40.0
+  DriveThrough
+end
+box
+  position -200.0 -200.0 0.0
+  rotation 0.0
+  size     68.0 68.0 15.0
+end
+box
+  position -170.0 -170.0 15.0
+  rotation 0.0
+  size     24.0 24.0 15.0
+end
+box
+  position -170.0 -230.0 15.0
+  rotation 0.0
+  size     24.0 24.0 15.0
+end
+box
+  position -230.0 -170.0 15.0
+  rotation 0.0
+  size     24.0 24.0 15.0
+end
+box
+  position -230.0 -230.0 15.0
+  rotation 0.0
+  size     24.0 24.0 15.0
+end
+box
+  position -200.0 -200.0 28.0
+  rotation 0.0
+  size     54.0 54.0 2.0
+end
+box
+  position -169.5 -169.5 30.0
+  rotation 0.0
+  size     8.5 8.5 15.0
+end
+box
+  position -169.5 -230.5 30.0
+  rotation 0.0
+  size     8.5 8.5 15.0
+end
+box
+  position -230.5 -169.5 30.0
+  rotation 0.0
+  size     8.5 8.5 15.0
+end
+box
+  position -230.5 -230.5 30.0
+  rotation 0.0
+  size     8.5 8.5 15.0
+end
+box
+  position -230.5 -200.0 30.0
+  rotation 0.0
+  size     8.5 8.5 15.0
+end
+box
+  position -169.5 -200.0 30.0
+  rotation 0.0
+  size     8.5 8.5 15.0
+end
+box
+  position -200.0 -169.5 30.0
+  rotation 0.0
+  size     8.5 8.5 15.0
+end
+box
+  position -200.0 -230.5 30.0
+  rotation 0.0
+  size     8.5 8.5 15.0
+end
+box
+  position -200.0 -200.0 43.0
+  rotation 0.0
+  size     39.0 39.0 2.0
+end
+box
+  position -182.0 -182.0 45.0
+  rotation 0.0
+  size     9.0 9.0 15.0
+end
+box
+  position -182.0 -218.0 45.0
+  rotation 0.0
+  size     9.0 9.0 15.0
+end
+box
+  position -218.0 -182.0 45.0
+  rotation 0.0
+  size     9.0 9.0 15.0
+end
+box
+  position -218.0 -218.0 45.0
+  rotation 0.0
+  size     9.0 9.0 15.0
+end
+box
+  position -200.0 -200.0 58.0
+  rotation 0.0
+  size     27.0 27.0 2.0
+end
+box
+  position -200.0 -200.0 60.0
+  rotation 0.0
+  size     16.0 16.0 15.0
+end
+pyramid
+  position -200.0 -200.0 75.0
+  rotation 0.0
+  size     16.0 16.0 20.0
+  ShootThrough
+  DriveThrough
+end
+box
+  position -70.0 -200.0 13.0
+  rotation 0.0
+  size     70.0 4.0 2.0
+end
+box
+  position -195.0 -79.0 0.0
+  rotation 0.0
+  size     15.0 17.0 45.0
+end
+box
+  position -195.0 -140.0 43.0
+  rotation 0.0
+  size     6.0 60.0 2.0
+end
+box
+  position -190.0 -125.0 43.0
+  rotation 0.0
+  size     1.0 33.0 6.0
+end
+box
+  position -200.0 -125.0 43.0
+  rotation 0.0
+  size     1.0 33.0 6.0
+end
+pyramid
+  position -202.0 -92.5 45.0
+  rotation 0.0
+  size     3.0 3.0 20.0
+end
+pyramid
+  position -188.0 -92.5 45.0
+  rotation 0.0
+  size     3.0 3.0 20.0
+end
+pyramid
+  position -202.0 -157.5 45.0
+  rotation 0.0
+  size     3.0 3.0 20.0
+end
+pyramid
+  position -188.0 -157.5 45.0
+  rotation 0.0
+  size     3.0 3.0 20.0
+end
+box
+  position -85.0 -200.0 0.0
+  rotation 0.0
+  size     2.0 2.0 13.0
+end
+pyramid
+  position -85.0 -200.0 3.0
+  rotation 0.0
+  size     4.0 4.0 -10.0
+end
+box
+  position -325.0 -77.0 0.0
+  rotation 0.0
+  size     25.0 25.0 30.0
+end
+box
+  position -332.0 -70.0 30.0
+  rotation 0.0
+  size     12.0 12.0 15.0
+end
+box
+  position -346.0 -56.0 0.0
+  rotation 0.0
+  size     16.0 16.0 15.0
+end
+box
+  position -280.0 -120.0 28.0
+  rotation 135.0
+  size     42.0 6.0 2.0
+end
+box
+  position -274.0 -118.0 28.0
+  rotation 135.0
+  size     40.0 1.0 6.0
+end
+box
+  position -282.0 -126.0 28.0
+  rotation 135.0
+  size     40.0 1.0 6.0
+end
+pyramid
+  position -302.5 -87.5 30.0
+  rotation 135.0
+  size     3.0 3.0 20.0
+end
+pyramid
+  position -312.5 -98.0 30.0
+  rotation 135.0
+  size     3.0 3.0 20.0
+end
+pyramid
+  position -245.0 -145.0 30.0
+  rotation 135.0
+  size     3.0 3.0 20.0
+end
+box
+  position -245.0 -145.0 15.0
+  rotation 135.0
+  size     3.0 3.0 15.0
+end
+pyramid
+  position -255.5 -155.0 30.0
+  rotation 135.0
+  size     3.0 3.0 20.0
+end
+box
+  position -255.5 -155.0 15.0
+  rotation 135.0
+  size     3.0 3.0 15.0
+end
+pyramid
+  position -137.0 -90.0 0.0
+  rotation 0.0
+  size     10.0 10.0 20.0
+end
+pyramid
+  position -90.0 -137.0 0.0
+  rotation 0.0
+  size     10.0 10.0 20.0
+end
+box
+  position -156.0 -60.0 0.0
+  rotation 0.0
+  size     15.0 10.0 15.0
+end
+box
+  position -156.0 -55.0 15.0
+  rotation 0.0
+  size     8.0 8.0 15.0
+end
+box
+  position -325.0 -200.0 0.0
+  rotation 0.0
+  size     20.0 30.0 15.0
+end
+box
+  position -325.0 -200.0 15.0
+  rotation 0.0
+  size     10.0 15.0 15.0
+end
+pyramid
+  position -345.0 -230.0 0.0
+  rotation 0.0
+  size     4.0 4.0 50.0
+end
+pyramid
+  position -345.0 -170.0 0.0
+  rotation 0.0
+  size     4.0 4.0 50.0
+end
+pyramid
+  position -305.0 -230.0 0.0
+  rotation 0.0
+  size     4.0 4.0 50.0
+end
+pyramid
+  position -305.0 -170.0 0.0
+  rotation 0.0
+  size     4.0 4.0 50.0
+end
+pyramid
+  position -335.0 -215.0 15.0
+  rotation 0.0
+  size     4.0 4.0 50.0
+end
+pyramid
+  position -335.0 -185.0 15.0
+  rotation 0.0
+  size     4.0 4.0 50.0
+end
+pyramid
+  position -315.0 -215.0 15.0
+  rotation 0.0
+  size     4.0 4.0 50.0
+end
+pyramid
+  position -315.0 -185.0 15.0
+  rotation 0.0
+  size     4.0 4.0 50.0
+end
+box
+  position -283.0 -199.0 13.0
+  rotation -90.0
+  size     5.0 30.0 2.0
+end
+box
+  position -50.0 -305.0 0.0
+  rotation 270.0
+  size     55.0 2.0 20.0
+end
+box
+  position -50.0 -305.0 0.0
+  rotation 270.0
+  size     8.0 8.0 26.0
+end
+box
+  position -43.6 -313.0 26.0
+  rotation 270.0
+  size     0.3 0.8 1.6
+end
+box
+  position -43.6 -297.0 26.0
+  rotation 270.0
+  size     0.3 0.8 1.6
+end
+box
+  position -42.0 -311.4 26.0
+  rotation 360.0
+  size     0.3 0.8 1.6
+end
+box
+  position -58.0 -311.4 26.0
+  rotation 360.0
+  size     0.3 0.8 1.6
+end
+box
+  position -46.8 -313.0 26.0
+  rotation 270.0
+  size     0.3 0.8 1.6
+end
+box
+  position -46.8 -297.0 26.0
+  rotation 270.0
+  size     0.3 0.8 1.6
+end
+box
+  position -42.0 -308.2 26.0
+  rotation 360.0
+  size     0.3 0.8 1.6
+end
+box
+  position -58.0 -308.2 26.0
+  rotation 360.0
+  size     0.3 0.8 1.6
+end
+box
+  position -50.0 -313.0 26.0
+  rotation 270.0
+  size     0.3 0.8 1.6
+end
+box
+  position -50.0 -297.0 26.0
+  rotation 270.0
+  size     0.3 0.8 1.6
+end
+box
+  position -42.0 -305.0 26.0
+  rotation 360.0
+  size     0.3 0.8 1.6
+end
+box
+  position -58.0 -305.0 26.0
+  rotation 360.0
+  size     0.3 0.8 1.6
+end
+box
+  position -53.2 -313.0 26.0
+  rotation 270.0
+  size     0.3 0.8 1.6
+end
+box
+  position -53.2 -297.0 26.0
+  rotation 270.0
+  size     0.3 0.8 1.6
+end
+box
+  position -42.0 -301.8 26.0
+  rotation 360.0
+  size     0.3 0.8 1.6
+end
+box
+  position -58.0 -301.8 26.0
+  rotation 360.0
+  size     0.3 0.8 1.6
+end
+box
+  position -56.4 -313.0 26.0
+  rotation 270.0
+  size     0.3 0.8 1.6
+end
+box
+  position -56.4 -297.0 26.0
+  rotation 270.0
+  size     0.3 0.8 1.6
+end
+box
+  position -42.0 -298.6 26.0
+  rotation 360.0
+  size     0.3 0.8 1.6
+end
+box
+  position -58.0 -298.6 26.0
+  rotation 360.0
+  size     0.3 0.8 1.6
+end
+box
+  position -50.0 -360.0 0.0
+  rotation 270.0
+  size     8.0 8.0 26.0
+end
+box
+  position -43.6 -368.0 26.0
+  rotation 270.0
+  size     0.3 0.8 1.6
+end
+box
+  position -43.6 -352.0 26.0
+  rotation 270.0
+  size     0.3 0.8 1.6
+end
+box
+  position -42.0 -366.4 26.0
+  rotation 360.0
+  size     0.3 0.8 1.6
+end
+box
+  position -58.0 -366.4 26.0
+  rotation 360.0
+  size     0.3 0.8 1.6
+end
+box
+  position -46.8 -368.0 26.0
+  rotation 270.0
+  size     0.3 0.8 1.6
+end
+box
+  position -46.8 -352.0 26.0
+  rotation 270.0
+  size     0.3 0.8 1.6
+end
+box
+  position -42.0 -363.2 26.0
+  rotation 360.0
+  size     0.3 0.8 1.6
+end
+box
+  position -58.0 -363.2 26.0
+  rotation 360.0
+  size     0.3 0.8 1.6
+end
+box
+  position -50.0 -368.0 26.0
+  rotation 270.0
+  size     0.3 0.8 1.6
+end
+box
+  position -50.0 -352.0 26.0
+  rotation 270.0
+  size     0.3 0.8 1.6
+end
+box
+  position -42.0 -360.0 26.0
+  rotation 360.0
+  size     0.3 0.8 1.6
+end
+box
+  position -58.0 -360.0 26.0
+  rotation 360.0
+  size     0.3 0.8 1.6
+end
+box
+  position -53.2 -368.0 26.0
+  rotation 270.0
+  size     0.3 0.8 1.6
+end
+box
+  position -53.2 -352.0 26.0
+  rotation 270.0
+  size     0.3 0.8 1.6
+end
+box
+  position -42.0 -356.8 26.0
+  rotation 360.0
+  size     0.3 0.8 1.6
+end
+box
+  position -58.0 -356.8 26.0
+  rotation 360.0
+  size     0.3 0.8 1.6
+end
+box
+  position -56.4 -368.0 26.0
+  rotation 270.0
+  size     0.3 0.8 1.6
+end
+box
+  position -56.4 -352.0 26.0
+  rotation 270.0
+  size     0.3 0.8 1.6
+end
+box
+  position -42.0 -353.6 26.0
+  rotation 360.0
+  size     0.3 0.8 1.6
+end
+box
+  position -58.0 -353.6 26.0
+  rotation 360.0
+  size     0.3 0.8 1.6
+end
+box
+  position -48.0 -254.0 20.0
+  rotation 270.0
+  size     1.0 0.3 1.6
+end
+box
+  position -48.0 -258.0 20.0
+  rotation 270.0
+  size     1.0 0.3 1.6
+end
+box
+  position -48.0 -262.0 20.0
+  rotation 270.0
+  size     1.0 0.3 1.6
+end
+box
+  position -48.0 -266.0 20.0
+  rotation 270.0
+  size     1.0 0.3 1.6
+end
+box
+  position -48.0 -270.0 20.0
+  rotation 270.0
+  size     1.0 0.3 1.6
+end
+box
+  position -48.0 -274.0 20.0
+  rotation 270.0
+  size     1.0 0.3 1.6
+end
+box
+  position -48.0 -278.0 20.0
+  rotation 270.0
+  size     1.0 0.3 1.6
+end
+box
+  position -48.0 -282.0 20.0
+  rotation 270.0
+  size     1.0 0.3 1.6
+end
+box
+  position -48.0 -286.0 20.0
+  rotation 270.0
+  size     1.0 0.3 1.6
+end
+box
+  position -48.0 -290.0 20.0
+  rotation 270.0
+  size     1.0 0.3 1.6
+end
+box
+  position -48.0 -294.0 20.0
+  rotation 270.0
+  size     1.0 0.3 1.6
+end
+box
+  position -48.0 -298.0 20.0
+  rotation 270.0
+  size     1.0 0.3 1.6
+end
+box
+  position -48.0 -302.0 20.0
+  rotation 270.0
+  size     1.0 0.3 1.6
+end
+box
+  position -48.0 -306.0 20.0
+  rotation 270.0
+  size     1.0 0.3 1.6
+end
+box
+  position -48.0 -310.0 20.0
+  rotation 270.0
+  size     1.0 0.3 1.6
+end
+box
+  position -48.0 -314.0 20.0
+  rotation 270.0
+  size     1.0 0.3 1.6
+end
+box
+  position -48.0 -318.0 20.0
+  rotation 270.0
+  size     1.0 0.3 1.6
+end
+box
+  position -48.0 -322.0 20.0
+  rotation 270.0
+  size     1.0 0.3 1.6
+end
+box
+  position -48.0 -326.0 20.0
+  rotation 270.0
+  size     1.0 0.3 1.6
+end
+box
+  position -48.0 -330.0 20.0
+  rotation 270.0
+  size     1.0 0.3 1.6
+end
+box
+  position -48.0 -334.0 20.0
+  rotation 270.0
+  size     1.0 0.3 1.6
+end
+box
+  position -48.0 -338.0 20.0
+  rotation 270.0
+  size     1.0 0.3 1.6
+end
+box
+  position -48.0 -342.0 20.0
+  rotation 270.0
+  size     1.0 0.3 1.6
+end
+box
+  position -48.0 -346.0 20.0
+  rotation 270.0
+  size     1.0 0.3 1.6
+end
+box
+  position -48.0 -350.0 20.0
+  rotation 270.0
+  size     1.0 0.3 1.6
+end
+box
+  position -48.0 -354.0 20.0
+  rotation 270.0
+  size     1.0 0.3 1.6
+end
+box
+  position -50.0 -246.0 0.0
+  rotation 90.0
+  size     4.0 2.0 17.44
+end
+box
+  position -50.0 -242.0 0.0
+  rotation 90.0
+  size     4.0 2.0 18.25
+end
+box
+  position -50.0 -238.0 0.0
+  rotation 90.0
+  size     4.0 2.0 17.82
+end
+box
+  position -50.0 -234.0 0.0
+  rotation 90.0
+  size     4.0 2.0 14.88
+end
+box
+  position -50.0 -230.0 0.0
+  rotation 90.0
+  size     4.0 2.0 14.04
+end
+box
+  position -50.0 -226.0 0.0
+  rotation 90.0
+  size     4.0 2.0 15.2
+end
+box
+  position -50.0 -222.0 0.0
+  rotation 90.0
+  size     4.0 2.0 14.66
+end
+box
+  position -50.0 -218.0 0.0
+  rotation 90.0
+  size     4.0 2.0 12.92
+end
+box
+  position -41.36 -218.0 0.0
+  rotation 217.4
+  size     2.0 4.0 2.0
+end
+box
+  position -50.0 -214.0 0.0
+  rotation 90.0
+  size     4.0 2.0 12.84
+end
+box
+  position -50.0 -210.0 0.0
+  rotation 90.0
+  size     4.0 2.0 10.47
+end
+box
+  position -45.7 -210.0 0.0
+  rotation 115.16
+  size     2.0 4.0 2.0
+end
+box
+  position -50.0 -206.0 0.0
+  rotation 90.0
+  size     4.0 2.0 11.14
+end
+box
+  position -50.0 -202.0 0.0
+  rotation 90.0
+  size     4.0 2.0 9.21
+end
+box
+  position -50.0 -198.0 0.0
+  rotation 90.0
+  size     4.0 2.0 9.12
+end
+box
+  position -50.0 -194.0 0.0
+  rotation 90.0
+  size     4.0 2.0 8.66
+end
+box
+  position -54.97 -194.0 0.0
+  rotation 169.87
+  size     2.0 4.0 2.0
+end
+box
+  position -50.0 -190.0 0.0
+  rotation 90.0
+  size     4.0 2.0 7.68
+end
+box
+  position -54.55 -190.0 0.0
+  rotation 263.92
+  size     2.0 4.0 2.0
+end
+box
+  position -50.0 -186.0 0.0
+  rotation 90.0
+  size     4.0 2.0 7.29
+end
+box
+  position -50.0 -182.0 0.0
+  rotation 90.0
+  size     4.0 2.0 6.52
+end
+box
+  position -50.0 -178.0 0.0
+  rotation 90.0
+  size     4.0 2.0 5.17
+end
+box
+  position -50.0 -174.0 0.0
+  rotation 90.0
+  size     4.0 2.0 4.27
+end
+box
+  position -50.0 -170.0 0.0
+  rotation 90.0
+  size     4.0 2.0 3.89
+end
+box
+  position -50.0 -166.0 0.0
+  rotation 90.0
+  size     4.0 2.0 2.99
+end
+box
+  position -50.0 -162.0 0.0
+  rotation 90.0
+  size     4.0 2.0 2.49
+end
+box
+  position -50.0 -158.0 0.0
+  rotation 90.0
+  size     4.0 2.0 1.39
+end
+box
+  position -50.0 -154.0 0.0
+  rotation 90.0
+  size     4.0 2.0 0.77
+end
+box
+  position -40.22 -154.0 0.0
+  rotation 155.07
+  size     2.0 4.0 2.0
+end
+box
+  position -50.0 -150.0 0.0
+  rotation 90.0
+  size     4.0 2.0 0.0
+end
+box
+  position -50.0 -390.0 0.0
+  rotation 0.0
+  size     8.0 8.0 26.0
+end
+box
+  position -42.0 -383.6 26.0
+  rotation 0.0
+  size     0.3 0.8 1.6
+end
+box
+  position -58.0 -383.6 26.0
+  rotation 0.0
+  size     0.3 0.8 1.6
+end
+box
+  position -43.6 -382.0 26.0
+  rotation 90.0
+  size     0.3 0.8 1.6
+end
+box
+  position -43.6 -398.0 26.0
+  rotation 90.0
+  size     0.3 0.8 1.6
+end
+box
+  position -42.0 -386.8 26.0
+  rotation 0.0
+  size     0.3 0.8 1.6
+end
+box
+  position -58.0 -386.8 26.0
+  rotation 0.0
+  size     0.3 0.8 1.6
+end
+box
+  position -46.8 -382.0 26.0
+  rotation 90.0
+  size     0.3 0.8 1.6
+end
+box
+  position -46.8 -398.0 26.0
+  rotation 90.0
+  size     0.3 0.8 1.6
+end
+box
+  position -42.0 -390.0 26.0
+  rotation 0.0
+  size     0.3 0.8 1.6
+end
+box
+  position -58.0 -390.0 26.0
+  rotation 0.0
+  size     0.3 0.8 1.6
+end
+box
+  position -50.0 -382.0 26.0
+  rotation 90.0
+  size     0.3 0.8 1.6
+end
+box
+  position -50.0 -398.0 26.0
+  rotation 90.0
+  size     0.3 0.8 1.6
+end
+box
+  position -42.0 -393.2 26.0
+  rotation 0.0
+  size     0.3 0.8 1.6
+end
+box
+  position -58.0 -393.2 26.0
+  rotation 0.0
+  size     0.3 0.8 1.6
+end
+box
+  position -53.2 -382.0 26.0
+  rotation 90.0
+  size     0.3 0.8 1.6
+end
+box
+  position -53.2 -398.0 26.0
+  rotation 90.0
+  size     0.3 0.8 1.6
+end
+box
+  position -42.0 -396.4 26.0
+  rotation 0.0
+  size     0.3 0.8 1.6
+end
+box
+  position -58.0 -396.4 26.0
+  rotation 0.0
+  size     0.3 0.8 1.6
+end
+box
+  position -56.4 -382.0 26.0
+  rotation 90.0
+  size     0.3 0.8 1.6
+end
+box
+  position -56.4 -398.0 26.0
+  rotation 90.0
+  size     0.3 0.8 1.6
+end
+box
+  position -50.0 -375.0 17.0
+  rotation 0.0
+  size     3.0 15.0 5.0
+end
+box
+  position -50.0 -394.0 0.0
+  rotation 270.0
+  size     4.0 2.0 17.28
+end
+box
+  position -57.73 -394.0 0.0
+  rotation 287.86
+  size     2.0 4.0 2.0
+end
+box
+  position -50.0 -398.0 0.0
+  rotation 270.0
+  size     4.0 2.0 15.34
+end
+box
+  position -45.49 -398.0 0.0
+  rotation 368.25
+  size     2.0 4.0 2.0
+end
+box
+  position -50.0 -402.0 0.0
+  rotation 270.0
+  size     4.0 2.0 15.43
+end
+box
+  position -50.0 -406.0 0.0
+  rotation 270.0
+  size     4.0 2.0 12.56
+end
+box
+  position -50.0 -410.0 0.0
+  rotation 270.0
+  size     4.0 2.0 13.78
+end
+box
+  position -50.0 -414.0 0.0
+  rotation 270.0
+  size     4.0 2.0 12.12
+end
+box
+  position -50.0 -418.0 0.0
+  rotation 270.0
+  size     4.0 2.0 10.24
+end
+box
+  position -45.57 -418.0 0.0
+  rotation 413.88
+  size     2.0 4.0 2.0
+end
+box
+  position -50.0 -422.0 0.0
+  rotation 270.0
+  size     4.0 2.0 8.2
+end
+box
+  position -50.0 -426.0 0.0
+  rotation 270.0
+  size     4.0 2.0 8.25
+end
+box
+  position -50.0 -430.0 0.0
+  rotation 270.0
+  size     4.0 2.0 6.13
+end
+box
+  position -57.04 -430.0 0.0
+  rotation 340.93
+  size     2.0 4.0 2.0
+end
+box
+  position -50.0 -434.0 0.0
+  rotation 270.0
+  size     4.0 2.0 5.39
+end
+box
+  position -50.0 -438.0 0.0
+  rotation 270.0
+  size     4.0 2.0 3.52
+end
+box
+  position -50.0 -442.0 0.0
+  rotation 270.0
+  size     4.0 2.0 2.69
+end
+box
+  position -45.74 -442.0 0.0
+  rotation 294.55
+  size     2.0 4.0 2.0
+end
+box
+  position -50.0 -446.0 0.0
+  rotation 270.0
+  size     4.0 2.0 1.29
+end
+box
+  position -50.0 -450.0 0.0
+  rotation 270.0
+  size     4.0 2.0 0.0
+end
+box
+  position -50.0 -495.83 0.0
+  rotation 90.0
+  size     4.17 2.0 17.52
+end
+box
+  position -50.0 -491.67 0.0
+  rotation 90.0
+  size     4.17 2.0 15.96
+end
+box
+  position -50.0 -487.5 0.0
+  rotation 90.0
+  size     4.17 2.0 13.06
+end
+box
+  position -50.0 -483.33 0.0
+  rotation 90.0
+  size     4.17 2.0 11.54
+end
+box
+  position -50.0 -479.17 0.0
+  rotation 90.0
+  size     4.17 2.0 10.14
+end
+box
+  position -50.0 -475.0 0.0
+  rotation 90.0
+  size     4.17 2.0 9.98
+end
+box
+  position -55.01 -475.0 0.0
+  rotation 248.3
+  size     2.0 4.17 2.0
+end
+box
+  position -50.0 -470.83 0.0
+  rotation 90.0
+  size     4.17 2.0 7.77
+end
+box
+  position -50.0 -466.67 0.0
+  rotation 90.0
+  size     4.17 2.0 6.35
+end
+box
+  position -50.0 -462.5 0.0
+  rotation 90.0
+  size     4.17 2.0 4.78
+end
+box
+  position -50.0 -458.33 0.0
+  rotation 90.0
+  size     4.17 2.0 3.31
+end
+box
+  position -50.0 -454.17 0.0
+  rotation 90.0
+  size     4.17 2.0 1.65
+end
+box
+  position -56.08 -454.17 0.0
+  rotation 241.75
+  size     2.0 4.17 2.0
+end
+box
+  position -50.0 -450.0 0.0
+  rotation 90.0
+  size     4.17 2.0 0.0
+end
+box
+  position -252.0 -345.0 12.0
+  rotation 0.0
+  size     30.0 30.0 2.0
+end
+box
+  position -252.0 -345.0 24.0
+  rotation 0.0
+  size     20.0 20.0 2.0
+end
+box
+  position -252.0 -345.0 36.0
+  rotation 0.0
+  size     10.0 10.0 2.0
+end
+box
+  position -282.0 -375.0 0.0
+  rotation 0.0
+  size     4.0 4.0 16.0
+end
+box
+  position -282.0 -315.0 0.0
+  rotation 0.0
+  size     4.0 4.0 16.0
+end
+box
+  position -222.0 -375.0 0.0
+  rotation 0.0
+  size     4.0 4.0 16.0
+end
+box
+  position -222.0 -315.0 0.0
+  rotation 0.0
+  size     4.0 4.0 16.0
+end
+box
+  position -272.0 -365.0 12.0
+  rotation 0.0
+  size     4.0 4.0 16.0
+end
+box
+  position -272.0 -325.0 12.0
+  rotation 0.0
+  size     4.0 4.0 16.0
+end
+box
+  position -232.0 -365.0 12.0
+  rotation 0.0
+  size     4.0 4.0 16.0
+end
+box
+  position -232.0 -325.0 12.0
+  rotation 0.0
+  size     4.0 4.0 16.0
+end
+box
+  position -262.0 -355.0 24.0
+  rotation 0.0
+  size     4.0 4.0 16.0
+end
+box
+  position -262.0 -335.0 24.0
+  rotation 0.0
+  size     4.0 4.0 16.0
+end
+box
+  position -242.0 -355.0 24.0
+  rotation 0.0
+  size     4.0 4.0 16.0
+end
+box
+  position -242.0 -335.0 24.0
+  rotation 0.0
+  size     4.0 4.0 16.0
+end
+box
+  position -235.0 -290.0 12.0
+  rotation 0.0
+  size     5.0 30.0 2.0
+end
+box
+  position -138.0 -267.5 58.0
+  rotation -139.0
+  size     4.0 60.0 2.0
+end
+box
+  position -83.0 -327.0 58.0
+  rotation 0.0
+  size     20.0 20.0 2.0
+end
+pyramid
+  position -346.0 -286.0 0.0
+  rotation 0.0
+  size     10.0 10.0 20.0
+end
+pyramid
+  position -368.0 -126.0 0.0
+  rotation 0.0
+  size     10.0 10.0 20.0
+end
+box
+  position -384.0 -384.0 25.0
+  rotation 0.0
+  size     14.0 14.0 5.0
+end
+box
+  position -384.0 -384.0 0.0
+  rotation 0.0
+  size     5.0 5.0 25.0
+end
+teleporter
+  position -384.0 -384.0 30.0
+  rotation 0.0
+  border 1.0
+  size 0.45 10.0 8.0
+end
+link
+ from 0
+ to 2
+end
+link
+ from 1
+ to 4
+end
+link
+ from 4
+ to 2
+end
+link
+ from 5
+ to 0
+end
+link
+ from 2
+ to 0
+end
+link
+ from 3
+ to 4
+end
+box
+  position -350.0 200.0 0.0
+  rotation 45.0
+  size     40.0 30.0 12.0
+end
+box
+  position -350.0 200.0 12.0
+  rotation 45.0
+  size     20.0 15.0 17.0
+end
+pyramid
+  position -350.0 200.0 29.0
+  rotation 45.0
+  size     3.0 3.0 20.0
+  DriveThrough
+end
+box
+  position 350.0 350.0 0.0
+  rotation 45.0
+  size     60.0 60.0 12.0
+end
+box
+  position 350.0 350.0 24.0
+  rotation 45.0
+  size     30.0 30.0 3.0
+end
+box
+  position 350.0 316.06 12.0
+  rotation 45.0
+  size     12.0 12.0 24.0
+end
+box
+  position 316.06 350.0 12.0
+  rotation 45.0
+  size     12.0 12.0 24.0
+end
+box
+  position 383.94 350.0 12.0
+  rotation 45.0
+  size     12.0 12.0 24.0
+end
+box
+  position 350.0 383.94 12.0
+  rotation 45.0
+  size     12.0 12.0 24.0
+end
+pyramid
+  position 318.18 318.18 12.0
+  rotation 90.0
+  size     6.0 6.0 48.0
+end
+pyramid
+  position 381.82 381.82 12.0
+  rotation 90.0
+  size     6.0 6.0 48.0
+end
+box
+  position 339.39 322.42 27.0
+  rotation 45.0
+  size     3.0 6.0 24.0
+end
+box
+  position 322.42 339.39 27.0
+  rotation 45.0
+  size     3.0 6.0 24.0
+end
+box
+  position 377.58 360.61 27.0
+  rotation 45.0
+  size     3.0 6.0 24.0
+end
+box
+  position 360.61 377.58 27.0
+  rotation 45.0
+  size     3.0 6.0 24.0
+end
+box
+  position 360.61 322.42 27.0
+  rotation 45.0
+  size     6.0 3.0 24.0
+end
+box
+  position 377.58 339.39 27.0
+  rotation 45.0
+  size     6.0 3.0 24.0
+end
+box
+  position 322.42 360.61 27.0
+  rotation 45.0
+  size     6.0 3.0 24.0
+end
+box
+  position 339.39 377.58 27.0
+  rotation 45.0
+  size     6.0 3.0 24.0
+end
+box
+  position 350.0 350.0 42.0
+  rotation 45.0
+  size     27.0 27.0 3.0
+end
+box
+  position 223.0 301.0 25.0
+  rotation 15.5
+  size     114.5 9.0 2.0
+end
+box
+  position 420.0 -400.0 0.0
+  rotation 45.0
+  size     25.0 25.0 15.0
+end
+pyramid
+  position 420.0 -400.0 15.0
+  rotation 45.0
+  size     15.0 15.0 40.0
+  DriveThrough
+end
+box
+  position 450.0 0.0 8.0
+  rotation 0.0
+  size     45.0 45.0 2.0
+end
+box
+  position 450.0 0.0 18.0
+  rotation 0.0
+  size     45.0 45.0 2.0
+end
+box
+  position 410.0 23.0 0.0
+  rotation 0.0
+  size     2.0 17.0 8.0
+end
+box
+  position 490.0 23.0 0.0
+  rotation 0.0
+  size     2.0 17.0 8.0
+end
+box
+  position 410.0 -23.0 0.0
+  rotation 0.0
+  size     2.0 17.0 8.0
+end
+box
+  position 490.0 -23.0 0.0
+  rotation 0.0
+  size     2.0 17.0 8.0
+end
+box
+  position 427.0 40.0 0.0
+  rotation 0.0
+  size     17.0 2.0 8.0
+end
+box
+  position 473.0 40.0 0.0
+  rotation 0.0
+  size     17.0 2.0 8.0
+end
+box
+  position 427.0 -40.0 0.0
+  rotation 0.0
+  size     17.0 2.0 8.0
+end
+box
+  position 473.0 -40.0 0.0
+  rotation 0.0
+  size     17.0 2.0 8.0
+end
+box
+  position 410.0 23.0 10.0
+  rotation 0.0
+  size     2.0 17.0 8.0
+end
+box
+  position 490.0 23.0 10.0
+  rotation 0.0
+  size     2.0 17.0 8.0
+end
+box
+  position 410.0 -23.0 10.0
+  rotation 0.0
+  size     2.0 17.0 8.0
+end
+box
+  position 490.0 -23.0 10.0
+  rotation 0.0
+  size     2.0 17.0 8.0
+end
+box
+  position 427.0 40.0 10.0
+  rotation 0.0
+  size     17.0 2.0 8.0
+end
+box
+  position 473.0 40.0 10.0
+  rotation 0.0
+  size     17.0 2.0 8.0
+end
+box
+  position 427.0 -40.0 10.0
+  rotation 0.0
+  size     17.0 2.0 8.0
+end
+box
+  position 473.0 -40.0 10.0
+  rotation 0.0
+  size     17.0 2.0 8.0
+end
+pyramid
+  position 404.0 -46.0 0.0
+  rotation 0.0
+  size     3.0 3.0 50.0
+end
+pyramid
+  position 404.0 46.0 0.0
+  rotation 0.0
+  size     3.0 3.0 50.0
+end
+pyramid
+  position 496.0 -46.0 0.0
+  rotation 0.0
+  size     3.0 3.0 50.0
+end
+pyramid
+  position 496.0 46.0 0.0
+  rotation 0.0
+  size     3.0 3.0 50.0
+end
+box
+  position 435.0 -87.5 8.0
+  rotation 260.79
+  size     93.71 8.0 2.0
+end
+pyramid
+  position 300.0 200.0 0.0
+  rotation 50.0
+  size     10.0 10.0 30.0
+end
+pyramid
+  position -300.0 -200.0 0.0
+  rotation 50.0
+  size     10.0 10.0 30.0
+end
+pyramid
+  position -100.0 -100.0 0.0
+  rotation 50.0
+  size     10.0 10.0 30.0
+end
+pyramid
+  position -375.0 300.0 0.0
+  rotation 50.0
+  size     10.0 10.0 30.0
+end
+pyramid
+  position -20.0 458.0 0.0
+  rotation 50.0
+  size     20.0 20.0 40.0
+end
+pyramid
+  position -82.0 217.0 0.0
+  rotation 50.0
+  size     15.0 15.0 35.0
+end
+pyramid
+  position 200.0 -200.0 0.0
+  rotation 50.0
+  size     20.0 20.0 40.0
+end
+box
+  position -133.0 -355.0 0.0
+  rotation 0.0
+  size     30.0 30.0 55.0
+end

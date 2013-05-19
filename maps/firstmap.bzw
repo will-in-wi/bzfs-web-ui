@@ -1,0 +1,4068 @@
+ 
+####### File Information #######
+#  Total number of objects: 960
+#  Number of boxes: 543
+#  Number of pyramids: 217
+#  Number of teleporters: 10
+#  Number of links: 20
+#  Number of comments (not including these File Information comments): 110
+ 
+#   TWO FORTRESS MAP
+#    
+#      September 26, 2003
+#    
+#      by 
+#    
+#        Bryan A. Bentz
+#        a.k.a. "The Purple Panzer"
+#        Email:
+#             bentz@bentz-engineering.com, or 
+#             bentz@ai.mit.edu
+#        URLs:
+#             Personal URL: http://www-swiss.ai.mit.edu/~bentz/
+#             Business URL: http://www.bentz-engineering.com/
+#    
+#    
+#   This is my first map.  The idea was to create several distinct
+#   subspaces for play.  At opposing corners are two fortresses, of 
+#   different styles.  In the center is a small town between them.
+#    
+#   I tried to use several principles in the design:
+#     1.  Commonality of heights - for every horizontal surface, there
+#         is another within range for attack.
+#     2.  Personality - each subarea (basically the 4 quadrants, plus
+#         the center) has a different aesthetic and set of advantages and
+#         disadvantages.
+#     3.  For each offensive flag, there are some particularly good (but
+#         vulnerable) positions.
+#     4.  There is enough exploring to be of interest, but not so 
+#         squirrelly that you have to invest a lot of time to master the map.
+#    
+#   I created the map using BZEdit, and wrote some Visual Basic code
+#   to autogenerate some structures, such as the towers and wall fragments.
+#   Anyone is welcome to the code, just email me.  The environment was
+#   Microsoft Visual Basic 6, running on Windows 2000.
+#    
+#    
+# Sanctorum of castle fort
+box
+  position 370.0 370.0 16.0
+  rotation 0.0
+  size     30.0 30.0 15.0
+end
+box
+  position 359.0 359.0 0.0
+  rotation 0.0
+  size     41.0 41.0 16.0
+end
+# ### Teleporter: Castle fortress sanctorum
+teleporter
+  position 390.0 390.0 31.0
+  rotation 45.0
+  border 1.0
+  size 0.45 5.0 10.0
+end
+box
+  position 370.0 370.0 31.0
+  rotation 0.0
+  size     15.0 5.0 5.0
+end
+# ### Circular wall section.
+box
+  position 110.32 383.08 0.0
+  rotation 167.06
+  size     3.0 19.43 17.0
+end
+box
+  position 106.03 348.13 0.0
+  rotation 178.94
+  size     3.0 19.43 17.0
+end
+box
+  position 109.03 313.05 0.0
+  rotation 190.83
+  size     3.0 19.43 17.0
+end
+box
+  position 119.19 279.34 0.0
+  rotation 202.72
+  size     3.0 19.43 17.0
+end
+box
+  position 136.09 248.44 0.0
+  rotation 214.61
+  size     3.0 19.43 17.0
+end
+box
+  position 158.98 221.69 0.0
+  rotation 226.5
+  size     3.0 19.43 17.0
+end
+box
+  position 186.89 200.22 0.0
+  rotation 238.39
+  size     3.0 19.43 17.0
+end
+box
+  position 218.63 184.97 0.0
+  rotation 250.28
+  size     3.0 19.43 17.0
+end
+box
+  position 252.83 176.59 0.0
+  rotation 262.17
+  size     3.0 19.43 17.0
+end
+box
+  position 288.02 175.43 0.0
+  rotation 274.06
+  size     3.0 19.43 17.0
+end
+# ### Towers
+box
+  position 109.03 313.05 0.0
+  rotation 190.83
+  size     12.0 12.0 22.1
+end
+box
+  position 99.05 301.36 22.1
+  rotation 190.83
+  size     0.3 1.2 1.6
+end
+box
+  position 122.62 305.87 22.1
+  rotation 190.83
+  size     0.3 1.2 1.6
+end
+box
+  position 101.86 299.46 22.1
+  rotation 280.83
+  size     0.3 1.2 1.6
+end
+box
+  position 97.35 323.03 22.1
+  rotation 280.83
+  size     0.3 1.2 1.6
+end
+box
+  position 98.15 306.08 22.1
+  rotation 190.83
+  size     0.3 1.2 1.6
+end
+box
+  position 121.72 310.59 22.1
+  rotation 190.83
+  size     0.3 1.2 1.6
+end
+box
+  position 106.57 300.36 22.1
+  rotation 280.83
+  size     0.3 1.2 1.6
+end
+box
+  position 102.06 323.93 22.1
+  rotation 280.83
+  size     0.3 1.2 1.6
+end
+box
+  position 97.24 310.79 22.1
+  rotation 190.83
+  size     0.3 1.2 1.6
+end
+box
+  position 120.82 315.3 22.1
+  rotation 190.83
+  size     0.3 1.2 1.6
+end
+box
+  position 111.29 301.26 22.1
+  rotation 280.83
+  size     0.3 1.2 1.6
+end
+box
+  position 106.77 324.83 22.1
+  rotation 280.83
+  size     0.3 1.2 1.6
+end
+box
+  position 96.34 315.51 22.1
+  rotation 190.83
+  size     0.3 1.2 1.6
+end
+box
+  position 119.91 320.02 22.1
+  rotation 190.83
+  size     0.3 1.2 1.6
+end
+box
+  position 116.0 302.16 22.1
+  rotation 280.83
+  size     0.3 1.2 1.6
+end
+box
+  position 111.49 325.74 22.1
+  rotation 280.83
+  size     0.3 1.2 1.6
+end
+box
+  position 95.44 320.22 22.1
+  rotation 190.83
+  size     0.3 1.2 1.6
+end
+box
+  position 119.01 324.73 22.1
+  rotation 190.83
+  size     0.3 1.2 1.6
+end
+box
+  position 120.71 303.07 22.1
+  rotation 280.83
+  size     0.3 1.2 1.6
+end
+box
+  position 116.2 326.64 22.1
+  rotation 280.83
+  size     0.3 1.2 1.6
+end
+box
+  position 158.98 221.69 0.0
+  rotation 226.5
+  size     12.0 12.0 22.1
+end
+box
+  position 157.68 206.37 22.1
+  rotation 226.5
+  size     0.3 1.2 1.6
+end
+box
+  position 174.2 223.78 22.1
+  rotation 226.5
+  size     0.3 1.2 1.6
+end
+box
+  position 161.08 206.46 22.1
+  rotation 316.5
+  size     0.3 1.2 1.6
+end
+box
+  position 143.67 222.98 22.1
+  rotation 316.5
+  size     0.3 1.2 1.6
+end
+box
+  position 154.2 209.68 22.1
+  rotation 226.5
+  size     0.3 1.2 1.6
+end
+box
+  position 170.72 227.09 22.1
+  rotation 226.5
+  size     0.3 1.2 1.6
+end
+box
+  position 164.38 209.94 22.1
+  rotation 316.5
+  size     0.3 1.2 1.6
+end
+box
+  position 146.97 226.46 22.1
+  rotation 316.5
+  size     0.3 1.2 1.6
+end
+box
+  position 150.72 212.98 22.1
+  rotation 226.5
+  size     0.3 1.2 1.6
+end
+box
+  position 167.24 230.39 22.1
+  rotation 226.5
+  size     0.3 1.2 1.6
+end
+box
+  position 167.68 213.43 22.1
+  rotation 316.5
+  size     0.3 1.2 1.6
+end
+box
+  position 150.28 229.95 22.1
+  rotation 316.5
+  size     0.3 1.2 1.6
+end
+box
+  position 147.24 216.29 22.1
+  rotation 226.5
+  size     0.3 1.2 1.6
+end
+box
+  position 163.76 233.69 22.1
+  rotation 226.5
+  size     0.3 1.2 1.6
+end
+box
+  position 170.99 216.91 22.1
+  rotation 316.5
+  size     0.3 1.2 1.6
+end
+box
+  position 153.58 233.43 22.1
+  rotation 316.5
+  size     0.3 1.2 1.6
+end
+box
+  position 143.76 219.59 22.1
+  rotation 226.5
+  size     0.3 1.2 1.6
+end
+box
+  position 160.28 237.0 22.1
+  rotation 226.5
+  size     0.3 1.2 1.6
+end
+box
+  position 174.29 220.39 22.1
+  rotation 316.5
+  size     0.3 1.2 1.6
+end
+box
+  position 156.88 236.91 22.1
+  rotation 316.5
+  size     0.3 1.2 1.6
+end
+box
+  position 252.83 176.59 0.0
+  rotation 262.17
+  size     12.0 12.0 22.1
+end
+box
+  position 260.71 163.39 22.1
+  rotation 262.17
+  size     0.3 1.2 1.6
+end
+box
+  position 263.98 187.17 22.1
+  rotation 262.17
+  size     0.3 1.2 1.6
+end
+box
+  position 263.41 165.44 22.1
+  rotation 352.17
+  size     0.3 1.2 1.6
+end
+box
+  position 239.63 168.71 22.1
+  rotation 352.17
+  size     0.3 1.2 1.6
+end
+box
+  position 255.95 164.04 22.1
+  rotation 262.17
+  size     0.3 1.2 1.6
+end
+box
+  position 259.22 187.82 22.1
+  rotation 262.17
+  size     0.3 1.2 1.6
+end
+box
+  position 264.06 170.2 22.1
+  rotation 352.17
+  size     0.3 1.2 1.6
+end
+box
+  position 240.29 173.47 22.1
+  rotation 352.17
+  size     0.3 1.2 1.6
+end
+box
+  position 251.19 164.7 22.1
+  rotation 262.17
+  size     0.3 1.2 1.6
+end
+box
+  position 254.47 188.47 22.1
+  rotation 262.17
+  size     0.3 1.2 1.6
+end
+box
+  position 264.72 174.95 22.1
+  rotation 352.17
+  size     0.3 1.2 1.6
+end
+box
+  position 240.94 178.22 22.1
+  rotation 352.17
+  size     0.3 1.2 1.6
+end
+box
+  position 246.44 165.35 22.1
+  rotation 262.17
+  size     0.3 1.2 1.6
+end
+box
+  position 249.71 189.13 22.1
+  rotation 262.17
+  size     0.3 1.2 1.6
+end
+box
+  position 265.37 179.71 22.1
+  rotation 352.17
+  size     0.3 1.2 1.6
+end
+box
+  position 241.6 182.98 22.1
+  rotation 352.17
+  size     0.3 1.2 1.6
+end
+box
+  position 241.68 166.01 22.1
+  rotation 262.17
+  size     0.3 1.2 1.6
+end
+box
+  position 244.96 189.78 22.1
+  rotation 262.17
+  size     0.3 1.2 1.6
+end
+box
+  position 266.03 184.46 22.1
+  rotation 352.17
+  size     0.3 1.2 1.6
+end
+box
+  position 242.25 187.73 22.1
+  rotation 352.17
+  size     0.3 1.2 1.6
+end
+# ### Crenelations.
+box
+  position 105.26 373.51 17.0
+  rotation 170.52
+  size     0.3 5.0 1.6
+end
+box
+  position 103.44 358.64 17.0
+  rotation 175.48
+  size     0.3 5.0 1.6
+end
+box
+  position 102.91 343.66 17.0
+  rotation 180.44
+  size     0.3 5.0 1.6
+end
+box
+  position 103.67 328.69 17.0
+  rotation 185.41
+  size     0.3 5.0 1.6
+end
+box
+  position 105.73 313.85 17.0
+  rotation 190.37
+  size     0.3 5.0 1.6
+end
+box
+  position 109.06 299.24 17.0
+  rotation 195.33
+  size     0.3 5.0 1.6
+end
+box
+  position 113.64 284.97 17.0
+  rotation 200.29
+  size     0.3 5.0 1.6
+end
+box
+  position 119.44 271.15 17.0
+  rotation 205.25
+  size     0.3 5.0 1.6
+end
+box
+  position 126.42 257.89 17.0
+  rotation 210.22
+  size     0.3 5.0 1.6
+end
+box
+  position 134.51 245.27 17.0
+  rotation 215.18
+  size     0.3 5.0 1.6
+end
+box
+  position 143.67 233.41 17.0
+  rotation 220.14
+  size     0.3 5.0 1.6
+end
+box
+  position 153.82 222.38 17.0
+  rotation 225.1
+  size     0.3 5.0 1.6
+end
+box
+  position 164.88 212.27 17.0
+  rotation 230.06
+  size     0.3 5.0 1.6
+end
+box
+  position 176.78 203.16 17.0
+  rotation 235.03
+  size     0.3 5.0 1.6
+end
+box
+  position 189.42 195.11 17.0
+  rotation 239.99
+  size     0.3 5.0 1.6
+end
+box
+  position 202.71 188.18 17.0
+  rotation 244.95
+  size     0.3 5.0 1.6
+end
+box
+  position 216.55 182.43 17.0
+  rotation 249.91
+  size     0.3 5.0 1.6
+end
+box
+  position 230.83 177.9 17.0
+  rotation 254.87
+  size     0.3 5.0 1.6
+end
+box
+  position 245.46 174.62 17.0
+  rotation 259.84
+  size     0.3 5.0 1.6
+end
+box
+  position 260.31 172.61 17.0
+  rotation 264.8
+  size     0.3 5.0 1.6
+end
+box
+  position 275.28 171.9 17.0
+  rotation 269.76
+  size     0.3 5.0 1.6
+end
+box
+  position 290.25 172.49 17.0
+  rotation 274.72
+  size     0.3 5.0 1.6
+end
+box
+  position 305.12 174.37 17.0
+  rotation 279.69
+  size     0.3 5.0 1.6
+end
+box
+  position 310.0 70.0 0.0
+  rotation 278.13
+  size     70.71 3.0 17.0
+end
+box
+  position 310.0 70.0 0.0
+  rotation 278.13
+  size     12.0 12.0 22.1
+end
+box
+  position 321.2 59.48 22.1
+  rotation 278.13
+  size     0.3 1.2 1.6
+end
+box
+  position 317.81 83.24 22.1
+  rotation 278.13
+  size     0.3 1.2 1.6
+end
+box
+  position 323.24 62.19 22.1
+  rotation 368.13
+  size     0.3 1.2 1.6
+end
+box
+  position 299.48 58.8 22.1
+  rotation 368.13
+  size     0.3 1.2 1.6
+end
+box
+  position 316.45 58.8 22.1
+  rotation 278.13
+  size     0.3 1.2 1.6
+end
+box
+  position 313.05 82.56 22.1
+  rotation 278.13
+  size     0.3 1.2 1.6
+end
+box
+  position 322.56 66.95 22.1
+  rotation 368.13
+  size     0.3 1.2 1.6
+end
+box
+  position 298.8 63.55 22.1
+  rotation 368.13
+  size     0.3 1.2 1.6
+end
+box
+  position 311.7 58.12 22.1
+  rotation 278.13
+  size     0.3 1.2 1.6
+end
+box
+  position 308.3 81.88 22.1
+  rotation 278.13
+  size     0.3 1.2 1.6
+end
+box
+  position 321.88 71.7 22.1
+  rotation 368.13
+  size     0.3 1.2 1.6
+end
+box
+  position 298.12 68.3 22.1
+  rotation 368.13
+  size     0.3 1.2 1.6
+end
+box
+  position 306.95 57.44 22.1
+  rotation 278.13
+  size     0.3 1.2 1.6
+end
+box
+  position 303.55 81.2 22.1
+  rotation 278.13
+  size     0.3 1.2 1.6
+end
+box
+  position 321.2 76.45 22.1
+  rotation 368.13
+  size     0.3 1.2 1.6
+end
+box
+  position 297.44 73.05 22.1
+  rotation 368.13
+  size     0.3 1.2 1.6
+end
+box
+  position 302.19 56.76 22.1
+  rotation 278.13
+  size     0.3 1.2 1.6
+end
+box
+  position 298.8 80.52 22.1
+  rotation 278.13
+  size     0.3 1.2 1.6
+end
+box
+  position 320.52 81.2 22.1
+  rotation 368.13
+  size     0.3 1.2 1.6
+end
+box
+  position 296.76 77.81 22.1
+  rotation 368.13
+  size     0.3 1.2 1.6
+end
+box
+  position 320.0 0.0 0.0
+  rotation 278.13
+  size     12.0 12.0 22.1
+end
+box
+  position 331.2 -10.52 22.1
+  rotation 278.13
+  size     0.3 1.2 1.6
+end
+box
+  position 327.81 13.24 22.1
+  rotation 278.13
+  size     0.3 1.2 1.6
+end
+box
+  position 333.24 -7.81 22.1
+  rotation 368.13
+  size     0.3 1.2 1.6
+end
+box
+  position 309.48 -11.2 22.1
+  rotation 368.13
+  size     0.3 1.2 1.6
+end
+box
+  position 326.45 -11.2 22.1
+  rotation 278.13
+  size     0.3 1.2 1.6
+end
+box
+  position 323.05 12.56 22.1
+  rotation 278.13
+  size     0.3 1.2 1.6
+end
+box
+  position 332.56 -3.05 22.1
+  rotation 368.13
+  size     0.3 1.2 1.6
+end
+box
+  position 308.8 -6.45 22.1
+  rotation 368.13
+  size     0.3 1.2 1.6
+end
+box
+  position 321.7 -11.88 22.1
+  rotation 278.13
+  size     0.3 1.2 1.6
+end
+box
+  position 318.3 11.88 22.1
+  rotation 278.13
+  size     0.3 1.2 1.6
+end
+box
+  position 331.88 1.7 22.1
+  rotation 368.13
+  size     0.3 1.2 1.6
+end
+box
+  position 308.12 -1.7 22.1
+  rotation 368.13
+  size     0.3 1.2 1.6
+end
+box
+  position 316.95 -12.56 22.1
+  rotation 278.13
+  size     0.3 1.2 1.6
+end
+box
+  position 313.55 11.2 22.1
+  rotation 278.13
+  size     0.3 1.2 1.6
+end
+box
+  position 331.2 6.45 22.1
+  rotation 368.13
+  size     0.3 1.2 1.6
+end
+box
+  position 307.44 3.05 22.1
+  rotation 368.13
+  size     0.3 1.2 1.6
+end
+box
+  position 312.19 -13.24 22.1
+  rotation 278.13
+  size     0.3 1.2 1.6
+end
+box
+  position 308.8 10.52 22.1
+  rotation 278.13
+  size     0.3 1.2 1.6
+end
+box
+  position 330.52 11.2 22.1
+  rotation 368.13
+  size     0.3 1.2 1.6
+end
+box
+  position 306.76 7.81 22.1
+  rotation 368.13
+  size     0.3 1.2 1.6
+end
+box
+  position 299.15 124.73 17.0
+  rotation 278.13
+  size     5.0 0.3 1.6
+end
+box
+  position 301.27 109.88 17.0
+  rotation 278.13
+  size     5.0 0.3 1.6
+end
+box
+  position 303.39 95.03 17.0
+  rotation 278.13
+  size     5.0 0.3 1.6
+end
+box
+  position 305.52 80.18 17.0
+  rotation 278.13
+  size     5.0 0.3 1.6
+end
+box
+  position 307.64 65.33 17.0
+  rotation 278.13
+  size     5.0 0.3 1.6
+end
+box
+  position 309.76 50.48 17.0
+  rotation 278.13
+  size     5.0 0.3 1.6
+end
+box
+  position 311.88 35.63 17.0
+  rotation 278.13
+  size     5.0 0.3 1.6
+end
+box
+  position 314.0 20.78 17.0
+  rotation 278.13
+  size     5.0 0.3 1.6
+end
+# Wall to +X edge
+box
+  position 360.0 -5.0 0.0
+  rotation 352.87
+  size     40.31 4.0 18.0
+end
+box
+  position 334.39 -5.83 18.0
+  rotation 352.87
+  size     5.0 0.3 1.6
+end
+box
+  position 349.27 -7.69 18.0
+  rotation 352.87
+  size     5.0 0.3 1.6
+end
+box
+  position 364.16 -9.55 18.0
+  rotation 352.87
+  size     5.0 0.3 1.6
+end
+box
+  position 379.04 -11.41 18.0
+  rotation 352.87
+  size     5.0 0.3 1.6
+end
+# Main castle fort arch
+box
+  position 300.0 153.0 15.0
+  rotation -90.0
+  size     0.0 2.5 1.0
+end
+box
+  position 300.0 167.0 15.0
+  rotation -90.0
+  size     0.0 2.5 1.0
+end
+box
+  position 300.0 153.01 15.41
+  rotation -90.0
+  size     0.01 2.5 1.0
+end
+box
+  position 300.0 166.99 15.41
+  rotation -90.0
+  size     0.01 2.5 1.0
+end
+box
+  position 300.0 153.02 15.81
+  rotation -90.0
+  size     0.02 2.5 1.0
+end
+box
+  position 300.0 166.98 15.81
+  rotation -90.0
+  size     0.02 2.5 1.0
+end
+box
+  position 300.0 153.05 16.22
+  rotation -90.0
+  size     0.05 2.5 1.0
+end
+box
+  position 300.0 166.95 16.22
+  rotation -90.0
+  size     0.05 2.5 1.0
+end
+box
+  position 300.0 153.09 16.61
+  rotation -90.0
+  size     0.09 2.5 1.0
+end
+box
+  position 300.0 166.91 16.61
+  rotation -90.0
+  size     0.09 2.5 1.0
+end
+box
+  position 300.0 153.15 17.01
+  rotation -90.0
+  size     0.15 2.5 1.0
+end
+box
+  position 300.0 166.85 17.01
+  rotation -90.0
+  size     0.15 2.5 1.0
+end
+box
+  position 300.0 153.21 17.39
+  rotation -90.0
+  size     0.21 2.5 1.0
+end
+box
+  position 300.0 166.79 17.39
+  rotation -90.0
+  size     0.21 2.5 1.0
+end
+box
+  position 300.0 153.29 17.77
+  rotation -90.0
+  size     0.29 2.5 1.0
+end
+box
+  position 300.0 166.71 17.77
+  rotation -90.0
+  size     0.29 2.5 1.0
+end
+box
+  position 300.0 153.37 18.14
+  rotation -90.0
+  size     0.37 2.5 1.0
+end
+box
+  position 300.0 166.63 18.14
+  rotation -90.0
+  size     0.37 2.5 1.0
+end
+box
+  position 300.0 153.47 18.5
+  rotation -90.0
+  size     0.47 2.5 1.0
+end
+box
+  position 300.0 166.53 18.5
+  rotation -90.0
+  size     0.47 2.5 1.0
+end
+box
+  position 300.0 153.58 18.85
+  rotation -90.0
+  size     0.58 2.5 1.0
+end
+box
+  position 300.0 166.42 18.85
+  rotation -90.0
+  size     0.58 2.5 1.0
+end
+box
+  position 300.0 153.69 19.18
+  rotation -90.0
+  size     0.69 2.5 1.0
+end
+box
+  position 300.0 166.31 19.18
+  rotation -90.0
+  size     0.69 2.5 1.0
+end
+box
+  position 300.0 153.82 19.5
+  rotation -90.0
+  size     0.82 2.5 1.0
+end
+box
+  position 300.0 166.18 19.5
+  rotation -90.0
+  size     0.82 2.5 1.0
+end
+box
+  position 300.0 153.95 19.8
+  rotation -90.0
+  size     0.95 2.5 1.0
+end
+box
+  position 300.0 166.05 19.8
+  rotation -90.0
+  size     0.95 2.5 1.0
+end
+box
+  position 300.0 154.1 20.09
+  rotation -90.0
+  size     1.1 2.5 1.0
+end
+box
+  position 300.0 165.9 20.09
+  rotation -90.0
+  size     1.1 2.5 1.0
+end
+box
+  position 300.0 154.25 20.36
+  rotation -90.0
+  size     1.25 2.5 1.0
+end
+box
+  position 300.0 165.75 20.36
+  rotation -90.0
+  size     1.25 2.5 1.0
+end
+box
+  position 300.0 154.41 20.61
+  rotation -90.0
+  size     1.41 2.5 1.0
+end
+box
+  position 300.0 165.59 20.61
+  rotation -90.0
+  size     1.41 2.5 1.0
+end
+box
+  position 300.0 154.58 20.85
+  rotation -90.0
+  size     1.58 2.5 1.0
+end
+box
+  position 300.0 165.42 20.85
+  rotation -90.0
+  size     1.58 2.5 1.0
+end
+box
+  position 300.0 154.75 21.06
+  rotation -90.0
+  size     1.75 2.5 1.0
+end
+box
+  position 300.0 165.25 21.06
+  rotation -90.0
+  size     1.75 2.5 1.0
+end
+box
+  position 300.0 154.93 21.26
+  rotation -90.0
+  size     1.93 2.5 1.0
+end
+box
+  position 300.0 165.07 21.26
+  rotation -90.0
+  size     1.93 2.5 1.0
+end
+box
+  position 300.0 155.11 21.43
+  rotation -90.0
+  size     2.11 2.5 1.0
+end
+box
+  position 300.0 164.89 21.43
+  rotation -90.0
+  size     2.11 2.5 1.0
+end
+box
+  position 300.0 155.3 21.58
+  rotation -90.0
+  size     2.3 2.5 1.0
+end
+box
+  position 300.0 164.7 21.58
+  rotation -90.0
+  size     2.3 2.5 1.0
+end
+box
+  position 300.0 155.5 21.71
+  rotation -90.0
+  size     2.5 2.5 1.0
+end
+box
+  position 300.0 164.5 21.71
+  rotation -90.0
+  size     2.5 2.5 1.0
+end
+box
+  position 300.0 155.69 21.81
+  rotation -90.0
+  size     2.69 2.5 1.0
+end
+box
+  position 300.0 164.31 21.81
+  rotation -90.0
+  size     2.69 2.5 1.0
+end
+box
+  position 300.0 155.89 21.89
+  rotation -90.0
+  size     2.89 2.5 1.0
+end
+box
+  position 300.0 164.11 21.89
+  rotation -90.0
+  size     2.89 2.5 1.0
+end
+box
+  position 300.0 156.09 21.95
+  rotation -90.0
+  size     3.09 2.5 1.0
+end
+box
+  position 300.0 163.91 21.95
+  rotation -90.0
+  size     3.09 2.5 1.0
+end
+box
+  position 300.0 156.3 21.99
+  rotation -90.0
+  size     3.3 2.5 1.0
+end
+box
+  position 300.0 163.7 21.99
+  rotation -90.0
+  size     3.3 2.5 1.0
+end
+box
+  position 300.0 156.5 22.0
+  rotation -90.0
+  size     3.5 2.5 1.0
+end
+box
+  position 300.0 163.5 22.0
+  rotation -90.0
+  size     3.5 2.5 1.0
+end
+box
+  position 300.0 156.7 21.99
+  rotation -90.0
+  size     3.7 2.5 1.0
+end
+box
+  position 300.0 163.3 21.99
+  rotation -90.0
+  size     3.7 2.5 1.0
+end
+box
+  position 300.0 156.91 21.95
+  rotation -90.0
+  size     3.91 2.5 1.0
+end
+box
+  position 300.0 163.09 21.95
+  rotation -90.0
+  size     3.91 2.5 1.0
+end
+box
+  position 300.0 157.11 21.89
+  rotation -90.0
+  size     4.11 2.5 1.0
+end
+box
+  position 300.0 162.89 21.89
+  rotation -90.0
+  size     4.11 2.5 1.0
+end
+box
+  position 300.0 169.5 0.0
+  rotation -90.0
+  size     2.5 2.5 22.0
+end
+box
+  position 300.0 150.5 0.0
+  rotation -90.0
+  size     2.5 2.5 22.0
+end
+box
+  position 300.0 160.0 22.0
+  rotation -90.0
+  size     12.0 2.5 2.5
+end
+# Tower on each end of the arch
+box
+  position 300.0 178.0 0.0
+  rotation 90.0
+  size     10.0 10.0 35.0
+end
+box
+  position 292.0 188.0 35.0
+  rotation 90.0
+  size     0.3 1.0 1.6
+end
+box
+  position 292.0 168.0 35.0
+  rotation 90.0
+  size     0.3 1.0 1.6
+end
+box
+  position 290.0 186.0 35.0
+  rotation 180.0
+  size     0.3 1.0 1.6
+end
+box
+  position 310.0 186.0 35.0
+  rotation 180.0
+  size     0.3 1.0 1.6
+end
+box
+  position 296.0 188.0 35.0
+  rotation 90.0
+  size     0.3 1.0 1.6
+end
+box
+  position 296.0 168.0 35.0
+  rotation 90.0
+  size     0.3 1.0 1.6
+end
+box
+  position 290.0 182.0 35.0
+  rotation 180.0
+  size     0.3 1.0 1.6
+end
+box
+  position 310.0 182.0 35.0
+  rotation 180.0
+  size     0.3 1.0 1.6
+end
+box
+  position 300.0 188.0 35.0
+  rotation 90.0
+  size     0.3 1.0 1.6
+end
+box
+  position 300.0 168.0 35.0
+  rotation 90.0
+  size     0.3 1.0 1.6
+end
+box
+  position 290.0 178.0 35.0
+  rotation 180.0
+  size     0.3 1.0 1.6
+end
+box
+  position 310.0 178.0 35.0
+  rotation 180.0
+  size     0.3 1.0 1.6
+end
+box
+  position 304.0 188.0 35.0
+  rotation 90.0
+  size     0.3 1.0 1.6
+end
+box
+  position 304.0 168.0 35.0
+  rotation 90.0
+  size     0.3 1.0 1.6
+end
+box
+  position 290.0 174.0 35.0
+  rotation 180.0
+  size     0.3 1.0 1.6
+end
+box
+  position 310.0 174.0 35.0
+  rotation 180.0
+  size     0.3 1.0 1.6
+end
+box
+  position 308.0 188.0 35.0
+  rotation 90.0
+  size     0.3 1.0 1.6
+end
+box
+  position 308.0 168.0 35.0
+  rotation 90.0
+  size     0.3 1.0 1.6
+end
+box
+  position 290.0 170.0 35.0
+  rotation 180.0
+  size     0.3 1.0 1.6
+end
+box
+  position 310.0 170.0 35.0
+  rotation 180.0
+  size     0.3 1.0 1.6
+end
+box
+  position 300.0 142.0 0.0
+  rotation 90.0
+  size     10.0 10.0 35.0
+end
+box
+  position 292.0 152.0 35.0
+  rotation 90.0
+  size     0.3 1.0 1.6
+end
+box
+  position 292.0 132.0 35.0
+  rotation 90.0
+  size     0.3 1.0 1.6
+end
+box
+  position 290.0 150.0 35.0
+  rotation 180.0
+  size     0.3 1.0 1.6
+end
+box
+  position 310.0 150.0 35.0
+  rotation 180.0
+  size     0.3 1.0 1.6
+end
+box
+  position 296.0 152.0 35.0
+  rotation 90.0
+  size     0.3 1.0 1.6
+end
+box
+  position 296.0 132.0 35.0
+  rotation 90.0
+  size     0.3 1.0 1.6
+end
+box
+  position 290.0 146.0 35.0
+  rotation 180.0
+  size     0.3 1.0 1.6
+end
+box
+  position 310.0 146.0 35.0
+  rotation 180.0
+  size     0.3 1.0 1.6
+end
+box
+  position 300.0 152.0 35.0
+  rotation 90.0
+  size     0.3 1.0 1.6
+end
+box
+  position 300.0 132.0 35.0
+  rotation 90.0
+  size     0.3 1.0 1.6
+end
+box
+  position 290.0 142.0 35.0
+  rotation 180.0
+  size     0.3 1.0 1.6
+end
+box
+  position 310.0 142.0 35.0
+  rotation 180.0
+  size     0.3 1.0 1.6
+end
+box
+  position 304.0 152.0 35.0
+  rotation 90.0
+  size     0.3 1.0 1.6
+end
+box
+  position 304.0 132.0 35.0
+  rotation 90.0
+  size     0.3 1.0 1.6
+end
+box
+  position 290.0 138.0 35.0
+  rotation 180.0
+  size     0.3 1.0 1.6
+end
+box
+  position 310.0 138.0 35.0
+  rotation 180.0
+  size     0.3 1.0 1.6
+end
+box
+  position 308.0 152.0 35.0
+  rotation 90.0
+  size     0.3 1.0 1.6
+end
+box
+  position 308.0 132.0 35.0
+  rotation 90.0
+  size     0.3 1.0 1.6
+end
+box
+  position 290.0 134.0 35.0
+  rotation 180.0
+  size     0.3 1.0 1.6
+end
+box
+  position 310.0 134.0 35.0
+  rotation 180.0
+  size     0.3 1.0 1.6
+end
+# Building behind gate
+box
+  position 370.0 160.0 0.0
+  rotation 0.0
+  size     25.0 25.0 15.0
+end
+box
+  position 370.0 160.0 15.0
+  rotation 0.0
+  size     20.0 20.0 15.0
+end
+box
+  position 370.0 160.0 30.0
+  rotation 0.0
+  size     15.0 15.0 15.0
+end
+pyramid
+  position 370.0 160.0 45.1
+  rotation 0.0
+  size     13.0 13.0 13.0
+  ShootThrough
+  DriveThrough
+end
+# Inner pyramids, to prevent lots of bounces
+pyramid
+  position 302.34 270.57 0.0
+  rotation 5.05
+  size     3.02 7.75 11.73
+end
+pyramid
+  position 318.25 287.01 0.0
+  rotation 310.54
+  size     0.45 4.14 26.42
+end
+pyramid
+  position 320.33 256.15 0.0
+  rotation 341.84
+  size     8.71 0.56 35.27
+end
+pyramid
+  position 290.48 266.74 0.0
+  rotation 168.73
+  size     0.54 5.92 28.45
+end
+pyramid
+  position 285.87 273.59 0.0
+  rotation 298.73
+  size     2.64 2.79 24.27
+end
+pyramid
+  position 322.72 271.24 0.0
+  rotation 250.24
+  size     9.11 2.27 36.11
+end
+pyramid
+  position 333.6 247.08 0.0
+  rotation 243.42
+  size     1.06 9.99 20.29
+end
+pyramid
+  position 266.1 270.26 0.0
+  rotation 102.41
+  size     1.03 7.99 5.1
+end
+pyramid
+  position 268.2 250.7 0.0
+  rotation 352.74
+  size     3.01 9.49 14.97
+end
+pyramid
+  position 293.1 249.48 0.0
+  rotation 147.63
+  size     1.63 6.47 7.22
+end
+pyramid
+  position 293.89 279.89 0.0
+  rotation 66.96
+  size     6.33 2.08 13.02
+end
+pyramid
+  position 305.84 235.65 0.0
+  rotation 282.68
+  size     9.06 2.61 17.63
+end
+pyramid
+  position 291.52 250.28 0.0
+  rotation 154.24
+  size     6.32 6.28 33.78
+end
+pyramid
+  position 271.86 269.27 0.0
+  rotation 8.15
+  size     9.14 8.35 25.91
+end
+# Teleporter on the ground in the Castle Fort
+teleporter
+  position 362.0 73.0 0.0
+  rotation 135.0
+  border 1.0
+  size 0.45 8.0 10.0
+end
+# Building at end of fort
+box
+  position 362.0 19.0 0.0
+  rotation 45.0
+  size     8.0 8.0 33.0
+end
+pyramid
+  position 362.0 19.0 33.01
+  rotation 45.0
+  size     8.0 8.0 8.0
+  ShootThrough
+  DriveThrough
+end
+# Teleporters up in the air:
+# Teleporter in the north
+box
+  position 30.0 297.0 100.0
+  rotation 0.0
+  size     30.0 30.0 5.0
+end
+teleporter
+  position 30.0 297.0 105.0
+  rotation 0.0
+  border 1.12
+  size 0.56 10.0 10.0
+end
+# Teleporter in the South
+box
+  position 252.0 -65.0 100.0
+  rotation 90.0
+  size     30.0 30.0 5.0
+end
+teleporter
+  position 252.0 -65.0 105.0
+  rotation 90.0
+  border 1.12
+  size 0.56 10.0 10.0
+end
+# Central circular tower
+# ### Circular wall section.
+box
+  position 232.76 352.33 0.0
+  rotation 20.63
+  size     5.0 6.63 30.0
+end
+box
+  position 227.06 362.2 0.0
+  rotation 39.38
+  size     5.0 6.63 30.0
+end
+box
+  position 218.48 369.72 0.0
+  rotation 58.13
+  size     5.0 6.63 30.0
+end
+box
+  position 207.95 374.09 0.0
+  rotation 76.88
+  size     5.0 6.63 30.0
+end
+box
+  position 196.57 374.83 0.0
+  rotation 95.63
+  size     5.0 6.63 30.0
+end
+box
+  position 185.56 371.88 0.0
+  rotation 114.38
+  size     5.0 6.63 30.0
+end
+box
+  position 176.07 365.55 0.0
+  rotation 133.13
+  size     5.0 6.63 30.0
+end
+box
+  position 169.13 356.5 0.0
+  rotation 151.88
+  size     5.0 6.63 30.0
+end
+box
+  position 165.47 345.7 0.0
+  rotation 170.63
+  size     5.0 6.63 30.0
+end
+box
+  position 165.47 334.3 0.0
+  rotation 189.38
+  size     5.0 6.63 30.0
+end
+box
+  position 169.13 323.5 0.0
+  rotation 208.13
+  size     5.0 6.63 30.0
+end
+box
+  position 176.07 314.45 0.0
+  rotation 226.88
+  size     5.0 6.63 30.0
+end
+box
+  position 185.56 308.12 0.0
+  rotation 245.63
+  size     5.0 6.63 30.0
+end
+box
+  position 196.57 305.17 0.0
+  rotation 264.38
+  size     5.0 6.63 30.0
+end
+box
+  position 207.95 305.91 0.0
+  rotation 283.13
+  size     5.0 6.63 30.0
+end
+box
+  position 218.48 310.28 0.0
+  rotation 301.88
+  size     5.0 6.63 30.0
+end
+box
+  position 227.06 317.8 0.0
+  rotation 320.63
+  size     5.0 6.63 30.0
+end
+# ### Crenelations.
+box
+  position 235.45 358.74 30.0
+  rotation 27.86
+  size     0.3 1.0 1.6
+end
+box
+  position 233.96 361.33 30.0
+  rotation 32.14
+  size     0.3 1.0 1.6
+end
+box
+  position 232.27 363.8 30.0
+  rotation 36.41
+  size     0.3 1.0 1.6
+end
+box
+  position 230.41 366.14 30.0
+  rotation 40.69
+  size     0.3 1.0 1.6
+end
+box
+  position 228.37 368.34 30.0
+  rotation 44.97
+  size     0.3 1.0 1.6
+end
+box
+  position 226.18 370.37 30.0
+  rotation 49.24
+  size     0.3 1.0 1.6
+end
+box
+  position 223.84 372.24 30.0
+  rotation 53.52
+  size     0.3 1.0 1.6
+end
+box
+  position 221.37 373.93 30.0
+  rotation 57.79
+  size     0.3 1.0 1.6
+end
+box
+  position 218.78 375.43 30.0
+  rotation 62.07
+  size     0.3 1.0 1.6
+end
+box
+  position 216.09 376.73 30.0
+  rotation 66.34
+  size     0.3 1.0 1.6
+end
+box
+  position 213.31 377.83 30.0
+  rotation 70.62
+  size     0.3 1.0 1.6
+end
+box
+  position 210.45 378.71 30.0
+  rotation 74.9
+  size     0.3 1.0 1.6
+end
+box
+  position 207.53 379.39 30.0
+  rotation 79.17
+  size     0.3 1.0 1.6
+end
+box
+  position 204.58 379.84 30.0
+  rotation 83.45
+  size     0.3 1.0 1.6
+end
+box
+  position 201.59 380.07 30.0
+  rotation 87.72
+  size     0.3 1.0 1.6
+end
+box
+  position 198.6 380.08 30.0
+  rotation 92.0
+  size     0.3 1.0 1.6
+end
+box
+  position 195.62 379.86 30.0
+  rotation 96.27
+  size     0.3 1.0 1.6
+end
+box
+  position 192.66 379.42 30.0
+  rotation 100.55
+  size     0.3 1.0 1.6
+end
+box
+  position 189.74 378.76 30.0
+  rotation 104.83
+  size     0.3 1.0 1.6
+end
+box
+  position 186.88 377.89 30.0
+  rotation 109.1
+  size     0.3 1.0 1.6
+end
+box
+  position 184.09 376.81 30.0
+  rotation 113.38
+  size     0.3 1.0 1.6
+end
+box
+  position 181.39 375.52 30.0
+  rotation 117.65
+  size     0.3 1.0 1.6
+end
+box
+  position 178.79 374.03 30.0
+  rotation 121.93
+  size     0.3 1.0 1.6
+end
+box
+  position 176.31 372.36 30.0
+  rotation 126.21
+  size     0.3 1.0 1.6
+end
+box
+  position 173.97 370.5 30.0
+  rotation 130.48
+  size     0.3 1.0 1.6
+end
+box
+  position 171.77 368.47 30.0
+  rotation 134.76
+  size     0.3 1.0 1.6
+end
+box
+  position 169.72 366.29 30.0
+  rotation 139.03
+  size     0.3 1.0 1.6
+end
+box
+  position 167.85 363.96 30.0
+  rotation 143.31
+  size     0.3 1.0 1.6
+end
+box
+  position 166.15 361.5 30.0
+  rotation 147.58
+  size     0.3 1.0 1.6
+end
+box
+  position 164.64 358.91 30.0
+  rotation 151.86
+  size     0.3 1.0 1.6
+end
+box
+  position 163.33 356.22 30.0
+  rotation 156.14
+  size     0.3 1.0 1.6
+end
+box
+  position 162.22 353.44 30.0
+  rotation 160.41
+  size     0.3 1.0 1.6
+end
+box
+  position 161.32 350.59 30.0
+  rotation 164.69
+  size     0.3 1.0 1.6
+end
+box
+  position 160.64 347.68 30.0
+  rotation 168.96
+  size     0.3 1.0 1.6
+end
+box
+  position 160.18 344.72 30.0
+  rotation 173.24
+  size     0.3 1.0 1.6
+end
+box
+  position 159.94 341.74 30.0
+  rotation 177.52
+  size     0.3 1.0 1.6
+end
+box
+  position 159.92 338.75 30.0
+  rotation 181.79
+  size     0.3 1.0 1.6
+end
+box
+  position 160.12 335.76 30.0
+  rotation 186.07
+  size     0.3 1.0 1.6
+end
+box
+  position 160.55 332.8 30.0
+  rotation 190.34
+  size     0.3 1.0 1.6
+end
+box
+  position 161.2 329.88 30.0
+  rotation 194.62
+  size     0.3 1.0 1.6
+end
+box
+  position 162.06 327.01 30.0
+  rotation 198.89
+  size     0.3 1.0 1.6
+end
+box
+  position 163.13 324.22 30.0
+  rotation 203.17
+  size     0.3 1.0 1.6
+end
+box
+  position 164.41 321.52 30.0
+  rotation 207.45
+  size     0.3 1.0 1.6
+end
+box
+  position 165.89 318.92 30.0
+  rotation 211.72
+  size     0.3 1.0 1.6
+end
+box
+  position 167.56 316.43 30.0
+  rotation 216.0
+  size     0.3 1.0 1.6
+end
+box
+  position 169.4 314.08 30.0
+  rotation 220.27
+  size     0.3 1.0 1.6
+end
+box
+  position 171.42 311.87 30.0
+  rotation 224.55
+  size     0.3 1.0 1.6
+end
+box
+  position 173.6 309.82 30.0
+  rotation 228.82
+  size     0.3 1.0 1.6
+end
+box
+  position 175.92 307.93 30.0
+  rotation 233.1
+  size     0.3 1.0 1.6
+end
+box
+  position 178.38 306.23 30.0
+  rotation 237.38
+  size     0.3 1.0 1.6
+end
+box
+  position 180.96 304.71 30.0
+  rotation 241.65
+  size     0.3 1.0 1.6
+end
+box
+  position 183.64 303.39 30.0
+  rotation 245.93
+  size     0.3 1.0 1.6
+end
+box
+  position 186.42 302.27 30.0
+  rotation 250.2
+  size     0.3 1.0 1.6
+end
+box
+  position 189.27 301.36 30.0
+  rotation 254.48
+  size     0.3 1.0 1.6
+end
+box
+  position 192.18 300.67 30.0
+  rotation 258.76
+  size     0.3 1.0 1.6
+end
+box
+  position 195.13 300.2 30.0
+  rotation 263.03
+  size     0.3 1.0 1.6
+end
+box
+  position 198.12 299.94 30.0
+  rotation 267.31
+  size     0.3 1.0 1.6
+end
+box
+  position 201.11 299.92 30.0
+  rotation 271.58
+  size     0.3 1.0 1.6
+end
+box
+  position 204.09 300.11 30.0
+  rotation 275.86
+  size     0.3 1.0 1.6
+end
+box
+  position 207.06 300.53 30.0
+  rotation 280.13
+  size     0.3 1.0 1.6
+end
+box
+  position 209.98 301.16 30.0
+  rotation 284.41
+  size     0.3 1.0 1.6
+end
+box
+  position 212.85 302.01 30.0
+  rotation 288.69
+  size     0.3 1.0 1.6
+end
+box
+  position 215.64 303.08 30.0
+  rotation 292.96
+  size     0.3 1.0 1.6
+end
+box
+  position 218.35 304.35 30.0
+  rotation 297.24
+  size     0.3 1.0 1.6
+end
+box
+  position 220.96 305.81 30.0
+  rotation 301.51
+  size     0.3 1.0 1.6
+end
+box
+  position 223.45 307.47 30.0
+  rotation 305.79
+  size     0.3 1.0 1.6
+end
+box
+  position 225.81 309.31 30.0
+  rotation 310.07
+  size     0.3 1.0 1.6
+end
+box
+  position 228.03 311.32 30.0
+  rotation 314.34
+  size     0.3 1.0 1.6
+end
+box
+  position 230.09 313.49 30.0
+  rotation 318.62
+  size     0.3 1.0 1.6
+end
+box
+  position 231.98 315.81 30.0
+  rotation 322.89
+  size     0.3 1.0 1.6
+end
+box
+  position 233.69 318.26 30.0
+  rotation 327.17
+  size     0.3 1.0 1.6
+end
+box
+  position 200.0 340.0 0.0
+  rotation 0.0
+  size     16.0 15.0 10.0
+end
+box
+  position 200.0 340.0 10.0
+  rotation 0.0
+  size     8.0 32.0 10.0
+end
+# Tower within this circular tower
+box
+  position 175.0 340.0 10.0
+  rotation 0.0
+  size     9.0 9.0 24.0
+end
+box
+  position 184.0 347.2 34.0
+  rotation 0.0
+  size     0.3 0.9 1.6
+end
+box
+  position 166.0 347.2 34.0
+  rotation 0.0
+  size     0.3 0.9 1.6
+end
+box
+  position 182.2 349.0 34.0
+  rotation 90.0
+  size     0.3 0.9 1.6
+end
+box
+  position 182.2 331.0 34.0
+  rotation 90.0
+  size     0.3 0.9 1.6
+end
+box
+  position 184.0 343.6 34.0
+  rotation 0.0
+  size     0.3 0.9 1.6
+end
+box
+  position 166.0 343.6 34.0
+  rotation 0.0
+  size     0.3 0.9 1.6
+end
+box
+  position 178.6 349.0 34.0
+  rotation 90.0
+  size     0.3 0.9 1.6
+end
+box
+  position 178.6 331.0 34.0
+  rotation 90.0
+  size     0.3 0.9 1.6
+end
+box
+  position 184.0 340.0 34.0
+  rotation 0.0
+  size     0.3 0.9 1.6
+end
+box
+  position 166.0 340.0 34.0
+  rotation 0.0
+  size     0.3 0.9 1.6
+end
+box
+  position 175.0 349.0 34.0
+  rotation 90.0
+  size     0.3 0.9 1.6
+end
+box
+  position 175.0 331.0 34.0
+  rotation 90.0
+  size     0.3 0.9 1.6
+end
+box
+  position 184.0 336.4 34.0
+  rotation 0.0
+  size     0.3 0.9 1.6
+end
+box
+  position 166.0 336.4 34.0
+  rotation 0.0
+  size     0.3 0.9 1.6
+end
+box
+  position 171.4 349.0 34.0
+  rotation 90.0
+  size     0.3 0.9 1.6
+end
+box
+  position 171.4 331.0 34.0
+  rotation 90.0
+  size     0.3 0.9 1.6
+end
+box
+  position 184.0 332.8 34.0
+  rotation 0.0
+  size     0.3 0.9 1.6
+end
+box
+  position 166.0 332.8 34.0
+  rotation 0.0
+  size     0.3 0.9 1.6
+end
+box
+  position 167.8 349.0 34.0
+  rotation 90.0
+  size     0.3 0.9 1.6
+end
+box
+  position 167.8 331.0 34.0
+  rotation 90.0
+  size     0.3 0.9 1.6
+end
+# ###################
+# ### Siege Tower ###
+# ###################
+# 4 boxes, backing up each time
+box
+  position 70.0 320.0 0.0
+  rotation 0.0
+  size     2.0 2.0 31.0
+end
+box
+  position 65.0 320.0 0.0
+  rotation 0.0
+  size     3.0 3.0 30.0
+end
+box
+  position 60.0 320.0 0.0
+  rotation 0.0
+  size     4.0 4.0 23.4
+end
+box
+  position 55.0 320.0 0.0
+  rotation 0.0
+  size     5.0 5.0 22.1
+end
+box
+  position 50.0 320.0 0.0
+  rotation 0.0
+  size     6.0 6.0 17.0
+end
+# Second Fort (JFORT)
+box
+  position -330.0 -330.0 0.0
+  rotation 0.0
+  size     10.0 10.0 50.0
+end
+box
+  position -340.0 -340.0 46.0
+  rotation 0.0
+  size     2.5 2.5 12.5
+end
+pyramid
+  position -340.0 -340.0 58.5
+  rotation 0.0
+  size     2.5 2.5 3.13
+end
+box
+  position -340.0 -320.0 46.0
+  rotation 0.0
+  size     2.5 2.5 12.5
+end
+pyramid
+  position -340.0 -320.0 58.5
+  rotation 0.0
+  size     2.5 2.5 3.13
+end
+box
+  position -320.0 -320.0 46.0
+  rotation 0.0
+  size     2.5 2.5 12.5
+end
+pyramid
+  position -320.0 -320.0 58.5
+  rotation 0.0
+  size     2.5 2.5 3.13
+end
+box
+  position -320.0 -340.0 46.0
+  rotation 0.0
+  size     2.5 2.5 12.5
+end
+pyramid
+  position -320.0 -340.0 58.5
+  rotation 0.0
+  size     2.5 2.5 3.13
+end
+box
+  position -346.0 -330.0 0.0
+  rotation 0.0
+  size     17.5 40.0 32.0
+end
+box
+  position -363.5 -370.0 28.0
+  rotation 0.0
+  size     2.5 2.5 12.5
+end
+pyramid
+  position -363.5 -370.0 40.5
+  rotation 0.0
+  size     2.5 2.5 3.13
+end
+box
+  position -363.5 -290.0 28.0
+  rotation 0.0
+  size     2.5 2.5 12.5
+end
+pyramid
+  position -363.5 -290.0 40.5
+  rotation 0.0
+  size     2.5 2.5 3.13
+end
+box
+  position -328.5 -290.0 28.0
+  rotation 0.0
+  size     2.5 2.5 12.5
+end
+pyramid
+  position -328.5 -290.0 40.5
+  rotation 0.0
+  size     2.5 2.5 3.13
+end
+box
+  position -328.5 -370.0 28.0
+  rotation 0.0
+  size     2.5 2.5 12.5
+end
+pyramid
+  position -328.5 -370.0 40.5
+  rotation 0.0
+  size     2.5 2.5 3.13
+end
+# Building to allow jump up to first high level.
+box
+  position -273.0 -369.0 0.0
+  rotation 0.0
+  size     40.0 10.0 17.0
+end
+pyramid
+  position -273.0 -369.0 17.1
+  rotation 0.0
+  size     20.0 5.0 10.0
+  DriveThrough
+end
+# Inner building, transporter
+box
+  position -348.0 -226.0 0.0
+  rotation 0.0
+  size     10.0 15.0 15.0
+end
+# Teleporter on bldg in jfort
+teleporter
+  position -348.0 -226.0 15.0
+  rotation 0.0
+  border 1.0
+  size 0.45 6.0 8.0
+end
+# Long bridge into fourth quadrant.
+box
+  position -32.0 -351.0 19.0
+  rotation -9.0
+  size     150.0 10.0 5.0
+end
+# Ziggurat dividing quadrants 3 and 4.
+box
+  position 156.0 -330.0 0.0
+  rotation 0.0
+  size     65.0 65.0 12.0
+end
+box
+  position 156.0 -330.0 12.0
+  rotation 0.0
+  size     56.0 56.0 12.0
+end
+# apply band
+box
+  position 156.0 -330.0 31.0
+  rotation 0.0
+  size     56.0 56.0 5.0
+end
+box
+  position 156.0 -330.0 24.0
+  rotation 0.0
+  size     47.0 47.0 12.0
+end
+box
+  position 156.0 -330.0 36.0
+  rotation 0.0
+  size     38.0 38.0 12.0
+end
+box
+  position 156.0 -330.0 48.0
+  rotation 0.0
+  size     29.0 29.0 15.0
+end
+box
+  position 156.0 -330.0 60.0
+  rotation 0.0
+  size     20.0 20.0 12.0
+end
+box
+  position 156.0 -330.0 72.0
+  rotation 0.0
+  size     11.0 11.0 12.0
+end
+# Claim this for the jfort side
+box
+  position 166.0 -320.0 80.0
+  rotation 0.0
+  size     2.5 2.5 12.5
+end
+pyramid
+  position 166.0 -320.0 92.5
+  rotation 0.0
+  size     2.5 2.5 3.13
+end
+box
+  position 146.0 -320.0 80.0
+  rotation 0.0
+  size     2.5 2.5 12.5
+end
+pyramid
+  position 146.0 -320.0 92.5
+  rotation 0.0
+  size     2.5 2.5 3.13
+end
+box
+  position 166.0 -340.0 80.0
+  rotation 0.0
+  size     2.5 2.5 12.5
+end
+pyramid
+  position 166.0 -340.0 92.5
+  rotation 0.0
+  size     2.5 2.5 3.13
+end
+box
+  position 146.0 -340.0 80.0
+  rotation 0.0
+  size     2.5 2.5 12.5
+end
+pyramid
+  position 146.0 -340.0 92.5
+  rotation 0.0
+  size     2.5 2.5 3.13
+end
+# Walls
+box
+  position -360.0 -155.0 0.0
+  rotation 327.99
+  size     47.17 8.0 19.0
+end
+box
+  position -320.0 -210.0 0.0
+  rotation 270.0
+  size     30.0 8.0 19.0
+end
+box
+  position -290.0 -240.0 0.0
+  rotation 0.0
+  size     30.0 8.0 19.0
+end
+box
+  position -242.5 -270.0 0.0
+  rotation 300.26
+  size     34.73 8.0 19.0
+end
+box
+  position -192.5 -260.0 0.0
+  rotation 300.26
+  size     34.73 8.0 19.0
+end
+box
+  position -162.5 -345.0 0.0
+  rotation 282.8
+  size     56.4 8.0 19.0
+end
+# Towers at wall junction points
+box
+  position -400.0 -130.0 0.0
+  rotation 0.0
+  size     6.4 6.4 19.0
+end
+box
+  position -400.0 -130.0 15.0
+  rotation 0.0
+  size     2.5 2.5 12.5
+end
+pyramid
+  position -400.0 -130.0 27.5
+  rotation 0.0
+  size     2.5 2.5 3.13
+end
+box
+  position -320.0 -180.0 0.0
+  rotation 0.0
+  size     6.4 6.4 19.0
+end
+box
+  position -320.0 -180.0 15.0
+  rotation 0.0
+  size     2.5 2.5 12.5
+end
+pyramid
+  position -320.0 -180.0 27.5
+  rotation 0.0
+  size     2.5 2.5 3.13
+end
+box
+  position -320.0 -240.0 0.0
+  rotation 0.0
+  size     6.4 6.4 19.0
+end
+box
+  position -320.0 -240.0 15.0
+  rotation 0.0
+  size     2.5 2.5 12.5
+end
+pyramid
+  position -320.0 -240.0 27.5
+  rotation 0.0
+  size     2.5 2.5 3.13
+end
+box
+  position -260.0 -240.0 0.0
+  rotation 0.0
+  size     6.4 6.4 19.0
+end
+box
+  position -260.0 -240.0 15.0
+  rotation 0.0
+  size     2.5 2.5 12.5
+end
+pyramid
+  position -260.0 -240.0 27.5
+  rotation 0.0
+  size     2.5 2.5 3.13
+end
+box
+  position -225.0 -300.0 0.0
+  rotation 0.0
+  size     6.4 6.4 19.0
+end
+box
+  position -225.0 -300.0 15.0
+  rotation 0.0
+  size     2.5 2.5 12.5
+end
+pyramid
+  position -225.0 -300.0 27.5
+  rotation 0.0
+  size     2.5 2.5 3.13
+end
+box
+  position -210.0 -230.0 0.0
+  rotation 0.0
+  size     6.4 6.4 19.0
+end
+box
+  position -210.0 -230.0 15.0
+  rotation 0.0
+  size     2.5 2.5 12.5
+end
+pyramid
+  position -210.0 -230.0 27.5
+  rotation 0.0
+  size     2.5 2.5 3.13
+end
+box
+  position -175.0 -290.0 0.0
+  rotation 0.0
+  size     6.4 6.4 19.0
+end
+box
+  position -175.0 -290.0 15.0
+  rotation 0.0
+  size     2.5 2.5 12.5
+end
+pyramid
+  position -175.0 -290.0 27.5
+  rotation 0.0
+  size     2.5 2.5 3.13
+end
+box
+  position -150.0 -400.0 0.0
+  rotation 0.0
+  size     6.4 6.4 19.0
+end
+box
+  position -150.0 -400.0 15.0
+  rotation 0.0
+  size     2.5 2.5 12.5
+end
+pyramid
+  position -150.0 -400.0 27.5
+  rotation 0.0
+  size     2.5 2.5 3.13
+end
+# Defensive teleporter.
+teleporter
+  position -188.0 -328.0 0.0
+  rotation -78.5
+  border 1.0
+  size 0.45 11.52 18.0
+end
+# Roof over defensive teleporter
+box
+  position -193.0 -334.5 19.0
+  rotation -76.0
+  size     13.0 18.5 5.0
+end
+# Wall next to defensive transporter
+box
+  position -200.0 -347.5 0.0
+  rotation 15.0
+  size     4.0 20.0 10.0
+end
+box
+  position -168.0 -318.5 20.0
+  rotation 0.0
+  size     2.5 2.5 12.5
+end
+pyramid
+  position -168.0 -318.5 32.5
+  rotation 0.0
+  size     2.5 2.5 3.13
+end
+box
+  position -163.0 -342.5 20.0
+  rotation 0.0
+  size     2.5 2.5 12.5
+end
+pyramid
+  position -163.0 -342.5 32.5
+  rotation 0.0
+  size     2.5 2.5 3.13
+end
+# Main block - smaller of the two
+box
+  position 60.0 -20.0 0.0
+  rotation 30.0
+  size     50.0 60.0 30.0
+end
+# Main block - larger of the two
+box
+  position -70.0 40.0 0.0
+  rotation -10.0
+  size     40.0 40.0 60.0
+end
+# Border at lower height around main block
+box
+  position -70.0 40.0 11.0
+  rotation -10.0
+  size     48.0 48.0 5.0
+end
+# Border at heighter height around main block
+box
+  position -70.0 40.0 45.0
+  rotation -10.0
+  size     46.0 46.0 5.0
+end
+# Block on top of larger main block
+box
+  position -70.0 40.0 60.0
+  rotation -10.0
+  size     20.0 20.0 20.0
+end
+# Access block towards castle
+box
+  position 110.0 68.0 0.0
+  rotation 80.0
+  size     12.0 14.0 15.0
+end
+box
+  position 94.5 55.0 12.0
+  rotation 45.0
+  size     20.0 5.0 3.0
+end
+# Access block towards jfort
+box
+  position -47.0 -144.0 0.0
+  rotation 45.0
+  size     8.0 13.0 16.0
+end
+box
+  position 4.5 -98.0 14.0
+  rotation 45.0
+  size     70.0 5.0 2.0
+end
+# Block to allow jump from lower building to higher one.
+box
+  position 18.5 -5.5 30.0
+  rotation 0.0
+  size     8.0 9.0 14.0
+end
+box
+  position -12.5 8.0 42.0
+  rotation -21.5
+  size     36.5 6.0 2.0
+end
+# Blocks at correct height for shooting at main fort
+box
+  position 51.0 30.0 0.0
+  rotation 195.61
+  size     14.0 8.0 31.0
+end
+pyramid
+  position 51.0 30.0 31.0
+  rotation 195.61
+  size     14.0 8.0 20.0
+end
+box
+  position 132.0 4.0 0.0
+  rotation 82.45
+  size     12.0 14.0 30.0
+end
+box
+  position 133.0 -49.0 0.0
+  rotation 38.72
+  size     16.0 13.0 23.4
+end
+box
+  position 74.0 -28.0 30.0
+  rotation 12.0
+  size     19.0 23.0 19.0
+end
+# Platform to shoot at skyrise from
+box
+  position -103.0 89.5 35.0
+  rotation 45.0
+  size     20.0 20.0 5.0
+end
+# Quadrant 3 box copy
+box
+  position -205.0 49.5 0.0
+  rotation 90.0
+  size     20.0 40.0 40.0
+end
+box
+  position -205.0 49.5 22.0
+  rotation 90.0
+  size     30.0 50.0 5.0
+end
+box
+  position -205.0 49.5 40.0
+  rotation 0.0
+  size     10.0 10.0 5.0
+end
+pyramid
+  position -205.0 49.5 45.1
+  rotation 0.0
+  size     10.0 10.0 40.0
+  ShootThrough
+  DriveThrough
+end
+# Pyramid set, river-like flow
+pyramid
+  position 155.17 115.96 0.0
+  rotation 97.1
+  size     3.53 4.05 17.8
+end
+pyramid
+  position 123.89 97.07 0.0
+  rotation 131.4
+  size     0.61 3.9 35.87
+end
+pyramid
+  position 154.29 90.9 0.0
+  rotation 195.15
+  size     2.57 6.29 18.21
+end
+pyramid
+  position 130.94 145.7 0.0
+  rotation 38.66
+  size     5.06 3.9 24.51
+end
+pyramid
+  position 174.88 112.17 0.0
+  rotation 6.75
+  size     5.96 8.33 27.98
+end
+pyramid
+  position 134.73 85.18 0.0
+  rotation 0.09
+  size     3.32 1.28 5.29
+end
+pyramid
+  position 157.58 125.99 0.0
+  rotation 69.09
+  size     8.27 0.82 20.64
+end
+pyramid
+  position 167.52 111.79 0.0
+  rotation 334.36
+  size     1.5 7.04 14.1
+end
+pyramid
+  position 157.11 86.27 0.0
+  rotation 177.18
+  size     4.02 4.62 28.12
+end
+pyramid
+  position 134.53 103.08 0.0
+  rotation 333.94
+  size     5.9 1.7 4.94
+end
+pyramid
+  position 126.86 111.07 0.0
+  rotation 98.26
+  size     8.73 7.51 11.15
+end
+pyramid
+  position 167.16 97.96 0.0
+  rotation 284.45
+  size     0.31 3.23 4.75
+end
+pyramid
+  position 140.81 96.47 0.0
+  rotation 16.18
+  size     2.55 3.41 18.42
+end
+pyramid
+  position 153.77 94.42 0.0
+  rotation 334.04
+  size     5.89 7.55 31.86
+end
+pyramid
+  position 118.01 80.65 0.0
+  rotation 41.26
+  size     4.1 9.6 23.8
+end
+pyramid
+  position 144.64 118.41 0.0
+  rotation 78.99
+  size     1.49 4.8 13.77
+end
+pyramid
+  position 149.56 84.13 0.0
+  rotation 332.26
+  size     3.45 5.48 2.61
+end
+pyramid
+  position 117.68 103.45 0.0
+  rotation 259.88
+  size     8.26 6.72 31.25
+end
+pyramid
+  position 149.77 98.79 0.0
+  rotation 64.47
+  size     4.13 6.95 18.93
+end
+pyramid
+  position 109.6 113.02 0.0
+  rotation 183.26
+  size     5.41 4.28 30.11
+end
+pyramid
+  position 95.94 118.34 0.0
+  rotation 133.39
+  size     6.81 8.87 18.74
+end
+pyramid
+  position 20.5 130.52 0.0
+  rotation 130.85
+  size     2.23 5.85 20.14
+end
+pyramid
+  position 61.32 153.46 0.0
+  rotation 221.02
+  size     6.84 7.47 8.27
+end
+pyramid
+  position 54.75 131.32 0.0
+  rotation 23.71
+  size     2.03 9.57 29.87
+end
+pyramid
+  position 4.31 175.52 0.0
+  rotation 41.57
+  size     4.64 1.2 14.89
+end
+pyramid
+  position 12.16 123.37 0.0
+  rotation 78.02
+  size     5.33 5.61 26.62
+end
+pyramid
+  position 32.76 172.24 0.0
+  rotation 268.56
+  size     3.99 9.03 27.93
+end
+pyramid
+  position 34.42 149.91 0.0
+  rotation 99.11
+  size     4.31 4.02 2.15
+end
+pyramid
+  position 58.98 156.18 0.0
+  rotation 99.78
+  size     4.18 7.34 25.96
+end
+pyramid
+  position 30.34 116.15 0.0
+  rotation 37.6
+  size     6.46 3.48 5.85
+end
+pyramid
+  position 12.98 55.44 0.0
+  rotation 177.98
+  size     9.59 5.42 16.75
+end
+pyramid
+  position 68.11 65.25 0.0
+  rotation 181.21
+  size     3.96 2.82 14.86
+end
+pyramid
+  position 9.71 86.21 0.0
+  rotation 236.61
+  size     5.58 9.09 35.39
+end
+pyramid
+  position 30.88 98.51 0.0
+  rotation 178.95
+  size     7.56 7.01 3.86
+end
+pyramid
+  position 10.88 65.66 0.0
+  rotation 186.49
+  size     7.84 0.5 13.02
+end
+pyramid
+  position 52.99 106.05 0.0
+  rotation 242.94
+  size     9.73 8.04 12.98
+end
+pyramid
+  position 41.3 9.17 0.0
+  rotation 250.66
+  size     9.54 7.97 5.91
+end
+pyramid
+  position 8.11 -18.86 0.0
+  rotation 146.18
+  size     1.64 5.1 7.47
+end
+pyramid
+  position -12.57 -0.67 0.0
+  rotation 67.6
+  size     8.49 4.98 24.11
+end
+pyramid
+  position 42.76 6.1 0.0
+  rotation 160.92
+  size     7.71 2.18 12.92
+end
+pyramid
+  position -3.48 41.49 0.0
+  rotation 309.81
+  size     3.74 3.9 22.97
+end
+pyramid
+  position 21.02 45.21 0.0
+  rotation 93.26
+  size     3.3 8.68 19.7
+end
+pyramid
+  position -1.83 -7.49 0.0
+  rotation 302.72
+  size     0.03 7.42 13.74
+end
+pyramid
+  position -0.5 29.21 0.0
+  rotation 157.56
+  size     8.12 7.42 15.77
+end
+pyramid
+  position -14.54 8.74 0.0
+  rotation 287.56
+  size     7.11 3.12 13.48
+end
+pyramid
+  position -9.38 21.51 0.0
+  rotation 41.16
+  size     2.43 9.4 35.07
+end
+pyramid
+  position 48.9 24.31 0.0
+  rotation 88.26
+  size     9.03 5.75 22.56
+end
+pyramid
+  position 40.21 -14.75 0.0
+  rotation 136.3
+  size     7.6 2.46 16.96
+end
+pyramid
+  position 7.81 16.86 0.0
+  rotation 28.34
+  size     5.81 2.1 11.06
+end
+pyramid
+  position 42.68 -12.2 0.0
+  rotation 341.97
+  size     9.0 2.32 24.43
+end
+pyramid
+  position 39.23 10.89 0.0
+  rotation 137.72
+  size     7.7 8.35 18.82
+end
+pyramid
+  position -6.31 2.83 0.0
+  rotation 35.79
+  size     1.53 6.2 16.06
+end
+pyramid
+  position -5.65 28.48 0.0
+  rotation 169.7
+  size     1.83 9.91 19.26
+end
+pyramid
+  position -19.72 9.81 0.0
+  rotation 295.9
+  size     7.53 8.91 11.71
+end
+pyramid
+  position -17.38 -69.28 0.0
+  rotation 352.63
+  size     3.77 1.88 6.91
+end
+pyramid
+  position 36.05 -29.29 0.0
+  rotation 10.17
+  size     1.45 2.58 27.13
+end
+pyramid
+  position 32.95 -15.16 0.0
+  rotation 199.84
+  size     3.33 4.51 29.29
+end
+pyramid
+  position 31.23 -30.52 0.0
+  rotation 206.47
+  size     2.08 3.65 8.73
+end
+pyramid
+  position 6.98 -70.22 0.0
+  rotation 74.33
+  size     0.5 5.48 21.66
+end
+pyramid
+  position 37.39 -34.69 0.0
+  rotation 289.9
+  size     8.4 4.09 36.34
+end
+pyramid
+  position 39.26 -81.91 0.0
+  rotation 122.07
+  size     6.95 0.17 7.71
+end
+pyramid
+  position 18.48 -92.27 0.0
+  rotation 201.25
+  size     2.91 3.99 5.44
+end
+pyramid
+  position -8.23 -79.31 0.0
+  rotation 144.37
+  size     3.1 3.76 29.88
+end
+pyramid
+  position 28.9 -71.33 0.0
+  rotation 342.12
+  size     6.59 4.06 26.96
+end
+pyramid
+  position 15.19 -63.87 0.0
+  rotation 164.33
+  size     5.83 7.49 9.42
+end
+pyramid
+  position -30.19 -78.27 0.0
+  rotation 5.12
+  size     2.81 3.68 32.75
+end
+pyramid
+  position -29.37 -56.12 0.0
+  rotation 96.5
+  size     5.81 6.06 28.24
+end
+pyramid
+  position -14.43 -69.45 0.0
+  rotation 149.54
+  size     0.93 5.42 31.61
+end
+pyramid
+  position -44.86 -93.4 0.0
+  rotation 340.23
+  size     4.99 4.07 26.06
+end
+pyramid
+  position 18.93 -83.6 0.0
+  rotation 66.39
+  size     6.15 0.89 20.22
+end
+pyramid
+  position -30.15 -123.68 0.0
+  rotation 201.04
+  size     4.2 5.48 6.94
+end
+pyramid
+  position 4.67 -121.99 0.0
+  rotation 217.1
+  size     0.59 3.12 15.8
+end
+pyramid
+  position -13.76 -83.25 0.0
+  rotation 207.31
+  size     9.09 7.7 13.14
+end
+pyramid
+  position -19.79 -73.72 0.0
+  rotation 273.09
+  size     0.6 2.43 7.3
+end
+pyramid
+  position 16.59 -100.83 0.0
+  rotation 285.9
+  size     7.91 0.35 25.55
+end
+pyramid
+  position -16.16 -110.55 0.0
+  rotation 235.22
+  size     9.09 9.45 22.67
+end
+pyramid
+  position -48.98 -78.67 0.0
+  rotation 26.51
+  size     0.09 9.54 35.36
+end
+pyramid
+  position -29.47 -84.23 0.0
+  rotation 203.15
+  size     0.4 0.55 29.88
+end
+pyramid
+  position -27.96 -96.14 0.0
+  rotation 116.06
+  size     7.34 4.51 19.45
+end
+pyramid
+  position -44.81 -96.39 0.0
+  rotation 234.68
+  size     7.63 5.8 21.65
+end
+pyramid
+  position 6.54 -95.82 0.0
+  rotation 263.1
+  size     7.21 6.93 29.5
+end
+pyramid
+  position -36.54 -70.84 0.0
+  rotation 295.16
+  size     2.48 9.5 4.04
+end
+pyramid
+  position -34.64 -112.1 0.0
+  rotation 92.13
+  size     9.25 2.58 9.89
+end
+pyramid
+  position -43.46 -75.9 0.0
+  rotation 258.77
+  size     3.08 8.25 28.16
+end
+pyramid
+  position -27.28 -114.42 0.0
+  rotation 73.55
+  size     5.53 3.56 14.06
+end
+pyramid
+  position -49.47 -85.9 0.0
+  rotation 301.88
+  size     0.61 6.34 6.48
+end
+pyramid
+  position -45.14 -100.25 0.0
+  rotation 276.97
+  size     4.95 9.73 8.15
+end
+pyramid
+  position -63.36 -96.08 0.0
+  rotation 233.21
+  size     6.74 0.38 20.75
+end
+pyramid
+  position -27.04 -106.17 0.0
+  rotation 128.92
+  size     4.26 7.72 5.7
+end
+pyramid
+  position -61.16 -77.67 0.0
+  rotation 62.48
+  size     7.2 5.07 16.88
+end
+pyramid
+  position -70.54 -123.89 0.0
+  rotation 110.39
+  size     2.84 6.18 35.86
+end
+pyramid
+  position -30.34 -107.67 0.0
+  rotation 26.18
+  size     1.74 3.0 29.44
+end
+pyramid
+  position -55.46 -98.3 0.0
+  rotation 48.83
+  size     0.3 3.18 22.52
+end
+pyramid
+  position -67.11 -76.8 0.0
+  rotation 199.45
+  size     9.64 8.28 23.56
+end
+pyramid
+  position -47.52 -116.69 0.0
+  rotation 215.01
+  size     3.19 6.0 33.17
+end
+pyramid
+  position -36.31 -79.96 0.0
+  rotation 197.9
+  size     7.6 2.58 25.65
+end
+pyramid
+  position -54.36 -90.43 0.0
+  rotation 349.91
+  size     4.16 3.51 11.46
+end
+pyramid
+  position -79.2 -87.45 0.0
+  rotation 235.5
+  size     3.78 1.38 2.72
+end
+pyramid
+  position -109.27 -106.14 0.0
+  rotation 252.87
+  size     0.96 6.15 14.74
+end
+pyramid
+  position -89.23 -90.54 0.0
+  rotation 15.82
+  size     7.01 2.13 13.36
+end
+pyramid
+  position -57.98 -116.98 0.0
+  rotation 296.13
+  size     7.39 7.55 17.65
+end
+pyramid
+  position -105.32 -87.19 0.0
+  rotation 166.5
+  size     8.28 4.1 31.98
+end
+pyramid
+  position -95.58 -102.55 0.0
+  rotation 225.61
+  size     5.44 5.38 29.85
+end
+pyramid
+  position -113.83 -70.23 0.0
+  rotation 345.82
+  size     0.58 2.75 10.63
+end
+pyramid
+  position -97.11 -74.66 0.0
+  rotation 77.31
+  size     3.7 3.27 14.32
+end
+pyramid
+  position -105.14 -90.38 0.0
+  rotation 212.37
+  size     2.41 6.86 23.21
+end
+pyramid
+  position -77.8 -114.49 0.0
+  rotation 143.55
+  size     1.53 2.46 3.16
+end
+pyramid
+  position -159.87 -51.45 0.0
+  rotation 0.98
+  size     5.27 3.88 33.03
+end
+pyramid
+  position -162.44 -98.6 0.0
+  rotation 86.65
+  size     9.81 3.12 24.18
+end
+pyramid
+  position -118.5 -100.93 0.0
+  rotation 249.79
+  size     6.07 6.1 21.54
+end
+pyramid
+  position -120.5 -103.17 0.0
+  rotation 244.24
+  size     8.23 2.68 15.41
+end
+pyramid
+  position -152.27 -51.59 0.0
+  rotation 263.21
+  size     8.36 2.19 16.75
+end
+pyramid
+  position -117.06 -94.76 0.0
+  rotation 188.21
+  size     9.66 8.71 35.97
+end
+pyramid
+  position -134.44 -78.03 0.0
+  rotation 307.43
+  size     6.43 6.13 7.08
+end
+pyramid
+  position -154.29 -106.28 0.0
+  rotation 162.45
+  size     0.55 3.75 19.3
+end
+pyramid
+  position -159.14 -42.21 0.0
+  rotation 191.97
+  size     6.5 6.14 2.05
+end
+pyramid
+  position -177.94 -59.82 0.0
+  rotation 131.33
+  size     9.81 2.91 12.59
+end
+pyramid
+  position -157.48 -85.22 0.0
+  rotation 96.54
+  size     5.93 7.02 9.85
+end
+pyramid
+  position -139.73 -69.62 0.0
+  rotation 291.62
+  size     9.31 2.5 36.28
+end
+pyramid
+  position -191.46 -85.91 0.0
+  rotation 348.99
+  size     4.99 1.33 18.88
+end
+pyramid
+  position -207.57 -88.73 0.0
+  rotation 265.72
+  size     1.1 6.51 25.46
+end
+pyramid
+  position -165.4 -99.79 0.0
+  rotation 21.48
+  size     5.0 5.75 4.5
+end
+pyramid
+  position -191.13 -121.72 0.0
+  rotation 217.56
+  size     3.15 9.91 6.71
+end
+pyramid
+  position -200.75 -100.86 0.0
+  rotation 157.46
+  size     0.63 4.58 18.05
+end
+pyramid
+  position -153.85 -110.89 0.0
+  rotation 184.66
+  size     5.06 3.44 7.68
+end
+pyramid
+  position -192.24 -111.84 0.0
+  rotation 196.68
+  size     6.41 3.65 3.96
+end
+pyramid
+  position -158.28 -100.39 0.0
+  rotation 39.4
+  size     3.81 0.57 22.41
+end
+pyramid
+  position -209.79 -119.85 0.0
+  rotation 15.2
+  size     2.65 1.39 28.2
+end
+pyramid
+  position -171.52 -70.89 0.0
+  rotation 188.86
+  size     8.0 9.84 19.71
+end
+pyramid
+  position -215.23 -86.25 0.0
+  rotation 144.73
+  size     2.78 6.83 13.13
+end
+pyramid
+  position -193.09 -115.63 0.0
+  rotation 219.22
+  size     1.51 4.02 32.26
+end
+pyramid
+  position -181.56 -78.94 0.0
+  rotation 282.03
+  size     3.25 0.08 5.92
+end
+pyramid
+  position -155.49 -109.04 0.0
+  rotation 150.17
+  size     9.53 1.89 9.51
+end
+pyramid
+  position -194.61 -107.26 0.0
+  rotation 48.27
+  size     5.79 5.27 35.89
+end
+pyramid
+  position -277.82 -94.52 0.0
+  rotation 168.06
+  size     2.44 9.42 26.77
+end
+pyramid
+  position -229.32 -122.21 0.0
+  rotation 166.23
+  size     6.03 5.51 9.72
+end
+pyramid
+  position -234.55 -96.38 0.0
+  rotation 18.45
+  size     1.57 1.0 3.88
+end
+pyramid
+  position -241.8 -83.0 0.0
+  rotation 173.04
+  size     3.47 8.9 9.51
+end
+pyramid
+  position -263.76 -90.52 0.0
+  rotation 300.21
+  size     1.33 9.64 4.0
+end
+pyramid
+  position -222.36 -80.23 0.0
+  rotation 349.46
+  size     6.63 6.26 9.97
+end
+pyramid
+  position -250.55 -146.03 0.0
+  rotation 218.86
+  size     1.63 2.49 32.34
+end
+pyramid
+  position -254.43 -112.97 0.0
+  rotation 275.26
+  size     5.47 9.6 33.74
+end
+pyramid
+  position -251.65 -97.07 0.0
+  rotation 13.9
+  size     4.45 0.46 21.68
+end
+pyramid
+  position -254.58 -120.88 0.0
+  rotation 156.36
+  size     6.31 1.8 14.39
+end
+pyramid
+  position -269.06 -82.06 0.0
+  rotation 255.61
+  size     0.59 8.05 11.22
+end
+pyramid
+  position -262.36 -94.68 0.0
+  rotation 166.67
+  size     9.84 2.71 32.06
+end
+pyramid
+  position -216.09 -85.39 0.0
+  rotation 151.99
+  size     8.84 5.72 19.1
+end
+pyramid
+  position -222.65 -99.13 0.0
+  rotation 239.98
+  size     1.54 7.74 32.94
+end
+pyramid
+  position -216.01 -91.66 0.0
+  rotation 265.61
+  size     7.76 4.74 28.81
+end
+pyramid
+  position -240.48 -138.48 0.0
+  rotation 311.84
+  size     4.68 8.94 12.5
+end
+pyramid
+  position -253.1 -82.42 0.0
+  rotation 280.49
+  size     9.84 4.47 19.21
+end
+pyramid
+  position -258.4 -144.48 0.0
+  rotation 291.45
+  size     5.79 8.62 32.39
+end
+pyramid
+  position -215.32 -176.48 0.0
+  rotation 18.95
+  size     2.28 2.75 30.47
+end
+pyramid
+  position -216.79 -110.84 0.0
+  rotation 76.72
+  size     5.4 3.43 10.78
+end
+pyramid
+  position -265.91 -170.94 0.0
+  rotation 31.76
+  size     5.86 8.57 22.77
+end
+pyramid
+  position -265.98 -135.62 0.0
+  rotation 110.5
+  size     2.86 8.34 17.72
+end
+pyramid
+  position -211.8 -152.2 0.0
+  rotation 128.24
+  size     8.06 6.08 29.31
+end
+pyramid
+  position -239.01 -133.75 0.0
+  rotation 21.25
+  size     0.59 8.4 22.01
+end
+pyramid
+  position -269.41 -157.89 0.0
+  rotation 20.26
+  size     4.23 8.56 16.85
+end
+pyramid
+  position -217.19 -163.21 0.0
+  rotation 49.08
+  size     7.8 0.37 3.44
+end
+pyramid
+  position -233.16 -161.6 0.0
+  rotation 182.22
+  size     2.1 2.26 31.08
+end
+pyramid
+  position -236.62 -137.53 0.0
+  rotation 125.05
+  size     9.43 3.83 5.11
+end
+pyramid
+  position -277.21 -117.69 0.0
+  rotation 90.45
+  size     4.07 9.31 18.87
+end
+pyramid
+  position -241.22 -176.89 0.0
+  rotation 135.58
+  size     4.7 5.46 30.09
+end
+pyramid
+  position -269.71 -128.68 0.0
+  rotation 152.57
+  size     2.1 3.23 9.31
+end
+pyramid
+  position -228.11 -171.71 0.0
+  rotation 276.83
+  size     8.25 5.73 16.85
+end
+pyramid
+  position -259.42 -175.06 0.0
+  rotation 126.85
+  size     5.02 6.88 23.43
+end
+# Roman camp between first and second quadrants
+# Central tower
+box
+  position -40.0 280.0 0.0
+  rotation 0.0
+  size     10.0 10.0 32.0
+end
+# Roof for missle protection
+box
+  position -40.0 280.0 32.0
+  rotation 0.0
+  size     34.0 34.0 5.0
+end
+box
+  position -61.5 320.0 0.0
+  rotation 0.0
+  size     18.5 1.0 18.0
+end
+box
+  position -18.5 320.0 0.0
+  rotation 0.0
+  size     18.5 1.0 18.0
+end
+box
+  position -61.5 240.0 0.0
+  rotation 0.0
+  size     18.5 1.0 18.0
+end
+box
+  position -18.5 240.0 0.0
+  rotation 0.0
+  size     18.5 1.0 18.0
+end
+box
+  position -80.0 301.5 0.0
+  rotation 0.0
+  size     1.0 18.5 18.0
+end
+box
+  position -80.0 258.5 0.0
+  rotation 0.0
+  size     1.0 18.5 18.0
+end
+box
+  position 0.0 301.5 0.0
+  rotation 0.0
+  size     1.0 18.5 18.0
+end
+box
+  position 0.0 258.5 0.0
+  rotation 0.0
+  size     1.0 18.5 18.0
+end
+# Second quadrant blocks: tower with pyramid floating above it.
+box
+  position -220.0 260.0 0.0
+  rotation 0.0
+  size     20.0 40.0 40.0
+end
+box
+  position -220.0 260.0 0.0
+  rotation 90.0
+  size     20.0 40.0 40.0
+end
+box
+  position -175.0 260.0 0.0
+  rotation 0.0
+  size     10.0 10.0 40.0
+end
+box
+  position -220.0 215.0 0.0
+  rotation 0.0
+  size     10.0 10.0 40.0
+end
+box
+  position -265.0 260.0 0.0
+  rotation 0.0
+  size     10.0 10.0 40.0
+end
+box
+  position -220.0 305.0 0.0
+  rotation 0.0
+  size     10.0 10.0 40.0
+end
+# Teleporter: on hirise
+teleporter
+  position -220.0 260.0 40.0
+  rotation 45.0
+  border 1.0
+  size 0.56 4.48 8.0
+end
+box
+  position -220.0 260.0 49.0
+  rotation 0.0
+  size     30.0 30.0 5.0
+end
+pyramid
+  position -220.0 260.0 54.1
+  rotation 0.0
+  size     30.0 30.0 25.0
+  ShootThrough
+  DriveThrough
+end
+# Hidden teleporter inside this
+teleporter
+  position -220.0 260.0 54.0
+  rotation 0.0
+  border 1.0
+  size 0.56 4.48 6.0
+end
+# Fourth quadrant
+box
+  position 227.0 -53.0 10.0
+  rotation 0.0
+  size     0.0 5.0 2.0
+end
+box
+  position 217.0 -53.0 10.0
+  rotation 0.0
+  size     0.0 5.0 2.0
+end
+box
+  position 227.0 -53.0 10.29
+  rotation 0.0
+  size     0.0 5.0 2.0
+end
+box
+  position 217.0 -53.0 10.29
+  rotation 0.0
+  size     0.0 5.0 2.0
+end
+box
+  position 226.98 -53.0 10.58
+  rotation 0.0
+  size     0.02 5.0 2.0
+end
+box
+  position 217.02 -53.0 10.58
+  rotation 0.0
+  size     0.02 5.0 2.0
+end
+box
+  position 226.96 -53.0 10.87
+  rotation 0.0
+  size     0.04 5.0 2.0
+end
+box
+  position 217.04 -53.0 10.87
+  rotation 0.0
+  size     0.04 5.0 2.0
+end
+box
+  position 226.93 -53.0 11.15
+  rotation 0.0
+  size     0.07 5.0 2.0
+end
+box
+  position 217.07 -53.0 11.15
+  rotation 0.0
+  size     0.07 5.0 2.0
+end
+box
+  position 226.89 -53.0 11.43
+  rotation 0.0
+  size     0.11 5.0 2.0
+end
+box
+  position 217.11 -53.0 11.43
+  rotation 0.0
+  size     0.11 5.0 2.0
+end
+box
+  position 226.85 -53.0 11.71
+  rotation 0.0
+  size     0.15 5.0 2.0
+end
+box
+  position 217.15 -53.0 11.71
+  rotation 0.0
+  size     0.15 5.0 2.0
+end
+box
+  position 226.8 -53.0 11.98
+  rotation 0.0
+  size     0.2 5.0 2.0
+end
+box
+  position 217.2 -53.0 11.98
+  rotation 0.0
+  size     0.2 5.0 2.0
+end
+box
+  position 226.73 -53.0 12.24
+  rotation 0.0
+  size     0.27 5.0 2.0
+end
+box
+  position 217.27 -53.0 12.24
+  rotation 0.0
+  size     0.27 5.0 2.0
+end
+box
+  position 226.67 -53.0 12.5
+  rotation 0.0
+  size     0.33 5.0 2.0
+end
+box
+  position 217.33 -53.0 12.5
+  rotation 0.0
+  size     0.33 5.0 2.0
+end
+box
+  position 226.59 -53.0 12.75
+  rotation 0.0
+  size     0.41 5.0 2.0
+end
+box
+  position 217.41 -53.0 12.75
+  rotation 0.0
+  size     0.41 5.0 2.0
+end
+box
+  position 226.51 -53.0 12.99
+  rotation 0.0
+  size     0.49 5.0 2.0
+end
+box
+  position 217.49 -53.0 12.99
+  rotation 0.0
+  size     0.49 5.0 2.0
+end
+box
+  position 226.42 -53.0 13.21
+  rotation 0.0
+  size     0.58 5.0 2.0
+end
+box
+  position 217.58 -53.0 13.21
+  rotation 0.0
+  size     0.58 5.0 2.0
+end
+box
+  position 226.32 -53.0 13.43
+  rotation 0.0
+  size     0.68 5.0 2.0
+end
+box
+  position 217.68 -53.0 13.43
+  rotation 0.0
+  size     0.68 5.0 2.0
+end
+box
+  position 226.22 -53.0 13.64
+  rotation 0.0
+  size     0.78 5.0 2.0
+end
+box
+  position 217.78 -53.0 13.64
+  rotation 0.0
+  size     0.78 5.0 2.0
+end
+box
+  position 226.11 -53.0 13.83
+  rotation 0.0
+  size     0.89 5.0 2.0
+end
+box
+  position 217.89 -53.0 13.83
+  rotation 0.0
+  size     0.89 5.0 2.0
+end
+box
+  position 225.99 -53.0 14.01
+  rotation 0.0
+  size     1.01 5.0 2.0
+end
+box
+  position 218.01 -53.0 14.01
+  rotation 0.0
+  size     1.01 5.0 2.0
+end
+box
+  position 225.87 -53.0 14.18
+  rotation 0.0
+  size     1.13 5.0 2.0
+end
+box
+  position 218.13 -53.0 14.18
+  rotation 0.0
+  size     1.13 5.0 2.0
+end
+box
+  position 225.75 -53.0 14.33
+  rotation 0.0
+  size     1.25 5.0 2.0
+end
+box
+  position 218.25 -53.0 14.33
+  rotation 0.0
+  size     1.25 5.0 2.0
+end
+box
+  position 225.62 -53.0 14.47
+  rotation 0.0
+  size     1.38 5.0 2.0
+end
+box
+  position 218.38 -53.0 14.47
+  rotation 0.0
+  size     1.38 5.0 2.0
+end
+box
+  position 225.49 -53.0 14.59
+  rotation 0.0
+  size     1.51 5.0 2.0
+end
+box
+  position 218.51 -53.0 14.59
+  rotation 0.0
+  size     1.51 5.0 2.0
+end
+box
+  position 225.36 -53.0 14.7
+  rotation 0.0
+  size     1.64 5.0 2.0
+end
+box
+  position 218.64 -53.0 14.7
+  rotation 0.0
+  size     1.64 5.0 2.0
+end
+box
+  position 225.22 -53.0 14.79
+  rotation 0.0
+  size     1.78 5.0 2.0
+end
+box
+  position 218.78 -53.0 14.79
+  rotation 0.0
+  size     1.78 5.0 2.0
+end
+box
+  position 225.08 -53.0 14.87
+  rotation 0.0
+  size     1.92 5.0 2.0
+end
+box
+  position 218.92 -53.0 14.87
+  rotation 0.0
+  size     1.92 5.0 2.0
+end
+box
+  position 224.93 -53.0 14.92
+  rotation 0.0
+  size     2.07 5.0 2.0
+end
+box
+  position 219.07 -53.0 14.92
+  rotation 0.0
+  size     2.07 5.0 2.0
+end
+box
+  position 224.79 -53.0 14.97
+  rotation 0.0
+  size     2.21 5.0 2.0
+end
+box
+  position 219.21 -53.0 14.97
+  rotation 0.0
+  size     2.21 5.0 2.0
+end
+box
+  position 224.65 -53.0 14.99
+  rotation 0.0
+  size     2.35 5.0 2.0
+end
+box
+  position 219.35 -53.0 14.99
+  rotation 0.0
+  size     2.35 5.0 2.0
+end
+box
+  position 224.5 -53.0 15.0
+  rotation 0.0
+  size     2.5 5.0 2.0
+end
+box
+  position 219.5 -53.0 15.0
+  rotation 0.0
+  size     2.5 5.0 2.0
+end
+box
+  position 224.35 -53.0 14.99
+  rotation 0.0
+  size     2.65 5.0 2.0
+end
+box
+  position 219.65 -53.0 14.99
+  rotation 0.0
+  size     2.65 5.0 2.0
+end
+box
+  position 224.21 -53.0 14.97
+  rotation 0.0
+  size     2.79 5.0 2.0
+end
+box
+  position 219.79 -53.0 14.97
+  rotation 0.0
+  size     2.79 5.0 2.0
+end
+box
+  position 224.07 -53.0 14.92
+  rotation 0.0
+  size     2.93 5.0 2.0
+end
+box
+  position 219.93 -53.0 14.92
+  rotation 0.0
+  size     2.93 5.0 2.0
+end
+box
+  position 212.0 -53.0 0.0
+  rotation 0.0
+  size     5.0 5.0 15.0
+end
+box
+  position 232.0 -53.0 0.0
+  rotation 0.0
+  size     5.0 5.0 15.0
+end
+box
+  position 222.0 -53.0 15.0
+  rotation 0.0
+  size     15.0 5.0 5.0
+end
+box
+  position 222.0 -53.0 20.0
+  rotation 0.0
+  size     15.0 5.0 5.0
+end
+# Pyramids south of the arch
+pyramid
+  position 210.0 -93.0 0.0
+  rotation 227.89
+  size     5.0 5.0 10.0
+end
+pyramid
+  position 210.0 -133.0 0.0
+  rotation 57.82
+  size     5.0 5.0 10.0
+end
+pyramid
+  position 210.0 -173.0 0.0
+  rotation 326.4
+  size     5.0 5.0 10.0
+end
+pyramid
+  position 210.0 -213.0 0.0
+  rotation 133.06
+  size     5.0 5.0 10.0
+end
+# Laser shield teleporter
+teleporter
+  position 380.0 -388.0 0.0
+  rotation 135.0
+  border 1.0
+  size 0.45 15.0 20.0
+end
+# Fourth quadrant tower.
+box
+  position 300.0 -170.0 0.0
+  rotation 45.0
+  size     8.0 8.0 75.0
+end
+box
+  position 300.0 -158.69 71.0
+  rotation 0.0
+  size     2.5 2.5 12.5
+end
+pyramid
+  position 300.0 -158.69 83.5
+  rotation 0.0
+  size     2.5 2.5 3.13
+end
+box
+  position 300.0 -181.31 71.0
+  rotation 0.0
+  size     2.5 2.5 12.5
+end
+pyramid
+  position 300.0 -181.31 83.5
+  rotation 0.0
+  size     2.5 2.5 3.13
+end
+box
+  position 311.31 -170.0 71.0
+  rotation 0.0
+  size     2.5 2.5 12.5
+end
+pyramid
+  position 311.31 -170.0 83.5
+  rotation 0.0
+  size     2.5 2.5 3.13
+end
+box
+  position 288.69 -170.0 71.0
+  rotation 0.0
+  size     2.5 2.5 12.5
+end
+pyramid
+  position 288.69 -170.0 83.5
+  rotation 0.0
+  size     2.5 2.5 3.13
+end
+# Ramp to get to fourth quadrant
+box
+  position 215.0 -255.5 60.0
+  rotation 45.0
+  size     120.0 4.0 3.0
+end
+teleporter
+  position -31.5 -242.0 0.0
+  rotation 0.0
+  border 1.0
+  size 0.45 9.0 12.0
+end
+# Teleporter Links
+# CastleFort sanctorum to in-Air, North
+link
+ from 0
+ to 4
+end
+# Castlefort sanctorum to hidden teleporter
+link
+ from 1
+ to 14
+end
+# Castlefort ground to jfort field
+link
+ from 2
+ to 18
+end
+# Castlefort ground to in-Air, north
+link
+ from 3
+ to 5
+end
+link
+ from 4
+ to 0
+end
+# in-air North, to castlefort ground
+link
+ from 5
+ to 3
+end
+# in-air south, to laser protection
+link
+ from 6
+ to 14
+end
+# in-air south, to jfort
+link
+ from 7
+ to 8
+end
+# jfort on bldg
+link
+ from 8
+ to 6
+end
+link
+ from 9
+ to 19
+end
+# jfort defensive
+link
+ from 10
+ to 11
+end
+link
+ from 11
+ to 18
+end
+# hirise visible
+link
+ from 12
+ to 0
+end
+link
+ from 13
+ to 17
+end
+# hidden teleporter
+link
+ from 14
+ to 7
+end
+link
+ from 15
+ to 2
+end
+# laser defense shield
+link
+ from 16
+ to 3
+end
+link
+ from 17
+ to 16
+end
+# free field near jfort
+link
+ from 18
+ to 8
+end
+link
+ from 19
+ to 3
+end

@@ -1,0 +1,1388 @@
+# World built with bzedit32 world class, available at
+# http://www.artemisgames.com/bzedit
+
+box
+name Ceiling
+	position 0 0 10
+	rotation 0
+	size 10 275 2
+end
+
+box
+name SideWall2
+	position -155 155 0
+	rotation 0
+	size 145 148 10
+end
+
+box
+name Side Wall
+	position 155 155 0
+	rotation 0
+	size 145 148 10
+end
+
+box
+name Roof
+	position -155 0 10
+	rotation 0
+	size 145 303 2
+end
+
+box
+name roof2
+	position 155 0 10
+	rotation 0
+	size 145 303 2
+end
+
+box
+name Upper Wall
+	position 205 0 2
+	rotation 0
+	size 195 7 43
+	shootthrough
+end
+
+box
+name step3
+	position 0 112 10
+	rotation 0
+	size 10 32 35
+end
+
+box
+name step2
+	position 0 164 10
+	rotation 0
+	size 10 20 25
+end
+
+box
+name step1
+	position 0 204 10
+	rotation 0
+	size 10 20 15
+end
+
+box
+name step1 copy
+	position 0 -204 10
+	rotation 0
+	size 10 20 15
+end
+
+box
+name step2 copy
+	position 0 -164 10
+	rotation 0
+	size 10 20 25
+end
+
+box
+name step3 copy
+	position 0 -112 10
+	rotation 0
+	size 10 32 35
+end
+
+box
+name Bridge
+	position 0 0 44.5
+	rotation 0
+	size 10 100 0.5
+end
+
+pyramid
+name Redirector1
+	position 0 293 0
+	rotation 0
+	size 10 10 10
+end
+
+pyramid
+name Redirector2
+	position 0 -293 0
+	rotation 0
+	size 10 10 10
+end
+
+pyramid
+name Redirector3
+	position 0 -293 30
+	rotation 0
+	size 10 10 -10
+end
+
+pyramid
+name Redirector4
+	position 0 293 30
+	rotation 0
+	size 10 10 -10
+end
+
+box
+name Side Wall copy
+	position 155 -155 0
+	rotation 0
+	size 145 148 10
+end
+
+box
+name SideWall2 copy
+	position -155 -155 0
+	rotation 0
+	size 145 148 10
+end
+
+box
+name ring
+	position 0 302 12
+	rotation 0
+	size 298 1 48
+end
+
+box
+name ring2
+	position 0 -302 12
+	rotation 0
+	size 298 1 48
+end
+
+box
+name ring2 copy
+	position 299 0 12
+	rotation 90
+	size 303 1 48
+end
+
+box
+name ring2 copy 1
+	position -299 0 12
+	rotation 90
+	size 303 1 48
+end
+
+box
+name Stairs
+	position 350 350 0
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy
+	position 350 -320 10
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 1
+	position -350 300 20
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 2
+	position 350 280 30
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 3
+	position 350 260 40
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 4
+	position 350 240 50
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 5
+	position 350 210 60
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 6
+	position 350 170 80
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 7
+	position -350 190 70
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 7
+	position 350 160 90
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 8
+	position 350 150 100
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 9
+	position 350 130 120
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 10
+	position 350 140 110
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 10
+	position -350 120 130
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 11
+	position 350 110 140
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 12
+	position 350 100 150
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 13
+	position 350 90 160
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 14
+	position 350 80 170
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 15
+	position 350 70 180
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 16
+	position 0 65 190
+	rotation 0
+	size 330 10 13
+end
+
+box
+name Stairs copy
+	position -350 350 0
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 17
+	position -350 320 10
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 2
+	position 350 300 20
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 3
+	position -350 280 30
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 4
+	position -350 260 40
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 5
+	position -350 240 50
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 6
+	position -350 210 60
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 8
+	position -350 190 70
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 8
+	position 350 190 70
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 7
+	position -350 170 80
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 16
+	position -350 70 180
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 15
+	position -350 -80 170
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 14
+	position -350 90 160
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 13
+	position -350 100 150
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 11
+	position 350 120 130
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 10
+	position -350 130 120
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 11
+	position -350 140 110
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 12
+	position -350 110 140
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 9
+	position -350 150 100
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 8
+	position -350 160 90
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy
+	position 350 -350 0
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 1
+	position 350 320 10
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 3
+	position 350 -300 20
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 3
+	position 350 -280 30
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 4
+	position 350 -260 40
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 5
+	position 350 -240 50
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 6
+	position 350 -210 60
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 9
+	position 350 -190 70
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 7
+	position 350 -170 80
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 8
+	position 350 -160 90
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 9
+	position 350 -150 100
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 11
+	position 350 -140 110
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 10
+	position 350 -130 120
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 12
+	position 350 -120 130
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 12
+	position 350 -110 140
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 13
+	position 350 -100 150
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 14
+	position 350 -90 160
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 15
+	position 350 -80 170
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 16
+	position 350 -70 180
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 17
+	position 0 -65 190
+	rotation 0
+	size 330 10 13
+end
+
+box
+name Stairs copy 18
+	position -350 -350 0
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 18
+	position -350 -320 10
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 2
+	position -350 -300 20
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 4
+	position -350 -280 30
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 5
+	position -350 -260 40
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 6
+	position -350 -240 50
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 7
+	position -350 -210 60
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 9
+	position -350 -190 70
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 9
+	position -350 -160 90
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 8
+	position -350 -170 80
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 10
+	position -350 -150 100
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 12
+	position -350 -140 110
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 11
+	position -350 -130 120
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 11
+	position -350 -120 130
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 13
+	position -350 -110 140
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 14
+	position -350 -110 140
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 14
+	position -350 -100 150
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 15
+	position -350 -90 160
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 16
+	position -350 80 170
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Stairs copy 17
+	position -350 -70 180
+	rotation 0
+	size 20 20 10
+end
+
+box
+name Platform
+	position 0 0 200
+	rotation 0
+	size 101 303 4
+end
+
+box
+name MainRoof
+	position 0 0 60
+	rotation 0
+	size 301 303 1
+end
+
+pyramid
+name inside
+	position -125 -89.5 12.5
+	rotation 0
+	size 20 20 20
+end
+
+pyramid
+name inside
+	position -62.5 -169 10
+	rotation 0
+	size 20 20 20
+end
+
+pyramid
+name inside
+	position -57 -89 10
+	rotation 50
+	size 20 20 20
+end
+
+pyramid
+name inside
+	position -90 80 10
+	rotation 50
+	size 20 20 20
+end
+
+pyramid
+name inside
+	position 132 -150 10
+	rotation 50
+	size 20 20 20
+end
+
+pyramid
+name inside
+	position 141.5 -264 10
+	rotation 50
+	size 20 20 20
+end
+
+pyramid
+name inside
+	position -111 -172.5 10
+	rotation 50
+	size 20 20 20
+end
+
+pyramid
+name inside
+	position 139 82 12.5
+	rotation 0
+	size 20 20 20
+end
+
+pyramid
+name inside
+	position -229 -167.5 12.5
+	rotation 0
+	size 20 20 20
+end
+
+pyramid
+name inside
+	position 59.5 -83 12.5
+	rotation 0
+	size 20 20 20
+end
+
+pyramid
+name inside
+	position 235 -115 12.5
+	rotation 0
+	size 20 20 20
+end
+
+pyramid
+name inside
+	position -223.5 40 12.5
+	rotation 0
+	size 20 20 20
+end
+
+pyramid
+name inside
+	position -164.5 199.5 12.5
+	rotation 0
+	size 20 20 20
+end
+
+pyramid
+name inside
+	position 233.5 115 12.5
+	rotation 0
+	size 20 20 20
+end
+
+pyramid
+name inside
+	position 109 190 12.5
+	rotation 0
+	size 20 20 20
+end
+
+teleporter
+name InsideTele
+	position 0 0 45
+	rotation 0
+	size 0.125 10 10
+	border 1
+end
+
+teleporter
+name OutSideTele
+	position 0 -350 0
+	rotation 0
+	size 0.125 10 10
+	border 1
+end
+
+teleporter
+name outsideTele3
+	position 0 350 0
+	rotation 0
+	size 0.125 10 10
+	border 1
+end
+
+link
+	from 0
+	to 3
+end
+
+link
+	from 1
+	to 4
+end
+
+link
+	from 2
+	to 1
+end
+
+link
+	from 4
+	to 1
+end
+
+teleporter
+name Teleporter
+	position 0 0 600
+	rotation 0
+	size 0 0 0
+	border 1
+end
+
+box
+name Upper Wall copy
+	position -205 0 2
+	rotation 0
+	size 195 7 43
+	shootthrough
+end
+
+box
+name Bracket
+	position 0 0 10
+	rotation 0
+	size 10 7 20
+end
+
+pyramid
+name outsidePyr
+	position 50 -350 0
+	rotation 0
+	size 10 10 10
+end
+
+pyramid
+name outsidePyr copy
+	position 95 -332 0
+	rotation 0
+	size 10 10 10
+end
+
+pyramid
+name outsidePyr copy 1
+	position 189.5 -379 0
+	rotation 0
+	size 10 10 10
+end
+
+pyramid
+name outsidePyr copy 2
+	position 179 -323 0
+	rotation 0
+	size 10 10 10
+end
+
+pyramid
+name outsidePyr copy 3
+	position -268 -326.5 0
+	rotation 0
+	size 10 10 10
+end
+
+pyramid
+name outsidePyr copy 4
+	position -222.5 -382 0
+	rotation 0
+	size 10 10 10
+end
+
+pyramid
+name outsidePyr copy 5
+	position -128.5 333 0
+	rotation 0
+	size 10 10 10
+end
+
+pyramid
+name outsidePyr copy 6
+	position -176.5 -338.5 0
+	rotation 0
+	size 10 10 10
+end
+
+pyramid
+name outsidePyr copy 7
+	position -80.5 -382.5 0
+	rotation 0
+	size 10 10 10
+end
+
+pyramid
+name outsidePyr copy 8
+	position -54.5 -318 0
+	rotation 0
+	size 10 10 10
+end
+
+pyramid
+name outsidePyr copy 9
+	position -61.5 -351 0
+	rotation 0
+	size 10 10 10
+end
+
+pyramid
+name outsidePyr copy 10
+	position 83.5 -371.5 0
+	rotation 0
+	size 10 10 10
+end
+
+pyramid
+name outsidePyr copy 11
+	position 0.5 -373 0
+	rotation 0
+	size 10 10 10
+end
+
+pyramid
+name outsidePyr copy 12
+	position 244 -331.5 0
+	rotation 0
+	size 10 10 10
+end
+
+pyramid
+name outsidePyr copy 13
+	position 138 -356.5 0
+	rotation 0
+	size 10 10 10
+end
+
+pyramid
+name outsidePyr copy 14
+	position 138 356.5 0
+	rotation 0
+	size 10 10 10
+end
+
+pyramid
+name outsidePyr copy 13
+	position 244 331.5 0
+	rotation 0
+	size 10 10 10
+end
+
+pyramid
+name outsidePyr copy 12
+	position 0.5 373 0
+	rotation 0
+	size 10 10 10
+end
+
+pyramid
+name outsidePyr copy 11
+	position 83.5 371.5 0
+	rotation 0
+	size 10 10 10
+end
+
+pyramid
+name outsidePyr copy 10
+	position -61.5 351 0
+	rotation 0
+	size 10 10 10
+end
+
+pyramid
+name outsidePyr copy 9
+	position -54.5 318 0
+	rotation 0
+	size 10 10 10
+end
+
+pyramid
+name outsidePyr copy 8
+	position -80.5 382.5 0
+	rotation 0
+	size 10 10 10
+end
+
+pyramid
+name outsidePyr copy 7
+	position -176.5 338.5 0
+	rotation 0
+	size 10 10 10
+end
+
+pyramid
+name outsidePyr copy 7
+	position -176.5 338.5 0
+	rotation 0
+	size 10 10 10
+end
+
+pyramid
+name outsidePyr copy 6
+	position -128.5 -333 0
+	rotation 0
+	size 10 10 10
+end
+
+pyramid
+name outsidePyr copy 5
+	position -222.5 382 0
+	rotation 0
+	size 10 10 10
+end
+
+pyramid
+name outsidePyr copy 4
+	position -268 326.5 0
+	rotation 0
+	size 10 10 10
+end
+
+pyramid
+name outsidePyr copy 2
+	position 189.5 379 0
+	rotation 0
+	size 10 10 10
+end
+
+pyramid
+name outsidePyr copy 3
+	position 95 332 0
+	rotation 0
+	size 10 10 10
+end
+
+pyramid
+name outsidePyr copy
+	position 50 350 0
+	rotation 0
+	size 10 10 10
+end
+
+box
+name Fort
+	position 300 350 5
+	rotation 0
+	size 20 20 1
+end
+
+box
+name Fort copy
+	position 300 369 0
+	rotation 0
+	size 20 1 5
+end
+
+box
+name Fort copy 1
+	position 300 -331 0
+	rotation 0
+	size 20 1 5
+end
+
+box
+name Fort copy 2
+	position 280 -350 0
+	rotation 90
+	size 20 1 1
+end
+
+box
+name Fort copy 3
+	position -280 350 0
+	rotation 90
+	size 20 1 1
+end
+
+box
+name Fort copy
+	position -300 350 5
+	rotation 0
+	size 20 20 1
+end
+
+box
+name Fort copy 2
+	position -300 331 0
+	rotation 0
+	size 20 1 5
+end
+
+box
+name Fort copy 3
+	position -300 369 0
+	rotation 0
+	size 20 1 5
+end
+
+box
+name Fort copy
+	position 300 -350 5
+	rotation 0
+	size 20 20 1
+end
+
+box
+name Fort copy 4
+	position 300 -369 0
+	rotation 0
+	size 20 1 5
+end
+
+box
+name Fort copy 2
+	position 300 331 0
+	rotation 0
+	size 20 1 5
+end
+
+box
+name Fort copy 3
+	position 280 350 0
+	rotation 90
+	size 20 1 1
+end
+
+box
+name Fort copy 4
+	position -300 -369 0
+	rotation 0
+	size 20 1 5
+end
+
+box
+name Fort copy 5
+	position -300 -350 5
+	rotation 0
+	size 20 20 1
+end
+
+box
+name Fort copy 3
+	position -300 -331 0
+	rotation 0
+	size 20 1 5
+end
+
+box
+name Fort copy 4
+	position -280 -350 0
+	rotation 90
+	size 20 1 1
+end
+
+box
+name Box
+	position 100 100 0
+	rotation 0
+	size 10 10 60
+end
+
+box
+name Box copy
+	position -95 -61 0
+	rotation 0
+	size 10 10 60
+end
+
+box
+name Box copy 1
+	position -263.5 77 0
+	rotation 0
+	size 10 10 60
+end
+
+box
+name Box copy 2
+	position -84.5 185 0
+	rotation 0
+	size 10 10 60
+end
+
+box
+name Box copy 3
+	position 199.5 -249.5 0
+	rotation 0
+	size 10 10 60
+end
+
+box
+name Box copy 4
+	position 156.5 -123 0
+	rotation 0
+	size 10 10 60
+end
+
+box
+name Box copy 5
+	position -176 134.5 0
+	rotation 0
+	size 10 10 60
+end
+
+box
+name Box copy 6
+	position -181 -204 0
+	rotation 0
+	size 10 10 60
+end
+
+box
+name Box copy 7
+	position 233 253 0
+	rotation 0
+	size 10 10 60
+end
+
+box
+name Box copy 1
+	position 75 -212 0
+	rotation 0
+	size 10 10 60
+end
+
+box
+name Box copy 2
+	position -74.5 -236 0
+	rotation 0
+	size 10 10 60
+end
+
+box
+name Box copy 3
+	position 272.5 88 0
+	rotation 0
+	size 10 10 60
+end
+
+box
+name Stairs copy 1
+	position 0 0 600
+	rotation 0
+	size 0 0 0
+end
+
+teleporter
+name Teleporter
+	position 0 0 600
+	rotation 0
+	size 0 0 0
+	border 1
+end
+
+box
+name Platform copy
+	position 0 302 200
+	rotation 0
+	size 0 0 0
+end
+
+box
+name Platform copy 1
+	position 0 -302 200
+	rotation 0
+	size 0 0 0
+end
+
+teleporter
+name Above tele
+	position 0 0 204
+	rotation 0
+	size 0.125 10 10
+	border 1
+end
+
+link
+	from 3
+	to 10
+end
+
+link
+	from 5
+	to 11
+end
+
+link
+	from 10
+	to 0
+end
+
+link
+	from 11
+	to 1
+end
+
+box
+name ring copy
+	position 0 302 0
+	rotation 0
+	size 10 1 12
+end
+
+box
+name ring copy 1
+	position 0 -302 0
+	rotation 0
+	size 10 1 12
+end
+

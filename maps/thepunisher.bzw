@@ -1,0 +1,1172 @@
+### BZFLAG WORLD FILE HEADER
+
+
+# Map name	: The Punisher
+# File name	: thepunisher.bzw
+# Version	: 1.00
+# Release date	: 2006-05-22
+
+# Designer	: Raimond "Dutchrai" Kuhlman
+# Email address	: dutchrai@yahoo.com
+
+# BZFS Required	: -c -j -mp 0,3,3,0,0,0 -public "The Punisher by Dutchrai" -world "thepunisher.bzw"
+
+
+### BZFLAG WORLD FILE DATA
+
+
+## Red Team
+
+
+# Base Structure
+
+base
+position 200 200 29
+rotation 0
+size 30 30 1
+color 1
+end
+
+box
+position 200 200 25
+rotation 45
+size 5 15 4
+end
+
+box
+position 202.5 202.5 0
+rotation 45
+size 12.5 40 17.5
+end
+
+box
+position 217.5 182.5 25
+rotation 0
+size 12.5 12.5 4
+end
+
+box
+position 182.5 217.5 25
+rotation 0
+size 12.5 12.5 4
+end
+
+box
+position 165 235 0
+rotation 0
+size 20 20 17.5
+end
+
+box
+position 165 250 17.5
+rotation 0
+size 20 5 5
+end
+
+box
+position 165 220 17.5
+rotation 0
+size 20 5 5
+end
+
+box
+position 165 235 22.5
+rotation 0
+size 20 20 6.5
+end
+
+box
+position 167.5 225 29
+rotation 0
+size 2.5 10 1
+end
+
+box
+position 177.5 232.5 29
+rotation 0
+size 7.5 2.5 1
+end
+
+box
+position 155 235 29
+rotation 0
+size 10 20 23
+end
+
+box
+position 175 245 29
+rotation 0
+size 10 10 23
+end
+
+box
+position 235 165 0
+rotation 0
+size 20 20 17.5
+end
+
+box
+position 250 165 17.5
+rotation 0
+size 5 20 5
+end
+
+box
+position 220 165 17.5
+rotation 0
+size 5 20 5
+end
+
+box
+position 235 165 22.5
+rotation 0
+size 20 20 6.5
+end
+
+box
+position 225 167.5 29
+rotation 0
+size 10 2.5 1
+end
+
+box
+position 232.5 177.5 29
+rotation 0
+size 2.5 7.5 1
+end
+
+box
+position 235 155 29
+rotation 0
+size 20 10 23
+end
+
+box
+position 245 175 29
+rotation 0
+size 10 10 23
+end
+
+box
+position 165 192.5 25
+rotation 0
+size 5 22.5 5
+end
+
+box
+position 192.5 165 25
+rotation 0
+size 22.5 5 5
+end
+
+box
+position 165 165 25
+rotation 0
+size 5 5 5
+end
+
+box
+position 235 207.5 25
+rotation 0
+size 5 22.5 5
+end
+
+box
+position 207.5 235 25
+rotation 0
+size 22.5 5 5
+end
+
+box
+position 235 235 25
+rotation 0
+size 5 5 5
+end
+
+box
+position 210 210 51.5
+rotation 45
+size 0.25 37.5 0.5
+end
+
+box
+position 190 190 51.5
+rotation 45
+size 0.25 37.5 0.5
+end
+
+
+# Inner Catwalk
+
+box
+position 125 205 22.5
+rotation 0
+size 10 70 12.5
+end
+
+box
+position 205 125 22.5
+rotation 0
+size 70 10 12.5
+end
+
+box
+position 125 125 22.5
+rotation 0
+size 10 10 12.5
+end
+
+box
+position 140 235 22.5
+rotation 0
+size 5 15 12.5
+end
+
+box
+position 110 235 22.5
+rotation 0
+size 5 15 12.5
+end
+
+box
+position 235 140 22.5
+rotation 0
+size 15 5 12.5
+end
+
+box
+position 235 110 22.5
+rotation 0
+size 15 5 12.5
+end
+
+box
+position 125 325 0
+rotation 0
+size 35 35 8
+end
+
+box
+position 125 325 8
+rotation 0
+size 25 25 8
+end
+
+box
+position 125 325 16
+rotation 0
+size 10 10 6.5
+end
+
+box
+position 125 305 22.5
+rotation 0
+size 10 30 4
+end
+
+box
+position 117 305 26.5
+rotation 0
+size 2 30 8.5
+end
+
+box
+position 133 305 26.5
+rotation 0
+size 2 30 8.5
+end
+
+box
+position 325 125 0
+rotation 0
+size 35 35 8
+end
+
+box
+position 325 125 8
+rotation 0
+size 25 25 8
+end
+
+box
+position 325 125 16
+rotation 0
+size 10 10 6.5
+end
+
+box
+position 305 125 22.5
+rotation 0
+size 30 10 4
+end
+
+box
+position 305 117 26.5
+rotation 0
+size 30 2 8.5
+end
+
+box
+position 305 133 26.5
+rotation 0
+size 30 2 8.5
+end
+
+box
+position 110 135 25
+rotation 0
+size 5 20 5
+end
+
+box
+position 110 110 25
+rotation 0
+size 5 5 5
+end
+
+box
+position 135 110 25
+rotation 0
+size 20 5 5
+end
+
+box
+position 125 235 15
+rotation 0
+size 20 5 2.5
+end
+
+box
+position 235 125 15
+rotation 0
+size 5 20 2.5
+end
+
+box
+position 125 180 15
+rotation 0
+size 5 50 2.5
+end
+
+box
+position 125 125 15
+rotation 0
+size 5 5 2.5
+end
+
+box
+position 180 125 15
+rotation 0
+size 50 5 2.5
+end
+
+
+# Side Tower A
+
+box
+position 85 235 0
+rotation 0
+size 20 20 17.5
+end
+
+box
+position 85 250 17.5
+rotation 0
+size 20 5 41.5
+end
+
+box
+position 85 220 17.5
+rotation 0
+size 20 5 41.5
+end
+
+box
+position 95 235 22.5
+rotation 0
+size 10 10 12.5
+end
+
+box
+position 85 235 59
+rotation 0
+size 20 20 10
+end
+
+box
+position 85 235 69
+rotation 0
+size 7.5 7.5 30
+end
+
+pyramid
+position 85 235 99
+rotation 0
+size 7.5 7.5 25
+end
+
+
+# Side Tower B
+
+box
+position 235 85 0
+rotation 0
+size 20 20 17.5
+end
+
+box
+position 250 85 17.5
+rotation 0
+size 5 20 41.5
+end
+
+box
+position 220 85 17.5
+rotation 0
+size 5 20 41.5
+end
+
+box
+position 235 95 22.5
+rotation 0
+size 10 10 12.5
+end
+
+box
+position 235 85 59
+rotation 0
+size 20 20 10
+end
+
+box
+position 235 85 69
+rotation 0
+size 7.5 7.5 30
+end
+
+pyramid
+position 235 85 99
+rotation 0
+size 7.5 7.5 25
+end
+
+
+# Deflector Pyramids
+
+pyramid
+position 350 320 0
+rotation 20
+size 10 10 10
+end
+
+pyramid
+position 325 365 0
+rotation 60
+size 10 10 10
+end
+
+pyramid
+position 300 335 0
+rotation 80
+size 10 10 10
+end
+
+
+## Green Team
+
+
+# Base Structure
+
+base
+position -200 -200 29
+rotation 0
+size 30 30 1
+color 2
+end
+
+box
+position -200 -200 25
+rotation 45
+size 5 15 4
+end
+
+box
+position -202.5 -202.5 0
+rotation 45
+size 12.5 40 17.5
+end
+
+box
+position -217.5 -182.5 25
+rotation 0
+size 12.5 12.5 4
+end
+
+box
+position -182.5 -217.5 25
+rotation 0
+size 12.5 12.5 4
+end
+
+box
+position -165 -235 0
+rotation 0
+size 20 20 17.5
+end
+
+box
+position -165 -250 17.5
+rotation 0
+size 20 5 5
+end
+
+box
+position -165 -220 17.5
+rotation 0
+size 20 5 5
+end
+
+box
+position -165 -235 22.5
+rotation 0
+size 20 20 6.5
+end
+
+box
+position -167.5 -225 29
+rotation 0
+size 2.5 10 1
+end
+
+box
+position -177.5 -232.5 29
+rotation 0
+size 7.5 2.5 1
+end
+
+box
+position -155 -235 29
+rotation 0
+size 10 20 23
+end
+
+box
+position -175 -245 29
+rotation 0
+size 10 10 23
+end
+
+box
+position -235 -165 0
+rotation 0
+size 20 20 17.5
+end
+
+box
+position -250 -165 17.5
+rotation 0
+size 5 20 5
+end
+
+box
+position -220 -165 17.5
+rotation 0
+size 5 20 5
+end
+
+box
+position -235 -165 22.5
+rotation 0
+size 20 20 6.5
+end
+
+box
+position -225 -167.5 29
+rotation 0
+size 10 2.5 1
+end
+
+box
+position -232.5 -177.5 29
+rotation 0
+size 2.5 7.5 1
+end
+
+box
+position -235 -155 29
+rotation 0
+size 20 10 23
+end
+
+box
+position -245 -175 29
+rotation 0
+size 10 10 23
+end
+
+box
+position -165 -192.5 25
+rotation 0
+size 5 22.5 5
+end
+
+box
+position -192.5 -165 25
+rotation 0
+size 22.5 5 5
+end
+
+box
+position -165 -165 25
+rotation 0
+size 5 5 5
+end
+
+box
+position -235 -207.5 25
+rotation 0
+size 5 22.5 5
+end
+
+box
+position -207.5 -235 25
+rotation 0
+size 22.5 5 5
+end
+
+box
+position -235 -235 25
+rotation 0
+size 5 5 5
+end
+
+box
+position -210 -210 51.5
+rotation 45
+size 0.25 37.5 0.5
+end
+
+box
+position -190 -190 51.5
+rotation 45
+size 0.25 37.5 0.5
+end
+
+
+# Inner Catwalk
+
+box
+position -125 -205 22.5
+rotation 0
+size 10 70 12.5
+end
+
+box
+position -205 -125 22.5
+rotation 0
+size 70 10 12.5
+end
+
+box
+position -125 -125 22.5
+rotation 0
+size 10 10 12.5
+end
+
+box
+position -140 -235 22.5
+rotation 0
+size 5 15 12.5
+end
+
+box
+position -110 -235 22.5
+rotation 0
+size 5 15 12.5
+end
+
+box
+position -235 -140 22.5
+rotation 0
+size 15 5 12.5
+end
+
+box
+position -235 -110 22.5
+rotation 0
+size 15 5 12.5
+end
+
+box
+position -125 -325 0
+rotation 0
+size 35 35 8
+end
+
+box
+position -125 -325 8
+rotation 0
+size 25 25 8
+end
+
+box
+position -125 -325 16
+rotation 0
+size 10 10 6.5
+end
+
+box
+position -125 -305 22.5
+rotation 0
+size 10 30 4
+end
+
+box
+position -117 -305 26.5
+rotation 0
+size 2 30 8.5
+end
+
+box
+position -133 -305 26.5
+rotation 0
+size 2 30 8.5
+end
+
+box
+position -325 -125 0
+rotation 0
+size 35 35 8
+end
+
+box
+position -325 -125 8
+rotation 0
+size 25 25 8
+end
+
+box
+position -325 -125 16
+rotation 0
+size 10 10 6.5
+end
+
+box
+position -305 -125 22.5
+rotation 0
+size 30 10 4
+end
+
+box
+position -305 -117 26.5
+rotation 0
+size 30 2 8.5
+end
+
+box
+position -305 -133 26.5
+rotation 0
+size 30 2 8.5
+end
+
+box
+position -110 -135 25
+rotation 0
+size 5 20 5
+end
+
+box
+position -110 -110 25
+rotation 0
+size 5 5 5
+end
+
+box
+position -135 -110 25
+rotation 0
+size 20 5 5
+end
+
+box
+position -125 -235 15
+rotation 0
+size 20 5 2.5
+end
+
+box
+position -235 -125 15
+rotation 0
+size 5 20 2.5
+end
+
+box
+position -125 -180 15
+rotation 0
+size 5 50 2.5
+end
+
+box
+position -125 -125 15
+rotation 0
+size 5 5 2.5
+end
+
+box
+position -180 -125 15
+rotation 0
+size 50 5 2.5
+end
+
+
+# Side Tower A
+
+box
+position -85 -235 0
+rotation 0
+size 20 20 17.5
+end
+
+box
+position -85 -250 17.5
+rotation 0
+size 20 5 41.5
+end
+
+box
+position -85 -220 17.5
+rotation 0
+size 20 5 41.5
+end
+
+box
+position -95 -235 22.5
+rotation 0
+size 10 10 12.5
+end
+
+box
+position -85 -235 59
+rotation 0
+size 20 20 10
+end
+
+box
+position -85 -235 69
+rotation 0
+size 7.5 7.5 30
+end
+
+pyramid
+position -85 -235 99
+rotation 0
+size 7.5 7.5 25
+end
+
+
+# Side Tower B
+
+box
+position -235 -85 0
+rotation 0
+size 20 20 17.5
+end
+
+box
+position -250 -85 17.5
+rotation 0
+size 5 20 41.5
+end
+
+box
+position -220 -85 17.5
+rotation 0
+size 5 20 41.5
+end
+
+box
+position -235 -95 22.5
+rotation 0
+size 10 10 12.5
+end
+
+box
+position -235 -85 59
+rotation 0
+size 20 20 10
+end
+
+box
+position -235 -85 69
+rotation 0
+size 7.5 7.5 30
+end
+
+pyramid
+position -235 -85 99
+rotation 0
+size 7.5 7.5 25
+end
+
+
+# Deflector Pyramids
+
+pyramid
+position -350 -320 0
+rotation 20
+size 10 10 10
+end
+
+pyramid
+position -325 -365 0
+rotation 60
+size 10 10 10
+end
+
+pyramid
+position -300 -335 0
+rotation 80
+size 10 10 10
+end
+
+
+## No Team
+
+
+# Outer Catwalk A
+
+box
+position 0 235 0
+rotation 0
+size 10 10 20
+end
+
+box
+position -117.5 235 5
+rotation 0
+size 107.5 10 15
+end
+
+box
+position -235 235 0
+rotation 0
+size 10 10 20
+end
+
+box
+position -235 117.5 5
+rotation 0
+size 10 107.5 15
+end
+
+box
+position -235 0 0
+rotation 0
+size 10 10 20
+end
+
+box
+position -58.75 235 0
+rotation 0
+size 10 10 5
+end
+
+box
+position -117.5 235 0
+rotation 0
+size 10 10 5
+end
+
+box
+position -176.25 235 0
+rotation 0
+size 10 10 5
+end
+
+box
+position -235 58.75 0
+rotation 0
+size 10 10 5
+end
+
+box
+position -235 117.5 0
+rotation 0
+size 10 10 5
+end
+
+box
+position -235 176.25 0
+rotation 0
+size 10 10 5
+end
+
+
+# Outer Catwalk B
+
+box
+position 0 -235 0
+rotation 0
+size 10 10 20
+end
+
+box
+position 117.5 -235 5
+rotation 0
+size 107.5 10 15
+end
+
+box
+position 235 -235 0
+rotation 0
+size 10 10 20
+end
+
+box
+position 235 -117.5 5
+rotation 0
+size 10 107.5 15
+end
+
+box
+position 235 0 0
+rotation 0
+size 10 10 20
+end
+
+box
+position 58.75 -235 0
+rotation 0
+size 10 10 5
+end
+
+box
+position 117.5 -235 0
+rotation 0
+size 10 10 5
+end
+
+box
+position 176.25 -235 0
+rotation 0
+size 10 10 5
+end
+
+box
+position 235 -58.75 0
+rotation 0
+size 10 10 5
+end
+
+box
+position 235 -117.5 0
+rotation 0
+size 10 10 5
+end
+
+box
+position 235 -176.25 0
+rotation 0
+size 10 10 5
+end
+
+
+# Deflector Pyramids A
+
+pyramid
+position -45 360 0
+rotation 55
+size 10 10 10
+end
+
+pyramid
+position -130 290 0
+rotation 10
+size 10 10 10
+end
+
+pyramid
+position -185 345 0
+rotation 30
+size 10 10 10
+end
+
+pyramid
+position -225 310 0
+rotation 80
+size 10 10 10
+end
+
+pyramid
+position -360 205 0
+rotation 70
+size 10 10 10
+end
+
+pyramid
+position -330 100 0
+rotation 40
+size 10 10 10
+end
+
+pyramid
+position -375 75 0
+rotation 20
+size 10 10 10
+end
+
+pyramid
+position -295 25 0
+rotation 60
+size 10 10 10
+end
+
+
+# Deflector Pyramids B
+
+pyramid
+position 45 -360 0
+rotation 55
+size 10 10 10
+end
+
+pyramid
+position 130 -290 0
+rotation 10
+size 10 10 10
+end
+
+pyramid
+position 185 -345 0
+rotation 30
+size 10 10 10
+end
+
+pyramid
+position 225 -310 0
+rotation 80
+size 10 10 10
+end
+
+pyramid
+position 360 -205 0
+rotation 70
+size 10 10 10
+end
+
+pyramid
+position 330 -100 0
+rotation 40
+size 10 10 10
+end
+
+pyramid
+position 375 -75 0
+rotation 20
+size 10 10 10
+end
+
+pyramid
+position 295 -25 0
+rotation 60
+size 10 10 10
+end

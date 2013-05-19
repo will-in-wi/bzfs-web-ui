@@ -1,0 +1,1174 @@
+### BZFLAG WORLD FILE HEADER
+
+
+# Map name	: Wild East Wild West
+# File name	: eastwest.bzw
+# Version	: 1.00
+# Release date	: 2004-11-23
+
+# Designer	: Raimond "Dutchrai" Kuhlman
+# Email address	: dutchrai@yahoo.com
+
+# BZFS Required	: -c -j -mp 0,3,3,0,0,0 -world "eastwest.bzw"
+
+
+### BZFLAG WORLD FILE DATA
+
+
+## Red Team
+
+
+# Red Base
+
+box
+	position 125 25 0
+	rotation 0
+	size 7.5 7.5 29
+end
+
+pyramid
+	position 125 25 19
+	rotation 0
+	size 10 10 -10
+end
+
+box
+	position 125 -25 0
+	rotation 0
+	size 7.5 7.5 29
+end
+
+pyramid
+	position 125 -25 19
+	rotation 0
+	size 10 10 -10
+end
+
+box
+	position 75 25 0
+	rotation 0
+	size 7.5 7.5 29
+end
+
+pyramid
+	position 75 25 19
+	rotation 0
+	size 10 10 -10
+end
+
+box
+	position 75 -25 0
+	rotation 0
+	size 7.5 7.5 29
+end
+
+pyramid
+	position 75 -25 19
+	rotation 0
+	size 10 10 -10
+end
+
+base
+	position 100 0 29
+	rotation 0
+	size 15 15 1
+	color 1
+end
+
+box
+	position 75 0 29
+	rotation 0
+	size 10 35 1
+end
+
+box
+	position 100 25 29
+	rotation 0
+	size 15 10 1
+end
+
+box
+	position 100 -25 29
+	rotation 0
+	size 15 10 1
+end
+
+box
+	position 125 0 29
+	rotation 0
+	size 10 35 1
+end
+
+
+# Red Centre
+
+box
+	position 127.5 227.5 0
+	rotation 0
+	size 7.5 7.5 20
+end
+
+box
+	position 127.5 172.5 0
+	rotation 0
+	size 7.5 7.5 20
+end
+
+box
+	position 70 230 0
+	rotation 0
+	size 10 10 10
+end
+
+box
+	position 65 200 0
+	rotation 0
+	size 15 20 10
+end
+
+box
+	position 100 235 0
+	rotation 0
+	size 20 15 10
+end
+
+box
+	position 72.5 172.5 0
+	rotation 0
+	size 7.5 7.5 20
+end
+
+box
+	position 123.75 200 0
+	rotation 0
+	size 3.75 20 20
+end
+
+box
+	position 72.5 227.5 10
+	rotation 0
+	size 7.5 7.5 10
+end
+
+box
+	position 100 223.75 10
+	rotation 0
+	size 20 3.75 10
+end
+
+box
+	position 76.25 200 10
+	rotation 0
+	size 3.75 20 10
+end
+
+box
+	position 100 220 20
+	rotation 0
+	size 35 15 10
+end
+
+box
+	position 100 180 20
+	rotation 0
+	size 35 15 10
+end
+
+box
+	position 125 200 20
+	rotation 0
+	size 10 5 10
+end
+
+box
+	position 75 200 20
+	rotation 0
+	size 10 5 10
+end
+
+teleporter
+	position 100 172.5 0
+	rotation 270
+	size 0.25 18 19
+	border 1.0
+end
+
+link
+	from	0
+	to	0
+end
+
+link
+	from	1
+	to	0
+end
+
+
+# Red Entry
+
+box
+	position 300 200 0
+	rotation 0
+	size 35 35 15
+end
+
+box
+	position 313.5 213.5 15
+	rotation 0
+	size 9 9 3
+end
+
+box
+	position 286.5 213.5 15
+	rotation 0
+	size 9 9 3
+end
+
+box
+	position 313.5 186.5 15
+	rotation 0
+	size 9 9 3
+end
+
+box
+	position 286.5 186.5 15
+	rotation 0
+	size 9 9 3
+end
+
+box
+	position 300 200 18
+	rotation 0
+	size 22.5 22.5 12
+end
+
+box
+	position 300 200 30
+	rotation 0
+	size 7.5 7.5 44
+end
+
+box
+	position 300 200 74
+	rotation 0
+	size 15 15 1
+end
+
+box
+	position 300 200 75
+	rotation 0
+	size 5 5 15
+end
+
+pyramid
+	position 300 200 90
+	rotation 0
+	size 7.5 7.5 10
+end
+
+pyramid
+	position 300 200 90
+	rotation 0
+	size 5 5 25
+end
+
+box
+	position 300 200 90
+	rotation -45
+	size 0.5 0.5 35
+end
+
+box
+	position 300 200 120
+	rotation -45
+	size 5 0.5 1
+end
+
+
+# Red Entry A
+
+box
+	position 300 268.75 0
+	rotation 0
+	size 16.25 16.25 10
+end
+
+box
+	position 300 268.75 10
+	rotation 0
+	size 7.5 7.5 10
+end
+
+box
+	position 300 268.75 20
+	rotation 0
+	size 1.5 1.5 10
+end
+
+
+# Red Entry B
+
+box
+	position 368.75 200 0
+	rotation 0
+	size 16.25 16.25 10
+end
+
+box
+	position 368.75 200 10
+	rotation 0
+	size 7.5 7.5 10
+end
+
+box
+	position 368.75 200 20
+	rotation 0
+	size 1.5 1.5 10
+end
+
+
+# Red Entry C
+
+box
+	position 300 131.25 0
+	rotation 0
+	size 16.25 16.25 10
+end
+
+box
+	position 300 131.25 10
+	rotation 0
+	size 7.5 7.5 10
+end
+
+box
+	position 300 131.25 20
+	rotation 0
+	size 1.5 1.5 10
+end
+
+
+# Red Bridge Base/Centre
+
+box
+	position 100 100 29
+	rotation 0
+	size 15 65 1
+end
+
+
+# Red Bridge Centre/Entry
+
+box
+	position 160 200 0
+	rotation 0
+	size 7.5 7.5 45
+end
+
+box
+	position 200 200 0
+	rotation 0
+	size 7.5 7.5 45
+end
+
+box
+	position 240 200 0
+	rotation 0
+	size 7.5 7.5 45
+end
+
+box
+	position 206.25 200 29
+	rotation 0
+	size 71.25 15 1
+end
+
+box
+	position 200 200 45
+	rotation 0
+	size 47.5 7.5 2
+end
+
+box
+	position 200 206.5 47
+	rotation 0
+	size 47.5 1 13
+end
+
+box
+	position 200 193.5 47
+	rotation 0
+	size 47.5 1 13
+end
+
+box
+	position 167.5 200 58
+	rotation 0
+	size 15 5.5 2
+end
+
+box
+	position 232.5 200 58
+	rotation 0
+	size 15 5.5 2
+end
+
+
+# Red Bridge Entry A
+
+box
+	position 300 245 27
+	rotation 0
+	size 1.5 22.5 3
+end
+
+
+# Red Bridge Entry B
+
+box
+	position 345 200 27
+	rotation 0
+	size 22.5 1.5 3
+end
+
+
+# Red Bridge Entry C
+
+box
+	position 300 155 27
+	rotation 0
+	size 1.5 22.5 3
+end
+
+
+## Green Team
+
+
+# Green Base
+
+box
+	position -125 -25 0
+	rotation 0
+	size 7.5 7.5 29
+end
+
+pyramid
+	position -125 -25 19
+	rotation 0
+	size 10 10 -10
+end
+
+box
+	position -125 25 0
+	rotation 0
+	size 7.5 7.5 29
+end
+
+pyramid
+	position -125 25 19
+	rotation 0
+	size 10 10 -10
+end
+
+box
+	position -75 -25 0
+	rotation 0
+	size 7.5 7.5 29
+end
+
+pyramid
+	position -75 -25 19
+	rotation 0
+	size 10 10 -10
+end
+
+box
+	position -75 25 0
+	rotation 0
+	size 7.5 7.5 29
+end
+
+pyramid
+	position -75 25 19
+	rotation 0
+	size 10 10 -10
+end
+
+base
+	position -100 0 29
+	rotation 0
+	size 15 15 1
+	color 2
+end
+
+box
+	position -75 0 29
+	rotation 0
+	size 10 35 1
+end
+
+box
+	position -100 -25 29
+	rotation 0
+	size 15 10 1
+end
+
+box
+	position -100 25 29
+	rotation 0
+	size 15 10 1
+end
+
+box
+	position -125 0 29
+	rotation 0
+	size 10 35 1
+end
+
+
+# Green Centre
+
+box
+	position -127.5 -227.5 0
+	rotation 0
+	size 7.5 7.5 20
+end
+
+box
+	position -127.5 -172.5 0
+	rotation 0
+	size 7.5 7.5 20
+end
+
+box
+	position -70 -230 0
+	rotation 0
+	size 10 10 10
+end
+
+box
+	position -65 -200 0
+	rotation 0
+	size 15 20 10
+end
+
+box
+	position -100 -235 0
+	rotation 0
+	size 20 15 10
+end
+
+box
+	position -72.5 -172.5 0
+	rotation 0
+	size 7.5 7.5 20
+end
+
+box
+	position -123.75 -200 0
+	rotation 0
+	size 3.75 20 20
+end
+
+box
+	position -72.5 -227.5 10
+	rotation 0
+	size 7.5 7.5 10
+end
+
+box
+	position -100 -223.75 10
+	rotation 0
+	size 20 3.75 10
+end
+
+box
+	position -76.25 -200 10
+	rotation 0
+	size 3.75 20 10
+end
+
+box
+	position -100 -220 20
+	rotation 0
+	size 35 15 10
+end
+
+box
+	position -100 -180 20
+	rotation 0
+	size 35 15 10
+end
+
+box
+	position -125 -200 20
+	rotation 0
+	size 10 5 10
+end
+
+box
+	position -75 -200 20
+	rotation 0
+	size 10 5 10
+end
+
+teleporter
+	position -100 -172.5 0
+	rotation 90
+	size 0.25 18 19
+	border 1.0
+end
+
+link
+	from	2
+	to	2
+end
+
+link
+	from	3
+	to	2
+end
+
+
+# Green Entry
+
+box
+	position -300 -200 0
+	rotation 0
+	size 35 35 15
+end
+
+box
+	position -313.5 -213.5 15
+	rotation 0
+	size 9 9 3
+end
+
+box
+	position -286.5 -213.5 15
+	rotation 0
+	size 9 9 3
+end
+
+box
+	position -313.5 -186.5 15
+	rotation 0
+	size 9 9 3
+end
+
+box
+	position -286.5 -186.5 15
+	rotation 0
+	size 9 9 3
+end
+
+box
+	position -300 -200 18
+	rotation 0
+	size 22.5 22.5 12
+end
+
+box
+	position -300 -200 30
+	rotation 0
+	size 7.5 7.5 44
+end
+
+box
+	position -300 -200 74
+	rotation 0
+	size 15 15 1
+end
+
+box
+	position -300 -200 75
+	rotation 0
+	size 5 5 15
+end
+
+pyramid
+	position -300 -200 85
+	rotation 0
+	size 7.5 7.5 -7.5
+end
+
+pyramid
+	position -300 -200 92.5
+	rotation 0
+	size 7.5 7.5 15
+end
+
+
+# Green Entry A
+
+box
+	position -300 -268.75 0
+	rotation 0
+	size 16.25 16.25 10
+end
+
+box
+	position -300 -268.75 10
+	rotation 0
+	size 7.5 7.5 10
+end
+
+box
+	position -300 -268.75 20
+	rotation 0
+	size 1.5 1.5 10
+end
+
+
+# Green Entry B
+
+box
+	position -368.75 -200 0
+	rotation 0
+	size 16.25 16.25 10
+end
+
+box
+	position -368.75 -200 10
+	rotation 0
+	size 7.5 7.5 10
+end
+
+box
+	position -368.75 -200 20
+	rotation 0
+	size 1.5 1.5 10
+end
+
+
+# Green Entry C
+
+box
+	position -300 -131.25 0
+	rotation 0
+	size 16.25 16.25 10
+end
+
+box
+	position -300 -131.25 10
+	rotation 0
+	size 7.5 7.5 10
+end
+
+box
+	position -300 -131.25 20
+	rotation 0
+	size 1.5 1.5 10
+end
+
+
+# Green Bridge Base/Centre
+
+box
+	position -100 -100 29
+	rotation 0
+	size 15 65 1
+end
+
+
+# Green Bridge Centre/Entry
+
+box
+	position -160 -200 0
+	rotation 0
+	size 7.5 7.5 45
+end
+
+box
+	position -200 -200 0
+	rotation 0
+	size 7.5 7.5 45
+end
+
+box
+	position -240 -200 0
+	rotation 0
+	size 7.5 7.5 45
+end
+
+box
+	position -206.25 -200 29
+	rotation 0
+	size 71.25 15 1
+end
+
+box
+	position -200 -200 45
+	rotation 0
+	size 47.5 7.5 2
+end
+
+box
+	position -200 -206.5 47
+	rotation 0
+	size 47.5 1 13
+end
+
+box
+	position -200 -193.5 47
+	rotation 0
+	size 47.5 1 13
+end
+
+box
+	position -167.5 -200 58
+	rotation 0
+	size 15 5.5 2
+end
+
+box
+	position -232.5 -200 58
+	rotation 0
+	size 15 5.5 2
+end
+
+
+# Green Bridge Entry A
+
+box
+	position -300 -245 27
+	rotation 0
+	size 1.5 22.5 3
+end
+
+
+# Green Bridge Entry B
+
+box
+	position -345 -200 27
+	rotation 0
+	size 22.5 1.5 3
+end
+
+
+# Green Bridge Entry C
+
+box
+	position -300 -155 27
+	rotation 0
+	size 1.5 22.5 3
+end
+
+
+# Village X-/Y+
+
+box
+	position -275 225 0
+	rotation 0
+	size 20 20 20
+end
+
+box
+	position -330 235 0
+	rotation 0
+	size 25 10 12
+end
+
+box
+	position -320 190 0
+	rotation 0
+	size 10 25 8
+end
+
+box
+	position -285 155 0
+	rotation 0
+	size 15 25 6
+end
+
+box
+	position -320 275 0
+	rotation 0
+	size 20 10 14
+end
+
+box
+	position -215 230 0
+	rotation 0
+	size 20 15 8
+end
+
+box
+	position -220 255 7
+	rotation 0
+	size 5 10 1
+end
+
+box
+	position -220 205 7
+	rotation 0
+	size 5 10 1
+end
+
+box
+	position -230 230 8
+	rotation 0
+	size 5 15 4
+end
+
+box
+	position -205 230 8
+	rotation 0
+	size 10 15 4
+end
+
+box
+	position -215 230 12
+	rotation 0
+	size 20 15 3
+end
+
+box
+	position -225 180 0
+	rotation 0
+	size 10 15 8
+end
+
+box
+	position -220 280 0
+	rotation 0
+	size 15 15 8
+end
+
+box
+	position -150 275 0
+	rotation 0
+	size 20 10 5
+end
+
+box
+	position -265 320 0
+	rotation 0
+	size 10 15 10
+end
+
+box
+	position -330 50 0
+	rotation 0
+	size 5 15 6
+end
+
+box
+	position -310 60 0
+	rotation 0
+	size 5 15 6
+end
+
+teleporter			
+	position -275 275 0
+	rotation -45		
+	size 0.56 4.48 20.16
+	border 1.1		
+end
+
+link
+	from 4
+	to 6
+end
+
+link
+	from 5
+	to 7
+end
+
+
+# Village X+/Y-
+
+box
+	position 275 -225 0
+	rotation 0
+	size 20 20 20
+end
+
+box
+	position 330 -235 0
+	rotation 0
+	size 25 10 12
+end
+
+box
+	position 320 -190 0
+	rotation 0
+	size 10 25 8
+end
+
+box
+	position 285 -155 0
+	rotation 0
+	size 15 25 6
+end
+
+box
+	position 320 -275 0
+	rotation 0
+	size 20 10 14
+end
+
+box
+	position 215 -230 0
+	rotation 0
+	size 20 15 8
+end
+
+box
+	position 220 -255 7
+	rotation 0
+	size 5 10 1
+end
+
+box
+	position 220 -205 7
+	rotation 0
+	size 5 10 1
+end
+
+box
+	position 230 -230 8
+	rotation 0
+	size 5 15 4
+end
+
+box
+	position 205 -230 8
+	rotation 0
+	size 10 15 4
+end
+
+box
+	position 215 -230 12
+	rotation 0
+	size 20 15 3
+end
+
+box
+	position 225 -180 0
+	rotation 0
+	size 10 15 8
+end
+
+box
+	position 220 -280 0
+	rotation 0
+	size 15 15 8
+end
+
+box
+	position 150 -275 0
+	rotation 0
+	size 20 10 5
+end
+
+box
+	position 265 -320 0
+	rotation 0
+	size 10 15 10
+end
+
+box
+	position 330 -50 0
+	rotation 0
+	size 5 15 6
+end
+
+box
+	position 310 -60 0
+	rotation 0
+	size 5 15 6
+end
+
+teleporter			
+	position 275 -275 0
+	rotation 135		
+	size 0.56 4.48 20.16
+	border 1.1		
+end
+
+link
+	from 6
+	to 4
+end
+
+link
+	from 7
+	to 5
+end
+
+
+# Pyramids
+
+pyramid
+	position 210 330 0
+	rotation 0
+	size 12 12 12
+end
+
+pyramid
+	position -210 -330 0
+	rotation 0
+	size 12 12 12
+end
+
+pyramid
+	position 240 350 0
+	rotation 0
+	size 8 8 8
+end
+
+pyramid
+	position -240 -350 0
+	rotation 0
+	size 8 8 8
+end
+
+pyramid
+	position -65 280 0
+	rotation 0
+	size 15 15 15
+end
+
+pyramid
+	position 65 -280 0
+	rotation 0
+	size 15 15 15
+end
+
+pyramid
+	position -335 365 0
+	rotation 0
+	size 12 12 12
+end
+
+pyramid
+	position 335 -365 0
+	rotation 0
+	size 12 12 12
+end
+
+pyramid
+	position -35 235 0
+	rotation 0
+	size 10 10 10
+end
+
+pyramid
+	position 35 -235 0
+	rotation 0
+	size 10 10 10
+end
+
+pyramid
+	position -265 -40 0
+	rotation 0
+	size 10 10 10
+end
+
+pyramid
+	position 265 40 0
+	rotation 0
+	size 10 10 10
+end

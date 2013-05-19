@@ -1,0 +1,52 @@
+-admsg "Long live BinarySpike"
+-c
+
+# one 'i' means that their in a zone,
+# two 'i''s mean there in two zones, etc. etc.
+
++f V{2} #i
++f QT{3} #i
++f A{2} #i
++f OO{3} #i
++f F{2} #i
++f MG{1} #i
++f GM{1} #ii
++f L{1} #i
++f SB{2} #ii
++f ST{3} #ii
++f CL{3} #i
++f IB{2} #i
++f T{2} #ii
++f N{1} #ii
++f SH{3} #ii
++f SR{2} #i
++f PZ{1} #i
++f MQ{2} #i
++f BU{2} #ii
++f SE{3} #ii
++f TH{2} #i
++f US{4} #i
+
++f SW{2}
++f G{1}
++f WG{5}
+
+-fb
+
+-a 50 38
+
+-mp 0,4,0,4,0,5
+-ms 4
+-mts 25
+-poll votePercentage=75.0
+-poll voteRepeatTime=10
+#-public "Map of Chaos!!!"
+#-publicaddr ibzedit.servegame.com
+
++r
+-sa
+-sb
+-sl GM 8
+-sl SW 12
+-sl L 15
+-st 4

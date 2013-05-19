@@ -1,0 +1,602 @@
+### BZFLAG WORLD FILE HEADER
+
+
+# Map name	: Stonehenge
+# File name	: stonehenge.bzw
+# Version	: 1.00
+# Release date	: 2002-09-19
+
+# Designer	: Raimond "Dutchrai" Kuhlman
+# Email address	: dutchrai@yahoo.com
+
+# BZFS Required	: -f L -j -public "Stonehenge by Dutchrai" -world "stonehenge.bzw"
+
+
+### BZFLAG WORLD FILE DATA
+
+
+# Sarsens			
+			
+box			
+position	26.1	248.6	0.0
+rotation	84.0		
+size	7.5	15.0	57.5
+end			
+
+box			
+position	77.3	237.8	0.0
+rotation	72.0		
+size	7.5	15.0	57.5
+end			
+
+box			
+position	125.0	216.5	0.0
+rotation	60.0		
+size	7.5	15.0	57.5
+end			
+
+box			
+position	167.3	185.8	0.0
+rotation	48.0		
+size	7.5	15.0	57.5
+end			
+
+box			
+position	202.3	146.9	0.0
+rotation	36.0		
+size	7.5	15.0	57.5
+end			
+
+box			
+position	228.4	101.7	0.0
+rotation	24.0		
+size	7.5	15.0	57.5
+end			
+
+box			
+position	244.5	52.0	0.0
+rotation	12.0		
+size	7.5	15.0	57.5
+end			
+
+box			
+position	300.0	0.0	0.0
+rotation	0.0		
+size	15.0	15.0	10.0
+end			
+
+box			
+position	249.4	-53.0	0.0
+rotation	-12.0		
+size	25.0	15.0	10.0
+end			
+
+box			
+position	303.2	-64.5	0.0
+rotation	-3.0		
+size	15.0	10.0	10.0
+end			
+
+box			
+position	228.4	-101.7	0.0
+rotation	-24.0		
+size	7.5	15.0	57.5
+end			
+
+box			
+position	202.3	-146.9	0.0
+rotation	-36.0		
+size	7.5	15.0	25.0
+end			
+
+box			
+position	187.4	-208.1	0.0
+rotation	-24.0		
+size	40.0	15.0	12.0
+end			
+
+box			
+position	68.0	-209.2	0.0
+rotation	-80.0		
+size	40.0	15.0	10.0
+end			
+
+box			
+position	-26.1	-248.6	0.0
+rotation	-96.0		
+size	7.5	15.0	57.5
+end			
+
+box			
+position	-200.7	-222.9	0.0
+rotation	-120.0		
+size	10.0	15.0	10.0
+end			
+
+box			
+position	-219.2	-197.4	0.0
+rotation	-115.0		
+size	8.0	5.0	8.0
+end			
+
+box			
+position	-228.4	-101.7	0.0
+rotation	-156.0		
+size	7.5	15.0	57.5
+end			
+
+box			
+position	-244.5	-52.0	0.0
+rotation	-168.0		
+size	7.5	15.0	57.5
+end			
+
+box			
+position	-250.0	0.0	0.0
+rotation	-180.0		
+size	7.5	15.0	57.5
+end			
+
+box			
+position	-252.0	81.9	0.0
+rotation	-130.0		
+size	35.0	15.0	10.0
+end			
+
+box			
+position	-208.2	138.3	0.0
+rotation	-213.6		
+size	9.0	15.0	8.0
+end			
+
+box			
+position	-195.3	168.6	0.0
+rotation	-220.8		
+size	17.0	5.0	6.0
+end			
+
+box			
+position	-167.3	185.8	0.0
+rotation	-228.0		
+size	7.5	15.0	57.5
+end			
+
+box			
+position	-125.0	216.5	0.0
+rotation	-240.0		
+size	7.5	15.0	57.5
+end			
+
+box			
+position	-77.3	237.8	0.0
+rotation	-252.0		
+size	7.5	15.0	57.5
+end			
+
+box			
+position	-26.1	248.6	0.0
+rotation	-264.0		
+size	7.5	15.0	57.5
+end			
+
+			
+# Sarsen Lintels			
+			
+box			
+position	0.0	250.0	57.5
+rotation	90.0		
+size	7.5	24.5	11.0
+end			
+
+box			
+position	52.0	244.5	57.5
+rotation	78.0		
+size	7.5	24.5	11.0
+end			
+
+box			
+position	185.8	167.3	57.5
+rotation	42.0		
+size	7.5	24.5	11.0
+end			
+
+box			
+position	237.8	77.3	57.5
+rotation	18.0		
+size	7.5	24.5	11.0
+end			
+
+box			
+position	-237.8	-77.3	57.5
+rotation	-162.0		
+size	7.5	24.5	11.0
+end			
+
+box			
+position	-52.0	244.5	57.5
+rotation	-258.0		
+size	7.5	24.5	11.0
+end			
+
+
+# Trilithons			
+
+box			
+position	121.0	79.0	0.0
+rotation	0.0		
+size	8.0	16.0	65.0
+end			
+
+box			
+position	125.0	38.0	0.0
+rotation	-2.0		
+size	8.0	16.0	65.0
+end			
+
+box			
+position	110.0	-50.0	0.0
+rotation	-20.0		
+size	8.0	16.0	70.0
+end			
+
+box			
+position	96.0	-90.0	0.0
+rotation	-20.0		
+size	8.0	16.0	70.0
+end			
+
+box			
+position	15.0	-132.0	0.0
+rotation	-88.0		
+size	16.0	16.0	10.0
+end			
+
+box			
+position	16.0	-175.0	0.0
+rotation	-45.0		
+size	6.0	16.0	8.0
+end			
+
+box			
+position	17.0	-90.0	0.0
+rotation	-92.0		
+size	15.0	16.0	9.0
+end			
+
+box			
+position	-29.0	-133.0	0.0
+rotation	-90.0		
+size	8.0	16.0	75.0
+end			
+
+box			
+position	-99.0	-80.0	0.0
+rotation	-160.0		
+size	8.0	16.0	70.0
+end			
+
+box			
+position	-112.0	-40.0	0.0
+rotation	-160.0		
+size	8.0	16.0	70.0
+end			
+
+box			
+position	-91.0	35.0	0.0
+rotation	-178.0		
+size	32.0	16.0	14.0
+end			
+
+box			
+position	-38.0	35.0	0.0
+rotation	-205.0		
+size	7.0	16.0	12.0
+end			
+
+box			
+position	-12.0	32.0	0.0
+rotation	-195.0		
+size	6.0	13.0	10.0
+end			
+
+box			
+position	-115.0	85.0	0.0
+rotation	-180.0		
+size	8.0	16.0	65.0
+end			
+
+
+# Trilithon Lintels			
+
+box			
+position	122.0	58.0	65.0
+rotation	1.0		
+size	8.0	37.0	13.0
+end			
+
+box			
+position	103.0	-70.0	70.0
+rotation	-20.0		
+size	8.0	37.0	13.0
+end			
+
+box			
+position	-105.0	-60.0	70.0
+rotation	-160.0		
+size	8.0	37.0	13.0
+end			
+
+
+# Altar Stone			
+
+box			
+position	-9.0	-45.0	0.0
+rotation	5.0		
+size	40.0	12.0	11.0
+end			
+
+
+# Small Rocks			
+
+box			
+position	24.0	192.0	0.0
+rotation	0.0		
+size	10.0	2.5	30.0
+end			
+
+box			
+position	99.0	168.0	0.0
+rotation	45.0		
+size	6.0	14.0	7.5
+end			
+
+box			
+position	221.0	-15.0	0.0
+rotation	-40.0		
+size	5.0	5.0	8.0
+end			
+
+box			
+position	219.0	-26.0	0.0
+rotation	-30.0		
+size	3.0	3.0	3.0
+end			
+
+box			
+position	-120.0	-160.0	0.0
+rotation	30.0		
+size	7.0	12.0	6.0
+end			
+
+box			
+position	-176.0	80.0	0.0
+rotation	-25.0		
+size	15.0	7.5	10.0
+end			
+
+box			
+position	-93.0	174.0	0.0
+rotation	16.0		
+size	6.0	4.0	15.0
+end			
+
+box			
+position	-70.0	184.0	0.0
+rotation	14.0		
+size	7.0	3.0	20.0
+end			
+
+box			
+position	-47.0	178.0	0.0
+rotation	10.0		
+size	8.0	7.0	5.0
+end			
+
+box			
+position	-18.0	193.0	0.0
+rotation	4.0		
+size	10.0	2.5	30.0
+end			
+
+box			
+position	93.0	88.0	0.0
+rotation	0.0		
+size	5.0	5.0	26.0
+end			
+
+box			
+position	99.0	12.0	0.0
+rotation	0.0		
+size	5.0	5.0	32.0
+end			
+
+box			
+position	95.0	-16.0	0.0
+rotation	-5.0		
+size	4.0	5.0	29.0
+end			
+
+box			
+position	-80.0	-63.0	0.0
+rotation	10.0		
+size	5.0	5.0	28.0
+end			
+
+box			
+position	-88.0	-34.0	0.0
+rotation	5.0		
+size	5.0	6.0	30.0
+end			
+
+
+# Teleporters			
+
+teleporter			
+position	-237.8	-77.3	68.5
+rotation	-72.0		
+size	0.56	4.48	20.16
+border	1.1		
+end			
+
+link			
+from	0		
+to	2		
+end			
+			
+link			
+from	1		
+to	3		
+end			
+
+teleporter			
+position	-9.0	-45.0	11.0
+rotation	5.0		
+size	0.56	4.48	20.16
+border	1.1		
+end			
+
+link			
+from	2		
+to	0		
+end			
+			
+link			
+from	3		
+to	1		
+end			
+
+teleporter			
+position	-174.0	-107.0	0.0
+rotation	60.0		
+size	0.56	4.48	20.16
+border	1.1		
+end			
+
+link			
+from	4		
+to	6		
+end			
+			
+link			
+from	5		
+to	7		
+end			
+
+teleporter			
+position	270.0	310.0	0.0
+rotation	30.0		
+size	0.56	4.48	20.16
+border	1.1		
+end			
+
+link			
+from	6		
+to	4		
+end			
+			
+link			
+from	7		
+to	5		
+end			
+
+teleporter			
+position	55.0	131.0	0.0
+rotation	10.0		
+size	0.56	4.48	20.16
+border	1.1		
+end			
+
+link			
+from	8		
+to	10		
+end			
+			
+link			
+from	9		
+to	11		
+end			
+
+teleporter			
+position	-340.0	-300.0	0.0
+rotation	80.0		
+size	0.56	4.48	20.16
+border	1.1		
+end			
+
+link			
+from	10		
+to	8		
+end			
+			
+link			
+from	11		
+to	9		
+end			
+
+teleporter			
+position	-138.0	140.0	0.0
+rotation	-20.0		
+size	0.56	4.48	20.16
+border	1.1		
+end			
+
+link			
+from	12		
+to	14		
+end			
+			
+link			
+from	13		
+to	15		
+end			
+
+teleporter			
+position	330.0	-270.0	0.0
+rotation	15.0		
+size	0.56	4.48	20.16
+border	1.1		
+end			
+
+link			
+from	14		
+to	12		
+end			
+			
+link			
+from	15		
+to	13		
+end			
+
+teleporter			
+position	162.0	-109.0	0.0
+rotation	70.0		
+size	0.56	4.48	20.16
+border	1.1		
+end			
+
+link			
+from	16		
+to	18		
+end			
+			
+link			
+from	17		
+to	19		
+end			
+
+teleporter			
+position	-280.0	250.0	0.0
+rotation	15.0		
+size	0.56	4.48	20.16
+border	1.1		
+end			
+
+link			
+from	18		
+to	16		
+end			
+			
+link			
+from	19		
+to	17		
+end			

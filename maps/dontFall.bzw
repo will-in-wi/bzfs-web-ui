@@ -1,0 +1,681 @@
+# World built with bzedit32 world class, available at
+# http://www.sourceforge.net/projects/bzflag
+
+box
+name Box
+	position 50 50 50
+	rotation 0
+	size 20 50 2
+end
+
+box
+name Box copy
+	position 179 -82.5 50
+	rotation 0
+	size 20 50 2
+end
+
+box
+name Box copy 1
+	position -190.5 -149.5 50
+	rotation 0
+	size 20 50 2
+end
+
+box
+name Box copy 2
+	position -112 28.5 50
+	rotation 0
+	size 20 50 2
+end
+
+box
+name Box copy 3
+	position -42 -173.5 50
+	rotation 0
+	size 20 50 2
+end
+
+box
+name Box copy 4
+	position -289.5 -317.5 50
+	rotation 0
+	size 20 50 2
+end
+
+box
+name Box copy 5
+	position -128 -309.5 50
+	rotation 0
+	size 20 50 2
+end
+
+box
+name Box copy 6
+	position 113 -289.5 50
+	rotation 0
+	size 20 50 2
+end
+
+box
+name Box copy 7
+	position 301 -243 50
+	rotation 0
+	size 20 50 2
+end
+
+box
+name Box copy 8
+	position 240 157 50
+	rotation 0
+	size 20 50 2
+end
+
+box
+name Box copy 9
+	position -265 175 50
+	rotation 0
+	size 20 50 2
+end
+
+box
+name Box copy 10
+	position -286 11.5 50
+	rotation 90
+	size 20 50 2
+end
+
+box
+name Box copy 11
+	position 49 -128 50
+	rotation 90
+	size 20 50 2
+end
+
+box
+name Box copy 12
+	position -2.5 -299 50
+	rotation 90
+	size 20 50 2
+end
+
+box
+name Box copy 13
+	position -288.5 -146 50
+	rotation 90
+	size 20 50 2
+end
+
+box
+name Box copy 14
+	position -212 -295.5 50
+	rotation 90
+	size 20 50 2
+end
+
+box
+name Box copy 15
+	position 210.5 -262.5 50
+	rotation 90
+	size 20 50 2
+end
+
+box
+name Box copy 16
+	position -30 38 50
+	rotation 90
+	size 20 50 2
+end
+
+box
+name Box copy 17
+	position -194 81 50
+	rotation 90
+	size 20 50 2
+end
+
+box
+name Box copy 18
+	position 143.5 115 50
+	rotation 90
+	size 20 50 2
+end
+
+box
+name Box copy 19
+	position 266 -74.5 50
+	rotation 90
+	size 20 50 2
+end
+
+box
+name Box copy 20
+	position -114.5 -156 50
+	rotation 45
+	size 20 50 2
+end
+
+box
+name Box copy 21
+	position 204 -339.5 50
+	rotation 45
+	size 20 50 2
+end
+
+box
+name Box copy 22
+	position -68 125 50
+	rotation 45
+	size 20 50 2
+end
+
+box
+name Box copy 23
+	position 140 202.5 50
+	rotation 45
+	size 20 50 2
+end
+
+box
+name Box copy 24
+	position -317.5 303 50
+	rotation 45
+	size 20 50 2
+end
+
+box
+name Box copy 25
+	position 206 30.5 50
+	rotation 45
+	size 20 50 2
+end
+
+box
+name Box copy 26
+	position 306 297.5 50
+	rotation 45
+	size 20 50 2
+end
+
+box
+name Box copy 27
+	position 5.5 274 50
+	rotation 0
+	size 20 50 2
+end
+
+box
+name Box copy 28
+	position -179.5 276.5 50
+	rotation 0
+	size 20 50 2
+end
+
+box
+name Box copy 29
+	position -39.5 -51 50
+	rotation 0
+	size 20 50 2
+end
+
+box
+name Box copy 30
+	position -81 277 50
+	rotation 90
+	size 20 50 2
+end
+
+box
+name Box copy 31
+	position 110 301 50
+	rotation 90
+	size 20 50 2
+end
+
+box
+name Box copy 32
+	position -193.5 -25.5 50
+	rotation -45
+	size 20 50 2
+end
+
+box
+name Box copy 33
+	position 127.5 -182 50
+	rotation -45
+	size 20 50 2
+end
+
+box
+name Box copy 34
+	position 234.5 -172 50
+	rotation -45
+	size 20 50 2
+end
+
+box
+name Box copy 35
+	position 312 62.5 50
+	rotation -45
+	size 20 50 2
+end
+
+box
+name Box copy 36
+	position 21.5 164 50
+	rotation -45
+	size 20 50 2
+end
+
+box
+name Box copy 37
+	position 91 -32 62
+	rotation -45
+	size 20 50 2
+end
+
+box
+name Box copy 38
+	position 33 -208 62
+	rotation -45
+	size 20 50 2
+end
+
+box
+name Box copy 39
+	position -293 -220 62
+	rotation 90
+	size 20 50 2
+end
+
+box
+name Box copy 40
+	position -5 -364 62
+	rotation 90
+	size 20 50 2
+end
+
+box
+name Box copy 41
+	position -323 81 62
+	rotation 90
+	size 20 50 2
+end
+
+box
+name Box copy 42
+	position -180.5 175 62
+	rotation 90
+	size 20 50 2
+end
+
+box
+name Box copy 43
+	position -332 192.5 62
+	rotation 0
+	size 20 50 2
+end
+
+box
+name Box copy 44
+	position -286.5 -71.5 62
+	rotation 0
+	size 20 50 2
+end
+
+box
+name Box copy 45
+	position 349 -43 62
+	rotation 0
+	size 20 50 2
+end
+
+box
+name Box copy 46
+	position 308 177.5 62
+	rotation 0
+	size 20 50 2
+end
+
+box
+name Box copy 47
+	position 218.5 289.5 62
+	rotation 0
+	size 20 50 2
+end
+
+box
+name Box copy 48
+	position -69 346 62
+	rotation 90
+	size 20 50 2
+end
+
+box
+name Box copy 49
+	position -234.5 360.5 62
+	rotation 90
+	size 20 50 2
+end
+
+box
+name Box copy 50
+	position 319 -348 62
+	rotation 90
+	size 20 50 2
+end
+
+box
+name Box copy 51
+	position -120.5 -68 62
+	rotation 90
+	size 20 50 2
+end
+
+box
+name Box copy 52
+	position -355.5 -301.5 62
+	rotation 0
+	size 20 50 2
+end
+
+box
+name Box copy 53
+	position -356.5 -60.5 62
+	rotation 0
+	size 20 50 2
+end
+
+box
+name Box copy 54
+	position 352.5 -162.5 62
+	rotation 0
+	size 20 50 2
+end
+
+box
+name Box copy 55
+	position -196.5 -331.5 82
+	rotation 0
+	size 20 50 2
+end
+
+box
+name Box copy 56
+	position -280 -184.5 82
+	rotation 0
+	size 20 50 2
+end
+
+box
+name Box copy 57
+	position -184.5 56 82
+	rotation 0
+	size 20 50 2
+end
+
+box
+name Box copy 58
+	position 52 31.5 82
+	rotation 0
+	size 20 50 2
+end
+
+box
+name Box copy 59
+	position 187 -142.5 82
+	rotation 0
+	size 20 50 2
+end
+
+box
+name Box copy 60
+	position 64 -259.5 82
+	rotation 0
+	size 20 50 2
+end
+
+box
+name Box copy 61
+	position 151.5 97 82
+	rotation 0
+	size 20 50 2
+end
+
+box
+name Box copy 62
+	position 80 235 82
+	rotation 0
+	size 20 50 2
+end
+
+box
+name Box copy 63
+	position -180 228.5 82
+	rotation 0
+	size 20 50 2
+end
+
+box
+name Box copy 64
+	position -72 179.5 82
+	rotation 0
+	size 20 50 2
+end
+
+box
+name Box copy 65
+	position 224.5 -299.5 82
+	rotation 0
+	size 20 50 2
+end
+
+box
+name Box copy 66
+	position 114 -47.5 82
+	rotation 90
+	size 20 50 2
+end
+
+box
+name Box copy 67
+	position -32 -260 82
+	rotation 90
+	size 20 50 2
+end
+
+box
+name Box copy 68
+	position -126.5 -86.5 82
+	rotation 90
+	size 20 50 2
+end
+
+box
+name Box copy 69
+	position -285.5 132 82
+	rotation 90
+	size 20 50 2
+end
+
+box
+name Box copy 70
+	position -46.5 101 82
+	rotation 90
+	size 20 50 2
+end
+
+box
+name Box copy 71
+	position 285 275.5 82
+	rotation 90
+	size 20 50 2
+end
+
+box
+name Box copy 72
+	position 22 -127 82
+	rotation 90
+	size 20 50 2
+end
+
+box
+name Box copy 73
+	position 112 -323.5 82
+	rotation 90
+	size 20 50 2
+end
+
+box
+name Box copy 74
+	position -224.5 -113.5 82
+	rotation 0
+	size 20 50 2
+end
+
+box
+name Box copy 75
+	position -293 9.5 82
+	rotation 90
+	size 20 50 2
+end
+
+box
+name Box copy 76
+	position -123.5 -273 82
+	rotation 0
+	size 20 50 2
+end
+
+box
+name Box copy 67
+	position 118 -128 72
+	rotation 45
+	size 20 50 2
+end
+
+box
+name Box copy 68
+	position -81.5 -153.5 72
+	rotation 45
+	size 20 50 2
+end
+
+box
+name Box copy 69
+	position -42.5 -312.5 72
+	rotation 45
+	size 20 50 2
+end
+
+box
+name Box copy 70
+	position -255 -292.5 72
+	rotation 45
+	size 20 50 2
+end
+
+box
+name Box copy 71
+	position -185 -170 72
+	rotation -45
+	size 20 50 2
+end
+
+box
+name Box copy 72
+	position 279.5 -168 72
+	rotation -45
+	size 20 50 2
+end
+
+box
+name Box copy 73
+	position 211.5 115.5 72
+	rotation -45
+	size 20 50 2
+end
+
+box
+name Box copy 74
+	position -11 96.5 72
+	rotation -45
+	size 20 50 2
+end
+
+box
+name Box copy 75
+	position -247.5 197.5 72
+	rotation -45
+	size 20 50 2
+end
+
+box
+name Box copy 76
+	position -170 36 72
+	rotation -45
+	size 20 50 2
+end
+
+box
+name Box copy 77
+	position -102.5 -65.5 72
+	rotation 0
+	size 20 50 2
+end
+
+box
+name Box copy 78
+	position -122.5 -306.5 72
+	rotation 0
+	size 20 50 2
+end
+
+box
+name Box copy 79
+	position 47.5 -168 72
+	rotation 0
+	size 20 50 2
+end
+
+box
+name Box copy 80
+	position 65.5 202 72
+	rotation 0
+	size 20 50 2
+end
+
+box
+name Box copy 81
+	position -148 182.5 72
+	rotation 0
+	size 20 50 2
+end
+
+box
+name Box copy 82
+	position -27 -23.5 72
+	rotation 90
+	size 20 50 2
+end
+
+box
+name Box copy 83
+	position 258.5 28.5 72
+	rotation 90
+	size 20 50 2
+end
+
+box
+name Box copy 84
+	position 331.5 197 72
+	rotation 90
+	size 20 50 2
+end
+
+waterLevel 
+name waterlevel 
+height 20.0  
+end 
+
+

@@ -1,0 +1,1534 @@
+### BZFLAG WORLD FILE HEADER
+
+
+# Map name	: CTF-Quadlord
+# File name	: ctfquadlord.bzw
+# Version	: 1.00
+# Release date	: 2004-12-25
+
+# Designer	: Raimond "Dutchrai" Kuhlman
+# Email address	: dutchrai@yahoo.com
+
+# BZFS Required	: -c -fb -j -mp 0,3,3,3,3,2 -public "CTF-Quadlord by Dutchrai" -world "ctfquadlord.bzw"
+
+
+### BZFLAG WORLD FILE DATA
+
+
+## Red
+
+
+# Flag Base
+
+base
+	position 208 208 44
+	rotation 0
+	size 24 24 1
+	color 1
+end
+
+box
+	position 220 220 41
+	rotation 0
+	size 28 28 3
+end
+
+box
+	position 220 220 38
+	rotation 0
+	size 20 20 3
+end
+
+box
+	position 278 220 30
+	rotation 0
+	size 22 6 2
+end
+
+box
+	position 220 278 30
+	rotation 0
+	size 6 22 2
+end
+
+box
+	position 208 244 30
+	rotation 0
+	size 24 12 15
+end
+
+box
+	position 244 208 30
+	rotation 0
+	size 12 24 15
+end
+
+box
+	position 220 220 30
+	rotation 0
+	size 12 12 14
+end
+
+box
+	position 244 196 15
+	rotation 0
+	size 12 12 15
+end
+
+box
+	position 196 244 15
+	rotation 0
+	size 12 12 15
+end
+
+box
+	position 244 244 0
+	rotation 0
+	size 12 12 45
+end
+
+box
+	position 196 196 0
+	rotation 0
+	size 12 12 15
+end
+
+box
+	position 232 196 0
+	rotation 0
+	size 24 12 15
+end
+
+box
+	position 196 232 0
+	rotation 0
+	size 12 24 15
+end
+
+
+# Corner Base
+
+box
+	position 330 330 0
+	rotation 0
+	size 36 36 15
+end
+
+box
+	position 275 330 13
+	rotation 0
+	size 19 6 2
+end
+
+box
+	position 330 275 13
+	rotation 0
+	size 6 19 2
+end
+
+
+# Middle Base A
+
+box
+	position 330 196 45
+	rotation 0
+	size 12 12 15
+end
+
+box
+	position 306 220 58
+	rotation 0
+	size 6 12 2
+end
+
+box
+	position 306 220 30
+	rotation 0
+	size 6 12 2
+end
+
+box
+	position 354 196 15
+	rotation 0
+	size 12 12 45
+end
+
+box
+	position 306 244 15
+	rotation 0
+	size 12 12 45
+end
+
+box
+	position 306 196 15
+	rotation 0
+	size 12 12 45
+end
+
+box
+	position 330 220 0
+	rotation 0
+	size 36 36 15
+end
+
+
+# Middle Base B
+
+box
+	position 196 330 45
+	rotation 0
+	size 12 12 15
+end
+
+box
+	position 220 306 58
+	rotation 0
+	size 12 6 2
+end
+
+box
+	position 220 306 30
+	rotation 0
+	size 12 6 2
+end
+
+box
+	position 196 354 15
+	rotation 0
+	size 12 12 45
+end
+
+box
+	position 244 306 15
+	rotation 0
+	size 12 12 45
+end
+
+box
+	position 196 306 15
+	rotation 0
+	size 12 12 45
+end
+
+box
+	position 220 330 0
+	rotation 0
+	size 36 36 15
+end
+
+
+# End Base A
+
+box
+	position 330 134 45
+	rotation 0
+	size 12 12 15
+end
+
+box
+	position 354 110 45
+	rotation 0
+	size 12 12 30
+end
+
+box
+	position 330 86 45
+	rotation 0
+	size 12 12 30
+end
+
+box
+	position 306 110 45
+	rotation 0
+	size 12 12 30
+end
+
+box
+	position 348 110 30
+	rotation 0
+	size 6 12 15
+end
+
+box
+	position 312 110 30
+	rotation 0
+	size 6 12 15
+end
+
+box
+	position 330 128 30
+	rotation 0
+	size 12 6 15
+end
+
+box
+	position 330 92 30
+	rotation 0
+	size 12 6 15
+end
+
+box
+	position 354 134 0
+	rotation 0
+	size 12 12 75
+end
+
+box
+	position 354 86 0
+	rotation 0
+	size 12 12 75
+end
+
+box
+	position 306 134 0
+	rotation 0
+	size 12 12 75
+end
+
+box
+	position 306 86 0
+	rotation 0
+	size 12 12 75
+end
+
+
+# End Base B
+
+box
+	position 134 330 45
+	rotation 0
+	size 12 12 15
+end
+
+box
+	position 110 354 45
+	rotation 0
+	size 12 12 30
+end
+
+box
+	position 86 330 45
+	rotation 0
+	size 12 12 30
+end
+
+box
+	position 110 306 45
+	rotation 0
+	size 12 12 30
+end
+
+box
+	position 110 348 30
+	rotation 0
+	size 12 6 15
+end
+
+box
+	position 110 312 30
+	rotation 0
+	size 12 6 15
+end
+
+box
+	position 128 330 30
+	rotation 0
+	size 6 12 15
+end
+
+box
+	position 92 330 30
+	rotation 0
+	size 6 12 15
+end
+
+box
+	position 134 354 0
+	rotation 0
+	size 12 12 75
+end
+
+box
+	position 86 354 0
+	rotation 0
+	size 12 12 75
+end
+
+box
+	position 134 306 0
+	rotation 0
+	size 12 12 75
+end
+
+box
+	position 86 306 0
+	rotation 0
+	size 12 12 75
+end
+
+
+# Rope
+
+box
+	position 275 275 59.5
+	rotation 45
+	size 0.25 27.5 0.5
+end
+
+
+## Green
+
+
+# Flag Base
+
+base
+	position -208 -208 44
+	rotation 0
+	size 24 24 1
+	color 2
+end
+
+box
+	position -220 -220 41
+	rotation 0
+	size 28 28 3
+end
+
+box
+	position -220 -220 38
+	rotation 0
+	size 20 20 3
+end
+
+box
+	position -278 -220 30
+	rotation 0
+	size 22 6 2
+end
+
+box
+	position -220 -278 30
+	rotation 0
+	size 6 22 2
+end
+
+box
+	position -208 -244 30
+	rotation 0
+	size 24 12 15
+end
+
+box
+	position -244 -208 30
+	rotation 0
+	size 12 24 15
+end
+
+box
+	position -220 -220 30
+	rotation 0
+	size 12 12 14
+end
+
+box
+	position -244 -196 15
+	rotation 0
+	size 12 12 15
+end
+
+box
+	position -196 -244 15
+	rotation 0
+	size 12 12 15
+end
+
+box
+	position -244 -244 0
+	rotation 0
+	size 12 12 45
+end
+
+box
+	position -196 -196 0
+	rotation 0
+	size 12 12 15
+end
+
+box
+	position -232 -196 0
+	rotation 0
+	size 24 12 15
+end
+
+box
+	position -196 -232 0
+	rotation 0
+	size 12 24 15
+end
+
+
+# Corner Base
+
+box
+	position -330 -330 0
+	rotation 0
+	size 36 36 15
+end
+
+box
+	position -275 -330 13
+	rotation 0
+	size 19 6 2
+end
+
+box
+	position -330 -275 13
+	rotation 0
+	size 6 19 2
+end
+
+
+# Middle Base A
+
+box
+	position -330 -196 45
+	rotation 0
+	size 12 12 15
+end
+
+box
+	position -306 -220 58
+	rotation 0
+	size 6 12 2
+end
+
+box
+	position -306 -220 30
+	rotation 0
+	size 6 12 2
+end
+
+box
+	position -354 -196 15
+	rotation 0
+	size 12 12 45
+end
+
+box
+	position -306 -244 15
+	rotation 0
+	size 12 12 45
+end
+
+box
+	position -306 -196 15
+	rotation 0
+	size 12 12 45
+end
+
+box
+	position -330 -220 0
+	rotation 0
+	size 36 36 15
+end
+
+
+# Middle Base B
+
+box
+	position -196 -330 45
+	rotation 0
+	size 12 12 15
+end
+
+box
+	position -220 -306 58
+	rotation 0
+	size 12 6 2
+end
+
+box
+	position -220 -306 30
+	rotation 0
+	size 12 6 2
+end
+
+box
+	position -196 -354 15
+	rotation 0
+	size 12 12 45
+end
+
+box
+	position -244 -306 15
+	rotation 0
+	size 12 12 45
+end
+
+box
+	position -196 -306 15
+	rotation 0
+	size 12 12 45
+end
+
+box
+	position -220 -330 0
+	rotation 0
+	size 36 36 15
+end
+
+
+# End Base A
+
+box
+	position -330 -134 45
+	rotation 0
+	size 12 12 15
+end
+
+box
+	position -354 -110 45
+	rotation 0
+	size 12 12 30
+end
+
+box
+	position -330 -86 45
+	rotation 0
+	size 12 12 30
+end
+
+box
+	position -306 -110 45
+	rotation 0
+	size 12 12 30
+end
+
+box
+	position -348 -110 30
+	rotation 0
+	size 6 12 15
+end
+
+box
+	position -312 -110 30
+	rotation 0
+	size 6 12 15
+end
+
+box
+	position -330 -128 30
+	rotation 0
+	size 12 6 15
+end
+
+box
+	position -330 -92 30
+	rotation 0
+	size 12 6 15
+end
+
+box
+	position -354 -134 0
+	rotation 0
+	size 12 12 75
+end
+
+box
+	position -354 -86 0
+	rotation 0
+	size 12 12 75
+end
+
+box
+	position -306 -134 0
+	rotation 0
+	size 12 12 75
+end
+
+box
+	position -306 -86 0
+	rotation 0
+	size 12 12 75
+end
+
+
+# End Base B
+
+box
+	position -134 -330 45
+	rotation 0
+	size 12 12 15
+end
+
+box
+	position -110 -354 45
+	rotation 0
+	size 12 12 30
+end
+
+box
+	position -86 -330 45
+	rotation 0
+	size 12 12 30
+end
+
+box
+	position -110 -306 45
+	rotation 0
+	size 12 12 30
+end
+
+box
+	position -110 -348 30
+	rotation 0
+	size 12 6 15
+end
+
+box
+	position -110 -312 30
+	rotation 0
+	size 12 6 15
+end
+
+box
+	position -128 -330 30
+	rotation 0
+	size 6 12 15
+end
+
+box
+	position -92 -330 30
+	rotation 0
+	size 6 12 15
+end
+
+box
+	position -134 -354 0
+	rotation 0
+	size 12 12 75
+end
+
+box
+	position -86 -354 0
+	rotation 0
+	size 12 12 75
+end
+
+box
+	position -134 -306 0
+	rotation 0
+	size 12 12 75
+end
+
+box
+	position -86 -306 0
+	rotation 0
+	size 12 12 75
+end
+
+
+# Rope
+
+box
+	position -275 -275 59.5
+	rotation 45
+	size 0.25 27.5 0.5
+end
+
+
+## Blue
+
+
+# Flag Base
+
+base
+	position 208 -208 44
+	rotation 0
+	size 24 24 1
+	color 3
+end
+
+box
+	position 220 -220 41
+	rotation 0
+	size 28 28 3
+end
+
+box
+	position 220 -220 38
+	rotation 0
+	size 20 20 3
+end
+
+box
+	position 278 -220 30
+	rotation 0
+	size 22 6 2
+end
+
+box
+	position 220 -278 30
+	rotation 0
+	size 6 22 2
+end
+
+box
+	position 208 -244 30
+	rotation 0
+	size 24 12 15
+end
+
+box
+	position 244 -208 30
+	rotation 0
+	size 12 24 15
+end
+
+box
+	position 220 -220 30
+	rotation 0
+	size 12 12 14
+end
+
+box
+	position 244 -196 15
+	rotation 0
+	size 12 12 15
+end
+
+box
+	position 196 -244 15
+	rotation 0
+	size 12 12 15
+end
+
+box
+	position 244 -244 0
+	rotation 0
+	size 12 12 45
+end
+
+box
+	position 196 -196 0
+	rotation 0
+	size 12 12 15
+end
+
+box
+	position 232 -196 0
+	rotation 0
+	size 24 12 15
+end
+
+box
+	position 196 -232 0
+	rotation 0
+	size 12 24 15
+end
+
+
+# Corner Base
+
+box
+	position 330 -330 0
+	rotation 0
+	size 36 36 15
+end
+
+box
+	position 275 -330 13
+	rotation 0
+	size 19 6 2
+end
+
+box
+	position 330 -275 13
+	rotation 0
+	size 6 19 2
+end
+
+
+# Middle Base A
+
+box
+	position 330 -196 45
+	rotation 0
+	size 12 12 15
+end
+
+box
+	position 306 -220 58
+	rotation 0
+	size 6 12 2
+end
+
+box
+	position 306 -220 30
+	rotation 0
+	size 6 12 2
+end
+
+box
+	position 354 -196 15
+	rotation 0
+	size 12 12 45
+end
+
+box
+	position 306 -244 15
+	rotation 0
+	size 12 12 45
+end
+
+box
+	position 306 -196 15
+	rotation 0
+	size 12 12 45
+end
+
+box
+	position 330 -220 0
+	rotation 0
+	size 36 36 15
+end
+
+
+# Middle Base B
+
+box
+	position 196 -330 45
+	rotation 0
+	size 12 12 15
+end
+
+box
+	position 220 -306 58
+	rotation 0
+	size 12 6 2
+end
+
+box
+	position 220 -306 30
+	rotation 0
+	size 12 6 2
+end
+
+box
+	position 196 -354 15
+	rotation 0
+	size 12 12 45
+end
+
+box
+	position 244 -306 15
+	rotation 0
+	size 12 12 45
+end
+
+box
+	position 196 -306 15
+	rotation 0
+	size 12 12 45
+end
+
+box
+	position 220 -330 0
+	rotation 0
+	size 36 36 15
+end
+
+
+# End Base A
+
+box
+	position 330 -134 45
+	rotation 0
+	size 12 12 15
+end
+
+box
+	position 354 -110 45
+	rotation 0
+	size 12 12 30
+end
+
+box
+	position 330 -86 45
+	rotation 0
+	size 12 12 30
+end
+
+box
+	position 306 -110 45
+	rotation 0
+	size 12 12 30
+end
+
+box
+	position 348 -110 30
+	rotation 0
+	size 6 12 15
+end
+
+box
+	position 312 -110 30
+	rotation 0
+	size 6 12 15
+end
+
+box
+	position 330 -128 30
+	rotation 0
+	size 12 6 15
+end
+
+box
+	position 330 -92 30
+	rotation 0
+	size 12 6 15
+end
+
+box
+	position 354 -134 0
+	rotation 0
+	size 12 12 75
+end
+
+box
+	position 354 -86 0
+	rotation 0
+	size 12 12 75
+end
+
+box
+	position 306 -134 0
+	rotation 0
+	size 12 12 75
+end
+
+box
+	position 306 -86 0
+	rotation 0
+	size 12 12 75
+end
+
+
+# End Base B
+
+box
+	position 134 -330 45
+	rotation 0
+	size 12 12 15
+end
+
+box
+	position 110 -354 45
+	rotation 0
+	size 12 12 30
+end
+
+box
+	position 86 -330 45
+	rotation 0
+	size 12 12 30
+end
+
+box
+	position 110 -306 45
+	rotation 0
+	size 12 12 30
+end
+
+box
+	position 110 -348 30
+	rotation 0
+	size 12 6 15
+end
+
+box
+	position 110 -312 30
+	rotation 0
+	size 12 6 15
+end
+
+box
+	position 128 -330 30
+	rotation 0
+	size 6 12 15
+end
+
+box
+	position 92 -330 30
+	rotation 0
+	size 6 12 15
+end
+
+box
+	position 134 -354 0
+	rotation 0
+	size 12 12 75
+end
+
+box
+	position 86 -354 0
+	rotation 0
+	size 12 12 75
+end
+
+box
+	position 134 -306 0
+	rotation 0
+	size 12 12 75
+end
+
+box
+	position 86 -306 0
+	rotation 0
+	size 12 12 75
+end
+
+
+# Rope
+
+box
+	position 275 -275 59.5
+	rotation -45
+	size 0.25 27.5 0.5
+end
+
+
+## Purple
+
+
+# Flag Base
+
+base
+	position -208 208 44
+	rotation 0
+	size 24 24 1
+	color 4
+end
+
+box
+	position -220 220 41
+	rotation 0
+	size 28 28 3
+end
+
+box
+	position -220 220 38
+	rotation 0
+	size 20 20 3
+end
+
+box
+	position -278 220 30
+	rotation 0
+	size 22 6 2
+end
+
+box
+	position -220 278 30
+	rotation 0
+	size 6 22 2
+end
+
+box
+	position -208 244 30
+	rotation 0
+	size 24 12 15
+end
+
+box
+	position -244 208 30
+	rotation 0
+	size 12 24 15
+end
+
+box
+	position -220 220 30
+	rotation 0
+	size 12 12 14
+end
+
+box
+	position -244 196 15
+	rotation 0
+	size 12 12 15
+end
+
+box
+	position -196 244 15
+	rotation 0
+	size 12 12 15
+end
+
+box
+	position -244 244 0
+	rotation 0
+	size 12 12 45
+end
+
+box
+	position -196 196 0
+	rotation 0
+	size 12 12 15
+end
+
+box
+	position -232 196 0
+	rotation 0
+	size 24 12 15
+end
+
+box
+	position -196 232 0
+	rotation 0
+	size 12 24 15
+end
+
+
+# Corner Base
+
+box
+	position -330 330 0
+	rotation 0
+	size 36 36 15
+end
+
+box
+	position -275 330 13
+	rotation 0
+	size 19 6 2
+end
+
+box
+	position -330 275 13
+	rotation 0
+	size 6 19 2
+end
+
+
+# Middle Base A
+
+box
+	position -330 196 45
+	rotation 0
+	size 12 12 15
+end
+
+box
+	position -306 220 58
+	rotation 0
+	size 6 12 2
+end
+
+box
+	position -306 220 30
+	rotation 0
+	size 6 12 2
+end
+
+box
+	position -354 196 15
+	rotation 0
+	size 12 12 45
+end
+
+box
+	position -306 244 15
+	rotation 0
+	size 12 12 45
+end
+
+box
+	position -306 196 15
+	rotation 0
+	size 12 12 45
+end
+
+box
+	position -330 220 0
+	rotation 0
+	size 36 36 15
+end
+
+
+# Middle Base B
+
+box
+	position -196 330 45
+	rotation 0
+	size 12 12 15
+end
+
+box
+	position -220 306 58
+	rotation 0
+	size 12 6 2
+end
+
+box
+	position -220 306 30
+	rotation 0
+	size 12 6 2
+end
+
+box
+	position -196 354 15
+	rotation 0
+	size 12 12 45
+end
+
+box
+	position -244 306 15
+	rotation 0
+	size 12 12 45
+end
+
+box
+	position -196 306 15
+	rotation 0
+	size 12 12 45
+end
+
+box
+	position -220 330 0
+	rotation 0
+	size 36 36 15
+end
+
+
+# End Base A
+
+box
+	position -330 134 45
+	rotation 0
+	size 12 12 15
+end
+
+box
+	position -354 110 45
+	rotation 0
+	size 12 12 30
+end
+
+box
+	position -330 86 45
+	rotation 0
+	size 12 12 30
+end
+
+box
+	position -306 110 45
+	rotation 0
+	size 12 12 30
+end
+
+box
+	position -348 110 30
+	rotation 0
+	size 6 12 15
+end
+
+box
+	position -312 110 30
+	rotation 0
+	size 6 12 15
+end
+
+box
+	position -330 128 30
+	rotation 0
+	size 12 6 15
+end
+
+box
+	position -330 92 30
+	rotation 0
+	size 12 6 15
+end
+
+box
+	position -354 134 0
+	rotation 0
+	size 12 12 75
+end
+
+box
+	position -354 86 0
+	rotation 0
+	size 12 12 75
+end
+
+box
+	position -306 134 0
+	rotation 0
+	size 12 12 75
+end
+
+box
+	position -306 86 0
+	rotation 0
+	size 12 12 75
+end
+
+
+# End Base B
+
+box
+	position -134 330 45
+	rotation 0
+	size 12 12 15
+end
+
+box
+	position -110 354 45
+	rotation 0
+	size 12 12 30
+end
+
+box
+	position -86 330 45
+	rotation 0
+	size 12 12 30
+end
+
+box
+	position -110 306 45
+	rotation 0
+	size 12 12 30
+end
+
+box
+	position -110 348 30
+	rotation 0
+	size 12 6 15
+end
+
+box
+	position -110 312 30
+	rotation 0
+	size 12 6 15
+end
+
+box
+	position -128 330 30
+	rotation 0
+	size 6 12 15
+end
+
+box
+	position -92 330 30
+	rotation 0
+	size 6 12 15
+end
+
+box
+	position -134 354 0
+	rotation 0
+	size 12 12 75
+end
+
+box
+	position -86 354 0
+	rotation 0
+	size 12 12 75
+end
+
+box
+	position -134 306 0
+	rotation 0
+	size 12 12 75
+end
+
+box
+	position -86 306 0
+	rotation 0
+	size 12 12 75
+end
+
+
+# Rope
+
+box
+	position -275 275 59.5
+	rotation -45
+	size 0.25 27.5 0.5
+end
+
+
+## Fire Cover
+
+pyramid
+	position 0 350 0
+	rotation 30
+	size 12 12 12
+end
+
+pyramid
+	position -30 255 0
+	rotation 70
+	size 12 12 12
+end
+
+pyramid
+	position 20 290 0
+	rotation 10
+	size 12 12 12
+end
+
+pyramid
+	position 0 -365 0
+	rotation 40
+	size 12 12 12
+end
+
+pyramid
+	position 35 -265 0
+	rotation 10
+	size 12 12 12
+end
+
+pyramid
+	position -30 -250 0
+	rotation 30
+	size 12 12 12
+end
+
+pyramid
+	position 360 0 0
+	rotation 60
+	size 12 12 12
+end
+
+pyramid
+	position 265 20 0
+	rotation 40
+	size 12 12 12
+end
+
+pyramid
+	position 280 -40 0
+	rotation 80
+	size 12 12 12
+end
+
+pyramid
+	position -355 0 0
+	rotation 0
+	size 12 12 12
+end
+
+pyramid
+	position -285 -10 0
+	rotation 20
+	size 12 12 12
+end
+
+pyramid
+	position -250 30 0
+	rotation 40
+	size 12 12 12
+end

@@ -1,0 +1,3054 @@
+
+
+options
+-set _shotsKeepVerticalVelocity 1
+-set _tankSpeed 40
+-set _wingsJumpCount 50
+-set _noClimb 0
+-set _tankExplosionSize 60
+-set _mGunAdVel 2.5
+-set _mGunAdLife .3
+end
+
+material
+name tnet
+texture http://my.bzflag.org/bb/files/tnet_554.png
+end
+
+material
+name ttopnet
+texture http://my.bzflag.org/bb/files/ttopnet_159.png
+end
+
+
+material
+name tbase
+texture http://my.bzflag.org/bb/files/tbase_859.png
+end
+
+material
+name tfence
+texture http://my.bzflag.org/bb/files/tfence_204.png
+end
+
+
+material 
+ name GroundMaterial 
+ texture http://my.bzflag.org/bb/files/grd_213.png
+end
+
+material
+ name top
+ texture http://my.bzflag.org/bb/files/boogie_189.png
+
+end
+
+material
+ name wall
+ texture http://my.bzflag.org/bb/files/boxwall_120.png
+
+end
+
+material
+ name pyr
+ texture http://my.bzflag.org/bb/files/poke_163.png
+
+end
+
+material
+name water
+texture http://my.bzflag.org/bb/files/water_560.png
+end
+ 
+ 
+
+meshbox
+name Box copy
+	position 45 45 15
+	rotation 0
+	size 5 5 15
+
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 1
+	position -45 45 15
+	rotation 0
+	size 5 5 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 2
+	position -45 -45 15
+	rotation 0
+	size 5 5 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 3
+	position 45 -45 15
+	rotation 0
+	size 5 5 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy
+	position 0 0 30
+	rotation 0
+	size 50 50 2
+outside matref wall
+ top matref top
+end
+
+meshpyr
+name Pyramid
+	position 0 0 32
+	rotation 0
+	size 50 50 26
+	drivethrough
+matref pyr
+end
+
+meshbox
+name Box
+	position 100 100 0
+	rotation 0
+	size 2 2 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy
+	position 75 100 0
+	rotation 0
+	size 2 2 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 1
+	position 50 100 0
+	rotation 0
+	size 2 2 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 2
+	position 25 100 0
+	rotation 0
+	size 2 2 15
+
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 3
+	position 0 100 0
+	rotation 0
+	size 2 2 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 4
+	position -25 100 0
+	rotation 0
+	size 2 2 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 5
+	position -50 100 0
+	rotation 0
+	size 2 2 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 6
+	position -75 100 0
+	rotation 0
+	size 2 2 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 7
+	position -100 100 0
+	rotation 0
+	size 2 2 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 8
+	position -100 75 0
+	rotation 0
+	size 2 2 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 9
+	position -100 50 0
+	rotation 0
+	size 2 2 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 10
+	position -100 25 0
+	rotation 0
+	size 2 2 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 11
+	position -100 0 0
+	rotation 0
+	size 2 2 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 12
+	position -100 -25 0
+	rotation 0
+	size 2 2 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 13
+	position -100 -50 0
+	rotation 0
+	size 2 2 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 14
+	position -100 -75 0
+	rotation 0
+	size 2 2 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 15
+	position -100 -100 0
+	rotation 0
+	size 2 2 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 16
+	position -75 -100 0
+	rotation 0
+	size 2 2 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 17
+	position -50 -100 0
+	rotation 0
+	size 2 2 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 18
+	position -25 -100 0
+	rotation 0
+	size 2 2 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 19
+	position 0 -100 0
+	rotation 0
+	size 2 2 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 20
+	position 25 -100 0
+	rotation 0
+	size 2 2 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 21
+	position 50 -100 0
+	rotation 0
+	size 2 2 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 22
+	position 75 -100 0
+	rotation 0
+	size 2 2 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 23
+	position 100 -100 0
+	rotation 0
+	size 2 2 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 24
+	position 100 -75 0
+	rotation 0
+	size 2 2 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 25
+	position 100 -50 0
+	rotation 0
+	size 2 2 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 26
+	position 100 -25 0
+	rotation 0
+	size 2 2 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 27
+	position 100 0 0
+	rotation 0
+	size 2 2 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 28
+	position 100 25 0
+	rotation 0
+	size 2 2 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 29
+	position 100 50 0
+	rotation 0
+	size 2 2 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 30
+	position 100 75 0
+	rotation 0
+	size 2 2 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 28
+	position 100 0 2
+	rotation 0
+	size 1 100 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 29
+	position 100 0 4
+	rotation 0
+	size 1 100 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 30
+	position 100 0 6
+	rotation 0
+	size 1 100 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 31
+	position 100 0 8
+	rotation 0
+	size 1 100 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 32
+	position 100 0 10
+	rotation 0
+	size 1 100 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 33
+	position 100 0 12
+	rotation 0
+	size 1 100 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 4
+	position 0 100 2
+	rotation 0
+	size 100 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 5
+	position 0 100 4
+	rotation 0
+	size 100 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 6
+	position 0 100 6
+	rotation 0
+	size 100 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 7
+	position 0 100 8
+	rotation 0
+	size 100 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 8
+	position 0 100 10
+	rotation 0
+	size 100 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 9
+	position 0 100 12
+	rotation 0
+	size 100 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 12
+	position -100 0 2
+	rotation 0
+	size 1 100 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 13
+	position -100 0 4
+	rotation 0
+	size 1 100 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 14
+	position -100 0 6
+	rotation 0
+	size 1 100 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 15
+	position -100 0 8
+	rotation 0
+	size 1 100 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 16
+	position -100 0 10
+	rotation 0
+	size 1 100 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 17
+	position -100 0 12
+	rotation 0
+	size 1 100 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 20
+	position 0 -100 2
+	rotation 0
+	size 100 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 21
+	position 0 -100 4
+	rotation 0
+	size 100 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 22
+	position 0 -100 6
+	rotation 0
+	size 100 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 23
+	position 0 -100 8
+	rotation 0
+	size 100 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 24
+	position 0 -100 10
+	rotation 0
+	size 100 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 25
+	position 0 -100 12
+	rotation 0
+	size 100 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box
+	position -160 120 0
+	rotation 0
+	size 10 100 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy
+	position -260 120 0
+	rotation 0
+	size 10 100 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 1
+	position -210 30 0
+	rotation 90
+	size 10 50 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 2
+	position -211 210 0
+	rotation 90
+	size 10 50 15
+outside matref wall
+ top matref top
+end
+
+teleporter
+name Teleporter
+	position -211.5 124 0
+	rotation 90
+	size 0.125 5 5
+	border 2
+end
+
+teleporter
+name Teleporter copy
+	position -337 125.5 0
+	rotation 90
+	size 0.125 5 5
+	border 1
+end
+
+link
+	from 0
+	to 2
+end
+
+link
+	from 2
+	to 0
+end
+
+link
+	from 3
+	to 1
+end
+
+link
+	from 1
+	to 3
+end
+
+meshbox
+name Box
+	position -10 -185 0
+	rotation 0
+	size 4 4 20
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy
+	position 10 -185 0
+	rotation 0
+	size 4 4 20
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 1
+	position 0 -185 20
+	rotation 0
+	size 20 4 4
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 2
+	position -30 -185 10
+	rotation 0
+	size 20 4 4
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 3
+	position 30 -185 10
+	rotation 0
+	size 20 4 4
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box
+	position 0 -275 0
+	rotation 0
+	size 50 3 3
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy
+	position 0 -250 0
+	rotation 0
+	size 50 3 3
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 1
+	position 0 -225 0
+	rotation 0
+	size 50 3 3
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy
+	position 0 -300 0
+	rotation 0
+	size 50 3 3
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box
+	position -200 -200 0
+	rotation 0
+	size 2 50 17
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy
+	position -125 -200 0
+	rotation 0
+	size 2 50 17
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 1
+	position -162.5 -152 0
+	rotation 90
+	size 2 40 17
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 2
+	position -167.5 -252 0
+	rotation 90
+	size 2 35 17
+outside matref wall
+ top matref top
+end
+
+teleporter
+name Teleporter
+	position 350 200 0
+	rotation 136.5
+	size 0.125 10 10
+	border 1
+end
+
+teleporter
+name Teleporter
+	position 120 120 2500
+	rotation 50.5
+	size 0.125 10 10
+	border 1
+end
+
+link
+	from 4
+	to 6
+end
+
+meshbox
+name Box
+	position 385 385 0
+	rotation 0
+	size 15 15 0.2
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy
+	position 370 385 0
+	rotation 0
+	size 1 15 1.6
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 1
+	position 385 370 0
+	rotation 90
+	size 1 16 1.6
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 2
+	position 385 370 4
+	rotation 90
+	size 1 16 100
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 1
+	position 370 385 4
+	rotation 0
+	size 1 15 100
+outside matref wall
+ top matref top
+end
+
+meshpyr
+name Pyramid copy
+	position 0 0 32
+	rotation 0
+	size 40 40 35
+	drivethrough
+matref pyr
+end
+
+meshpyr
+name Pyramid copy 1
+	position 0 0 32
+	rotation 0
+	size 35 35 40
+	drivethrough
+matref pyr
+end
+
+meshpyr
+name Pyramid copy 2
+	position 0 0 32
+	rotation 0
+	size 30 30 45
+	drivethrough
+matref pyr
+end
+
+meshpyr
+name Pyramid copy 3
+	position 0 0 32
+	rotation 0
+	size 25 25 50
+	drivethrough
+matref pyr
+end
+
+meshpyr
+name Pyramid copy 4
+	position 0 0 32
+	rotation 0
+	size 20 20 55
+	drivethrough
+matref pyr
+end
+
+meshbox
+name Box
+	position 30 30 0
+	rotation 0
+	size 20 20 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy
+	position -30 -30 0
+	rotation 0
+	size 20 20 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 1
+	position 30 -30 0
+	rotation 0
+	size 20 20 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 2
+	position -30 30 0
+	rotation 0
+	size 20 20 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 3
+	position 0 0 0
+	rotation 0
+	size 50 50 15
+	drivethrough
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 4
+	position 0 0 14
+	rotation 0
+	size 50 50 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box
+	position 210 25 1
+	rotation 0
+	size 20 1 10
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy
+	position 210 70 1
+	rotation 0
+	size 20 1 10
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 1
+	position 229 48 1
+	rotation 90
+	size 22 1 10
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 2
+	position 191 48 1
+	rotation 90
+	size 22 1 10
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 3
+	position 210 32 10
+	rotation 90
+	size 7 19 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box
+	position 385 -385 0
+	rotation 0
+	size 15 15 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy
+	position 355 -385 15
+	rotation 0
+	size 15 15 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 1
+	position 325 -385 30
+	rotation 0
+	size 15 15 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 2
+	position 295 -385 45
+	rotation 0
+	size 15 15 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 3
+	position 265 -385 60
+	rotation 0
+	size 15 15 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 4
+	position 235 -385 75
+	rotation 0
+	size 15 15 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 5
+	position 205 -385 90
+	rotation 0
+	size 15 15 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 6
+	position 175 -385 105
+	rotation 0
+	size 15 15 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 7
+	position 145 -385 120
+	rotation 0
+	size 15 15 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 8
+	position 115 -385 135
+	rotation 0
+	size 15 15 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 9
+	position 85 -385 150
+	rotation 0
+	size 15 15 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 10
+	position 55 -385 165
+	rotation 0
+	size 15 15 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 11
+	position 25 -385 180
+	rotation 0
+	size 15 15 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 12
+	position -5 -385 195
+	rotation 0
+	size 15 15 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 13
+	position -35 -385 210
+	rotation 0
+	size 15 15 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 14
+	position -65 -385 225
+	rotation 0
+	size 15 15 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 15
+	position -95 -385 240
+	rotation 0
+	size 15 15 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 16
+	position -125 -385 255
+	rotation 0
+	size 15 15 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 17
+	position -155 -385 270
+	rotation 0
+	size 15 15 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 18
+	position -155 -385 270
+	rotation 0
+	size 15 15 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 19
+	position -185 -385 285
+	rotation 0
+	size 15 15 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 20
+	position -215 -385 300
+	rotation 0
+	size 15 15 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 21
+	position -245 -385 315
+	rotation 0
+	size 15 15 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 22
+	position -275 -385 330
+	rotation 0
+	size 15 15 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 23
+	position -305 -385 345
+	rotation 0
+	size 15 15 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 24
+	position -335 -385 360
+	rotation 0
+	size 15 15 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 25
+	position -335 -385 360
+	rotation 0
+	size 15 15 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 26
+	position -365 -385 375
+	rotation 0
+	size 15 15 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 27
+	position -385 -385 390
+	rotation 0
+	size 15 15 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 28
+	position -342 -385.5 408
+	rotation 0
+	size 15 15 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 24
+	position -305 -385 425
+	rotation 0
+	size 15 15 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 23
+	position -275 -385 440
+	rotation 0
+	size 15 15 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 24
+	position -245 -385 455
+	rotation 0
+	size 15 15 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 25
+	position -245.5 -86.5 469
+	rotation -90
+	size 300 15 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 26
+	position -129.5 -13 469
+	rotation -90
+	size 247 194.5 1
+	drivethrough
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 25
+	position -323 -259 470
+	rotation 0
+	size 1.5 1.5 25
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 35
+	position -322.5 232.5 470
+	rotation 0
+	size 1.5 1.5 25
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 36
+	position 63.5 232.5 470
+	rotation 0
+	size 1.5 1.5 25
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 37
+	position 63.5 -258.5 470
+	rotation 0
+	size 1.5 1.5 25
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 26
+	position -262 -259 470
+	rotation 0
+	size 1.5 1.5 25
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 27
+	position -229 -258.5 470
+	rotation 0
+	size 1.5 1.5 25
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 28
+	position -83 -259 475
+	rotation 0
+	size 147 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 29
+	position -83 -259 480
+	rotation 0
+	size 147 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 30
+	position -83 -259 485
+	rotation 0
+	size 147 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 31
+	position -83 -259 490
+	rotation 0
+	size 147 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 32
+	position -83 -259 494
+	rotation 0
+	size 147 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 33
+	position -292.5 -259 494
+	rotation 0
+	size 32 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 34
+	position -292.5 -259 490
+	rotation 0
+	size 32 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 35
+	position -292.5 -259 485
+	rotation 0
+	size 32 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 36
+	position -292.5 -259 480
+	rotation 0
+	size 32 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 37
+	position -292.5 -259 475
+	rotation 0
+	size 32 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 34
+	position -322.5 -13 494
+	rotation 90
+	size 246 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 35
+	position -322.5 -13 490
+	rotation 90
+	size 246 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 36
+	position -322.5 -13 485
+	rotation 90
+	size 246 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 37
+	position -322.5 -13 480
+	rotation 90
+	size 246 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 38
+	position -322.5 -13 475
+	rotation 90
+	size 246 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 35
+	position 63.5 -12.5 494
+	rotation 90
+	size 246 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 36
+	position 63.5 -12.5 490
+	rotation 90
+	size 246 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 37
+	position 63.5 -12.5 485
+	rotation 90
+	size 246 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 38
+	position 63.5 -12.5 480
+	rotation 90
+	size 246 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 39
+	position 63.5 -12.5 475
+	rotation 90
+	size 246 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 33
+	position -129 232.5 494
+	rotation 0
+	size 193 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 34
+	position -129 232.5 490
+	rotation 0
+	size 193 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 35
+	position -129 232.5 485
+	rotation 0
+	size 193 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 36
+	position -129 232.5 480
+	rotation 0
+	size 193 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 37
+	position -130.5 233 475
+	rotation 0
+	size 193 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 27
+	position -259 -369 470
+	rotation 0
+	size 1.5 1.5 25
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 28
+	position -258.5 -398.5 470
+	rotation 0
+	size 1.5 1.5 25
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 29
+	position -231.5 -398.5 470
+	rotation 0
+	size 1.5 1.5 25
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 30
+	position -259.5 -314.5 475
+	rotation 90
+	size 55 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 27
+	position -259 -259 470
+	rotation 0
+	size 1.5 1.5 25
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 31
+	position -259.5 -314.5 480
+	rotation 90
+	size 55 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 32
+	position -259.5 -314.5 485
+	rotation 90
+	size 55 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 33
+	position -259.5 -314.5 490
+	rotation 90
+	size 55 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 34
+	position -259.5 -314.5 494
+	rotation 90
+	size 55 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 34
+	position -245 -398.5 494
+	rotation 0
+	size 15 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 35
+	position -245 -398.5 490
+	rotation 0
+	size 15 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 36
+	position -245 -398.5 485
+	rotation 0
+	size 15 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 37
+	position -245 -398.5 480
+	rotation 0
+	size 15 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 38
+	position -245 -398.5 475
+	rotation 0
+	size 15 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 35
+	position -230 -328.5 494
+	rotation 89
+	size 70 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 36
+	position -230 -328.5 490
+	rotation 89
+	size 70 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 37
+	position -230 -328.5 485
+	rotation 89
+	size 70 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 38
+	position -230 -328.5 480
+	rotation 89
+	size 70 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 39
+	position -230 -328.5 475
+	rotation 89
+	size 70 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 27
+	position -234 -13 469
+	rotation -90
+	size 247 90 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 28
+	position -25 -13 469
+	rotation -90
+	size 247 90 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 29
+	position -100.5 -170 469
+	rotation -90
+	size 90 90 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 30
+	position -143.5 144 469
+	rotation -90
+	size 90 90 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 31
+	position -125 57 469
+	rotation -90
+	size 90 90 1
+outside matref wall
+ top matref top
+end
+
+meshpyr
+name Pyramid
+	position -128.5 -59 500
+	rotation 0
+	size 10 10 20
+	flipz
+matref pyr
+end
+
+meshbox
+name Box
+	position -108.5 -57.5 429
+	rotation 0
+	size 1 25 40
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy
+	position -147.5 -56.5 429
+	rotation 0
+	size 1 25 40
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 1
+	position -127.5 -82.5 429
+	rotation 90
+	size 1 20 40
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 2
+	position -127.5 -31.5 429
+	rotation 90
+	size 1 20 40
+outside matref wall
+ top matref top
+end
+
+teleporter
+name Teleporter
+	position -121.5 -75 430
+	rotation 90
+	size 0.125 7 10
+	border 0.5
+end
+
+meshbox
+name Box copy
+	position -126.5 -56.5 429
+	rotation 0
+	size 22 25 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 4
+	position 210.5 63 10
+	rotation 90
+	size 7 19 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 5
+	position 198 45.5 10
+	rotation 0
+	size 7 19 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 6
+	position 222 47 10
+	rotation 0
+	size 7 19 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 4
+	position 210 38.5 10
+	rotation 90
+	size 0.5 5 20
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 5
+	position 210 56.5 10
+	rotation 90
+	size 0.5 5 20
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 6
+	position 204.5 47.5 10
+	rotation 90
+	size 9.5 0.5 20
+outside matref wall
+ top matref top
+end
+
+teleporter
+name Teleporter
+	position 206 47.5 19
+	rotation 0
+	size 0.125 7 10
+	border 0.5
+end
+
+meshbox
+name Box copy 7
+	position 215.5 47.5 10
+	rotation 90
+	size 9.5 0.5 20
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 7
+	position 210 47.5 29
+	rotation 90
+	size 9 6 1
+outside matref wall
+ top matref top
+end
+
+link
+	from 8
+	to 10
+end
+
+meshbox
+name Box copy 5
+	position 234.5 -317.5 90
+	rotation 0
+	size 15 15 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 6
+	position 235 -246.5 90
+	rotation 0
+	size 15 15 1
+outside matref wall
+ top matref top
+end
+
+teleporter
+name Teleporter
+	position 236 -236 91
+	rotation 269
+	size 0.125 10 10
+	border 1
+end
+
+meshbox
+name Box copy 28
+	position -325 -258 405
+	rotation -23.5
+	size 15 15 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 29
+	position -353 -318.5 404.5
+	rotation -23.5
+	size 0.1 70 0.1
+outside matref wall
+ top matref top
+end
+
+teleporter
+name Teleporter
+	position -319 -245.5 406
+	rotation -114.5
+	size 0.125 10 10
+	border 1
+end
+
+link
+	from 12
+	to 14
+end
+
+link
+	from 14
+	to 12
+end
+
+meshbox
+name Box copy 27
+	position -129.5 -13 300
+	rotation -90
+	size 247 194.5 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 38
+	position 63.5 -258.5 300
+	rotation 0
+	size 1.5 1.5 25
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 26
+	position -323 -259 300
+	rotation 0
+	size 1.5 1.5 25
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 36
+	position -322.5 232.5 300
+	rotation 0
+	size 1.5 1.5 25
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 37
+	position 63.5 232.5 300
+	rotation 0
+	size 1.5 1.5 25
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 38
+	position -130.5 233 305
+	rotation 0
+	size 193 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 38
+	position -130.5 233 475
+	rotation 0
+	size 193 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 39
+	position -130.5 233 310
+	rotation 0
+	size 193 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 36
+	position -129 232.5 315
+	rotation 0
+	size 193 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 35
+	position -129 232.5 320
+	rotation 0
+	size 193 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 34
+	position -129 232.5 324
+	rotation 0
+	size 193 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 35
+	position -129 -259 324
+	rotation 0
+	size 193 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 36
+	position -129 -259 320
+	rotation 0
+	size 193 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 37
+	position -129 -259 315
+	rotation 0
+	size 193 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 40
+	position -130.5 -259 310
+	rotation 0
+	size 193 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 39
+	position -130.5 -259 305
+	rotation 0
+	size 193 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 39
+	position -322.5 -13 305
+	rotation 90
+	size 246 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 38
+	position -322.5 -13 310
+	rotation 90
+	size 246 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 37
+	position -322.5 -13 315
+	rotation 90
+	size 246 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 36
+	position -322.5 -13 320
+	rotation 90
+	size 246 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 35
+	position -322.5 -13 324
+	rotation 90
+	size 246 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 20
+	position -185 -342.5 299
+	rotation 90
+	size 30 15 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 21
+	position -229 -327.5 299
+	rotation 0
+	size 30 15 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 22
+	position -101 -327.5 299
+	rotation 0
+	size 70 15 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 23
+	position 37.5 -327.5 299
+	rotation 0
+	size 70 15 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 21
+	position 92.5 -287.5 299
+	rotation 90
+	size 30 15 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 22
+	position 92.5 -250.5 299
+	rotation 90
+	size 20 15 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 23
+	position 77.5 -244.5 299
+	rotation 0
+	size 30 15 1
+outside matref wall
+ top matref top
+end
+
+teleporter
+name Teleporter
+	position -255 -328.5 300
+	rotation 0
+	size 0.125 10 10
+	border 1
+end
+
+meshbox
+name Box copy 7
+	position 174 -243 90
+	rotation 0
+	size 15 15 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box
+	position -258.5 -327.5 299
+	rotation 0
+	size 0.5 15 25
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy
+	position -91 -312.5 299
+	rotation 90
+	size 0.5 168 25
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy
+	position -200.5 -356.5 299
+	rotation 0
+	size 0.5 14 25
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 1
+	position -170.5 -356.5 299
+	rotation 0
+	size 0.5 14 25
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 2
+	position -230 -343 299
+	rotation 90
+	size 0.5 29 25
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 3
+	position -31.5 -342 299
+	rotation 90
+	size 0.5 139.5 25
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 4
+	position 77.5 -285.75 299
+	rotation 0
+	size 0.5 27.25 25
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 5
+	position 71 -259 299
+	rotation 90
+	size 0.5 7 25
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 6
+	position 86 -230 299
+	rotation 90
+	size 0.5 21.5 25
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 5
+	position 107.5 -286.25 299
+	rotation 0
+	size 0.5 56.5 25
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 24
+	position 85 -244.5 324
+	rotation 0
+	size 23 15 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 22
+	position 92.5 -287.5 324
+	rotation 90
+	size 30 15 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 24
+	position 37.5 -327.5 324
+	rotation 0
+	size 70 15 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 23
+	position -101 -327.5 324
+	rotation 0
+	size 70 15 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 22
+	position -229 -327.5 324
+	rotation 0
+	size 30 15 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 21
+	position -185.5 -341.5 324
+	rotation 90
+	size -29 -15 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 22
+	position -185.5 -369.5 315
+	rotation 90
+	size 1 15 9
+outside matref wall
+ top matref top
+end
+
+teleporter
+name Teleporter
+	position 160 -242 91
+	rotation 0
+	size 0.125 10 10
+	border 1
+end
+
+link
+	from 16
+	to 18
+end
+
+link
+	from 18
+	to 16
+end
+
+meshbox
+name Box copy 39
+	position 63.5 -229 300
+	rotation 0
+	size 1.5 1.5 25
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 36
+	position 63.5 1.5 324
+	rotation 90
+	size 230 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 37
+	position 63.5 1.5 320
+	rotation 90
+	size 230 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 38
+	position 63.5 1.5 315
+	rotation 90
+	size 230 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 39
+	position 63.5 1.5 310
+	rotation 90
+	size 230 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 40
+	position 63.5 1.5 305
+	rotation 90
+	size 230 1 1
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 29
+	position -323.5 -386 417
+	rotation 0
+	size 15 15 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box
+	position 175 273.5 0
+	rotation 0
+	size 50 50 10
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy
+	position 175 273.5 20
+	rotation 45
+	size 50 50 10
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 1
+	position 175 273.5 30
+	rotation 0
+	size 30 30 10
+outside matref wall
+ top matref top
+end
+
+meshpyr
+name Pyramid
+	position -211.5 124 10
+	rotation 0
+	size 50 90 1
+	passable
+matref water
+
+end
+
+meshbox
+name Box
+	position -50 250 0
+	rotation 0
+	size 10 10 0.2
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy
+	position -40 250 0
+	rotation 0
+	size 2 12 1.6
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 1
+	position -60 250 0
+	rotation 0
+	size 2 12 1.6
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 2
+	position -50 260 0
+	rotation 90
+	size 2 12 1.6
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 3
+	position -50 240 0
+	rotation 90
+	size 2 12 1.6
+outside matref wall
+ top matref top
+end
+
+meshpyr
+name Pyramid
+	position -188.5 343.5 0
+	rotation 0
+	size 35 35 35
+matref pyr
+end
+
+meshpyr
+name Pyramid copy
+	position 200 -343 0
+	rotation 0
+	size 35 35 10
+	drivethrough
+matref pyr
+end
+
+meshbox
+name Box
+	position 346.5 -9.5 0
+	rotation 0
+	size 20 50 10
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy
+	position 317 -79 0
+	rotation 45
+	size 50 20 10
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 1
+	position 273 -80.5 0
+	rotation 45
+	size 20 50 10
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 2
+	position 329 -151 0
+	rotation 30
+	size 20 50 10
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 3
+	position 324 70 0
+	rotation 30
+	size 20 50 10
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box
+	position -300 -300 0
+	rotation 0
+	size 2 50 10
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy
+	position -310 -300 0
+	rotation 0
+	size 2 50 12
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 1
+	position -320 -300 0
+	rotation 0
+	size 2 50 14
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 2
+	position -330 -300 0
+	rotation 0
+	size 2 50 16
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 3
+	position -340 -300 0
+	rotation 0
+	size 2 50 18
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 4
+	position -350 -300 0
+	rotation 0
+	size 2 50 20
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 5
+	position -380 -300 0
+	rotation 0
+	size 20 50 22
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 6
+	position -390 -300 22
+	rotation 0
+	size 10 50 15
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 7
+	position -225 -300 0
+	rotation 0
+	size 50 30 4
+outside matref wall
+ top matref top
+end
+
+meshpyr
+name Pyramid
+	position -225 -300 4
+	rotation 0
+	size 10 10 10
+matref pyr
+end
+
+meshbox
+name Box
+	position 150 -150 0
+	rotation 0
+	size 1 100 100
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy
+	position 125 -150 0
+	rotation 0
+	size 1 100 100
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy
+	position 137.5 -150 10
+	rotation 0
+	size 20 100 2
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 1
+	position 137.5 -150 20
+	rotation 0
+	size 20 90 2
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 2
+	position 137.5 -150 30
+	rotation 0
+	size 20 80 2
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 3
+	position 137.5 -150 40
+	rotation 0
+	size 10 40 2
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 4
+	position 137.5 -150 40
+	rotation 0
+	size 20 70 2
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 5
+	position 137.5 -150 50
+	rotation 0
+	size 20 60 2
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 6
+	position 137.5 -150 60
+	rotation 0
+	size 20 50 2
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 7
+	position 137.5 -150 70
+	rotation 0
+	size 20 40 2
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 8
+	position 137.5 -150 80
+	rotation 0
+	size 20 30 2
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 9
+	position 137.5 -150 90
+	rotation 0
+	size 20 20 2
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 10
+	position 137.5 -150 100
+	rotation 0
+	size 20 10 2
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box
+	position -165 -200 17
+	rotation 0
+	size 45 55 2
+outside matref wall
+ top matref top
+end
+
+meshpyr
+name Pyramid
+	position -311 -92 0
+	rotation 0
+	size 50 50 50
+matref pyr
+end
+
+meshpyr
+name Pyramid copy
+	position -311 -92 25
+	rotation 0
+	size 50 50 50
+matref pyr
+end
+
+meshbox
+name Box
+	position 25 167 0
+	rotation 0
+	size 5 40 10
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy
+	position 25 167 10
+	rotation 40
+	size 5 40 10
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 1
+	position 25 167 20
+	rotation 80
+	size 5 40 10
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 2
+	position 25 167 30
+	rotation 120
+	size 5 40 10
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 3
+	position 25 167 40
+	rotation 200
+	size 5 40 10
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 4
+	position 25 167 50
+	rotation 280
+	size 5 40 10
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 5
+	position 25 167 60
+	rotation 320
+	size 5 40 10
+outside matref wall
+ top matref top
+end
+
+meshbox
+name Box copy 6
+	position 25 167 70
+	rotation 360
+	size 5 40 10
+outside matref wall
+ top matref top
+end
+
+
+
+meshbox
+name Box
+	position -335 300 0
+	rotation 0
+	size 60 80 1
+matref tbase
+end
+
+meshbox
+name Box copy
+	position -335 300 0
+	rotation 0
+	size 60 1 12
+
+matref tnet
+end
+
+meshbox
+name Box copy 1
+	position -335 300 12
+	rotation 0
+	size 60 1 1
+matref ttopnet
+end
+
+meshbox
+name Box copy 1
+	position -335 220 0
+	rotation 0
+	size 60 1 15
+matref tfence
+end
+
+meshbox
+name Box copy 2
+	position -335 380 0
+	rotation 0
+	size 60 1 15
+matref tfence
+end
+
+meshbox
+name Box copy 1
+	position -275 300 0
+	rotation 90
+	size 81 1 15
+matref tfence
+end
+
+meshbox
+name Box copy 2
+	position -395 300 0
+	rotation 90
+	size 81 1 15
+matref tfence
+end
+
+
