@@ -5,7 +5,7 @@ $app->get('/', function () use ($app) {
 
     $procs = get_bzfs_procs();
 
-    $app->render('index.html', array(
+    $app->render('index.html.twig', array(
     	'procs' => $procs
     ));
 });

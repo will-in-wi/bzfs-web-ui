@@ -11,7 +11,7 @@ $app->get('/start', function () use ($app) {
 		'maps' => $maps,
 	);
 
-    $app->render('start_server.html', $data);
+    $app->render('start_server.html.twig', $data);
 });
 
 
