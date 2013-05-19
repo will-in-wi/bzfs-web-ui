@@ -140,8 +140,9 @@ $app->post('/start', function () use ($app) {
 			$cmd .= " -worldsize " . $world_size;
 			break;
 		case "prebuilt":
+
 			$maps = config('maps');
-			$cmd .= " -world maps/" . $maps[$prebuilt_map]['file'];
+			$cmd .= ' -world ' . $general_settings['map_path'] . '/' . $maps[$prebuilt_map]['file'];
 			break;
 	}
 
