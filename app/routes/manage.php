@@ -2,12 +2,11 @@
 
 // GET route
 $app->get('/', function () use ($app) {
-    $pageTitle = 'hello world';
-    $body = 'sup world';
+
+    $procs = get_bzfs_procs();
 
     $app->render('index.html', array(
-    	'title' => $pageTitle,
-    	'body' => $body
+    	'procs' => $procs
     ));
 });
 
