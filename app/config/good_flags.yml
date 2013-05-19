@@ -1,0 +1,56 @@
+v:
+    "High Speed (V) - Boosts top speed by 50%."
+qt:
+    "Quick Turn (QT) - Boosts turn rate by 50%."
+a:
+    "Agility (A) - Improves a tank's dodging capabilities."
+oo:
+    "Oscillation Overthruster (OO) - Lets the tank go through buildings. You cannot back up in or into a building, nor can you shoot while inside."
+f:
+    "Rapid Fire (F) - Increases shot speed and decreases range and reload delay."
+mg:
+    "Machine Gun (MG) - Increases shot speed and dramatically decreases range and reload delay."
+gm:
+    "Guided Missile (GM) - Shots guide themselves when locked on. The missile can be retargeted at any time during its flight (with the right mouse button). This allows the player some control over the missile's steering."
+l:
+    "Laser (L) - Shoots a laser, with effectively infinite speed and range. Just point and shoot. The binoculars are handy for lining up distant targets. The downside (you knew it was coming) is that the reload time is doubled."
+r:
+    "Ricochet (R) - Shots reflect off walls. It is exceptionally easy to kill yourself with this flag."
+sb:
+    "Super Bullet (SB) - Shots can go through buildings (possibly destroying a tank with the oscillation overthruster flag) and can also destroy (phantom) zoned tanks."
+st:
+    "Stealth (ST) - Tank becomes invisible on radar but is still visible out-the-window."
+cl:
+    "Cloaking (CL) - Tank becomes invisible out-the-window but is still visible on radar."
+ib:
+    "Invisible Bullet (IB) - Shots are invisible on radar (except your own). They are visible out-the-window. Sort of stealth for shots."
+t:
+    "Tiny (T) - Tank becomes much smaller and harder to hit."
+n:
+    "Narrow (N) - Tank becomes paper thin. It's very hard (but not impossible) to hit a narrow tank from the front or back. However, the tank is as long as usual so hitting it from the side has normal difficulty."
+sh:
+    "Shield (SH) - Getting shot while in possession of this flag simply drops the flag (instead of destroying the tank). Since the flag may not disappear you may want to wait around for it to fall to the ground so you can grab it again, but, be warned, the shield flag flies for an extra long time (longer than the normal reload time)."
+sr:
+    "Steamroller (SR) - Tank can destroy other tanks by driving over them (but you must get quite close)."
+sw:
+    "Shock Wave (SW) - Tank doesn't fire shells. Instead it sends out a shock wave in all directions. Any tank caught in the wave is destroyed (including tanks on or in buildings)."
+pz:
+    "Phantom Zone (PZ) - Driving through a teleporter phantom zones the tank. A zoned tank cannot shoot, but can drive through buildings and cannot be destroyed except by a Super Bullet or a Shock Wave (or if the team's flag is captured)."
+g:
+    "Genocide (G) - Destroying any tank on a team destroys every player on that team."
+jp:
+    "Jumping (JP) - Allows the tank to jump. You cannot steer while in the air."
+id:
+    "Identify (ID) - Displays the identity of the closest flag in the vicinity."
+mq:
+    "Masquerade (MQ) - You tank looks like a teammate when viewed out of the window. Bullets, radar and targeting reveal your true identity."
+bu:
+    "Burrow (BU) - You tank burrows into the ground up to your muzzle, making you impervious to normal shots, as they sail above you. However your tank controls are sluggish, and any one, no matter what flag they have, can crush you like."
+se:
+    "Seer (SE) - See Stealthed, Cloaked and Masqueraded tanks as normal, as well as Invisible Bullets."
+th:
+    "Thief (TH) - Tank is small and fast, when you shoot an opponent, he is not killed, but instead, you steal his flag."
+us:
+    "Useless (US) - It's useless!"
+wg:
+    "Wings (WG) - Tank can drive around in the air, and may be able to jump multiple times. This can be useful when jumping or falling."

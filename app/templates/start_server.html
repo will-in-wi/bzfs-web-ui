@@ -1,0 +1,479 @@
+{% extends 'base.html' %}
+
+{% block title %}
+	Start Server
+{% endblock %}
+
+{% block header %}
+	<h1>Start Server</h1>
+{% endblock %}
+
+{% block body %}
+	<ul class="nav nav-tabs">
+		<li class="active"><a href="#general" data-toggle="tab">General</a></li>
+		<li><a href="#game_type" data-toggle="tab">Game Type</a></li>
+		<li><a href="#world" data-toggle="tab">World</a></li>
+		<li><a href="#game_length" data-toggle="tab">Game Length</a></li>
+		<li><a href="#flags" data-toggle="tab">Flags</a></li>
+		<li><a href="#teams" data-toggle="tab">Teams</a></li>
+		<li><a href="#advanced" data-toggle="tab">Advanced</a></li>
+	</ul>
+
+	<form action="start" method="POST" class="form-horizontal">
+
+		<div class="tab-content">
+			<div class="tab-pane active" id="general">
+
+				<p class="lead">
+					Basic settings that effect every game.
+				</p>
+
+				<div class="control-group">
+					<label class="control-label" for="num_shots">Number of allowed shots</label>
+					<div class="controls">
+						<input type="text" id="num_shots" name="num_shots" placeholder="20" value="20" />
+					</div>
+				</div>
+
+				<div class="control-group">
+					<label class="control-label" for="port">Port to use</label>
+					<div class="controls">
+						<input type="text" id="port" name="port" placeholder="5154" value="5154" />
+					</div>
+				</div>
+
+				<div class="control-group">
+					<div class="controls">
+						<label class="checkbox" for="spawn_box">
+							<input checked="checked" type="checkbox" id="spawn_box" name="spawn_box" /> Allow tank to start on buildings
+						</label>
+						<label class="checkbox" for="jumping">
+							<input checked="checked" type="checkbox" id="jumping" name="jumping" /> Allow Jumping
+						</label>
+						<label class="checkbox" for="ricochet">
+							<input checked="checked" type="checkbox" id="ricochet" name="ricochet" /> Make bullets ricochet off solid objects
+						</label>
+					</div>
+				</div>
+
+			</div>
+			<div class="tab-pane" id="game_type">
+				<p class="lead">
+					Pick the rule set that you want.
+				</p>
+
+				<div class="control-group">
+					<div class="controls">
+						<label class="radio">
+							<input type="radio" name="game_type" id="game_type_ffa" value="ffa" checked="checked" />
+							<strong>Free for All</strong> &mdash; No specific rules. Just shoot tanks on other teams for points!
+						</label>
+						<label class="radio">
+							<input type="radio" name="game_type" id="game_type_rh" value="rh">
+							<strong>Rabbit Hunt</strong> &mdash; All against one
+						</label>
+						<label class="radio">
+							<input type="radio" name="game_type" id="game_type_ctf" value="ctf">
+							<strong>Capture the Flag</strong> &mdash; Take your enemy's flag to your base to win
+						</label>
+					</div>
+				</div>
+
+				<div id="rabbit-hunt">
+					<legend>Rabbit Hunt</legend>
+					<div class="control-group">
+						<label for="rh_type" class="control-label">How the new rabbit is picked</label>
+						<div class="controls">
+							<label for="rh_type" class="radio">
+								<input type="radio" name="rh_type" value="score" checked="checked" /> Score Based
+							</label>
+							<label for="rh_type" class="radio">
+								<input type="radio" name="rh_type" value="killer" /> Killer
+							</label>
+							<label for="rh_type" class="radio">
+								<input type="radio" name="rh_type" value="random" /> Random
+							</label>
+						</div>
+					</div>
+				</div>
+
+				<div id="ctf">
+					<legend>Capture the Flag</legend>
+					<div class="control-group">
+						<label for="team_flags" class="control-label">Number of colored flags per team</label>
+						<div class="controls">
+							<input type="text" name="team_flags" value="1" />
+						</div>
+					</div>
+					
+					<div class="control-group">
+						<div class="controls">
+							<label for="ctf_random" class="checkbox">
+								<input type="checkbox" name="ctf_random" />
+								Random map. Off is an ordered map with buildings in rows
+							</label>
+
+							<label for="ctf_random" class="checkbox">
+								<input type="checkbox" name="ctf_rotate_buildings" />
+								On ordered map, rotate buildings randomly
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="tab-pane" id="world">
+				<p class="lead">
+					Settings which apply to your map.
+				</p>
+
+				<div class="control-group">
+					<div class="controls">
+						<label class="radio">
+							<input id="random_check" type="radio" name="world_type" value="random" checked="checked" />
+							<strong>Random Map</strong> &mdash; A randomly generated map
+						</label>
+						<label class="radio">
+							<input id="prebuilt_check" type="radio" name="world_type" value="prebuilt" />
+							<strong>Prebuilt Map</strong> &mdash; Prebuilt maps
+						</label>
+					</div>
+				</div>
+
+				<div id="random-map">
+					<legend>Random Map</legend>
+					<div class="control-group">
+						<label for="density" class="control-label">Density of buildings on the map</label>
+						<div class="controls">
+							<input type="text" name="density" value="5" />
+						</div>
+					</div>
+					<div class="control-group">
+						<div class="controls">
+							<label for="random_height" class="checkbox">
+								<input type="checkbox" name="random_height" />
+								Random heights
+							</label>
+							<label for="teleports" class="checkbox">
+								<input type="checkbox" name="teleports" />
+								Teleports
+							</label>
+							<label for="world_size" class="checkbox">
+								World Size
+								<input type="text" name="world_size" value="400" />
+							</label>
+						</div>
+					</div>
+				</div>
+
+				<div id="prebuilt-map">
+					<legend>Prebuilt maps</legend>
+					<table class="table">
+						<thead>
+							<tr>
+								<th>Select</th>
+								<th>Name</th>
+								<th>Description</th>
+							</tr>
+						</thead>
+						<tbody>
+							{% for map_id, map in maps %}
+								<tr>
+									<td><input type="radio" name="prebuilt_map" value="{{ map_id }}" {% if loop.first %}checked="checked"{% endif %} /></td>
+									<td>{{ map.title }}</td>
+									<td>{{ map.description }}</td>
+								</tr>
+							{% endfor %}
+						</tbody>
+					</table>
+				</div>
+
+			</div>
+			<div class="tab-pane" id="game_length">
+				<p class="lead">
+					Settings to define when the game ends.
+				</p>
+				
+				<div class="control-group">
+					<div class="controls">
+						<label for="one_game" class="checkbox">
+							<input type="checkbox" name="one_game" checked="checked" />
+							Quit after serving one game
+						</label>
+					</div>
+				</div>
+
+				<div class="control-group">
+					<label for="time_limit" class="control-label">Game time limit in seconds. If zero then no time limit.</label>
+					<div class="controls">
+						<input type="text" name="time_limit" value="0" />
+					</div>
+				</div>
+
+				<div class="control-group">
+					<div class="controls">
+						<label for="countdown" class="checkbox">
+							<input type="checkbox" name="countdown" />
+							Start countdown when /countdown is typed
+						</label>
+					</div>
+				</div>
+
+				<div class="control-group">
+					<label for="player_score_win" class="control-label">First player to reach this score wins and game ends. If zero then disabled</label>
+					<div class="controls">
+						<input type="text" name="player_score_win" value="0" />
+					</div>
+				</div>
+
+				<div class="control-group">
+					<label for="team_score_win" class="control-label">First team to reach this score wins and game ends. If zero then disabled.</label>
+					<div class="controls">
+						<input type="text" name="team_score_win" value="0" />
+					</div>
+				</div>
+
+			</div>
+			<div class="tab-pane" id="flags">
+
+				<p class="lead">
+					Flags allow you to gain special powers
+				</p>
+
+				<div class="control-group">
+					<div class="controls">
+						<label for="flags_buildings" class="checkbox">
+							<input type="checkbox" name="flags_buildings" checked="checked" />
+							Allow flags on buildings
+						</label>
+					</div>
+				</div>
+
+				<div class="accordion" id="accordion2">
+					<div class="accordion-group">
+						<div class="accordion-heading">
+							<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#simpleFlags">
+								<strong>Simple</strong> &mdash; To just add some flags.
+							</a>
+						</div>
+						<div id="simpleFlags" class="accordion-body collapse in">
+							<div class="accordion-inner">
+								<div>
+									<div class="control-group">
+										<label for="flags" class="control-label">Number of flags</label>
+										<div class="controls">
+											<input type="text" name="flags" value="20" />
+										</div>
+									</div>
+									<div class="control-group">
+										<div class="controls">
+											<label for="bad_flags" class="checkbox">
+												<input type="checkbox" name="bad_flags" />
+												Whether to have bad flags
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-group">
+						<div class="accordion-heading">
+							<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#advancedFlags">
+								<strong>Advanced</strong> &mdash; When the number of any flag is set, the simple settings are overridden.
+							</a>
+						</div>
+						<div id="advancedFlags" class="accordion-body collapse">
+							<div class="accordion-inner">
+									<div class="span5">
+										<legend>Good Flags</legend>
+										{% for flag_id, flag in good_flags %}
+											<div>
+												<h5>{{ flag }}</h5>
+												<div class="control-group">
+													<label for="{{ flag_id }}_num_flags" class="control-label">Number of flags</label>
+													<div class="controls">
+														<input type='text' class="span2" name='{{ flag_id }}_num_flags' />
+													</div>
+												</div>
+												<div class="control-group">
+													<label for="{{ flag_id }}_num_shots" class="control-label">Number of shots</label>
+													<div class="controls">
+														<input type='text' class="span2" name='{{ flag_id }}_num_shots' />
+													</div>
+												</div>
+											</div>
+										{% endfor %}
+										
+									</div>
+									<div class="span5">
+										<legend>Bad Flags</legend>
+
+										<div class="control-group">
+											<div class="controls">
+												<label for="antidote" class="checkbox">
+													<input type="checkbox" name="antidote" />
+													Antidote Flag
+												</label>
+											</div>
+										</div>
+
+										<div class="control-group">
+											<label for="bad_flag_drop_time" class="control-label">Bad flags dropped after time (seconds)</label>
+											<div class="controls">
+												<input type="text" class="span2" name="bad_flag_drop_time" />
+											</div>
+										</div>
+
+										<div class="control-group">
+											<label for="bad_flag_drop_kills" class="control-label">Bad flags dropped after this many kills</label>
+											<div class="controls">
+												<input type="text" class="span2" name="bad_flag_drop_kills" />
+											</div>
+										</div>
+
+										{% for flag_id, flag in bad_flags %}
+											<div>
+												<h5>{{ flag }}</h5>
+												<div class="control-group">
+													<label for="{{ flag_id }}_num_flags" class="control-label">Number of flags</label>
+													<div class="controls">
+														<input type='text' class="span2" name='{{ flag_id }}_num_flags' />
+													</div>
+												</div>
+												<div class="control-group">
+													<label for="{{ flag_id }}_num_shots" class="control-label">Number of shots</label>
+													<div class="controls">
+														<input type='text' class="span2" name='{{ flag_id }}_num_shots' />
+													</div>
+												</div>
+											</div>
+										{% endfor %}
+									</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="tab-pane" id="teams">
+				<p class="lead">
+					Team related settings
+				</p>
+
+				<div class="control-group">
+					<div class="controls">
+						<label for="auto_team" class="checkbox">
+							<input type="checkbox" name="auto_team" />
+							Automatically assign players to the weakest team
+						</label>
+
+						<label for="disable_bots" class="checkbox">
+							<input type="checkbox" name="disable_bots" />
+							Disable bots and autopilot
+						</label>
+
+						<label for="handicap" class="checkbox">
+							<input type="checkbox" name="handicap" />
+							Handicap players with high scores
+						</label>
+
+						<label for="no_teamkill" class="checkbox">
+							<input type="checkbox" name="no_teamkill" />
+							Don't kill player when he/she kills a teammate
+						</label>
+					</div>
+				</div>
+
+				<legend>Set maximum number of players. <small>If a field is left blank it will be unlimited. A specific team limit disables the total limit.</small></legend>
+
+				<div class="control-group">
+					<label for="total_players" class="control-label">Total players</label>
+					<div class="controls">
+						<input type="text" name="total_players" />
+					</div>
+				</div>
+
+				<div class="control-group">
+					<label for="rogue_players" class="control-label">Rogue players</label>
+					<div class="controls">
+						<input type="text" name="rogue_players" />
+					</div>
+				</div>
+
+				<div class="control-group">
+					<label for="red_players" class="control-label">Red players</label>
+					<div class="controls">
+						<input type="text" name="red_players" />
+					</div>
+				</div>
+
+				<div class="control-group">
+					<label for="green_players" class="control-label">Green Players</label>
+					<div class="controls">
+						<input type="text" name="green_players" />
+					</div>
+				</div>
+
+				<div class="control-group">
+					<label for="blue_players" class="control-label">Blue players</label>
+					<div class="controls">
+						<input type="text" name="blue_players" />
+					</div>
+				</div>
+
+				<div class="control-group">
+					<label for="purple_players" class="control-label">Purple players</label>
+					<div class="controls">
+						<input type="text" name="purple_players" />
+					</div>
+				</div>
+
+				<div class="control-group">
+					<label for="observers" class="control-label">Observers</label>
+					<div class="controls">
+						<input type="text" name="observers" />
+					</div>
+				</div>
+
+			</div>
+			<div class="tab-pane" id="advanced">
+				<p class="lead">
+					Extra settings that will rarely need to be touched.
+				</p>
+
+				<div class="control-group">
+					<label for="ban_ip" class="control-label">Banned IP addresses. One per line</label>
+					<div class="controls">
+						<textarea rows="5" cols="20" name="ban_ip"></textarea>
+					</div>
+				</div>
+
+				<div class="control-group">
+					<label for="ban_ip" class="control-label">Banned IP addresses. One per line</label>
+					<div class="controls">
+						<textarea rows="5" cols="20" name="ban_ip"></textarea>
+					</div>
+				</div>
+
+				<div class="control-group">
+					<label for="login_message" class="control-label">Message to appear when a user logs in</label>
+					<div class="controls">
+						<textarea rows="10" cols="30" name="login_message"></textarea>
+					</div>
+				</div>
+
+				<div class="control-group">
+					<label for="extra_opts" class="control-label">Extra options (admins only)</label>
+					<div class="controls">
+						<input type="text" name="extra_opts" />
+						<span class="help-block">-set _wingsJumpCount [1] -set _shotSpeed [100]</span>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<input type="submit" value="Start Game" class="btn" />
+
+	</form>
+{% endblock %}

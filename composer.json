@@ -1,0 +1,9 @@
+{
+    "require": {
+        "slim/slim": "2.*",
+        "twig/twig": "1.*",
+        "symfony/finder": "2.2.*",
+		"symfony/yaml": "2.4.*@dev",
+		"slim/extras": "dev-master"
+    }
+}

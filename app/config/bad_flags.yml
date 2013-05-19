@@ -1,0 +1,26 @@
+cb:
+    "Colorblindness (CB) - Prevents tank from seeing any team information about other tanks. You have to be careful to avoid shooting teammates."
+o:
+    "Obesity (O) - The tank becomes very large and easy to hit. It's so big that it can't fit through teleporters."
+lto:
+    "Left Turn Only (<-) - Prevents the tank from turning right."
+rto:
+    "Right Turn Only (->) - Prevents the tank from turning left."
+fo:
+    "Forward Only (FO) - Prevents the tank from going backwards."
+ro:
+    "Reverse Only (RO) - Prevents the tank from going forward."
+m:
+    "Momentum (M) - Gives the tank a lot of inertia."
+b:
+    "Blindness (B) - Blanks the out-the-window view. The radar still works. It is effectively impossible to detect any tank with Stealth; shooting a Stealth with Blindness is the stuff legends are made of."
+jm:
+    "Jamming (JM) - Disables the radar but you can still see."
+wa:
+    "Wide Angle (WA) - Gives the tank a fish eye lens that's rather disorienting."
+nj:
+    "No Jumping (NJ) - Tank is not allowed to jump."
+tr:
+    "Trigger Happy (TR) - Tank can't stop shooting. Watch out for that ricochet."
+rc:
+    "Reverse Controls (RC) - Tank driving controls are reversed from their usual behavior."

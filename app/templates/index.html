@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block title %}
+	{{title}}
+{% endblock %}
+
+{% block header %}
+	<h1>{{title}}</h1>
+{% endblock %}
+
+{% block body %}
+	{% if flash.launch_error %}
+	<div class="alert alert-block alert-error">
+		<button type="button" class="close" data-dismiss="alert">&times;</button>
+		<h4>Error!</h4>
+		<pre>{{flash.launch_error}}</pre>
+	</div>
+	{% endif %}
+	
+	{% if flash.command_line %}
+	<div class="alert alert-block alert-info">
+		<button type="button" class="close" data-dismiss="alert">&times;</button>
+		<h4>Command line:</h4>
+		<pre>{{flash.command_line}}</pre>
+	</div>
+	{% endif %}
+
+	{% if flash.pid_error %}
+	<div class="alert alert-error">
+		<button type="button" class="close" data-dismiss="alert">&times;</button>
+		<strong>Error!</strong> {{flash.pid_error}}
+	</div>
+	{% endif %}
+
+	{% if flash.pid_success %}
+	<div class="alert alert-success">
+		<button type="button" class="close" data-dismiss="alert">&times;</button>
+		<strong>Success!</strong> {{flash.pid_success}}
+	</div>
+	{% endif %}
+
+	<p>{{body}}</p>
+{% endblock %}

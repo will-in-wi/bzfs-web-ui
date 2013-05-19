@@ -1,0 +1,251 @@
+battleramcity:
+    title: "Battle Ram City"
+    file: battleramcity.bzw
+arena:
+    title: "Arena"
+    file: arena.bzw
+Cruel:
+    title: "Cruel"
+    file: Cruel.bzw
+ctfquadlord:
+    title: "CTF Quad Lord"
+    file: ctfquadlord.bzw
+ffaoverlord:
+    title: "FFA Overlord"
+    file: ffaoverlord.bzw
+hidden:
+    title: "Inca 2"
+    file: inca2.bzw
+    description: Incan ruins. Look for the stairs and hidden drop.
+for:
+    title: "Decks"
+    file: decks.bzw
+    description: Open map. Several levels of rings around the field. Watch out for snipers.
+the:
+    title: "Club house"
+    file: clubhouse.bzw
+    description: Bullets have vertical velocity. Ring around clubhouse in center. Two high platforms with stairs around the side.
+High:
+    title: "Superbowl"
+    file: superbowl.bzw
+    description: Superbowl dome. High ceiling.
+is:
+    title: "Forest"
+    file: forest1_1.bzw
+    description: Tall trees. Wings have many jumps. Ricochet is enabled.
+the:
+    title: "Castles"
+    file: castels.bzw
+    description: Two buildings on the sides. Big circular building in the middle.
+with:
+    title: "East West"
+    file: eastwest.bzw
+    description: Open map. Sniper positions with teleports.
+of:
+    title: "Stonehenge"
+    file: stonehenge.bzw
+    description: Replication of stonehenge
+with:
+    title: "Foggy"
+    file: foggy.bzw
+    description: No buildings. Cannot see very far. Pretty pointless with radar.
+radioactive:
+    title: "Xenon"
+    file: Xenon.bzw
+    description: Very complicated map. Takes a while to load. High speed ring around the edges. Dont get fried in the electric arcs or disintegrated in the radioactive ooze.
+shot:
+    title: "Maelstrom"
+    file: maelstrom.bzw
+    description: Capture the flag map. Two ships on either side of a maelstrom. One shot sniping.
+vertical:
+    title: "Ice World"
+    file: iceworld.bzw
+    description: Four big buildings. Bullets have vertical velocity.
+and:
+    title: "Seaport"
+    file: seaport.bzw
+    description: Seaport and containers
+the:
+    title: "Deep Core"
+    file: deepcore.bzw
+    description: Big pyramid in the middle.
+borgmap:
+    title: "Borg Map"
+    file: borgmap.bzw
+collaborator1:
+    title: "Collaborator"
+    file: collaborator1.bzw
+ctf:
+    title: "Capture the Flag"
+    file: ctf.bzw
+ctfoverlord:
+    title: "CTF Overlord"
+    file: ctfoverlord.bzw
+dontFall:
+    title: "Don't Fall"
+    file: dontFall.bzw
+firstmap:
+    title: "First Map"
+    file: firstmap.bzw
+flitemap:
+    title: "Flite Map"
+    file: flitemap.bzw
+FortHoldown1:
+    title: "Fort Holdown"
+    file: FortHoldown1.bzw
+From:
+    title: "From"
+    file: From.bzw
+gatefive:
+    title: "Gate Five"
+    file: gatefive.bzw
+GATES:
+    title: "Gates"
+    file: GATES.bzw
+haven:
+    title: "Haven"
+    file: haven.bzw
+hit:
+    title: "Hit"
+    file: hit.bzw
+hophop:
+    title: "Hop Hop"
+    file: hophop.bzw
+Ionian:
+    title: "Ionian"
+    file: Ionian.bzw
+island_feeling:
+    title: "Island Feeling"
+    file: island_feeling.bzw
+kingcastle:
+    title: "King Castle"
+    file: kingcastle.bzw
+kingofthecastle:
+    title: "King of the Castle"
+    file: kingofthecastle.bzw
+megadome:
+    title: "Mega Dome"
+    file: megadome.bzw
+MinasTirith:
+    title: "Minas Tirith"
+    file: MinasTirith.bzw
+minia:
+    title: "Minia"
+    file: minia.bzw
+MiniMap:
+    title: "Mini Map"
+    file: MiniMap.bzw
+MirrorMadcity:
+    title: "Mirror Mad City"
+    file: MirrorMadcity.bzw
+monsterlab:
+    title: "Monster Lab"
+    file: monsterlab.bzw
+Mountains:
+    title: "Mountains"
+    file: Mountains.bzw
+NavyBattle:
+    title: "Navy Battle"
+    file: NavyBattle.bzw
+necromancer:
+    title: "Necromancer"
+    file: necromancer.bzw
+omega:
+    title: "Omega"
+    file: omega.bzw
+pacman:
+    title: "Pacman"
+    file: pacman.bzw
+paintField:
+    title: "Paint Field"
+    file: paintField.bzw
+pitfalls:
+    title: "Pitfalls"
+    file: pitfalls.bzw
+pool1:
+    title: "Pool"
+    file: pool1.bzw
+queencastle:
+    title: "Queen Castle"
+    file: queencastle.bzw
+ratlab:
+    title: "Rat Lab"
+    file: ratlab.bzw
+ratlabrel:
+    title: "Rat Lab Rel"
+    file: ratlabrel.bzw
+realdisf:
+    title: "Real Disf"
+    file: realdisf.bzw
+Reloaded:
+    title: "Reloaded"
+    file: Reloaded.bzw
+ringfire:
+    title: "Ring of Fire"
+    file: ringfire.bzw
+RoundaboutR2:
+    title: "Round About"
+    file: RoundaboutR2.bzw
+sandblaster2:
+    title: "Sand Blaster"
+    file: sandblaster2.bzw
+secret:
+    title: "Secret"
+    file: secret.bzw
+Stunning:
+    title: "Stunning"
+    file: Stunning.bzw
+test:
+    title: "Test"
+    file: test.bzw
+test5:
+    title: "Test 5"
+    file: test5.bzw
+Battle:
+    title: "The Ultimate Bridge Battle"
+    file: The Ultimate Bridge Battle.bzw
+The:
+    title: "The"
+    file: The.bzw
+the_two_towers:
+    title: "The Two Towers"
+    file: the_two_towers.bzw
+theabyss:
+    title: "The Abyss"
+    file: theabyss.bzw
+thepunisher:
+    title: "The Punisher"
+    file: thepunisher.bzw
+totalrecall:
+    title: "Total Recall"
+    file: totalrecall.bzw
+trenchesbridges:
+    title: "Trenches Bridges"
+    file: trenchesbridges.bzw
+Tunnel2:
+    title: "Tunnel"
+    file: Tunnel2.bzw
+tunnels:
+    title: "Tunnels"
+    file: tunnels.bzw
+twilight_247_zone:
+    title: "Twilight Zone"
+    file: twilight_247_zone.bzw
+Valley:
+    title: "Valley"
+    file: Valley.bzw
+vipermodi:
+    title: "Viper Modi"
+    file: vipermodi.bzw
+foggy:
+    title: "Wilderness Foggy"
+    file: Wilderness-foggy.bzw
+Wilderness:
+    title: "Wilderness"
+    file: Wilderness.bzw
+mas:
+    title: "Winter Een Mas"
+    file: winter-een-mas.bzw
+WorldOfChaos:
+    title: "World of Chaos"
+    file: WorldOfChaos.bzw
