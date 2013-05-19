@@ -30,7 +30,7 @@ $app = new \Slim\Slim(array(
 $twigView::$twigTemplateDirs = array('../app/templates');
 
 $app->view()->appendData(array(
-    'base_url' => $app->request()->getRootUri()
+    'base_url' => $app->request()->getUrl() . str_replace('//', '/', dirname($_SERVER['SCRIPT_NAME']) . '/')
 ));
 
 
