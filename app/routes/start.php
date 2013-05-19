@@ -182,7 +182,7 @@ $app->post('/start', function () use ($app) {
 
 	// Validate
 	$flags_buildings = (boolean) $app->request()->post('flags_buildings');
-	$bad_flags = (boolean) $app->request()->post('bad_flags');
+	$is_bad_flags = (boolean) $app->request()->post('bad_flags');
 
 	$total_flags = (integer) $app->request()->post('flags');
 	if ($total_flags < 0) {
@@ -236,7 +236,7 @@ $app->post('/start', function () use ($app) {
 
 	$cmd .= " +s " . $total_flags;
 
-	if (!$bad_flags) {
+	if (!$is_bad_flags) {
 		$cmd .= " -f bad";
 	}
 
