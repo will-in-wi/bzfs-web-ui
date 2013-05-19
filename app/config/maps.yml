@@ -13,66 +13,66 @@ ctfquadlord:
 ffaoverlord:
     title: "FFA Overlord"
     file: ffaoverlord.bzw
-hidden:
+inca2:
     title: "Inca 2"
     file: inca2.bzw
     description: Incan ruins. Look for the stairs and hidden drop.
-for:
+decks:
     title: "Decks"
     file: decks.bzw
     description: Open map. Several levels of rings around the field. Watch out for snipers.
-the:
+club_house:
     title: "Club house"
     file: clubhouse.bzw
     description: Bullets have vertical velocity. Ring around clubhouse in center. Two high platforms with stairs around the side.
-High:
+superbowl:
     title: "Superbowl"
     file: superbowl.bzw
     description: Superbowl dome. High ceiling.
-is:
+forest:
     title: "Forest"
     file: forest1_1.bzw
     description: Tall trees. Wings have many jumps. Ricochet is enabled.
-the:
+castles:
     title: "Castles"
     file: castels.bzw
     description: Two buildings on the sides. Big circular building in the middle.
-with:
+east_west:
     title: "East West"
     file: eastwest.bzw
     description: Open map. Sniper positions with teleports.
-of:
+stonehenge:
     title: "Stonehenge"
     file: stonehenge.bzw
     description: Replication of stonehenge
-with:
+foggy:
     title: "Foggy"
     file: foggy.bzw
     description: No buildings. Cannot see very far. Pretty pointless with radar.
-radioactive:
+xenon:
     title: "Xenon"
     file: Xenon.bzw
     description: Very complicated map. Takes a while to load. High speed ring around the edges. Dont get fried in the electric arcs or disintegrated in the radioactive ooze.
-shot:
+maelstrom:
     title: "Maelstrom"
     file: maelstrom.bzw
     description: Capture the flag map. Two ships on either side of a maelstrom. One shot sniping.
-vertical:
+ice_world:
     title: "Ice World"
     file: iceworld.bzw
     description: Four big buildings. Bullets have vertical velocity.
-and:
+seaport:
     title: "Seaport"
     file: seaport.bzw
     description: Seaport and containers
-the:
+deep_core:
     title: "Deep Core"
     file: deepcore.bzw
     description: Big pyramid in the middle.
 borgmap:
     title: "Borg Map"
     file: borgmap.bzw
-collaborator1:
+collaborator:
     title: "Collaborator"
     file: collaborator1.bzw
 ctf:
