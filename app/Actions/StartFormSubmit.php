@@ -48,7 +48,9 @@ class StartFormSubmit {
 
         try {
             $error_output = file_get_contents($tmp . '/bzfs-error.' . $uid);
-            $this->container->get('flash')->addMessage('launch_error', $error_output);
+            if (!empty($error_output)) {
+                $this->container->get('flash')->addMessage('launch_error', $error_output);
+            }
         } catch (\Exception $e) {
             $this->container->get('flash')->addMessage('launch_error_error', 'Somehow failed to get the error.');
         }

@@ -6,6 +6,7 @@ use \BzfsWebUi\Lib\ConfigParser;
 
 class ConfigForm {
     protected $body;
+    protected $generalSettings;
     protected $goodFlags;
     protected $badFlags;
 
@@ -14,6 +15,7 @@ class ConfigForm {
     public function __construct($body) {
         $this->body = $body;
 
+        $this->generalSettings = ConfigParser::config('general');
         $this->goodFlags = ConfigParser::config('good_flags');
         $this->badFlags = ConfigParser::config('bad_flags');
     }
@@ -313,8 +315,7 @@ class ConfigForm {
                 break;
             case WorldType::PREBUILT:
                 $maps = ConfigParser::config('maps');
-                // TODO: General settings.
-                $cmd .= ' -world ' . $general_settings['map_path'] . '/' . $maps[$this->getPrebuiltMap()]['file'];
+                $cmd .= ' -world ' . $this->generalSettings['map_path'] . '/' . $maps[$this->getPrebuiltMap()]['file'];
                 break;
         }
 
