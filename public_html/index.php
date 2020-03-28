@@ -1,65 +1,46 @@
 <?php
-/**
- * Step 1: Require the Slim Framework
- *
- * If you are not using Composer, you need to require the
- * Slim Framework and register its PSR-0 autoloader.
- *
- * If you are using Composer, you can skip this step.
- */
-require '../vendor/autoload.php';
+
+namespace BzfsWebUi;
+
+require __DIR__ . '/../vendor/autoload.php';
 
 define('APP_ROOT', realpath( dirname(dirname( __FILE__ ) ).'/'));
+session_start();
 
-/**
- * Step 2: Instantiate a Slim application
- *
- * This example instantiates a Slim application using
- * its default settings. However, you will usually configure
- * your Slim application now by passing an associative array
- * of setting names and values into the application constructor.
- */
+$container = new \DI\Container();
+\Slim\Factory\AppFactory::setContainer($container);
 
-// Setup custom Twig view
-$twigView = new \Slim\Extras\Views\Twig();
+$flashMessages = new \Slim\Flash\Messages();
 
-// Instantiate application
-$app = new \Slim\Slim(array(
-    'view' => $twigView
-));
-$twigView::$twigTemplateDirs = array('../app/templates');
+$container->set('flash', function () use ($flashMessages) {
+    return $flashMessages;
+});
 
-define('BASE_URL', $app->request()->getUrl() . str_replace('//', '/', dirname($_SERVER['SCRIPT_NAME']) . '/'));
+$container->set('view', function() use ($flashMessages) {
+    $view = \Slim\Views\Twig::create('../app/templates');
 
-$app->view()->appendData(array(
-    'base_url' => BASE_URL
-));
+    $view->addExtension(new Lib\TwigMessages($flashMessages));
 
+    return $view;
+});
 
-$app->add(new \Slim\Middleware\SessionCookie(array(
-    'expires' => '20 minutes',
-    'path' => '/',
-    'domain' => null,
-    'secure' => false,
-    'httponly' => false,
-    'name' => 'slim_session',
-    'secret' => 'ysR1HGtt6UwDExoJcmq069Egxidfsm',
-    'cipher' => MCRYPT_RIJNDAEL_256,
-    'cipher_mode' => MCRYPT_MODE_CBC
-)));
+$app = \Slim\Factory\AppFactory::create();
+$app->add(\Slim\Views\TwigMiddleware::createFromContainer($app));
 
-include_once('../app/lib/helpers.php');
+// $app->add(new \Slim\Middleware\SessionCookie(array(
+//     'expires' => '20 minutes',
+//     'path' => '/',
+//     'domain' => null,
+//     'secure' => false,
+//     'httponly' => false,
+//     'name' => 'slim_session',
+//     'secret' => 'ysR1HGtt6UwDExoJcmq069Egxidfsm',
+//     'cipher' => MCRYPT_RIJNDAEL_256,
+//     'cipher_mode' => MCRYPT_MODE_CBC
+// )));
 
-/**
- * Step 3: Define the Slim application routes
- *
- * Here we define several Slim application routes that respond
- * to appropriate HTTP request methods. In this example, the second
- * argument for `Slim::get`, `Slim::post`, `Slim::put`, and `Slim::delete`
- * is an anonymous function.
- */
-
-// Load all the routes.
-_require_all('../app/routes');
+$app->get('/', Actions\Management::class);
+$app->get('/start', Actions\StartFormView::class);
+$app->post('/start', Actions\StartFormSubmit::class);
 
 $app->run();

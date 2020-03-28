@@ -1,9 +1,16 @@
 {
+    "name": "will-in-wi/bzfs-web-ui",
+    "autoload": {
+        "psr-4": {
+            "BzfsWebUi\\": "app/"
+        }
+    },
     "require": {
-        "slim/slim": "2.*",
-        "twig/twig": "1.*",
-        "symfony/finder": "2.2.*",
-		"symfony/yaml": "2.4.*@dev",
-		"slim/extras": "dev-master"
+        "slim/slim": "^4.4",
+        "slim/psr7": "^1.0",
+        "slim/twig-view": "^3.0",
+        "php-di/php-di": "^6.0",
+        "symfony/yaml": "^5.0",
+        "kanellov/slim-twig-flash": "^0.2.0"
     }
 }
