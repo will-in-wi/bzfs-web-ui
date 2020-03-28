@@ -25,6 +25,6 @@ class IntInRange implements iValidator {
 
         return filter_var($value, FILTER_VALIDATE_INT) !== false &&
                 ($this->min === null || $value >= $this->min) &&
-                ($this->$max === null || $value <= $this->max);
+                ($this->max === null || $value <= $this->max);
     }
 }
